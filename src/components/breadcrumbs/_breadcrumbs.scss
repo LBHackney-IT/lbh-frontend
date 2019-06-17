@@ -1,0 +1,39 @@
+@import "../../tools/all";
+@import "../../settings/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/breadcrumbs") {
+
+  // Size of chevron (excluding border)
+  $chevron-size: 7px;
+
+  // Size of chevron border
+  $chevron-border-width: 1px;
+
+  // Colour of chevron
+  $chevron-border-colour: lbh-colour("lbh-a02");
+
+  // Calculated altitude (△↕) of the right-angled isosceles chevron with sides
+  // of length 8 (7px + 1px border):
+  //
+  // √(8² + 8²) * 0.5 ≅ 5.655
+  $chevron-altitude-calculated: 5.655px;
+
+
+  .lbh-breadcrumbs__list-item {
+    // Create a chevron using a box with borders on two sides, rotated 45deg.
+    &:before {
+      left: (($chevron-altitude-calculated * -2) + $chevron-size + $chevron-border-width);
+
+      width: $chevron-size;
+      height: $chevron-size;
+
+      border-color: $chevron-border-colour;
+
+      // Fall back to a greater than sign for IE8
+      @include govuk-if-ie8 {
+        color: $chevron-border-colour;
+      }
+    }
+  }
+}

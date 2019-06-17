@@ -1,0 +1,29 @@
+<header class="lbh-header">
+  <div class="lbh-header__wrapper">
+    <div class="govuk-width-container lbh-header__container">
+      <a href="{{ params.homepageUrl }}" title="Home" class="lbh-header__home-link">
+        <img class="lbh-header__logo" src="{{ params.assetsPath | default('/assets/images') }}/logo.svg">
+      </a>
+
+      {% if params.search %}
+        <form class="lbh-header__search-form">
+          <label for="site-search-header" class="govuk-visually-hidden">{{ params.searchLabel }}</label>
+          <input type="search" id="site-search-header" name="site-search-header" aria-label="{{ params.searchLabel }}">
+          <button type="submit">
+            <span class="govuk-visually-hidden">Search</span>
+            <span class="lbh-header__search-icon"></span>
+          </button>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+  <div class="lbh-header__borders"></div>
+  {% if params.bannerMessage %}
+    <div class="lbh-header__banner">
+      <div class="govuk-width-container">
+        <span class="lbh-header__banner-symbol">{{params.bannerStage}}</span> <span class="lbh-header__banner-text">{{ params.bannerMessage|safe }}</
+        span>
+      </div>
+    </div>
+  {% endif %}
+</header>

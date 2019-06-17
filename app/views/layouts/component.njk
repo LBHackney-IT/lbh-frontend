@@ -1,0 +1,38 @@
+{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "macros/showExamples.njk" import showExamples %}
+
+{% extends "full-width.njk" %}
+
+{% set bodyClasses %}
+  language-markup
+{% endset %}
+
+{% set componentName = componentPath %}
+{% set componentNameHuman = componentName | replace("-", " ") %}
+
+{% set htmlMarkup %}
+  {% include componentName +"/"+ componentName +".njk" ignore missing %}
+{% endset %}
+
+{% block beforeContent %}
+  {{ lbhBreadcrumbs({
+    "items": [
+    { text: 'Hackney Frontend', href: '/' + legacyQuery },
+    { text: componentNameHuman | capitalize }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
+    <h1 class="govuk-heading-xl">
+      {% block componentName %}
+        {{ componentNameHuman | capitalize }}
+      {% endblock %}
+    </h1>
+  </div>
+
+  {% block examples %}
+    {{ showExamples(componentName, componentNameHuman, componentData,legacyQuery) }}
+  {% endblock %}
+{% endblock %}

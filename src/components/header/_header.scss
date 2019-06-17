@@ -1,0 +1,94 @@
+@import "../../tools/all";
+@import "../../settings/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/header") {
+
+  .lbh-header__wrapper {
+    width: 100%;
+    height: govuk-px-to-rem(66);
+    margin-bottom: 6px;
+    background-color: lbh-colour("black");
+
+    @include mq ($from: desktop) {
+      height: govuk-px-to-rem(76);
+    }
+  }
+
+  .lbh-header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lbh-header__borders {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 15px;
+    border-top: 4px solid lbh-colour("lbh-a01");
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      right: 0;
+      left: 0;
+      height: 3px;
+      background: lbh-colour("lbh-a02");
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 9px;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background: lbh-colour("lbh-a03");
+    }
+  }
+
+  .lbh-header__home-link {
+    display: inline-block;
+    margin: govuk-px-to-rem(19) 0;
+
+    @include mq ($from: desktop) {
+      margin: govuk-px-to-rem(20) 0;
+    }
+  }
+
+  .lbh-header__logo {
+    display: block;
+    width: auto;
+    height: govuk-px-to-rem(28);
+
+    @include mq ($from: desktop) {
+      height: govuk-px-to-rem(36);
+    }
+  }
+
+  .lbh-header__banner {
+    padding: govuk-px-to-rem(8) 0 govuk-px-to-rem(10);
+  }
+
+  .lbh-header__banner-symbol {
+    display: inline-block;
+    margin-right: govuk-px-to-rem(8);
+    padding: govuk-px-to-rem(2) govuk-px-to-rem(12) 0;
+    border-bottom: 2px solid lbh-colour("lbh-primary-inner-shadow");
+    color: lbh-colour("white");
+    background: lbh-colour("lbh-primary-button");
+    font-family: "Montserrat";
+    font-size: govuk-px-to-rem(12px);
+    line-height: govuk-px-to-rem(15px);
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .lbh-header__banner-text {
+    font-family: "Montserrat";
+    vertical-align: middle;
+  }
+}

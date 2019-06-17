@@ -1,0 +1,29 @@
+////
+/// @group settings/colours
+////
+
+/// Colour palette
+///
+/// @type Map
+///
+/// @prop $colour - Representation for the given $colour, where $colour is the
+///   friendly name for the colour (e.g. "red": #ff0000);
+///
+/// @access public
+
+$lbh-colours: (
+  "lbh-a01": #00664f,
+  "lbh-a02": #00b341,
+  "lbh-a03": #84bd00,
+  "lbh-a04": #a4d65e,
+
+  "lbh-primary-button": #00664f,
+  "lbh-primary-inner-shadow": #003d2f,
+
+  "black": #0b0c0c,
+  "grey-1": #6f777b,
+  "grey-2": #bfc1c3,
+  "grey-3": #dee0e2,
+  "grey-4": #f8f8f8,
+  "white": #ffffff
+) !default;
