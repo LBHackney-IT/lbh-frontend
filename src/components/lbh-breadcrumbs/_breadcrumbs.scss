@@ -1,0 +1,27 @@
+@import "../../tools/all";
+@import "../../settings/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/breadcrumbs") {
+
+  // Colour of chevron
+  $chevron-border-colour: lbh-colour("grey-2");
+
+  .lbh-breadcrumbs .govuk-breadcrumbs__list-item {
+    // Create a chevron using a box with borders on two sides, rotated 45deg.
+    @include lbh-font($size: 14, $line-height: 18px);
+    padding-left: govuk-px-to-rem(14);
+
+    &:before {
+      top: govuk-px-to-rem(1);
+      width: govuk-px-to-rem(6);
+      height: govuk-px-to-rem(6);
+      border-color: $chevron-border-colour;
+
+      // Fall back to a greater than sign for IE8
+      @include govuk-if-ie8 {
+        color: $chevron-border-colour;
+      }
+    }
+  }
+}

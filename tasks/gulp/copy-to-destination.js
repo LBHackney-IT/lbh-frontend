@@ -11,6 +11,7 @@ const yamlToJson = require('js-yaml')
 const path = require('path')
 const map = require('map-stream')
 const rename = require('gulp-rename')
+const pixrem = require('gulp-pixrem')
 
 let scssFiles = filter([configPaths.src + '**/*.scss'], { restore: true })
 let yamlFiles = filter([configPaths.components + '**/*.yaml'], { restore: true })
@@ -25,6 +26,7 @@ gulp.task('copy-files', () => {
     '!' + configPaths.components + '**/__snapshots__/'
   ])
     .pipe(scssFiles)
+    .pipe(pixrem())
     .pipe(postcss([
       autoprefixer
     ], { syntax: require('postcss-scss') }))

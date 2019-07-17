@@ -16,6 +16,7 @@ const uglify = require('gulp-uglify')
 const eol = require('gulp-eol')
 const rename = require('gulp-rename')
 const cssnano = require('cssnano')
+const pixrem = require('gulp-pixrem')
 const postcsspseudoclasses = require('postcss-pseudo-classes')({
   // Work around a bug in pseudo classes plugin that badly transforms
   // :not(:whatever) pseudo selectors
@@ -44,6 +45,7 @@ gulp.task('scss:compile', () => {
   let compile = gulp.src(compileStyleshet)
     .pipe(plumber(errorHandler))
     .pipe(sass())
+    .pipe(pixrem())
     // minify css add vendor prefixes and normalize to compiled css
     .pipe(gulpif(isDist, postcss([
       autoprefixer,
@@ -66,6 +68,7 @@ gulp.task('scss:compile', () => {
   let compileOldIe = gulp.src(compileOldIeStyleshet)
     .pipe(plumber(errorHandler))
     .pipe(sass())
+    .pipe(pixrem())
     // minify css add vendor prefixes and normalize to compiled css
     .pipe(gulpif(isDist, postcss([
       autoprefixer,
@@ -104,6 +107,7 @@ gulp.task('scss:compile', () => {
       .pipe(sass({
         includePaths: ['node_modules/govuk_frontend_toolkit/stylesheets', 'node_modules']
       }))
+      .pipe(pixrem())
       .pipe(postcss([
         autoprefixer,
         // Auto-generate 'companion' classes for pseudo-selector states - e.g. a
@@ -117,6 +121,7 @@ gulp.task('scss:compile', () => {
       .pipe(sass({
         includePaths: ['node_modules/govuk_frontend_toolkit/stylesheets', 'node_modules']
       }))
+      .pipe(pixrem())
       .pipe(postcss([
         autoprefixer,
         postcsspseudoclasses,

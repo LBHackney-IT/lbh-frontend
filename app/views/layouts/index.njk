@@ -13,7 +13,7 @@
       <ul class="govuk-list">
         <li><a href="/components/all{{ legacyQuery }}" class="govuk-link">All</a></li>
         {% for componentName in componentsDirectory | sort %}
-          <li><a href="/components/{{ componentName }}{{ legacyQuery }}" class="govuk-link">{{ componentName | replace("-", " ") | capitalize }}</a></li>
+          <li><a href="/components/{{ componentName }}{{ legacyQuery }}" class="govuk-link">{{ componentName | replace("lbh-", "") | replace("-", " ") | capitalize }}</a></li>
         {% endfor %}
       </ul>
     </div>

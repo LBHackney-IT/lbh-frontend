@@ -1,4 +1,4 @@
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
 {% from "macros/showExamples.njk" import showExamples %}
 
 {% extends "full-width.njk" %}
@@ -8,7 +8,7 @@
 {% endset %}
 
 {% set componentName = componentPath %}
-{% set componentNameHuman = componentName | replace("-", " ") %}
+{% set componentNameHuman = componentName | replace("lbh-", "") | replace("-", " ") %}
 
 {% set htmlMarkup %}
   {% include componentName +"/"+ componentName +".njk" ignore missing %}
