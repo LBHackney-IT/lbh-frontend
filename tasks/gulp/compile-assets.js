@@ -59,7 +59,7 @@ gulp.task('scss:compile', () => {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'govuk-frontend',
+        basename: 'lbh-frontend',
         extname: '.min.css'
       })
     ))
@@ -93,7 +93,7 @@ gulp.task('scss:compile', () => {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'govuk-frontend-ie8',
+        basename: 'lbh-frontend-ie8',
         extname: '.min.css'
       })
     ))
@@ -153,7 +153,7 @@ gulp.task('js:compile', () => {
   ])
     .pipe(rollup({
       // Used to set the `window` global and UMD/AMD export name.
-      name: 'GOVUKFrontend',
+      name: 'LBHFrontend',
       // Legacy mode is required for IE8 support
       legacy: true,
       // UMD allows the published bundle to work in CommonJS and in the browser.
@@ -164,7 +164,7 @@ gulp.task('js:compile', () => {
     })))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'govuk-frontend',
+        basename: 'lbh-frontend',
         extname: '.min.js'
       })
     ))
