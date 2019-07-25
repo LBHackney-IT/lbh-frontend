@@ -9,8 +9,9 @@
 
   .lbh-breadcrumbs .govuk-breadcrumbs__list-item {
     // Create a chevron using a box with borders on two sides, rotated 45deg.
-    @include lbh-font($size: 14, $line-height: 18px);
     padding-left: govuk-px-to-rem(14);
+    font-size: govuk-px-to-rem(14);
+    line-height: govuk-px-to-rem(18);
 
     &:before {
       top: govuk-px-to-rem(1);
