@@ -1,0 +1,28 @@
+@import "../settings/all";
+@import "../tools/all";
+@import "../helpers/all";
+
+@include lbh-exports("lbh/overrides/typography") {
+
+  // Weights
+
+  .lbh-\!-font-weight-regular {
+    font-weight: 400 !important;
+  }
+
+  .lbh-\!-font-weight-bold {
+    font-weight: 700 !important;
+  }
+
+  .lbh-\!-font-weight-medium {
+    font-weight: 500 !important;
+  }
+
+  .lbh-\!-font-weight-light {
+    font-weight: 300 !important;
+  }
+
+  .lbh-\!-font-weight-extra-light {
+    font-weight: 200 !important;
+  }
+}

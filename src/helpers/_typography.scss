@@ -23,17 +23,6 @@
 ///
 /// @access public
 
-@mixin lbh-font($size, $weight: regular, $line-height: false) {
+@mixin lbh-font {
   @include lbh-typography-common;
-
-  @if $weight == regular {
-    @include govuk-typography-weight-regular;
-  } @else if $weight == bold {
-    @include govuk-typography-weight-bold;
-  }
-
-  @if $size {
-    font-size: govuk-px-to-rem($size);
-    line-height: govuk-px-to-rem($line-height);
-  }
 }

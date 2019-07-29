@@ -6,7 +6,6 @@
   $button-shadow-size: 2px;
 
   .lbh-button {
-    @include lbh-font($size: 19, $line-height: 23px);
     @include govuk-focusable;
 
     box-sizing: border-box;
@@ -20,6 +19,8 @@
     color: lbh-colour("white");
     background-color: lbh-colour("lbh-primary-button");
     box-shadow: 0 $button-shadow-size 0 0 lbh-colour("lbh-primary-inner-shadow");
+    font-size: govuk-px-to-rem(19);
+    line-height: govuk-px-to-rem(23);
     text-align: center;
     vertical-align: top;
     cursor: pointer;
