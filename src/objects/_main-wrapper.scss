@@ -2,7 +2,7 @@
 @import "../tools/all";
 @import "../helpers/all";
 
-// Example usage with Breadcrumbs, phase banners, back links:
+// Example usage with Breadcrumbs, back links:
 // <div class="govuk-width-container">
 //   <!-- Breadcrumbs, phase banners, back links are placed in here. -->
 //   <div class="govuk-main-wrapper">
@@ -11,7 +11,7 @@
 //   </div>
 // </div>
 //
-// Example usage without Breadcrumbs, phase banners, back links:
+// Example usage without Breadcrumbs, back links:
 // <div class="govuk-width-container">
 //   <div class="govuk-main-wrapper govuk-main-wrapper--l">
 //       <!-- Wrapper for the main content of your page which applies padding
@@ -37,7 +37,7 @@
   }
 }
 
-// Use govuk-main-wrapper--l when you page does not have Breadcrumbs, phase banners or back links
+// Use govuk-main-wrapper--l when you page does not have Breadcrumbs, or back links
 @mixin govuk-main-wrapper--l {
   @include govuk-responsive-padding(8, "top");
 }

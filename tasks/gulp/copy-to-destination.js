@@ -11,10 +11,9 @@ const yamlToJson = require('js-yaml')
 const path = require('path')
 const map = require('map-stream')
 const rename = require('gulp-rename')
-const pixrem = require('gulp-pixrem')
 
-let scssFiles = filter([configPaths.src + '**/*.scss'], { restore: true })
-let yamlFiles = filter([configPaths.components + '**/*.yaml'], { restore: true })
+const scssFiles = filter([configPaths.src + '**/*.scss'], { restore: true })
+const yamlFiles = filter([configPaths.components + '**/*.yaml'], { restore: true })
 
 gulp.task('copy-files', () => {
   return gulp.src([
@@ -26,15 +25,14 @@ gulp.task('copy-files', () => {
     '!' + configPaths.components + '**/__snapshots__/'
   ])
     .pipe(scssFiles)
-    .pipe(pixrem())
     .pipe(postcss([
       autoprefixer
     ], { syntax: require('postcss-scss') }))
     .pipe(scssFiles.restore)
     .pipe(yamlFiles)
     .pipe(map(function (file, done) {
-      let componentName = path.dirname(file.path).split(path.sep).slice(-1).toString()
-      let componentPath = path.join(configPaths.components, componentName, `${componentName}.yaml`)
+      const componentName = path.dirname(file.path).split(path.sep).slice(-1).toString()
+      const componentPath = path.join(configPaths.components, componentName, `${componentName}.yaml`)
       let yaml
       let json
       let paramsJson
@@ -62,5 +60,5 @@ gulp.task('copy-files', () => {
       path.extname = '.json'
     }))
     .pipe(yamlFiles.restore)
-    .pipe(gulp.dest(taskArguments.destination + '/'))
+    .pipe(gulp.dest(taskArguments.destination + '/lbh/'))
 })

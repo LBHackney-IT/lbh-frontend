@@ -162,16 +162,6 @@ describe(`http://localhost:${PORT}`, () => {
       })
     })
 
-    it('should have a Phase banner component', done => {
-      requestPath.get(templatePath, (err, res) => {
-        let $ = cheerio.load(res.body)
-        const $phaseBanner = $('.govuk-phase-banner')
-        const $text = $phaseBanner.find('.govuk-phase-banner__text')
-        expect($text.html()).toContain('C&apos;est un nouveau service - vos <a class="govuk-link" href="#">commentaires</a> nous aideront &#xE0; l&apos;am&#xE9;liorer.')
-        done(err)
-      })
-    })
-
     it('should have a custom Footer component', done => {
       requestPath.get(templatePath, (err, res) => {
         let $ = cheerio.load(res.body)
@@ -196,10 +186,8 @@ describe(`http://localhost:${PORT}`, () => {
       requestPath.get(templatePath, (err, res) => {
         let $ = cheerio.load(res.body)
         const $container = $('.govuk-width-container')
-        const $phaseBanner = $container.find('> .govuk-phase-banner')
         const $backLink = $container.find('> .govuk-back-link')
 
-        expect($phaseBanner.length).toBe(1)
         expect($backLink.length).toBe(1)
         done(err)
       })

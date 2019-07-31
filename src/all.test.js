@@ -30,23 +30,23 @@ describe('Hackney Frontend', () => {
     it('can be accessed via `HackneyFrontend`', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const GOVUKFrontendGlobal = await page.evaluate(() => window.GOVUKFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
 
-      expect(typeof GOVUKFrontendGlobal).toBe('object')
+      expect(typeof LBHFrontendGlobal).toBe('object')
     })
     it('exports `initAll` function', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const typeofInitAll = await page.evaluate(() => typeof window.GOVUKFrontend.initAll)
+      const typeofInitAll = await page.evaluate(() => typeof window.LBHFrontend.initAll)
 
       expect(typeofInitAll).toEqual('function')
     })
     it('exports Components', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const GOVUKFrontendGlobal = await page.evaluate(() => window.GOVUKFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
 
-      var components = Object.keys(GOVUKFrontendGlobal).filter(method => method !== 'initAll')
+      var components = Object.keys(LBHFrontendGlobal).filter(method => method !== 'initAll')
 
       // Ensure GOV.UK Frontend exports the expected components
       expect(components).toEqual([
@@ -64,14 +64,14 @@ describe('Hackney Frontend', () => {
     it('exported Components can be initialised', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const GOVUKFrontendGlobal = await page.evaluate(() => window.GOVUKFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
 
-      var components = Object.keys(GOVUKFrontendGlobal).filter(method => method !== 'initAll')
+      var components = Object.keys(LBHFrontendGlobal).filter(method => method !== 'initAll')
 
       // Check that all the components on the GOV.UK Frontend global can be initialised
       components.forEach(component => {
         page.evaluate(component => {
-          const Component = window.GOVUKFrontend[component]
+          const Component = window.LBHFrontend[component]
           const $module = document.documentElement
           new Component($module).init()
         }, component)

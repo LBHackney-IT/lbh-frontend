@@ -40,11 +40,10 @@
 {% endblock %}
 
 {% block header %}
-  {% include "../partials/banner.njk" %}
   <div class="header-test">{{ lbhHeader({}) }}</div>
 {% endblock %}
 
 {% block bodyEnd %}
   <script src="/public/all.js"></script>
-  <script>window.GOVUKFrontend.initAll()</script>
+  <script>window.LBHFrontend.initAll()</script>
 {% endblock %}

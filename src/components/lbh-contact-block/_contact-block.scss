@@ -1,0 +1,86 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/contact-block") {
+  .lbh-contact {
+    border-top: 4px solid lbh-colour("lbh-a01");
+
+    &__block {
+      padding-left: govuk-px-to-rem(36);
+    }
+
+    &__title {
+      position: relative;
+    }
+
+    &__title:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: govuk-px-to-rem(-36);
+      width: govuk-px-to-rem(20);
+      height: govuk-px-to-rem(20);
+      transform: translateY(-50%);
+    }
+
+    &__title--address:before {
+      background: url("../../assets/images/contact/address.svg");
+    }
+
+    &__title--email:before {
+      background: url("../../assets/images/contact/email.svg");
+    }
+
+    &__title--telephone:before {
+      background: url("../../assets/images/contact/telephone.svg");
+    }
+
+    &__title--notes:before {
+      background: url("../../assets/images/contact/notes.svg");
+    }
+
+    &__title--opening-times:before {
+      background: url("../../assets/images/contact/opening-times.svg");
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &__list-item {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__address,
+    &__email,
+    &__telephone,
+    &__list-item {
+      @extend %lbh-body-s;
+    }
+
+    &__address span {
+      display: block;
+    }
+
+    &__address span:first-child {
+      font-weight: $lbh-font-weight-medium;
+    }
+
+    &__email,
+    &__telephone {
+      color: lbh-colour("black");
+      text-decoration: none;
+      cursor: default;
+    }
+
+    &__map {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}

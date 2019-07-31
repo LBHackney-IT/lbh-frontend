@@ -10,13 +10,14 @@ const del = require('del')
 // ------------------------------------------------------
 
 gulp.task('clean', () => {
-  let destination = taskArguments.destination
+  const destination = taskArguments.destination
 
   if (destination === 'package') {
     return del([
       `${destination}/**`,
       `!${destination}`,
       `!${destination}/package.json`,
+      `!${destination}/lbh-prototype-kit.config.json`,
       `!${destination}/README.md`
     ])
   } else {

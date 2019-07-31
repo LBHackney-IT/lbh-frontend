@@ -21,8 +21,8 @@ const appViews = [
   configPaths.components,
   configPaths.src,
   configPaths.node_modules,
-  'node_modules/govuk-frontend/',
-  'node_modules/govuk-frontend/components/'
+  'node_modules/govuk-frontend/govuk/',
+  'node_modules/govuk-frontend/govuk/components/'
 ]
 
 module.exports = (options) => {
@@ -62,18 +62,15 @@ module.exports = (options) => {
   app.use('/node_modules', express.static(configPaths.node_modules))
 
   // serve html5-shiv from node modules
-  app.use('node_modules/govuk-frontend/vendor/html5-shiv/', express.static('node_modules/html5shiv/dist/'))
+  app.use('node_modules/govuk-frontend/govuk/vendor/html5-shiv/', express.static('node_modules/html5shiv/dist/'))
 
   // serve legacy code from node node modules
-  app.use('node_modules/govuk-frontend/vendor/govuk_template/', express.static('node_modules/govuk_template_jinja/assets/'))
+  app.use('node_modules/govuk-frontend/govuk/vendor/govuk_template/', express.static('node_modules/govuk_template_jinja/assets/'))
 
   app.use('/assets', express.static(path.join(configPaths.src, 'assets')))
 
   // Turn form POSTs into data that can be used for validation.
   app.use(bodyParser.urlencoded({ extended: true }))
-
-  // Handle the banner component serverside.
-  require('./banner.js')(app)
 
   // Define middleware for all routes
   app.use('*', function (request, response, next) {

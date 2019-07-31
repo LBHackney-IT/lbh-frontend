@@ -17,6 +17,7 @@
     line-height: govuk-px-to-rem(38);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(60);
       font-size: govuk-px-to-rem(48);
       line-height: govuk-px-to-rem(58);
     }
@@ -37,6 +38,7 @@
     line-height: govuk-px-to-rem(29);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(48);
       font-size: govuk-px-to-rem(30);
       line-height: govuk-px-to-rem(36);
     }
@@ -57,6 +59,7 @@
     line-height: govuk-px-to-rem(24);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(36);
       font-size: govuk-px-to-rem(24);
       line-height: govuk-px-to-rem(29);
     }
@@ -77,6 +80,7 @@
     line-height: govuk-px-to-rem(22);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(24);
       font-size: govuk-px-to-rem(20);
       line-height: govuk-px-to-rem(24);
     }
@@ -97,6 +101,7 @@
     line-height: govuk-px-to-rem(19);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(18);
       line-height: govuk-px-to-rem(22);
     }
@@ -117,6 +122,7 @@
     line-height: govuk-px-to-rem(17);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(16);
       line-height: govuk-px-to-rem(19);
     }
@@ -129,7 +135,7 @@
   %lbh-heading-large-light {
     @include lbh-font;
     display: block;
-    margin-top: 0;
+    margin-top: govuk-px-to-rem(36);
     // @include lbh-responsive-margin(4, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
@@ -160,6 +166,7 @@
     line-height: govuk-px-to-rem(23);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(24);
       font-weight: $lbh-font-weight-light;
       line-height: govuk-px-to-rem(29);
@@ -180,6 +187,7 @@
     line-height: govuk-px-to-rem(19);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(19);
       line-height: govuk-px-to-rem(23);
     }
@@ -199,6 +207,7 @@
     line-height: govuk-px-to-rem(16);
 
     @include govuk-media-query($from: tablet) {
+      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(16);
       line-height: govuk-px-to-rem(19);
     }

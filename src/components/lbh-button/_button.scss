@@ -6,8 +6,6 @@
   $button-shadow-size: 2px;
 
   .lbh-button {
-    @include govuk-focusable;
-
     box-sizing: border-box;
     display: inline-block;
     position: relative;

@@ -1,0 +1,105 @@
+params:
+- name: title
+  type: string
+  required: false
+  description: Title of the contact block section
+- name: showSocial
+  type: boolean
+  required: true
+  description: Controls whether or not to show the "Follow us on:" title along with social links
+- name: twitterLink
+  type: string
+  required: false
+  description: href attribute for twitter link
+- name: facebookLink
+  type: string
+  required: false
+  description: href attribute for facebook link
+- name: youtubeLink
+  type: string
+  required: false
+  description: href attribute for youtube link
+- name: instagramLink
+  type: string
+  required: false
+  description: href attribute for instagram link
+- name: address
+  type: html
+  required: false
+  description: Contact address
+- name: telephones
+  type: array
+  required: false
+  description: Contact telephone numbers
+  params:
+    name: telephone
+    type: string
+    required: false
+    description: Contact telephone number
+- name: emails
+  type: array
+  required: false
+  description: Contact email addresses
+  params:
+    name: email
+    type: string
+    required: false
+    description: Contact email address
+- name: openingTimes
+  type: array
+  required: false
+  description: Contact opening times
+  params:
+    name: openingTimeEntry
+    type: html
+    required: false
+    description: One line/rule around opening times
+- name: notes
+  type: array
+  required: false
+  description: Contact notes
+  params:
+    name: note
+    type: string
+    required: false
+    description: One note
+- name: showMap
+  type: boolean
+  required: false
+  description: Whether or not to show map
+- name: directionLink
+  type: string
+  required: false
+  description: Link to view directions on Google Maps
+
+examples:
+- name: default
+  data:
+    title: 'Service Name Centre'
+    showSocial: true
+    twitterLink: 'https://twitter.com/hackneycouncil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
+    facebookLink: 'https://en-gb.facebook.com/hackneycouncil/'
+    youtubeLink: 'https://www.youtube.com/user/hackneycouncil'
+    instagramLink: 'https://www.instagram.com/hackneycouncil/?hl=en'
+    address: <span>Service Centre</span><span>1 Hillman Street</span><span>E8 1DY</span>
+    telephones:
+      - telephone: '020 8356 3000'
+      - telephone: '020 8356 3736'
+    emails:
+      - email: 'iamanemail@hackney.gov.uk'
+      - email: 'iamanemail@hackney.gov.uk'
+    openingTimes:
+      - openingTimeEntry: "Monday: Closed"
+      - openingTimeEntry: "Tuesday: 9:30am - 5:30pm"
+      - openingTimeEntry: "Wednesday: 9:30am - 5:30pm"
+      - openingTimeEntry: "Thursday: 9:30am - 8:00pm"
+      - openingTimeEntry: "Friday: 9:30am - 5:30pm"
+      - openingTimeEntry: "Saturday: 10:00am - 5:30pm"
+      - openingTimeEntry: "Sunday: Closed"
+    notes:
+      - note: Visitor centre open daily 10am-3pm except public holidays.
+    showMap: true
+    mapAccessToken: 'pk.eyJ1IjoibGJoZWxld2lzIiwiYSI6ImNqeXJkN25uNjA5M3Uzb251bWVyejJ3YW8ifQ.uzO8I54w64U6QkNknW32FA'
+    mapMinZoom: 2
+    directionLink:
+  

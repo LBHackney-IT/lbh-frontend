@@ -3,7 +3,6 @@
 {% from "back-link/macro.njk" import govukBackLink %}
 {% from "skip-link/macro.njk" import govukSkipLink %}
 {% from "header/macro.njk" import lbhHeader %}
-{% from "phase-banner/macro.njk" import govukPhaseBanner %}
 {% from "footer/macro.njk" import govukFooter %}
 
 {% extends "template.njk" %}
@@ -83,12 +82,6 @@
 
 {% block beforeContent %}
   <!-- block:beforeContent -->
-  {{ govukPhaseBanner({
-    tag: {
-      text: "alpha"
-    },
-    html: 'C\'est un nouveau service - vos <a class="govuk-link" href="#">commentaires</a> nous aideront à l\'améliorer.'
-  }) }}
   {{ govukBackLink({
     "href": "/"
   }) }}

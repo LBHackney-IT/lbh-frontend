@@ -37,7 +37,7 @@ imports) if you want to override GOV.UK Frontend with your own styles.
 To import add the below to your Sass file:
 
   ```scss
-  @import "node_modules/govuk-frontend/all";
+  @import "node_modules/govuk-frontend/govuk/all";
   @import "node_modules/hackney-frontend/all";
   ```
 
@@ -57,7 +57,7 @@ You can include Javascript for all components either by copying the `all.js` fro
 Next you need to initialise the script by adding:
 
 ```html
-<script>window.GOVUKFrontend.initAll()</script>
+<script>window.LBHFrontend.initAll()</script>
 ```
 
 [More details on importing Javascript and advanced options](https://github.com/alphagov/govuk-frontend/blob/master/docs/installation/installing-with-npm.md#importing-javascript)
