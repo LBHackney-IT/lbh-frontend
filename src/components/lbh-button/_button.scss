@@ -14,7 +14,7 @@
     @include govuk-responsive-margin(6, "bottom", $adjustment: $button-shadow-size);
     padding: lbh-spacing(12) lbh-spacing(24);
     border: 0;
-    color: lbh-colour("white");
+    color: lbh-colour("lbh-white");
     background-color: lbh-colour("lbh-primary-button");
     box-shadow: 0 $button-shadow-size 0 0 lbh-colour("lbh-primary-inner-shadow");
     font-size: govuk-px-to-rem(19);
@@ -37,7 +37,7 @@
     &:visited,
     &:active,
     &:hover {
-      color: lbh-colour("white");
+      color: lbh-colour("lbh-white");
       text-decoration: none;
     }
 
@@ -48,7 +48,7 @@
     // text when focussed.
     @include govuk-compatibility(govuk_template) {
       &:link:focus {
-        color: lbh-colour("white");
+        color: lbh-colour("lbh-white");
       }
     }
 

@@ -5,7 +5,7 @@
 @include lbh-exports("lbh/component/breadcrumbs") {
 
   // Colour of chevron
-  $chevron-border-colour: lbh-colour("grey-2");
+  $chevron-border-colour: lbh-colour("lbh-grey-2");
 
   .lbh-breadcrumbs .govuk-breadcrumbs__list-item {
     // Create a chevron using a box with borders on two sides, rotated 45deg.

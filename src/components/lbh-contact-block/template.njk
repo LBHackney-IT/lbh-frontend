@@ -1,34 +1,54 @@
 <section class="lbh-contact">
   {% if params.title %}
-    <h2 class="lbh-heading-large-light">{{ params.title }}</h2>
+    <h2 class="lbh-heading-large-light lbh-contact__title">{{ params.title }}</h2>
   {% endif %}
   {% if params.showSocial %}
     <div class="lbh-contact__social">
-      <h4 class="lbh-heading-h4">Follow us on:</h4>
+      <h4 class="lbh-heading-h4 lbh-contact__social-title">Follow us on:</h4>
       {% if params.twitterLink %}
-        <a class="lbh-contact__social-link lbh-contact__social-link--twitter" href="{{params.twitterLink}}" title="Follow us on Twitter">Twitter</a>
+        <a class="lbh-contact__social-link lbh-contact__social-link--twitter" href="{{params.twitterLink}}" title="Follow us on Twitter" target="_blank">
+          <span class="lbh-contact__social-link-text">Twitter</span>
+          <span class="lbh-contact__social-link-icon">
+            {% include '../../assets/images/social/twitter.svg' %}
+          </span>
+        </a>
       {% endif %}
       {% if params.facebookLink %}
-        <a class="lbh-contact__social-link lbh-contact__social-link--facebook" href="{{params.facebookLink}}" title="Follow us on Facebook">Facebook</a>
+        <a class="lbh-contact__social-link lbh-contact__social-link--facebook" href="{{params.facebookLink}}" title="Follow us on Facebook" target="_blank">
+          <span class="lbh-contact__social-link-text">Facebook</span>
+          <span class="lbh-contact__social-link-icon">
+            {% include '../../assets/images/social/facebook.svg' %}
+          </span>
+        </a>
       {% endif %}
       {% if params.youtubeLink %}
-        <a class="lbh-contact__social-link lbh-contact__social-link--youtube" href="{{params.youtubeLink}}" title="Follow us on YouTube">YouTube</a>
+        <a class="lbh-contact__social-link lbh-contact__social-link--youtube" href="{{params.youtubeLink}}" title="Follow us on YouTube" target="_blank">
+          <span class="lbh-contact__social-link-text">YouTube</span>
+          <span class="lbh-contact__social-link-icon">
+            {% include '../../assets/images/social/youtube.svg' %}
+          </span>
+        </a>
       {% endif %}
       {% if params.instagramLink %}
-        <a class="lbh-contact__social-link lbh-contact__social-link--instagram" href="{{params.instagramLink}}" title="Follow us on Instagram">Instagram</a>
+        <a class="lbh-contact__social-link lbh-contact__social-link--instagram" href="{{params.instagramLink}}" title="Follow us on Instagram" target="_blank">
+          <span class="lbh-contact__social-link-text">Instagram</span>
+          <span class="lbh-contact__social-link-icon">
+            {% include '../../assets/images/social/instagram.svg' %}
+          </span>
+        </a>
       {% endif %}
     </div>
   {% endif %}
   <div class="lbh-contact__details">
     {% if params.address %}
       <div class="lbh-contact__block">
-        <h4 class="lbh-heading-h4 lbh-contact__title lbh-contact__title--address">Address<h4>
+        <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--address">Address</h4>
         <div class="lbh-contact__address">{{params.address|safe}}</div>
       </div>
     {% endif %}
     {% if params.telephones %}
       <div class="lbh-contact__block">
-        <h4 class="lbh-heading-h4 lbh-contact__title lbh-contact__title--telephone">Telephone<h4>
+        <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--telephone">Telephone</h4>
         {% if params.telephones | length > 1 %}
           <ul class="lbh-contact__list">
             {% for tel in params.telephones %}
@@ -38,7 +58,7 @@
             {% endfor %}
           </ul>
         {% else %}
-          {% for telephone in params.telephone %}
+          {% for telephone in params.telephones %}
             <a href="tel:{{tel.telephone}}" class="lbh-contact__telephone" title="Call us on {{tel.telephone}}">{{tel.telephone}}</a>
           {% endfor %}
         {% endif %}
@@ -46,7 +66,7 @@
     {% endif %}
     {% if params.emails %}
       <div class="lbh-contact__block">
-        <h4 class="lbh-heading-h4 lbh-contact__title lbh-contact__title--email">Email<h4>
+        <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--email">Email</h4>
         {% if params.emails | length > 1 %}
           <ul class="lbh-contact__list">
             {% for email in params.emails %}
@@ -56,7 +76,7 @@
             {% endfor %}
           </ul>
         {% else %}
-          {% for email in params.email %}
+          {% for email in params.emails %}
             <a href="mailto:{{email.email}}" class="lbh-contact__email" title="Email us on {{email.email}}">{{email.email}}</a>
           {% endfor %}
         {% endif %}
@@ -64,7 +84,7 @@
     {% endif %}
     {% if params.openingTimes %}
       <div class="lbh-contact__block">
-        <h4 class="lbh-heading-h4 lbh-contact__title lbh-contact__title--opening-times">Opening times<h4>
+        <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--opening-times">Opening times</h4>
         <ul class="lbh-contact__list">
           {% for op in params.openingTimes %}
             <li class="lbh-contact__list-item">{{op.openingTimeEntry}}</li>
@@ -74,7 +94,7 @@
     {% endif %}
     {% if params.notes %}
       <div class="lbh-contact__block">
-        <h4 class="lbh-heading-h4 lbh-contact__title lbh-contact__title--notes">Notes<h4>
+        <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--notes">Notes</h4>
         <ul class="lbh-contact__list">
           {% for note in params.notes %}
             <li class="lbh-contact__list-item">{{note.note}}</li>
@@ -84,10 +104,14 @@
     {% endif %}
   </div>
   {% if params.showMap %}
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" type="text/javascript"></script>
     <div class="lbh-contact__map-container">
-      <div class="lbh-contact__map" id="map" data-module="lbh-map"></div>
+      <div class="lbh-contact__map" id="map" data-module="lbh-map" data-access-token="{{ params.mapAccessToken }}" data-marker-lat="{{ params.markerLat}}" data-marker-lng="{{ params.markerLng }}"></div>
       {% if params.directionLink %}
-        <a href="{{params.directionLink}}" class="lbh-contact__directions" rel="external" title="View directions on Google Maps">Get directions</a>
+        <div class="lbh-contact__directions">
+          <a href="{{params.directionLink}}" class="lbh-link" rel="external" title="View directions on Google Maps">Get directions</a>
+        </div>
       {% endif %}
     </div>
   {% endif %}

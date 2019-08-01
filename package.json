@@ -77,6 +77,8 @@
     "puppeteer": "^1.14.0",
     "recursive-readdir": "^2.2.2",
     "request": "^2.88.0",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "sass-color-helpers": "^2.1.1",
     "sassdoc": "^2.7.0",
     "shuffle-seed": "^1.1.6",

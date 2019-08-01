@@ -72,7 +72,7 @@
   %lbh-heading-h4 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
+    margin-top: govuk-px-to-rem(24);
     // @include lbh-responsive-margin(4, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(18);
@@ -80,7 +80,6 @@
     line-height: govuk-px-to-rem(22);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(24);
       font-size: govuk-px-to-rem(20);
       line-height: govuk-px-to-rem(24);
     }
@@ -144,7 +143,7 @@
 
     @include govuk-media-query($from: tablet) {
       font-size: govuk-px-to-rem(36);
-      line-height: govuk-px-to-rem(43);
+      line-height: govuk-px-to-rem(48);
     }
   }
 
@@ -215,6 +214,20 @@
 
   .lbh-body-s {
     @extend %lbh-body-s;
+  }
+
+  %lbh-body-xs {
+    @include lbh-font;
+    margin-top: 0;
+    // @include lbh-responsive-margin(6, "bottom");
+    color: $lbh-text-colour;
+    font-size: govuk-px-to-rem(14);
+    font-weight: $lbh-font-weight-regular;
+    line-height: govuk-px-to-rem(23);
+  }
+
+  .lbh-body-xs {
+    @extend %lbh-body-xs;
   }
 
   // Usage aliases

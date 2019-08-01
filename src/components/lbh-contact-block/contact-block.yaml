@@ -67,6 +67,58 @@ params:
   type: boolean
   required: false
   description: Whether or not to show map
+- name: accessToken
+  type: string
+  required: false
+  description: Mapbox Access Token. Must be included if showMap is set to true
+- name: markerLat
+  type: number
+  required: false
+  description: Latitude of the map marker
+- name: markerLng
+  type: number
+  required: false
+  description: Longitude of the map marker
+- name: centreLat
+  type: number
+  required: false
+  description: Latitude of the map centre - if left empty this is set to the latitude of the map marker, if there is no map marker it is set to the centre of Hackney borough
+- name: centreLng
+  type: number
+  required: false
+  description: Longitude of the map centre - if left empty this is set to the longitude of the map marker, if there is no map marker it is set to the centre of Hackney borough
+- name: maxZoom
+  type: integer
+  required: false
+  description: Max zoom of the map. By default this is set to 19
+- name: minZoom
+  type: integer
+  required: false
+  description: Min zoom of the map. By default this is set to 12
+- name: initialZoom
+  type: integer
+  required: false
+  description: Initial zoom of the map. By default this is set to 15
+- name: minLat
+  type: number
+  required: false
+  description: Use this in conjunction with minLng, maxLat and maxLng to set bounds for the map
+- name: minLng
+  type: number
+  required: false
+  description: Use this in conjunction with minLat, maxLat and maxLng to set bounds for the map
+- name: maxLat
+  type: number
+  required: false
+  description: Use this in conjunction with minLat, minLng and maxLng to set bounds for the map
+- name: maxLng
+  type: number
+  required: false
+  description: Use this in conjunction with minLat, minLng and maxLat to set bounds for the map
+- name: showZoomControl
+  type: boolean
+  required: false
+  description: Set to false if you want to hide the zoom controls from the top right hand side of the map
 - name: directionLink
   type: string
   required: false
@@ -100,6 +152,59 @@ examples:
       - note: Visitor centre open daily 10am-3pm except public holidays.
     showMap: true
     mapAccessToken: 'pk.eyJ1IjoibGJoZWxld2lzIiwiYSI6ImNqeXJkN25uNjA5M3Uzb251bWVyejJ3YW8ifQ.uzO8I54w64U6QkNknW32FA'
+    markerLat: 51.545386
+    markerLng: -0.057069
     mapMinZoom: 2
-    directionLink:
-  
+    directionLink: 'https://goo.gl/maps/YHtCx2nqP2o57BZi6'
+- name: long
+  data:
+    title: 'South Lodge'
+    showSocial: true
+    twitterLink: 'https://twitter.com/hackneycouncil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
+    facebookLink: 'https://en-gb.facebook.com/hackneycouncil/'
+    youtubeLink: 'https://www.youtube.com/user/hackneycouncil'
+    instagramLink: 'https://www.instagram.com/hackneycouncil/?hl=en'
+    address: <span>South Lodge</span><span>Abney Park Cemetery</span><span>Stoke Newington High Street</span><span>N16 0LH</span>
+    telephones:
+      - telephone: '020 8356 3000'
+      - telephone: '020 8356 3736'
+    emails:
+      - email: 'hmuseum@hackney.gov.uk'
+      - email: 'press@hackney.gov.uk'
+    openingTimes:
+      - openingTimeEntry: "1 Jan to 13 Jan: 4:30pm"
+      - openingTimeEntry: "14 Jan to 27 Jan: 5pm"
+      - openingTimeEntry: "28 Jan to 10 Feb: 5:30pm"
+      - openingTimeEntry: "11 Feb to 3 Mar: 6pm"
+      - openingTimeEntry: "4 Mar to 17 Mar: 6:30pm"
+      - openingTimeEntry: "18 Mar to 30 Mar: 7pm"
+      - openingTimeEntry: "31 Mar to 7 Apr: 8pm"
+      - openingTimeEntry: "8 Apr to 21 Apr: 8:30pm"
+      - openingTimeEntry: "22 Apr to 12 May: 9pm"
+      - openingTimeEntry: "13 May to 4 Aug: 9:30pm"
+      - openingTimeEntry: "5 Aug to 18 Aug: 9pm"
+      - openingTimeEntry: "19 Aug to 1 Sept: 8:30pm"
+      - openingTimeEntry: "2 Sept to 15 Sept: 8pm"
+      - openingTimeEntry: "16 Sept to 29 Sept: 7:30pm"
+      - openingTimeEntry: "30 Sept to 13 Oct: 7pm"
+      - openingTimeEntry: "14 Oct to 26 Oct: 6:30pm"
+      - openingTimeEntry: "27 Oct to 24 Nov: 5pm"
+      - openingTimeEntry: "25 Nov to 31 Dec: 4:30pm"
+    showMap: true
+    mapAccessToken: 'pk.eyJ1IjoibGJoZWxld2lzIiwiYSI6ImNqeXJkN25uNjA5M3Uzb251bWVyejJ3YW8ifQ.uzO8I54w64U6QkNknW32FA'
+    markerLat: 51.545386
+    markerLng: -0.057069
+    mapMinZoom: 2
+    directionLink: 'https://goo.gl/maps/YHtCx2nqP2o57BZi6'
+- name: no-map
+  data:
+    title: 'Service Centre'
+    showSocial: false
+    telephones:
+      - telephone: '020 8356 3000'
+    emails:
+      - email: 'RepairsRCC@hackney.gov.uk'
+    openingTimes:
+      - openingTimeEntry: "Mon to Fri 8am - 7pm"
+      - openingTimeEntry: "Sat 9am - 1pm"
+    showMap: false

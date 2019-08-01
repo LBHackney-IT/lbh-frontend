@@ -8,7 +8,7 @@
     width: 100%;
     height: govuk-px-to-rem(66);
     margin-bottom: 6px;
-    background-color: lbh-colour("black");
+    background-color: lbh-colour("lbh-black");
 
     @include mq ($from: desktop) {
       height: govuk-px-to-rem(76);
@@ -78,7 +78,7 @@
     margin-right: govuk-px-to-rem(8);
     padding: govuk-px-to-rem(2) govuk-px-to-rem(12) 0;
     border-bottom: 2px solid lbh-colour("lbh-primary-inner-shadow");
-    color: lbh-colour("white");
+    color: lbh-colour("lbh-white");
     background: lbh-colour("lbh-primary-button");
     font-family: "Montserrat";
     font-size: govuk-px-to-rem(12px);
