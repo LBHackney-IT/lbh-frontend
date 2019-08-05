@@ -20,7 +20,6 @@ function Map ($module) {
 }
 
 Map.prototype.initLeaflet = function () {
-  console.log(this.initialZoom)
   this.map = L.map(this.moduleId, {
     zoomControl: false,
     maxZoom: this.maxZoom,
