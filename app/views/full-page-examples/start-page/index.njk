@@ -1,7 +1,7 @@
 {# This example is based of the live "Apply online for a UK passport" start page: https://www.gov.uk/apply-renew-passport #}
 {% extends "_generic.njk" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "button/macro.njk" import govukButton %}
 {% from "tabs/macro.njk" import govukTabs %}
 
@@ -9,7 +9,7 @@
 {% block pageTitle %}GOV.UK - {{ pageTitle }}{% endblock %}
 
 {% block beforeContent %}
-  {{ lbhBreadcrumbs({
+  {{ govukBreadcrumbs({
     items: [
       {
         text: "Home",

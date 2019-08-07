@@ -2,7 +2,7 @@
 example: https://www.gov.uk/renew-driving-licence #}
 {% extends "govuk_template_jinja/views/layouts/govuk_template.html" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "inset-text/macro.njk" import govukInsetText %}
 {% from "tabs/macro.njk" import govukTabs %}
 
@@ -24,7 +24,7 @@ example: https://www.gov.uk/renew-driving-licence #}
   <main id="content" role="main">
     <div class="grid-row">
       <div class="column-two-thirds">
-        {{ lbhBreadcrumbs({
+        {{ govukBreadcrumbs({
           items: [
             {
               text: "Home",

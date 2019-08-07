@@ -1,14 +1,14 @@
 {# This example is based of the live "Service Manual - Technology" page: https://www.gov.uk/service-manual/technology #}
 {% extends "_generic.njk" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "accordion/macro.njk" import govukAccordion %}
 
 {% set pageTitle = "Technology - Service Manual" %}
 {% block pageTitle %}GOV.UK - {{ pageTitle }}{% endblock %}
 
 {% block beforeContent %}
-  {{ lbhBreadcrumbs({
+  {{ govukBreadcrumbs({
     items: [
       {
         text: "Service manual",
