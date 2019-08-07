@@ -1,0 +1,35 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/page-announcement") {
+  .lbh-page-announcement {
+    padding: govuk-px-to-rem(36) govuk-px-to-rem(36) govuk-px-to-rem(36) govuk-px-to-rem(24);
+    border: 1px solid lbh-colour("lbh-a03");
+    border-left: 6px solid lbh-colour("lbh-a03");
+    background: rgba(lbh-colour("lbh-a04"), .3);
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: govuk-px-to-rem(12);
+    }
+
+    &__content {
+      @extend %lbh-body-m;
+
+      a {
+        @extend %lbh-link;
+      }
+
+      ul {
+        @extend %govuk-list;
+        @extend %govuk-list--bullet;
+        @extend %lbh-body-m;
+      }
+
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
