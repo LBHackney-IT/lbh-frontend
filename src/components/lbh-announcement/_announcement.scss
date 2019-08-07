@@ -2,12 +2,16 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@include govuk-exports("lbh/component/site-announcement") {
-  .lbh-ite-announcement {
+@include govuk-exports("lbh/component/announcement") {
+  .lbh-announcement {
     padding: govuk-px-to-rem(36) 0;
     border-top: 1px solid lbh-colour("lbh-a03");
     border-bottom: 1px solid lbh-colour("lbh-a03");
-    background: rgba(lbh-colour("lbh-a04"), .5);
+    background: rgba(lbh-colour("lbh-a04"), .2);
+
+    &--site {
+      background: rgba(lbh-colour("lbh-a04"), .5);
+    }
 
     &__title {
       margin-top: 0;
