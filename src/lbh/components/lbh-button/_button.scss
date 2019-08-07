@@ -1,0 +1,20 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/button") {
+  .lbh-button {
+    @include lbh-font;
+    background: lbh-colour("lbh-a01");
+    font-size: govuk-px-to-rem(19);
+    font-weight: $lbh-font-weight-regular;
+    line-height: govuk-px-to-rem(23);
+
+    &--secondary {
+      border: 1px solid lbh-colour("lbh-a01");
+      color: lbh-colour("lbh-a01");
+      background: lbh-colour("lbh-white");
+      box-shadow: lbh-colour("lbh-secondary-inner-shadow") 0 2px 0 0;
+    }
+  }
+}
