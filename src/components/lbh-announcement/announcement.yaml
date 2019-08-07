@@ -7,15 +7,26 @@ params:
   type: html
   required: true
   description: Announcement content
+- name: isSiteWide
+  type: boolean
+  required: false
+  description: If true the announcement will be site wide. If false the announcement will be section wide.
 
 previewLayout: full-width
 
 examples:
-- name: default
+- name: Site wide
   data: 
-    title: Section-wide announcement
+    title: Site-wide announcement
     content: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+    isSiteWide: true
 - name: with link
+  data: 
+    title: Site-wide announcement
+    content: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <a href="#">Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+    isSiteWide: true
+- name: section wide
   data: 
     title: Section-wide announcement
     content: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <a href="#">Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+    isSiteWide: false
