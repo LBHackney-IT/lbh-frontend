@@ -45,7 +45,6 @@ describe('package/', () => {
 
       const additionalFilesNotInSrc = [
         'package.json',
-        'govuk-prototype-kit.config.json',
         '**/macro-options.json',
         'README.md'
       ]
@@ -84,8 +83,8 @@ describe('package/', () => {
     it('is not overwritten', () => {
       return readFile(path.join(configPaths.package, 'README.md'), 'utf8')
         .then(contents => {
-          // Look for H1 matching 'LBH Frontend' from existing README
-          expect(contents).toMatch(/^# LBH Frontend/)
+          // Look for H1 matching 'Hackney Frontend' from existing README
+          expect(contents).toMatch(/^# Hackney Frontend/)
         }).catch(error => {
           throw error
         })

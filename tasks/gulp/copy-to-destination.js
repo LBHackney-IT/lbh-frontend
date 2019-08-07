@@ -32,7 +32,8 @@ gulp.task('copy-files', () => {
     .pipe(yamlFiles)
     .pipe(map(function (file, done) {
       const componentName = path.dirname(file.path).split(path.sep).slice(-1).toString()
-      const componentPath = path.join(configPaths.components, componentName, `${componentName}.yaml`)
+      const componentNameNoPrefix = componentName.substr(4)
+      const componentPath = path.join(configPaths.components, componentName, `${componentNameNoPrefix}.yaml`)
       let yaml
       let json
       let paramsJson

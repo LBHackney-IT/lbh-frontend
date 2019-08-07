@@ -1,0 +1,182 @@
+[
+    {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "description": "Title of the contact block section"
+    },
+    {
+        "name": "showSocial",
+        "type": "boolean",
+        "required": true,
+        "description": "Controls whether or not to show the \"Follow us on:\" title along with social links"
+    },
+    {
+        "name": "twitterLink",
+        "type": "string",
+        "required": false,
+        "description": "href attribute for twitter link"
+    },
+    {
+        "name": "facebookLink",
+        "type": "string",
+        "required": false,
+        "description": "href attribute for facebook link"
+    },
+    {
+        "name": "youtubeLink",
+        "type": "string",
+        "required": false,
+        "description": "href attribute for youtube link"
+    },
+    {
+        "name": "instagramLink",
+        "type": "string",
+        "required": false,
+        "description": "href attribute for instagram link"
+    },
+    {
+        "name": "address",
+        "type": "html",
+        "required": false,
+        "description": "Contact address"
+    },
+    {
+        "name": "telephones",
+        "type": "array",
+        "required": false,
+        "description": "Contact telephone numbers",
+        "params": {
+            "name": "telephone",
+            "type": "string",
+            "required": false,
+            "description": "Contact telephone number"
+        }
+    },
+    {
+        "name": "emails",
+        "type": "array",
+        "required": false,
+        "description": "Contact email addresses",
+        "params": {
+            "name": "email",
+            "type": "string",
+            "required": false,
+            "description": "Contact email address"
+        }
+    },
+    {
+        "name": "openingTimes",
+        "type": "array",
+        "required": false,
+        "description": "Contact opening times",
+        "params": {
+            "name": "openingTimeEntry",
+            "type": "html",
+            "required": false,
+            "description": "One line/rule around opening times"
+        }
+    },
+    {
+        "name": "notes",
+        "type": "array",
+        "required": false,
+        "description": "Contact notes",
+        "params": {
+            "name": "note",
+            "type": "string",
+            "required": false,
+            "description": "One note"
+        }
+    },
+    {
+        "name": "showMap",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether or not to show map"
+    },
+    {
+        "name": "accessToken",
+        "type": "string",
+        "required": false,
+        "description": "Mapbox Access Token. Must be included if showMap is set to true"
+    },
+    {
+        "name": "markerLat",
+        "type": "number",
+        "required": false,
+        "description": "Latitude of the map marker"
+    },
+    {
+        "name": "markerLng",
+        "type": "number",
+        "required": false,
+        "description": "Longitude of the map marker"
+    },
+    {
+        "name": "centreLat",
+        "type": "number",
+        "required": false,
+        "description": "Latitude of the map centre - if left empty this is set to the latitude of the map marker, if there is no map marker it is set to the centre of Hackney borough"
+    },
+    {
+        "name": "centreLng",
+        "type": "number",
+        "required": false,
+        "description": "Longitude of the map centre - if left empty this is set to the longitude of the map marker, if there is no map marker it is set to the centre of Hackney borough"
+    },
+    {
+        "name": "maxZoom",
+        "type": "integer",
+        "required": false,
+        "description": "Max zoom of the map. By default this is set to 19"
+    },
+    {
+        "name": "minZoom",
+        "type": "integer",
+        "required": false,
+        "description": "Min zoom of the map. By default this is set to 12"
+    },
+    {
+        "name": "initialZoom",
+        "type": "integer",
+        "required": false,
+        "description": "Initial zoom of the map. By default this is set to 15"
+    },
+    {
+        "name": "minLat",
+        "type": "number",
+        "required": false,
+        "description": "Use this in conjunction with minLng, maxLat and maxLng to set bounds for the map"
+    },
+    {
+        "name": "minLng",
+        "type": "number",
+        "required": false,
+        "description": "Use this in conjunction with minLat, maxLat and maxLng to set bounds for the map"
+    },
+    {
+        "name": "maxLat",
+        "type": "number",
+        "required": false,
+        "description": "Use this in conjunction with minLat, minLng and maxLng to set bounds for the map"
+    },
+    {
+        "name": "maxLng",
+        "type": "number",
+        "required": false,
+        "description": "Use this in conjunction with minLat, minLng and maxLat to set bounds for the map"
+    },
+    {
+        "name": "showZoomControl",
+        "type": "boolean",
+        "required": false,
+        "description": "Set to false if you want to hide the zoom controls from the top right hand side of the map"
+    },
+    {
+        "name": "directionLink",
+        "type": "string",
+        "required": false,
+        "description": "Link to view directions on Google Maps"
+    }
+]

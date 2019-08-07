@@ -1,0 +1,20 @@
+[
+    {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Announcement title"
+    },
+    {
+        "name": "content",
+        "type": "html",
+        "required": true,
+        "description": "Announcement content"
+    },
+    {
+        "name": "isSiteWide",
+        "type": "boolean",
+        "required": false,
+        "description": "If true the announcement will be site wide. If false the announcement will be section wide."
+    }
+]

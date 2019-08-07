@@ -17,7 +17,6 @@ gulp.task('clean', () => {
       `${destination}/**`,
       `!${destination}`,
       `!${destination}/package.json`,
-      `!${destination}/lbh-prototype-kit.config.json`,
       `!${destination}/README.md`
     ])
   } else {

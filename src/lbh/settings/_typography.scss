@@ -1,0 +1,56 @@
+////
+/// @group settings/typography
+////
+
+// =========================================================
+// Font families
+// =========================================================
+
+/// Font families to use for all typography on screen media
+///
+/// @type List
+/// @access public
+
+$lbh-font-family: Montserrat, sans-serif !default;
+
+
+/// Font families to use for print media
+///
+/// @type List
+/// @access public
+
+$lbh-font-family-print: sans-serif !default;
+
+// =========================================================
+// Font weights
+// =========================================================
+
+/// Font weight for regular typography
+///
+/// @type Number
+/// @access public
+$lbh-font-weight-regular: 400 !default;
+
+/// Font weight for bold typography
+///
+/// @type Number
+/// @access public
+$lbh-font-weight-bold: 700 !default;
+
+/// Font weight for medium typography
+///
+/// @type Number
+/// @access public
+$lbh-font-weight-medium: 500 !default;
+
+/// Font weight for light typography
+///
+/// @type Number
+/// @access public
+$lbh-font-weight-light: 300 !default;
+
+/// Font weight for extra light typography
+///
+/// @type Number
+/// @access public
+$lbh-font-weight-extra-light: 200 !default;
