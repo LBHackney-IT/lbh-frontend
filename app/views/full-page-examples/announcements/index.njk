@@ -1,7 +1,7 @@
 {# This example is based on the  "2018’s oddest requests from Brits abroad: ‘Strictly’, vampires and sausages" publication: https://www.gov.uk/government/news/strictly-vampires-and-sausages-2018s-oddest-requests-from-brits-abroad #}
 {% extends "_generic.njk" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "inset-text/macro.njk" import govukInsetText %}
 
 {% set pageTitle = "2018’s oddest requests from Brits abroad: ‘Strictly’, vampires and sausages" %}
@@ -48,7 +48,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {{ lbhBreadcrumbs({
+  {{ govukBreadcrumbs({
     items: [
       {
         text: "Home",

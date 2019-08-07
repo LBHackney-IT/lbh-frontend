@@ -1,7 +1,7 @@
 {# This example is based of the live "UK bank holidays" page: https://www.gov.uk/bank-holidays #}
 {% extends "_generic.njk" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "tabs/macro.njk" import govukTabs %}
 {% from "panel/macro.njk" import govukPanel %}
 {% from "table/macro.njk" import govukTable %}
@@ -10,7 +10,7 @@
 {% block pageTitle %}GOV.UK - {{ pageTitle }}{% endblock %}
 
 {% block beforeContent %}
-  {{ lbhBreadcrumbs({
+  {{ govukBreadcrumbs({
     items: [
       {
         text: "Home",

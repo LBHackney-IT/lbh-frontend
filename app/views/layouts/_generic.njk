@@ -1,6 +1,6 @@
 {% extends "template.njk" %}
 
-{% from "lbh-header/macro.njk" import lbhHeader -%}
+{% from "header/macro.njk" import govukHeader -%}
 
 {% block head %}
 
@@ -40,7 +40,7 @@
 {% endblock %}
 
 {% block header %}
-  <div class="header-test">{{ lbhHeader({}) }}</div>
+  <div class="header-test">{{ govukHeader({}) }}</div>
 {% endblock %}
 
 {% block bodyEnd %}

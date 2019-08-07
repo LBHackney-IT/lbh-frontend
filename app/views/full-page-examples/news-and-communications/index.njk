@@ -1,7 +1,7 @@
 {# This example is based of the live "News and communications" GOV.UK page: https://www.gov.uk/news-and-communications #}
 {% extends "_generic.njk" %}
 
-{% from "breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "select/macro.njk" import govukSelect %}
 {% from "radios/macro.njk" import govukRadios %}
 {% from "checkboxes/macro.njk" import govukCheckboxes %}
@@ -39,7 +39,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-    {{ lbhBreadcrumbs({
+    {{ govukBreadcrumbs({
         items: [
             {
                 text: "Home",
