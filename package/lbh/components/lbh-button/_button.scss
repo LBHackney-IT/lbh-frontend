@@ -1,0 +1,81 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/button") {
+  .lbh-button {
+    @include lbh-font;
+    padding: govuk-px-to-rem(12) govuk-px-to-rem(22) govuk-px-to-rem(10);
+    border-radius: 4px;
+    background: lbh-colour("lbh-a01");
+    font-size: govuk-px-to-rem(19);
+    font-weight: $lbh-font-weight-regular;
+    line-height: govuk-px-to-rem(23);
+
+    &:not(&--warning):not(&--disabled):not([disabled]):hover {
+      background: lbh-colour("lbh-primary-hover");
+    }
+
+    &:disabled,
+    &:hover[disabled],
+    &--disabled,
+    &--disabled:hover {
+      opacity: 1;
+      background: lbh-colour("lbh-primary-disabled");
+      box-shadow: 0 2px 0 lbh-colour("lbh-primary-disabled-inner-shadow");
+    }
+
+    &--start {
+      padding: govuk-px-to-rem(15) govuk-px-to-rem(24) govuk-px-to-rem(13);
+      font-size: govuk-px-to-rem(27);
+      font-weight: $lbh-font-weight-medium;
+      line-height: govuk-px-to-rem(30);
+
+      .govuk-button__start-icon {
+        margin-left: govuk-px-to-rem(24);
+      }
+    }
+
+    &--secondary,
+    &--secondary:link,
+    &--secondary:visited {
+      padding: govuk-px-to-rem(11) govuk-px-to-rem(22) govuk-px-to-rem(11);
+      border: 1px solid lbh-colour("lbh-a01");
+      color: lbh-colour("lbh-a01");
+      background: lbh-colour("lbh-white");
+      box-shadow: inset lbh-colour("lbh-secondary-inner-shadow") 0 -2px 0 0;
+
+      &:hover {
+        color: lbh-colour("lbh-white");
+        background: lbh-colour("lbh-primary-button");
+      }
+
+      &:disabled,
+      &.lbh-button--disabled,
+      &:hover[disabled],
+      &.lbh-button--disabled:hover {
+        opacity: 1;
+        color: lbh-colour("lbh-grey-1");
+        background: lbh-colour("lbh-secondary-disabled");
+        box-shadow: inset lbh-colour("lbh-primary-inner-shadow") 0 -2px 0;
+      }
+    }
+
+    &--warning {
+      &,
+      &[disabled],
+      &:hover[disabled] {
+        background: lbh-colour("lbh-error");
+      }
+
+      &:disabled,
+      &.lbh-button--disabled {
+        &,
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+
+  }
+}
