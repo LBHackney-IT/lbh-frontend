@@ -2,7 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@include govuk-exports("lbh/component/phase-banner") {
+@include lbh-exports("lbh/component/phase-banner") {
   .lbh-phase-banner {
     padding: govuk-px-to-rem(8) 0 govuk-px-to-rem(10);
     border-bottom: 1px solid lbh-colour("lbh-panel");
