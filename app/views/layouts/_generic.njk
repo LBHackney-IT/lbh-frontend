@@ -44,6 +44,10 @@
 {% endblock %}
 
 {% block bodyEnd %}
+  <script>
+    // Stops cookie from being set, preventing banner from being hidden in cookie banner component
+    window.dropCookie = false
+  </script>
   <script src="/public/all.js"></script>
   <script>window.LBHFrontend.initAll()</script>
 {% endblock %}

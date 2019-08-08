@@ -52,7 +52,7 @@ Map.prototype.initMapboxTiles = function () {
 Map.prototype.addMarker = function () {
   if (this.markerLat !== null && this.markerLng !== null) {
     var icon = L.icon({
-      iconUrl: '../../assets/images/contact/map-marker.svg',
+      iconUrl: '../../../assets/images/contact/map-marker.svg',
       iconSize: [48, 48],
       iconAnchor: [24, 48]
     })

@@ -12,32 +12,42 @@
     font-weight: $lbh-font-weight-light;
     line-height: govuk-px-to-rem(24);
 
+    .js-enabled & {
+      display: none;
+    }
+
     &__content {
       & > *:last-child {
         margin-bottom: 0;
       }
+
+      p {
+        margin-top: 0;
+      }
+
+      a {
+        @extend %lbh-link;
+
+        &,
+        &:link,
+        &:visited {
+          color: lbh-colour("lbh-white");
+          font-weight: $lbh-font-weight-medium;
+
+          &:hover {
+            color: rgba(lbh-colour("lbh-white"), .8);
+          }
+
+          &:focus {
+            color: lbh-colour("lbh-black");
+          }
+        }
+      }
     }
 
-    p {
-      margin-top: 0;
-    }
-
-    a {
-      @extend %lbh-link;
-
-      &,
-      &:link,
-      &:visited {
-        color: lbh-colour("lbh-white");
-        font-weight: $lbh-font-weight-medium;
-
-        &:hover {
-          color: rgba(lbh-colour("lbh-white"), .8);
-        }
-
-        &:focus {
-          color: lbh-colour("lbh-black");
-        }
+    &__button-wrapper {
+      @include mq($from: desktop) {
+        text-align: right;
       }
     }
 
@@ -46,6 +56,10 @@
       margin-bottom: 0;
       border-radius: 0;
       box-shadow: none;
+
+      @include mq($from: desktop) {
+        margin-top: 0;
+      }
     }
   }
 }
