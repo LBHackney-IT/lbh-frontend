@@ -104,7 +104,6 @@
     {% endif %}
   </div>
   {% if params.showMap %}
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
     <div class="lbh-contact__map-container">
       <div class="lbh-contact__map" id="map" data-module="lbh-map" data-access-token="{{ params.mapAccessToken }}" data-marker-lat="{{ params.markerLat}}" data-marker-lng="{{ params.markerLng }}"></div>
       {% if params.directionLink %}
