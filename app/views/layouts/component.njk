@@ -1,4 +1,4 @@
-{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
 {% from "macros/showExamples.njk" import showExamples %}
 
 {% extends "full-width.njk" %}
@@ -15,7 +15,7 @@
 {% endset %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
+  {{ lbhBreadcrumbs({
     "items": [
     { text: 'Hackney Frontend', href: '/' + legacyQuery },
     { text: componentNameHuman | capitalize }
