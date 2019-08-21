@@ -1,0 +1,187 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+// sass-lint:disable no-url-domains no-url-protocols
+@import url("//cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css");
+
+@include govuk-exports("lbh/component/contact-block") {
+  .lbh-contact {
+    display: flex;
+    padding-bottom: govuk-px-to-rem(24);
+    border-top: 4px solid lbh-colour("lbh-a01");
+    flex-direction: column;
+
+    @include mq ($from: desktop) {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__title {
+      order: 1;
+
+      @include mq ($from: desktop) {
+        margin-right: govuk-px-to-rem(36);
+        float: left;
+      }
+    }
+
+    &__social {
+      display: flex;
+      margin: govuk-px-to-rem(36) 0;
+      order: 3;
+      align-items: center;
+
+      @include mq ($from: desktop) {
+        margin: govuk-px-to-rem(45) 0;
+        float: right;
+      }
+    }
+
+    &__social-title {
+      margin: 0;
+    }
+
+    &__social-link {
+      margin: auto 0 auto govuk-px-to-rem(12);
+    }
+
+    &__social-link-text {
+      @include govuk-visually-hidden;
+    }
+
+    &__social-link-icon {
+      display: block;
+      width: govuk-px-to-rem(30);
+      height: govuk-px-to-rem(30);
+    }
+
+    &__fill {
+      fill: lbh-colour("lbh-secondary-text");
+    }
+
+    &__social-link:hover &__fill {
+      fill: lbh-colour("lbh-a02");
+    }
+
+    &__details {
+      order: 2;
+
+      @include mq ($from: desktop) {
+        box-sizing: border-box;
+        width: 33.333%;
+        padding-right: govuk-px-to-rem(18);
+        float: left;
+        clear: both;
+      }
+    }
+
+    &__block {
+      padding-left: govuk-px-to-rem(36);
+    }
+
+    &__block-title {
+      position: relative;
+      margin-bottom: govuk-px-to-rem(6);
+    }
+
+    &__block:first-child &__block-title {
+      margin-top: 0;
+    }
+
+    &__block-title:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: govuk-px-to-rem(-36);
+      width: govuk-px-to-rem(20);
+      height: govuk-px-to-rem(20);
+      transform: translateY(-50%);
+    }
+
+    &__block-title--address:before {
+      background: url("../../assets/images/contact/address.svg");
+    }
+
+    &__block-title--email:before {
+      background: url("../../assets/images/contact/email.svg");
+    }
+
+    &__block-title--telephone:before {
+      background: url("../../assets/images/contact/telephone.svg");
+    }
+
+    &__block-title--notes:before {
+      background: url("../../assets/images/contact/notes.svg");
+    }
+
+    &__block-title--opening-times:before {
+      background: url("../../assets/images/contact/opening-times.svg");
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &__list-item {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__address,
+    &__email,
+    &__telephone,
+    &__list-item {
+      @extend %lbh-body-xs;
+    }
+
+    &__address span {
+      display: block;
+    }
+
+    &__address span:first-child {
+      font-weight: $lbh-font-weight-medium;
+    }
+
+    &__email,
+    &__telephone {
+      color: lbh-colour("lbh-black");
+      text-decoration: none;
+      cursor: default;
+    }
+
+    &__email {
+      word-break: break-word;
+    }
+
+    &__map-container {
+      width: 100%;
+      height: 400px;
+      order: 4;
+
+      @include mq ($from: desktop) {
+        box-sizing: border-box;
+        width: 66.666%;
+        padding-left: govuk-px-to-rem(18);
+        float: right;
+      }
+    }
+
+    &__map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .leaflet-marker-icon {
+      cursor: grab;
+    }
+
+    &__directions {
+      display: block;
+      margin-top: govuk-px-to-rem(12);
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "status",
+        "type": "string",
+        "required": true,
+        "description": "Alpha or Beta"
+    },
+    {
+        "name": "message",
+        "type": "html",
+        "required": true,
+        "description": "Text to go in phase banner. May contain `<a>` elements."
+    }
+]

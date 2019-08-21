@@ -1,0 +1,23 @@
+{% from "lbh-button/macro.njk" import lbhButton %}
+
+<section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
+  <div class="lbh-container">
+    <div class="govuk-grid-row">
+      <div class="lbh-cookie-banner__content govuk-grid-column-two-thirds-from-desktop">
+        {{params.content|safe}}
+      </div>
+      <div class="lbh-cookie-banner__button-wrapper govuk-grid-column-one-third-from-desktop">
+        {{lbhButton({
+          isSecondary: true,
+          element: 'button',
+          text: 'Accept and close',
+          type: 'button',
+          attributes: {
+            "data-behavior": "lbh-cookie-close"
+          },
+          classes: 'lbh-cookie-banner__button'
+        })}}
+      </div>
+    </div>
+  </div>
+</section>

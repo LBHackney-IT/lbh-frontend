@@ -1,0 +1,9 @@
+@import "../settings/all";
+@import "../tools/all";
+@import "../helpers/all";
+
+@include lbh-exports("lbh/objects/width-container") {
+  .lbh-container {
+    @include govuk-width-container;
+  }
+}

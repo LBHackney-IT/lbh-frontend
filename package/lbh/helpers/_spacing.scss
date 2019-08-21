@@ -1,0 +1,33 @@
+////
+/// @group helpers
+////
+
+/// Single point spacing
+///
+/// Returns measurement corresponding to the spacing point requested.
+///
+/// @param {Number} $spacing-point - Point on the spacing scale (set in `settings/_spacing.sccs`)
+///
+/// @returns {String} Spacing Measurement eg. 10px
+///
+/// @example scss
+///   .element {
+///     padding: lbh-spacing(5);
+///     top: lbh-spacing(2) !important; // if `!important` is required
+///   }
+/// @access public
+
+@function lbh-spacing($spacing-point) {
+
+  $actual-input-type: type-of($spacing-point);
+  @if $actual-input-type != "number" {
+    @error "Expected a number (integer), but got a "
+    + "#{$actual-input-type}.";
+  }
+
+  @if not map-has-key($lbh-spacing-points, $spacing-point) {
+    @error "Unknown spacing variable `#{$spacing-point}`. Make sure you are using a point from the spacing scale in `_settings/spacing.scss`.";
+  }
+
+  @return map-get($lbh-spacing-points, $spacing-point);
+}

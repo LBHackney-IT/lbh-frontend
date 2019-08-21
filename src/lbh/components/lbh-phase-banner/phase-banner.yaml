@@ -1,0 +1,19 @@
+params:
+- name: status
+  type: string
+  required: true
+  description: Alpha or Beta
+- name: message
+  type: html
+  required: true
+  description: Text to go in phase banner. May contain `<a>` elements.
+
+examples:
+- name: default
+  data:
+    status: Alpha
+    message: This is a new website. Tell us what you think by leaving your feedback using the arrow at the bottom right of the screen.
+- name: beta
+  data:
+    status: Beta
+    message: This is our new website design - it's work in progress. <a href="#feedback" title="Tell us what you think">Tell us what you think</a>, your feedback will help us to improve it.

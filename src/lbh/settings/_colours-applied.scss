@@ -1,0 +1,67 @@
+////
+/// @group settings/colours
+////
+
+@import "../helpers/colour";
+
+
+
+// =========================================================
+// Generic
+// =========================================================
+
+/// Text colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-text-colour: lbh-colour("lbh-black") !default;
+
+/// Body background colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-body-background-colour: lbh-colour("lbh-white") !default;
+
+/// Text colour for print media
+///
+/// Use 'true black' to avoid printers using colour ink to print body text
+///
+/// @type Colour
+/// @access public
+
+$lbh-print-text-colour: #000000 !default;
+
+
+// =============================================================================
+// Links
+// =============================================================================
+
+/// Link colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-link-colour: lbh-colour("lbh-link") !default;
+
+/// Visited link colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-link-visited-colour: lbh-colour("lbh-link-visited") !default;
+
+/// Link hover colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-link-hover-colour: lbh-colour("lbh-link-hover") !default;
+
+/// Active link colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-link-active-colour: lbh-colour("lbh-link-active") !default;

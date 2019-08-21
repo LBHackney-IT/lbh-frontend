@@ -1,0 +1,8 @@
+[
+    {
+        "name": "content",
+        "type": "html",
+        "required": true,
+        "description": "HTML content to go in the cookie banner message"
+    }
+]

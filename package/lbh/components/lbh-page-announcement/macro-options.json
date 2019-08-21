@@ -1,0 +1,14 @@
+[
+    {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Announcement title"
+    },
+    {
+        "name": "content",
+        "type": "html",
+        "required": true,
+        "description": "Announcement content"
+    }
+]

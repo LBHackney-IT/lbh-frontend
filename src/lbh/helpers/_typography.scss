@@ -1,0 +1,28 @@
+/// 'Common typography' helper
+///
+/// Sets the font family and associated properties, such as font smoothing. Also
+/// overrides the font for print.
+///
+/// @param {List} $font-family [$lbh-font-family] Font family to use
+/// @access public
+
+@mixin lbh-typography-common($font-family: $lbh-font-family) {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/// Font helper
+///
+/// @param {Number} $size - Size of the font as it would appear on desktop -
+///   uses the responsive font size map
+/// @param {String} $weight [regular] - Weight: `bold` or `regular`
+/// @param {Boolean} $tabular [false] - Whether to use tabular numbers or not
+/// @param {Number} $line-height [false] - Line-height, if overriding the default
+///
+/// @access public
+
+@mixin lbh-font {
+  @include lbh-typography-common;
+}

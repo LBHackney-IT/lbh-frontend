@@ -1,0 +1,28 @@
+////
+/// @group settings/spacing
+////
+
+/// Spacing
+///
+/// @type Map
+///
+/// @prop $spacing - Representation for the given $spacing, where $spacing is the
+///   friendly name for the spacing (e.g. "4": 4px);
+///
+/// @access public
+
+$lbh-spacing-points: (
+  0: 0,
+  4: .25rem,
+  8: .5rem,
+  12: .75rem,
+  16: 1rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  28: 1.75rem,
+  32: 2rem,
+  36: 2.25rem,
+  40: 2.5rem,
+  44: 2.75rem,
+  48: 3rem
+) !default;

@@ -1,0 +1,22 @@
+{% from "button/macro.njk" import govukButton %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-button' + 
+  (' govuk-button--secondary lbh-button--secondary' if params.isSecondary else '')
+  + (' govuk-button--warning lbh-button--warning' if params.isWarning else '') +
+  (' lbh-button--disabled' if params.disabled else '') + (' lbh-button--start' if params.isStartButton else '')
+%}
+
+{{ govukButton({
+  element: params.element,
+  text: params.text,
+  html: params.html,
+  name: params.name,
+  type: params.type,
+  value: params.value,
+  disabled: params.disabled,
+  href: params.href,
+  classes: classes,
+  attributes: params.attributes,
+  preventDoubleClick: params.preventDoubleClick,
+  isStartButton: params.isStartButton
+}) }}
