@@ -1,0 +1,6 @@
+{% from "accordion/macro.njk" import govukAccordion %}
+
+{{ govukAccordion({
+  id: params.id,
+  items: params.items
+}) }}
