@@ -1,0 +1,9 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/breadcrumbs") {
+  .lbh-breadcrumbs {
+    @extend %lbh-body-xs;
+  }
+}
