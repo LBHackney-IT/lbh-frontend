@@ -19,5 +19,10 @@
     .govuk-checkboxes__item {
       margin-bottom: govuk-px-to-rem(12);
     }
+
+    .govuk-input {
+      @extend %lbh-body-m;
+      margin-bottom: 0;
+    }
   }
 }

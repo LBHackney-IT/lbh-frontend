@@ -183,7 +183,7 @@ examples:
     fieldset:
       legend:
         text: Which types of waste do you transport regularly?
-        classes: lbh-fieldset__legend--l
+        classes: govuk-fieldset__legend--l
         isPageHeading: true
     hint:
       text: Select all that apply
@@ -201,7 +201,7 @@ examples:
     fieldset:
       legend:
         text: Which types of waste do you transport regularly?
-        classes: lbh-fieldset__legend--m
+        classes: govuk-fieldset__legend--m
     hint:
       text: Select all that apply
     errorMessage:
@@ -372,20 +372,20 @@ examples:
         text: Email
         conditional:
           html: |
-            <label class="govuk-label lbh-label" for="context-email">Mobile phone number</label>
-            <input class="govuk-input lbh-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
+            <label class="govuk-label" for="context-email">Mobile phone number</label>
+            <input class="govuk-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
       - value: phone
         text: Phone
         conditional:
           html: |
-            <label class="govuk-label lbh-label" for="contact-phone">Phone number</label>
-            <input class="govuk-input lbh-input govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone">
+            <label class="govuk-label" for="contact-phone">Phone number</label>
+            <input class="govuk-input govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone">
       - value: text
         text: Text message
         conditional:
           html: |
-            <label class="govuk-label lbh-label" for="contact-text-message">Mobile phone number</label>
-            <input class="govuk-input lbh-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
+            <label class="govuk-label" for="contact-text-message">Mobile phone number</label>
+            <input class="govuk-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
 
 - name: with conditional item checked
   data:
@@ -399,28 +399,28 @@ examples:
       text: Email
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="context-email">Mobile phone number</label>
-          <input class="govuk-input lbh-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
+          <label class="govuk-label" for="context-email">Mobile phone number</label>
+          <input class="govuk-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
     - value: phone
       text: Phone
       checked: true
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="contact-phone">Phone number</label>
-          <input class="govuk-input lbh-input govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone">
+          <label class="govuk-label" for="contact-phone">Phone number</label>
+          <input class="govuk-input govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone">
     - value: text
       text: Text message
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="contact-text-message">Mobile phone number</label>
-          <input class="govuk-input lbh-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
+          <label class="govuk-label" for="contact-text-message">Mobile phone number</label>
+          <input class="govuk-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
 
 - name: with optional form-group classes showing group error
   data:
     name: how-contacted-checked
     idPrefix: how-contacted-checked
     formGroup:
-      classes: 'govuk-form-group--error lbh-form-group--error'
+      classes: 'govuk-form-group--error'
     fieldset:
       legend:
         text: How do you want to be contacted?
@@ -429,22 +429,22 @@ examples:
       text: Email
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="context-email">Mobile phone number</label>
-          <input class="govuk-input lbh-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
+          <label class="govuk-label" for="context-email">Mobile phone number</label>
+          <input class="govuk-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
     - value: phone
       text: Phone
       checked: true
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="contact-phone">Phone number</label>
-          <span id="contact-phone-error" class="govuk-error-message lbh-error-message">Problem with input</span>
-          <input class="govuk-input lbh-input lbh-input--error govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone" aria-describedby="contact-phone-error">
+          <label class="govuk-label" for="contact-phone">Phone number</label>
+          <span id="contact-phone-error" class="govuk-error-message">Problem with input</span>
+          <input class="govuk-input govuk-input--error govuk-!-width-one-third" name="contact-phone" type="text" id="contact-phone" aria-describedby="contact-phone-error">
     - value: text
       text: Text message
       conditional:
         html: |
-          <label class="govuk-label lbh-label" for="contact-text-message">Mobile phone number</label>
-          <input class="govuk-input lbh-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
+          <label class="govuk-label" for="contact-text-message">Mobile phone number</label>
+          <input class="govuk-input govuk-!-width-one-third" name="contact-text-message" type="text" id="contact-text-message">
 
 - name: small
   data:
@@ -561,7 +561,7 @@ examples:
         text: a thing
         conditional:
           html: |
-            <label class="govuk-label lbh-label" for="context-email">Foo</label>
-            <input class="govuk-input lbh-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
+            <label class="govuk-label" for="context-email">Foo</label>
+            <input class="govuk-input govuk-!-width-one-third" name="context-email" type="text" id="context-email">
       - value: b
         text: another thing

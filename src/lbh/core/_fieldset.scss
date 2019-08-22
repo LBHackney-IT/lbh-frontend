@@ -1,3 +1,11 @@
 .lbh-form-group .govuk-fieldset__legend {
   @extend %lbh-heading-h3;
+
+  &.govuk-fieldset__legend--l {
+    @extend %lbh-heading-h1;
+  }
+
+  &.govuk-fieldset__legend--m {
+    @extend %lbh-heading-h2;
+  }
 }
