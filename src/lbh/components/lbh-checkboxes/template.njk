@@ -1,0 +1,18 @@
+{% from "checkboxes/macro.njk" import govukCheckboxes %}
+
+{% set classes = params.classes if params.classes else '' + ' lbh-checkboxes' %}
+
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{{ govukCheckboxes({
+  describedBy: params.describedBy,
+  fieldset: params.fieldset,
+  hint: params.hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  idPrefix: params.idPrefix,
+  name: params.name,
+  items: params.items,
+  classes: classes,
+  attributes: params.attributes
+})}}

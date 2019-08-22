@@ -2,7 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@include govuk-exports("lbh/component/announcement") {
+@include lbh-exports("lbh/component/announcement") {
   .lbh-announcement {
     padding: govuk-px-to-rem(36) 0;
     border-top: 1px solid lbh-colour("lbh-a03");

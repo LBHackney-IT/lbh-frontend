@@ -4,7 +4,7 @@
 // sass-lint:disable no-url-domains no-url-protocols
 @import url("//cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css");
 
-@include govuk-exports("lbh/component/contact-block") {
+@include lbh-exports("lbh/component/contact-block") {
   .lbh-contact {
     display: flex;
     padding-bottom: govuk-px-to-rem(24);

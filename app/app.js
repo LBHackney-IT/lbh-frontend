@@ -41,6 +41,10 @@ module.exports = (options) => {
 
   // make the function available as a filter for all templates
   env.addFilter('componentNameToMacroName', helperFunctions.componentNameToMacroName)
+  env.addFilter('setAttribute', function (dictionary, key, value) {
+    dictionary[key] = value
+    return dictionary
+  })
 
   // Set view engine
   app.set('view engine', 'njk')
