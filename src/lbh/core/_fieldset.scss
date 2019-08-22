@@ -1,5 +1,6 @@
 .lbh-form-group .govuk-fieldset__legend {
   @extend %lbh-heading-h3;
+  margin-top: 0;
 
   &.govuk-fieldset__legend--l {
     @extend %lbh-heading-h1;
