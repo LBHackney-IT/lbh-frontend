@@ -2,7 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@include govuk-exports("lbh/component/button") {
+@include lbh-exports("lbh/component/button") {
   .lbh-button {
     @include lbh-font;
     padding: govuk-px-to-rem(12) govuk-px-to-rem(22) govuk-px-to-rem(10);

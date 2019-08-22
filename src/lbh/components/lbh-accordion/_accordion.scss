@@ -2,7 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@include govuk-exports("lbh/component/accordion") {
+@include lbh-exports("lbh/component/accordion") {
   .lbh-accordion {
     .govuk-accordion__section-button {
       @extend %lbh-heading-h5;
