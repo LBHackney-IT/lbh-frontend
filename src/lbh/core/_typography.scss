@@ -158,14 +158,13 @@
   %lbh-body-l {
     @include lbh-font;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
+    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(19);
     font-weight: $lbh-font-weight-regular;
     line-height: govuk-px-to-rem(23);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(24);
       font-weight: $lbh-font-weight-light;
       line-height: govuk-px-to-rem(29);
@@ -179,14 +178,14 @@
   %lbh-body-m {
     @include lbh-font;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
+    margin-bottom: govuk-px-to-rem(19);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
     font-weight: $lbh-font-weight-light;
     line-height: govuk-px-to-rem(19);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(12);
+      margin-bottom: govuk-px-to-rem(23);
       font-size: govuk-px-to-rem(19);
       line-height: govuk-px-to-rem(23);
     }
@@ -199,14 +198,14 @@
   %lbh-body-s {
     @include lbh-font;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
+    margin-bottom: govuk-px-to-rem(16);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(13);
     font-weight: $lbh-font-weight-regular;
     line-height: govuk-px-to-rem(16);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(12);
+      margin-bottom: govuk-px-to-rem(19);
       font-size: govuk-px-to-rem(16);
       line-height: govuk-px-to-rem(19);
     }

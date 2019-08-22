@@ -1,0 +1,16 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include govuk-exports("lbh/component/accordion") {
+  .lbh-accordion {
+    .govuk-accordion__section-button {
+      @extend %lbh-heading-h5;
+    }
+
+    .govuk-accordion__section-summary,
+    .govuk-accordion__section-content {
+      @extend %lbh-body-m;
+    }
+  }
+}

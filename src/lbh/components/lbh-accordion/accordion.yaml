@@ -54,6 +54,7 @@ examples:
   data:
     id: default-example
     classes: myClass
+    headingLevel: 5
     attributes:
       data-attribute: value
     items:
@@ -61,20 +62,21 @@ examples:
           text: Section A
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 1</li>
             </ul>
       - heading:
           text: Section B
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 2</li>
             </ul>
 
 - name: with additional descriptions
   data:
     id: with-descriptions
+    headingLevel: 5
     items:
       - heading:
           text: Test
@@ -82,48 +84,50 @@ examples:
           text: Additional description
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 1</li>
             </ul>
       - heading:
          text: Test 2
         summary:
-          html: <span class="govuk-!-font-weight-regular">Additional description</span>
+          html: <span class="lbh-!-font-weight-regular">Additional description</span>
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 2</li>
             </ul>
 - name: with one section open
   data:
     id: one-section-open-example
+    headingLevel: 5
     items:
       - heading:
           text: Section A
         expanded: true
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 1</li>
             </ul>
       - heading:
           text: Section B
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 2</li>
             </ul>
 
 - name: with all sections already open
   data:
     id: all-sections-open-example
+    headingLevel: 5
     items:
       - heading:
           text: Section A
         expanded: true
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 1</li>
             </ul>
       - heading:
@@ -131,19 +135,20 @@ examples:
         expanded: true
         content:
           html: |
-            <ul class="govuk-list govuk-list--bullet">
+            <ul class="lbh-list lbh-list--bullet">
               <li>Example item 2</li>
             </ul>
 
 - name: with focusable elements inside
   data:
     id: with-focusable-elements
+    headingLevel: 5
     items:
       - heading:
           text: Section A
         content:
-          html: <a class="govuk-link" href="#">Link A</a>
+          html: <a class="lbh-link" href="#">Link A</a>
       - heading:
           text: Section B
         content:
-          html: <a class="govuk-link" href="#">Link B</a>
+          html: <a class="lbh-link" href="#">Link B</a>
