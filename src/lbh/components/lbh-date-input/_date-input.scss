@@ -12,4 +12,10 @@
     @extend %lbh-heading-h4;
     margin-top: 0;
   }
+
+
+  .lbh-form-group--date-input .govuk-hint,
+  .lbh-form-group--date-input .govuk-fieldset__legend:not(.govuk-fieldset__legend--m):not(.govuk-fieldset__legend--l):not(.govuk-fieldset__legend--xl) + .govuk-hint {
+    margin-bottom: govuk-px-to-rem(6);
+  }
 }
