@@ -1,0 +1,11 @@
+{% from "fieldset/macro.njk" import govukFieldset %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-fieldset' %}
+
+{{ govukFieldset({
+  describedBy: params.describedBy,
+  legend: params.legend,
+  classes: classes,
+  attributes: params.attributes,
+  caller: params.caller
+})}}

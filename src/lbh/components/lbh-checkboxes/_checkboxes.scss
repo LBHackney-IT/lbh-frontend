@@ -3,9 +3,9 @@
 @import "../../helpers/all";
 
 @import "../../core/error-message";
-@import "../../core/fieldset";
 @import "../../core/hint";
 @import "../../core/label";
+@import "../lbh-fieldset/fieldset";
 
 @include lbh-exports("lbh/component/checkboxes") {
   .lbh-checkboxes {
