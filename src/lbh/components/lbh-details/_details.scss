@@ -1,0 +1,17 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/details") {
+  .lbh-details {
+    .govuk-details__summary {
+      @extend %lbh-link;
+      color: $lbh-link-colour;
+    }
+
+    .govuk-details__text {
+      @extend %lbh-body-m;
+      border-color: lbh-colour("lbh-border");
+    }
+  }
+}
