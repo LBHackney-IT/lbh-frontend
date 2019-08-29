@@ -2,9 +2,9 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-@import "../../core/error-message";
 @import "../../core/hint";
 @import "../../core/label";
+@import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
 
 @include lbh-exports("lbh/component/checkboxes") {
