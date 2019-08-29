@@ -1,0 +1,12 @@
+{% from "error-message/macro.njk" import govukErrorMessage %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-error-message' %}
+
+{{ govukErrorMessage({
+  text: params.text,
+  html: params.html,
+  id: params.id,
+  classes: classes,
+  attributes: params.attributes,
+  visuallyHiddenText: params.visuallyHiddenText
+})}}

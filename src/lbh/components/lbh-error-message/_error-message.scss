@@ -1,0 +1,21 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/error-message") {
+  .lbh-error-message,
+  .lbh-form-group .govuk-error-message {
+    color: lbh-colour("lbh-error");
+    font-weight: $lbh-font-weight-medium;
+  }
+
+  .lbh-error-message .govuk-input--error,
+  .lbh-form-group .govuk-input--error {
+    border-color: lbh-colour("lbh-error");
+  }
+
+  .lbh-error-message .govuk-form-group--error,
+  .lbh-form-group.govuk-form-group--error {
+    border-color: lbh-colour("lbh-error");
+  }
+}
