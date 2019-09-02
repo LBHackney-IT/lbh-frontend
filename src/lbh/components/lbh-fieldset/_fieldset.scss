@@ -7,14 +7,23 @@
   .lbh-fieldset .govuk-fieldset__legend {
     @extend %lbh-heading-h3;
     margin-top: 0;
+    margin-bottom: govuk-px-to-rem(24);
 
     &.govuk-fieldset__legend--l,
     &.govuk-fieldset__legend--xl {
       @extend %lbh-heading-h1;
+      margin-bottom: govuk-px-to-rem(24);
     }
 
     &.govuk-fieldset__legend--m {
       @extend %lbh-heading-h2;
+      margin-bottom: govuk-px-to-rem(24);
+    }
+
+    & + .govuk-hint,
+    &:not(.govuk-fieldset__legend--m):not(.govuk-fieldset__legend--l):not(.govuk-fieldset__legend--xl) + .govuk-hint {
+      margin-top: govuk-px-to-rem(-12);
+      margin-bottom: govuk-px-to-rem(12);
     }
   }
 }

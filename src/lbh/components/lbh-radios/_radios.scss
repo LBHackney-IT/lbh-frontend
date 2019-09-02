@@ -1,0 +1,16 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/radios") {
+  .lbh-radios {
+    .govuk-label {
+      @extend %lbh-body-m;
+      margin-bottom: govuk-px-to-rem(6);
+    }
+
+    .govuk-radios__conditional {
+      border-color: lbh-colour("lbh-border");
+    }
+  }
+}
