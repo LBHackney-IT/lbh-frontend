@@ -1,0 +1,17 @@
+{% from "select/macro.njk" import govukSelect %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-select' %}
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{{ govukSelect({
+  id: params.id,
+  name: params.name,
+  items: params.items,
+  describedBy: params.describedBy,
+  label: params.label,
+  hint: params.hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  classes: classes,
+  attributes: params.attributes
+})}}
