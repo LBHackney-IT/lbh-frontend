@@ -1,0 +1,11 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/inset-text") {
+  .lbh-inset-text {
+    @extend %lbh-body-m;
+    padding: govuk-px-to-rem(24);
+    border-left-color: lbh-colour("lbh-border");
+  }
+}
