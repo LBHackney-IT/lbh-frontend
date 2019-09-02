@@ -1,0 +1,130 @@
+{
+  "id": "lbh-frontend",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop",
+      "width": 1400,
+      "height": 1000
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Accordion",
+      "url": "http://localhost:3000/components/lbh-accordion",
+      "delay": 500
+    },
+    {
+      "label": "Announcement",
+      "url": "http://localhost:3000/components/lbh-announcement",
+      "delay": 500
+    },
+    {
+      "label": "Breadcrumbs",
+      "url": "http://localhost:3000/components/lbh-breadcrumbs",
+      "delay": 500
+    },
+    {
+      "label": "Button",
+      "url": "http://localhost:3000/components/lbh-button",
+      "delay": 500
+    },
+    {
+      "label": "Checkboxes",
+      "url": "http://localhost:3000/components/lbh-checkboxes",
+      "delay": 500
+    },
+    {
+      "label": "Contact block",
+      "url": "http://localhost:3000/components/lbh-contact-block",
+      "delay": 500
+    },
+    {
+      "label": "Cookie banner",
+      "url": "http://localhost:3000/components/lbh-cookie-banner",
+      "delay": 500
+    },
+    {
+      "label": "Date input",
+      "url": "http://localhost:3000/components/lbh-date-input",
+      "delay": 500
+    },
+    {
+      "label": "Details",
+      "url": "http://localhost:3000/components/lbh-details",
+      "delay": 500
+    },
+    {
+      "label": "Error Message",
+      "url": "http://localhost:3000/components/lbh-error-message",
+      "delay": 500
+    },
+    {
+      "label": "Error summary",
+      "url": "http://localhost:3000/components/lbh-error-summary",
+      "delay": 500
+    },
+    {
+      "label": "Fieldset",
+      "url": "http://localhost:3000/components/lbh-fieldset",
+      "delay": 500
+    },
+    {
+      "label": "Input",
+      "url": "http://localhost:3000/components/lbh-input",
+      "delay": 500
+    },
+    {
+      "label": "Inset text",
+      "url": "http://localhost:3000/components/lbh-inset-text",
+      "delay": 500
+    },
+    {
+      "label": "Page announcement",
+      "url": "http://localhost:3000/components/lbh-page-announcement",
+      "delay": 500
+    },
+    {
+      "label": "Phase banner",
+      "url": "http://localhost:3000/components/lbh-phase-banner",
+      "delay": 500
+    },
+    {
+      "label": "Radios",
+      "url": "http://localhost:3000/components/lbh-radios",
+      "delay": 500
+    },
+    {
+      "label": "Select",
+      "url": "http://localhost:3000/components/lbh-select",
+      "delay": 500
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
