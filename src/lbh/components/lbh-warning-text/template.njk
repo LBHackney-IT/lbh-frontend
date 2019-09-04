@@ -1,0 +1,12 @@
+{% from "warning-text/macro.njk" import govukWarningText %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-warning-text' %}
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{{ govukWarningText({
+  text: params.text,
+  html: params.html,
+  iconFallbackText: params.iconFallbackText,
+  classes: classes,
+  attributes: params.attributes
+})}}

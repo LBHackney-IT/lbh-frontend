@@ -241,4 +241,8 @@
   .lbh-body {
     @extend %lbh-body-m;
   }
+
+  strong {
+    font-weight: $lbh-font-weight-medium;
+  }
 }
