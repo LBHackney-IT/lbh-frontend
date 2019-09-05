@@ -1,19 +1,34 @@
 params:
-- name: status
+- name: text
   type: string
   required: true
-  description: Alpha or Beta
-- name: message
-  type: html
+  description: If `html` is set, this is not required. Text to use within the phase banner. If `html` is provided, the `text` argument will be ignored.
+- name: html
+  type: string
   required: true
-  description: Text to go in phase banner. May contain `<a>` elements.
+  description: If `text` is set, this is not required. HTML to use within the phase banner. If `html` is provided, the `text` argument will be ignored.
+- name: tag
+  type: object
+  required: false
+  description: Options for the tag component.
+  isComponent: true
+- name: classes
+  type: string
+  required: false
+  description: Classes to add to the phase banner container.
+- name: attributes
+  type: object
+  required: false
+  description: HTML attributes (for example data attributes) to add to the phase banner container.
 
 examples:
 - name: default
   data:
-    status: Alpha
-    message: This is a new website. Tell us what you think by leaving your feedback using the arrow at the bottom right of the screen.
+    tag: 
+        text: Alpha
+    html: This is a new website. Tell us what you think by leaving your feedback using the arrow at the bottom right of the screen.
 - name: beta
   data:
-    status: Beta
-    message: This is our new website design - it's work in progress. <a href="#feedback" title="Tell us what you think">Tell us what you think</a>, your feedback will help us to improve it.
+    tag: 
+        text: Beta
+    html: This is our new website design - it's work in progress. <a href="#feedback" title="Tell us what you think">Tell us what you think</a>, your feedback will help us to improve it.
