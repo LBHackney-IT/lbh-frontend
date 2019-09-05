@@ -42,7 +42,8 @@
     },
     {
       "label": "Character count",
-      "url": "http://localhost:3000/components/lbh-character-count"
+      "url": "http://localhost:3000/components/lbh-character-count",
+      "delay": 500
     },
     {
       "label": "Checkboxes",
@@ -116,15 +117,18 @@
     },
     {
       "label": "Tabs",
-      "url": "http://localhost:3000/components/lbh-tabs"
+      "url": "http://localhost:3000/components/lbh-tabs",
+      "delay": 500
     },
     {
       "label": "Textarea",
-      "url": "http://localhost:3000/components/lbh-textarea"
+      "url": "http://localhost:3000/components/lbh-textarea",
+      "delay": 500
     },
     {
       "label": "Warning text",
-      "url": "http://localhost:3000/components/lbh-warning-text"
+      "url": "http://localhost:3000/components/lbh-warning-text",
+      "delay": 500
     }
   ],
   "paths": {

@@ -1,4 +1,4 @@
-import * as L from 'leaflet'
+import { map, control, tileLayer, icon, marker } from 'leaflet'
 
 function Map ($module) {
   this.$module = $module
@@ -20,7 +20,7 @@ function Map ($module) {
 }
 
 Map.prototype.initLeaflet = function () {
-  this.map = L.map(this.moduleId, {
+  this.map = map(this.moduleId, {
     zoomControl: false,
     maxZoom: this.maxZoom,
     minZoom: this.minZoom,
@@ -28,7 +28,7 @@ Map.prototype.initLeaflet = function () {
     zoom: this.initialZoom
   })
   if (this.showZoomControl) {
-    L.control.zoom({ position: 'topright' }).addTo(this.map)
+    control.zoom({ position: 'topright' }).addTo(this.map)
   }
 }
 
@@ -38,7 +38,7 @@ Map.prototype.setBounds = function () {
 }
 
 Map.prototype.initMapboxTiles = function () {
-  var osmStreet = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+  var osmStreet = tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     fadeAnimation: false,
     opacity: 1,
     attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
@@ -51,12 +51,12 @@ Map.prototype.initMapboxTiles = function () {
 
 Map.prototype.addMarker = function () {
   if (this.markerLat !== null && this.markerLng !== null) {
-    var icon = L.icon({
+    var mapIcon = icon({
       iconUrl: '../../../assets/images/contact/map-marker.svg',
       iconSize: [48, 48],
       iconAnchor: [24, 48]
     })
-    L.marker([this.markerLat, this.markerLng], { icon: icon }).addTo(this.map)
+    marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map)
   }
 }
 
