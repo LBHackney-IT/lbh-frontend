@@ -1,9 +1,11 @@
 {% from "phase-banner/macro.njk" import govukPhaseBanner %}
 
+{% set classes = (params.classes if params.classes else '') + ' lbh-phase-banner' %}
+
 {{ govukPhaseBanner({
-  tag: {
-    text: params.status
-  },
-  html: params.message|safe,
-  classes: 'lbh-phase-banner'
+  text: params.text,
+  html: params.html,
+  tag: params.tag,
+  classes: classes,
+  attributes: params.attributes
 })}}

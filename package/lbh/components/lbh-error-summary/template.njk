@@ -1,0 +1,13 @@
+{% from "error-summary/macro.njk" import govukErrorSummary %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-error-summary' %}
+
+{{ govukErrorSummary({
+  titleText: params.titleText,
+  titleHtml: params.titleHtml,
+  descriptionText: params.descriptionText,
+  descriptionHtml: params.descriptionHtml,
+  errorList: params.errorList,
+  classes: classes,
+  attributes: params.attributes
+})}}

@@ -1,0 +1,9 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/input") {
+  .lbh-input {
+    @extend %lbh-body-m;
+  }
+}

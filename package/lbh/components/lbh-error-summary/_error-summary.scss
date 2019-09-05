@@ -1,0 +1,32 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/error-summary") {
+  .lbh-error-summary {
+    padding: govuk-px-to-rem(18) govuk-px-to-rem(24) govuk-px-to-rem(24);
+    border-color: lbh-colour("lbh-error");
+
+    .govuk-error-summary__title {
+      @extend %lbh-heading-h2;
+      margin-top: 0;
+    }
+
+    .govuk-error-summary__list a {
+      font-weight: $lbh-font-weight-medium;
+
+      &,
+      &:link,
+      &:hover,
+      &:active,
+      &:focus,
+      &:visited {
+        color: lbh-colour("lbh-error");
+      }
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

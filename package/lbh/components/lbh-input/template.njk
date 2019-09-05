@@ -1,0 +1,21 @@
+{% from "input/macro.njk" import govukInput %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-input' %}
+
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{{ govukInput({
+  id: params.id,
+  name: params.name,
+  type: params.type,
+  value: params.value,
+  describedBy: params.describedBy,
+  label: params.label,
+  hint: params.hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  classes: classes,
+  autocomplete: params.autocomplete,
+  pattern: params.pattern,
+  attributes: params.attributes
+})}}

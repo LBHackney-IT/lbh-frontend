@@ -1,0 +1,28 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@import "../../core/hint";
+@import "../../core/label";
+@import "../lbh-error-message/error-message";
+@import "../lbh-fieldset/fieldset";
+
+@include lbh-exports("lbh/component/checkboxes") {
+  .lbh-checkboxes {
+    .govuk-checkboxes__label {
+      @extend %lbh-body-m;
+      margin-bottom: 0;
+      padding-top: govuk-px-to-rem(9);
+      padding-bottom: govuk-px-to-rem(8);
+    }
+
+    .govuk-checkboxes__item {
+      margin-bottom: govuk-px-to-rem(12);
+    }
+
+    .govuk-input {
+      @extend %lbh-body-m;
+      margin-bottom: 0;
+    }
+  }
+}

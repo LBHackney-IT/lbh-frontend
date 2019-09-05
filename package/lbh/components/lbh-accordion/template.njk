@@ -1,0 +1,9 @@
+{% from "accordion/macro.njk" import govukAccordion %}
+{% set classes = (params.classes if params.classes else '') + ' lbh-accordion' %}
+{{ govukAccordion({
+  id: params.id,
+  items: params.items,
+  headingLevel: params.headingLevel,
+  classes: classes,
+  attributes: params.attributes
+}) }}

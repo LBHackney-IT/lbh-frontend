@@ -1,0 +1,21 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/date-input") {
+  .lbh-form-group.lbh-form-group--date-input .govuk-fieldset__legend {
+    @extend %lbh-body-m;
+    margin-bottom: govuk-px-to-rem(18);
+  }
+
+  .lbh-form-group .govuk-label.govuk-date-input__label {
+    @extend %lbh-heading-h4;
+    margin-top: 0;
+  }
+
+
+  .lbh-form-group--date-input .govuk-hint,
+  .lbh-form-group--date-input .govuk-fieldset__legend:not(.govuk-fieldset__legend--m):not(.govuk-fieldset__legend--l):not(.govuk-fieldset__legend--xl) + .govuk-hint {
+    margin-bottom: govuk-px-to-rem(12);
+  }
+}

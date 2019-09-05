@@ -1,0 +1,17 @@
+{% from "date-input/macro.njk" import govukDateInput %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-date-input' %}
+
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group lbh-form-group--date-input'} %}
+
+{{ govukDateInput({
+  id: params.id,
+  namePrefix: params.namePrefix,
+  items: params.items,
+  hint: params.hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  fieldset: params.fieldset,
+  classes: classes,
+  attributes: params.attributes
+})}}

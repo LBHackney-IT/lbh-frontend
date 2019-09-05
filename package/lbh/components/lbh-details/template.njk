@@ -1,0 +1,14 @@
+{% from "details/macro.njk" import govukDetails %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-details' %}
+
+{{ govukDetails({
+  summaryText: params.summaryText,
+  summaryHtml: params.summaryHtml,
+  text: params.text,
+  html: params.html,
+  id: params.id,
+  open: params.open,
+  classes: classes,
+  attributes: params.attributes
+})}}

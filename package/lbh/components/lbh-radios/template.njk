@@ -1,0 +1,16 @@
+{% from "radios/macro.njk" import govukRadios %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-radios' %}
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{{ govukRadios({
+  fieldset: params.fieldset,
+  hint: params.hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  idPrefix: params.idPrefix,
+  name: params.name,
+  items: params.items,
+  classes: classes,
+  attributes: params.attributes
+})}}

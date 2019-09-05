@@ -1,0 +1,12 @@
+{% from "tabs/macro.njk" import govukTabs %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-tabs' %}
+
+{{ govukTabs({
+  id: params.id,
+  idPrefix: params.idPrefix,
+  title: params.title,
+  items: params.items,
+  classes: classes,
+  attributes: params.attributes
+})}}
