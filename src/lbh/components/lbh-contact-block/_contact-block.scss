@@ -17,9 +17,11 @@
     }
 
     &__title {
+      margin-top: govuk-px-to-rem(18);
       order: 1;
 
       @include mq ($from: desktop) {
+        margin-top: govuk-px-to-rem(36);
         margin-right: govuk-px-to-rem(36);
         float: left;
       }
@@ -76,6 +78,7 @@
     }
 
     &__block {
+      margin-bottom: govuk-px-to-rem(24);
       padding-left: govuk-px-to-rem(36);
     }
 

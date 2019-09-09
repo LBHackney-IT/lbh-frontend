@@ -8,6 +8,7 @@
     @include lbh-font;
     margin-top: 0;
     padding-left: 0;
+    list-style-type: none;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
     font-weight: $lbh-font-weight-light;
@@ -55,6 +56,10 @@
 
   .lbh-list--bullet {
     @extend %lbh-list--bullet;
+
+    .lbh-list--bullet {
+      list-style-type: circle;
+    }
   }
 
   .lbh-list--number {

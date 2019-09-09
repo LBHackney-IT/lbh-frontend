@@ -19,7 +19,6 @@
 
 .app-component-preview {
   position: relative;
-  margin-top: -15px;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -48,4 +47,8 @@
       outline: 5px solid #e4f2ff;
     }
   }
+}
+
+.app-iframe-in-component-preview .lbh-cookie-banner {
+  position: static;
 }

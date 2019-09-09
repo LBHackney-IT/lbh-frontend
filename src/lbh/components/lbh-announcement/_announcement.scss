@@ -9,6 +9,10 @@
     border-bottom: 1px solid lbh-colour("lbh-a03");
     background: rgba(lbh-colour("lbh-a04"), .2);
 
+    .lbh-phase-banner + & {
+      margin-top: -1px;
+    }
+
     &--site {
       background: rgba(lbh-colour("lbh-a04"), .5);
     }

@@ -1,6 +1,6 @@
 {% from "phase-banner/macro.njk" import govukPhaseBanner %}
 
-{% set classes = (params.classes if params.classes else '') + ' lbh-phase-banner' %}
+{% set classes = (params.classes if params.classes else '') + ' lbh-phase-banner lbh-container' %}
 
 {{ govukPhaseBanner({
   text: params.text,
