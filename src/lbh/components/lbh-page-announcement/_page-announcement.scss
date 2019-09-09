@@ -4,6 +4,7 @@
 
 @include lbh-exports("lbh/component/page-announcement") {
   .lbh-page-announcement {
+    margin-bottom: govuk-px-to-rem(36);
     padding: govuk-px-to-rem(36) govuk-px-to-rem(36) govuk-px-to-rem(36) govuk-px-to-rem(24);
     border: 1px solid lbh-colour("lbh-a03");
     border-left: 6px solid lbh-colour("lbh-a03");

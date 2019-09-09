@@ -1,46 +1,46 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <h1 class="govuk-heading-xl">
+  <h1 class="lbh-heading-h1">
     Hackney Frontend
   </h1>
 
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Components</h2>
+      <h2 class="lbh-heading-h2">Components</h2>
 
-      <ul class="govuk-list">
-        <li><a href="/components/all{{ legacyQuery }}" class="govuk-link">All</a></li>
+      <ul class="lbh-list">
+        <li><a href="/components/all{{ legacyQuery }}" class="lbh-link">All</a></li>
         {% for componentName in componentsDirectory | sort %}
-          <li><a href="/components/{{ componentName }}{{ legacyQuery }}" class="govuk-link">{{ componentName | replace("lbh-", "") | replace("-", " ") | capitalize }}</a></li>
+          <li><a href="/components/{{ componentName }}{{ legacyQuery }}" class="lbh-link">{{ componentName | replace("lbh-", "") | replace("-", " ") | capitalize }}</a></li>
         {% endfor %}
       </ul>
     </div>
 
     <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Examples</h2>
+      <h2 class="lbh-heading-h2">Examples</h2>
 
-      <ul class="govuk-list">
+      <ul class="lbh-list">
       {% for exampleName in examplesDirectory | sort %}
-        <li><a href="/examples/{{ exampleName }}{{ legacyQuery }}" class="govuk-link">{{ exampleName | replace("-", " ") | capitalize }}</a></li>
+        <li><a href="/examples/{{ exampleName }}{{ legacyQuery }}" class="lbh-link">{{ exampleName | replace("-", " ") | capitalize }}</a></li>
       {% endfor %}
       </ul>
     </div>
 
     <div class="govuk-grid-column-one-third">
-      {# <h2 class="govuk-heading-m">Full page examples</h2>
+      <h2 class="lbh-heading-h2">Full page examples</h2>
 
-      <ul class="govuk-list">
+      <ul class="lbh-list">
       {% for exampleName in fullPageExamplesDirectory | sort %}
-        <li><a href="/full-page-examples/{{ exampleName }}{{ legacyQuery }}" class="govuk-link">{{ exampleName | replace("-", " ") | capitalize }}</a></li>
+        <li><a href="/full-page-examples/{{ exampleName }}{{ legacyQuery }}" class="lbh-link">{{ exampleName | replace("-", " ") | capitalize }}</a></li>
       {% endfor %}
-      </ul> #}
+      </ul>
 
-      <h2 class="govuk-heading-m">Misc</h2>
+      <h2 class="lbh-heading-h2">Misc</h2>
 
-      <ul class="govuk-list">
-        <li><a href="/docs" class="govuk-link">Sass Documentation</a></li>
+      <ul class="lbh-list">
+        <li><a href="/docs" class="lbh-link">Sass Documentation</a></li>
       </ul>
     </div>
   </div>

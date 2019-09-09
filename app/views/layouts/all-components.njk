@@ -8,14 +8,16 @@
 {% endset %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
-    href: "/" + legacyQuery
-  }) }}
+  <div class="lbh-container">
+    {{ govukBackLink({
+      href: "/" + legacyQuery
+    }) }}
+  </div>
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-width-container">
-    <h1 class="govuk-heading-xl">
+  <div class="lbh-container">
+    <h1 class="lbh-heading-h1">
       All components
     </h1>
   </div>

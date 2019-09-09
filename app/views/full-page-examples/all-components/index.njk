@@ -1,0 +1,333 @@
+{% extends "full-width.njk" %}
+
+{% from "lbh-accordion/macro.njk" import lbhAccordion %}
+{% from "lbh-announcement/macro.njk" import lbhAnnouncement %}
+{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
+{% from "lbh-button/macro.njk" import lbhButton %}
+{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
+{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
+{% from "lbh-contact-block/macro.njk" import lbhContactBlock %}
+{% from "lbh-cookie-banner/macro.njk" import lbhCookieBanner %}
+{% from "lbh-date-input/macro.njk" import lbhDateInput %}
+{% from "lbh-details/macro.njk" import lbhDetails %}
+{% from "lbh-inset-text/macro.njk" import lbhInsetText %}
+{% from "lbh-page-announcement/macro.njk" import lbhPageAnnouncement %}
+{% from "lbh-radios/macro.njk" import lbhRadios %}
+{% from "lbh-phase-banner/macro.njk" import lbhPhaseBanner %}
+{% from "lbh-select/macro.njk" import lbhSelect %}
+{% from "lbh-tabs/macro.njk" import lbhTabs %}
+
+{% set pageTitle = "All components" %}
+{% block pageTitle %}{{ pageTitle }} - LBH{% endblock %}
+
+{% block beforeContent %}
+  {{ lbhCookieBanner({
+    content: '<p>We use cookies to ensure you have the best experience. For full details see our <a href="#">Cookie policy</a>.</p>'
+  }) }}
+  {{ lbhPhaseBanner({
+    tag: {
+      text: "Alpha"
+    },
+    html: "This is a new website. Tell us what you think by leaving your feedback using the arrow at the bottom right of the screen."
+  }) }}
+  {{ lbhAnnouncement({
+    title: "Site-wide announcement",
+    content: '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>',
+    isSiteWide: true
+  }) }}
+  {{ lbhAnnouncement({
+    title: "Section announcement",
+    content: '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>',
+    isSiteWide: false
+  }) }}
+  {{ lbhBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#/"
+      },
+      {
+        text: "International",
+        href: "#/"
+      },
+      {
+        text: "Foreign affairs",
+        href: "#/"
+      }
+    ]
+  }) }}
+{% endblock %}
+{% block content %}
+<div class="lbh-container">
+  <h1 class="lbh-heading-h1">Heading level 1</h1>
+  {{ lbhAccordion({
+    id: "all-components-example-accordion",
+    items: [
+      {
+        heading: {
+          text: "Section A"
+        },
+        content: {
+          html: 
+            '<ul class="lbh-list lbh-list--bullet">
+              <li>Example item 1</li>
+            </ul>'
+        }
+      },
+      {
+        heading: {
+          text: "Section B"
+        },
+        content: {
+          html: 
+            '<ul class="lbh-list lbh-list--bullet">
+              <li>Example item 2</li>
+            </ul>'
+        }
+      }
+    ]
+  }) }}
+
+  {{ lbhPageAnnouncement({
+    title: "Page announcement",
+    content: '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>'
+  }) }}
+
+  {% set textHTML %}
+    <p class="lbh-body-m">Here is some text, if you like it click here:</p>
+    {{ lbhButton({
+      element: "button",
+      text: "I do nothing",
+      name: "button-one",
+      type: "submit"
+    }) }}
+  {% endset -%}
+
+  {% set formHTML %}
+    {{ lbhCharacterCount({
+      id: "character-count-one",
+      name: "character-count",
+      maxlength: 300,
+      threshold: 80,
+      label: {
+        text: "Can you provide more detail?"
+      }
+    }) }}
+    
+    {{ lbhCheckboxes({
+      idPrefix: "nationality",
+      name: "nationality",
+      fieldset: {
+        legend: {
+          text: "What is your nationality?"
+        }
+      },
+      hint: {
+        text: "If you have dual nationality, select all options that are relevant to you."
+      },
+      items: [
+        {
+          value: "british",
+          text: "British"
+        },
+        {
+          value: "irish",
+          text: "Irish"
+        },
+        {
+          value: "other",
+          text: "Citizen of another country"
+        }
+      ]
+    }) }}
+
+    {{ lbhDetails({
+      summaryText: "Help with nationality",
+      text: "We need to know your nationality so we can work out which elections
+        you’re entitled to vote in. If you can’t provide your nationality,
+        you’ll have to send copies of identity documents through the post."
+    }) }}
+
+    {{ lbhDateInput({
+      id: "dob",
+      namePrefix: "dob",
+      fieldset: {
+        legend: {
+          text: "What is your date of birth?"
+        }
+      },
+      hint: {
+        text: "For example, 31 3 1980"
+      },
+      items: [
+        {
+          name: "day",
+          classes: "govuk-input--width-2"
+        },
+        {
+          name: "month",
+          classes: "govuk-input--width-2"
+        },
+        {
+          name: "year",
+          classes: "govuk-input--width-4"
+        }
+      ]
+    }) }}
+
+    {{ lbhRadios({
+      idPrefix: "transport",
+      name: "transport",
+      fieldset: {
+        legend: {
+          text: "How do you travel to work?"
+        }
+      },
+      items: [
+        {
+          value: "bike",
+          text: "Bike"
+        },
+        {
+          value: "bus",
+          text: "Bus"
+        },
+        {
+          value: "car",
+          text: "Car"
+        },
+        {
+          value: "train",
+          text: "Train"
+        },
+        {
+          value: "walk",
+          text: "Walk"
+        }
+      ]
+    }) }}
+
+    {{ lbhSelect({
+      id: "select-1",
+      name: "select-1",
+      label: {
+        text: "Label text goes here"
+      },
+      items: [
+        {
+          value: 1,
+          text: "LBH frontend option 1"
+        },
+        {
+          value: 2,
+          text: "LBH frontend option 2"
+        },
+        {
+          value: 3,
+          text: "LBH frontend option 3"
+        }
+      ]
+    }) }}
+  {% endset -%}
+
+  {% set otherTextHTML %}
+    {% set insetTextHTML %}
+      <h2 id="fco-spokesperson-said" class="lbh-body-m">A FCO spokesman said:</h2>
+
+      <p class="lbh-body-m">I can regretfully confirm that the Foreign Office isn’t able to offer advice on vampires, rogue stray cats or ‘Strictly’ contestants. And our capacity to deploy veggie sausages remains sadly lacking.</p>
+
+      <p class="lbh-body-m">But in all seriousness, getting into trouble abroad can be daunting and upsetting.  If you find yourself in an emergency in another country, contact the nearest British Embassy, High Commission or Consulate and our consular staff will do everything they can to help.</p>
+    {% endset %}
+
+    {{ lbhInsetText({
+      html: insetTextHTML
+    }) }}
+  {% endset -%}
+
+  {{ lbhTabs({
+    items: [
+      {
+        label: "Text",
+        id: "text-tab",
+        panel: {
+          html: textHTML
+        }
+      },
+      {
+        label: "Form",
+        id: "form-tab",
+        panel: {
+          html: formHTML
+        }
+      },
+      {
+        label: "Other text",
+        id: "other-text-tab",
+        panel: {
+          html: otherTextHTML
+        }
+      }
+    ]
+  }) }}
+
+  {{ lbhContactBlock({
+    title: "Service Name Centre",
+    showSocial: true,
+    twitterLink: 'https://twitter.com/hackneycouncil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
+    facebookLink: 'https://en-gb.facebook.com/hackneycouncil/',
+    youtubeLink: 'https://www.youtube.com/user/hackneycouncil',
+    instagramLink: 'https://www.instagram.com/hackneycouncil/?hl=en',
+    address: "<span>Service Centre</span><span>1 Hillman Street</span><span>E8 1DY</span>",
+    telephones: [
+      {
+        telephone: '020 8356 3000'
+      },
+      {
+        telephone: '020 8356 3736'
+      }
+    ],
+    emails: [
+      {
+        email: 'iamanemail@hackney.gov.uk'
+      },
+      {
+        email: 'iamanemail@hackney.gov.uk'
+      }
+    ],
+    openingTimes: [
+      {
+        openingTimeEntry: "Monday: Closed"
+      },
+      {
+        openingTimeEntry: "Tuesday: 9:30am - 5:30pm"
+      },
+      {
+        openingTimeEntry: "Wednesday: 9:30am - 5:30pm"
+      },
+      {
+        openingTimeEntry: "Thursday: 9:30am - 8:00pm"
+      },
+      {
+        openingTimeEntry: "Friday: 9:30am - 5:30pm"
+      },
+      {
+        openingTimeEntry: "Saturday: 10:00am - 5:30pm"
+      },
+      {
+        openingTimeEntry: "Sunday: Closed"
+      }
+    ],
+    notes: [
+      {
+        note: "Visitor centre open daily 10am-3pm except public holidays."
+      }
+    ],
+    showMap: true,
+    mapAccessToken: 'pk.eyJ1IjoibGJoZWxld2lzIiwiYSI6ImNqeXJkN25uNjA5M3Uzb251bWVyejJ3YW8ifQ.uzO8I54w64U6QkNknW32FA',
+    markerLat: 51.545386,
+    markerLng: -0.057069,
+    mapMinZoom: 2,
+    directionLink: 'https://goo.gl/maps/YHtCx2nqP2o57BZi6'
+  }) }}
+</div>
+{% endblock %}

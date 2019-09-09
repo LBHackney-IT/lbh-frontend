@@ -185,7 +185,7 @@ describe(`http://localhost:${PORT}`, () => {
     it('should have `beforeContent` outside the main section of the page', done => {
       requestPath.get(templatePath, (err, res) => {
         let $ = cheerio.load(res.body)
-        const $container = $('.govuk-width-container')
+        const $container = $('.lbh-container')
         const $backLink = $container.find('> .govuk-back-link')
 
         expect($backLink.length).toBe(1)
@@ -198,7 +198,7 @@ describe(`http://localhost:${PORT}`, () => {
         let $ = cheerio.load(res.body)
         const $main = $('main')
 
-        expect($main.attr('class')).toBe('govuk-main-wrapper app-main-class')
+        expect($main.attr('class')).toBe('lbh-main-wrapper app-main-class')
         done(err)
       })
     })

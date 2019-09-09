@@ -5,5 +5,11 @@
 @include lbh-exports("lbh/component/breadcrumbs") {
   .lbh-breadcrumbs {
     @extend %lbh-body-xs;
+    margin-top: govuk-px-to-rem(18);
+    margin-bottom: 0;
+
+    .govuk-breadcrumbs__list-item {
+      margin-bottom: 0;
+    }
   }
 }

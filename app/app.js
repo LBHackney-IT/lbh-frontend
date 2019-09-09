@@ -17,7 +17,7 @@ const appViews = [
   configPaths.layouts,
   configPaths.views,
   configPaths.examples,
-  // configPaths.fullPageExamples,
+  configPaths.fullPageExamples,
   configPaths.components,
   configPaths.src,
   configPaths.node_modules,
@@ -93,12 +93,12 @@ module.exports = (options) => {
   app.get('/', async function (req, res) {
     const components = fileHelper.allComponents
     const examples = await readdir(path.resolve(configPaths.examples))
-    // const fullPageExamples = await readdir(path.resolve(configPaths.fullPageExamples))
+    const fullPageExamples = await readdir(path.resolve(configPaths.fullPageExamples))
 
     res.render('index', {
       componentsDirectory: components,
-      examplesDirectory: examples
-      // fullPageExamplesDirectory: fullPageExamples
+      examplesDirectory: examples,
+      fullPageExamplesDirectory: fullPageExamples
     })
   })
 
@@ -191,7 +191,7 @@ module.exports = (options) => {
   })
 
   // Full page example views
-  // require('./full-page-examples.js')(app)
+  require('./full-page-examples.js')(app)
 
   app.get('/robots.txt', function (req, res) {
     res.type('text/plain')

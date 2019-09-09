@@ -4,6 +4,8 @@
 
 @include lbh-exports("lbh/component/accordion") {
   .lbh-accordion {
+    margin-bottom: govuk-px-to-rem(48);
+
     .govuk-accordion__section-button {
       @extend %lbh-heading-h5;
     }

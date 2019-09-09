@@ -10,6 +10,7 @@
     background: rgba(lbh-colour("lbh-a04"), .2);
 
     &--site {
+      margin-bottom: govuk-px-to-rem(18);
       background: rgba(lbh-colour("lbh-a04"), .5);
     }
 
