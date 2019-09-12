@@ -160,6 +160,8 @@
     }
 
     &__map-container {
+      position: relative;
+      z-index: lbh-depth-index("map");
       width: 100%;
       height: 400px;
       order: 4;

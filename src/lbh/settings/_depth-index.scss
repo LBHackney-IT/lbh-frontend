@@ -1,0 +1,17 @@
+////
+/// @group settings/depth-index
+////
+
+/// Depth index
+///
+/// @type Map
+///
+/// @prop $element - Depth of a given $element
+///
+/// @access public
+
+$lbh-depth-index: (
+  "map": 1,
+  "back-to-top": 2,
+  "cookie-banner": 3
+) !default;

@@ -1,0 +1,104 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/back-to-top") {
+  .lbh-back-to-top {
+    display: inline-block;
+    position: fixed;
+    z-index: lbh-depth-index("back-to-top");
+    bottom: govuk-px-to-rem(65);
+    left: 50%;
+    padding: govuk-px-to-rem(6) govuk-px-to-rem(23) govuk-px-to-rem(6) govuk-px-to-rem(6);
+    transform: translate(-50%);
+    border: 1px solid rgba(lbh-colour("lbh-a01"), .1);
+    border-radius: govuk-px-to-rem(22);
+    background: rgba(lbh-colour("lbh-grey-4"), .9);
+    box-shadow: rgba(lbh-colour("lbh-black"), .2) 0 1px 5px 0;
+    text-decoration: none;
+
+    @include govuk-media-query($from: desktop) {
+      right: 0;
+      left: auto;
+      transform: none;
+      border-radius: govuk-px-to-rem(22) 0 0 govuk-px-to-rem(22);
+    }
+
+    .js-enabled & {
+      // sass-lint: disable-next-line
+      transition: opacity 350ms;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .js-enabled &--visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    &:hover {
+      .lbh-back-to-top__text {
+        text-decoration: none;
+      }
+    }
+
+    &:active {
+      background: lbh-colour("lbh-link");
+
+      .lbh-back-to-top__icon-circle {
+        fill: lbh-colour("lbh-white");
+        stroke: lbh-colour("lbh-link");
+      }
+
+      .lbh-back-to-top__icon-arrow {
+        fill: lbh-colour("lbh-link");
+      }
+
+      .lbh-back-to-top__text {
+        color: lbh-colour("lbh-white");
+        text-decoration: underline;
+      }
+    }
+
+    &:focus {
+      box-sizing: border-box;
+      height: govuk-px-to-rem(43);
+      padding: govuk-px-to-rem(5) govuk-px-to-rem(22) govuk-px-to-rem(5) govuk-px-to-rem(5);
+      border: 2px solid lbh-colour("lbh-primary-focus");
+      outline: none;
+    }
+
+    &__icon {
+      display: inline-block;
+      width: govuk-px-to-rem(29);
+      height: govuk-px-to-rem(29);
+      margin-right: govuk-px-to-rem(8);
+      vertical-align: middle;
+    }
+
+    &__icon-circle {
+      fill: lbh-colour("lbh-link");
+      stroke: lbh-colour("lbh-white");
+    }
+
+    &__icon-arrow {
+      fill: lbh-colour("lbh-white");
+    }
+
+    &__text {
+      display: inline-block;
+      @include lbh-font;
+      color: $lbh-link-colour;
+      font-size: govuk-px-to-rem(16);
+      font-weight: $lbh-font-weight-regular;
+      line-height: govuk-px-to-rem(19);
+      text-decoration: underline;
+      vertical-align: middle;
+
+      @include govuk-media-query($from: tablet) {
+        font-size: govuk-px-to-rem(14);
+        line-height: govuk-px-to-rem(18);
+      }
+    }
+  }
+}
