@@ -25,7 +25,6 @@
     }
 
     .js-enabled & {
-      // sass-lint: disable-next-line
       transition: opacity 350ms;
       opacity: 0;
       pointer-events: none;
