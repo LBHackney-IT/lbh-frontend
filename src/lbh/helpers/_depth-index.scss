@@ -1,0 +1,22 @@
+@import "../settings/depth-index";
+
+////
+/// @group helpers/depth-index
+////
+
+/// Get colour
+///
+/// @param {String} $element - Name of element from the depth index
+/// @return {Index} Numeric index to use as z-index property
+/// @throw if `$element` is not an element from the depth index
+/// @access public
+
+@function lbh-depth-index($element) {
+  $element: quote($element);
+
+  @if not map-has-key($lbh-depth-index, $element) {
+    @error "Unknown element `#{$element}`";
+  }
+
+  @return map-get($lbh-depth-index, $element);
+}

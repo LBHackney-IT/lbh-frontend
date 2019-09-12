@@ -1,4 +1,5 @@
 import GovukFrontend from 'govuk-frontend'
+import BackToTop from './components/lbh-back-to-top/back-to-top'
 import CookieBanner from './components/lbh-cookie-banner/cookie-banner'
 import Map from './components/lbh-contact-block/contact-block'
 
@@ -21,19 +22,25 @@ function initAll (options) {
   // Defaults to the entire document if nothing is set.
   var scope = typeof options.scope !== 'undefined' ? options.scope : document
 
-  var $cookieBanners = scope.querySelectorAll('[data-module="lbh-cookie-banner"]')
-  nodeListForEach($cookieBanners, function ($cookieBanner) {
+  var $cookieBanner = scope.querySelector('[data-module="lbh-cookie-banner"]')
+  if ($cookieBanner) {
     new CookieBanner($cookieBanner).init()
-  })
+  }
 
   var $maps = scope.querySelectorAll('[data-module="lbh-map"]')
   nodeListForEach($maps, function ($map) {
     new Map($map).init()
   })
+
+  var $backToTop = scope.querySelector('[data-module="lbh-back-to-top"]')
+  if ($backToTop) {
+    new BackToTop($backToTop).init()
+  }
 }
 
 export {
   initAll,
+  BackToTop,
   CookieBanner,
   Map
 }

@@ -52,3 +52,14 @@
 .app-iframe-in-component-preview .lbh-cookie-banner {
   position: static;
 }
+
+.app-iframe-in-component-preview .lbh-back-to-top {
+  position: static;
+  transform: none;
+}
+
+.js-enabled.app-iframe-in-component-preview .lbh-back-to-top {
+  transition: none;
+  opacity: 1;
+  pointer-events: all;
+}

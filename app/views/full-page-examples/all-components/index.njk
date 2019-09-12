@@ -2,6 +2,7 @@
 
 {% from "lbh-accordion/macro.njk" import lbhAccordion %}
 {% from "lbh-announcement/macro.njk" import lbhAnnouncement %}
+{% from "lbh-back-to-top/macro.njk" import lbhBackToTop %}
 {% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
 {% from "lbh-button/macro.njk" import lbhButton %}
 {% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
@@ -329,5 +330,8 @@
     mapMinZoom: 2,
     directionLink: 'https://goo.gl/maps/YHtCx2nqP2o57BZi6'
   }) }}
+{{lbhBackToTop({
+  topLink: '#main-content'
+})}}
 </div>
 {% endblock %}

@@ -206,7 +206,6 @@
   %lbh-body-xs {
     @include lbh-font;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(14);
     font-weight: $lbh-font-weight-regular;
