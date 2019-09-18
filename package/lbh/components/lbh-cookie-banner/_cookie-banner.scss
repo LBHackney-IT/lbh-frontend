@@ -5,6 +5,7 @@
 @include lbh-exports("lbh/component/cookie-banner") {
   .lbh-cookie-banner {
     @include lbh-font;
+    z-index: lbh-depth-index("cookie-banner");
     padding: govuk-px-to-rem(24) 0;
     color: lbh-colour("lbh-white");
     background: rgba(lbh-colour("lbh-black"), .9);
@@ -14,6 +15,10 @@
 
     .js-enabled & {
       display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
     }
 
     &__content {

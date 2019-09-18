@@ -3,3 +3,7 @@
 @import "links";
 @import "lists";
 @import "typography";
+
+html {
+  scroll-behavior: smooth;
+}

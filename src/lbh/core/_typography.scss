@@ -9,7 +9,7 @@
   %lbh-heading-h1 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
+    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(32);
     font-weight: $lbh-font-weight-medium;
@@ -28,7 +28,6 @@
   %lbh-heading-h2 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-medium;
@@ -47,7 +46,6 @@
   %lbh-heading-h3 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(20);
     font-weight: $lbh-font-weight-medium;
@@ -66,7 +64,6 @@
   %lbh-heading-h4 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(18);
     font-weight: $lbh-font-weight-medium;
@@ -85,7 +82,6 @@
   %lbh-heading-h5 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
     font-weight: $lbh-font-weight-medium;
@@ -104,7 +100,6 @@
   %lbh-heading-h6 {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(14);
     font-weight: $lbh-font-weight-medium;
@@ -120,10 +115,33 @@
     @extend %lbh-heading-h6;
   }
 
+  h1 {
+    @extend %lbh-heading-h1;
+  }
+
+  h2 {
+    @extend %lbh-heading-h2;
+  }
+
+  h3 {
+    @extend %lbh-heading-h3;
+  }
+
+  h4 {
+    @extend %lbh-heading-h4;
+  }
+
+  h5 {
+    @extend %lbh-heading-h5;
+  }
+
+  h6 {
+    @extend %lbh-heading-h6;
+  }
+
   %lbh-heading-large-light {
     @include lbh-font;
     display: block;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-extra-light;
@@ -145,7 +163,6 @@
 
   %lbh-body-l {
     @include lbh-font;
-    margin-top: 0;
     margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(19);
@@ -165,7 +182,6 @@
 
   %lbh-body-m {
     @include lbh-font;
-    margin-top: 0;
     margin-bottom: govuk-px-to-rem(19);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
@@ -185,7 +201,6 @@
 
   %lbh-body-s {
     @include lbh-font;
-    margin-top: 0;
     margin-bottom: govuk-px-to-rem(16);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(13);
@@ -205,7 +220,6 @@
 
   %lbh-body-xs {
     @include lbh-font;
-    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(14);
     font-weight: $lbh-font-weight-regular;

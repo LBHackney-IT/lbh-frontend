@@ -10,14 +10,12 @@
     @include lbh-font;
     display: block;
     margin-top: 0;
-    // @include lbh-responsive-margin(8, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(32);
     font-weight: $lbh-font-weight-medium;
     line-height: govuk-px-to-rem(38);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(60);
       font-size: govuk-px-to-rem(48);
       line-height: govuk-px-to-rem(58);
     }
@@ -31,14 +29,12 @@
     @include lbh-font;
     display: block;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-medium;
     line-height: govuk-px-to-rem(29);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(48);
       font-size: govuk-px-to-rem(30);
       line-height: govuk-px-to-rem(36);
     }
@@ -52,14 +48,12 @@
     @include lbh-font;
     display: block;
     margin-top: 0;
-    // @include lbh-responsive-margin(4, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(20);
     font-weight: $lbh-font-weight-medium;
     line-height: govuk-px-to-rem(24);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(36);
       font-size: govuk-px-to-rem(24);
       line-height: govuk-px-to-rem(29);
     }
@@ -72,8 +66,7 @@
   %lbh-heading-h4 {
     @include lbh-font;
     display: block;
-    margin-top: govuk-px-to-rem(24);
-    // @include lbh-responsive-margin(4, "bottom");
+    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(18);
     font-weight: $lbh-font-weight-medium;
@@ -93,14 +86,12 @@
     @include lbh-font;
     display: block;
     margin-top: 0;
-    // @include lbh-responsive-margin(4, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
     font-weight: $lbh-font-weight-medium;
     line-height: govuk-px-to-rem(19);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(18);
       line-height: govuk-px-to-rem(22);
     }
@@ -114,14 +105,12 @@
     @include lbh-font;
     display: block;
     margin-top: 0;
-    // @include lbh-responsive-margin(4, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(14);
     font-weight: $lbh-font-weight-medium;
     line-height: govuk-px-to-rem(17);
 
     @include govuk-media-query($from: tablet) {
-      margin-top: govuk-px-to-rem(12);
       font-size: govuk-px-to-rem(16);
       line-height: govuk-px-to-rem(19);
     }
@@ -134,8 +123,7 @@
   %lbh-heading-large-light {
     @include lbh-font;
     display: block;
-    margin-top: govuk-px-to-rem(36);
-    // @include lbh-responsive-margin(4, "bottom");
+    margin-top: 0;
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-extra-light;
@@ -218,7 +206,6 @@
   %lbh-body-xs {
     @include lbh-font;
     margin-top: 0;
-    // @include lbh-responsive-margin(6, "bottom");
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(14);
     font-weight: $lbh-font-weight-regular;

@@ -1,6 +1,7 @@
 {% from "character-count/macro.njk" import govukCharacterCount %}
 
 {% set classes = (params.classes if params.classes else '') + ' lbh-character-count' %}
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
 
 {{ govukCharacterCount({
   id: params.id,
@@ -13,7 +14,7 @@
   label: params.label,
   hint: params.hint,
   errorMessage: params.errorMessage,
-  formGroup: {classes: 'lbh-form-group'},
+  formGroup: formGroup,
   classes: classes,
   attributes: params.attributes
 })}}

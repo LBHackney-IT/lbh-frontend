@@ -5,6 +5,7 @@
 @include lbh-exports("lbh/component/inset-text") {
   .lbh-inset-text {
     @extend %lbh-body-m;
+    margin-bottom: govuk-px-to-rem(48);
     padding: govuk-px-to-rem(24);
     border-left-color: lbh-colour("lbh-border");
   }
