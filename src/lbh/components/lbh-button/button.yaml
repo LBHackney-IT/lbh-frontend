@@ -108,7 +108,7 @@ examples:
   description: Simulate triggering the :focus CSS pseudo-class, not available in the production build.
   data:
     name: focus
-    text: Focused
+    text: Focussed
     classes: :focus
 - name: Secondary
   description: A button for secondary actions
