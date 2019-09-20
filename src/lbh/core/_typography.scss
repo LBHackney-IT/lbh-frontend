@@ -28,6 +28,7 @@
   %lbh-heading-h2 {
     @include lbh-font;
     display: block;
+    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-medium;
