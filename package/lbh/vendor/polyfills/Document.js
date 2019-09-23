@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -118,7 +118,7 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {(function(undefined) {\n\n//
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!****************************************************!*\
   !*** multi ./src/lbh/vendor/polyfills/Document.js ***!
   \****************************************************/

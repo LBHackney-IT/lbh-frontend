@@ -7,9 +7,15 @@
     @extend %lbh-body-xs;
     margin-top: govuk-px-to-rem(18);
     margin-bottom: 0;
+    font-size: govuk-px-to-rem(15);
 
     .govuk-breadcrumbs__list-item {
       margin-bottom: 0;
+    }
+
+    .govuk-breadcrumbs__link {
+      @extend %lbh-link;
+      font-weight: $lbh-font-weight-medium;
     }
   }
 }
