@@ -91,14 +91,14 @@ LBH Frontend avoids applying styles globally on HTML elements such as `body`; in
 
 This to avoid the risk of global styles conflicting with any pre-existing globals or with any app specific CSS.
 
-These [global styles](../../src/govuk/core/_global-styles.scss) are are not included by default in GOV.UK Frontend. To include these global styles in your app, you can set `$govuk-global-styles` variable to `true` before importing GOV.UK Frontend styles into your app:
+These [global styles](../../src/lbh/core/_global-styles.scss) (`<h1>` to `<h6>`, `<p>`, `<a>`) are not included by default in LBH Frontend. To include these global styles in your app, you can set `$lbh-global-styles` variable to `true` before importing LBH Frontend styles into your app:
 
 ```SCSS
 // application.scss
 
-$govuk-global-styles: true;
+$lbh-global-styles: true;
 
-@import "govuk-frontend/govuk/all";
+@import "lbh-frontend/lbh/all";
 ```
 
 

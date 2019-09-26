@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -122,15 +122,15 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*!*************************************************!*\
   !*** ./src/lbh/components/lbh-button/button.js ***!
   \*************************************************/
-/*! exports provided: Button */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! govuk-frontend/govuk/components/button/button */ \"./node_modules/govuk-frontend/govuk/components/button/button.js\");\n/* harmony import */ var govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, \"Button\", function() { return govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0___default.a; });\n\n\n\n\n\n//# sourceURL=webpack://LBHFrontend/./src/lbh/components/lbh-button/button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! govuk-frontend/govuk/components/button/button */ \"./node_modules/govuk-frontend/govuk/components/button/button.js\");\n/* harmony import */ var govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (govuk_frontend_govuk_components_button_button__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n\n//# sourceURL=webpack://LBHFrontend/./src/lbh/components/lbh-button/button.js?");
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************************************!*\
   !*** multi ./src/lbh/components/lbh-button/button.js ***!
   \*******************************************************/

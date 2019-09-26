@@ -41,12 +41,12 @@
     {% endblock %}
 
     {% block main %}
-      <div class="lbh-container">
-        {% block beforeContent %}{% endblock %}
-        <main class="lbh-main-wrapper {{ mainClasses }}" id="main-content" role="main">
+      {% block beforeContent %}{% endblock %}
+      <main class="lbh-main-wrapper {{ mainClasses }}" id="main-content" role="main">
+        <div class="lbh-container">
           {% block content %}{% endblock %}
-        </main>
-      </div>
+        </div>
+      </main>
     {% endblock %}
 
     {% block footer %}
