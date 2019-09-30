@@ -1,0 +1,22 @@
+params:
+- name: isHome
+  type: boolean
+  required: true
+  description: Set to true if header is on the homepage (logo will appear in `<h1>`), else set to false (logo will appear in `<div>`)
+- name: homepageUrl
+  type: string
+  required: false
+  description: URL logo will link to (defaults to '/')
+
+previewLayout: full-width
+
+examples:
+- name: default
+  data: 
+    isHome: true
+    homepageUrl: '/'
+- name: not homepage
+  data:
+    isHome: false
+    homepageUrl: '/'
+

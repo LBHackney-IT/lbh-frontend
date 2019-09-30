@@ -1,0 +1,60 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/header") {
+  .lbh-header {
+    position: relative;
+    padding-bottom: govuk-px-to-rem(8);
+    border-bottom: 4px solid lbh-colour("lbh-a01");
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+
+    &:before {
+      bottom: -10px;
+      border-bottom: 3px solid lbh-colour("lbh-a02");
+    }
+
+    &:after {
+      bottom: -15px;
+      border-bottom: 2px solid lbh-colour("lbh-a03");
+    }
+
+    &__main {
+      padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(16);
+      color: lbh-colour("lbh-white");
+      background: lbh-colour("lbh-black");
+
+      @include mq($from: desktop) {
+        padding: govuk-px-to-rem(24) 0 govuk-px-to-rem(16);
+      }
+    }
+
+    &__title {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    &__logo {
+      width: govuk-px-to-rem(152);
+      height: govuk-px-to-rem(28);
+      color: lbh-colour("lbh-white");
+
+      @include mq($from: tablet) {
+        width: govuk-px-to-rem(206);
+        height: govuk-px-to-rem(37);
+      }
+    }
+
+    &__logo-text {
+      @include govuk-visually-hidden;
+    }
+  }
+}
