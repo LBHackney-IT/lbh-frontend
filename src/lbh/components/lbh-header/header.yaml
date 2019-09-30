@@ -7,6 +7,14 @@ params:
   type: string
   required: false
   description: URL logo will link to (defaults to '/')
+- name: serviceName
+  type: string
+  required: false
+  description: Service name to appear after Hackney logo to describe website. Must be short.
+- name: links
+  type: html
+  required: false
+  description: HTML content for the right hand side of the header, will stack on mobile
 
 previewLayout: full-width
 
@@ -19,4 +27,17 @@ examples:
   data:
     isHome: false
     homepageUrl: '/'
+- name: with service name
+  data:
+    isHome: false
+    homepageUrl: '/'
+    serviceName: 'Manage a tenancy'
+- name: with links
+  data:
+    isHome: false
+    homepageUrl: '/'
+    serviceName: 'Manage a tenancy'
+    links: |
+      <p>Anne James</p>
+      <a>Sign out</a>
 

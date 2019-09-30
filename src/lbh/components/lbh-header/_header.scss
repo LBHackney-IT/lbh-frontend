@@ -32,17 +32,39 @@
       color: lbh-colour("lbh-white");
       background: lbh-colour("lbh-black");
 
-      @include mq($from: desktop) {
+      @include mq($from: tablet) {
         padding: govuk-px-to-rem(24) 0 govuk-px-to-rem(16);
+      }
+    }
+
+    &__wrapper {
+      @include mq($from: tablet) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__titles {
+      display: flex;
+      align-items: center;
+      
+      @include mq($from: tablet) {
+        align-items: flex-start;
       }
     }
 
     &__title {
       display: block;
+      margin-right: govuk-px-to-rem(18);
       margin-bottom: 0;
     }
 
+    &__title-link {
+      display: block;
+    }
+
     &__logo {
+      display: block;
       width: govuk-px-to-rem(152);
       height: govuk-px-to-rem(28);
       color: lbh-colour("lbh-white");
@@ -55,6 +77,35 @@
 
     &__logo-text {
       @include govuk-visually-hidden;
+    }
+
+    &__service-name {
+      @extend %lbh-body-m;
+      margin-bottom: 0;
+      color: lbh-colour("lbh-white");
+
+      @include mq($from: tablet) {
+        margin-right: govuk-px-to-rem(24);
+        padding-top: govuk-px-to-rem(10);
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a,
+      p {
+        @extend %lbh-body-m;
+        padding-top: govuk-px-to-rem(10);
+        color: lbh-colour("lbh-white");
+
+        & + a,
+        & + p {
+          margin-left: govuk-px-to-rem(18);
+        }
+      }
     }
   }
 }
