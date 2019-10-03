@@ -5,8 +5,8 @@
 @include lbh-exports("lbh/core/links") {
 
   %lbh-link {
-    @include govuk-link-common;
-    @include govuk-link-style-default;
+    @include lbh-link-common;
+    @include lbh-link-style-default;
     @include govuk-link-print-friendly;
   }
 

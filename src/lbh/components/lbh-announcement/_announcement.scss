@@ -24,9 +24,11 @@
 
     &__content {
       @extend %lbh-body-m;
+      font-weight: $lbh-font-weight-regular;
 
       a {
         @extend %lbh-link;
+        @include lbh-link-style-panel;
       }
 
       p:last-child {

@@ -28,12 +28,12 @@
     }
 
     &__main {
-      padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(16);
+      padding: govuk-px-to-rem(16) 0 govuk-px-to-rem(12);
       color: lbh-colour("lbh-white");
       background: lbh-colour("lbh-black");
 
       @include mq($from: tablet) {
-        padding: govuk-px-to-rem(24) 0 govuk-px-to-rem(16);
+        padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(12);
       }
     }
 
@@ -47,7 +47,7 @@
     &__titles {
       display: flex;
       align-items: center;
-      
+
       @include mq($from: tablet) {
         align-items: flex-start;
       }
@@ -60,7 +60,14 @@
     }
 
     &__title-link {
+      @include lbh-link-common;
       display: block;
+      padding: govuk-px-to-rem(4) 0;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom-color: lbh-colour("lbh-white");
+      }
     }
 
     &__logo {
@@ -75,6 +82,10 @@
       }
     }
 
+    &__title-link:focus &__logo {
+      color: lbh-colour("lbh-black");
+    }
+
     &__logo-text {
       @include govuk-visually-hidden;
     }
@@ -86,25 +97,35 @@
 
       @include mq($from: tablet) {
         margin-right: govuk-px-to-rem(24);
-        padding-top: govuk-px-to-rem(10);
+        padding-top: govuk-px-to-rem(12);
       }
     }
 
     &__links {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-end;
 
       a,
       p {
         @extend %lbh-body-m;
-        padding-top: govuk-px-to-rem(10);
+        margin-top: govuk-px-to-rem(8);
+        margin-bottom: 0;
+        padding: govuk-px-to-rem(4) 0;
         color: lbh-colour("lbh-white");
 
         & + a,
         & + p {
           margin-left: govuk-px-to-rem(18);
         }
+      }
+
+      a {
+        @include lbh-link-common;
+      }
+
+      a:hover {
+        text-decoration: none;
       }
     }
   }

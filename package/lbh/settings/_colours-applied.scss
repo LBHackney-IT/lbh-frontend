@@ -65,3 +65,10 @@ $lbh-link-hover-colour: lbh-colour("lbh-link-hover") !default;
 /// @access public
 
 $lbh-link-active-colour: lbh-colour("lbh-link-active") !default;
+
+/// Link on panel colour
+///
+/// @type Colour
+/// @access public
+
+$lbh-link-on-panel-colour: lbh-colour("lbh-link-on-panel") !default;

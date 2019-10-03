@@ -39,5 +39,5 @@ examples:
     serviceName: 'Manage a tenancy'
     links: |
       <p>Anne James</p>
-      <a>Sign out</a>
+      <a href="">Sign out</a>
 
