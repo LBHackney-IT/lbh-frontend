@@ -91,6 +91,11 @@
       "delay": 500
     },
     {
+      "label": "Header",
+      "url": "http://localhost:3000/components/lbh-header",
+      "delay": 500
+    },
+    {
       "label": "Input",
       "url": "http://localhost:3000/components/lbh-input",
       "delay": 500
