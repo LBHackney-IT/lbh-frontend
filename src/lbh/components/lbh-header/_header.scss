@@ -1,0 +1,132 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/header") {
+  .lbh-header {
+    position: relative;
+    padding-bottom: govuk-px-to-rem(8);
+    border-bottom: 4px solid lbh-colour("lbh-a01");
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+
+    &:before {
+      bottom: -10px;
+      border-bottom: 3px solid lbh-colour("lbh-a02");
+    }
+
+    &:after {
+      bottom: -15px;
+      border-bottom: 2px solid lbh-colour("lbh-a03");
+    }
+
+    &__main {
+      padding: govuk-px-to-rem(16) 0 govuk-px-to-rem(12);
+      color: lbh-colour("lbh-white");
+      background: lbh-colour("lbh-black");
+
+      @include mq($from: tablet) {
+        padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(12);
+      }
+    }
+
+    &__wrapper {
+      @include mq($from: tablet) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__titles {
+      display: flex;
+      align-items: center;
+
+      @include mq($from: tablet) {
+        align-items: flex-start;
+      }
+    }
+
+    &__title {
+      display: block;
+      margin-right: govuk-px-to-rem(18);
+      margin-bottom: 0;
+    }
+
+    &__title-link {
+      @include lbh-link-common;
+      display: block;
+      padding: govuk-px-to-rem(4) 0;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom-color: lbh-colour("lbh-white");
+      }
+    }
+
+    &__logo {
+      display: block;
+      width: govuk-px-to-rem(152);
+      height: govuk-px-to-rem(28);
+      color: lbh-colour("lbh-white");
+
+      @include mq($from: tablet) {
+        width: govuk-px-to-rem(206);
+        height: govuk-px-to-rem(37);
+      }
+    }
+
+    &__title-link:focus &__logo {
+      color: lbh-colour("lbh-black");
+    }
+
+    &__logo-text {
+      @include govuk-visually-hidden;
+    }
+
+    &__service-name {
+      @extend %lbh-body-m;
+      margin-bottom: 0;
+      color: lbh-colour("lbh-white");
+
+      @include mq($from: tablet) {
+        margin-right: govuk-px-to-rem(24);
+        padding-top: govuk-px-to-rem(12);
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      a,
+      p {
+        @extend %lbh-body-m;
+        margin-top: govuk-px-to-rem(8);
+        margin-bottom: 0;
+        padding: govuk-px-to-rem(4) 0;
+        color: lbh-colour("lbh-white");
+
+        & + a,
+        & + p {
+          margin-left: govuk-px-to-rem(18);
+        }
+      }
+
+      a {
+        @include lbh-link-common;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
