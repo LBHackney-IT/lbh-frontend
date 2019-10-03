@@ -104,7 +104,11 @@
     &__links {
       display: flex;
       align-items: flex-start;
-      justify-content: flex-end;
+      justify-content: space-between;
+
+      @include mq($from: tablet) {
+        justify-content: flex-end;
+      }
 
       a,
       p {
