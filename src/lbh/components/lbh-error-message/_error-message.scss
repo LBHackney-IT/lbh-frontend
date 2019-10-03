@@ -5,6 +5,8 @@
 @include lbh-exports("lbh/component/error-message") {
   .lbh-error-message,
   .lbh-form-group .govuk-error-message {
+    margin-top: 0;
+    margin-bottom: 0;
     color: lbh-colour("lbh-error");
     font-weight: $lbh-font-weight-medium;
   }
@@ -21,13 +23,11 @@
 
   .lbh-form-group .govuk-fieldset__legend + .lbh-error-message,
   .lbh-form-group .govuk-fieldset__legend + .govuk-error-message {
-    margin-top: govuk-px-to-rem(-18);
-    margin-bottom: govuk-px-to-rem(12);
+    margin-top: govuk-px-to-rem(6);
   }
 
   .lbh-form-group .govuk-fieldset__legend + .govuk-hint + .lbh-error-message,
   .lbh-form-group .govuk-fieldset__legend + .govuk-hint + .govuk-error-message {
-    margin-top: govuk-px-to-rem(-6);
-    margin-bottom: govuk-px-to-rem(12);
+    margin-top: govuk-px-to-rem(12);
   }
 }

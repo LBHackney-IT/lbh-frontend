@@ -13,6 +13,10 @@
       margin-bottom: 0;
     }
 
+    .govuk-breadcrumbs__list-item + .govuk-breadcrumbs__list-item {
+      margin-top: 0;
+    }
+
     .govuk-breadcrumbs__link {
       @extend %lbh-link;
       font-weight: $lbh-font-weight-medium;

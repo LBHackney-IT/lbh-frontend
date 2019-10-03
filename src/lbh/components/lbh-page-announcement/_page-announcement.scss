@@ -23,13 +23,9 @@
       }
 
       ul {
-        @extend %govuk-list;
-        @extend %govuk-list--bullet;
+        @extend %lbh-list;
+        @extend %lbh-list--bullet;
         @extend %lbh-body-m;
-      }
-
-      & > *:last-child {
-        margin-bottom: 0;
       }
     }
   }

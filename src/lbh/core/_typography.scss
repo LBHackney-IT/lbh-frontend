@@ -9,7 +9,6 @@
   %lbh-heading-h1 {
     @include lbh-font;
     display: block;
-    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(32);
     font-weight: $lbh-font-weight-medium;
@@ -28,7 +27,6 @@
   %lbh-heading-h2 {
     @include lbh-font;
     display: block;
-    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-medium;
@@ -164,7 +162,6 @@
 
   %lbh-body-l {
     @include lbh-font;
-    margin-bottom: govuk-px-to-rem(24);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(19);
     font-weight: $lbh-font-weight-regular;
@@ -183,14 +180,12 @@
 
   %lbh-body-m {
     @include lbh-font;
-    margin-bottom: govuk-px-to-rem(19);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(16);
     font-weight: $lbh-font-weight-light;
     line-height: govuk-px-to-rem(19);
 
     @include govuk-media-query($from: tablet) {
-      margin-bottom: govuk-px-to-rem(23);
       font-size: govuk-px-to-rem(19);
       line-height: govuk-px-to-rem(23);
     }
@@ -202,14 +197,12 @@
 
   %lbh-body-s {
     @include lbh-font;
-    margin-bottom: govuk-px-to-rem(16);
     color: $lbh-text-colour;
     font-size: govuk-px-to-rem(13);
     font-weight: $lbh-font-weight-regular;
     line-height: govuk-px-to-rem(16);
 
     @include govuk-media-query($from: tablet) {
-      margin-bottom: govuk-px-to-rem(19);
       font-size: govuk-px-to-rem(16);
       line-height: govuk-px-to-rem(19);
     }

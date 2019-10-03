@@ -7,7 +7,6 @@
 @include lbh-exports("lbh/component/contact-block") {
   .lbh-contact {
     display: flex;
-    padding-bottom: govuk-px-to-rem(24);
     border-top: 4px solid lbh-colour("lbh-a01");
     flex-direction: column;
 
@@ -29,7 +28,7 @@
 
     &__social {
       display: flex;
-      margin: govuk-px-to-rem(36) 0;
+      margin: govuk-px-to-rem(36) 0 0;
       order: 3;
       align-items: center;
 
@@ -55,6 +54,7 @@
       display: block;
       width: govuk-px-to-rem(30);
       height: govuk-px-to-rem(30);
+      margin-top: 0;
     }
 
     &__fill {
@@ -78,8 +78,11 @@
     }
 
     &__block {
-      margin-bottom: govuk-px-to-rem(24);
       padding-left: govuk-px-to-rem(36);
+
+      & + .lbh-contact__block {
+        margin-top: govuk-px-to-rem(24);
+      }
     }
 
     &__block-title {
@@ -133,6 +136,10 @@
       padding: 0;
     }
 
+    &__address {
+      margin-top: 0;
+    }
+
     &__address,
     &__email,
     &__telephone,
@@ -142,6 +149,7 @@
 
     &__address span {
       display: block;
+      margin-top: 0;
     }
 
     &__address span:first-child {
@@ -187,6 +195,10 @@
       display: block;
       margin-top: govuk-px-to-rem(12);
       text-align: right;
+    }
+
+    .leaflet-control-zoom-out {
+      margin-top: 0;
     }
   }
 }

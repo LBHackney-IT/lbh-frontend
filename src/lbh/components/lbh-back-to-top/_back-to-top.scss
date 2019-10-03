@@ -86,6 +86,7 @@
 
     &__text {
       display: inline-block;
+      margin-top: 0;
       @include lbh-font;
       color: $lbh-link-colour;
       font-size: govuk-px-to-rem(16);

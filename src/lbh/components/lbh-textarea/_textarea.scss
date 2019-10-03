@@ -1,0 +1,9 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@include lbh-exports("lbh/component/textarea") {
+  .lbh-textarea {
+    margin-bottom: 0;
+  }
+}
