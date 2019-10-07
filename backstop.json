@@ -126,6 +126,11 @@
       "delay": 500
     },
     {
+      "label": "Table",
+      "url": "http://localhost:3000/components/lbh-table",
+      "delay": 500
+    },
+    {
       "label": "Tabs",
       "url": "http://localhost:3000/components/lbh-tabs",
       "delay": 500
