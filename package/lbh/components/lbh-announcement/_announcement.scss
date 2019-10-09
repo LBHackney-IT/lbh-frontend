@@ -13,6 +13,10 @@
       margin-top: -1px;
     }
 
+    & + & {
+      margin-top: 0;
+    }
+
     &--site {
       background: rgba(lbh-colour("lbh-a04"), .5);
     }
@@ -24,9 +28,11 @@
 
     &__content {
       @extend %lbh-body-m;
+      font-weight: $lbh-font-weight-regular;
 
       a {
         @extend %lbh-link;
+        @include lbh-link-style-panel;
       }
 
       p:last-child {

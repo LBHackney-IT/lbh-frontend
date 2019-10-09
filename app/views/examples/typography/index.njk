@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% from "back-link/macro.njk" import govukBackLink %}
-{% from 'table/macro.njk' import govukTable %}
+{% from 'lbh-table/macro.njk' import lbhTable %}
 
 {% block beforeContent %}
   {{ govukBackLink({
@@ -17,45 +17,23 @@
   <!-- Headings -->
 
   <section>
-    <div>
-      <h2 class="lbh-heading-h2 lbh-!-padding-bottom-2" style="border-bottom: 4px solid;">Headings</h2>
-    </div>
-    <div>
+    <h2 class="lbh-heading-h2 lbh-!-padding-bottom-2" style="border-bottom: 4px solid;">Headings</h2>
     <h1 class="lbh-heading-h1">lbh-heading-h1</h1>
-    </div>
-    <div>
-      <h2 class="lbh-heading-h2">lbh-heading-h2</h2>
-    </div>
-    <div>
-      <h3 class="lbh-heading-h3">lbh-heading-h3</h3>
-    </div>
-    <div>
-      <h4 class="lbh-heading-h4">lbh-heading-h4</h4>
-    </div>
-    <div>
-      <h5 class="lbh-heading-h5">lbh-heading-h5</h5>
-    </div>
-    <div>
-      <h6 class="lbh-heading-h6">lbh-heading-h6</h6>
-    </div>
+    <h2 class="lbh-heading-h2">lbh-heading-h2</h2>
+    <h3 class="lbh-heading-h3">lbh-heading-h3</h3>
+    <h4 class="lbh-heading-h4">lbh-heading-h4</h4>
+    <h5 class="lbh-heading-h5">lbh-heading-h5</h5>
+    <h6 class="lbh-heading-h6">lbh-heading-h6</h6>
   </section>
 
   <!-- Body text -->
 
   <section class="govuk-!-margin-top-8">
     <h2 class="lbh-heading-l govuk-!-padding-bottom-2" style="border-bottom: 4px solid;">Body text</h2>
-    <div>
-      <p class="lbh-body-l">lbh-body-l</p>
-    </div>
-    <div>
-      <p class="lbh-body-m">lbh-body / lbh-body-m</p>
-    </div>
-    <div>
-      <p class="lbh-body-s">lbh-body-s</p>
-    </div>
-    <div>
-      <p class="lbh-body-xs">lbh-body-xs</p>
-    </div>
+    <p class="lbh-body-l">lbh-body-l</p>
+    <p class="lbh-body-m">lbh-body / lbh-body-m</p>
+    <p class="lbh-body-s">lbh-body-s</p>
+    <p class="lbh-body-xs">lbh-body-xs</p>
   </section>
 
   <!-- Overrides -->
@@ -214,7 +192,7 @@
 
     <p class="lbh-body-m">Details of how to pay and where to send your application are on each form.</p>
 
-    {{ govukTable({
+    {{ lbhTable({
       "classes": "govuk-!-font-size-16",
       "head": [
         {

@@ -4,6 +4,10 @@
 
 @include lbh-exports("lbh/component/warning-text") {
   .lbh-warning-text {
-    margin-bottom: govuk-px-to-rem(24);
+    margin-bottom: 0;
+
+    .govuk-warning-text__text {
+      margin-top: 0;
+    }
   }
 }

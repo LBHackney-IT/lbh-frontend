@@ -10,7 +10,6 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: govuk-px-to-rem(24);
     border-top: 4px solid lbh-colour("lbh-a01");
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -42,7 +41,7 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      margin: govuk-px-to-rem(36) 0;
+      margin: govuk-px-to-rem(36) 0 0;
       -webkit-box-ordinal-group: 4;
       -webkit-order: 3;
           -ms-flex-order: 3;
@@ -74,6 +73,7 @@
       display: block;
       width: govuk-px-to-rem(30);
       height: govuk-px-to-rem(30);
+      margin-top: 0;
     }
 
     &__fill {
@@ -100,8 +100,11 @@
     }
 
     &__block {
-      margin-bottom: govuk-px-to-rem(24);
       padding-left: govuk-px-to-rem(36);
+
+      & + .lbh-contact__block {
+        margin-top: govuk-px-to-rem(24);
+      }
     }
 
     &__block-title {
@@ -157,6 +160,10 @@
       padding: 0;
     }
 
+    &__address {
+      margin-top: 0;
+    }
+
     &__address,
     &__email,
     &__telephone,
@@ -166,6 +173,7 @@
 
     &__address span {
       display: block;
+      margin-top: 0;
     }
 
     &__address span:first-child {
@@ -215,6 +223,10 @@
       display: block;
       margin-top: govuk-px-to-rem(12);
       text-align: right;
+    }
+
+    .leaflet-control-zoom-out {
+      margin-top: 0;
     }
   }
 }

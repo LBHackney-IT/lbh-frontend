@@ -6,11 +6,12 @@
   .lbh-cookie-banner {
     @include lbh-font;
     z-index: lbh-depth-index("cookie-banner");
+    margin-top: 0;
     padding: govuk-px-to-rem(24) 0;
     color: lbh-colour("lbh-white");
     background: rgba(lbh-colour("lbh-black"), .9);
     font-size: govuk-px-to-rem(16);
-    font-weight: $lbh-font-weight-light;
+    font-weight: $lbh-font-weight-regular;
     line-height: govuk-px-to-rem(24);
 
     .js-enabled & {
@@ -52,6 +53,8 @@
     }
 
     &__button-wrapper {
+      margin-top: 0;
+
       @include mq($from: desktop) {
         text-align: right;
       }

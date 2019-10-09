@@ -16,7 +16,8 @@
   // meaning it's not defined in IE's default style sheet,
   // so it uses CSS initial value, which is inline.
   display: block;
-  padding-top: govuk-px-to-rem(48);
+  margin-top: 0;
+  padding-top: govuk-px-to-rem(36);
   padding-bottom: govuk-px-to-rem(24);
 
   @include govuk-media-query($from: tablet) {

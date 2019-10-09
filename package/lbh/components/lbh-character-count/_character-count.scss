@@ -4,6 +4,8 @@
 
 @include lbh-exports("lbh/component/character-count") {
   .lbh-character-count {
+    margin-bottom: 0;
+
     & + .govuk-error-message {
       color: lbh-colour("lbh-error");
       font-weight: $lbh-font-weight-medium;
