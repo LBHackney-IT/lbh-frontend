@@ -111,7 +111,6 @@
       @extend %lbh-body-m;
       margin-top: govuk-px-to-rem(-10);
       margin-bottom: 0;
-      margin-left: govuk-px-to-rem(30);
       color: lbh-colour("lbh-white");
       font-size: govuk-px-to-rem(17);
       font-weight: $lbh-font-weight-regular;
@@ -119,7 +118,6 @@
 
       @include mq($from: desktop) {
         margin-top: 0;
-        margin-left: 0;
         padding-top: govuk-px-to-rem(8);
         font-size: govuk-px-to-rem(19);
         letter-spacing: govuk-px-to-rem(-.7);

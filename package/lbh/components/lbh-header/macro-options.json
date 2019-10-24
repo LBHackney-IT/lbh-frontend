@@ -1,0 +1,44 @@
+[
+    {
+        "name": "isHome",
+        "type": "boolean",
+        "required": true,
+        "description": "Set to true if header is on the homepage (logo will appear in `<h1>`), else set to false (logo will appear in `<div>`)"
+    },
+    {
+        "name": "homepageUrl",
+        "type": "string",
+        "required": false,
+        "description": "URL logo will link to (defaults to '/')"
+    },
+    {
+        "name": "serviceName",
+        "type": "string",
+        "required": false,
+        "description": "Service name to appear after Hackney logo to describe website. Must be short."
+    },
+    {
+        "name": "isServiceNameShort",
+        "type": "boolean",
+        "required": false,
+        "description": "If set to true service name will be capitalised and in larger font"
+    },
+    {
+        "name": "links",
+        "type": "html",
+        "required": false,
+        "description": "HTML content for the right hand side of the header, will stack on mobile"
+    },
+    {
+        "name": "colourScheme",
+        "type": "string",
+        "required": false,
+        "description": "Name of colour scheme to use instead of default black background"
+    },
+    {
+        "name": "isStackedOnMobile",
+        "type": "boolean",
+        "required": false,
+        "description": "If set to true this will stack the right hand side html content of the links field underneath the logo rather than alongside on mobile"
+    }
+]
