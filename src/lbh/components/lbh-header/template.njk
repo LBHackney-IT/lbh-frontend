@@ -1,4 +1,4 @@
-<header class="lbh-header {% if params.colourScheme %}lbh-header--{{params.colourScheme}}{% endif %}">
+<header class="lbh-header {% if params.isFixed %}lbh-header--fixed{% endif %} {% if params.colourScheme %}lbh-header--{{params.colourScheme}}{% endif %}">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper {% if params.isStackedOnMobile %}lbh-header__wrapper--stacked{% endif %}">
     {% if params.isHome %}

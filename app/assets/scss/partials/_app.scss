@@ -61,6 +61,10 @@
   transform: none;
 }
 
+.app-iframe-in-component-preview .lbh-header--fixed {
+  position: relative;
+}
+
 .js-enabled.app-iframe-in-component-preview .lbh-back-to-top {
   transition: none;
   opacity: 1;

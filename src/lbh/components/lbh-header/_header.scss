@@ -5,13 +5,33 @@
 @include lbh-exports("lbh/component/header") {
   .lbh-header {
     position: relative;
+    z-index: lbh-depth-index("header");
     margin-top: 0;
-    margin-bottom: 10px;
-    padding-bottom: govuk-px-to-rem(8);
-    border-bottom: 4px solid lbh-colour("lbh-a01");
+    padding-bottom: govuk-px-to-rem(21);
+    border-bottom: 2px solid lbh-colour("lbh-a03");
+    background: lbh-colour("lbh-white");
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      & + * {
+        margin-top: govuk-px-to-rem(88);
+
+        @include mq($from: tablet) {
+          margin-top: govuk-px-to-rem(100);
+        }
+      }
+    }
+
+    &--purple {
+      border-bottom-color: lbh-colour("lbh-e03");
+    }
 
     &--red {
-      border-bottom-color: lbh-colour("lbh-f01");
+      border-bottom-color: lbh-colour("lbh-f03");
     }
 
     &:before,
@@ -24,7 +44,7 @@
     }
 
     &:before {
-      bottom: -10px;
+      bottom: 3px;
       border-bottom: 3px solid lbh-colour("lbh-a02");
     }
 
@@ -32,13 +52,21 @@
       border-bottom-color: lbh-colour("lbh-f02");
     }
 
+    &--purple:before {
+      border-bottom-color: lbh-colour("lbh-e02");
+    }
+
     &:after {
-      bottom: -15px;
-      border-bottom: 2px solid lbh-colour("lbh-a03");
+      bottom: 9px;
+      border-bottom: 4px solid lbh-colour("lbh-a01");
     }
 
     &--red:after {
-      border-bottom-color: lbh-colour("lbh-f03");
+      border-bottom-color: lbh-colour("lbh-f01");
+    }
+
+    &--purple:after {
+      border-bottom-color: lbh-colour("lbh-e01");
     }
 
     &__main {
@@ -53,6 +81,10 @@
 
     &--red &__main {
       background: lbh-colour("lbh-f02");
+    }
+
+    &--purple &__main {
+      background: lbh-colour("lbh-e01");
     }
 
     &__wrapper {
@@ -125,7 +157,8 @@
       }
     }
 
-    &--red &__service-name {
+    &--red &__service-name,
+    &--purple &__service-name {
       color: lbh-colour("lbh-h04");
     }
 
