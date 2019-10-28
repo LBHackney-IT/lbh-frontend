@@ -96,6 +96,8 @@ video {
   margin-top: 1.5em;
 }
 
-* + [class|="govuk-grid-column"] {
-  margin-top: 0;
+@include mq($from: tablet) {
+  * + [class|="govuk-grid-column"] {
+    margin-top: 0;
+  }
 }
