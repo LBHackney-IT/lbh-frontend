@@ -87,7 +87,7 @@ After resolving the import paths you can import LBH Frontend by using:
 
 ### Global Styles
 
-LBH Frontend avoids applying styles globally on HTML elements such as `body`; instead, styles are are applied using classes.
+LBH Frontend avoids applying styles globally on HTML elements such as `body`; instead, styles are are applied using classes. One exception to this is that we are using the [lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) to ensure sensible spacing across/between components; due to its low specificity it is easy to overwrite for specific selectors if necessary &mdash; you may find you need to do this for a number of selectors.
 
 This to avoid the risk of global styles conflicting with any pre-existing globals or with any app specific CSS.
 
