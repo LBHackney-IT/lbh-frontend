@@ -83,8 +83,8 @@ describe('package/', () => {
     it('is not overwritten', () => {
       return readFile(path.join(configPaths.package, 'README.md'), 'utf8')
         .then(contents => {
-          // Look for H1 matching 'Hackney Frontend' from existing README
-          expect(contents).toMatch(/^# Hackney Frontend/)
+          // Look for H1 matching 'LBH Frontend' from existing README
+          expect(contents).toMatch(/^# LBH Frontend/)
         }).catch(error => {
           throw error
         })

@@ -1,7 +1,7 @@
 {
   "name": "lbh-frontend",
-  "description": "Hackney Frontend contains the code you need to start building a user interface for Hackney Council platforms and services. Built off GOVUK front end (https://github.com/alphagov/govuk-frontend.git)",
-  "version": "2.12.0",
+  "description": "LBH Frontend contains the code you need to start building a user interface for Hackney Council platforms and services. Built off GOVUK front end (https://github.com/alphagov/govuk-frontend.git)",
+  "version": "1.0.1",
   "main": "lbh/all.js",
   "sass": "lbh/all.scss",
   "engines": {
