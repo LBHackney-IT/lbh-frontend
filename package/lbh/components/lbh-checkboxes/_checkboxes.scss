@@ -1,7 +1,7 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-@import "../../core/all";
+
 @import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
 
 @include lbh-exports("lbh/component/checkboxes") {

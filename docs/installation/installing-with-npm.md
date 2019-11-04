@@ -57,6 +57,12 @@ your Sass file:
   ```SCSS
   @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
   ```
+Please note that if importing individual components, you should first import the core and objects files:
+
+  ```SCSS
+  @import "node_modules/lbh-frontend/lbh/core/all";
+  @import "node_modules/lbh-frontend/lbh/objects/all";
+  ```
 
 ### Optional: Resolving SCSS import paths
 
