@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -108,7 +108,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar COOKIE_NAME = 'seen_cooki
 
 /***/ }),
 
-/***/ 8:
+/***/ 7:
 /*!*********************************************************************!*\
   !*** multi ./src/lbh/components/lbh-cookie-banner/cookie-banner.js ***!
   \*********************************************************************/
