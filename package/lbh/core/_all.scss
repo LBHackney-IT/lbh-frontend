@@ -1,3 +1,7 @@
+// sass-lint:disable no-url-protocols no-url-domains
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
+// sass-lint:enable no-url-protocols no-url-domains
+
 @import "node_modules/govuk-frontend/govuk/core/all";
 @import "reset";
 
