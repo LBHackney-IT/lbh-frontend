@@ -33,7 +33,7 @@
 
       a {
         @extend %lbh-link;
-        @include lbh-link-style-panel;
+        @include lbh-link-style-default;
       }
 
       p:last-child {
