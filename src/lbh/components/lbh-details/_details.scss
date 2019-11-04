@@ -1,6 +1,8 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
+@import "node_modules/govuk-frontend/govuk/components/details/details";
 
 @include lbh-exports("lbh/component/details") {
   .lbh-details {

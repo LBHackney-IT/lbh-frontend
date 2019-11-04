@@ -1,6 +1,7 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
 
 @include lbh-exports("lbh/component/header") {
   .lbh-header {
@@ -20,7 +21,7 @@
       & + * {
         margin-top: govuk-px-to-rem(88);
 
-        @include mq($from: tablet) {
+        @include govuk-media-query($from: tablet) {
           margin-top: govuk-px-to-rem(100);
         }
       }
@@ -74,7 +75,7 @@
       color: lbh-colour("lbh-white");
       background: lbh-colour("lbh-black");
 
-      @include mq($from: tablet) {
+      @include govuk-media-query($from: tablet) {
         padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(12);
       }
     }
@@ -98,7 +99,7 @@
               justify-content: space-between;
 
       &--stacked {
-        @include mq($until: tablet) {
+        @include govuk-media-query($until: tablet) {
           display: block;
         }
       }
@@ -122,7 +123,7 @@
         border-bottom-color: lbh-colour("lbh-white");
       }
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -140,7 +141,7 @@
       height: govuk-px-to-rem(28);
       color: lbh-colour("lbh-white");
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         width: govuk-px-to-rem(206);
         height: govuk-px-to-rem(37);
         margin-right: govuk-px-to-rem(8);
@@ -160,7 +161,7 @@
       font-weight: $lbh-font-weight-regular;
       line-height: govuk-px-to-rem(20);
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         margin-top: 0;
         padding-top: govuk-px-to-rem(8);
         font-size: govuk-px-to-rem(19);
@@ -182,7 +183,7 @@
     &__service-name--short {
       text-transform: uppercase;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         padding-top: govuk-px-to-rem(1);
         font-size: govuk-px-to-rem(29);
         letter-spacing: govuk-px-to-rem(-.7);
@@ -205,7 +206,7 @@
           -ms-flex-pack: justify;
               justify-content: space-between;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         -webkit-box-pack: end;
         -webkit-justify-content: flex-end;
             -ms-flex-pack: end;

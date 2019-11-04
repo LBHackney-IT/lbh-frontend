@@ -96,7 +96,7 @@ video {
   margin-top: 1.5em;
 }
 
-@include mq($from: tablet) {
+@include govuk-media-query($from: tablet) {
   * + [class|="govuk-grid-column"] {
     margin-top: 0;
   }

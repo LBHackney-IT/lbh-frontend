@@ -1,3 +1,4 @@
+@import "node_modules/govuk-frontend/govuk/settings/all";
 // The order we import settings in is important, as some settings files rely on
 // others
 @import "colour-palette";

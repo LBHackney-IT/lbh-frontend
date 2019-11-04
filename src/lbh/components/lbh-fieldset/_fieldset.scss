@@ -1,6 +1,8 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
+@import "node_modules/govuk-frontend/govuk/components/fieldset/fieldset";
 
 @include lbh-exports("lbh/component/fieldset") {
   .lbh-form-group .govuk-fieldset__legend,

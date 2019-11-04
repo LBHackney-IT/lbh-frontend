@@ -1,6 +1,8 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
+@import "node_modules/govuk-frontend/govuk/components/date-input/date-input";
 
 @include lbh-exports("lbh/component/date-input") {
   .lbh-form-group.lbh-form-group--date-input .govuk-fieldset__legend {

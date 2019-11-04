@@ -49,7 +49,7 @@ imports) if you want to override LBH Frontend with your own styles.
 your Sass file:
 
   ```SCSS
-  @import "node_modules/lbh-frontend/lbh/components/button/button";
+  @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
   ```
 
 ### Optional: Resolving SCSS import paths

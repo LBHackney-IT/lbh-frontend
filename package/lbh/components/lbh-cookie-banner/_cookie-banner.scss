@@ -1,6 +1,7 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
 
 @include lbh-exports("lbh/component/cookie-banner") {
   .lbh-cookie-banner {
@@ -55,7 +56,7 @@
     &__button-wrapper {
       margin-top: 0;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         text-align: right;
       }
     }
@@ -66,7 +67,7 @@
       border-radius: 0;
       box-shadow: none;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         margin-top: 0;
       }
     }

@@ -32,7 +32,6 @@ imports) if you want to override GOV.UK Frontend with your own styles.
 To import add the below to your Sass file:
 
   ```scss
-  @import "node_modules/govuk-frontend/govuk/all";
   @import "node_modules/lbh-frontend/all";
   ```
 

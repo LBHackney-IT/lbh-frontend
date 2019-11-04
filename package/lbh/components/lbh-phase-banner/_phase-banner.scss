@@ -1,6 +1,8 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
+@import "node_modules/govuk-frontend/govuk/components/phase-banner/phase-banner";
 
 @include lbh-exports("lbh/component/phase-banner") {
   .lbh-phase-banner {
@@ -17,7 +19,7 @@
       line-height: govuk-px-to-rem(15);
       text-transform: uppercase;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         margin-right: govuk-px-to-rem(12);
       }
     }
@@ -29,7 +31,7 @@
         @extend %lbh-link;
       }
 
-      @include mq($until: desktop) {
+      @include govuk-media-query($until: desktop) {
         display: inline;
       }
     }

@@ -1,11 +1,10 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-
-@import "../../core/hint";
-@import "../../core/label";
+@import "../../core/all";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
+@import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
 
 @include lbh-exports("lbh/component/checkboxes") {
   .lbh-checkboxes {

@@ -1,6 +1,7 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../../core/all";
 // sass-lint:disable no-url-domains no-url-protocols
 @import url("//cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css");
 
@@ -17,7 +18,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
 
-    @include mq ($from: desktop) {
+    @include govuk-media-query ($from: desktop) {
       display: block;
       overflow: hidden;
     }
@@ -29,7 +30,7 @@
           -ms-flex-order: 1;
               order: 1;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         margin-top: govuk-px-to-rem(36);
         margin-right: govuk-px-to-rem(36);
         float: left;
@@ -51,7 +52,7 @@
           -ms-flex-align: center;
               align-items: center;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         margin: govuk-px-to-rem(45) 0;
         float: right;
       }
@@ -90,7 +91,7 @@
           -ms-flex-order: 2;
               order: 2;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 33.333%;
         padding-right: govuk-px-to-rem(18);
@@ -201,7 +202,7 @@
           -ms-flex-order: 4;
               order: 4;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 66.666%;
         padding-left: govuk-px-to-rem(18);
