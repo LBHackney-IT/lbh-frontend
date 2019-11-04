@@ -2,7 +2,7 @@
 
 ## Requirements
 
-To use > N Frontend with NPM you must:
+To use LBH Frontend with NPM you must:
 
 1. Install the long-term support (LTS) version of
    [Node.js](https://nodejs.org/en/), which includes NPM. The minimum version of
@@ -30,7 +30,13 @@ To install, run:
 npm install --save lbh-frontend
 ```
 
-After you have installed GOV.UK Frontend the `lbh-frontend` package will
+Please note you must also have the `govuk-frontend` package installed: 
+
+```
+npm install --save govuk-frontend
+```
+
+After you have installed LBH Frontend the `lbh-frontend` package will
 appear in your `node_modules` folder.
 
 ## Importing styles
@@ -218,10 +224,10 @@ if ($radio) {
 ### Polyfills
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
 
-The polyfills provided with GOV.UK Frontend aim to fix usability and accessibility issues. If there is a JavaScript included in the component directory, it is important to import and initialise it in your project to ensure that all users can properly use the component (see [Polyfilling](/docs/contributing/polyfilling.md)).
+The polyfills provided with GOV.UK/LBH Frontend aim to fix usability and accessibility issues. If there is a JavaScript included in the component directory, it is important to import and initialise it in your project to ensure that all users can properly use the component (see [Polyfilling](/docs/contributing/polyfilling.md)).
 
 ### How LBH Frontend is bundled
-The JavaScript included in GOV.UK Frontend components are in [UMD (Universal Module Definition)](https://github.com/umdjs/umd) format which makes it compatible with AMD (Asynchronous module definition) and CommonJS.
+The JavaScript included in GOV.UK/LBH Frontend components are in [UMD (Universal Module Definition)](https://github.com/umdjs/umd) format which makes it compatible with AMD (Asynchronous module definition) and CommonJS.
 
 See [JavaScript Coding Standards](/docs/contributing/coding-standards/js.md) for more details of how JavaScript is used in the project.
 
