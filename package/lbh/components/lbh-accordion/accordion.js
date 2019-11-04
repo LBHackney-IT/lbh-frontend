@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govu
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*************************************************************!*\
   !*** multi ./src/lbh/components/lbh-accordion/accordion.js ***!
   \*************************************************************/
