@@ -32,4 +32,9 @@
   .lbh-form-group .govuk-fieldset__legend + .govuk-hint + .govuk-error-message {
     margin-top: govuk-px-to-rem(12);
   }
+
+  // Needed so that it is hidden when this component is imported individually
+  .govuk-visually-hidden {
+    @include govuk-visually-hidden;
+  }
 }
