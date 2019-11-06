@@ -1,0 +1,20 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@import "node_modules/govuk-frontend/govuk/components/back-link/back-link";
+
+@include lbh-exports("lbh/component/back-link") {
+  .lbh-back-link {
+    @include lbh-link-style-default;
+    border: 0;
+
+    &:hover {
+      border-bottom: 1px solid lbh-colour("lbh-link-hover");
+    }
+
+    &:focus {
+      border-bottom: 0;
+    }
+  }
+}

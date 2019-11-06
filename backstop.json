@@ -31,6 +31,11 @@
       "delay": 500
     },
     {
+      "label": "Back link",
+      "url": "http://localhost:3000/components/lbh-back-link",
+      "delay": 500
+    },
+    {
       "label": "Back to top",
       "url": "http://localhost:3000/components/lbh-back-to-top",
       "delay": 500

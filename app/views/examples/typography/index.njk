@@ -1,10 +1,10 @@
 {% extends "layout.njk" %}
 
-{% from "back-link/macro.njk" import govukBackLink %}
+{% from "lbh-back-link/macro.njk" import lbhBackLink %}
 {% from 'lbh-table/macro.njk' import lbhTable %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
+  {{ lbhBackLink({
     "href": "/"
   }) }}
 {% endblock %}
