@@ -8,6 +8,12 @@ for Hackney platforms and services. It is based heavily off [GOV.UK Frontend] (h
 them in your service, in the [LBH Design
 System](https://design-system.service.gov.uk/). -->
 
+## Cross browser testing
+
+We use Browserstack: 
+
+![](/browserstack-logo.svg)
+
 ## Contact the team
 
 LBH Frontend is maintained by the in-house Digital Design Team, based in Hackney Service Centre. If you want to know more about LBH Frontend, please email [Emma Lewis](mailto:emma.lewis@hackney.gov.uk).
