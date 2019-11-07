@@ -12,7 +12,7 @@ System](https://design-system.service.gov.uk/). -->
 
 We use Browserstack: 
 
-[![Browserstack logo](/browserstack-logo.svg)](https://www.browserstack.com/)
+[![Browserstack logo](/browserstack-logo.svg =490x105)](https://www.browserstack.com/)
 
 ## Contact the team
 
