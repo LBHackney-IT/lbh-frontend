@@ -11,8 +11,7 @@ System](https://design-system.service.gov.uk/). -->
 ## Cross browser testing
 
 We use Browserstack: 
-
-[![Browserstack logo](/browserstack-logo.svg)](https://www.browserstack.com/)
+<a href="https://www.browserstack.com/"><img src="/browserstack-logo.svg" width="490" height="105"/></a>
 
 ## Contact the team
 
