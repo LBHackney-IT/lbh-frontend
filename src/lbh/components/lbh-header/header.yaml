@@ -3,6 +3,10 @@ params:
   type: boolean
   required: true
   description: Set to true if header is on the homepage (logo will appear in `<h1>`), else set to false (logo will appear in `<div>`)
+- name: assetsPath
+  type: string
+  required: false
+  description: The public path for the assets folder. If not provided it defaults to /assets/images
 - name: homepageUrl
   type: string
   required: false
