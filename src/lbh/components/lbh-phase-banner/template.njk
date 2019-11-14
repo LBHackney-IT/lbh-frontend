@@ -5,7 +5,12 @@
 {{ govukPhaseBanner({
   text: params.text,
   html: params.html,
-  tag: params.tag,
+  tag: { 
+    text: params.tag.text, 
+    html: params.tag.html, 
+    classes: (params.tag.classes if params.tag.classes else '') + ' lbh-tag', 
+    attributes: params.tag.attributes
+  },
   classes: classes,
   attributes: params.attributes
 })}}
