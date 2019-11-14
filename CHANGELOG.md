@@ -8,7 +8,7 @@
 
   Add a favicon so that it can be imported by users of the library
 
-  ([PR #37](https://github.com/LBHackney-IT/LBH-frontend/pull/38))
+  ([PR #38](https://github.com/LBHackney-IT/LBH-frontend/pull/38))
 
 - Add changelog
 
