@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+### New features:
+
+- Check the "engines" field of the package.json for the node version
+
+  Rather than relying on things like NVM, we can support any Node environment 
+  manager by comparing to the package.json.
+
+  ([PR #43](https://github.com/LBHackney-IT/LBH-frontend/pull/43))
+
 ## 1.3.0
 
 ### New features:
