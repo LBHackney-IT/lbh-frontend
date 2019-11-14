@@ -2,10 +2,16 @@
 
 ## Unreleased
 
-🆕 New features:
+### New features:
+
+- Add favicon to assets
+
+  Add a favicon so that it can be imported by users of the library
+
+  ([PR #38](https://github.com/LBHackney-IT/LBH-frontend/pull/38))
 
 - Add changelog
 
-  Add a changelog so that we can see what is happening in new releases (optional)
+  Add a changelog so that we can see what is happening in new releases 
 
-  ([PR #N](https://github.com/alphagov/govuk-frontend/pull/N))
+  ([PR #37](https://github.com/LBHackney-IT/LBH-frontend/pull/37))
