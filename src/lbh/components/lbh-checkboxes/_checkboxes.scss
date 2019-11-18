@@ -2,8 +2,8 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 @import "../../core/form-group";
-@import "../../core/hint";
 @import "../../core/label";
+@import "../lbh-hint/hint";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
 @import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
@@ -23,6 +23,10 @@
     .govuk-checkboxes__item {
       margin-top: 0;
       margin-bottom: govuk-px-to-rem(12);
+    }
+
+    .govuk-hint {
+      @include lbh-hint;
     }
 
     .govuk-input {

@@ -17,6 +17,12 @@
 
   ([PR #44](https://github.com/LBHackney-IT/LBH-frontend/pull/44))
 
+- Add hint component
+
+  Add in the hint component and add the lbh-hint class to hints added via other components such as checkbox, radios, and more.
+
+  ([PR #46](https://github.com/LBHackney-IT/LBH-frontend/pull/46))
+
 ## 1.3.0
 
 ### New features:

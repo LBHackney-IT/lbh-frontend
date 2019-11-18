@@ -4,15 +4,55 @@
 
 {% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
 
+{% set items = [] %}
+{% for item in params.items %}
+  {% if item.hint %}
+    {% set hint = {
+      text: item.hint.text,
+      html: item.hint.html,
+      id: item.hint.id,
+      classes: (item.hint.classes if item.hint.classes else '') + ' lbh-hint',
+      attributes: item.hint.attributes
+    } %}
+
+    {% set newItem = {
+      text: item.text,
+      html: item.html,
+      id: item.id,
+      name: item.name,
+      value: item.value,
+      label: item.label,
+      hint: hint,
+      checked: item.checked,
+      conditional: item.conditional.html,
+      disabled: item.disabled,
+      attributes: item.attributes
+    } %}
+
+    {% set items = (items.push(newItem), items) %}
+  {% else %}
+    {% set items = (items.push(item), items) %}
+  {% endif %}
+
+{% endfor %}
+
+{% set hint = {
+    text: params.hint.text,
+    html: params.hint.html,
+    id: params.hint.id,
+    classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
+    attributes: params.hint.attributes
+ } if params.hint else null %}
+
 {{ govukCheckboxes({
   describedBy: params.describedBy,
   fieldset: params.fieldset,
-  hint: params.hint,
+  hint: hint,
   errorMessage: params.errorMessage,
   formGroup: formGroup,
   idPrefix: params.idPrefix,
   name: params.name,
-  items: params.items,
+  items: items,
   classes: classes,
   attributes: params.attributes
 })}}

@@ -4,6 +4,14 @@
 
 {% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
 
+{% set hint = {
+    text: params.hint.text,
+    html: params.hint.html,
+    id: params.hint.id,
+    classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
+    attributes: params.hint.attributes
+ } if params.hint else null %}
+
 {{ govukInput({
   id: params.id,
   name: params.name,
@@ -11,7 +19,7 @@
   value: params.value,
   describedBy: params.describedBy,
   label: params.label,
-  hint: params.hint,
+  hint: hint,
   errorMessage: params.errorMessage,
   formGroup: formGroup,
   classes: classes,
