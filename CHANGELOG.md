@@ -11,6 +11,12 @@
 
   ([PR #43](https://github.com/LBHackney-IT/LBH-frontend/pull/43))
 
+- Remove sass extends
+
+  Sass @extends were causing issues depending on where the extend rule ended up in the final CSS - which differed depending on whether you're importing all styles, or just an individual component. I've removed all of the typography extends and created mixins in the helpers folder instead which can be included wherever needed.
+
+  ([PR #44](https://github.com/LBHackney-IT/LBH-frontend/pull/44))
+
 ## 1.3.0
 
 ### New features:
