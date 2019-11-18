@@ -1,11 +1,12 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../lbh-hint/hint";
 
 @import "node_modules/govuk-frontend/govuk/components/input/input";
 
 @include lbh-exports("lbh/component/input") {
   .lbh-input {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 }

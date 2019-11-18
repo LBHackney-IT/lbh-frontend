@@ -65,3 +65,9 @@
     }
   }
 }
+
+@mixin lbh-link {
+  @include lbh-link-common;
+  @include lbh-link-style-default;
+  @include govuk-link-print-friendly;
+}

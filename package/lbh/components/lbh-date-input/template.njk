@@ -4,11 +4,19 @@
 
 {% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group lbh-form-group--date-input'} %}
 
+{% set hint = {
+    text: params.hint.text,
+    html: params.hint.html,
+    id: params.hint.id,
+    classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
+    attributes: params.hint.attributes
+ } if params.hint else null %}
+
 {{ govukDateInput({
   id: params.id,
   namePrefix: params.namePrefix,
   items: params.items,
-  hint: params.hint,
+  hint: hint,
   errorMessage: params.errorMessage,
   formGroup: formGroup,
   fieldset: params.fieldset,
