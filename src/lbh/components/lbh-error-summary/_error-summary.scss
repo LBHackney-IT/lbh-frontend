@@ -8,7 +8,7 @@
     border-color: lbh-colour("lbh-error");
 
     .govuk-error-summary__title {
-      @extend %lbh-heading-h2;
+      @include lbh-heading-h2;
       margin-top: 0;
     }
 

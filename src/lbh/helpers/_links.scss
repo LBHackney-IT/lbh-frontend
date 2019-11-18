@@ -25,8 +25,8 @@
 ///
 /// @example scss
 ///   .govuk-component__link {
-///     @include govuk-link-common;
-///     @include govuk-link-style-default;
+///     @include lbh-link-common;
+///     @include lbh-link-style-default;
 ///   }
 ///
 /// @access public
@@ -64,4 +64,10 @@
       color: $govuk-focus-text-colour;
     }
   }
+}
+
+@mixin lbh-link {
+  @include lbh-link-common;
+  @include lbh-link-style-default;
+  @include govuk-link-print-friendly;
 }

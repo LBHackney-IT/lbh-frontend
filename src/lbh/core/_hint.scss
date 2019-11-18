@@ -1,5 +1,5 @@
 .lbh-form-group .govuk-hint {
-  @extend %lbh-body-m;
+  @include lbh-body-m;
   margin-bottom: govuk-px-to-rem(12);
   color: lbh-colour("lbh-secondary-text");
 }

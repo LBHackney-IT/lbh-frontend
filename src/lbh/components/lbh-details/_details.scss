@@ -5,12 +5,12 @@
 @include lbh-exports("lbh/component/details") {
   .lbh-details {
     .govuk-details__summary {
-      @extend %lbh-link;
+      @include lbh-link;
       color: $lbh-link-colour;
     }
 
     .govuk-details__text {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       border-color: lbh-colour("lbh-border");
     }
   }

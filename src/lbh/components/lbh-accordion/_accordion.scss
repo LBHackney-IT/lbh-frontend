@@ -7,12 +7,12 @@
     margin-bottom: govuk-px-to-rem(48);
 
     .govuk-accordion__section-button {
-      @extend %lbh-heading-h5;
+      @include lbh-heading-h5;
     }
 
     .govuk-accordion__section-summary,
     .govuk-accordion__section-content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
     }
   }
 }

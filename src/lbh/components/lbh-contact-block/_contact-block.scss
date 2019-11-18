@@ -137,7 +137,7 @@
     &__email,
     &__telephone,
     &__list-item {
-      @extend %lbh-body-xs;
+      @include lbh-body-xs;
     }
 
     &__address span {

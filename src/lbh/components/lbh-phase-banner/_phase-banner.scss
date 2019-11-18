@@ -8,7 +8,7 @@
     border-bottom: 1px solid lbh-colour("lbh-panel");
 
     .govuk-phase-banner__content__tag {
-      @extend %lbh-body-xs;
+      @include lbh-body-xs;
       margin-right: govuk-px-to-rem(8);
       padding: govuk-px-to-rem(2) govuk-px-to-rem(12) 0;
       color: lbh-colour("lbh-white");
@@ -23,10 +23,10 @@
     }
 
     .govuk-phase-banner__text {
-      @extend %lbh-body-xs;
+      @include lbh-body-xs;
 
       a {
-        @extend %lbh-link;
+        @include lbh-link;
       }
 
       @include mq($until: desktop) {

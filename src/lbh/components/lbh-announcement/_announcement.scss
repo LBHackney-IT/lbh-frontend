@@ -23,10 +23,10 @@
     }
 
     &__content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
 
       a {
-        @extend %lbh-link;
+        @include lbh-link;
       }
 
       p:last-child {

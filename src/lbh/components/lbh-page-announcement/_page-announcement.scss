@@ -16,16 +16,16 @@
     }
 
     &__content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
 
       a {
-        @extend %lbh-link;
+        @include lbh-link;
       }
 
       ul {
         @extend %govuk-list;
         @extend %govuk-list--bullet;
-        @extend %lbh-body-m;
+        @include lbh-body-m;
       }
 
       & > *:last-child {

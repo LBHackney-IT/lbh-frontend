@@ -10,7 +10,7 @@
 @include lbh-exports("lbh/component/checkboxes") {
   .lbh-checkboxes {
     .govuk-checkboxes__label {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-bottom: 0;
       padding-top: govuk-px-to-rem(9);
       padding-bottom: govuk-px-to-rem(8);
@@ -21,7 +21,7 @@
     }
 
     .govuk-input {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-bottom: 0;
     }
   }

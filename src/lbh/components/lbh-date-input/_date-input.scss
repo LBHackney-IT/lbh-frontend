@@ -4,12 +4,12 @@
 
 @include lbh-exports("lbh/component/date-input") {
   .lbh-form-group.lbh-form-group--date-input .govuk-fieldset__legend {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
     margin-bottom: govuk-px-to-rem(18);
   }
 
   .lbh-form-group .govuk-label.govuk-date-input__label {
-    @extend %lbh-heading-h4;
+    @include lbh-heading-h4;
     margin-top: 0;
   }
 
