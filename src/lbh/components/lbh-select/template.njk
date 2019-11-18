@@ -11,12 +11,20 @@
     attributes: params.hint.attributes
  } if params.hint else null %}
 
+{% set label = {
+    text: params.label.text,
+    html: params.label.html,
+    id: params.label.id,
+    classes: (params.label.classes if params.label.classes else '') + ' lbh-label',
+    attributes: params.label.attributes
+ } if params.label else null %}
+
 {{ govukSelect({
   id: params.id,
   name: params.name,
   items: params.items,
   describedBy: params.describedBy,
-  label: params.label,
+  label: label,
   hint: hint,
   errorMessage: params.errorMessage,
   formGroup: formGroup,

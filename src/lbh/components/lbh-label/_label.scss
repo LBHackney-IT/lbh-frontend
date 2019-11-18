@@ -1,0 +1,16 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@import "node_modules/govuk-frontend/govuk/components/label/label";
+
+@mixin lbh-label {
+  @include lbh-body-m;
+  margin-bottom: govuk-px-to-rem(6);
+}
+
+@include lbh-exports("lbh/component/label") {
+  .lbh-label {
+    @include lbh-label;
+  }
+}

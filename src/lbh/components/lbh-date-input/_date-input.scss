@@ -3,6 +3,7 @@
 @import "../../helpers/all";
 @import "../lbh-hint/hint";
 @import "../lbh-input/input";
+@import "../lbh-label/label";
 
 @import "node_modules/govuk-frontend/govuk/components/date-input/date-input";
 
@@ -13,6 +14,7 @@
   }
 
   .lbh-form-group .govuk-label.govuk-date-input__label {
+    @include lbh-label;
     @include lbh-heading-h4;
     margin-top: govuk-px-to-rem(12);
   }

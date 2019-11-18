@@ -6,6 +6,7 @@
 
 {% set items = [] %}
 {% for item in params.items %}
+  {% set hint = null %}
   {% if item.hint %}
     {% set hint = {
       text: item.hint.text,
@@ -14,25 +15,33 @@
       classes: (item.hint.classes if item.hint.classes else '') + ' lbh-hint',
       attributes: item.hint.attributes
     } %}
-
-    {% set newItem = {
-      text: item.text,
-      html: item.html,
-      id: item.id,
-      name: item.name,
-      value: item.value,
-      label: item.label,
-      hint: hint,
-      checked: item.checked,
-      conditional: item.conditional.html,
-      disabled: item.disabled,
-      attributes: item.attributes
-    } %}
-
-    {% set items = (items.push(newItem), items) %}
-  {% else %}
-    {% set items = (items.push(item), items) %}
   {% endif %}
+
+  {% set label = {
+    text: item.label.text,
+    html: item.label.html,
+    id: item.label.id,
+    classes: 'lbh-label' + (' ' + item.label.classes if item.label.classes),
+    attributes: item.label.attributes
+ } if item.label else null %}
+
+  {% set newItem = {
+    text: item.text,
+    html: item.html,
+    id: item.id,
+    name: item.name,
+    value: item.value,
+    label: label,
+    hint: hint if hint else item.hint,
+    checked: item.checked,
+    conditional: {
+      html: item.conditional.html
+    },
+    disabled: item.disabled,
+    attributes: item.attributes
+  } %}
+
+  {% set items = (items.push(newItem), items) %}
 
 {% endfor %}
 

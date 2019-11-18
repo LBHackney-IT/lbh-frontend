@@ -23,6 +23,12 @@
 
   ([PR #46](https://github.com/LBHackney-IT/LBH-frontend/pull/46))
 
+- Add label component
+
+  Add in the label component and add the lbh-label class to labels added via other components where possible. Creates an lbh-label mixin for when we can't apply the lbh-label class.
+
+  ([PR #47](https://github.com/LBHackney-IT/LBH-frontend/pull/47))
+
 ## 1.3.0
 
 ### New features:
