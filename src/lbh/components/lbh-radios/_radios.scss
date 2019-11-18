@@ -2,8 +2,8 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 @import "../../core/form-group";
-@import "../../core/hint";
 @import "../../core/label";
+@import "../lbh-hint/hint";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
 
@@ -17,10 +17,6 @@
       margin-bottom: govuk-px-to-rem(6);
     }
 
-    .govuk-hint {
-      @include lbh-hint;
-    }
-
     .govuk-radios__item,
     .govuk-radios__divider {
       margin-top: 0;
@@ -28,6 +24,10 @@
 
     .govuk-radios__conditional {
       border-color: lbh-colour("lbh-border");
+    }
+
+    .govuk-hint {
+      @include lbh-hint;
     }
   }
 }
