@@ -20,10 +20,10 @@
     }
 
     .govuk-phase-banner__text {
-      @extend %lbh-body-xs;
+      @include lbh-body-xs;
 
       a {
-        @extend %lbh-link;
+        @include lbh-link;
       }
 
       @include govuk-media-query($until: desktop) {

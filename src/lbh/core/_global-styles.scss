@@ -2,40 +2,37 @@
 @import "../tools/all";
 @import "../helpers/all";
 
-@import "links";
-@import "typography";
-
 @mixin lbh-global-styles {
   h1 {
-    @extend %lbh-heading-h1;
+    @include lbh-heading-h1;
   }
 
   h2 {
-    @extend %lbh-heading-h2;
+    @include lbh-heading-h2;
   }
 
   h3 {
-    @extend %lbh-heading-h3;
+    @include lbh-heading-h3;
   }
 
   h4 {
-    @extend %lbh-heading-h4;
+    @include lbh-heading-h4;
   }
 
   h5 {
-    @extend %lbh-heading-h5;
+    @include lbh-heading-h5;
   }
 
   h6 {
-    @extend %lbh-heading-h6;
+    @include lbh-heading-h6;
   }
 
   a {
-    @extend %lbh-link;
+    @include lbh-link;
   }
 
   p {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 }
 

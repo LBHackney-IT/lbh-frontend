@@ -4,57 +4,15 @@
 
 @include lbh-exports("lbh/core/lists") {
 
-  %lbh-list {
-    @include lbh-font;
-    padding-left: 0;
-    list-style-type: none;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(16);
-    font-weight: $lbh-font-weight-light;
-    line-height: govuk-px-to-rem(19);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(19);
-      line-height: govuk-px-to-rem(23);
-    }
-
-    %lbh-list {
-      margin-top: govuk-px-to-rem(12);
-    }
-  }
-
-  %lbh-list > li + li {
-    margin-top: govuk-px-to-rem(12);
-  }
-
   .lbh-list {
-    @extend %lbh-list;
-  }
-
-  %lbh-list--bullet {
-    padding-left: govuk-px-to-rem(18);
-    list-style-type: disc;
-  }
-
-  %lbh-list--number {
-    padding-left: govuk-px-to-rem(18);
-    list-style-type: decimal;
-  }
-
-  %lbh-list--bullet > li,
-  %lbh-list--number > li {
-    margin-bottom: 0;
+    @include lbh-list;
   }
 
   .lbh-list--bullet {
-    @extend %lbh-list--bullet;
-
-    .lbh-list--bullet {
-      list-style-type: circle;
-    }
+    @include lbh-list--bullet;
   }
 
   .lbh-list--number {
-    @extend %lbh-list--number;
+    @include lbh-list--number;
   }
 }

@@ -6,7 +6,7 @@
 
 @include lbh-exports("lbh/component/breadcrumbs") {
   .lbh-breadcrumbs {
-    @extend %lbh-body-xs;
+    @include lbh-body-xs;
     margin-top: govuk-px-to-rem(18);
     margin-bottom: govuk-px-to-rem(-12);
     overflow: hidden;
@@ -21,7 +21,7 @@
     }
 
     .govuk-breadcrumbs__link {
-      @extend %lbh-link;
+      @include lbh-link;
       font-weight: $lbh-font-weight-medium;
       text-decoration: none;
 

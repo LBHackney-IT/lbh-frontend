@@ -9,12 +9,12 @@
     margin-bottom: 0;
 
     .govuk-details__summary {
-      @extend %lbh-link;
+      @include lbh-link;
       color: $lbh-link-colour;
     }
 
     .govuk-details__text {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-top: 0;
       border-color: lbh-colour("lbh-border");
     }

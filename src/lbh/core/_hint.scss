@@ -1,5 +1,5 @@
 @mixin lbh-hint {
-  @extend %lbh-body-m;
+  @include lbh-body-m;
   margin-top: 0;
   margin-bottom: 0;
   color: lbh-colour("lbh-secondary-text");

@@ -1,0 +1,45 @@
+@mixin lbh-list {
+  @include lbh-font;
+  padding-left: 0;
+  list-style-type: none;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(16);
+  font-weight: $lbh-font-weight-light;
+  line-height: govuk-px-to-rem(19);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(19);
+    line-height: govuk-px-to-rem(23);
+  }
+
+  .lbh-list,
+  .govuk-list {
+    margin-top: govuk-px-to-rem(12);
+  }
+
+  & > li + li {
+    margin-top: govuk-px-to-rem(12);
+  }
+}
+
+@mixin lbh-list--bullet {
+  padding-left: govuk-px-to-rem(18);
+  list-style-type: disc;
+
+  & > li {
+    margin-bottom: 0;
+  }
+
+  .lbh-list--bullet {
+    list-style-type: circle;
+  }
+}
+
+@mixin lbh-list--number {
+  padding-left: govuk-px-to-rem(18);
+  list-style-type: decimal;
+
+  & > li {
+    margin-bottom: 0;
+  }
+}
