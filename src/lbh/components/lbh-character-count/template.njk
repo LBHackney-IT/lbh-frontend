@@ -9,7 +9,15 @@
     id: params.hint.id,
     classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
     attributes: params.hint.attributes
- } if params.hint else null %}
+} if params.hint else null %}
+
+{% set label = {
+    text: params.label.text,
+    html: params.label.html,
+    id: params.label.id,
+    classes: (params.label.classes if params.label.classes else '') + ' lbh-label',
+    attributes: params.label.attributes
+ } if params.label else null %}
 
 {{ govukCharacterCount({
   id: params.id,
@@ -19,7 +27,7 @@
   maxlength: params.maxlength,
   maxwords: params.maxwords,
   threshold: params.threshold,
-  label: params.label,
+  label: label,
   hint: hint,
   errorMessage: params.errorMessage,
   formGroup: formGroup,
