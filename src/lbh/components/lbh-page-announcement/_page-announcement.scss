@@ -24,8 +24,8 @@
       }
 
       ul {
-        @extend %lbh-list;
-        @extend %lbh-list--bullet;
+        @include lbh-list;
+        @include lbh-list--bullet;
         @include lbh-body-m;
       }
     }

@@ -33,7 +33,7 @@
     }
 
     .govuk-list {
-      @extend %lbh-list;
+      @include lbh-list;
     }
   }
 }
