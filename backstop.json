@@ -141,6 +141,11 @@
       "delay": 500
     },
     {
+      "label": "Tag",
+      "url": "http://localhost:3000/components/lbh-tag",
+      "delay": 500
+    },
+    {
       "label": "Textarea",
       "url": "http://localhost:3000/components/lbh-textarea",
       "delay": 500

@@ -31,6 +31,12 @@
 
 - Add changelog
 
-  Add a changelog so that we can see what is happening in new releases 
+  Add a changelog so that we can see what is happening in new releases
 
   ([PR #37](https://github.com/LBHackney-IT/LBH-frontend/pull/37))
+
+- Add Tag component
+
+  Add a tag component so it can be imported separately from external libraries
+
+  ([PR #41](https://github.com/LBHackney-IT/LBH-frontend/pull/41))
