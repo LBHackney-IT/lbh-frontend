@@ -153,7 +153,7 @@
     }
 
     &__service-name {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-top: govuk-px-to-rem(-10);
       margin-bottom: 0;
       color: lbh-colour("lbh-white");
@@ -215,7 +215,7 @@
 
       a,
       p {
-        @extend %lbh-body-m;
+        @include lbh-body-m;
         margin-top: govuk-px-to-rem(8);
         margin-bottom: 0;
         padding: govuk-px-to-rem(4) 0;

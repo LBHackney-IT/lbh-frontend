@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.4.0
+
 ### New features:
 
 - Check the "engines" field of the package.json for the node version

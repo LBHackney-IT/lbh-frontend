@@ -6,7 +6,7 @@
 
 @include lbh-exports("lbh/component/table") {
   .lbh-table {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
     margin-bottom: 0;
 
     .govuk-table__header {

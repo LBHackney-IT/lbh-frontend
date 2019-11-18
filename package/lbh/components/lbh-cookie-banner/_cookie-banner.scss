@@ -37,7 +37,7 @@
       }
 
       a {
-        @extend %lbh-link;
+        @include lbh-link;
 
         &,
         &:link,
