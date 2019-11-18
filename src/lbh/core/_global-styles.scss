@@ -1,0 +1,44 @@
+@import "../settings/all";
+@import "../tools/all";
+@import "../helpers/all";
+
+@mixin lbh-global-styles {
+  h1 {
+    @include lbh-heading-h1;
+  }
+
+  h2 {
+    @include lbh-heading-h2;
+  }
+
+  h3 {
+    @include lbh-heading-h3;
+  }
+
+  h4 {
+    @include lbh-heading-h4;
+  }
+
+  h5 {
+    @include lbh-heading-h5;
+  }
+
+  h6 {
+    @include lbh-heading-h6;
+  }
+
+  a {
+    @include lbh-link;
+  }
+
+  p {
+    @include lbh-body-m;
+  }
+}
+
+@include lbh-exports("lbh/core/global-styles") {
+
+  @if $lbh-global-styles == true {
+    @include lbh-global-styles;
+  }
+}

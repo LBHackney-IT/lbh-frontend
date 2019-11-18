@@ -21,10 +21,10 @@
 /// Provides the default unvisited, visited, hover and active states for links.
 ///
 /// If you use this mixin in a component you must also include the
-/// govuk-link-common mixin in order to get the focus state.
+/// lbh-link-common mixin in order to get the focus state.
 ///
 /// @example scss
-///   .govuk-component__link {
+///   .lbh-component__link {
 ///     @include lbh-link-common;
 ///     @include lbh-link-style-default;
 ///   }

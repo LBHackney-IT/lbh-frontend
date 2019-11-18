@@ -1,0 +1,56 @@
+[
+    {
+        "name": "isHome",
+        "type": "boolean",
+        "required": true,
+        "description": "Set to true if header is on the homepage (logo will appear in `<h1>`), else set to false (logo will appear in `<div>`)"
+    },
+    {
+        "name": "assetsPath",
+        "type": "string",
+        "required": false,
+        "description": "The public path for the assets folder. If not provided it defaults to /assets/images"
+    },
+    {
+        "name": "homepageUrl",
+        "type": "string",
+        "required": false,
+        "description": "URL logo will link to (defaults to '/')"
+    },
+    {
+        "name": "serviceName",
+        "type": "string",
+        "required": false,
+        "description": "Service name to appear after Hackney logo to describe website. Must be short."
+    },
+    {
+        "name": "isServiceNameShort",
+        "type": "boolean",
+        "required": false,
+        "description": "If set to true service name will be capitalised and in larger font"
+    },
+    {
+        "name": "links",
+        "type": "html",
+        "required": false,
+        "description": "HTML content for the right hand side of the header, will stack on mobile"
+    },
+    {
+        "name": "colourScheme",
+        "type": "string",
+        "required": false,
+        "description": "Name of colour scheme to use instead of default black background, current options are `red` or `purple`"
+    },
+    {
+        "name": "isStackedOnMobile",
+        "type": "boolean",
+        "required": false,
+        "description": "If set to true this will stack the right hand side html content of the links field underneath the logo rather than alongside on mobile. If this option is true then isFixed should be false (or the margin-top of `.lbh-header--fixed + *` will need updating on mobile to match the height of your header)"
+    },
+    {
+        "name": "isFixed",
+        "type": "boolean",
+        "required": false,
+        "description": "If set to true header will be fixed to the top of the window on scroll"
+    }
+]

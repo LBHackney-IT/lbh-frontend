@@ -2,10 +2,12 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+@import "node_modules/govuk-frontend/govuk/components/inset-text/inset-text";
+
 @include lbh-exports("lbh/component/inset-text") {
   .lbh-inset-text {
     @include lbh-body-m;
-    margin-bottom: govuk-px-to-rem(48);
+    margin-bottom: 0;
     padding: govuk-px-to-rem(24);
     border-left-color: lbh-colour("lbh-border");
   }

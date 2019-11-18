@@ -6,7 +6,6 @@
 
   %lbh-list {
     @include lbh-font;
-    margin-top: 0;
     padding-left: 0;
     list-style-type: none;
     color: $lbh-text-colour;
@@ -24,11 +23,8 @@
     }
   }
 
-  %lbh-list > li {
-    // Lists without numbers or bullets should always have extra space between
-    // list items. Lists with numbers or bullets only have this extra space on
-    // tablet and above
-    margin-bottom: govuk-px-to-rem(12);
+  %lbh-list > li + li {
+    margin-top: govuk-px-to-rem(12);
   }
 
   .lbh-list {
@@ -48,10 +44,6 @@
   %lbh-list--bullet > li,
   %lbh-list--number > li {
     margin-bottom: 0;
-
-    @include mq($from: tablet) {
-      margin-bottom: govuk-px-to-rem(12);
-    }
   }
 
   .lbh-list--bullet {

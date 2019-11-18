@@ -7,23 +7,25 @@
   },
   "license": "MIT",
   "scripts": {
-    "preinstall": "node bin/check-nvmrc.js",
-    "prestart": "node bin/check-nvmrc.js",
+    "preinstall": "node bin/check-node-version.js",
+    "prestart": "node bin/check-node-version.js",
     "start": "gulp dev",
     "heroku": "gulp copy-assets && gulp sassdoc && node app/start.js",
-    "pre-release": "node bin/check-nvmrc.js && ./bin/pre-release.sh",
-    "release": "node bin/check-nvmrc.js && ./bin/release.sh",
-    "release-to-branch": "node bin/check-nvmrc.js && ./bin/release-to-branch.sh",
-    "build:package": "node bin/check-nvmrc.js && gulp build:package --destination 'package' && npm run test:build:package",
-    "build:dist": "node bin/check-nvmrc.js && gulp build:dist --destination 'dist' && npm run test:build:dist",
+    "pre-release": "node bin/check-node-version.js && ./bin/pre-release.sh",
+    "release": "node bin/check-node-version.js && ./bin/release.sh",
+    "release-to-branch": "node bin/check-node-version.js && ./bin/release-to-branch.sh",
+    "build:package": "node bin/check-node-version.js && gulp build:package --destination 'package' && npm run test:build:package",
+    "build:dist": "node bin/check-node-version.js && gulp build:dist --destination 'dist' && npm run test:build:dist",
     "test": "npm run test:dependencies && standard && gulp test && gulp copy-assets && jest --testPathIgnorePatterns='after-*'",
     "test:dependencies": "npm ls --depth=0",
     "test:build:package": "jest tasks/gulp/__tests__/after-build-package.test.js",
-    "test:build:dist": "jest tasks/gulp/__tests__/after-build-dist.test.js"
+    "test:build:dist": "jest tasks/gulp/__tests__/after-build-dist.test.js",
+    "backstop": "backstop"
   },
   "devDependencies": {
     "acorn": "^6.1.1",
     "autoprefixer": "^9.5.1",
+    "backstopjs": "^4.3.2",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.3",
     "cookie-parser": "^1.4.4",
@@ -57,7 +59,6 @@
     "jest-axe": "^3.1.1",
     "jest-puppeteer": "^4.3.0",
     "jest-serializer-html": "^6.0.0",
-    "jquery": "1.12.4",
     "js-yaml": "^3.13.1",
     "map-stream": "0.0.7",
     "marked": "^0.6.2",
@@ -116,7 +117,7 @@
     ]
   },
   "dependencies": {
-    "govuk-frontend": "^3.2.0",
+    "govuk-frontend": "^3.3.0",
     "leaflet": "^1.5.1",
     "nunjucks": "^3.2.0",
     "underscore": "^1.9.1"

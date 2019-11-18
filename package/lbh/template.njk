@@ -1,11 +1,11 @@
-{% from "./components/skip-link/macro.njk" import govukSkipLink -%}
+{% from "./components/lbh-skip-link/macro.njk" import lbhSkipLink -%}
 {# specify absolute url for the static assets folder e.g. http://wwww.domain.com/assets #}
 {%- set assetUrl = assetUrl | default(assetPath) -%}
 <!DOCTYPE html>
 <html lang="{{ htmlLang | default('en') }}" class="govuk-template lbh-template {{ htmlClasses }}">
   <head>
     <meta charset="utf-8" />
-    <title>{% block pageTitle %}| Hackney Council{% endblock %}</title>
+    <title{% if pageTitleLang %} lang="{{ pageTitleLang }}"{% endif %}>{% block pageTitle %}| Hackney Council{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="{{ themeColor | default('#0b0c0c') }}" /> {# Hardcoded value of $lbh-black #}
     {# Ensure that older IE versions always render with the correct rendering engine #}
@@ -30,7 +30,7 @@
     {% block bodyStart %}{% endblock %}
 
     {% block skipLink %}
-      {{ govukSkipLink({
+      {{ lbhSkipLink({
         href: '#main-content',
         text: 'Skip to main content'
       }) }}
@@ -41,12 +41,12 @@
     {% endblock %}
 
     {% block main %}
-      <div class="lbh-container">
-        {% block beforeContent %}{% endblock %}
-        <main class="lbh-main-wrapper {{ mainClasses }}" id="main-content" role="main">
+      {% block beforeContent %}{% endblock %}
+      <main class="lbh-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+        <div class="lbh-container">
           {% block content %}{% endblock %}
-        </main>
-      </div>
+        </div>
+      </main>
     {% endblock %}
 
     {% block footer %}

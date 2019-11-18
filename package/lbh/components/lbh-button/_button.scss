@@ -2,10 +2,12 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+@import "node_modules/govuk-frontend/govuk/components/button/button";
+
 @include lbh-exports("lbh/component/button") {
   .lbh-button {
     @include lbh-font;
-    margin-bottom: govuk-px-to-rem(36);
+    margin-bottom: 0;
     padding: govuk-px-to-rem(12) govuk-px-to-rem(22) govuk-px-to-rem(10);
     border-radius: 4px;
     background: lbh-colour("lbh-a01");

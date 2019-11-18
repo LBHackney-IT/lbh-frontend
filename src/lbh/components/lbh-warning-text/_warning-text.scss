@@ -2,8 +2,15 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+@import "node_modules/govuk-frontend/govuk/components/warning-text/warning-text";
+
 @include lbh-exports("lbh/component/warning-text") {
   .lbh-warning-text {
-    margin-bottom: govuk-px-to-rem(24);
+    margin-bottom: 0;
+
+    .govuk-warning-text__text {
+      margin-top: 0;
+      font-weight: $lbh-font-weight-medium;
+    }
   }
 }

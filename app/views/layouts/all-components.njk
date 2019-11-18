@@ -1,6 +1,6 @@
 {% extends "full-width.njk" %}
 
-{% from "back-link/macro.njk" import govukBackLink %}
+{% from "lbh-back-link/macro.njk" import lbhBackLink %}
 {% from "macros/showExamples.njk" import showExamples %}
 
 {% set bodyClasses %}
@@ -9,7 +9,7 @@
 
 {% block beforeContent %}
   <div class="lbh-container">
-    {{ govukBackLink({
+    {{ lbhBackLink({
       href: "/" + legacyQuery
     }) }}
   </div>

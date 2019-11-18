@@ -1,7 +1,7 @@
 {
   "name": "lbh-frontend",
-  "description": "Hackney Frontend contains the code you need to start building a user interface for Hackney Council platforms and services. Built off GDS front end (https://github.com/alphagov/govuk-frontend.git)",
-  "version": "2.12.0",
+  "description": "LBH Frontend contains the code you need to start building a user interface for Hackney Council platforms and services. Built off GOVUK front end (https://github.com/alphagov/govuk-frontend.git)",
+  "version": "1.3.0",
   "main": "lbh/all.js",
   "sass": "lbh/all.scss",
   "engines": {
@@ -13,17 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alphagov/govuk-frontend.git"
+    "url": "https://github.com/LBHackney-IT/lbh-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/alphagov/govuk-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-frontend/issues"
   },
-  "homepage": "https://github.com/alphagov/govuk-frontend#readme",
+  "homepage": "https://github.com/LBHackney-IT/lbh-frontend#readme",
   "keywords": [
+    "lbh",
+    "hackney",
     "govuk",
     "frontend",
     "design system",
     "template"
   ],
+  "peerDependencies": {
+    "govuk-frontend": "3.3.0"
+  },
   "license": "MIT"
 }

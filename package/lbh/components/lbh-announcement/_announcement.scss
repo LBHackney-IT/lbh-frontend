@@ -2,6 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+
 @include lbh-exports("lbh/component/announcement") {
   .lbh-announcement {
     padding: govuk-px-to-rem(36) 0;
@@ -11,6 +12,10 @@
 
     .lbh-phase-banner + & {
       margin-top: -1px;
+    }
+
+    & + & {
+      margin-top: 0;
     }
 
     &--site {
@@ -24,9 +29,11 @@
 
     &__content {
       @extend %lbh-body-m;
+      font-weight: $lbh-font-weight-regular;
 
       a {
         @extend %lbh-link;
+        @include lbh-link-style-default;
       }
 
       p:last-child {

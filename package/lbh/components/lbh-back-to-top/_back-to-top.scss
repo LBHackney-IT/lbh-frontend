@@ -2,6 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+
 @include lbh-exports("lbh/component/back-to-top") {
   .lbh-back-to-top {
     display: inline-block;
@@ -91,6 +92,7 @@
 
     &__text {
       display: inline-block;
+      margin-top: 0;
       @include lbh-font;
       color: $lbh-link-colour;
       font-size: govuk-px-to-rem(16);

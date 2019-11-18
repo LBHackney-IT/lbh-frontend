@@ -1,0 +1,216 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+
+@include lbh-exports("lbh/component/header") {
+  .lbh-header {
+    position: relative;
+    z-index: lbh-depth-index("header");
+    margin-top: 0;
+    padding-bottom: govuk-px-to-rem(21);
+    border-bottom: 2px solid lbh-colour("lbh-a03");
+    background: lbh-colour("lbh-white");
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      & + * {
+        margin-top: govuk-px-to-rem(88);
+
+        @include govuk-media-query($from: tablet) {
+          margin-top: govuk-px-to-rem(100);
+        }
+      }
+    }
+
+    &--purple {
+      border-bottom-color: lbh-colour("lbh-e03");
+    }
+
+    &--red {
+      border-bottom-color: lbh-colour("lbh-f03");
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+
+    &:before {
+      bottom: 3px;
+      border-bottom: 3px solid lbh-colour("lbh-a02");
+    }
+
+    &--red:before {
+      border-bottom-color: lbh-colour("lbh-f02");
+    }
+
+    &--purple:before {
+      border-bottom-color: lbh-colour("lbh-e02");
+    }
+
+    &:after {
+      bottom: 9px;
+      border-bottom: 4px solid lbh-colour("lbh-a01");
+    }
+
+    &--red:after {
+      border-bottom-color: lbh-colour("lbh-f01");
+    }
+
+    &--purple:after {
+      border-bottom-color: lbh-colour("lbh-e01");
+    }
+
+    &__main {
+      padding: govuk-px-to-rem(16) 0 govuk-px-to-rem(12);
+      color: lbh-colour("lbh-white");
+      background: lbh-colour("lbh-black");
+
+      @include govuk-media-query($from: tablet) {
+        padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(12);
+      }
+    }
+
+    &--red &__main {
+      background: lbh-colour("lbh-f02");
+    }
+
+    &--purple &__main {
+      background: lbh-colour("lbh-e01");
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      &--stacked {
+        @include govuk-media-query($until: tablet) {
+          display: block;
+        }
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: govuk-px-to-rem(24);
+      margin-bottom: 0;
+    }
+
+    &__title-link {
+      @include lbh-link-common;
+      display: block;
+      padding: govuk-px-to-rem(4) 0;
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom-color: lbh-colour("lbh-white");
+      }
+
+      @include govuk-media-query($from: desktop) {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+
+    &__logo {
+      display: block;
+      width: govuk-px-to-rem(152);
+      height: govuk-px-to-rem(28);
+      color: lbh-colour("lbh-white");
+
+      @include govuk-media-query($from: desktop) {
+        width: govuk-px-to-rem(206);
+        height: govuk-px-to-rem(37);
+        margin-right: govuk-px-to-rem(8);
+      }
+    }
+
+    &__logo-text {
+      @include govuk-visually-hidden;
+    }
+
+    &__service-name {
+      @include lbh-body-m;
+      margin-top: govuk-px-to-rem(-10);
+      margin-bottom: 0;
+      color: lbh-colour("lbh-white");
+      font-size: govuk-px-to-rem(17);
+      font-weight: $lbh-font-weight-regular;
+      line-height: govuk-px-to-rem(20);
+
+      @include govuk-media-query($from: desktop) {
+        margin-top: 0;
+        padding-top: govuk-px-to-rem(8);
+        font-size: govuk-px-to-rem(19);
+        letter-spacing: govuk-px-to-rem(-.7);
+        line-height: govuk-px-to-rem(23);
+      }
+    }
+
+    &--red &__service-name,
+    &--purple &__service-name {
+      color: lbh-colour("lbh-h04");
+    }
+
+    &__title-link:focus &__logo,
+    &__title-link:focus &__service-name {
+      color: lbh-colour("lbh-black");
+    }
+
+    &__service-name--short {
+      text-transform: uppercase;
+
+      @include govuk-media-query($from: desktop) {
+        padding-top: govuk-px-to-rem(1);
+        font-size: govuk-px-to-rem(29);
+        letter-spacing: govuk-px-to-rem(-.7);
+        line-height: govuk-px-to-rem(35);
+      }
+    }
+
+    &__links {
+      display: flex;
+      margin-top: 0;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @include govuk-media-query($from: desktop) {
+        justify-content: flex-end;
+      }
+
+      a,
+      p {
+        @include lbh-body-m;
+        margin-top: govuk-px-to-rem(8);
+        margin-bottom: 0;
+        padding: govuk-px-to-rem(4) 0;
+        color: lbh-colour("lbh-white");
+        font-weight: $lbh-font-weight-regular;
+
+        & + a,
+        & + p {
+          margin-left: govuk-px-to-rem(18);
+        }
+      }
+
+      a {
+        @include lbh-link-common;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

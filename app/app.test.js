@@ -186,7 +186,7 @@ describe(`http://localhost:${PORT}`, () => {
       requestPath.get(templatePath, (err, res) => {
         let $ = cheerio.load(res.body)
         const $container = $('.lbh-container')
-        const $backLink = $container.find('> .govuk-back-link')
+        const $backLink = $container.find('> .lbh-back-link')
 
         expect($backLink.length).toBe(1)
         done(err)

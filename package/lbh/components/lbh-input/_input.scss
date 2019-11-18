@@ -2,6 +2,8 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+@import "node_modules/govuk-frontend/govuk/components/input/input";
+
 @include lbh-exports("lbh/component/input") {
   .lbh-input {
     @extend %lbh-body-m;

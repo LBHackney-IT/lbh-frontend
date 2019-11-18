@@ -25,9 +25,9 @@ beforeAll(async (done) => {
   done()
 })
 
-describe('Hackney Frontend', () => {
+describe('LBH Frontend', () => {
   describe('javascript', () => {
-    it('can be accessed via `HackneyFrontend`', async () => {
+    it('can be accessed via `LBHFrontend`', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
       const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)

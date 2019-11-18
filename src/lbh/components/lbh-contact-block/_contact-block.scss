@@ -1,17 +1,17 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+
 // sass-lint:disable no-url-domains no-url-protocols
 @import url("//cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css");
 
 @include lbh-exports("lbh/component/contact-block") {
   .lbh-contact {
     display: flex;
-    padding-bottom: govuk-px-to-rem(24);
     border-top: 4px solid lbh-colour("lbh-a01");
     flex-direction: column;
 
-    @include mq ($from: desktop) {
+    @include govuk-media-query ($from: desktop) {
       display: block;
       overflow: hidden;
     }
@@ -20,7 +20,7 @@
       margin-top: govuk-px-to-rem(18);
       order: 1;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         margin-top: govuk-px-to-rem(36);
         margin-right: govuk-px-to-rem(36);
         float: left;
@@ -29,11 +29,11 @@
 
     &__social {
       display: flex;
-      margin: govuk-px-to-rem(36) 0;
+      margin: govuk-px-to-rem(36) 0 0;
       order: 3;
       align-items: center;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         margin: govuk-px-to-rem(45) 0;
         float: right;
       }
@@ -44,6 +44,7 @@
     }
 
     &__social-link {
+      display: block;
       margin: auto 0 auto govuk-px-to-rem(12);
     }
 
@@ -55,6 +56,7 @@
       display: block;
       width: govuk-px-to-rem(30);
       height: govuk-px-to-rem(30);
+      margin-top: 0;
     }
 
     &__fill {
@@ -68,7 +70,7 @@
     &__details {
       order: 2;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 33.333%;
         padding-right: govuk-px-to-rem(18);
@@ -78,8 +80,11 @@
     }
 
     &__block {
-      margin-bottom: govuk-px-to-rem(24);
       padding-left: govuk-px-to-rem(36);
+
+      & + .lbh-contact__block {
+        margin-top: govuk-px-to-rem(24);
+      }
     }
 
     &__block-title {
@@ -133,6 +138,10 @@
       padding: 0;
     }
 
+    &__address {
+      margin-top: 0;
+    }
+
     &__address,
     &__email,
     &__telephone,
@@ -142,6 +151,7 @@
 
     &__address span {
       display: block;
+      margin-top: 0;
     }
 
     &__address span:first-child {
@@ -166,7 +176,7 @@
       height: 400px;
       order: 4;
 
-      @include mq ($from: desktop) {
+      @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 66.666%;
         padding-left: govuk-px-to-rem(18);
@@ -187,6 +197,10 @@
       display: block;
       margin-top: govuk-px-to-rem(12);
       text-align: right;
+    }
+
+    .leaflet-control-zoom-out {
+      margin-top: 0;
     }
   }
 }

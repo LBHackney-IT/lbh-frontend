@@ -1,0 +1,21 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@import "node_modules/govuk-frontend/govuk/components/table/table";
+
+@include lbh-exports("lbh/component/table") {
+  .lbh-table {
+    @include lbh-body-m;
+    margin-bottom: 0;
+
+    .govuk-table__header {
+      font-weight: $lbh-font-weight-medium;
+    }
+
+    &__caption {
+      display: table-caption;
+      margin-bottom: govuk-px-to-rem(24);
+    }
+  }
+}

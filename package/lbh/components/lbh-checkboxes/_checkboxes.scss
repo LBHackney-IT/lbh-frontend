@@ -1,22 +1,27 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-
+@import "../../core/form-group";
 @import "../../core/hint";
 @import "../../core/label";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
+@import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
 
 @include lbh-exports("lbh/component/checkboxes") {
   .lbh-checkboxes {
+    margin-bottom: 0;
+
     .govuk-checkboxes__label {
       @extend %lbh-body-m;
+      margin-top: 0;
       margin-bottom: 0;
       padding-top: govuk-px-to-rem(9);
       padding-bottom: govuk-px-to-rem(8);
     }
 
     .govuk-checkboxes__item {
+      margin-top: 0;
       margin-bottom: govuk-px-to-rem(12);
     }
 

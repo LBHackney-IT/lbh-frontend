@@ -1,16 +1,21 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
+@import "../lbh-button/button";
 
 @include lbh-exports("lbh/component/cookie-banner") {
   .lbh-cookie-banner {
     @include lbh-font;
     z-index: lbh-depth-index("cookie-banner");
+    margin-top: 0;
     padding: govuk-px-to-rem(24) 0;
     color: lbh-colour("lbh-white");
+    // sass-lint:disable no-duplicate-properties
+    background: lbh-colour("lbh-black");
     background: rgba(lbh-colour("lbh-black"), .9);
+    // sass-lint:enable no-duplicate-properties
     font-size: govuk-px-to-rem(16);
-    font-weight: $lbh-font-weight-light;
+    font-weight: $lbh-font-weight-regular;
     line-height: govuk-px-to-rem(24);
 
     .js-enabled & {
@@ -28,6 +33,7 @@
 
       p {
         margin-top: 0;
+        color: lbh-colour("lbh-white");
       }
 
       a {
@@ -51,7 +57,9 @@
     }
 
     &__button-wrapper {
-      @include mq($from: desktop) {
+      margin-top: 0;
+
+      @include govuk-media-query($from: desktop) {
         text-align: right;
       }
     }
@@ -62,7 +70,7 @@
       border-radius: 0;
       box-shadow: none;
 
-      @include mq($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         margin-top: 0;
       }
     }

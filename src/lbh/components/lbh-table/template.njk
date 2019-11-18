@@ -1,0 +1,14 @@
+{% from "table/macro.njk" import govukTable %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-table' %}
+{% set captionClasses = (params.captionClasses if params.captionClasses else '') + ' lbh-table__caption' %}
+
+{{ govukTable({
+  rows: params.rows,
+  head: params.head,
+  caption: params.caption,
+  captionClasses: captionClasses,
+  firstCellIsHeader: params.firstCellIsHeader,
+  classes: classes,
+  attributes: params.attributes
+})}}

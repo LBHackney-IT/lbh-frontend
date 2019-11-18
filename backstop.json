@@ -31,6 +31,11 @@
       "delay": 500
     },
     {
+      "label": "Back link",
+      "url": "http://localhost:3000/components/lbh-back-link",
+      "delay": 500
+    },
+    {
       "label": "Back to top",
       "url": "http://localhost:3000/components/lbh-back-to-top",
       "delay": 500
@@ -91,6 +96,11 @@
       "delay": 500
     },
     {
+      "label": "Header",
+      "url": "http://localhost:3000/components/lbh-header",
+      "delay": 500
+    },
+    {
       "label": "Input",
       "url": "http://localhost:3000/components/lbh-input",
       "delay": 500
@@ -121,8 +131,18 @@
       "delay": 500
     },
     {
+      "label": "Table",
+      "url": "http://localhost:3000/components/lbh-table",
+      "delay": 500
+    },
+    {
       "label": "Tabs",
       "url": "http://localhost:3000/components/lbh-tabs",
+      "delay": 500
+    },
+    {
+      "label": "Tag",
+      "url": "http://localhost:3000/components/lbh-tag",
       "delay": 500
     },
     {

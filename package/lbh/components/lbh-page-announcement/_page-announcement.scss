@@ -2,6 +2,7 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
+
 @include lbh-exports("lbh/component/page-announcement") {
   .lbh-page-announcement {
     margin-bottom: govuk-px-to-rem(36);
@@ -23,13 +24,9 @@
       }
 
       ul {
-        @extend %govuk-list;
-        @extend %govuk-list--bullet;
+        @extend %lbh-list;
+        @extend %lbh-list--bullet;
         @extend %lbh-body-m;
-      }
-
-      & > *:last-child {
-        margin-bottom: 0;
       }
     }
   }

@@ -1,0 +1,15 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+@import "node_modules/govuk-frontend/govuk/components/select/select";
+
+@include lbh-exports("lbh/component/select") {
+  .lbh-select {
+    margin-top: govuk-px-to-rem(6);
+
+    .govuk-error-message + & {
+      margin-top: govuk-px-to-rem(12);
+    }
+  }
+}

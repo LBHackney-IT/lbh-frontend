@@ -11,6 +11,7 @@
 {% from "lbh-cookie-banner/macro.njk" import lbhCookieBanner %}
 {% from "lbh-date-input/macro.njk" import lbhDateInput %}
 {% from "lbh-details/macro.njk" import lbhDetails %}
+{% from "lbh-header/macro.njk" import lbhHeader %}
 {% from "lbh-inset-text/macro.njk" import lbhInsetText %}
 {% from "lbh-page-announcement/macro.njk" import lbhPageAnnouncement %}
 {% from "lbh-radios/macro.njk" import lbhRadios %}
@@ -24,6 +25,11 @@
 {% block beforeContent %}
   {{ lbhCookieBanner({
     content: '<p>We use cookies to ensure you have the best experience. For full details see our <a href="#">Cookie policy</a>.</p>'
+  }) }}
+  {{ lbhHeader({
+    isHome: false,
+    homepageUrl: '/',
+    isFixed: true
   }) }}
   {{ lbhPhaseBanner({
     tag: {

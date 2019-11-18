@@ -3,20 +3,20 @@ import { map, control, tileLayer, icon, marker } from 'leaflet'
 function Map ($module) {
   this.$module = $module
   this.moduleId = this.$module.getAttribute('id')
-  this.accessToken = this.$module.dataset.accessToken
+  this.accessToken = this.$module.getAttribute('data-access-token')
   this.map = null
-  this.markerLat = this.$module.dataset.markerLat || null
-  this.markerLng = this.$module.dataset.markerLng || null
-  this.centreLat = this.$module.dataset.centreLat || this.markerLat || 51.5490
-  this.centreLng = this.$module.dataset.centreLng || this.markerLng || -0.077928
-  this.maxZoom = this.$module.dataset.maxZoom || 19
-  this.minZoom = this.$module.dataset.minZoom || 12
-  this.initialZoom = this.$module.dataset.initialZoom || 15
-  this.showZoomControl = this.$module.dataset.showZoomControl || true
-  this.minLat = this.$module.dataset.minLat || 51.491112
-  this.minLng = this.$module.dataset.minLng || -0.275464
-  this.maxLat = this.$module.dataset.maxLat || 51.607351
-  this.maxLng = this.$module.dataset.maxLng || 0.096129
+  this.markerLat = this.$module.getAttribute('data-marker-lat') || null
+  this.markerLng = this.$module.getAttribute('data-marker-lng') || null
+  this.centreLat = this.$module.getAttribute('data-centre-lat') || this.markerLat || 51.5490
+  this.centreLng = this.$module.getAttribute('data-centre-lng') || this.markerLng || -0.077928
+  this.maxZoom = this.$module.getAttribute('data-max-zoom') || 19
+  this.minZoom = this.$module.getAttribute('data-min-zoom') || 12
+  this.initialZoom = this.$module.getAttribute('data-initial-zoom') || 15
+  this.showZoomControl = this.$module.getAttribute('data-show-zoom-control') || true
+  this.minLat = this.$module.getAttribute('data-min-lat') || 51.491112
+  this.minLng = this.$module.getAttribute('data-min-lng') || -0.275464
+  this.maxLat = this.$module.getAttribute('data-max-lat') || 51.607351
+  this.maxLng = this.$module.getAttribute('data-max-lng') || 0.096129
 }
 
 Map.prototype.initLeaflet = function () {

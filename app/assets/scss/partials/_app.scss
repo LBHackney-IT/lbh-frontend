@@ -16,6 +16,7 @@
 
 .app-component-preview {
   position: relative;
+  margin-top: 0;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -58,6 +59,10 @@
 .app-iframe-in-component-preview .lbh-back-to-top {
   position: static;
   transform: none;
+}
+
+.app-iframe-in-component-preview .lbh-header--fixed {
+  position: relative;
 }
 
 .js-enabled.app-iframe-in-component-preview .lbh-back-to-top {

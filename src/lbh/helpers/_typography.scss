@@ -36,7 +36,6 @@
 
 @mixin lbh-heading-h1 {
   @include lbh-heading;
-  margin-bottom: govuk-px-to-rem(24);
   font-size: govuk-px-to-rem(32);
   line-height: govuk-px-to-rem(38);
 
@@ -48,7 +47,6 @@
 
 @mixin lbh-heading-h2 {
   @include lbh-heading;
-  margin-bottom: govuk-px-to-rem(24);
   font-size: govuk-px-to-rem(24);
   line-height: govuk-px-to-rem(29);
 
@@ -110,52 +108,47 @@
 
   @include govuk-media-query($from: tablet) {
     font-size: govuk-px-to-rem(36);
-    line-height: govuk-px-to-rem(48);
+    line-height: govuk-px-to-rem(43);
   }
 }
 
 @mixin lbh-body-l {
   @include lbh-font;
-  margin-bottom: govuk-px-to-rem(24);
   color: $lbh-text-colour;
   font-size: govuk-px-to-rem(19);
-  font-weight: $lbh-font-weight-regular;
-  line-height: govuk-px-to-rem(23);
+  font-weight: $lbh-font-weight-light;
+  line-height: govuk-px-to-rem(28);
 
   @include govuk-media-query($from: tablet) {
     font-size: govuk-px-to-rem(24);
     font-weight: $lbh-font-weight-light;
-    line-height: govuk-px-to-rem(29);
+    line-height: govuk-px-to-rem(33);
   }
 }
 
 @mixin lbh-body-m {
   @include lbh-font;
-  margin-bottom: govuk-px-to-rem(19);
   color: $lbh-text-colour;
   font-size: govuk-px-to-rem(16);
   font-weight: $lbh-font-weight-light;
-  line-height: govuk-px-to-rem(19);
+  line-height: govuk-px-to-rem(26);
 
   @include govuk-media-query($from: tablet) {
-    margin-bottom: govuk-px-to-rem(23);
     font-size: govuk-px-to-rem(19);
-    line-height: govuk-px-to-rem(23);
+    line-height: govuk-px-to-rem(30);
   }
 }
 
 @mixin lbh-body-s {
   @include lbh-font;
-  margin-bottom: govuk-px-to-rem(16);
   color: $lbh-text-colour;
   font-size: govuk-px-to-rem(13);
   font-weight: $lbh-font-weight-regular;
-  line-height: govuk-px-to-rem(16);
+  line-height: govuk-px-to-rem(19);
 
   @include govuk-media-query($from: tablet) {
-    margin-bottom: govuk-px-to-rem(19);
     font-size: govuk-px-to-rem(16);
-    line-height: govuk-px-to-rem(19);
+    line-height: govuk-px-to-rem(24);
   }
 }
 
@@ -164,5 +157,5 @@
   color: $lbh-text-colour;
   font-size: govuk-px-to-rem(14);
   font-weight: $lbh-font-weight-regular;
-  line-height: govuk-px-to-rem(23);
+  line-height: govuk-px-to-rem(24);
 }

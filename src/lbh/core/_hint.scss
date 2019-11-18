@@ -1,5 +1,10 @@
-.lbh-form-group .govuk-hint {
+@mixin lbh-hint {
   @include lbh-body-m;
-  margin-bottom: govuk-px-to-rem(12);
+  margin-top: 0;
+  margin-bottom: 0;
   color: lbh-colour("lbh-secondary-text");
+}
+
+.lbh-form-group .govuk-hint {
+  @include lbh-hint;
 }
