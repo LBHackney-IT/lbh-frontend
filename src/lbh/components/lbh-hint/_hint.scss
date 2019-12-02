@@ -1,0 +1,20 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+
+// Need mixin here because the govuk-character-count component doesn't use
+// the hint component so we need to be able to apply these classes to 
+// .lbh-character-count .govuk-hint 
+// I have raised an issue in govuk-frontend: https://github.com/alphagov/govuk-frontend/issues/1645
+@mixin lbh-hint {
+  @include lbh-body-m;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: lbh-colour("lbh-secondary-text");
+}
+
+@include lbh-exports("lbh/component/hint") {
+  .lbh-hint {
+    @include lbh-hint;
+  }
+}

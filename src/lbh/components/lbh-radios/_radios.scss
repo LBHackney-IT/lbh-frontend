@@ -2,23 +2,18 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 @import "../../core/form-group";
-@import "../../core/hint";
 @import "../../core/label";
+@import "node_modules/govuk-frontend/govuk/components/radios/radios";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
-
-@import "node_modules/govuk-frontend/govuk/components/radios/radios";
+@import "../lbh-hint/hint";
 
 @include lbh-exports("lbh/component/radios") {
   .lbh-radios {
     .govuk-label {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-top: 0;
       margin-bottom: govuk-px-to-rem(6);
-    }
-
-    .govuk-hint {
-      @include lbh-hint;
     }
 
     .govuk-radios__item,

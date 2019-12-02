@@ -17,7 +17,7 @@
     }
 
     &__content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
 
       a {
         @extend %lbh-link;
@@ -26,7 +26,7 @@
       ul {
         @extend %lbh-list;
         @extend %lbh-list--bullet;
-        @extend %lbh-body-m;
+        @include lbh-body-m;
       }
     }
   }

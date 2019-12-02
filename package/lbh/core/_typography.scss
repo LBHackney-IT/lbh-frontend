@@ -21,7 +21,7 @@
   }
 
   .lbh-heading-h1 {
-    @extend %lbh-heading-h1;
+    @include lbh-heading-h1;
   }
 
   %lbh-heading-h2 {
@@ -39,7 +39,7 @@
   }
 
   .lbh-heading-h2 {
-    @extend %lbh-heading-h2;
+    @include lbh-heading-h2;
   }
 
   %lbh-heading-h3 {
@@ -57,7 +57,7 @@
   }
 
   .lbh-heading-h3 {
-    @extend %lbh-heading-h3;
+    @include lbh-heading-h3;
   }
 
   %lbh-heading-h4 {
@@ -75,7 +75,7 @@
   }
 
   .lbh-heading-h4 {
-    @extend %lbh-heading-h4;
+    @include lbh-heading-h4;
   }
 
   %lbh-heading-h5 {
@@ -93,7 +93,7 @@
   }
 
   .lbh-heading-h5 {
-    @extend %lbh-heading-h5;
+    @include lbh-heading-h5;
   }
 
   %lbh-heading-h6 {
@@ -111,31 +111,31 @@
   }
 
   .lbh-heading-h6 {
-    @extend %lbh-heading-h6;
+    @include lbh-heading-h6;
   }
 
   h1 {
-    @extend %lbh-heading-h1;
+    @include lbh-heading-h1;
   }
 
   h2 {
-    @extend %lbh-heading-h2;
+    @include lbh-heading-h2;
   }
 
   h3 {
-    @extend %lbh-heading-h3;
+    @include lbh-heading-h3;
   }
 
   h4 {
-    @extend %lbh-heading-h4;
+    @include lbh-heading-h4;
   }
 
   h5 {
-    @extend %lbh-heading-h5;
+    @include lbh-heading-h5;
   }
 
   h6 {
-    @extend %lbh-heading-h6;
+    @include lbh-heading-h6;
   }
 
   %lbh-heading-large-light {
@@ -175,7 +175,7 @@
   }
 
   .lbh-body-l {
-    @extend %lbh-body-l;
+    @include lbh-body-l;
   }
 
   %lbh-body-m {
@@ -192,7 +192,7 @@
   }
 
   .lbh-body-m {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 
   %lbh-body-s {
@@ -209,7 +209,7 @@
   }
 
   .lbh-body-s {
-    @extend %lbh-body-s;
+    @include lbh-body-s;
   }
 
   %lbh-body-xs {
@@ -221,7 +221,7 @@
   }
 
   .lbh-body-xs {
-    @extend %lbh-body-xs;
+    @include lbh-body-xs;
   }
 
   // Usage aliases
@@ -230,11 +230,11 @@
   // refer to the 'original' class name
 
   .lbh-body-lead {
-    @extend %lbh-body-l;
+    @include lbh-body-l;
   }
 
   .lbh-body {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 
   strong {

@@ -1,9 +1,9 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-@import "../lbh-textarea/textarea";
-
 @import "node_modules/govuk-frontend/govuk/components/character-count/character-count";
+@import "../lbh-textarea/textarea";
+@import "../lbh-hint/hint";
 
 @include lbh-exports("lbh/component/character-count") {
   .lbh-character-count {
@@ -12,6 +12,13 @@
     & + .govuk-error-message {
       color: lbh-colour("lbh-error");
       font-weight: $lbh-font-weight-medium;
+    }
+
+    // Need to use govuk-hint here because the govuk-character-count component 
+    // doesn't use the hint component so we can't add a custom class
+    // I have raised an issue in govuk-frontend: https://github.com/alphagov/govuk-frontend/issues/1645
+    .govuk-hint {
+      @include lbh-hint;
     }
   }
 }

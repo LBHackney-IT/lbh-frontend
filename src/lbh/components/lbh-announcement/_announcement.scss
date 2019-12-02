@@ -1,7 +1,7 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-
+@import "../../core/typography";
 
 @include lbh-exports("lbh/component/announcement") {
   .lbh-announcement {
@@ -28,7 +28,7 @@
     }
 
     &__content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       font-weight: $lbh-font-weight-regular;
 
       a {

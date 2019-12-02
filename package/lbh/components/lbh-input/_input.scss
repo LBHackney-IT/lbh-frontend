@@ -6,6 +6,6 @@
 
 @include lbh-exports("lbh/component/input") {
   .lbh-input {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 }

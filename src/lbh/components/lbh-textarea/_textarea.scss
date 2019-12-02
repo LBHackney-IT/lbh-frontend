@@ -1,16 +1,11 @@
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
-@import "../../core/hint";
-
 @import "node_modules/govuk-frontend/govuk/components/textarea/textarea";
+@import "../lbh-hint/hint";
 
 @include lbh-exports("lbh/component/textarea") {
   .lbh-textarea {
     margin-bottom: 0;
-
-    .govuk-hint {
-      @include lbh-hint;
-    }
   }
 }

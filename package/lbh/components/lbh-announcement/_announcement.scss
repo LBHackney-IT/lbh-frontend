@@ -28,7 +28,7 @@
     }
 
     &__content {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       font-weight: $lbh-font-weight-regular;
 
       a {

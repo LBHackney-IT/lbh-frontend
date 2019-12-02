@@ -2,226 +2,223 @@
 @import "../tools/all";
 @import "../helpers/all";
 
+@mixin lbh-heading-h1 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(32);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(38);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(48);
+    line-height: govuk-px-to-rem(58);
+  }
+}
+
+@mixin lbh-heading-h2 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(24);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(29);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(30);
+    line-height: govuk-px-to-rem(36);
+  }
+}
+
+@mixin lbh-heading-h3 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(20);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(24);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(24);
+    line-height: govuk-px-to-rem(29);
+  }
+}
+
+@mixin lbh-heading-h4 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(18);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(22);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(20);
+    line-height: govuk-px-to-rem(24);
+  }
+}
+
+@mixin lbh-heading-h5 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(16);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(19);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(18);
+    line-height: govuk-px-to-rem(22);
+  }
+}
+
+@mixin lbh-heading-h6 {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(14);
+  font-weight: $lbh-font-weight-medium;
+  line-height: govuk-px-to-rem(17);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(16);
+    line-height: govuk-px-to-rem(19);
+  }
+}
+
+@mixin lbh-heading-large-light {
+  @include lbh-font;
+  display: block;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(24);
+  font-weight: $lbh-font-weight-extra-light;
+  line-height: govuk-px-to-rem(29);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(36);
+    line-height: govuk-px-to-rem(43);
+  }
+}
+
+@mixin lbh-body-l {
+  @include lbh-font;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(19);
+  font-weight: $lbh-font-weight-light;
+  line-height: govuk-px-to-rem(28);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(24);
+    font-weight: $lbh-font-weight-light;
+    line-height: govuk-px-to-rem(33);
+  }
+}
+
+@mixin lbh-body-m {
+  @include lbh-font;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(16);
+  font-weight: $lbh-font-weight-light;
+  line-height: govuk-px-to-rem(26);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(19);
+    line-height: govuk-px-to-rem(30);
+  }
+}
+
+@mixin lbh-body-s {
+  @include lbh-font;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(13);
+  font-weight: $lbh-font-weight-regular;
+  line-height: govuk-px-to-rem(19);
+
+  @include govuk-media-query($from: tablet) {
+    font-size: govuk-px-to-rem(16);
+    line-height: govuk-px-to-rem(24);
+  }
+}
+
+@mixin lbh-body-xs {
+  @include lbh-font;
+  color: $lbh-text-colour;
+  font-size: govuk-px-to-rem(14);
+  font-weight: $lbh-font-weight-regular;
+  line-height: govuk-px-to-rem(24);
+}
+
 @include lbh-exports("lbh/core/typography") {
 
   // Headings
-
-  %lbh-heading-h1 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(32);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(38);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(48);
-      line-height: govuk-px-to-rem(58);
-    }
-  }
-
   .lbh-heading-h1 {
-    @extend %lbh-heading-h1;
-  }
-
-  %lbh-heading-h2 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(24);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(29);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(30);
-      line-height: govuk-px-to-rem(36);
-    }
+    @include lbh-heading-h1;
   }
 
   .lbh-heading-h2 {
-    @extend %lbh-heading-h2;
-  }
-
-  %lbh-heading-h3 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(20);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(24);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(24);
-      line-height: govuk-px-to-rem(29);
-    }
+    @include lbh-heading-h2;
   }
 
   .lbh-heading-h3 {
-    @extend %lbh-heading-h3;
-  }
-
-  %lbh-heading-h4 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(18);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(22);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(20);
-      line-height: govuk-px-to-rem(24);
-    }
+    @include lbh-heading-h3;
   }
 
   .lbh-heading-h4 {
-    @extend %lbh-heading-h4;
-  }
-
-  %lbh-heading-h5 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(16);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(19);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(18);
-      line-height: govuk-px-to-rem(22);
-    }
+    @include lbh-heading-h4;
   }
 
   .lbh-heading-h5 {
-    @extend %lbh-heading-h5;
-  }
-
-  %lbh-heading-h6 {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(14);
-    font-weight: $lbh-font-weight-medium;
-    line-height: govuk-px-to-rem(17);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(16);
-      line-height: govuk-px-to-rem(19);
-    }
+    @include lbh-heading-h5;
   }
 
   .lbh-heading-h6 {
-    @extend %lbh-heading-h6;
+    @include lbh-heading-h6;
   }
 
   h1 {
-    @extend %lbh-heading-h1;
+    @include lbh-heading-h1;
   }
 
   h2 {
-    @extend %lbh-heading-h2;
+    @include lbh-heading-h2;
   }
 
   h3 {
-    @extend %lbh-heading-h3;
+    @include lbh-heading-h3;
   }
 
   h4 {
-    @extend %lbh-heading-h4;
+    @include lbh-heading-h4;
   }
 
   h5 {
-    @extend %lbh-heading-h5;
+    @include lbh-heading-h5;
   }
 
   h6 {
-    @extend %lbh-heading-h6;
-  }
-
-  %lbh-heading-large-light {
-    @include lbh-font;
-    display: block;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(24);
-    font-weight: $lbh-font-weight-extra-light;
-    line-height: govuk-px-to-rem(29);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(36);
-      line-height: govuk-px-to-rem(43);
-    }
+    @include lbh-heading-h6;
   }
 
   .lbh-heading-large-light {
-    @extend %lbh-heading-large-light;
+    @include lbh-heading-large-light;
   }
-
-
 
   // Body (paragraphs)
 
-  %lbh-body-l {
-    @include lbh-font;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(19);
-    font-weight: $lbh-font-weight-light;
-    line-height: govuk-px-to-rem(28);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(24);
-      font-weight: $lbh-font-weight-light;
-      line-height: govuk-px-to-rem(33);
-    }
-  }
-
   .lbh-body-l {
-    @extend %lbh-body-l;
-  }
-
-  %lbh-body-m {
-    @include lbh-font;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(16);
-    font-weight: $lbh-font-weight-light;
-    line-height: govuk-px-to-rem(26);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(19);
-      line-height: govuk-px-to-rem(30);
-    }
+    @include lbh-body-l;
   }
 
   .lbh-body-m {
-    @extend %lbh-body-m;
-  }
-
-  %lbh-body-s {
-    @include lbh-font;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(13);
-    font-weight: $lbh-font-weight-regular;
-    line-height: govuk-px-to-rem(19);
-
-    @include govuk-media-query($from: tablet) {
-      font-size: govuk-px-to-rem(16);
-      line-height: govuk-px-to-rem(24);
-    }
+    @include lbh-body-m;
   }
 
   .lbh-body-s {
-    @extend %lbh-body-s;
-  }
-
-  %lbh-body-xs {
-    @include lbh-font;
-    color: $lbh-text-colour;
-    font-size: govuk-px-to-rem(14);
-    font-weight: $lbh-font-weight-regular;
-    line-height: govuk-px-to-rem(24);
+    @include lbh-body-s;
   }
 
   .lbh-body-xs {
-    @extend %lbh-body-xs;
+    @include lbh-body-xs;
   }
 
   // Usage aliases
@@ -230,11 +227,11 @@
   // refer to the 'original' class name
 
   .lbh-body-lead {
-    @extend %lbh-body-l;
+    @include lbh-body-l;
   }
 
   .lbh-body {
-    @extend %lbh-body-m;
+    @include lbh-body-m;
   }
 
   strong {

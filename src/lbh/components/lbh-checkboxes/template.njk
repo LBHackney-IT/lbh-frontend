@@ -7,7 +7,13 @@
 {{ govukCheckboxes({
   describedBy: params.describedBy,
   fieldset: params.fieldset,
-  hint: params.hint,
+  hint: {
+    text: params.hint.text,
+    html: params.hint.html,
+    id: params.hint.id,
+    classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
+    attributes: params.hint.attributes
+  },
   errorMessage: params.errorMessage,
   formGroup: formGroup,
   idPrefix: params.idPrefix,

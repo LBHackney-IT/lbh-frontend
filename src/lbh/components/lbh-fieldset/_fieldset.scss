@@ -7,16 +7,16 @@
 @include lbh-exports("lbh/component/fieldset") {
   .lbh-form-group .govuk-fieldset__legend,
   .lbh-fieldset .govuk-fieldset__legend {
-    @extend %lbh-heading-h3;
+    @include lbh-heading-h3;
     margin-bottom: 0;
 
     &.govuk-fieldset__legend--l,
     &.govuk-fieldset__legend--xl {
-      @extend %lbh-heading-h1;
+      @include lbh-heading-h1;
     }
 
     &.govuk-fieldset__legend--m {
-      @extend %lbh-heading-h2;
+      @include lbh-heading-h2;
     }
 
     & + .govuk-hint {

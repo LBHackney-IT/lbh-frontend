@@ -1,19 +1,19 @@
+@import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
 @import "../../settings/all";
 @import "../../tools/all";
 @import "../../helpers/all";
 @import "../../core/form-group";
-@import "../../core/hint";
 @import "../../core/label";
 @import "../lbh-error-message/error-message";
 @import "../lbh-fieldset/fieldset";
-@import "node_modules/govuk-frontend/govuk/components/checkboxes/checkboxes";
+@import "../lbh-hint/hint";
 
 @include lbh-exports("lbh/component/checkboxes") {
   .lbh-checkboxes {
     margin-bottom: 0;
 
     .govuk-checkboxes__label {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-top: 0;
       margin-bottom: 0;
       padding-top: govuk-px-to-rem(9);
@@ -26,7 +26,7 @@
     }
 
     .govuk-input {
-      @extend %lbh-body-m;
+      @include lbh-body-m;
       margin-bottom: 0;
     }
   }
