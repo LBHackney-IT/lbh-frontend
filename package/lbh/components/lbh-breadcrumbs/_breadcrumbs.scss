@@ -7,13 +7,13 @@
 @include lbh-exports("lbh/component/breadcrumbs") {
   .lbh-breadcrumbs {
     @include lbh-body-xs;
-    margin-top: govuk-px-to-rem(18);
-    margin-bottom: govuk-px-to-rem(-12);
+    @include lbh-rem(margin-top, 18);
+    @include lbh-rem(margin-bottom, -12);
     overflow: hidden;
-    font-size: govuk-px-to-rem(15);
+    @include lbh-rem(font-size, 15);
 
     .govuk-breadcrumbs__list-item {
-      margin-bottom: govuk-px-to-rem(12);
+      @include lbh-rem(margin-bottom, 12);
     }
 
     .govuk-breadcrumbs__list-item + .govuk-breadcrumbs__list-item {

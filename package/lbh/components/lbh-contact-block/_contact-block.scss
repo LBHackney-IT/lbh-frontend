@@ -24,15 +24,15 @@
     }
 
     &__title {
-      margin-top: govuk-px-to-rem(18);
+      @include lbh-rem(margin-top, 18);
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1;
 
       @include govuk-media-query ($from: desktop) {
-        margin-top: govuk-px-to-rem(36);
-        margin-right: govuk-px-to-rem(36);
+        @include lbh-rem(margin-top, 36);
+        @include lbh-rem(margin-right, 36);
         float: left;
       }
     }
@@ -42,7 +42,7 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      margin: govuk-px-to-rem(36) 0 0;
+      @include lbh-rem(margin, 36, 0, 0);
       -webkit-box-ordinal-group: 4;
       -webkit-order: 3;
           -ms-flex-order: 3;
@@ -53,7 +53,7 @@
               align-items: center;
 
       @include govuk-media-query ($from: desktop) {
-        margin: govuk-px-to-rem(45) 0;
+        @include lbh-rem(margin, 45, 0);
         float: right;
       }
     }
@@ -64,7 +64,10 @@
 
     &__social-link {
       display: block;
-      margin: auto 0 auto govuk-px-to-rem(12);
+      margin-top: auto;
+      margin-right: 0;
+      margin-bottom: auto;
+      @include lbh-rem(margin-left, 12);
     }
 
     &__social-link-text {
@@ -73,8 +76,8 @@
 
     &__social-link-icon {
       display: block;
-      width: govuk-px-to-rem(30);
-      height: govuk-px-to-rem(30);
+      @include lbh-rem(width, 30);
+      @include lbh-rem(height, 30);
       margin-top: 0;
     }
 
@@ -95,23 +98,23 @@
       @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 33.333%;
-        padding-right: govuk-px-to-rem(18);
+        @include lbh-rem(padding-right, 18);
         float: left;
         clear: both;
       }
     }
 
     &__block {
-      padding-left: govuk-px-to-rem(36);
+      @include lbh-rem(padding-left, 36);
 
       & + .lbh-contact__block {
-        margin-top: govuk-px-to-rem(24);
+        @include lbh-rem(margin-top, 24);
       }
     }
 
     &__block-title {
       position: relative;
-      margin-bottom: govuk-px-to-rem(6);
+      @include lbh-rem(margin-bottom, 6);
     }
 
     &__block:first-child &__block-title {
@@ -123,9 +126,9 @@
       display: block;
       position: absolute;
       top: 50%;
-      left: govuk-px-to-rem(-36);
-      width: govuk-px-to-rem(20);
-      height: govuk-px-to-rem(20);
+      @include lbh-rem(left, -36);
+      @include lbh-rem(width, 20);
+      @include lbh-rem(height, 20);
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
@@ -206,7 +209,7 @@
       @include govuk-media-query ($from: desktop) {
         box-sizing: border-box;
         width: 66.666%;
-        padding-left: govuk-px-to-rem(18);
+        @include lbh-rem(padding-left, 18);
         float: right;
       }
     }
@@ -223,7 +226,7 @@
 
     &__directions {
       display: block;
-      margin-top: govuk-px-to-rem(12);
+      @include lbh-rem(margin-top, 12);
       text-align: right;
     }
 

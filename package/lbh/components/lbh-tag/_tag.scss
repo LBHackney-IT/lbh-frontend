@@ -7,11 +7,11 @@
 @include lbh-exports("lbh/component/tag") {
   .lbh-tag {
     @include lbh-body-xs;
-    padding: govuk-px-to-rem(2) govuk-px-to-rem(12) 0;
+    @include lbh-rem(padding, 2, 12, 0);
     color: lbh-colour("lbh-white");
     background: lbh-colour("lbh-a01");
     box-shadow: lbh-colour("lbh-primary-inner-shadow") 0 2px 0 0;
-    line-height: govuk-px-to-rem(15);
+    @include lbh-rem(line-height, 15);
     text-transform: uppercase;
   }
 }

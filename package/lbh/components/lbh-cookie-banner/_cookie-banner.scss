@@ -8,15 +8,15 @@
     @include lbh-font;
     z-index: lbh-depth-index("cookie-banner");
     margin-top: 0;
-    padding: govuk-px-to-rem(24) 0;
+    @include lbh-rem(padding, 24, 0);
     color: lbh-colour("lbh-white");
     // sass-lint:disable no-duplicate-properties
     background: lbh-colour("lbh-black");
     background: rgba(lbh-colour("lbh-black"), .9);
     // sass-lint:enable no-duplicate-properties
-    font-size: govuk-px-to-rem(16);
+    @include lbh-rem(font-size, 16);
     font-weight: $lbh-font-weight-regular;
-    line-height: govuk-px-to-rem(24);
+    @include lbh-rem(line-height, 24);
 
     .js-enabled & {
       display: none;
@@ -65,7 +65,7 @@
     }
 
     &__button {
-      margin-top: govuk-px-to-rem(24);
+      @include lbh-rem(margin-top, 24);
       margin-bottom: 0;
       border-radius: 0;
       box-shadow: none;

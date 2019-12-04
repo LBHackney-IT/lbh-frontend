@@ -8,14 +8,14 @@
 
 @include lbh-exports("lbh/component/phase-banner") {
   .lbh-phase-banner {
-    padding: govuk-px-to-rem(8) 0 govuk-px-to-rem(10);
+    @include lbh-rem(padding, 8, 0, 10);
     border-bottom: 1px solid lbh-colour("lbh-panel");
 
     .govuk-phase-banner__content__tag {
-      margin-right: govuk-px-to-rem(8);
+      @include lbh-rem(margin-right, 8);
 
       @include govuk-media-query($from: desktop) {
-        margin-right: govuk-px-to-rem(12);
+        @include lbh-rem(margin-right, 12);
       }
     }
 

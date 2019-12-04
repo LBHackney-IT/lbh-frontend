@@ -7,13 +7,14 @@
 @include lbh-exports("lbh/component/button") {
   .lbh-button {
     @include lbh-font;
+    margin-top: 1.5em;
     margin-bottom: 0;
-    padding: govuk-px-to-rem(12) govuk-px-to-rem(22) govuk-px-to-rem(10);
+    @include lbh-rem(padding, 12, 22, 10);
     border-radius: 4px;
     background: lbh-colour("lbh-a01");
-    font-size: govuk-px-to-rem(19);
+    @include lbh-rem(font-size, 19);
     font-weight: $lbh-font-weight-regular;
-    line-height: govuk-px-to-rem(23);
+    @include lbh-rem(line-height, 23);
 
     &:not(&--warning):not(&--disabled):not([disabled]):hover {
       background: lbh-colour("lbh-primary-hover");
@@ -29,20 +30,20 @@
     }
 
     &--start {
-      padding: govuk-px-to-rem(15) govuk-px-to-rem(24) govuk-px-to-rem(13);
-      font-size: govuk-px-to-rem(27);
+      @include lbh-rem(padding, 15, 24, 13);
+      @include lbh-rem(font-size, 27);
       font-weight: $lbh-font-weight-medium;
-      line-height: govuk-px-to-rem(30);
+      @include lbh-rem(line-height, 30);
 
       .govuk-button__start-icon {
-        margin-left: govuk-px-to-rem(24);
+        @include lbh-rem(margin-left, 24);
       }
     }
 
     &--secondary,
     &--secondary:link,
     &--secondary:visited {
-      padding: govuk-px-to-rem(11) govuk-px-to-rem(22) govuk-px-to-rem(11);
+      @include lbh-rem(padding, 11, 22, 11);
       border: 1px solid lbh-colour("lbh-a01");
       color: lbh-colour("lbh-a01");
       background: lbh-colour("lbh-white");

@@ -7,10 +7,10 @@
 
 @include lbh-exports("lbh/component/select") {
   .lbh-select {
-    margin-top: govuk-px-to-rem(6);
+    @include lbh-rem(margin-top, 6);
 
     .govuk-error-message + & {
-      margin-top: govuk-px-to-rem(12);
+      @include lbh-rem(margin-top, 12);
     }
   }
 }

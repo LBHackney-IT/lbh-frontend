@@ -8,7 +8,7 @@
     position: relative;
     z-index: lbh-depth-index("header");
     margin-top: 0;
-    padding-bottom: govuk-px-to-rem(21);
+    @include lbh-rem(padding-bottom, 21);
     border-bottom: 2px solid lbh-colour("lbh-a03");
     background: lbh-colour("lbh-white");
 
@@ -19,10 +19,10 @@
       left: 0;
 
       & + * {
-        margin-top: govuk-px-to-rem(88);
+        @include lbh-rem(margin-top, 88);
 
         @include govuk-media-query($from: tablet) {
-          margin-top: govuk-px-to-rem(100);
+          @include lbh-rem(margin-top, 100);
         }
       }
     }
@@ -71,12 +71,12 @@
     }
 
     &__main {
-      padding: govuk-px-to-rem(16) 0 govuk-px-to-rem(12);
+      @include lbh-rem(padding, 16, 0, 12);
       color: lbh-colour("lbh-white");
       background: lbh-colour("lbh-black");
 
       @include govuk-media-query($from: tablet) {
-        padding: govuk-px-to-rem(20) 0 govuk-px-to-rem(12);
+        @include lbh-rem(padding, 20, 0, 12);
       }
     }
 
@@ -108,14 +108,14 @@
     &__title {
       display: inline-block;
       margin-top: 0;
-      margin-right: govuk-px-to-rem(24);
+      @include lbh-rem(margin-right, 24);
       margin-bottom: 0;
     }
 
     &__title-link {
       @include lbh-link-common;
       display: block;
-      padding: govuk-px-to-rem(4) 0;
+      @include lbh-rem(padding, 4, 0);
       border-bottom: 1px solid transparent;
       text-decoration: none;
 
@@ -137,14 +137,14 @@
 
     &__logo {
       display: block;
-      width: govuk-px-to-rem(152);
-      height: govuk-px-to-rem(28);
+      @include lbh-rem(width, 152);
+      @include lbh-rem(height, 28);
       color: lbh-colour("lbh-white");
 
       @include govuk-media-query($from: desktop) {
-        width: govuk-px-to-rem(206);
-        height: govuk-px-to-rem(37);
-        margin-right: govuk-px-to-rem(8);
+        @include lbh-rem(width, 206);
+        @include lbh-rem(height, 37);
+        @include lbh-rem(margin-right, 8);
       }
     }
 
@@ -154,19 +154,19 @@
 
     &__service-name {
       @include lbh-body-m;
-      margin-top: govuk-px-to-rem(-10);
+      @include lbh-rem(margin-top, -10);
       margin-bottom: 0;
       color: lbh-colour("lbh-white");
-      font-size: govuk-px-to-rem(17);
+      @include lbh-rem(font-size, 17);
       font-weight: $lbh-font-weight-regular;
-      line-height: govuk-px-to-rem(20);
+      @include lbh-rem(line-height, 20);
 
       @include govuk-media-query($from: desktop) {
         margin-top: 0;
-        padding-top: govuk-px-to-rem(8);
-        font-size: govuk-px-to-rem(19);
-        letter-spacing: govuk-px-to-rem(-.7);
-        line-height: govuk-px-to-rem(23);
+        @include lbh-rem(padding-top, 8);
+        @include lbh-rem(font-size, 19);
+        @include lbh-rem(letter-spacing, -.7);
+        @include lbh-rem(line-height, 23);
       }
     }
 
@@ -184,10 +184,10 @@
       text-transform: uppercase;
 
       @include govuk-media-query($from: desktop) {
-        padding-top: govuk-px-to-rem(1);
-        font-size: govuk-px-to-rem(29);
-        letter-spacing: govuk-px-to-rem(-.7);
-        line-height: govuk-px-to-rem(35);
+        @include lbh-rem(padding-top, 1);
+        @include lbh-rem(font-size, 29);
+        @include lbh-rem(letter-spacing, -.7);
+        @include lbh-rem(line-height, 35);
       }
     }
 
@@ -216,15 +216,15 @@
       a,
       p {
         @include lbh-body-m;
-        margin-top: govuk-px-to-rem(8);
+        @include lbh-rem(margin-top, 8);
         margin-bottom: 0;
-        padding: govuk-px-to-rem(4) 0;
+        @include lbh-rem(padding, 4, 0);
         color: lbh-colour("lbh-white");
         font-weight: $lbh-font-weight-regular;
 
         & + a,
         & + p {
-          margin-left: govuk-px-to-rem(18);
+          @include lbh-rem(margin-left, 18);
         }
       }
 

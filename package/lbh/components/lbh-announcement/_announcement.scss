@@ -5,7 +5,7 @@
 
 @include lbh-exports("lbh/component/announcement") {
   .lbh-announcement {
-    padding: govuk-px-to-rem(36) 0;
+    @include lbh-rem(padding, 36, 0);
     border-top: 1px solid lbh-colour("lbh-a03");
     border-bottom: 1px solid lbh-colour("lbh-a03");
     background: rgba(lbh-colour("lbh-a04"), .2);
@@ -24,7 +24,7 @@
 
     &__title {
       margin-top: 0;
-      margin-bottom: govuk-px-to-rem(12);
+      @include lbh-rem(margin-bottom, 12);
     }
 
     &__content {

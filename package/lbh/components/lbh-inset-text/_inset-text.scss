@@ -8,7 +8,7 @@
   .lbh-inset-text {
     @include lbh-body-m;
     margin-bottom: 0;
-    padding: govuk-px-to-rem(24);
+    @include lbh-rem(padding, 24);
     border-left-color: lbh-colour("lbh-border");
   }
 }

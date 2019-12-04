@@ -8,14 +8,14 @@
     display: inline-block;
     position: fixed;
     z-index: lbh-depth-index("back-to-top");
-    bottom: govuk-px-to-rem(65);
+    @include lbh-rem(bottom, 65);
     left: 50%;
-    padding: govuk-px-to-rem(6) govuk-px-to-rem(23) govuk-px-to-rem(6) govuk-px-to-rem(6);
+    @include lbh-rem(padding, 6, 23, 6, 6);
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
     border: 1px solid rgba(lbh-colour("lbh-a01"), .1);
-    border-radius: govuk-px-to-rem(22);
+    @include lbh-rem(border-radius, 22);
     background: rgba(lbh-colour("lbh-grey-4"), .9);
     box-shadow: rgba(lbh-colour("lbh-black"), .2) 0 1px 5px 0;
     text-decoration: none;
@@ -26,7 +26,7 @@
       -webkit-transform: none;
           -ms-transform: none;
               transform: none;
-      border-radius: govuk-px-to-rem(22) 0 0 govuk-px-to-rem(22);
+      @include lbh-rem(border-radius, 22, 0, 0, 22);
     }
 
     .js-enabled & {
@@ -67,17 +67,17 @@
 
     &:focus {
       box-sizing: border-box;
-      height: govuk-px-to-rem(43);
-      padding: govuk-px-to-rem(5) govuk-px-to-rem(22) govuk-px-to-rem(5) govuk-px-to-rem(5);
+      @include lbh-rem(height, 43);
+      @include lbh-rem(padding, 5, 22, 5, 5);
       border: 2px solid lbh-colour("lbh-primary-focus");
       outline: none;
     }
 
     &__icon {
       display: inline-block;
-      width: govuk-px-to-rem(29);
-      height: govuk-px-to-rem(29);
-      margin-right: govuk-px-to-rem(8);
+      @include lbh-rem(width, 29);
+      @include lbh-rem(height, 29);
+      @include lbh-rem(margin-right, 8);
       vertical-align: middle;
     }
 
@@ -95,15 +95,15 @@
       margin-top: 0;
       @include lbh-font;
       color: $lbh-link-colour;
-      font-size: govuk-px-to-rem(16);
+      @include lbh-rem(font-size, 16);
       font-weight: $lbh-font-weight-regular;
-      line-height: govuk-px-to-rem(19);
+      @include lbh-rem(line-height, 19);
       text-decoration: underline;
       vertical-align: middle;
 
       @include govuk-media-query($from: tablet) {
-        font-size: govuk-px-to-rem(14);
-        line-height: govuk-px-to-rem(18);
+        @include lbh-rem(font-size, 14);
+        @include lbh-rem(line-height, 18);
       }
     }
   }
