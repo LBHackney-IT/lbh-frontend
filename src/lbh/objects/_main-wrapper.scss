@@ -17,15 +17,15 @@
   // so it uses CSS initial value, which is inline.
   display: block;
   margin-top: 0;
-  padding-top: govuk-px-to-rem(36);
-  padding-bottom: govuk-px-to-rem(24);
+  @include lbh-rem(padding-top, 36);
+  @include lbh-rem(padding-bottom, 24);
 
   @include govuk-media-query($from: tablet) {
     // This spacing is manually adjusted to replicate the margin of
     // govuk-heading-xl (50px) minus the spacing of back link and
     // breadcrumbs (10px)
-    padding-top: govuk-px-to-rem(60);
-    padding-bottom: govuk-px-to-rem(60);
+    @include lbh-rem(padding-top, 60);
+    @include lbh-rem(padding-bottom, 60);
   }
 }
 

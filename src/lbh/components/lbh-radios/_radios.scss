@@ -14,7 +14,7 @@
     .govuk-label {
       @include lbh-body-m;
       margin-top: 0;
-      margin-bottom: govuk-px-to-rem(6);
+      @include lbh-rem(margin-bottom, 6);
     }
 
     .govuk-radios__item,

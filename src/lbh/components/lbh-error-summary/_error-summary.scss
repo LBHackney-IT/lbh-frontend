@@ -7,7 +7,7 @@
 @include lbh-exports("lbh/component/error-summary") {
   .lbh-error-summary {
     margin-bottom: 0;
-    padding: govuk-px-to-rem(18) govuk-px-to-rem(24) govuk-px-to-rem(24);
+    @include lbh-rem(padding, 18, 24, 24);
     border-color: lbh-colour("lbh-error");
 
     .govuk-error-summary__title {

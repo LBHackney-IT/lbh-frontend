@@ -25,12 +25,12 @@
 
   .lbh-form-group .govuk-fieldset__legend + .lbh-error-message,
   .lbh-form-group .govuk-fieldset__legend + .govuk-error-message {
-    margin-top: govuk-px-to-rem(6);
+    @include lbh-rem(margin-top, 6);
   }
 
   .lbh-form-group .govuk-fieldset__legend + .govuk-hint + .lbh-error-message,
   .lbh-form-group .govuk-fieldset__legend + .govuk-hint + .govuk-error-message {
-    margin-top: govuk-px-to-rem(12);
+    @include lbh-rem(margin-top, 12);
   }
 
   // Needed so that it is hidden when this component is imported individually

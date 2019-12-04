@@ -20,7 +20,7 @@
     }
 
     & + .govuk-hint {
-      margin-top: govuk-px-to-rem(12);
+      @include lbh-rem(margin-top, 12);
     }
   }
 }
