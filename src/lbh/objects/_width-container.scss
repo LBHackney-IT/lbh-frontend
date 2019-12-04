@@ -1,6 +1,7 @@
 @import "../settings/all";
 @import "../tools/all";
 @import "../helpers/all";
+@import "node_modules/govuk-frontend/govuk/objects/width-container";
 
 @include lbh-exports("lbh/objects/width-container") {
   .lbh-container {
