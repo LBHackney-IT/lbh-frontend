@@ -2,11 +2,17 @@
 
 ## Unreleased
 
+### Bugfixes:
+
+- Import file for govuk-width-container in lbh-container
+
+  ([PR #57](https://github.com/LBHackney-IT/LBH-frontend/pull/57))
+
 ## 1.5.0
 
 ### New features:
 
-- Add form group as component
+- Fix form group import
 
   ([PR #54](https://github.com/LBHackney-IT/LBH-frontend/pull/54))
 
