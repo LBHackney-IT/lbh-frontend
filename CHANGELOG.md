@@ -10,6 +10,10 @@
 
 ### Bugfixes:
 
+- Add margin top to buttons and fieldsets where margin-top: 0 is set in govuk 
+
+  ([PR #61](https://github.com/LBHackney-IT/LBH-frontend/pull/61))
+
 - Duplicate govuk fieldset template in lbh fieldset component template in order 
   to maintain caller() functionality (this didn't work when simply calling the 
   govuk-fieldset macro from the lbh-fieldset template)
