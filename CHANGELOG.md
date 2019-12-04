@@ -6,9 +6,15 @@
 
 - Introduce lbh-rem function to provide rem values with pixel fallbacks
 
-  ([PR #59](https://github.com/LBHackney-IT/LBH-frontend/pull/58))
+  ([PR #59](https://github.com/LBHackney-IT/LBH-frontend/pull/59))
 
 ### Bugfixes:
+
+- Duplicate govuk fieldset template in lbh fieldset component template in order 
+  to maintain caller() functionality (this didn't work when simply calling the 
+  govuk-fieldset macro from the lbh-fieldset template)
+
+  ([PR #60](https://github.com/LBHackney-IT/LBH-frontend/pull/60))
 
 - Replace SVG for lbh-logo with correct svg
 
