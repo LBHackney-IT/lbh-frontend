@@ -7,6 +7,7 @@
 @include lbh-exports("lbh/component/button") {
   .lbh-button {
     @include lbh-font;
+    margin-top: 1.5em;
     margin-bottom: 0;
     @include lbh-rem(padding, 12, 22, 10);
     border-radius: 4px;
@@ -14,10 +15,6 @@
     @include lbh-rem(font-size, 19);
     font-weight: $lbh-font-weight-regular;
     @include lbh-rem(line-height, 23);
-
-    * + & {
-      margin-top: 1.5em;
-    }
 
     &:not(&--warning):not(&--disabled):not([disabled]):hover {
       background: lbh-colour("lbh-primary-hover");
