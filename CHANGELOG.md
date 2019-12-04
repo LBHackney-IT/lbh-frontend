@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Features
+
+- Introduce lbh-rem function to provide rem values with pixel fallbacks
+
+  ([PR #59](https://github.com/LBHackney-IT/LBH-frontend/pull/58))
+
 ### Bugfixes:
 
 - Replace SVG for lbh-logo with correct svg

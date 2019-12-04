@@ -15,7 +15,7 @@
 
     &__caption {
       display: table-caption;
-      margin-bottom: govuk-px-to-rem(24);
+      @include lbh-rem(margin-bottom, 24);
     }
   }
 }

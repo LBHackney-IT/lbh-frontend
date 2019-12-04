@@ -36,126 +36,126 @@
 
 @mixin lbh-heading-h1 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(32);
-  line-height: govuk-px-to-rem(38);
+  @include lbh-rem(font-size, 32);
+  @include lbh-rem(line-height, 38);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(48);
-    line-height: govuk-px-to-rem(58);
+    @include lbh-rem(font-size, 48);
+    @include lbh-rem(line-height, 58);
   }
 }
 
 @mixin lbh-heading-h2 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(24);
-  line-height: govuk-px-to-rem(29);
+  @include lbh-rem(font-size, 24);
+  @include lbh-rem(line-height, 29);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(30);
-    line-height: govuk-px-to-rem(36);
+    @include lbh-rem(font-size, 30);
+    @include lbh-rem(line-height, 36);
   }
 }
 
 @mixin lbh-heading-h3 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(20);
-  line-height: govuk-px-to-rem(24);
+  @include lbh-rem(font-size, 20);
+  @include lbh-rem(line-height, 24);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(24);
-    line-height: govuk-px-to-rem(29);
+    @include lbh-rem(font-size, 24);
+    @include lbh-rem(line-height, 29);
   }
 }
 
 @mixin lbh-heading-h4 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(18);
-  line-height: govuk-px-to-rem(22);
+  @include lbh-rem(font-size, 18);
+  @include lbh-rem(line-height, 22);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(20);
-    line-height: govuk-px-to-rem(24);
+    @include lbh-rem(font-size, 20);
+    @include lbh-rem(line-height, 24);
   }
 }
 
 @mixin lbh-heading-h5 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(16);
-  line-height: govuk-px-to-rem(19);
+  @include lbh-rem(font-size, 16);
+  @include lbh-rem(line-height, 19);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(18);
-    line-height: govuk-px-to-rem(22);
+    @include lbh-rem(font-size, 18);
+    @include lbh-rem(line-height, 22);
   }
 }
 
 @mixin lbh-heading-h6 {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(14);
-  line-height: govuk-px-to-rem(17);
+  @include lbh-rem(font-size, 14);
+  @include lbh-rem(line-height, 17);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(16);
-    line-height: govuk-px-to-rem(19);
+    @include lbh-rem(font-size, 16);
+    @include lbh-rem(line-height, 19);
   }
 }
 
 @mixin lbh-heading-large-light {
   @include lbh-heading;
-  font-size: govuk-px-to-rem(24);
+  @include lbh-rem(font-size, 24);
   font-weight: $lbh-font-weight-extra-light;
-  line-height: govuk-px-to-rem(29);
+  @include lbh-rem(line-height, 29);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(36);
-    line-height: govuk-px-to-rem(43);
+    @include lbh-rem(font-size, 36);
+    @include lbh-rem(line-height, 43);
   }
 }
 
 @mixin lbh-body-l {
   @include lbh-font;
   color: $lbh-text-colour;
-  font-size: govuk-px-to-rem(19);
+  @include lbh-rem(font-size, 19);
   font-weight: $lbh-font-weight-light;
-  line-height: govuk-px-to-rem(28);
+  @include lbh-rem(line-height, 28);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(24);
+    @include lbh-rem(font-size, 24);
     font-weight: $lbh-font-weight-light;
-    line-height: govuk-px-to-rem(33);
+    @include lbh-rem(line-height, 33);
   }
 }
 
 @mixin lbh-body-m {
   @include lbh-font;
   color: $lbh-text-colour;
-  font-size: govuk-px-to-rem(16);
+  @include lbh-rem(font-size, 16);
   font-weight: $lbh-font-weight-light;
-  line-height: govuk-px-to-rem(26);
+  @include lbh-rem(line-height, 26);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(19);
-    line-height: govuk-px-to-rem(30);
+    @include lbh-rem(font-size, 19);
+    @include lbh-rem(line-height, 30);
   }
 }
 
 @mixin lbh-body-s {
   @include lbh-font;
   color: $lbh-text-colour;
-  font-size: govuk-px-to-rem(13);
+  @include lbh-rem(font-size, 13);
   font-weight: $lbh-font-weight-regular;
-  line-height: govuk-px-to-rem(19);
+  @include lbh-rem(line-height, 19);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(16);
-    line-height: govuk-px-to-rem(24);
+    @include lbh-rem(font-size, 16);
+    @include lbh-rem(line-height, 24);
   }
 }
 
 @mixin lbh-body-xs {
   @include lbh-font;
   color: $lbh-text-colour;
-  font-size: govuk-px-to-rem(14);
+  @include lbh-rem(font-size, 14);
   font-weight: $lbh-font-weight-regular;
-  line-height: govuk-px-to-rem(24);
+  @include lbh-rem(line-height, 24);
 }
