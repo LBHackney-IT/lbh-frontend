@@ -4,6 +4,10 @@
 
 ### Bugfixes:
 
+- Replace SVG for lbh-logo with correct svg
+
+  ([PR #58](https://github.com/LBHackney-IT/LBH-frontend/pull/58))
+
 - Import file for govuk-width-container in lbh-container
 
   ([PR #57](https://github.com/LBHackney-IT/LBH-frontend/pull/57))
