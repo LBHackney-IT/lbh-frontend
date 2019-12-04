@@ -16,13 +16,13 @@
   .lbh-form-group .govuk-label.govuk-date-input__label {
     @include lbh-label;
     @include lbh-heading-h4;
-    margin-top: govuk-px-to-rem(12);
+    @include lbh-rem(margin-top, 12);
   }
 
 
   .lbh-form-group--date-input .govuk-hint,
   .lbh-form-group--date-input .govuk-fieldset__legend:not(.govuk-fieldset__legend--m):not(.govuk-fieldset__legend--l):not(.govuk-fieldset__legend--xl) + .govuk-hint {
-    margin-top: govuk-px-to-rem(6);
+    @include lbh-rem(margin-top, 6);
     margin-bottom: 0;
   }
 }

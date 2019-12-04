@@ -6,7 +6,7 @@
 
 @mixin lbh-label {
   @include lbh-body-m;
-  margin-bottom: govuk-px-to-rem(6);
+  @include lbh-rem(margin-bottom, 6);
 }
 
 @include lbh-exports("lbh/component/label") {

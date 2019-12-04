@@ -3,27 +3,27 @@
   padding-left: 0;
   list-style-type: none;
   color: $lbh-text-colour;
-  font-size: govuk-px-to-rem(16);
+  @include lbh-rem(font-size, 16);
   font-weight: $lbh-font-weight-light;
-  line-height: govuk-px-to-rem(19);
+  @include lbh-rem(line-height, 19);
 
   @include govuk-media-query($from: tablet) {
-    font-size: govuk-px-to-rem(19);
-    line-height: govuk-px-to-rem(23);
+    @include lbh-rem(font-size, 19);
+    @include lbh-rem(line-height, 23);
   }
 
   .lbh-list,
   .govuk-list {
-    margin-top: govuk-px-to-rem(12);
+    @include lbh-rem(margin-top, 12);
   }
 
   & > li + li {
-    margin-top: govuk-px-to-rem(12);
+    @include lbh-rem(margin-top, 12);
   }
 }
 
 @mixin lbh-list--bullet {
-  padding-left: govuk-px-to-rem(18);
+  @include lbh-rem(padding-left, 18);
   list-style-type: disc;
 
   & > li {
@@ -36,7 +36,7 @@
 }
 
 @mixin lbh-list--number {
-  padding-left: govuk-px-to-rem(18);
+  @include lbh-rem(padding-left, 18);
   list-style-type: decimal;
 
   & > li {
