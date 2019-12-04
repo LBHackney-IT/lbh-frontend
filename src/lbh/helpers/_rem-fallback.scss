@@ -18,7 +18,7 @@
 
   @for $i from 1 through $max {
     $value: lbh-strip-unit(nth($values, $i));
-    $rem-values: #{$rem-values + $value/$govuk-root-font-size}rem;
+    $rem-values: #{$rem-values + $value/lbh-strip-unit($govuk-root-font-size)}rem;
 
     @if $i < $max {
       $rem-values: #{$rem-values + " "};

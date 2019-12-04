@@ -1,0 +1,33 @@
+{% from "file-upload/macro.njk" import govukFileUpload %}
+
+{% set classes = (params.classes if params.classes else '') + ' lbh-file-upload' %}
+{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{% set hint = {
+    text: params.hint.text,
+    html: params.hint.html,
+    id: params.hint.id,
+    classes: (params.hint.classes if params.hint.classes else '') + ' lbh-hint',
+    attributes: params.hint.attributes
+} if params.hint else null %}
+
+{% set label = {
+    text: params.label.text,
+    html: params.label.html,
+    id: params.label.id,
+    classes: (params.label.classes if params.label.classes else '') + ' lbh-label',
+    attributes: params.label.attributes
+ } if params.label else null %}
+
+{{ govukFileUpload({
+  name: params.name,
+  id: params.id,
+  value: params.value,
+  describedBy: params.describedBy,
+  label: label,
+  hint: hint,
+  errorMessage: params.errorMessage,
+  formGroup: formGroup,
+  classes: classes,
+  attributes: params.attributes
+}) }}

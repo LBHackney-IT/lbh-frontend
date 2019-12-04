@@ -4,6 +4,10 @@
 
 ### Features
 
+- Add file upload component
+
+  ([PR #62](https://github.com/LBHackney-IT/LBH-frontend/pull/62))
+
 - Introduce lbh-rem function to provide rem values with pixel fallbacks
 
   ([PR #59](https://github.com/LBHackney-IT/LBH-frontend/pull/59))
