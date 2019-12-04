@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,14 +130,14 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {(function(undefined) {\n\n  
 
 /***/ }),
 
-/***/ 20:
+/***/ 21:
 /*!*********************************************************************!*\
   !*** multi ./src/lbh/vendor/polyfills/Element/prototype/closest.js ***!
   \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/vendor/polyfills/Element/prototype/closest.js */\"./src/lbh/vendor/polyfills/Element/prototype/closest.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/vendor/polyfills/Element/prototype/closest.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/vendor/polyfills/Element/prototype/closest.js */\"./src/lbh/vendor/polyfills/Element/prototype/closest.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/vendor/polyfills/Element/prototype/closest.js?");
 
 /***/ })
 

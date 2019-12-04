@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var leaf
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/components/lbh-contact-block/contact-block.js */\"./src/lbh/components/lbh-contact-block/contact-block.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-contact-block/contact-block.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/components/lbh-contact-block/contact-block.js */\"./src/lbh/components/lbh-contact-block/contact-block.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-contact-block/contact-block.js?");
 
 /***/ })
 

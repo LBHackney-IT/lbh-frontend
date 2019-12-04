@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -164,14 +164,14 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {(function(undefined) {\n\n//
 
 /***/ }),
 
-/***/ 19:
+/***/ 20:
 /*!***********************************************************************!*\
   !*** multi ./src/lbh/vendor/polyfills/Element/prototype/classList.js ***!
   \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/vendor/polyfills/Element/prototype/classList.js */\"./src/lbh/vendor/polyfills/Element/prototype/classList.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/vendor/polyfills/Element/prototype/classList.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/vendor/polyfills/Element/prototype/classList.js */\"./src/lbh/vendor/polyfills/Element/prototype/classList.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/vendor/polyfills/Element/prototype/classList.js?");
 
 /***/ })
 

@@ -206,7 +206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar COOKIE_NAME = 'seen_cooki
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/all.js */\"./src/lbh/all.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/all.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/all.js */\"./src/lbh/all.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/all.js?");
 
 /***/ })
 

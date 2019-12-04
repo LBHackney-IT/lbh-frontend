@@ -115,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/common.js */\"./src/lbh/common.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/common.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/common.js */\"./src/lbh/common.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/common.js?");
 
 /***/ })
 

@@ -137,7 +137,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govu
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/components/lbh-details/details.js */\"./src/lbh/components/lbh-details/details.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-details/details.js?");
+eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/components/lbh-details/details.js */\"./src/lbh/components/lbh-details/details.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-details/details.js?");
 
 /***/ })
 

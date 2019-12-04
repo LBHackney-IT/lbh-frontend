@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 1.5.0
+
+### New features:
+
+- Add form group as component
+
+  ([PR #54](https://github.com/LBHackney-IT/LBH-frontend/pull/54))
+
 ## 1.4.0
 
 ### New features:
