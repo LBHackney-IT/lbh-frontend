@@ -5,6 +5,10 @@
 @import "node_modules/govuk-frontend/govuk/components/fieldset/fieldset";
 
 @include lbh-exports("lbh/component/fieldset") {
+  .lbh-fieldset {
+    margin-top: 1.5em;
+  }
+
   .lbh-form-group .govuk-fieldset__legend,
   .lbh-fieldset .govuk-fieldset__legend {
     @include lbh-heading-h3;

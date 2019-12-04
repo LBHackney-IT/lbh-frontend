@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Accordion_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Accordion_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Accordion_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Accordion_0_document_0_phone.png",
         "label": "Accordion",
@@ -26,7 +26,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Accordion_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Accordion_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Accordion_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Accordion_0_document_1_tablet.png",
         "label": "Accordion",
@@ -41,7 +41,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.04",
-          "analysisTime": 309
+          "analysisTime": 324
         }
       },
       "status": "pass"
@@ -49,7 +49,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Accordion_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Accordion_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Accordion_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Accordion_0_document_2_desktop.png",
         "label": "Accordion",
@@ -64,7 +64,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.03",
-          "analysisTime": 365
+          "analysisTime": 322
         }
       },
       "status": "pass"
@@ -72,7 +72,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Announcement_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Announcement_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Announcement_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Announcement_0_document_0_phone.png",
         "label": "Announcement",
@@ -94,7 +94,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Announcement_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Announcement_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Announcement_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Announcement_0_document_1_tablet.png",
         "label": "Announcement",
@@ -116,7 +116,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Announcement_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Announcement_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Announcement_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Announcement_0_document_2_desktop.png",
         "label": "Announcement",
@@ -131,7 +131,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.09",
-          "analysisTime": 127
+          "analysisTime": 403
         }
       },
       "status": "pass"
@@ -139,7 +139,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_link_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_link_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_link_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_link_0_document_0_phone.png",
         "label": "Back link",
@@ -161,7 +161,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_link_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_link_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_link_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_link_0_document_1_tablet.png",
         "label": "Back link",
@@ -176,7 +176,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 280
+          "analysisTime": 315
         }
       },
       "status": "pass"
@@ -184,7 +184,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_link_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_link_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_link_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_link_0_document_2_desktop.png",
         "label": "Back link",
@@ -199,7 +199,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 237
+          "analysisTime": 192
         }
       },
       "status": "pass"
@@ -207,7 +207,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_to_top_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_to_top_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_to_top_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_to_top_0_document_0_phone.png",
         "label": "Back to top",
@@ -229,7 +229,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_to_top_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_to_top_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_to_top_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_to_top_0_document_1_tablet.png",
         "label": "Back to top",
@@ -244,7 +244,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 158
+          "analysisTime": 219
         }
       },
       "status": "pass"
@@ -252,7 +252,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Back_to_top_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Back_to_top_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Back_to_top_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Back_to_top_0_document_2_desktop.png",
         "label": "Back to top",
@@ -267,7 +267,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 398
+          "analysisTime": 526
         }
       },
       "status": "pass"
@@ -275,7 +275,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Breadcrumbs_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Breadcrumbs_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Breadcrumbs_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Breadcrumbs_0_document_0_phone.png",
         "label": "Breadcrumbs",
@@ -290,7 +290,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 135
+          "analysisTime": 111
         }
       },
       "status": "pass"
@@ -298,7 +298,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Breadcrumbs_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Breadcrumbs_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Breadcrumbs_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Breadcrumbs_0_document_1_tablet.png",
         "label": "Breadcrumbs",
@@ -313,7 +313,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 172
+          "analysisTime": 271
         }
       },
       "status": "pass"
@@ -321,7 +321,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Breadcrumbs_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Breadcrumbs_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Breadcrumbs_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Breadcrumbs_0_document_2_desktop.png",
         "label": "Breadcrumbs",
@@ -336,7 +336,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 244
+          "analysisTime": 184
         }
       },
       "status": "pass"
@@ -344,7 +344,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Button_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Button_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Button_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Button_0_document_0_phone.png",
         "label": "Button",
@@ -353,21 +353,22 @@ report({
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -505
           },
-          "misMatchPercentage": "0.05",
-          "analysisTime": 120
-        }
+          "misMatchPercentage": "34.21",
+          "analysisTime": 439
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Button_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Button_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Button_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Button_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Button_0_document_1_tablet.png",
         "label": "Button",
@@ -376,21 +377,22 @@ report({
         "expect": 0,
         "viewportLabel": "tablet",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -505
           },
-          "misMatchPercentage": "0.04",
-          "analysisTime": 309
-        }
+          "misMatchPercentage": "12.58",
+          "analysisTime": 372
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Button_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Button_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Button_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Button_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Button_0_document_2_desktop.png",
         "label": "Button",
@@ -399,21 +401,22 @@ report({
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -505
           },
-          "misMatchPercentage": "0.03",
-          "analysisTime": 274
-        }
+          "misMatchPercentage": "9.20",
+          "analysisTime": 306
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Button_0_document_2_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Character_count_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Character_count_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Character_count_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Character_count_0_document_0_phone.png",
         "label": "Character count",
@@ -428,7 +431,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 122
+          "analysisTime": 363
         }
       },
       "status": "pass"
@@ -436,7 +439,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Character_count_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Character_count_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Character_count_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Character_count_0_document_1_tablet.png",
         "label": "Character count",
@@ -451,7 +454,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.03",
-          "analysisTime": 364
+          "analysisTime": 325
         }
       },
       "status": "pass"
@@ -459,7 +462,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Character_count_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Character_count_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Character_count_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Character_count_0_document_2_desktop.png",
         "label": "Character count",
@@ -474,7 +477,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.02",
-          "analysisTime": 325
+          "analysisTime": 345
         }
       },
       "status": "pass"
@@ -482,7 +485,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Checkboxes_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Checkboxes_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Checkboxes_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Checkboxes_0_document_0_phone.png",
         "label": "Checkboxes",
@@ -497,7 +500,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.03",
-          "analysisTime": 299
+          "analysisTime": 287
         }
       },
       "status": "pass"
@@ -505,7 +508,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Checkboxes_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Checkboxes_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Checkboxes_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Checkboxes_0_document_1_tablet.png",
         "label": "Checkboxes",
@@ -520,7 +523,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.03",
-          "analysisTime": 316
+          "analysisTime": 437
         }
       },
       "status": "pass"
@@ -528,7 +531,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Checkboxes_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Checkboxes_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Checkboxes_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Checkboxes_0_document_2_desktop.png",
         "label": "Checkboxes",
@@ -543,7 +546,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.02",
-          "analysisTime": 411
+          "analysisTime": 434
         }
       },
       "status": "pass"
@@ -551,7 +554,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Contact_block_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Contact_block_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Contact_block_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Contact_block_0_document_0_phone.png",
         "label": "Contact block",
@@ -573,7 +576,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Contact_block_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Contact_block_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Contact_block_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Contact_block_0_document_1_tablet.png",
         "label": "Contact block",
@@ -588,7 +591,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 298
+          "analysisTime": 432
         }
       },
       "status": "pass"
@@ -596,7 +599,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Contact_block_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Contact_block_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Contact_block_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Contact_block_0_document_2_desktop.png",
         "label": "Contact block",
@@ -611,7 +614,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 322
+          "analysisTime": 312
         }
       },
       "status": "pass"
@@ -619,7 +622,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Cookie_banner_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Cookie_banner_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Cookie_banner_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Cookie_banner_0_document_0_phone.png",
         "label": "Cookie banner",
@@ -641,7 +644,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Cookie_banner_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Cookie_banner_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Cookie_banner_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Cookie_banner_0_document_1_tablet.png",
         "label": "Cookie banner",
@@ -656,7 +659,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 215
+          "analysisTime": 59
         }
       },
       "status": "pass"
@@ -664,7 +667,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Cookie_banner_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Cookie_banner_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Cookie_banner_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Cookie_banner_0_document_2_desktop.png",
         "label": "Cookie banner",
@@ -679,7 +682,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 434
+          "analysisTime": 331
         }
       },
       "status": "pass"
@@ -687,7 +690,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Date_input_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Date_input_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Date_input_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Date_input_0_document_0_phone.png",
         "label": "Date input",
@@ -709,7 +712,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Date_input_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Date_input_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Date_input_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Date_input_0_document_1_tablet.png",
         "label": "Date input",
@@ -732,7 +735,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Date_input_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Date_input_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Date_input_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Date_input_0_document_2_desktop.png",
         "label": "Date input",
@@ -747,7 +750,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.04",
-          "analysisTime": 305
+          "analysisTime": 321
         }
       },
       "status": "pass"
@@ -755,7 +758,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Details_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Details_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Details_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Details_0_document_0_phone.png",
         "label": "Details",
@@ -777,7 +780,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Details_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Details_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Details_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Details_0_document_1_tablet.png",
         "label": "Details",
@@ -792,7 +795,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 72
+          "analysisTime": 404
         }
       },
       "status": "pass"
@@ -800,7 +803,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Details_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Details_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Details_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Details_0_document_2_desktop.png",
         "label": "Details",
@@ -815,7 +818,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 378
+          "analysisTime": 144
         }
       },
       "status": "pass"
@@ -823,7 +826,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_Message_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_Message_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_Message_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_Message_0_document_0_phone.png",
         "label": "Error Message",
@@ -845,7 +848,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_Message_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_Message_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_Message_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_Message_0_document_1_tablet.png",
         "label": "Error Message",
@@ -860,7 +863,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.09",
-          "analysisTime": 105
+          "analysisTime": 199
         }
       },
       "status": "pass"
@@ -868,7 +871,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_Message_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_Message_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_Message_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_Message_0_document_2_desktop.png",
         "label": "Error Message",
@@ -883,7 +886,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 245
+          "analysisTime": 213
         }
       },
       "status": "pass"
@@ -891,7 +894,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_summary_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_summary_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_summary_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_summary_0_document_0_phone.png",
         "label": "Error summary",
@@ -913,7 +916,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_summary_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_summary_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_summary_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_summary_0_document_1_tablet.png",
         "label": "Error summary",
@@ -935,7 +938,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Error_summary_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Error_summary_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Error_summary_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Error_summary_0_document_2_desktop.png",
         "label": "Error summary",
@@ -957,7 +960,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Fieldset_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Fieldset_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Fieldset_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Fieldset_0_document_0_phone.png",
         "label": "Fieldset",
@@ -966,20 +969,22 @@ report({
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -48
           },
-          "misMatchPercentage": "0.00"
-        }
+          "misMatchPercentage": "10.43",
+          "analysisTime": 172
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Fieldset_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Fieldset_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Fieldset_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Fieldset_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Fieldset_0_document_1_tablet.png",
         "label": "Fieldset",
@@ -988,20 +993,22 @@ report({
         "expect": 0,
         "viewportLabel": "tablet",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -39
           },
-          "misMatchPercentage": "0.00"
-        }
+          "misMatchPercentage": "6.43",
+          "analysisTime": 257
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Fieldset_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Fieldset_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Fieldset_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Fieldset_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Fieldset_0_document_2_desktop.png",
         "label": "Fieldset",
@@ -1015,16 +1022,17 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.06",
-          "analysisTime": 343
-        }
+          "misMatchPercentage": "3.80",
+          "analysisTime": 216
+        },
+        "diffImage": "../bitmaps_test/20191204-171716/failed_diff_lbh-frontend_Fieldset_0_document_2_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Header_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Header_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Header_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Header_0_document_0_phone.png",
         "label": "Header",
@@ -1046,7 +1054,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Header_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Header_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Header_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Header_0_document_1_tablet.png",
         "label": "Header",
@@ -1068,7 +1076,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Header_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Header_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Header_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Header_0_document_2_desktop.png",
         "label": "Header",
@@ -1083,7 +1091,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 340
+          "analysisTime": 306
         }
       },
       "status": "pass"
@@ -1091,7 +1099,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Hint_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Hint_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Hint_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Hint_0_document_0_phone.png",
         "label": "Hint",
@@ -1113,7 +1121,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Hint_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Hint_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Hint_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Hint_0_document_1_tablet.png",
         "label": "Hint",
@@ -1135,7 +1143,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Hint_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Hint_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Hint_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Hint_0_document_2_desktop.png",
         "label": "Hint",
@@ -1150,7 +1158,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 217
+          "analysisTime": 141
         }
       },
       "status": "pass"
@@ -1158,7 +1166,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Input_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Input_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Input_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Input_0_document_0_phone.png",
         "label": "Input",
@@ -1173,7 +1181,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 105
+          "analysisTime": 250
         }
       },
       "status": "pass"
@@ -1181,7 +1189,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Input_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Input_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Input_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Input_0_document_1_tablet.png",
         "label": "Input",
@@ -1203,7 +1211,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Input_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Input_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Input_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Input_0_document_2_desktop.png",
         "label": "Input",
@@ -1225,7 +1233,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Inset_text_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Inset_text_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Inset_text_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Inset_text_0_document_0_phone.png",
         "label": "Inset text",
@@ -1247,7 +1255,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Inset_text_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Inset_text_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Inset_text_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Inset_text_0_document_1_tablet.png",
         "label": "Inset text",
@@ -1262,7 +1270,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 152
+          "analysisTime": 183
         }
       },
       "status": "pass"
@@ -1270,7 +1278,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Inset_text_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Inset_text_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Inset_text_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Inset_text_0_document_2_desktop.png",
         "label": "Inset text",
@@ -1285,7 +1293,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 87
+          "analysisTime": 167
         }
       },
       "status": "pass"
@@ -1293,7 +1301,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Label_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Label_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Label_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Label_0_document_0_phone.png",
         "label": "Label",
@@ -1315,7 +1323,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Label_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Label_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Label_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Label_0_document_1_tablet.png",
         "label": "Label",
@@ -1330,7 +1338,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 221
+          "analysisTime": 204
         }
       },
       "status": "pass"
@@ -1338,7 +1346,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Label_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Label_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Label_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Label_0_document_2_desktop.png",
         "label": "Label",
@@ -1353,7 +1361,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 363
+          "analysisTime": 139
         }
       },
       "status": "pass"
@@ -1361,7 +1369,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Page_announcement_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Page_announcement_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Page_announcement_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Page_announcement_0_document_0_phone.png",
         "label": "Page announcement",
@@ -1383,7 +1391,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Page_announcement_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Page_announcement_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Page_announcement_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Page_announcement_0_document_1_tablet.png",
         "label": "Page announcement",
@@ -1398,7 +1406,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 311
+          "analysisTime": 215
         }
       },
       "status": "pass"
@@ -1406,7 +1414,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Page_announcement_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Page_announcement_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Page_announcement_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Page_announcement_0_document_2_desktop.png",
         "label": "Page announcement",
@@ -1421,7 +1429,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 310
+          "analysisTime": 409
         }
       },
       "status": "pass"
@@ -1429,7 +1437,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Phase_banner_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Phase_banner_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Phase_banner_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Phase_banner_0_document_0_phone.png",
         "label": "Phase banner",
@@ -1451,7 +1459,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Phase_banner_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Phase_banner_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Phase_banner_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Phase_banner_0_document_1_tablet.png",
         "label": "Phase banner",
@@ -1473,7 +1481,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Phase_banner_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Phase_banner_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Phase_banner_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Phase_banner_0_document_2_desktop.png",
         "label": "Phase banner",
@@ -1488,7 +1496,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 188
+          "analysisTime": 357
         }
       },
       "status": "pass"
@@ -1496,7 +1504,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Radios_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Radios_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Radios_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Radios_0_document_0_phone.png",
         "label": "Radios",
@@ -1518,7 +1526,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Radios_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Radios_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Radios_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Radios_0_document_1_tablet.png",
         "label": "Radios",
@@ -1533,7 +1541,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 305
+          "analysisTime": 403
         }
       },
       "status": "pass"
@@ -1541,7 +1549,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Radios_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Radios_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Radios_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Radios_0_document_2_desktop.png",
         "label": "Radios",
@@ -1556,7 +1564,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 391
+          "analysisTime": 431
         }
       },
       "status": "pass"
@@ -1564,7 +1572,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Select_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Select_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Select_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Select_0_document_0_phone.png",
         "label": "Select",
@@ -1586,7 +1594,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Select_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Select_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Select_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Select_0_document_1_tablet.png",
         "label": "Select",
@@ -1601,7 +1609,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.10",
-          "analysisTime": 291
+          "analysisTime": 168
         }
       },
       "status": "pass"
@@ -1609,7 +1617,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Select_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Select_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Select_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Select_0_document_2_desktop.png",
         "label": "Select",
@@ -1624,7 +1632,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 341
+          "analysisTime": 297
         }
       },
       "status": "pass"
@@ -1632,7 +1640,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Table_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Table_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Table_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Table_0_document_0_phone.png",
         "label": "Table",
@@ -1654,7 +1662,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Table_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Table_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Table_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Table_0_document_1_tablet.png",
         "label": "Table",
@@ -1669,7 +1677,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 193
+          "analysisTime": 168
         }
       },
       "status": "pass"
@@ -1677,7 +1685,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Table_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Table_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Table_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Table_0_document_2_desktop.png",
         "label": "Table",
@@ -1692,7 +1700,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 205
+          "analysisTime": 356
         }
       },
       "status": "pass"
@@ -1700,7 +1708,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tabs_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tabs_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tabs_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tabs_0_document_0_phone.png",
         "label": "Tabs",
@@ -1715,7 +1723,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 57
+          "analysisTime": 83
         }
       },
       "status": "pass"
@@ -1723,7 +1731,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tabs_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tabs_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tabs_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tabs_0_document_1_tablet.png",
         "label": "Tabs",
@@ -1745,7 +1753,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tabs_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tabs_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tabs_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tabs_0_document_2_desktop.png",
         "label": "Tabs",
@@ -1760,7 +1768,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 148
+          "analysisTime": 155
         }
       },
       "status": "pass"
@@ -1768,7 +1776,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tag_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tag_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tag_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tag_0_document_0_phone.png",
         "label": "Tag",
@@ -1790,7 +1798,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tag_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tag_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tag_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tag_0_document_1_tablet.png",
         "label": "Tag",
@@ -1812,7 +1820,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Tag_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Tag_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Tag_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Tag_0_document_2_desktop.png",
         "label": "Tag",
@@ -1827,7 +1835,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 139
+          "analysisTime": 256
         }
       },
       "status": "pass"
@@ -1835,7 +1843,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Textarea_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Textarea_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Textarea_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Textarea_0_document_0_phone.png",
         "label": "Textarea",
@@ -1850,7 +1858,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.08",
-          "analysisTime": 165
+          "analysisTime": 137
         }
       },
       "status": "pass"
@@ -1858,7 +1866,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Textarea_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Textarea_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Textarea_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Textarea_0_document_1_tablet.png",
         "label": "Textarea",
@@ -1873,7 +1881,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.06",
-          "analysisTime": 218
+          "analysisTime": 205
         }
       },
       "status": "pass"
@@ -1881,7 +1889,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Textarea_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Textarea_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Textarea_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Textarea_0_document_2_desktop.png",
         "label": "Textarea",
@@ -1896,7 +1904,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.05",
-          "analysisTime": 190
+          "analysisTime": 193
         }
       },
       "status": "pass"
@@ -1904,7 +1912,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Warning_text_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Warning_text_0_document_0_phone.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Warning_text_0_document_0_phone.png",
         "selector": "document",
         "fileName": "lbh-frontend_Warning_text_0_document_0_phone.png",
         "label": "Warning text",
@@ -1926,7 +1934,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Warning_text_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Warning_text_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Warning_text_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "lbh-frontend_Warning_text_0_document_1_tablet.png",
         "label": "Warning text",
@@ -1948,7 +1956,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/lbh-frontend_Warning_text_0_document_2_desktop.png",
-        "test": "../bitmaps_test/20191204-165938/lbh-frontend_Warning_text_0_document_2_desktop.png",
+        "test": "../bitmaps_test/20191204-171716/lbh-frontend_Warning_text_0_document_2_desktop.png",
         "selector": "document",
         "fileName": "lbh-frontend_Warning_text_0_document_2_desktop.png",
         "label": "Warning text",
@@ -1963,7 +1971,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.07",
-          "analysisTime": 194
+          "analysisTime": 161
         }
       },
       "status": "pass"
