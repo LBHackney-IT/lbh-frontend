@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 1.6.1
+
+### Bugfixes:
+
+- Update Handlebars to 4.5.3
+
+  ([PR #70](https://github.com/LBHackney-IT/LBH-frontend/pull/70))
+
+## 1.6.0
+
 ### Features
 
 - Add file upload component
