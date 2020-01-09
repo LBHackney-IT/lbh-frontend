@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&display=swap");
 // sass-lint:enable no-url-protocols no-url-domains
 $govuk-font-family: "Montserrat";
+$govuk-include-default-font-face: false;
 $lbh-font-family: "Montserrat";
 @import "settings/all";
 @import "tools/all";
