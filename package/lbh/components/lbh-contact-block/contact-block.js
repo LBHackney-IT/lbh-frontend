@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,7 +119,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var leaf
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!*********************************************************************!*\
   !*** multi ./src/lbh/components/lbh-contact-block/contact-block.js ***!
   \*********************************************************************/
