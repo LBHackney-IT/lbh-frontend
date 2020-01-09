@@ -12,7 +12,7 @@
 
 - Explicitly tell govuk-frontend not to load fonts
 
-  ([PR #71](https://github.com/LBHackney-IT/LBH-frontend/pull/71))
+  ([PR #72](https://github.com/LBHackney-IT/LBH-frontend/pull/72))
 
 ## 1.6.1
 
