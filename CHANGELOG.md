@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Bugfixes:
+
+### Features
+
+## 1.6.2
+
+### Bugfixes:
+
+- Explicitly tell govuk-frontend not to load fonts
+
+  ([PR #71](https://github.com/LBHackney-IT/LBH-frontend/pull/71))
+
 ## 1.6.1
 
 ### Bugfixes:
