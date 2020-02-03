@@ -4,6 +4,12 @@
 
 ### Bugfixes:
 
+### Features
+
+## 1.6.3
+
+### Bugfixes:
+
 - Change secondary button height to be the same as primary button height
   ([PR #75](https://github.com/LBHackney-IT/LBH-frontend/pull/75))
 
