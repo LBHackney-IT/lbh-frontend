@@ -6,6 +6,9 @@
 
 ### Features
 
+- Update to version 3.5.0 of govuk-frontend and encorporate relevant changes in our files
+  ([PR #74](https://github.com/LBHackney-IT/LBH-frontend/pull/74))
+
 ## 1.6.2
 
 ### Bugfixes:
@@ -36,12 +39,12 @@
 
 ### Bugfixes:
 
-- Add margin top to buttons and fieldsets where margin-top: 0 is set in govuk 
+- Add margin top to buttons and fieldsets where margin-top: 0 is set in govuk
 
   ([PR #61](https://github.com/LBHackney-IT/LBH-frontend/pull/61))
 
-- Duplicate govuk fieldset template in lbh fieldset component template in order 
-  to maintain caller() functionality (this didn't work when simply calling the 
+- Duplicate govuk fieldset template in lbh fieldset component template in order
+  to maintain caller() functionality (this didn't work when simply calling the
   govuk-fieldset macro from the lbh-fieldset template)
 
   ([PR #60](https://github.com/LBHackney-IT/LBH-frontend/pull/60))
@@ -68,7 +71,7 @@
 
 - Check the "engines" field of the package.json for the node version
 
-  Rather than relying on things like NVM, we can support any Node environment 
+  Rather than relying on things like NVM, we can support any Node environment
   manager by comparing to the package.json.
 
   ([PR #43](https://github.com/LBHackney-IT/LBH-frontend/pull/43))
