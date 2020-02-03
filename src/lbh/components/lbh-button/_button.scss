@@ -43,7 +43,7 @@
     &--secondary,
     &--secondary:link,
     &--secondary:visited {
-      @include lbh-rem(padding, 11, 22, 11);
+      @include lbh-rem(padding, 13, 22, 11);
       border: 1px solid lbh-colour("lbh-a01");
       color: lbh-colour("lbh-a01");
       background: lbh-colour("lbh-white");
@@ -80,6 +80,5 @@
         }
       }
     }
-
   }
 }
