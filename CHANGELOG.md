@@ -4,6 +4,9 @@
 
 ### Bugfixes:
 
+- Change secondary button height to be the same as primary button height
+  ([PR #75](https://github.com/LBHackney-IT/LBH-frontend/pull/75))
+
 ### Features
 
 - Update to version 3.5.0 of govuk-frontend and encorporate relevant changes in our files
