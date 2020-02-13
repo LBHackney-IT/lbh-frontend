@@ -4,6 +4,12 @@
 
 ### Bugfixes
 
+### Features
+
+## 1.7.0
+
+### Bugfixes
+
 - Move lobotomised owl spacing into helpers so that it gets included with individual component imports.
   ([PR #77](https://github.com/LBHackney-IT/LBH-frontend/pull/77))
 
