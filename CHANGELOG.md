@@ -2,13 +2,16 @@
 
 ## Unreleased
 
-### Bugfixes:
+### Bugfixes
+
+- Move lobotomised owl spacing into helpers so that it gets included with individual component imports.
+  ([PR #77](https://github.com/LBHackney-IT/LBH-frontend/pull/77))
 
 ### Features
 
 ## 1.6.3
 
-### Bugfixes:
+### Bugfixes
 
 - Change secondary button height to be the same as primary button height
   ([PR #75](https://github.com/LBHackney-IT/LBH-frontend/pull/75))
@@ -20,7 +23,7 @@
 
 ## 1.6.2
 
-### Bugfixes:
+### Bugfixes
 
 - Explicitly tell govuk-frontend not to load fonts
 
@@ -28,7 +31,7 @@
 
 ## 1.6.1
 
-### Bugfixes:
+### Bugfixes
 
 - Update Handlebars to 4.5.3
 
@@ -46,7 +49,7 @@
 
   ([PR #59](https://github.com/LBHackney-IT/LBH-frontend/pull/59))
 
-### Bugfixes:
+### Bugfixes
 
 - Add margin top to buttons and fieldsets where margin-top: 0 is set in govuk
 
