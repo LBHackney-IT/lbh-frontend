@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+ROOT_DIR=$(cd "$(dirname "$0")/.."; pwd -P)
+
+cd "$ROOT_DIR"
+
+CHANGED_FILES=$(git add --all --dry-run)
+
+if [[ $CHANGED_FILES ]]; then
+  echo "The following changes are waiting to be committed:"
+  echo
+  echo "$CHANGED_FILES"
+  echo
+  echo "We expected this to be a clean run."
+  echo
+
+  git --no-pager diff
+
+  exit 1
+fi

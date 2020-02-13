@@ -1,0 +1,49 @@
+#!/bin/bash
+set -e
+
+NEW_VERSION=$1
+
+if ! [[ $NEW_VERSION =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  echo "Pass a version in the format \"x.y.z\" as the first argument to this script"
+  exit 1
+fi
+
+ROOT_DIR=$(cd "$(dirname "$0")/.."; pwd -P)
+
+cd "$ROOT_DIR"
+
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+if [[ $CURRENT_BRANCH != "release/v$NEW_VERSION" ]]; then
+  echo "Expected to be on the branch: \"release/v$NEW_VERSION\""
+  exit 1
+fi
+
+read -rp "Have you updated the changelog? [yN] " CHANGELOG_UPDATED
+
+if [[ $CHANGELOG_UPDATED != "y" ]] && [[ $CHANGELOG_UPDATED != "Y" ]]; then
+  echo "Update and commit the changelog then try again"
+  exit 1
+fi
+
+cd package
+
+npm version "$NEW_VERSION"
+
+git add package.json
+
+cd ../
+
+npm run build:package
+
+npm run build:dist
+
+git add dist
+
+git add package
+
+git commit --message "v$NEW_VERSION"
+
+bin/check-git
+
+echo "Now push this branch and create a PR to get it reviewed"

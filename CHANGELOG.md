@@ -6,6 +6,9 @@
 
 ### Features
 
+- Add build scripts for releases
+  ([PR #78](https://github.com/LBHackney-IT/LBH-frontend/pull/78))
+
 ## 1.6.3
 
 ### Bugfixes:
