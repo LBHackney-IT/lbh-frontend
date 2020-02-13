@@ -64,13 +64,11 @@ aside,
 canvas,
 details,
 embed,
-
 figure,
 figcaption,
 footer,
 header,
 hgroup,
-
 menu,
 nav,
 output,
@@ -86,18 +84,4 @@ video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-}
-
-* {
-  margin: 0;
-}
-
-* + * {
-  margin-top: 1.5em;
-}
-
-@include govuk-media-query($from: tablet) {
-  * + [class|="govuk-grid-column"] {
-    margin-top: 0;
-  }
 }

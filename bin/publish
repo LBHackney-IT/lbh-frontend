@@ -37,7 +37,6 @@ git checkout "refs/tags/$TAG_NAME"
 
 cd package 
 
-npm ci
 npm publish
 
 cd ../
