@@ -173,11 +173,13 @@ To initialise the first radio component on a page, use:
 
 ```js
 var Radios = window.LBHFrontend.Radios
-var $radio = document.querySelector('[data-module="lbh-radios"]')
+var $radio = document.querySelector('[data-module="govuk-radios"]')
 if ($radio) {
   new Radios($radio).init()
 }
 ```
+
+The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value from there.
 
 ### Option 2: Import JavaScript
 
