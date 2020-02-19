@@ -1,4 +1,5 @@
 {% from "./components/lbh-skip-link/macro.njk" import lbhSkipLink -%}
+{% from "./components/lbh-header/macro.njk" import lbhHeader -%}
 {# specify absolute url for the static assets folder e.g. http://wwww.domain.com/assets #}
 {%- set assetUrl = assetUrl | default(assetPath) -%}
 <!DOCTYPE html>
@@ -37,7 +38,7 @@
     {% endblock %}
 
     {% block header %}
-      {# {{ govukHeader({}) }} #}
+      {{ lbhHeader({}) }}
     {% endblock %}
 
     {% block main %}
@@ -50,7 +51,6 @@
     {% endblock %}
 
     {% block footer %}
-      {# {{ govukFooter({}) }} #}
     {% endblock %}
 
     {% block bodyEnd %}{% endblock %}
