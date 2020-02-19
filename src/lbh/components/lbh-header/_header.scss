@@ -26,8 +26,12 @@
         }
       }
 
-      .lbh-skip-link:focus + & {
-        @include lbh-rem(top, 40);
+      .lbh-skip-link:focus ~ & {
+        @include lbh-rem(margin-top, 36);
+
+        @include govuk-media-query($from: tablet) {
+          @include lbh-rem(margin-top, 40);
+        }
       }
     }
 
