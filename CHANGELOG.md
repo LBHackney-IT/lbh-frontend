@@ -5,6 +5,8 @@
 ### Bugfixes
 
 ### Features
+- Add a basic header to our base template (which can be overwritten)
+  ([PR #81](https://github.com/LBHackney-IT/LBH-frontend/pull/81))
 
 ## 1.7.0
 
