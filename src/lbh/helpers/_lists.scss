@@ -7,6 +7,10 @@
   font-weight: $lbh-font-weight-light;
   @include lbh-rem(line-height, 19);
 
+  * + & {
+    margin-top: 1.5em;
+  }
+
   @include govuk-media-query($from: tablet) {
     @include lbh-rem(font-size, 19);
     @include lbh-rem(line-height, 23);
