@@ -4,6 +4,12 @@
 
 ### Bugfixes
 
+### Features
+
+## 1.8.0
+
+### Bugfixes
+
 - Fix header spacing for breadcrumbs and make sure lbh-header--fixed gets pushed down by skip-link focus
   ([PR #83](https://github.com/LBHackney-IT/LBH-frontend/pull/83))
 - Set explicit margin on list
