@@ -4,18 +4,20 @@
 
 ### Bugfixes
 
+### Features
+
+## 1.8.2
+
+### Bugfixes
+
 - Export govuk js components explicitly from all.js so that they can be imported in the global namespace
   ([PR #88](https://github.com/LBHackney-IT/LBH-frontend/pull/88))
-
-### Features
 
 ## 1.8.1
 
 ### Bugfixes
 - Include objects scss in each components import so that lbh-container, lbh-form-group, and lbh-main-wrapper are styled in components where they're used when those components are imported individually.
   ([PR #85](https://github.com/LBHackney-IT/LBH-frontend/pull/85))
-
-### Features
 
 ## 1.8.0
 
