@@ -3,6 +3,8 @@
 ## Unreleased
 
 ### Bugfixes
+- Fix header spacing for breadcrumbs and make sure lbh-header--fixed gets pushed down by skip-link focus
+  ([PR #83](https://github.com/LBHackney-IT/LBH-frontend/pull/83))
 
 ### Features
 - Add a basic header to our base template (which can be overwritten)
