@@ -3,6 +3,8 @@
 ## Unreleased
 
 ### Bugfixes
+- Include objects scss in each components import so that lbh-container, lbh-form-group, and lbh-main-wrapper are styled in components where they're used when those components are imported individually.
+  ([PR #85](https://github.com/LBHackney-IT/LBH-frontend/pull/85))
 
 ### Features
 
