@@ -1,7 +1,15 @@
 import GovukFrontend from 'govuk-frontend'
+import Accordion from './components/lbh-accordion/accordion'
 import BackToTop from './components/lbh-back-to-top/back-to-top'
+import Button from './components/lbh-button/button'
+import CharacterCount from './components/lbh-character-count/character-count'
+import Checkboxes from './components/lbh-checkboxes/checkboxes'
 import CookieBanner from './components/lbh-cookie-banner/cookie-banner'
+import Details from './components/lbh-details/details'
+import ErrorSummary from './components/lbh-error-summary/error-summary'
 import Map from './components/lbh-contact-block/contact-block'
+import Radios from './components/lbh-radios/radios'
+import Tabs from './components/lbh-tabs/tabs'
 
 function nodeListForEach (nodes, callback) {
   if (window.NodeList.prototype.forEach) {
@@ -40,7 +48,15 @@ function initAll (options) {
 
 export {
   initAll,
+  Accordion,
   BackToTop,
+  Button,
+  CharacterCount,
+  Checkboxes,
   CookieBanner,
-  Map
+  Details,
+  ErrorSummary,
+  Map,
+  Radios,
+  Tabs
 }

@@ -4,6 +4,9 @@
 
 ### Bugfixes
 
+- Export govuk js components explicitly from all.js so that they can be imported in the global namespace
+  ([PR #88](https://github.com/LBHackney-IT/LBH-frontend/pull/88))
+
 ### Features
 
 ## 1.8.1
