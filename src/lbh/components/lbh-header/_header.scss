@@ -2,7 +2,6 @@
 @import "../../tools/all";
 @import "../../helpers/all";
 
-
 @include lbh-exports("lbh/component/header") {
   .lbh-header {
     position: relative;
@@ -22,8 +21,12 @@
         @include lbh-rem(margin-top, 88);
 
         @include govuk-media-query($from: tablet) {
-          @include lbh-rem(margin-top, 100);
+          @include lbh-rem(margin-top, 101);
         }
+      }
+
+      .lbh-skip-link:focus + & {
+        @include lbh-rem(top, 40);
       }
     }
 
