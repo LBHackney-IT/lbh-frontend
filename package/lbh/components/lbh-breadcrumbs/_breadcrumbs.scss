@@ -13,7 +13,7 @@
     overflow: hidden;
     @include lbh-rem(font-size, 15);
 
-    .lbh-header--fixed + & {
+    .lbh-header--fixed ~ & {
       @include lbh-rem(margin-top, 106);
 
       @include govuk-media-query($from: tablet) {
