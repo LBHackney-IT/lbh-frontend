@@ -3,6 +3,8 @@
 ## Unreleased
 
 ### Bugfixes
+- Fix fixed header spacing
+  ([PR #90](https://github.com/LBHackney-IT/LBH-frontend/pull/90))
 
 ### Features
 
