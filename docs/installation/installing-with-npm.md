@@ -179,7 +179,7 @@ if ($radio) {
 }
 ```
 
-The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value from there.
+Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
 
 ### Option 2: Import JavaScript
 
@@ -223,11 +223,13 @@ You can use this attribute to initialise the component manually, this may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var $radio = document.querySelector('[data-module="lbh-radios"]')
+var $radio = document.querySelector('[data-module="govuk-radios"]')
 if ($radio) {
   new Radios($radio).init()
 }
 ```
+
+Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
 
 ### Polyfills
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
