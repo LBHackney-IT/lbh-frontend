@@ -5,6 +5,8 @@
 ### Bugfixes
 
 ### Features
+- Add colours page to the app so that people can see the colours that can be used with lbh-colours
+  ([PR #92](https://github.com/LBHackney-IT/LBH-frontend/pull/92))
 
 ## 1.8.3
 
