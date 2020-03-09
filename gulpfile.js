@@ -20,7 +20,8 @@ require('./tasks/gulp/sassdoc.js')
 // Runs js lint and compilation
 // --------------------------------------
 gulp.task('scripts', gulp.series(
-  'js:compile'
+  'js:compile',
+  'app-vendor:compile'
 ))
 
 // Umbrella styles tasks for preview ----
@@ -28,7 +29,8 @@ gulp.task('scripts', gulp.series(
 // --------------------------------------
 gulp.task('styles', gulp.series(
   'scss:lint',
-  'scss:compile'
+  'scss:compile',
+  'app-vendor:compile'
 ))
 
 // Copy assets task ----------------------

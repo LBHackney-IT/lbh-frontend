@@ -148,6 +148,15 @@ gulp.task('scss:compile', () => {
   }
 })
 
+gulp.task('app-vendor:compile', (cb) => {
+  if (taskArguments.destination === 'public') {
+    const srcFiles = configPaths.app + 'assets/app-vendor/*'
+    return gulp.src([srcFiles]).pipe(named()).pipe(eol()).pipe(gulp.dest(destinationPath))
+  } else {
+    return cb()
+  }
+})
+
 // Compile js task for preview ----------
 // --------------------------------------
 gulp.task('js:compile', () => {

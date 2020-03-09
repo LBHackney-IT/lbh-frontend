@@ -1,4 +1,9 @@
-import { map, control, tileLayer, icon, marker } from 'leaflet'
+/* global L */
+var map = L.map
+var control = L.control
+var tileLayer = L.tileLayer
+var icon = L.icon
+var marker = L.marker
 
 function Map ($module) {
   this.$module = $module
