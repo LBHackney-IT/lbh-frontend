@@ -3,7 +3,8 @@
 }
 
 /* Injected into the preview page, that is then put in an iframe */
-.app-iframe-in-component-preview {}
+.app-iframe-in-component-preview {
+}
 
 /* Removes the breakpoint sass-mq debug display */
 .app-iframe-in-component-preview:before {
@@ -69,4 +70,34 @@
   transition: none;
   opacity: 1;
   pointer-events: all;
+}
+
+.code {
+  background: lbh-colour("lbh-grey-4");
+  font-family: courier, monospace;
+}
+
+.code--block {
+  @include lbh-rem(padding, 10);
+  display: inline-block;
+}
+
+.colour-swatch {
+  display: inline-block;
+  @include lbh-rem(width, 80);
+  @include lbh-rem(height, 80);
+  @include lbh-rem(margin-right, 10);
+  vertical-align: middle;
+}
+
+.colour-text {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.colour-name,
+.colour-hex {
+  display: block;
+  margin-top: 0;
 }
