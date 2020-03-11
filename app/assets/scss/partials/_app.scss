@@ -79,7 +79,21 @@
 
 .code--block {
   @include lbh-rem(padding, 10);
-  display: inline-block;
+  display: block;
+}
+
+.create-html__form .code--block {
+  @include lbh-rem(margin-top, 5);
+}
+
+.create-html__example {
+  @include lbh-rem(margin-top, 10);
+  display: block;
+}
+
+.create-html__group,
+.create-html__array-title + .create-html__fieldset {
+  margin-left: 20px;
 }
 
 .colour-swatch {
@@ -100,4 +114,17 @@
 .colour-hex {
   display: block;
   margin-top: 0;
+}
+
+.table--child .govuk-table__row:last-child .govuk-table__cell,
+.table--child .govuk-table__row:last-child .govuk-table__header {
+  border-bottom: 0;
+}
+
+.params {
+  margin-top: 1.5em;
+}
+
+.create-html__label {
+  display: block;
 }

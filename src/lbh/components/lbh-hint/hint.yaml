@@ -1,24 +1,29 @@
 params:
-- name: text
-  type: string
-  required: true
-  description: If `html` is set, this is not required. Text to use within the hint. If `html` is provided, the `text` argument will be ignored.
-- name: html
-  type: string
-  required: true
-  description: If `text` is set, this is not required. HTML to use within the hint. If `html` is provided, the `text` argument will be ignored.
-- name: id
-  type: string
-  required: true
-  description: Optional id attribute to add to the hint span tag.
-- name: classes
-  type: string
-  required: false
-  description: Classes to add to the hint span tag.
-- name: attributes
-  type: object
-  required: false
-  description: HTML attributes (for example data attributes) to add to the hint span tag.
+  - name: text
+    type: string
+    required: false
+    description: If `html` is set, this is not required. Text to use within the hint. If `html` is provided, the `text` argument will be ignored.
+    example: It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
+  - name: html
+    type: string
+    required: false
+    description: If `text` is set, this is not required. HTML to use within the hint. If `html` is provided, the `text` argument will be ignored.
+    example: It’s on your National Insurance card, benefit letter, payslip or <a class="lbh-link" href="#">P60</a>. For example, ‘QQ 12 34 56 C’.
+  - name: id
+    type: string
+    required: true
+    description: Optional id attribute to add to the hint span tag.
+    example: hint-id
+  - name: classes
+    type: string
+    required: false
+    description: Classes to add to the hint span tag.
+    example: hint-class
+  - name: attributes
+    type: object
+    required: false
+    description: HTML attributes (for example data attributes) to add to the hint span tag.
+    example: { "data-behaviour": "hint" }
 
 accessibilityCriteria: |
   When used with a single input, the hint MUST:
@@ -35,13 +40,13 @@ accessibilityCriteria: |
   - be announced every time for each individual input
 
 examples:
-- name: default
-  data:
-    text: |
-      It’s on your National Insurance card, benefit letter, payslip or P60.
-      For example, ‘QQ 12 34 56 C’.
-- name: with html
-  data:
-    html: |
-      It’s on your National Insurance card, benefit letter, payslip or <a class="lbh-link" href="#">P60</a>.
-      For example, ‘QQ 12 34 56 C’.
+  - name: default
+    data:
+      text: |
+        It’s on your National Insurance card, benefit letter, payslip or P60.
+        For example, ‘QQ 12 34 56 C’.
+  - name: with html
+    data:
+      html: |
+        It’s on your National Insurance card, benefit letter, payslip or <a class="lbh-link" href="#">P60</a>.
+        For example, ‘QQ 12 34 56 C’.

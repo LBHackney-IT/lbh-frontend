@@ -1,10 +1,11 @@
 params:
-- name: topLink
-  type: string
-  required: true
-  description: Id (with hash symbol) of element to scroll up to
+  - name: topLink
+    type: string
+    required: true
+    description: Element id (with hash symbol) of element to scroll up to.
+    example: "#main-content"
 
 examples:
-- name: default
-  data: 
-    topLink: '#main-content'
+  - name: default
+    data:
+      topLink: "#main-content"
