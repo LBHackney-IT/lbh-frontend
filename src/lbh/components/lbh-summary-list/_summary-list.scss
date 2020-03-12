@@ -1,0 +1,20 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+@import "../../objects/all";
+
+@import "node_modules/govuk-frontend/govuk/components/summary-list/summary-list";
+
+@include lbh-exports("lbh/component/summary-list") {
+  .lbh-summary-list {
+    margin-bottom: 0;
+
+    .govuk-summary-list__key {
+      font-weight: $lbh-font-weight-medium;
+    }
+
+    .govuk-link {
+      @include lbh-link;
+    }
+  }
+}
