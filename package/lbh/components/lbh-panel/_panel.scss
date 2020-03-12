@@ -1,0 +1,17 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+@import "../../objects/all";
+
+@import "node_modules/govuk-frontend/govuk/components/panel/panel";
+
+@include lbh-exports("lbh/component/panel") {
+  .lbh-panel {
+    background: lbh-colour("lbh-a01");
+
+    .govuk-panel__title {
+      @include lbh-heading-h1;
+      color: lbh-colour("lbh-white");
+    }
+  }
+}
