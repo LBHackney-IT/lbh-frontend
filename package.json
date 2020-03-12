@@ -3,7 +3,7 @@
   "name": "lbh-frontend-repository",
   "description": "Taken from the GDS UK Frontend and used for the development of Hackney Council Frontend only, see `package/package.json` for the published `package.json`",
   "engines": {
-    "node": "10.15.1"
+    "node": "12.14.0"
   },
   "license": "MIT",
   "scripts": {
@@ -63,7 +63,7 @@
     "map-stream": "0.0.7",
     "marked": "^0.6.2",
     "merge-stream": "^2.0.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.11",
     "oldie": "^1.3.0",
     "outdent": "^0.7.0",
