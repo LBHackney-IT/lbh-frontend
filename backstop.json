@@ -126,6 +126,11 @@
       "delay": 500
     },
     {
+      "label": "Panel",
+      "url": "http://localhost:3000/components/lbh-panel",
+      "delay": 500
+    },
+    {
       "label": "Page announcement",
       "url": "http://localhost:3000/components/lbh-page-announcement",
       "delay": 500
