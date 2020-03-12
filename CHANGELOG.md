@@ -11,6 +11,8 @@
   ([PR #93](https://github.com/LBHackney-IT/LBH-frontend/pull/93))
 - Add panel component
   ([PR #94](https://github.com/LBHackney-IT/LBH-frontend/pull/94))
+- Add summary list component
+  ([PR #95](https://github.com/LBHackney-IT/LBH-frontend/pull/95))
 
 ## 1.8.3
 

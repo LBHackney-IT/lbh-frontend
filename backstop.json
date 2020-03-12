@@ -151,6 +151,11 @@
       "delay": 500
     },
     {
+      "label": "Summary list",
+      "url": "http://localhost:3000/components/lbh-summary-list",
+      "delay": 500
+    },
+    {
       "label": "Table",
       "url": "http://localhost:3000/components/lbh-table",
       "delay": 500
