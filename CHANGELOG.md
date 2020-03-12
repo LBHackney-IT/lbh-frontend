@@ -13,6 +13,8 @@
   ([PR #94](https://github.com/LBHackney-IT/LBH-frontend/pull/94))
 - Add summary list component
   ([PR #95](https://github.com/LBHackney-IT/LBH-frontend/pull/95))
+- Update node to 12.14.0
+  ([PR #96](https://github.com/LBHackney-IT/LBH-frontend/pull/96))
 
 ## 1.8.3
 
