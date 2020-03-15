@@ -23,7 +23,7 @@
     "backstop": "backstop"
   },
   "devDependencies": {
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "autoprefixer": "^9.5.1",
     "backstopjs": "^4.3.2",
     "body-parser": "^1.18.3",
