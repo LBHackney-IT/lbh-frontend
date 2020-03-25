@@ -1,4 +1,5 @@
-/* global L = L || {} */
+/* global L */
+var L = L || {};
 if (L !== {}) {
   var map = L.map;
   var control = L.control;
@@ -79,7 +80,7 @@ Map.prototype.addMarker = function() {
 
 Map.prototype.init = function() {
   // Check for module
-  if (!this.$module || L == {}) {
+  if (!this.$module || L !== {}) {
     return;
   }
 
