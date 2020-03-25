@@ -3,6 +3,7 @@
         "name": "topLink",
         "type": "string",
         "required": true,
-        "description": "Id (with hash symbol) of element to scroll up to"
+        "description": "Element id (with hash symbol) of element to scroll up to.",
+        "example": "#main-content"
     }
 ]

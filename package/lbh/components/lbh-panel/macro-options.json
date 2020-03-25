@@ -2,43 +2,52 @@
     {
         "name": "titleText",
         "type": "string",
-        "required": true,
-        "description": "If `titleHtml` is set, this is not required. Text to use within the panel. If `titleHtml` is provided, the `titleText` argument will be ignored."
+        "required": false,
+        "description": "If `titleHtml` is set, this is not required. Text to use within the panel. If `titleHtml` is provided, the `titleText` argument will be ignored.",
+        "example": "Application complete"
     },
     {
         "name": "titleHtml",
         "type": "string",
-        "required": true,
-        "description": "If `titleText` is set, this is not required. HTML to use within the panel. If `titleHtml` is provided, the `titleText` argument will be ignored."
+        "required": false,
+        "description": "If `titleText` is set, this is not required. HTML to use within the panel. If `titleHtml` is provided, the `titleText` argument will be ignored.",
+        "example": "Application complete <span class=\"lbh-!-font-weight-medium\">Next steps:</span>"
     },
     {
         "name": "headingLevel",
         "type": "integer",
         "required": false,
-        "description": "Heading level, from 1 to 6. Default is 1."
+        "description": "Heading level, from 1 to 6. Default is 1.",
+        "example": 2
     },
     {
         "name": "text",
         "type": "string",
-        "required": true,
-        "description": "If `html` is set, this is not required. Text to use within the panel content. If `html` is provided, the `text` argument will be ignored."
+        "required": false,
+        "description": "If `html` is set, this is not required. Text to use within the panel content. If `html` is provided, the `text` argument will be ignored.",
+        "example": "Your reference number: HDJ2123F\n"
     },
     {
         "name": "html",
         "type": "string",
-        "required": true,
-        "description": "If `text` is set, this is not required. HTML to use within the panel content. If `html` is provided, the `text` argument will be ignored."
+        "required": false,
+        "description": "If `text` is set, this is not required. HTML to use within the panel content. If `html` is provided, the `text` argument will be ignored.",
+        "example": "Your reference number: HDJ2123F. If you do not hear from us within 3 days email <a href=\"mailto:test@hackney.gov.uk\" class=\"lbh-link\">test@hackney.gov.uk</a>\n"
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the panel container."
+        "description": "Classes to add to the panel container.",
+        "example": "panel"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the panel container."
+        "description": "HTML attributes (for example data attributes) to add to the panel container.",
+        "example": {
+            "data-behavior": "panel"
+        }
     }
 ]

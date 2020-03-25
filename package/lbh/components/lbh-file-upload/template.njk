@@ -1,7 +1,8 @@
 {% from "file-upload/macro.njk" import govukFileUpload %}
 
 {% set classes = (params.classes if params.classes else '') + ' lbh-file-upload' %}
-{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+
+{% set formGroup = params.formGroup|setAttribute('classes', params.formGroup.classes + ' lbh-form-group') if params.formGroup else {classes: 'lbh-form-group'} %}
 
 {% set hint = {
     text: params.hint.text,

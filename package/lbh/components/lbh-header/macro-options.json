@@ -3,54 +3,63 @@
         "name": "isHome",
         "type": "boolean",
         "required": true,
-        "description": "Set to true if header is on the homepage (logo will appear in `<h1>`), else set to false (logo will appear in `<div>`)"
+        "description": "Set to true if header is on the homepage (logo will appear in at \"h1\" tag), else set to false (logo will appear in a \"div\" tag).",
+        "example": true
     },
     {
         "name": "assetsPath",
         "type": "string",
         "required": false,
-        "description": "The public path for the assets folder. If not provided it defaults to /assets/images"
+        "description": "The public path for the assets folder. If not provided it defaults to /assets/images. You need to put the .png version of the logo in this folder, along with any other images from the pattern library that you're using. You can find them here: https://github.com/LBHackney-IT/LBH-frontend/tree/master/package/lbh/assets/images. If in doubt just copy that entire folder.\n",
+        "example": "/images"
     },
     {
         "name": "homepageUrl",
         "type": "string",
         "required": false,
-        "description": "URL logo will link to (defaults to '/')"
+        "description": "URL logo will link to (defaults to '/').",
+        "example": "https://hackney.gov.uk"
     },
     {
         "name": "serviceName",
         "type": "string",
         "required": false,
-        "description": "Service name to appear after Hackney logo to describe website. Must be short."
+        "description": "Service name to appear after Hackney logo to describe website. Must be short.",
+        "example": "Intranet"
     },
     {
         "name": "isServiceNameShort",
         "type": "boolean",
         "required": false,
-        "description": "If set to true service name will be capitalised and in larger font"
+        "description": "If set to true service name will be capitalised and in larger font.",
+        "example": true
     },
     {
         "name": "links",
         "type": "html",
         "required": false,
-        "description": "HTML content for the right hand side of the header, will stack on mobile"
+        "description": "HTML content for the right hand side of the header, will stack on mobile.",
+        "example": "<p>Anne James</p>\n<a href=\"\">Sign out</a>\n"
     },
     {
         "name": "colourScheme",
         "type": "string",
         "required": false,
-        "description": "Name of colour scheme to use instead of default black background, current options are `red` or `purple`"
+        "description": "Name of colour scheme to use instead of default black background, current options are `red` or `purple`.",
+        "example": "purple"
     },
     {
         "name": "isStackedOnMobile",
         "type": "boolean",
         "required": false,
-        "description": "If set to true this will stack the right hand side html content of the links field underneath the logo rather than alongside on mobile. If this option is true then isFixed should be false (or the margin-top of `.lbh-header--fixed + *` will need updating on mobile to match the height of your header)"
+        "description": "If set to true this will stack the right hand side html content of the links field underneath the logo rather than alongside on mobile. If this option is true then isFixed should be false (or the margin-top of `.lbh-header--fixed + *` will need updating on mobile to match the height of your header).",
+        "example": true
     },
     {
         "name": "isFixed",
         "type": "boolean",
         "required": false,
-        "description": "If set to true header will be fixed to the top of the window on scroll"
+        "description": "If set to true header will be fixed to the top of the window on scroll.",
+        "example": true
     }
 ]

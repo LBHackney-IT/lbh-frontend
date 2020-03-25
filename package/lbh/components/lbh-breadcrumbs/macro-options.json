@@ -8,25 +8,31 @@
             {
                 "name": "text",
                 "type": "string",
-                "required": true,
-                "description": "If `html` is set, this is not required. Text to use within the breadcrumbs item. If `html` is provided, the `text` argument will be ignored."
+                "required": false,
+                "description": "If `html` is set, this is not required. Text to use within the breadcrumbs item. If `html` is provided, the `text` argument will be ignored.",
+                "example": "Policy"
             },
             {
                 "name": "html",
                 "type": "string",
-                "required": true,
-                "description": "If `text` is set, this is not required. HTML to use within the breadcrumbs item. If `html` is provided, the `text` argument will be ignored."
+                "required": false,
+                "description": "If `text` is set, this is not required. HTML to use within the breadcrumbs item. If `html` is provided, the `text` argument will be ignored.",
+                "example": "Policy"
             },
             {
                 "name": "href",
                 "type": "string",
                 "required": false,
-                "description": "Link for the breadcrumbs item. If not specified, breadcrumbs item is a normal list item."
+                "description": "Link for the breadcrumbs item. If not specified, breadcrumbs item is a normal list item.",
+                "example": "/policy"
             },
             {
                 "name": "attributes",
                 "type": "object",
-                "description": "HTML attributes (for example data attributes) to add to the individual crumb."
+                "description": "HTML attributes (for example data attributes) to add to the individual crumb.",
+                "example": {
+                    "data-id": "policy"
+                }
             }
         ]
     },
@@ -34,12 +40,16 @@
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the breadcrumbs container."
+        "description": "Classes to add to the breadcrumbs container.",
+        "example": "breadcrumbs"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the breadcrumbs container."
+        "description": "HTML attributes (for example data attributes) to add to the breadcrumbs container.",
+        "example": {
+            "data-behavior": "breadcrumbs"
+        }
     }
 ]

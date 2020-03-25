@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,14 +130,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govu
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*******************************************************!*\
   !*** multi ./src/lbh/components/lbh-button/button.js ***!
   \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/components/lbh-button/button.js */\"./src/lbh/components/lbh-button/button.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-button/button.js?");
+eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/components/lbh-button/button.js */\"./src/lbh/components/lbh-button/button.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-button/button.js?");
 
 /***/ })
 

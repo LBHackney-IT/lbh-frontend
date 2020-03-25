@@ -5,7 +5,7 @@
 {{ govukTabs({
   id: params.id,
   idPrefix: params.idPrefix,
-  title: params.title,
+  title: params.title if param.title else "Contents",
   items: params.items,
   classes: classes,
   attributes: params.attributes

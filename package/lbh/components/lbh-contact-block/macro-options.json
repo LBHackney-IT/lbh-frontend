@@ -3,180 +3,206 @@
         "name": "title",
         "type": "string",
         "required": false,
-        "description": "Title of the contact block section"
+        "description": "Title of the contact block section.",
+        "example": "Contact the Service Centre"
     },
     {
         "name": "showSocial",
         "type": "boolean",
         "required": true,
-        "description": "Controls whether or not to show the \"Follow us on:\" title along with social links"
+        "description": "Controls whether or not to show the \"Follow us on:\" title along with social links.",
+        "example": true
     },
     {
         "name": "twitterLink",
         "type": "string",
         "required": false,
-        "description": "href attribute for twitter link"
+        "description": "href attribute for twitter link.",
+        "example": "https://twitter.com/hackneycouncil"
     },
     {
         "name": "facebookLink",
         "type": "string",
         "required": false,
-        "description": "href attribute for facebook link"
+        "description": "href attribute for facebook link.",
+        "example": "https://en-gb.facebook.com/hackneycouncil/"
     },
     {
         "name": "youtubeLink",
         "type": "string",
         "required": false,
-        "description": "href attribute for youtube link"
+        "description": "href attribute for youtube link.",
+        "example": "https://www.youtube.com/user/hackneycouncil"
     },
     {
         "name": "instagramLink",
         "type": "string",
         "required": false,
-        "description": "href attribute for instagram link"
+        "description": "href attribute for instagram link.",
+        "example": "https://www.instagram.com/hackneycouncil/?hl=en"
     },
     {
         "name": "address",
         "type": "html",
         "required": false,
-        "description": "Contact address"
+        "description": "Contact address.",
+        "example": "<span>Service Centre</span><span>1 Hillman Street</span><span>E8 1DY</span>"
     },
     {
         "name": "telephones",
         "type": "array",
         "required": false,
-        "description": "Contact telephone numbers",
-        "params": {
-            "name": "telephone",
-            "type": "string",
-            "required": false,
-            "description": "Contact telephone number"
-        }
+        "description": "Array of contact telephone numbers.",
+        "params": [
+            {
+                "name": "telephone",
+                "type": "string",
+                "required": false,
+                "description": "Contact telephone number.",
+                "example": "020 8356 3000"
+            }
+        ]
     },
     {
         "name": "emails",
         "type": "array",
         "required": false,
-        "description": "Contact email addresses",
-        "params": {
-            "name": "email",
-            "type": "string",
-            "required": false,
-            "description": "Contact email address"
-        }
+        "description": "Array of contact email addresses.",
+        "params": [
+            {
+                "name": "email",
+                "type": "string",
+                "required": false,
+                "description": "Contact email address.",
+                "example": "iamanemail@hackney.gov.uk"
+            }
+        ]
     },
     {
         "name": "openingTimes",
         "type": "array",
         "required": false,
-        "description": "Contact opening times",
-        "params": {
-            "name": "openingTimeEntry",
-            "type": "html",
-            "required": false,
-            "description": "One line/rule around opening times"
-        }
+        "description": "Array of contact opening times.",
+        "params": [
+            {
+                "name": "openingTimeEntry",
+                "type": "html",
+                "required": false,
+                "description": "One line/rule around opening times.",
+                "example": "Tuesday: 9:30am - 5:30pm"
+            }
+        ]
     },
     {
         "name": "notes",
         "type": "array",
         "required": false,
-        "description": "Contact notes",
-        "params": {
-            "name": "note",
-            "type": "string",
-            "required": false,
-            "description": "One note"
-        }
-    },
-    {
-        "name": "showMap",
-        "type": "boolean",
-        "required": false,
-        "description": "Whether or not to show map"
+        "description": "Contact notes.",
+        "params": [
+            {
+                "name": "note",
+                "type": "string",
+                "required": false,
+                "description": "One note",
+                "example": "Visitor centre open daily 10am-3pm except public holidays."
+            }
+        ]
     },
     {
         "name": "accessToken",
         "type": "string",
         "required": false,
-        "description": "Mapbox Access Token. Must be included if showMap is set to true"
+        "description": "Mapbox Access Token. If included map will be shown."
     },
     {
         "name": "markerLat",
         "type": "number",
         "required": false,
-        "description": "Latitude of the map marker"
+        "description": "Latitude of the map marker.",
+        "example": 51.545386
     },
     {
         "name": "markerLng",
         "type": "number",
         "required": false,
-        "description": "Longitude of the map marker"
+        "description": "Longitude of the map marker.",
+        "example": -0.057069
     },
     {
         "name": "centreLat",
         "type": "number",
         "required": false,
-        "description": "Latitude of the map centre - if left empty this is set to the latitude of the map marker, if there is no map marker it is set to the centre of Hackney borough"
+        "description": "Latitude of the map centre - if left empty this is set to the latitude of the map marker, if there is no map marker it is set to the centre of Hackney borough.",
+        "example": 51.545386
     },
     {
         "name": "centreLng",
         "type": "number",
         "required": false,
-        "description": "Longitude of the map centre - if left empty this is set to the longitude of the map marker, if there is no map marker it is set to the centre of Hackney borough"
+        "description": "Longitude of the map centre - if left empty this is set to the longitude of the map marker, if there is no map marker it is set to the centre of Hackney borough.",
+        "example": -0.057069
     },
     {
         "name": "maxZoom",
         "type": "integer",
         "required": false,
-        "description": "Max zoom of the map. By default this is set to 19"
+        "description": "Max zoom of the map. By default this is set to 19.",
+        "example": 21
     },
     {
         "name": "minZoom",
         "type": "integer",
         "required": false,
-        "description": "Min zoom of the map. By default this is set to 12"
+        "description": "Min zoom of the map. By default this is set to 12.",
+        "example": 10
     },
     {
         "name": "initialZoom",
         "type": "integer",
         "required": false,
-        "description": "Initial zoom of the map. By default this is set to 15"
+        "description": "Initial zoom of the map. By default this is set to 15.",
+        "example": 12
     },
     {
         "name": "minLat",
         "type": "number",
         "required": false,
-        "description": "Use this in conjunction with minLng, maxLat and maxLng to set bounds for the map"
+        "description": "Use this in conjunction with minLng, maxLat and maxLng to set bounds for the map.",
+        "example": 51.523734
     },
     {
         "name": "minLng",
         "type": "number",
         "required": false,
-        "description": "Use this in conjunction with minLat, maxLat and maxLng to set bounds for the map"
+        "description": "Use this in conjunction with minLat, maxLat and maxLng to set bounds for the mapAccessToken.",
+        "example": -0.067127
     },
     {
         "name": "maxLat",
         "type": "number",
         "required": false,
-        "description": "Use this in conjunction with minLat, minLng and maxLng to set bounds for the map"
+        "description": "Use this in conjunction with minLat, minLng and maxLng to set bounds for the map.",
+        "example": 51.607164
     },
     {
         "name": "maxLng",
         "type": "number",
         "required": false,
-        "description": "Use this in conjunction with minLat, minLng and maxLat to set bounds for the map"
+        "description": "Use this in conjunction with minLat, minLng and maxLat to set bounds for the map.",
+        "example": -0.12324
     },
     {
         "name": "showZoomControl",
         "type": "boolean",
         "required": false,
-        "description": "Set to false if you want to hide the zoom controls from the top right hand side of the map"
+        "description": "Set to false if you want to hide the zoom controls from the top right hand side of the map.",
+        "example": "false"
     },
     {
         "name": "directionLink",
         "type": "string",
         "required": false,
-        "description": "Link to view directions on Google Maps"
+        "description": "Link to view directions on Google Maps.",
+        "example": "https://goo.gl/maps/YHtCx2nqP2o57BZi6"
     }
 ]

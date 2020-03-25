@@ -3,13 +3,15 @@
         "name": "id",
         "type": "string",
         "required": false,
-        "description": "This is used for the main component and to compose id attribute for each item."
+        "description": "This is used for the main component and to compose id attribute for each item.",
+        "example": "date"
     },
     {
         "name": "namePrefix",
         "type": "string",
         "required": false,
-        "description": "Optional prefix. This is used to prefix each `item.name` using `-`."
+        "description": "Optional prefix. This is used to prefix each `item.name` using `-`.",
+        "example": "date"
     },
     {
         "name": "items",
@@ -21,49 +23,59 @@
                 "name": "id",
                 "type": "string",
                 "required": false,
-                "description": "Item-specific id. If provided, it will be used instead of the generated id."
+                "description": "Item-specific id. If provided, it will be used instead of the generated id.",
+                "example": "day"
             },
             {
                 "name": "name",
                 "type": "string",
                 "required": true,
-                "description": "Item-specific name attribute."
+                "description": "Item-specific name attribute.",
+                "example": "day"
             },
             {
                 "name": "label",
                 "type": "string",
-                "required": true,
-                "description": "Item-specific label text. If provided, this will be used instead of `name` for item label text."
+                "required": false,
+                "description": "Item-specific label text. If provided, this will be used instead of `name` for item label text.",
+                "example": "Day"
             },
             {
                 "name": "value",
                 "type": "string",
                 "required": false,
-                "description": "If provided, it will be used as the initial value of the input."
+                "description": "If provided, it will be used as the initial value of the input.",
+                "example": 21
             },
             {
                 "name": "autocomplete",
                 "type": "string",
                 "required": false,
-                "description": "Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance \"postal-code\" or \"username\". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used."
+                "description": "Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance \"postal-code\" or \"username\". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used.",
+                "example": "bday-day"
             },
             {
                 "name": "pattern",
                 "type": "string",
                 "required": false,
-                "description": "Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value."
+                "description": "Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value.",
+                "example": "0?[1-9]|[12][0-9]|3[01]"
             },
             {
                 "name": "classes",
                 "type": "string",
                 "required": false,
-                "description": "Classes to add to date input item."
+                "description": "Classes to add to date input item.",
+                "example": "date"
             },
             {
                 "name": "attributes",
                 "type": "object",
                 "required": false,
-                "description": "HTML attributes (for example data attributes) to add to the date input tag."
+                "description": "HTML attributes (for example data attributes) to add to the date input tag.",
+                "example": {
+                    "data-behavior": "date-input"
+                }
             }
         ]
     },
@@ -82,18 +94,11 @@
         "isComponent": true
     },
     {
-        "name": "formGroup",
-        "type": "object",
+        "name": "formGroup.classes",
+        "type": "string",
         "required": false,
-        "description": "Options for the form-group wrapper",
-        "params": [
-            {
-                "name": "classes",
-                "type": "string",
-                "required": false,
-                "description": "Classes to add to the form group (e.g. to show error state for the whole group)"
-            }
-        ]
+        "description": "Classes to add to the form group (e.g. to show error state for the whole group).",
+        "example": "govuk-form-group--error"
     },
     {
         "name": "fieldset",

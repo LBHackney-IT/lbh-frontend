@@ -3,13 +3,15 @@
         "name": "id",
         "type": "string",
         "required": true,
-        "description": "Id for each select box."
+        "description": "Id for each select box.",
+        "example": "select-id"
     },
     {
         "name": "name",
         "type": "string",
         "required": true,
-        "description": "Name property for the select."
+        "description": "Name property for the select.",
+        "example": "select-name"
     },
     {
         "name": "items",
@@ -21,31 +23,38 @@
                 "name": "value",
                 "type": "string",
                 "required": false,
-                "description": "Value for the option item."
+                "description": "Value for the option item.",
+                "example": "pepperoni"
             },
             {
                 "name": "text",
                 "type": "string",
                 "required": true,
-                "description": "Text for the option item."
+                "description": "Text for the option item.",
+                "example": "Pepperoni"
             },
             {
                 "name": "selected",
                 "type": "boolean",
                 "required": false,
-                "description": "Sets the option as the selected."
+                "description": "Sets the option as the selected.",
+                "example": true
             },
             {
                 "name": "disabled",
                 "type": "boolean",
                 "required": false,
-                "description": "Sets the option item as disabled."
+                "description": "Sets the option item as disabled.",
+                "example": true
             },
             {
                 "name": "attributes",
                 "type": "object",
                 "required": false,
-                "description": "HTML attributes (for example data attributes) to add to the option."
+                "description": "HTML attributes (for example data attributes) to add to the option.",
+                "example": {
+                    "data-behavior": "select-item"
+                }
             }
         ]
     },
@@ -53,53 +62,60 @@
         "name": "describedBy",
         "type": "string",
         "required": false,
-        "description": "One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users."
+        "description": "One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users.",
+        "example": "hint-id"
     },
     {
         "name": "label",
         "type": "object",
         "required": false,
         "description": "Label text or HTML by specifying value for either text or html keys.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "What is your favourite pizza topping?"
+        }
     },
     {
         "name": "hint",
         "type": "object",
         "required": false,
         "description": "Options for the hint component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "Select a food from the list"
+        }
     },
     {
         "name": "errorMessage",
         "type": "object",
         "required": false,
         "description": "Options for the errorMessage component (e.g. text).",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "You must choose an option"
+        }
     },
     {
-        "name": "formGroup",
-        "type": "object",
+        "name": "formGroup.classes",
+        "type": "string",
         "required": false,
-        "description": "Options for the form-group wrapper",
-        "params": [
-            {
-                "name": "classes",
-                "type": "string",
-                "required": false,
-                "description": "Classes to add to the form group (e.g. to show error state for the whole group)"
-            }
-        ]
+        "description": "Classes to add to the form group (e.g. to show error state for the whole group).",
+        "example": "form-group-class"
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the select."
+        "description": "Classes to add to the select.",
+        "example": "select-class"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the select."
+        "description": "HTML attributes (for example data attributes) to add to the select.",
+        "example": {
+            "data-behavior": "select"
+        }
     }
 ]

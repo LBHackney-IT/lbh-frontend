@@ -3,89 +3,102 @@
         "name": "id",
         "type": "string",
         "required": true,
-        "description": "The id of the input."
+        "description": "The id of the input.",
+        "example": "input-id"
     },
     {
         "name": "name",
         "type": "string",
         "required": true,
-        "description": "The name of the input, which is submitted with the form data."
+        "description": "The name of the input, which is submitted with the form data.",
+        "example": "name"
     },
     {
         "name": "type",
         "type": "string",
         "required": false,
-        "description": "Type of input control to render. Defaults to \"text\"."
+        "description": "Type of input control to render. Defaults to \"text\".",
+        "example": "tel"
     },
     {
         "name": "value",
         "type": "string",
         "required": false,
-        "description": "Optional initial value of the input."
+        "description": "Optional initial value of the input.",
+        "example": "John Doe"
     },
     {
         "name": "describedBy",
         "type": "string",
         "required": false,
-        "description": "One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users."
+        "description": "One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users.",
+        "example": "hint-id"
     },
     {
         "name": "label",
         "type": "object",
         "required": true,
         "description": "Options for the label component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "What is your name?"
+        }
     },
     {
         "name": "hint",
         "type": "object",
         "required": false,
         "description": "Options for the hint component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "Please enter your full name as it appears on your passport"
+        }
     },
     {
         "name": "errorMessage",
         "type": "object",
         "required": false,
         "description": "Options for the errorMessage component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "Enter your name"
+        }
     },
     {
-        "name": "formGroup",
-        "type": "object",
+        "name": "formGroup.classes",
+        "type": "string",
         "required": false,
-        "description": "Options for the form-group wrapper",
-        "params": [
-            {
-                "name": "classes",
-                "type": "string",
-                "required": false,
-                "description": "Classes to add to the form group (e.g. to show error state for the whole group)"
-            }
-        ]
+        "description": "Classes to add to the form group (e.g. to show error state for the whole group)",
+        "example": "govuk-input--error"
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the input."
+        "description": "Classes to add to the input.",
+        "example": "input"
     },
     {
         "name": "autocomplete",
         "type": "string",
         "required": false,
-        "description": "Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance \"postal-code\" or \"username\". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used."
+        "description": "Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance \"postal-code\" or \"username\". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used.",
+        "example": "username"
     },
     {
         "name": "pattern",
         "type": "string",
         "required": false,
-        "description": "Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value."
+        "description": "Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value.",
+        "example": "[0-9][A-Z]{3}\n"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the anchor tag."
+        "description": "HTML attributes (for example data attributes) to add to the anchor tag.",
+        "example": {
+            "data-behavior": "input"
+        }
     }
 ]
