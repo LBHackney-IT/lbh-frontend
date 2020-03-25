@@ -65,19 +65,11 @@
         }
     },
     {
-        "name": "formGroup",
-        "type": "object",
+        "name": "formGroup.classes",
+        "type": "string",
         "required": false,
-        "description": "Options for the form-group wrapper.",
-        "params": [
-            {
-                "name": "classes",
-                "type": "string",
-                "required": false,
-                "description": "Classes to add to the form group (e.g. to show error state for the whole group).",
-                "example": "form-group-class"
-            }
-        ]
+        "description": "Classes to add to the form group (e.g. to show error state for the whole group).",
+        "example": "form-group-class"
     },
     {
         "name": "classes",
