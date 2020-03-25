@@ -28,7 +28,7 @@
     "template"
   ],
   "peerDependencies": {
-    "govuk-frontend": "3.5.0"
+    "govuk-frontend": ">=3.5.0"
   },
   "license": "MIT"
 }
