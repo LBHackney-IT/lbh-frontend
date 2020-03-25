@@ -3,25 +3,31 @@
         "name": "id",
         "type": "string",
         "required": true,
-        "description": "Must be **unique** across the domain of your service (as the expanded state of individual instances of the component persists across page loads using [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)). Used as an `id` in the HTML for the accordion as a whole, and also as a prefix for the `id`s of the section contents and the buttons that open them, so that those `id`s can be the target of `aria-labelledby` and `aria-control` attributes."
+        "description": "Must be **unique** across the domain of your service (as the expanded state of individual instances of the component persists across page loads using [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)). Used as an `id` in the HTML for the accordion as a whole, and also as a prefix for the `id`s of the section contents and the buttons that open them, so that those `id`s can be the target of `aria-labelledby` and `aria-control` attributes.",
+        "example": "services-accordion-1"
     },
     {
         "name": "headingLevel",
         "type": "integer",
         "required": false,
-        "description": "Heading level, from 1 to 6. Default is `2`."
+        "description": "Heading level, from 1 to 6. Default is `2`.",
+        "example": 3
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the accordion."
+        "description": "Classes to add to the accordion.",
+        "example": "accordion"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the accordion."
+        "description": "HTML attributes (for example data attributes) to add to the accordion.",
+        "example": {
+            "data-behavior": "accordion"
+        }
     },
     {
         "name": "items",
@@ -32,44 +38,51 @@
             {
                 "name": "heading.text",
                 "type": "string",
-                "required": true,
-                "description": "The title of each section. If `heading.html` is supplied, this is ignored. This is used both as the title for each section, and as the button to open or close each section."
+                "required": false,
+                "description": "The title of each section. If `heading.html` is supplied, this is ignored. This is used both as the title for each section, and as the button to open or close each section.",
+                "example": "Service 1 information"
             },
             {
                 "name": "heading.html",
                 "type": "string",
-                "required": true,
-                "description": "The HTML content of the header for each section which is used both as the title for each section, and as the button to open or close each section."
+                "required": false,
+                "description": "The HTML content of the header for each section which is used both as the title for each section, and as the button to open or close each section.",
+                "example": "Service 1 information"
             },
             {
                 "name": "summary.text",
                 "type": "string",
                 "required": false,
-                "description": "Text content for summary line. If `summary.html` is supplied, this is ignored."
+                "description": "Text content for summary line. If `summary.html` is supplied, this is ignored.",
+                "example": "Additional description"
             },
             {
                 "name": "summary.html",
                 "type": "string",
                 "required": false,
-                "description": "HTML content for summary line."
+                "description": "HTML content for summary line.",
+                "example": "<span class=\"lbh-!-font-weight-regular\">Additional description</span>"
             },
             {
                 "name": "content.text",
                 "type": "string",
-                "required": true,
-                "description": "The text content of each section, which is hidden when the section is closed. If `content.html` is supplied, this is ignored."
+                "required": false,
+                "description": "The text content of each section, which is hidden when the section is closed. If `content.html` is supplied, this is ignored.",
+                "example": "Here is some content"
             },
             {
                 "name": "content.html",
                 "type": "string",
-                "required": true,
-                "description": "The HTML content of each section, which is hidden when the section is closed."
+                "required": false,
+                "description": "The HTML content of each section, which is hidden when the section is closed.",
+                "example": "<ul class=\"lbh-list lbh-list--bullet\">\n  <li>Example item 1</li>\n</ul>\n"
             },
             {
                 "name": "expanded",
                 "type": "boolean",
                 "required": false,
-                "description": "Whether the section should be expanded upon initial load or not. Defaults to `false`."
+                "description": "Whether the section should be expanded upon initial load or not. Defaults to `false`.",
+                "example": true
             }
         ]
     }

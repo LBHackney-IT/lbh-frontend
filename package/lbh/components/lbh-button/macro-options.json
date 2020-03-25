@@ -3,84 +3,100 @@
         "name": "element",
         "type": "string",
         "required": false,
-        "description": "Whether to use an `input`, `button` or `a` element to create the button. In most cases you will not need to set this as it will be configured automatically if you use `href` or `html`."
+        "description": "Whether to use an `input`, `button` or `a` element to create the button. In most cases you will not need to set this as it will be configured automatically if you use `href` or `html`.",
+        "example": "button"
     },
     {
         "name": "text",
         "type": "string",
-        "required": true,
-        "description": "If `html` is set, this is not required. Text for the button or link. If `html` is provided, the `text` argument will be ignored and `element` will be automatically set to `button` unless `href` is also set, or it has already been defined. This argument has no effect if `element` is set to `input`."
+        "required": false,
+        "description": "If `html` is set, this is not required. Text for the button or link. If `html` is provided, the `text` argument will be ignored and `element` will be automatically set to `button` unless `href` is also set, or it has already been defined. This argument has no effect if `element` is set to `input`.",
+        "example": "Next"
     },
     {
         "name": "html",
         "type": "string",
-        "required": true,
-        "description": "If `text` is set, this is not required. HTML for the button or link. If `html` is provided, the `text` argument will be ignored and `element` will be automatically set to `button` unless `href` is also set, or it has already been defined. This argument has no effect if `element` is set to `input`."
+        "required": false,
+        "description": "If `text` is set, this is not required. HTML for the button or link. If `html` is provided, the `text` argument will be ignored and `element` will be automatically set to `button` unless `href` is also set, or it has already been defined. This argument has no effect if `element` is set to `input`.",
+        "example": "Next <span>Next icon goes here</span>"
     },
     {
         "name": "name",
         "type": "string",
-        "required": true,
-        "description": "Name for the `input` or `button`. This has no effect on `a` elements."
+        "required": false,
+        "description": "Name for the `input` or `button`. This has no effect on `a` elements.",
+        "example": "my-button"
     },
     {
         "name": "type",
         "type": "string",
-        "required": true,
-        "description": "Type of `input` or `button` – `button`, `submit` or `reset`. Defaults to `submit`. This has no effect on `a` elements."
+        "required": false,
+        "description": "Type of `input` or `button` – `button`, `submit` or `reset`. Defaults to `submit`. This has no effect on `a` elements.",
+        "example": "reset"
     },
     {
         "name": "value",
         "type": "string",
-        "required": true,
-        "description": "Value for the `button` tag. This has no effect on `a` or `input` elements."
+        "required": false,
+        "description": "Value for the `button` tag. This has no effect on `a` or `input` elements.",
+        "example": "my-value"
     },
     {
         "name": "disabled",
         "type": "boolean",
         "required": false,
-        "description": "Whether the button should be disabled. For button and input elements, `disabled` and `aria-disabled` attributes will be set automatically."
+        "description": "Whether the button should be disabled. For button and input elements, `disabled` and `aria-disabled` attributes will be set automatically.",
+        "example": true
     },
     {
         "name": "href",
         "type": "string",
         "required": false,
-        "description": "The URL that the button should link to. If this is set, `element` will be automatically set to `a` if it has not already been defined."
+        "description": "The URL that the button should link to. If this is set, `element` will be automatically set to `a` if it has not already been defined.",
+        "example": "http://www.hackney.gov.uk/"
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the button component."
+        "description": "Classes to add to the button component.",
+        "example": "button-class"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the button component."
+        "description": "HTML attributes (for example data attributes) to add to the button component.",
+        "example": {
+            "data-behavior": "button"
+        }
     },
     {
         "name": "preventDoubleClick",
         "type": "boolean",
         "required": false,
-        "description": "Prevent accidental double clicks on submit buttons from submitting forms multiple times"
+        "description": "Prevent accidental double clicks on submit buttons from submitting forms multiple times.",
+        "example": true
     },
     {
         "name": "isSecondary",
         "type": "boolean",
         "required": false,
-        "description": "If true then the button will be styled as a secondary button"
+        "description": "If true then the button will be styled as a secondary button.",
+        "example": true
     },
     {
         "name": "isWarning",
         "type": "boolean",
         "required": false,
-        "description": "If true then the button will be styled as a warning button"
+        "description": "If true then the button will be styled as a warning button.",
+        "example": true
     },
     {
         "name": "isStartButton",
         "type": "boolean",
         "required": false,
-        "description": "If set to true this button will have an arrow icon added to it. Use for the main call to action on your service's start page."
+        "description": "If set to true this button will have an arrow icon added to it. Use for the main call to action on your service's start page.",
+        "example": true
     }
 ]

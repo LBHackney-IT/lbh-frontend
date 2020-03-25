@@ -2,31 +2,38 @@
     {
         "name": "text",
         "type": "string",
-        "required": true,
-        "description": "If `html` is set, this is not required. Text to use within the warning text component. If `html` is provided, the `text` argument will be ignored."
+        "required": false,
+        "description": "If `html` is set, this is not required. Text to use within the warning text component. If `html` is provided, the `text` argument will be ignored.",
+        "example": "You can be fined up to £5,000 if you don’t register."
     },
     {
         "name": "html",
         "type": "string",
-        "required": true,
-        "description": "If `text` is set, this is not required. HTML to use within the warning text component. If `html` is provided, the `text` argument will be ignored."
+        "required": false,
+        "description": "If `text` is set, this is not required. HTML to use within the warning text component. If `html` is provided, the `text` argument will be ignored.",
+        "example": "You can be fined up to <span class=\"lbh-!-font-weight-medium\">£5,000</span> if you don't register."
     },
     {
         "name": "iconFallbackText",
         "type": "string",
         "required": true,
-        "description": "The fallback text for the icon."
+        "description": "The fallback text for the icon.",
+        "example": "Warning"
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the warning text."
+        "description": "Classes to add to the warning text. Multiple classes should be separated by a space.",
+        "example": "my-custom-class"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the warning text."
+        "description": "HTML attributes (for example data attributes) to add to the warning text.",
+        "example": {
+            "data-behavior": "warning"
+        }
     }
 ]

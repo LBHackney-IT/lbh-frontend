@@ -3,6 +3,7 @@
         "name": "content",
         "type": "html",
         "required": true,
-        "description": "HTML content to go in the cookie banner message"
+        "description": "HTML content to go in the cookie banner message.",
+        "example": "<p>We use cookies to ensure you have the best experience. For full details see our <a href=\"#\">Cookie policy</a>.</p>"
     }
 ]

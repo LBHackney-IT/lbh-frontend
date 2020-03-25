@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,14 +130,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var govu
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*************************************************************************!*\
   !*** multi ./src/lbh/components/lbh-character-count/character-count.js ***!
   \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/elewis/Sites/hackney-frontend/src/lbh/components/lbh-character-count/character-count.js */\"./src/lbh/components/lbh-character-count/character-count.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-character-count/character-count.js?");
+eval("module.exports = __webpack_require__(/*! /Users/emmalewis/Sites/hackney/LBH-frontend/src/lbh/components/lbh-character-count/character-count.js */\"./src/lbh/components/lbh-character-count/character-count.js\");\n\n\n//# sourceURL=webpack://LBHFrontend/multi_./src/lbh/components/lbh-character-count/character-count.js?");
 
 /***/ })
 

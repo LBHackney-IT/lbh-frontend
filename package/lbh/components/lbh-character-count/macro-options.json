@@ -3,75 +3,95 @@
         "name": "id",
         "type": "string",
         "required": true,
-        "description": "The id of the textarea."
+        "description": "The id of the textarea.",
+        "example": "my-textarea"
     },
     {
         "name": "name",
         "type": "string",
         "required": true,
-        "description": "The name of the textarea, which is submitted with the form data."
+        "description": "The name of the textarea, which is submitted with the form data.",
+        "example": "notes"
     },
     {
         "name": "rows",
         "type": "string",
         "required": false,
-        "description": "Optional number of textarea rows (default is 5 rows)."
+        "description": "Optional number of textarea rows (default is 5 rows).",
+        "example": 4
     },
     {
         "name": "value",
         "type": "string",
         "required": false,
-        "description": "Optional initial value of the textarea."
+        "description": "Optional initial value of the textarea.",
+        "example": "Here is some text"
     },
     {
         "name": "maxlength",
         "type": "string",
-        "required": true,
-        "description": "If `maxwords` is set, this is not required. The maximum number of characters. If `maxwords` is provided, the `maxlength` argument will be ignored."
+        "required": false,
+        "description": "If `maxwords` is set, this is not required. The maximum number of characters. If `maxwords` is provided, the `maxlength` argument will be ignored.",
+        "example": 2000
     },
     {
         "name": "maxwords",
         "type": "string",
-        "required": true,
-        "description": "If `maxlength` is set, this is not required. The maximum number of words. If `maxwords` is provided, the `maxlength` argument will be ignored."
+        "required": false,
+        "description": "If `maxlength` is set, this is not required. The maximum number of words. If `maxwords` is provided, the `maxlength` argument will be ignored.",
+        "example": 200
     },
     {
         "name": "threshold",
         "type": "string",
-        "required": true,
-        "description": "The percentage value of the limit at which point the count message is displayed. If this attribute is set, the count message will be hidden by default."
+        "required": false,
+        "description": "The percentage value of the limit at which point the count message is displayed. If this attribute is set, the count message will be hidden by default.",
+        "example": 50
     },
     {
         "name": "label",
         "type": "object",
         "required": true,
         "description": "Options for the label component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "Please give more information about your circumstances"
+        }
     },
     {
         "name": "hint",
         "type": "object",
         "required": false,
         "description": "Options for the hint component.",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "You may find it useful to provide relevant dates"
+        }
     },
     {
         "name": "errorMessage",
         "type": "object",
         "required": false,
         "description": "Options for the errorMessage component (e.g. text).",
-        "isComponent": true
+        "isComponent": true,
+        "example": {
+            "text": "You must enter some notes"
+        }
     },
     {
         "name": "classes",
         "type": "string",
         "required": false,
-        "description": "Classes to add to the textarea."
+        "description": "Classes to add to the textarea.",
+        "example": "character-count"
     },
     {
         "name": "attributes",
         "type": "object",
         "required": false,
-        "description": "HTML attributes (for example data attributes) to add to the textarea."
+        "description": "HTML attributes (for example data attributes) to add to the textarea.",
+        "example": {
+            "data-behavior": "character-count"
+        }
     }
 ]
