@@ -4,6 +4,9 @@
 
 ### Bugfixes
 
+- Fix broken leaflet
+  ([PR #102](https://github.com/LBHackney-IT/LBH-frontend/pull/102))
+
 ### Features
 
 ## 1.9.1
