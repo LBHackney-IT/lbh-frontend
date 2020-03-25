@@ -6,6 +6,12 @@
 
 ### Features
 
+## 1.9.3
+
+### Bugfixes
+
+- Fix broken leaflet
+
 ## 1.9.2
 
 ### Bugfixes
