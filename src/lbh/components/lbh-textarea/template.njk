@@ -1,7 +1,9 @@
 {% from "textarea/macro.njk" import govukTextarea %}
 
 {% set classes = (params.classes if params.classes else '') + ' lbh-textarea' %}
-{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+{% set formGroup = {
+  classes: params.formGroup.classes + ' lbh-form-group' if params.formGroup.classes else 'lbh-form-group'
+} %}
 
 {% set hint = {
     text: params.hint.text,

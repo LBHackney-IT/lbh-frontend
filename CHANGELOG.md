@@ -4,6 +4,9 @@
 
 ### Bugfixes
 
+- Remove setAttribute which broke the library for users
+  ([PR #100](https://github.com/LBHackney-IT/LBH-frontend/pull/100))
+
 ### Features
 
 ## 1.9.0

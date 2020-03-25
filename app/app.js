@@ -44,10 +44,6 @@ module.exports = options => {
     "componentNameToMacroName",
     helperFunctions.componentNameToMacroName
   );
-  env.addFilter("setAttribute", function(dictionary, key, value) {
-    dictionary[key] = value;
-    return dictionary;
-  });
 
   // Set view engine
   app.set("view engine", "njk");
