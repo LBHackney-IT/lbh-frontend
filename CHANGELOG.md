@@ -6,6 +6,12 @@
 
 ### Features
 
+## 1.9.0
+
+### Bugfixes
+
+### Features
+
 - Add colours page to the app so that people can see the colours that can be used with lbh-colours
   ([PR #92](https://github.com/LBHackney-IT/LBH-frontend/pull/92))
 - Remove leaflet as a dependency that gets packaged up with lbh-frontend and instead require it in the app so that it can still be used but doesn't add weight to the package. Requires users to install leaflet as dependency
