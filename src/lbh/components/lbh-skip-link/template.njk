@@ -5,7 +5,7 @@
 {{ govukSkipLink({
   text: params.text,
   html: params.html,
-  href: params.href,
+  href: params.href if params.href else "#content",
   classes: classes,
   attributes: params.attributes
 })}}

@@ -3,9 +3,14 @@
 {% set classes = (params.classes if params.classes else '') + ' lbh-table' %}
 {% set captionClasses = (params.captionClasses if params.captionClasses else '') + ' lbh-table__caption' %}
 
+{% set rows = [] %}
+{% for row in params.rows %}
+  {% set rows = (rows.push(row.cells), rows) %}
+{% endfor %}
+
 {{ govukTable({
-  rows: params.rows,
-  head: params.head,
+  rows: rows,
+  head: params.headCells,
   caption: params.caption,
   captionClasses: captionClasses,
   firstCellIsHeader: params.firstCellIsHeader,

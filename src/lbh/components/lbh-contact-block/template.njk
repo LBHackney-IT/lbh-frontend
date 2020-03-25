@@ -103,7 +103,7 @@
       </div>
     {% endif %}
   </div>
-  {% if params.showMap %}
+  {% if params.mapAccessToken %}
     <div class="lbh-contact__map-container">
       <div class="lbh-contact__map" id="map" data-module="lbh-map" data-access-token="{{ params.mapAccessToken }}" data-marker-lat="{{ params.markerLat}}" data-marker-lng="{{ params.markerLng }}"></div>
       {% if params.directionLink %}

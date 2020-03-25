@@ -1,167 +1,191 @@
 params:
-- name: rows
-  type: array
-  required: true
-  description: Array of table rows and cells.
-  params:
-  - name: text
-    type: string
+  - name: rows
+    type: array
     required: true
-    description: If `html` is set, this is not required. Text for cells in table rows. If `html` is provided, the `text` argument will be ignored.
-  - name: html
-    type: string
-    required: true
-    description: If `text` is set, this is not required. HTML for cells in table rows. If `html` is provided, the `text` argument will be ignore
-  - name: format
+    description: Array of table rows.
+    params:
+      - name: cells
+        type: array
+        required: true
+        description: Array of table cells.
+        params:
+          - name: text
+            type: string
+            required: false
+            description: If `html` is set, this is not required. Text for cells in table rows. If `html` is provided, the `text` argument will be ignored.
+            example: Text of first cell
+          - name: html
+            type: string
+            required: false
+            description: If `text` is set, this is not required. HTML for cells in table rows. If `html` is provided, the `text` argument will be ignored.
+            example: HTML of first cell with a <a href="/" class="lbh-link">link</a>
+          - name: format
+            type: string
+            required: false
+            description: Specify format of a cell. Currently we only use "numeric".
+            example: numeric
+          - name: classes
+            type: string
+            required: false
+            description: Classes to add to the table row cell. Separate multiple classes with a space.
+            example: cell-class
+          - name: colspan
+            type: integer
+            required: false
+            description: Specify how many columns a cell extends.
+            example: 2
+          - name: rowspan
+            type: integer
+            required: false
+            description: Specify how many rows a cell extends.
+            example: 2
+          - name: attributes
+            type: object
+            required: false
+            description: HTML attributes (for example data attributes) to add to the table cell.
+            example: { "data-behavior": "table-cell" }
+  - name: headCells
+    type: array
+    required: false
+    description: Array of table head cells.
+    params:
+      - name: text
+        type: string
+        required: false
+        description: If `html` is set, this is not required. Text for table head cells. If `html` is provided, the `text` argument will be ignored.
+        example: Column name text
+      - name: html
+        type: string
+        required: false
+        description: If `text` is set, this is not required. HTML for table head cells. If `html` is provided, the `text` argument will be ignored.
+        example: Column name HTML with a <a href="/" class="lbh-link">link</a>
+      - name: format
+        type: string
+        required: false
+        description: Specify format of a cell. Currently we only use "numeric".
+        example: numeric
+      - name: classes
+        type: string
+        required: false
+        description: Classes to add to the table head cell. Multiple classes can be separated with a space.
+        example: table-head-cell-class
+      - name: colspan
+        type: integer
+        required: false
+        description: Specify how many columns a cell extends.
+        example: 2
+      - name: rowspan
+        type: integer
+        required: false
+        description: Specify how many rows a cell extends.
+        example: 2
+      - name: attributes
+        type: object
+        required: false
+        description: HTML attributes (for example data attributes) to add to the table cell.
+        example: { "data-behavior": "table-head-cell" }
+  - name: caption
     type: string
     required: false
-    description: Specify format of a cell. Currently we only use "numeric".
+    description: Caption text
+    example: Table caption
+  - name: captionClasses
+    type: string
+    required: false
+    description: Classes for caption text size. Classes should correspond to the available typography heading classes.
+    example: lbh-heading-h3
+  - name: firstCellIsHeader
+    type: boolean
+    required: false
+    description: If set to true, first cell in table row will be a TH instead of a TD.
+    example: true
   - name: classes
     type: string
     required: false
-    description: Classes to add to the table row cell.
-  - name: colspan
-    type: integer
-    required: false
-    description: Specify how many columns a cell extends.
-  - name: rowspan
-    type: integer
-    required: false
-    description: Specify how many rows a cell extends.
+    description: Classes to add to the table container. Multiple classes can be separated with a space.
+    example: table-class
   - name: attributes
     type: object
     required: false
-    description: HTML attributes (for example data attributes) to add to the table cell.
-- name: head
-  type: array
-  required: false
-  description: Array of table head cells.
-  params:
-  - name: text
-    type: string
-    required: false
-    description: If `html` is set, this is not required. Text for table head cells. If `html` is provided, the `text` argument will be ignored.
-  - name: html
-    type: string
-    required: false
-    description: If `text` is set, this is not required. HTML for table head cells. If `html` is provided, the `text` argument will be ignore
-  - name: format
-    type: string
-    required: false
-    description: Specify format of a cell. Currently we only use "numeric".
-  - name: classes
-    type: string
-    required: false
-    description: Classes to add to the table head cell.
-  - name: colspan
-    type: integer
-    required: false
-    description: Specify how many columns a cell extends.
-  - name: rowspan
-    type: integer
-    required: false
-    description: Specify how many rows a cell extends.
-  - name: attributes
-    type: object
-    required: false
-    description: HTML attributes (for example data attributes) to add to the table cell.
-- name: caption
-  type: string
-  required: false
-  description: Caption text
-- name: captionClasses
-  type: string
-  required: false
-  description: Classes for caption text size. Classes should correspond to the available typography heading classes.
-- name: firstCellIsHeader
-  type: boolean
-  required: false
-  description: If set to true, first cell in table row will be a TH instead of a TD.
-- name: classes
-  type: string
-  required: false
-  description: Classes to add to the table container.
-- name: attributes
-  type: object
-  required: false
-  description: HTML attributes (for example data attributes) to add to the table container.
+    description: HTML attributes (for example data attributes) to add to the table container.
+    example: { "data-behavior": "table" }
 
 examples:
- - name: default
-   data:
-     rows:
-     -
-       - text: January
-       - text: £85
-         format: numeric
-       - text: £95
-         format: numeric
-     -
-       - text: February
-       - text: £75
-         format: numeric
-       - text: £55
-         format: numeric
-     -
-       - text: March
-       - text: £165
-         format: numeric
-       - text: £125
-         format: numeric
- - name: table with head
-   data:
-     head:
-       - text: Month you apply
-       - text: Rate for bicycles
-         format: numeric
-       - text: Rate for vehicles
-         format: numeric
-     rows:
-     -
-       - text: January
-       - text: £85
-         format: numeric
-       - text: £95
-         format: numeric
-     -
-       - text: February
-       - text: £75
-         format: numeric
-       - text: £55
-         format: numeric
-     -
-       - text: March
-       - text: £165
-         format: numeric
-       - text: £125
-         format: numeric
- - name: table with head and caption
-   data:
-     caption: 'Caption 1: Months and rates'
-     captionClasses: lbh-heading-h3
-     firstCellIsHeader: true
-     head:
-       - text: Month you apply
-       - text: Rate for bicycles
-         format: numeric
-       - text: Rate for vehicles
-         format: numeric
-     rows:
-       -
-         - text: January
-         - text: £85
-           format: numeric
-         - text: £95
-           format: numeric
-       -
-         - text: February
-         - text: £75
-           format: numeric
-         - text: £55
-           format: numeric
-       -
-         - text: March
-         - text: £165
-           format: numeric
-         - text: £125
-           format: numeric
+  - name: default
+    data:
+      rows:
+        - cells:
+            - text: January
+            - text: £85
+              format: numeric
+            - text: £95
+              format: numeric
+        - cells:
+            - text: February
+            - text: £75
+              format: numeric
+            - text: £55
+              format: numeric
+        - cells:
+            - text: March
+            - text: £165
+              format: numeric
+            - text: £125
+              format: numeric
+  - name: table with head
+    data:
+      headCells:
+        - text: Month you apply
+        - text: Rate for bicycles
+          format: numeric
+        - text: Rate for vehicles
+          format: numeric
+      rows:
+        - cells:
+            - text: January
+            - text: £85
+              format: numeric
+            - text: £95
+              format: numeric
+        - cells:
+            - text: February
+            - text: £75
+              format: numeric
+            - text: £55
+              format: numeric
+        - cells:
+            - text: March
+            - text: £165
+              format: numeric
+            - text: £125
+              format: numeric
+  - name: table with head and caption
+    data:
+      caption: "Caption 1: Months and rates"
+      captionClasses: lbh-heading-h3
+      firstCellIsHeader: true
+      headCells:
+        - text: Month you apply
+        - text: Rate for bicycles
+          format: numeric
+        - text: Rate for vehicles
+          format: numeric
+      rows:
+        - cells:
+            - text: January
+            - text: £85
+              format: numeric
+            - text: £95
+              format: numeric
+        - cells:
+            - text: February
+            - text: £75
+              format: numeric
+            - text: £55
+              format: numeric
+        - cells:
+            - text: March
+            - text: £165
+              format: numeric
+            - text: £125
+              format: numeric

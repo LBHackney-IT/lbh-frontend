@@ -1,9 +1,7 @@
 {% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-{% from "macros/showExamples.njk" import showExamples %}
-{% from "macros/showParams.njk" import showParams %}
-{% from "macros/createHTML.njk" import createHTML %}
 
 {% extends "full-width.njk" %}
+{% from "macros/loadComponentTemplate.njk" import loadComponentTemplate %}
 
 {% set bodyClasses %}
   language-markup
@@ -32,12 +30,8 @@
         {{ componentNameHuman | capitalize }}
       {% endblock %}
     </h1>
-  </div>
+    <h4 class="lbh-heading-h4">Markup</h4>
 
-  {% block examples %}
-    {{ showExamples(componentName, componentNameHuman, componentData, legacyQuery) }}
-  {% endblock %}
-
-  {{showParams(componentName, componentNameHuman, componentData, legacyQuery)}}
-  {{createHTML(componentName, componentNameHuman, componentData, legacyQuery)}}
+    {% set componentHtml %}{{ loadComponentTemplate(componentName, query) }}{% endset %}
+    <pre><code class="govuk-!-font-size-16 code code--block">{{- componentHtml | e -}}</code></pre>
 {% endblock %}

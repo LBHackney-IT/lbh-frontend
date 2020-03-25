@@ -5,6 +5,7 @@
 ### Bugfixes
 
 ### Features
+
 - Add colours page to the app so that people can see the colours that can be used with lbh-colours
   ([PR #92](https://github.com/LBHackney-IT/LBH-frontend/pull/92))
 - Remove leaflet as a dependency that gets packaged up with lbh-frontend and instead require it in the app so that it can still be used but doesn't add weight to the package. Requires users to install leaflet as dependency
@@ -15,10 +16,13 @@
   ([PR #95](https://github.com/LBHackney-IT/LBH-frontend/pull/95))
 - Update node to 12.14.0
   ([PR #96](https://github.com/LBHackney-IT/LBH-frontend/pull/96))
+- Update the app to allow users to generate html
+  ([PR #98](https://github.com/LBHackney-IT/LBH-frontend/pull/98))
 
 ## 1.8.3
 
 ### Bugfixes
+
 - Fix fixed header spacing
   ([PR #90](https://github.com/LBHackney-IT/LBH-frontend/pull/90))
 
@@ -32,6 +36,7 @@
 ## 1.8.1
 
 ### Bugfixes
+
 - Include objects scss in each components import so that lbh-container, lbh-form-group, and lbh-main-wrapper are styled in components where they're used when those components are imported individually.
   ([PR #85](https://github.com/LBHackney-IT/LBH-frontend/pull/85))
 

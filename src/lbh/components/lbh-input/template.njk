@@ -2,7 +2,7 @@
 
 {% set classes = (params.classes if params.classes else '') + ' lbh-input' %}
 
-{% set formGroup = formGroup|setAttribute('classes', formGroup.classes + ' lbh-form-group') if formGroup else {classes: 'lbh-form-group'} %}
+{% set formGroup = params.formGroup|setAttribute('classes', params.formGroup.classes + ' lbh-form-group') if params.formGroup else {classes: 'lbh-form-group'} %}
 
 {% set hint = {
     text: params.hint.text,
@@ -23,7 +23,7 @@
 {{ govukInput({
   id: params.id,
   name: params.name,
-  type: params.type,
+  type: params.type if params.type else "text",
   value: params.value,
   describedBy: params.describedBy,
   label: label,

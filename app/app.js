@@ -1,16 +1,16 @@
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
-const nunjucks = require('nunjucks')
-const util = require('util')
-const fs = require('fs')
-const path = require('path')
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const nunjucks = require("nunjucks");
+const util = require("util");
+const fs = require("fs");
+const path = require("path");
 
-const readdir = util.promisify(fs.readdir)
+const readdir = util.promisify(fs.readdir);
 
-const helperFunctions = require('../lib/helper-functions')
-const fileHelper = require('../lib/file-helper')
-const configPaths = require('../config/paths.json')
+const helperFunctions = require("../lib/helper-functions");
+const fileHelper = require("../lib/file-helper");
+const configPaths = require("../config/paths.json");
 
 // Set up views
 const appViews = [
@@ -21,12 +21,12 @@ const appViews = [
   configPaths.components,
   configPaths.src,
   configPaths.node_modules,
-  'node_modules/govuk-frontend/govuk/',
-  'node_modules/govuk-frontend/govuk/components/'
-]
+  "node_modules/govuk-frontend/govuk/",
+  "node_modules/govuk-frontend/govuk/components/"
+];
 
-module.exports = (options) => {
-  const nunjucksOptions = options ? options.nunjucks : {}
+module.exports = options => {
+  const nunjucksOptions = options ? options.nunjucks : {};
 
   // Configure nunjucks
   let env = nunjucks.configure(appViews, {
@@ -37,166 +37,236 @@ module.exports = (options) => {
     lstripBlocks: true, // automatically remove leading whitespace from a block/tag
     watch: true, // reload templates when they are changed. needs chokidar dependency to be installed
     ...nunjucksOptions // merge any additional options and overwrite defaults above.
-  })
+  });
 
   // make the function available as a filter for all templates
-  env.addFilter('componentNameToMacroName', helperFunctions.componentNameToMacroName)
-  env.addFilter('setAttribute', function (dictionary, key, value) {
-    dictionary[key] = value
-    return dictionary
-  })
+  env.addFilter(
+    "componentNameToMacroName",
+    helperFunctions.componentNameToMacroName
+  );
+  env.addFilter("setAttribute", function(dictionary, key, value) {
+    dictionary[key] = value;
+    return dictionary;
+  });
 
   // Set view engine
-  app.set('view engine', 'njk')
+  app.set("view engine", "njk");
 
   // Disallow search index indexing
-  app.use(function (req, res, next) {
+  app.use(function(req, res, next) {
     // none - Equivalent to noindex, nofollow
     // noindex - Do not show this page in search results and do not show a
     //   "Cached" link in search results.
     // nofollow - Do not follow the links on this page
-    res.setHeader('X-Robots-Tag', 'none')
-    next()
-  })
+    res.setHeader("X-Robots-Tag", "none");
+    next();
+  });
 
   // Set up middleware to serve static assets
-  app.use('/public', express.static(configPaths.public))
+  app.use("/public", express.static(configPaths.public));
 
-  app.use('/docs', express.static(configPaths.sassdoc))
-  app.use('/node_modules', express.static(configPaths.node_modules))
+  app.use("/docs", express.static(configPaths.sassdoc));
+  app.use("/node_modules", express.static(configPaths.node_modules));
 
   // serve html5-shiv from node modules
-  app.use('node_modules/govuk-frontend/govuk/vendor/html5-shiv/', express.static('node_modules/html5shiv/dist/'))
+  app.use(
+    "node_modules/govuk-frontend/govuk/vendor/html5-shiv/",
+    express.static("node_modules/html5shiv/dist/")
+  );
 
   // serve legacy code from node node modules
-  app.use('node_modules/govuk-frontend/govuk/vendor/govuk_template/', express.static('node_modules/govuk_template_jinja/assets/'))
+  app.use(
+    "node_modules/govuk-frontend/govuk/vendor/govuk_template/",
+    express.static("node_modules/govuk_template_jinja/assets/")
+  );
 
-  app.use('/assets', express.static(path.join(configPaths.src, 'assets')))
+  app.use("/assets", express.static(path.join(configPaths.src, "assets")));
 
   // Turn form POSTs into data that can be used for validation.
-  app.use(bodyParser.urlencoded({ extended: true }))
+  app.use(bodyParser.urlencoded({ extended: true }));
 
   // Define middleware for all routes
-  app.use('*', function (request, response, next) {
-    response.locals.legacy = request.query['legacy'] === '1'
+  app.use("*", function(request, response, next) {
+    response.locals.legacy = request.query["legacy"] === "1";
     if (response.locals.legacy) {
-      response.locals.legacyQuery = '?legacy=1'
+      response.locals.legacyQuery = "?legacy=1";
     } else {
-      response.locals.legacyQuery = ''
+      response.locals.legacyQuery = "";
     }
-    next()
-  })
+    next();
+  });
 
   // Define routes
 
   // Index page - render the component list template
-  app.get('/', async function (req, res) {
-    const components = fileHelper.allComponents
-    const examples = await readdir(path.resolve(configPaths.examples))
-    const fullPageExamples = await readdir(path.resolve(configPaths.fullPageExamples))
+  app.get("/", async function(req, res) {
+    const components = fileHelper.allComponents;
+    const examples = await readdir(path.resolve(configPaths.examples));
+    const fullPageExamples = await readdir(
+      path.resolve(configPaths.fullPageExamples)
+    );
 
-    res.render('index', {
+    res.render("index", {
       componentsDirectory: components,
       examplesDirectory: examples,
       fullPageExamplesDirectory: fullPageExamples
-    })
-  })
+    });
+  });
 
   // Whenever the route includes a :component parameter, read the component data
   // from its YAML file
-  app.param('component', function (req, res, next, componentName) {
-    res.locals.componentData = fileHelper.getComponentData(componentName)
-    next()
-  })
+  app.param("component", function(req, res, next, componentName) {
+    res.locals.componentData = fileHelper.getComponentData(componentName);
+    next();
+  });
 
   // All components view
-  app.get('/components/all', function (req, res, next) {
-    const components = fileHelper.allComponents
+  app.get("/components/all", function(req, res, next) {
+    const components = fileHelper.allComponents;
 
     res.locals.componentData = components.map(componentName => {
-      let componentData = fileHelper.getComponentData(componentName)
+      let componentData = fileHelper.getComponentData(componentName);
       let defaultExample = componentData.examples.find(
-        example => example.name === 'default'
-      )
+        example => example.name === "default"
+      );
       return {
         componentName,
         examples: [defaultExample]
-      }
-    })
-    res.render(`all-components`, function (error, html) {
+      };
+    });
+    res.render(`all-components`, function(error, html) {
       if (error) {
-        next(error)
+        next(error);
       } else {
-        res.send(html)
+        res.send(html);
       }
-    })
-  })
+    });
+  });
 
   // Component 'README' page
-  app.get('/components/:component', function (req, res, next) {
+  app.get("/components/:component", function(req, res, next) {
     // make variables available to nunjucks template
-    res.locals.componentPath = req.params.component
+    res.locals.componentPath = req.params.component;
 
-    res.render('component', function (error, html) {
+    res.render("component", function(error, html) {
       if (error) {
-        next(error)
+        next(error);
       } else {
-        res.send(html)
+        res.send(html);
       }
-    })
-  })
+    });
+  });
+
+  // Component 'README' page
+  app.get("/components/:component/html", function(req, res, next) {
+    // make variables available to nunjucks template
+    res.locals.componentPath = req.params.component;
+    res.locals.query = req.query;
+
+    const objectVars = [
+      "hint",
+      "errorMessage",
+      "attributes",
+      "label",
+      "fieldset",
+      "formGroup",
+      "tag",
+      "actions",
+      "panel"
+    ];
+
+    for (const objectVar of objectVars) {
+      if (
+        res.locals.query[objectVar] &&
+        res.locals.query[objectVar].length > 0
+      ) {
+        try {
+          res.locals.query[objectVar] = JSON.parse(res.locals.query[objectVar]);
+        } catch {}
+      }
+    }
+
+    if (res.locals.query.items && res.locals.query.items.length > 0) {
+      for (let i = 0; i < res.locals.query.items.length; i++) {
+        for (const objectVar of objectVars) {
+          if (
+            res.locals.query.items[i][objectVar] &&
+            res.locals.query.items[i][objectVar].length > 0
+          ) {
+            try {
+              res.locals.query.items[i][objectVar] = JSON.parse(
+                res.locals.query.items[i][objectVar]
+              );
+            } catch {}
+          }
+        }
+      }
+    }
+
+    res.render("component-html", function(error, html) {
+      if (error) {
+        next(error);
+      } else {
+        res.send(html);
+      }
+    });
+  });
 
   // Component example preview
-  app.get('/components/:component/:example*?/preview', function (req, res, next) {
+  app.get("/components/:component/:example*?/preview", function(
+    req,
+    res,
+    next
+  ) {
     // Find the data for the specified example (or the default example)
-    let componentName = req.params.component
-    let requestedExampleName = req.params.example || 'default'
+    let componentName = req.params.component;
+    let requestedExampleName = req.params.example || "default";
 
-    let previewLayout = res.locals.componentData.previewLayout || 'layout'
-    
+    let previewLayout = res.locals.componentData.previewLayout || "layout";
+
     let exampleConfig = res.locals.componentData.examples.find(
-      example => example.name.replace(/ /g, '-') === requestedExampleName
-    )
-    
+      example => example.name.replace(/ /g, "-") === requestedExampleName
+    );
+
     if (!exampleConfig) {
-      next()
+      next();
     }
 
     // Construct and evaluate the component with the data for this example
-    let macroName = helperFunctions.componentNameToMacroName(componentName)
-    let macroParameters = JSON.stringify(exampleConfig.data, null, '\t')
+    let macroName = helperFunctions.componentNameToMacroName(componentName);
+    let macroParameters = JSON.stringify(exampleConfig.data, null, "\t");
 
     res.locals.componentView = env.renderString(
       `{% from '${componentName}/macro.njk' import ${macroName} %}
       {{ ${macroName}(${macroParameters}) }}`
-    )
+    );
 
-    let bodyClasses = ''
+    let bodyClasses = "";
     if (req.query.iframe) {
-      bodyClasses = 'app-iframe-in-component-preview'
+      bodyClasses = "app-iframe-in-component-preview";
     }
 
-    res.render('component-preview', { bodyClasses, previewLayout })
-  })
+    res.render("component-preview", { bodyClasses, previewLayout });
+  });
 
   // Example view
-  app.get('/examples/:example', function (req, res, next) {
-    res.render(`${req.params.example}/index`, function (error, html) {
+  app.get("/examples/:example", function(req, res, next) {
+    res.render(`${req.params.example}/index`, function(error, html) {
       if (error) {
-        next(error)
+        next(error);
       } else {
-        res.send(html)
+        res.send(html);
       }
-    })
-  })
+    });
+  });
 
   // Full page example views
-  require('./full-page-examples.js')(app)
+  require("./full-page-examples.js")(app);
 
-  app.get('/robots.txt', function (req, res) {
-    res.type('text/plain')
-    res.send('User-agent: *\nDisallow: /')
-  })
+  app.get("/robots.txt", function(req, res) {
+    res.type("text/plain");
+    res.send("User-agent: *\nDisallow: /");
+  });
 
-  return app
-}
+  return app;
+};

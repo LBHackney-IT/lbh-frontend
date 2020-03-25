@@ -1,64 +1,74 @@
 params:
-- name: id
-  type: string
-  required: true
-  description: The id of the input.
-- name: name
-  type: string
-  required: true
-  description: The name of the input, which is submitted with the form data.
-- name: type
-  type: string
-  required: false
-  description: Type of input control to render. Defaults to "text".
-- name: value
-  type: string
-  required: false
-  description: Optional initial value of the input.
-- name: describedBy
-  type: string
-  required: false
-  description: One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users.
-- name: label
-  type: object
-  required: true
-  description: Options for the label component.
-  isComponent: true
-- name: hint
-  type: object
-  required: false
-  description: Options for the hint component.
-  isComponent: true
-- name: errorMessage
-  type: object
-  required: false
-  description: Options for the errorMessage component.
-  isComponent: true
-- name: formGroup
-  type: object
-  required: false
-  description: Options for the form-group wrapper
-  params:
-  - name: classes
+  - name: id
+    type: string
+    required: true
+    description: The id of the input.
+    example: input-id
+  - name: name
+    type: string
+    required: true
+    description: The name of the input, which is submitted with the form data.
+    example: name
+  - name: type
+    type: string
+    required: false
+    description: Type of input control to render. Defaults to "text".
+    example: tel
+  - name: value
+    type: string
+    required: false
+    description: Optional initial value of the input.
+    example: John Doe
+  - name: describedBy
+    type: string
+    required: false
+    description: One or more element IDs to add to the `aria-describedby` attribute, used to provide additional descriptive information for screenreader users.
+    example: hint-id
+  - name: label
+    type: object
+    required: true
+    description: Options for the label component.
+    isComponent: true
+    example: { "text": "What is your name?" }
+  - name: hint
+    type: object
+    required: false
+    description: Options for the hint component.
+    isComponent: true
+    example:
+      { "text": "Please enter your full name as it appears on your passport" }
+  - name: errorMessage
+    type: object
+    required: false
+    description: Options for the errorMessage component.
+    isComponent: true
+    example: { "text": "Enter your name" }
+  - name: formGroup.classes
     type: string
     required: false
     description: Classes to add to the form group (e.g. to show error state for the whole group)
-- name: classes
-  type: string
-  required: false
-  description: Classes to add to the input.
-- name: autocomplete
-  type: string
-  required: false
-  description: Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance "postal-code" or "username". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used.
-- name: pattern
-  type: string
-  required: false
-  description: Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value.
-- name: attributes
-  type: object
-  required: false
-  description: HTML attributes (for example data attributes) to add to the anchor tag.
+    example: govuk-input--error
+  - name: classes
+    type: string
+    required: false
+    description: Classes to add to the input.
+    example: input
+  - name: autocomplete
+    type: string
+    required: false
+    description: Attribute to [identify input purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html), for instance "postal-code" or "username". See [autofill](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) for full list of attributes that can be used.
+    example: username
+  - name: pattern
+    type: string
+    required: false
+    description: Attribute to [provide a regular expression pattern](https://www.w3.org/TR/html51/sec-forms.html#the-pattern-attribute), used to match allowed character combinations for the input value.
+    example: |
+      [0-9][A-Z]{3}
+  - name: attributes
+    type: object
+    required: false
+    description: HTML attributes (for example data attributes) to add to the anchor tag.
+    example: { "data-behavior": "input" }
 
 examples:
   - name: default
@@ -161,8 +171,7 @@ examples:
         text: National Insurance number
       id: input-example
       name: test-name
-      formGroup:
-        classes: extra-class
+      formGroup.classes: extra-class
   - name: with autocomplete attribute
     data:
       label:
@@ -177,4 +186,4 @@ examples:
       id: input-with-pattern-attribute
       name: numbers-only
       type: number
-      pattern: '[0-9]*'
+      pattern: "[0-9]*"
