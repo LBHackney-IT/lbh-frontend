@@ -264,7 +264,7 @@ module.exports = options => {
 
   app.get("/docs/readme", function(req, res, next) {
     const doc = fs.readFileSync(
-      path.resolve(__dirname, `../readme.md`),
+      path.resolve(__dirname, `../README.md`),
       "utf8"
     );
     const converter = new showdown.Converter();
