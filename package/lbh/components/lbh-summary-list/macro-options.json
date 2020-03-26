@@ -15,15 +15,15 @@
             {
                 "name": "key.text",
                 "type": "string",
-                "required": false,
+                "required": true,
                 "description": "If `html` is set, this is not required. Text to use within the each key. If `html` is provided, the `text` argument will be ignored.",
                 "example": "Name"
             },
             {
                 "name": "key.html",
                 "type": "string",
-                "required": false,
-                "description": "If `text` is set, this is not required. HTML to use within the each key.",
+                "required": true,
+                "description": "Text or HTML to use within the each key.",
                 "example": "Name with a <a href=\"/\" class=\"lbh-link\">link</a>"
             },
             {
@@ -36,15 +36,15 @@
             {
                 "name": "value.text",
                 "type": "string",
-                "required": false,
+                "required": true,
                 "description": "If `html` is set, this is not required. Text to use within the each value. If `html` is provided, the `text` argument will be ignored.",
                 "example": "John Doe"
             },
             {
                 "name": "value.html",
                 "type": "string",
-                "required": false,
-                "description": "If `text` is set, this is not required. HTML to use within the each value. If `html` is provided, the `text` argument will be ignored.",
+                "required": true,
+                "description": "Text or HTML to use within the each value.",
                 "example": "John <span class=\"lbh-!-font-weight-medium\">Doe</span>"
             },
             {
@@ -77,15 +77,15 @@
                     {
                         "name": "text",
                         "type": "string",
-                        "required": false,
+                        "required": true,
                         "description": "If `html` is set, this is not required. Text to use within each action item. If `html` is provided, the `text` argument will be ignored.",
                         "example": "Edit"
                     },
                     {
                         "name": "html",
                         "type": "string",
-                        "required": false,
-                        "description": "If `text` is set, this is not required. HTML to use within the each action item. If `html` is provided, the `text` argument will be ignored.",
+                        "required": true,
+                        "description": "Text or HTML to use within the each action item.",
                         "example": "Edit <span class=\"lbh-!-font-weight-medium\">thoroughly</span>"
                     },
                     {
