@@ -4,9 +4,11 @@
 {% from "lbh-back-link/macro.njk" import lbhBackLink %}
 
 {% block beforeContent %}
+  <div class="lbh-container">
   {{ lbhBackLink({
     "href": "/"
   }) }}
+  </div>
 {% endblock %}
 
 {% block content %}
@@ -283,6 +285,6 @@
         </span>
       </li>
   </ul>
-  
+
   </section>
 {% endblock %}

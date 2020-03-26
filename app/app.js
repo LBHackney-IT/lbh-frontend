@@ -5,6 +5,8 @@ const nunjucks = require("nunjucks");
 const util = require("util");
 const fs = require("fs");
 const path = require("path");
+const showdown = require("showdown");
+showdown.setFlavor("github");
 
 const readdir = util.promisify(fs.readdir);
 
@@ -98,12 +100,16 @@ module.exports = options => {
   app.get("/", async function(req, res) {
     const components = fileHelper.allComponents;
     const examples = await readdir(path.resolve(configPaths.examples));
+    const installationDocs = await readdir(
+      path.resolve(configPaths.installationDocs)
+    );
     const fullPageExamples = await readdir(
       path.resolve(configPaths.fullPageExamples)
     );
 
     res.render("index", {
       componentsDirectory: components,
+      docsDirectory: installationDocs,
       examplesDirectory: examples,
       fullPageExamplesDirectory: fullPageExamples
     });
@@ -248,6 +254,40 @@ module.exports = options => {
   // Example view
   app.get("/examples/:example", function(req, res, next) {
     res.render(`${req.params.example}/index`, function(error, html) {
+      if (error) {
+        next(error);
+      } else {
+        res.send(html);
+      }
+    });
+  });
+
+  app.get("/docs/readme", function(req, res, next) {
+    const doc = fs.readFileSync(
+      path.resolve(__dirname, `../readme.md`),
+      "utf8"
+    );
+    const converter = new showdown.Converter();
+    const docs = converter.makeHtml(doc);
+    res.locals.docs = docs;
+    res.render(`docs/index`, function(error, html) {
+      if (error) {
+        next(error);
+      } else {
+        res.send(html);
+      }
+    });
+  });
+
+  app.get("/docs/installation/:doc.md", function(req, res, next) {
+    const doc = fs.readFileSync(
+      path.resolve(__dirname, `../docs/installation/${req.params.doc}.md`),
+      "utf8"
+    );
+    const converter = new showdown.Converter();
+    const docs = converter.makeHtml(doc);
+    res.locals.docs = docs;
+    res.render(`docs/index`, function(error, html) {
       if (error) {
         next(error);
       } else {

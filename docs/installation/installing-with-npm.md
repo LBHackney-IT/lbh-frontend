@@ -30,7 +30,7 @@ To install, run:
 npm install --save lbh-frontend
 ```
 
-Please note you must also have the `govuk-frontend` package installed: 
+Please note you must also have the `govuk-frontend` package installed:
 
 ```
 npm install --save govuk-frontend
@@ -47,22 +47,23 @@ imports) if you want to override LBH Frontend with your own styles.
 
 1. To import all components, add the below to your Sass file:
 
-  ```SCSS
-  @import "node_modules/lbh-frontend/lbh/all";
-  ```
+```SCSS
+@import "node_modules/lbh-frontend/lbh/all";
+```
 
 2. To import an individual component (for example a button), add the below to
-your Sass file:
+   your Sass file:
 
-  ```SCSS
-  @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
-  ```
+```SCSS
+@import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
+```
+
 Please note that if importing individual components, you should first import the core and objects files:
 
-  ```SCSS
-  @import "node_modules/lbh-frontend/lbh/core/all";
-  @import "node_modules/lbh-frontend/lbh/objects/all";
-  ```
+```SCSS
+@import "node_modules/lbh-frontend/lbh/core/all";
+@import "node_modules/lbh-frontend/lbh/objects/all";
+```
 
 ### Optional: Resolving SCSS import paths
 
@@ -113,7 +114,6 @@ $lbh-global-styles: true;
 @import "lbh-frontend/lbh/all";
 ```
 
-
 ## Using JavaScript
 
 Some of the JavaScript included in LBH Frontend improves the usability and
@@ -157,10 +157,10 @@ You can change this by passing the `scope` parameter to the `initAll` function.
 For example, if you have a modal dialog box that opens with new markup you could do the following:
 
 ```js
-var $modal = document.querySelector('.modal')
+var $modal = document.querySelector(".modal");
 window.LBHFrontend.initAll({
   scope: $modal
-})
+});
 ```
 
 #### Initialise individual included components
@@ -172,10 +172,10 @@ You can use this attribute to initialise the component manually. This may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var Radios = window.LBHFrontend.Radios
-var $radio = document.querySelector('[data-module="govuk-radios"]')
+var Radios = window.LBHFrontend.Radios;
+var $radio = document.querySelector('[data-module="govuk-radios"]');
 if ($radio) {
-  new Radios($radio).init()
+  new Radios($radio).init();
 }
 ```
 
@@ -209,7 +209,6 @@ import { Radios } from 'lbh-frontend'
 
 If you're using a bundler such as [Browserify](http://browserify.org/), you may need to use the CommonJS `require`:
 
-
 ```JS
 const LBHFrontend = require('lbh-frontend')
 
@@ -223,26 +222,25 @@ You can use this attribute to initialise the component manually, this may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var $radio = document.querySelector('[data-module="govuk-radios"]')
+var $radio = document.querySelector('[data-module="govuk-radios"]');
 if ($radio) {
-  new Radios($radio).init()
+  new Radios($radio).init();
 }
 ```
 
 Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
 
 ### Polyfills
+
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
 
 The polyfills provided with GOV.UK/LBH Frontend aim to fix usability and accessibility issues. If there is a JavaScript included in the component directory, it is important to import and initialise it in your project to ensure that all users can properly use the component (see [Polyfilling](/docs/contributing/polyfilling.md)).
 
 ### How LBH Frontend is bundled
+
 The JavaScript included in GOV.UK/LBH Frontend components are in [UMD (Universal Module Definition)](https://github.com/umdjs/umd) format which makes it compatible with AMD (Asynchronous module definition) and CommonJS.
 
 See [JavaScript Coding Standards](/docs/contributing/coding-standards/js.md) for more details of how JavaScript is used in the project.
-
-#### Using LBH Frontend with Webpack 4
-Here's an example of setting up [`webpack.config.js`](examples/webpack/webpack.config.js) in your project
 
 ## Importing assets
 
@@ -261,6 +259,7 @@ a code sample you could add to your configuration:
 ```JS
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/lbh-frontend/lbh/assets')))
 ```
+
 ### Alternative solution
 
 Manually copy the images and fonts from `/node_modules/lbh-frontend/lbh/assets` into a public facing directory in your project. Ideally copying the files to your project should be an automated task or part of your build pipeline to ensure that the LBH Frontend assets stay up-to-date.
@@ -271,24 +270,24 @@ To use different asset paths, also complete the below step(s).
 
 1. Set `$govuk-assets-path`, `$govuk-images-path` and `$govuk-fonts-path` in your project Sass file to point to the relevant directories in your project (this will override the defaults set in `/node_modules/govuk-frontend/settings/_assets.scss`). Make sure you do this in Sass before importing `lbh-frontend` into your project - see [Importing styles](#importing-styles).
 
-  Example 1:
+Example 1:
 
-  ``` SCSS
-  // Include images from /application/assets/images and fonts from /application/assets/fonts
-  $govuk-assets-path: '/application/assets';
+```SCSS
+// Include images from /application/assets/images and fonts from /application/assets/fonts
+$govuk-assets-path: '/application/assets';
 
-  @import "lbh-frontend/lbh/all";
-  ```
+@import "lbh-frontend/lbh/all";
+```
 
-  Example 2:
+Example 2:
 
-  ``` SCSS
-  // Include images from /images/govuk-frontend and fonts from /fonts
-  $govuk-images-path: "/images/lbh-frontend/";
-  $govuk-fonts-path: "/fonts/";
+```SCSS
+// Include images from /images/govuk-frontend and fonts from /fonts
+$govuk-images-path: "/images/lbh-frontend/";
+$govuk-fonts-path: "/fonts/";
 
-  @import "lbh-frontend/lbh/all";
-  ```
+@import "lbh-frontend/lbh/all";
+```
 
 2. Optional: You can also override the helpers used to generate the asset urls, for example if you are using sass-rails' asset-pipeline functionality. You can do this by setting `$govuk-image-url-function` to the name of the function(s) you wish to use. See `src/govuk/settings/_assets.scss` for more information and examples.
 

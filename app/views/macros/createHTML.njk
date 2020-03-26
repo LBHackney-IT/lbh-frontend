@@ -8,43 +8,45 @@
     {% set detailsHtml %}
       <form class="create-html__form" action="/components/{{componentSlug}}/html">
         {% for param in data.params %}
-          {% set label = {
-            html: param.name + ('<span class="create-html__required">*</span>' if param.required == true else '')
-          } %}
-          {% if param.required == true %}
-            {% set attributes = {
-              required: true
+          {% if param.name !== 'text' and param.name !== 'summaryText' and param.name !== 'titleText' and param.name !== 'descriptionText' %}
+            {% set label = {
+              html: param.name + ('<span class="create-html__required">*</span>' if param.required == true else '')
             } %}
-          {% else %}
-            {% set attributes = {} %}
-          {% endif %}
-          {% if  param.params %}
-            {{ createChildParamHTML(param, param.name) }}
-          {% else %}
-            {% if '.' in param.name %}
-              {% set name = param.name | replace(".", "[") + ']' %}
+            {% if param.required == true %}
+              {% set attributes = {
+                required: true
+              } %}
             {% else %}
-              {% set name = param.name %}
+              {% set attributes = {} %}
             {% endif %}
-            {% set hintHTML = param.description %}
-            {% if param.example and not param.params %}
-              {% set hintHTML = hintHTML + ' Example:' %}
-              {% set exampleString = (param.example | dump) %}
-              {% if (exampleString | first) == '"' and (exampleString | last) == '"' %}
-                {% set hintHTML = hintHTML + '<code class="code code--block">' + (param.example | e) + '</code>' %}
+            {% if  param.params %}
+              {{ createChildParamHTML(param, param.name, componentName) }}
+            {% else %}
+              {% if '.' in param.name %}
+                {% set name = param.name | replace(".", "[") + ']' %}
               {% else %}
-                {% set hintHTML = hintHTML + '<code class="code code--block">' + exampleString + '</code>' %}
+                {% set name = param.name %}
               {% endif %}
+              {% set hintHTML = param.description %}
+              {% if param.example and not param.params %}
+                {% set hintHTML = hintHTML + ' Example:' %}
+                {% set exampleString = (param.example | dump) %}
+                {% if (exampleString | first) == '"' and (exampleString | last) == '"' %}
+                  {% set hintHTML = hintHTML + '<code class="code code--block">' + (param.example | e) + '</code>' %}
+                {% else %}
+                  {% set hintHTML = hintHTML + '<code class="code code--block">' + exampleString + '</code>' %}
+                {% endif %}
+              {% endif %}
+              {{lbhInput({
+                id: param.name,
+                name: name,
+                attributes: attributes,
+                hint: {
+                  html: hintHTML
+                },
+                label: label
+              }) }}
             {% endif %}
-            {{lbhInput({
-              id: param.name,
-              name: name,
-              attributes: attributes,
-              hint: {
-                html: hintHTML
-              },
-              label: label
-            }) }}
           {% endif %}
         {% endfor %}
         {{lbhButton({text: "Generate HTML"})}}

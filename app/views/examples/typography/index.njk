@@ -4,9 +4,11 @@
 {% from 'lbh-table/macro.njk' import lbhTable %}
 
 {% block beforeContent %}
+  <div class="lbh-container">
   {{ lbhBackLink({
     "href": "/"
   }) }}
+  </div>
 {% endblock %}
 
 {% block content %}

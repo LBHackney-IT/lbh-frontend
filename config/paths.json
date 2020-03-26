@@ -1,10 +1,11 @@
 {
   "app": "app/",
-    "views": "app/views/",
-      "examples": "app/views/examples/",
-      "fullPageExamples": "app/views/full-page-examples/",
-      "partials": "app/views/partials/",
-      "layouts": "app/views/layouts/",
+  "views": "app/views/",
+  "examples": "app/views/examples/",
+  "fullPageExamples": "app/views/full-page-examples/",
+  "partials": "app/views/partials/",
+  "layouts": "app/views/layouts/",
+  "installationDocs": "docs/installation",
   "config": "config/",
   "dist": "dist/",
   "node_modules": "node_modules/",
@@ -12,7 +13,7 @@
   "public": "public/",
   "sassdoc": "sassdoc/",
   "src": "src/lbh/",
-    "components": "src/lbh/components/",
+  "components": "src/lbh/components/",
   "ports": {
     "app": 3000,
     "test": 8888

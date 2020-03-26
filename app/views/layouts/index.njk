@@ -19,6 +19,15 @@
     </div>
 
     <div class="govuk-grid-column-one-third">
+      <h2 class="lbh-heading-h2">Docs</h2>
+      <ul class="lbh-list">
+        <li><a href="/docs/readme" class="lbh-link">Start here</a></li>
+      {% for docName in docsDirectory | sort %}
+        {% set name = docName.slice(0, docName | length - 3) %}
+        <li><a href="/docs/installation/{{ docName }}{{ legacyQuery }}" class="lbh-link">{{ name | replace("-", " ") | capitalize }}</a></li>
+      {% endfor %}
+      </ul>
+
       <h2 class="lbh-heading-h2">Examples</h2>
 
       <ul class="lbh-list">

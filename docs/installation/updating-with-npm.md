@@ -15,7 +15,7 @@ If you do not have command line access, you can see the version number in the
 `package.json` file in the root of your project directory. For example:
 
 ```json
-'lbh-frontend': ‘2.11.0’
+'lbh-frontend': ‘1.9.4’
 ```
 
 ## Update LBH Frontend using npm
@@ -34,5 +34,5 @@ npm install lbh-frontend@latest
 If you want to install an earlier version, replace `latest` with the version that you want to update to. For example:
 
 ```shell
-npm install lbh-frontend@2.13.0
+npm install lbh-frontend@1.7.0
 ```

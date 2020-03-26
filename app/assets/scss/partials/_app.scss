@@ -136,3 +136,53 @@
 .create-html__label {
   display: block;
 }
+
+.docs {
+  p {
+    @include lbh-body-m;
+  }
+
+  a {
+    @include lbh-link;
+  }
+
+  ul,
+  ol {
+    @include lbh-list;
+  }
+
+  ul {
+    @include lbh-list--bullet;
+  }
+
+  ol {
+    @include lbh-list--number;
+  }
+
+  code {
+    background: lbh-colour("lbh-grey-4");
+    font-family: courier, monospace;
+  }
+
+  pre code {
+    @include lbh-rem(padding, 10);
+    display: block;
+  }
+
+  table {
+    @extend .govuk-table;
+    @extend .lbh-table;
+  }
+
+  th {
+    @extend .govuk-table__header;
+  }
+
+  tr {
+    @extend .govuk-table__row;
+  }
+
+  td {
+    @extend .govuk-table__cell;
+  }
+}

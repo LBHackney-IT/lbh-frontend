@@ -1,23 +1,23 @@
 params:
   - name: summaryText
     type: string
-    required: false
+    required: true
     description: If `summaryHtml` is set, this is not required. Text to use within the summary element (the visible part of the details element). If `summaryHtml` is provided, the `summaryText` argument will be ignored.
     example: Help with nationality
   - name: summaryHtml
     type: string
-    required: false
-    description: If `summaryText` is set, this is not required. HTML to use within the summary element (the visible part of the details element). If `summaryHtml` is provided, the `summaryText` argument will be ignored.
+    required: true
+    description: Text or HTML to use within the summary element (the visible part of the details element).
     example: Help with nationality
   - name: text
     type: string
-    required: false
+    required: true
     description: If `html` is set, this is not required. Text to use within the disclosed part of the details element. If `html` is provided, the `text` argument will be ignored.
     example: We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
   - name: html
     type: string
-    required: false
-    description: If `text` is set, this is not required. HTML to use within the disclosed part of the details element. If `html` is provided, the `text` argument will be ignored.
+    required: true
+    description: HTML to use within the disclosed part of the details element.
     example: |
       Your National Insurance number can be found on
       <ul>

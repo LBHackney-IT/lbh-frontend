@@ -37,17 +37,25 @@ Follow the below example to add the CSS and JavaScript files to your HTML templa
   <head>
     <title>Example</title>
     <!--[if !IE 8]><!-->
-      <link rel="stylesheet" href="stylesheets/lbh-frontend-[latest version].min.css">
+    <link
+      rel="stylesheet"
+      href="stylesheets/lbh-frontend-[latest version].min.css"
+    />
     <!--<![endif]-->
     <!--[if IE 8]>
-      <link rel="stylesheet" href="stylesheets/lbh-frontend-ie8-[latest-version].min.css">
+      <link
+        rel="stylesheet"
+        href="stylesheets/lbh-frontend-ie8-[latest-version].min.css"
+      />
     <![endif]-->
   </head>
   <body>
     <!-- Copy and paste component HTML-->
     <button class="lbh-button">This is a button component</button>
     <script src="javascript/lbh-frontend-[latest version].min.js"></script>
-    <script>window.LBHFrontend.initAll()</script>
+    <script>
+      window.LBHFrontend.initAll();
+    </script>
   </body>
 </html>
 ```

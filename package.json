@@ -74,6 +74,7 @@
     "request": "^2.88.0",
     "sass-color-helpers": "^2.1.1",
     "sassdoc": "^2.7.0",
+    "showdown": "^1.9.1",
     "shuffle-seed": "^1.1.6",
     "standard": "^13.1.0",
     "vinyl-named-with-path": "^1.0.0",
