@@ -82,6 +82,14 @@
   display: block;
 }
 
+.typography-code-example {
+  @include lbh-rem(margin-top, 5);
+  ul + &,
+  ol + & {
+    @include lbh-rem(margin-top, 15);
+  }
+}
+
 .create-html__form .code--block {
   @include lbh-rem(margin-top, 5);
 }
