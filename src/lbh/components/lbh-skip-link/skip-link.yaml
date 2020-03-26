@@ -1,14 +1,14 @@
 params:
   - name: text
     type: string
-    required: false
+    required: true
     description: If `html` is set, this is not required. Text to use within the skip link component. If `html` is provided, the `text` argument will be ignored.
     example: Skip to content
   - name: html
     type: string
-    required: false
-    description: If `text` is set, this is not required. HTML to use within the skip link component. If `html` is provided, the `text` argument will be ignored.
-    example: Skip to <span class="lbh-!-font-weight-medium">content</span>
+    required: true
+    description: Text or HTML to use within the skip link component.
+    example: Skip to content
   - name: href
     type: string
     required: true

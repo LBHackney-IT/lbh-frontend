@@ -1,13 +1,13 @@
 params:
   - name: text
     type: string
-    required: false
-    description: If `html` is set, this is not required. Text to use within the back link component. If `html` is provided, the `text` argument will be ignored.
+    required: true
+    description: If `html` is set, this is not required. Text to use within the inset text component. If `html` is provided, the `text` argument will be ignored.
     example: It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
   - name: html
     type: string
-    required: false
-    description: If `text` is set, this is not required. HTML to use within the back link component. If `html` is provided, the `text` argument will be ignored.
+    required: true
+    description: Text or HTML to use within the inset text component.
     example: |
       <p class="lbh-body-m">It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
       <div class="lbh-warning-text govuk-warning-text">

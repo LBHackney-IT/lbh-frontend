@@ -5,9 +5,11 @@
 {% from 'lbh-input/macro.njk' import lbhInput %}
 
 {% block beforeContent %}
+  <div class="lbh-container">
   {{ lbhBackLink({
     "href": "/"
   }) }}
+  </div>
 {% endblock %}
 
 {% block content %}

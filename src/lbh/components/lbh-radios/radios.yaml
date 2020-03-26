@@ -42,13 +42,13 @@ params:
     params:
       - name: text
         type: string
-        required: false
+        required: true
         description: If `html` is set, this is not required. Text to use within each radio item label. If `html` is provided, the `text` argument will be ignored.
         example: Bus
       - name: html
         type: string
-        required: false
-        description: If `text` is set, this is not required. HTML to use within each radio item label. If `html` is provided, the `text` argument will be ignored.
+        required: true
+        description: HTML to use within each radio item label.
         example: Train <span class="lbh-!-font-weight-medium">not including London Overground</span>
       - name: id
         type: string

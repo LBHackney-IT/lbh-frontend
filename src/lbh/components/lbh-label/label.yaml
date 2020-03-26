@@ -1,13 +1,13 @@
 params:
   - name: text
     type: string
-    required: false
+    required: true
     description: If `html` is set, this is not required. Text to use within the label. If `html` is provided, the `text` argument will be ignored.
     example: National Insurance number
   - name: html
     type: string
-    required: false
-    description: If `text` is set, this is not required. HTML to use within the label. If `html` is provided, the `text` argument will be ignored.
+    required: true
+    description: Text or HTML to use within the label.
     example: Address <span class="lbh-!-font-weight-medium">including postcode</span>
   - name: for
     type: string

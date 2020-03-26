@@ -2,7 +2,7 @@
 {% from "lbh-fieldset/macro.njk" import lbhFieldset %}
 {% from "lbh-button/macro.njk" import lbhButton %}
 
-{% macro createChildParamHTML(param, path) %}
+{% macro createChildParamHTML(param, path, componentName) %}
   {% call lbhFieldset({
     legend: {
       text: param.name | capitalize,
@@ -16,8 +16,8 @@
       {% endif %}
       {% for childParam in param.params %}
         {% if childParam.params %}
-          {{createChildParamHTML(childParam, path + '[0][' + childParam.name | replace(".", "][") + ']')}}
-        {% else %}
+          {{createChildParamHTML(childParam, path + '[0][' + childParam.name | replace(".", "][") + ']', componentName)}}
+        {% elseif (childParam.name !== 'text' or componentName == 'select') and childParam.name !== 'heading.text' and childParam.name !== 'summary.text' and childParam.name !== 'content.text' and childParam.name !== 'key.text' and childParam.name !== 'value.text' %}
           {% set name = childParam.name | replace(".", "][") %}
           {% set childLabel = {
             html: childParam.name + ('<span class="create-html__required">*</span>' if childParam.required == true else '')
