@@ -6,6 +6,12 @@
 
 ### Bugfixes
 
+## 1.9.5
+
+### Bugfixes
+
+- Get contact block working in dist files too
+
 ## 1.9.4
 
 ### Features
