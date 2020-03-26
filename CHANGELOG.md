@@ -4,6 +4,12 @@
 
 ### Features
 
+### Bugfixes
+
+## 2.0.0
+
+### Features
+
 - Display docs within app
   ([PR #109](https://github.com/LBHackney-IT/LBH-frontend/pull/109))
 
