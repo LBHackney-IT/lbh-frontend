@@ -4,6 +4,12 @@
 
 ### Features
 
+### Bugfixes
+
+## 1.9.4
+
+### Features
+
 - Add blank page template
   ([PR #106](https://github.com/LBHackney-IT/LBH-frontend/pull/106))
 
