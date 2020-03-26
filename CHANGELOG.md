@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### Features
+
+- Add blank page template
+  ([PR #106](https://github.com/LBHackney-IT/LBH-frontend/pull/106))
+
 ### Bugfixes
 
 - Fix broken leaflet
