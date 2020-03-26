@@ -1,5 +1,5 @@
 /* global L */
-L = L || {};
+window.L = window.L || {};
 
 if (L !== {}) {
   var map = L.map;
