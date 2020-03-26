@@ -14,15 +14,15 @@
                     {
                         "name": "text",
                         "type": "string",
-                        "required": false,
+                        "required": true,
                         "description": "If `html` is set, this is not required. Text for cells in table rows. If `html` is provided, the `text` argument will be ignored.",
                         "example": "Text of first cell"
                     },
                     {
                         "name": "html",
                         "type": "string",
-                        "required": false,
-                        "description": "If `text` is set, this is not required. HTML for cells in table rows. If `html` is provided, the `text` argument will be ignored.",
+                        "required": true,
+                        "description": "Text or HTML for cells in table rows.",
                         "example": "HTML of first cell with a <a href=\"/\" class=\"lbh-link\">link</a>"
                     },
                     {
@@ -75,15 +75,15 @@
             {
                 "name": "text",
                 "type": "string",
-                "required": false,
+                "required": true,
                 "description": "If `html` is set, this is not required. Text for table head cells. If `html` is provided, the `text` argument will be ignored.",
                 "example": "Column name text"
             },
             {
                 "name": "html",
                 "type": "string",
-                "required": false,
-                "description": "If `text` is set, this is not required. HTML for table head cells. If `html` is provided, the `text` argument will be ignored.",
+                "required": true,
+                "description": "Text or HTML for table head cells.",
                 "example": "Column name HTML with a <a href=\"/\" class=\"lbh-link\">link</a>"
             },
             {
