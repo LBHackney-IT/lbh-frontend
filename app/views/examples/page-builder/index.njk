@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% from "lbh-back-link/macro.njk" import lbhBackLink %}
+{% from 'lbh-checkboxes/macro.njk' import lbhCheckboxes %}
+{% from 'lbh-input/macro.njk' import lbhInput %}
+
+{% block beforeContent %}
+  {{ lbhBackLink({
+    "href": "/"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <h1 class="lbh-heading-h1">
+    Page builder
+  </h1>
+
+  <code class="code code--block">
+    &lt;!DOCTYPE html&gt;<br />
+    &lt;html lang="en" class="govuk-template lbh-template"&gt;<br />
+    &nbsp;&nbsp;&lt;head&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;!-- Page title goes here --&gt; | Hackney Council&lt;/title&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="theme-color" content="#0b0c0c"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Put your path to the LBHFrontend CSS File in the href attribute here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link href="" rel="stylesheet" type="text/css"&gt;<br />
+    &nbsp;&nbsp;&lt;/head&gt;<br />
+    &nbsp;&nbsp;&lt;body class="govuk-template__body"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');&lt;/script&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Skip link goes here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Cookie banner goes here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Header goes here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Phase banner goes here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Announcements go here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Breadcrumbs go here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;main class="lbh-main-wrapper " id="main-content" role="main"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="lbh-container"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Main content components go here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;<br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Put your path to the LBHFrontend JS File in the src attribute here --&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src=""&gt;&lt;/script&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;window.LBHFrontend.initAll()&lt;/script&gt;<br />
+    &nbsp;&nbsp;&lt;/body&gt;<br />
+    &lt;/html&gt;
+  </code>
+{% endblock %}

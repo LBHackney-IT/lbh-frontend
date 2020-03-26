@@ -153,7 +153,7 @@ module.exports = options => {
     });
   });
 
-  // Component 'README' page
+  // Component 'HTML' page generated from Component page CreateHTML form
   app.get("/components/:component/html", function(req, res, next) {
     // make variables available to nunjucks template
     res.locals.componentPath = req.params.component;
