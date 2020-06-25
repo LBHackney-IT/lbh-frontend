@@ -1,9 +1,12 @@
 // sass-lint:disable no-url-protocols no-url-domains
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+// remove 200 , 500 becomes 600
+
 // sass-lint:enable no-url-protocols no-url-domains
-$govuk-font-family: "Montserrat";
+$govuk-font-family: "Open Sans";
 $govuk-include-default-font-face: false;
-$lbh-font-family: "Montserrat";
+$lbh-font-family: "Open Sans";
 @import "settings/all";
 @import "tools/all";
 @import "helpers/all";
