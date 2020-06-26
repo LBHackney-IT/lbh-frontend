@@ -6,7 +6,10 @@
 
 ### Bugfixes
 
-### Unreleased
+
+## 3.0.0
+
+### Breaking changes
 
 - Replaced the Montserrat font with Open Sans and adjusted the font weights as follows - 200 (extra-light) removed, 500 replaced with 600 (medium)
 - Removed the 'lbh-!-font-weight-extra-light' typography override class
