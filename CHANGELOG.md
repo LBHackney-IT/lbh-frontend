@@ -6,6 +6,12 @@
 
 ### Bugfixes
 
+### Unreleased
+
+- Replaced the Montserrat font with Open Sans and adjusted the font weights as follows - 200 (extra-light) removed, 500 replaced with 600 (medium)
+- Removed the 'lbh-!-font-weight-extra-light' typography override class
+  ([PR #109](https://github.com/LBHackney-IT/LBH-frontend/pull/112))
+
 ## 2.0.0
 
 ### Features
