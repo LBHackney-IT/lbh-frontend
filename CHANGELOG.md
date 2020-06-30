@@ -13,6 +13,7 @@
 ### Bugfixes
 
 - Fix multiple duplicated spacing
+  ([PR #114](https://github.com/LBHackney-IT/LBH-frontend/pull/114)))
 
 ## 2.0.0
 
