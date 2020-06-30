@@ -6,6 +6,14 @@
 
 ### Bugfixes
 
+## 2.0.1
+
+### Features
+
+### Bugfixes
+
+- Fix multiple duplicated spacing
+
 ## 2.0.0
 
 ### Features
