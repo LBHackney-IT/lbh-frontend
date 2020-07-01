@@ -103,7 +103,7 @@
 @mixin lbh-heading-large-light {
   @include lbh-heading;
   @include lbh-rem(font-size, 24);
-  font-weight: $lbh-font-weight-extra-light;
+  font-weight: $lbh-font-weight-light;
   @include lbh-rem(line-height, 29);
 
   @include govuk-media-query($from: tablet) {

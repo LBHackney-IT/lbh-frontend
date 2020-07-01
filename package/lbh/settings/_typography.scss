@@ -11,7 +11,7 @@
 /// @type List
 /// @access public
 
-$lbh-font-family: "Montserrat", sans-serif !default;
+$lbh-font-family: "Open Sans", sans-serif !default;
 
 
 /// Font families to use for print media
@@ -41,16 +41,10 @@ $lbh-font-weight-bold: 700 !default;
 ///
 /// @type Number
 /// @access public
-$lbh-font-weight-medium: 500 !default;
+$lbh-font-weight-medium: 600 !default;
 
 /// Font weight for light typography
 ///
 /// @type Number
 /// @access public
 $lbh-font-weight-light: 300 !default;
-
-/// Font weight for extra light typography
-///
-/// @type Number
-/// @access public
-$lbh-font-weight-extra-light: 200 !default;
