@@ -27,12 +27,12 @@ const postcsspseudoclasses = require('postcss-pseudo-classes')({
 // --------------------------------------
 
 // check if destination flag is dist
-const isDist = taskArguments.destination === 'dist' || false
+const isDist = taskArguments.destination === 'dist' || taskArguments.destination === 'package/umd' || false
 
 // Set the destination
 const destinationPath = function () {
   // Public & Dist directories do no need namespaced with `lbh`
-  if (taskArguments.destination === 'dist' || taskArguments.destination === 'public') {
+  if (taskArguments.destination === 'dist' || taskArguments.destination === 'package/umd'|| taskArguments.destination === 'public') {
     return taskArguments.destination
   } else {
     return `${taskArguments.destination}/lbh/`

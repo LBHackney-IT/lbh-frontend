@@ -6,6 +6,11 @@
 
 ### Bugfixes
 
+## 3.1.0
+
+### Features
+
+- Added umd version of the code to the npm package
 
 ## 3.0.0
 
@@ -13,7 +18,7 @@
 
 - Replaced the Montserrat font with Open Sans and adjusted the font weights as follows - 200 (extra-light) removed, 500 replaced with 600 (medium)
 - Removed the 'lbh-!-font-weight-extra-light' typography override class
-  ([PR #109](htt
+  ([PR #113](https://github.com/LBHackney-IT/LBH-frontend/pull/113)))
 
 ## 2.0.1
 

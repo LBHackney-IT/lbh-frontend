@@ -90,6 +90,12 @@ gulp.task('build:dist', gulp.series(
   'copy-assets',
   'copy:assets',
   'update-assets-version'
+
+))
+gulp.task('build:umd', gulp.series(
+  'clean',
+  'copy-assets',
+  'copy:assets'
 ))
 
 // Default task -------------------------

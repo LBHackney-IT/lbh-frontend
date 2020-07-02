@@ -36,6 +36,8 @@ cd ../
 
 npm run build:package
 
+npm run build:umd
+
 npm run build:dist
 
 git add dist
