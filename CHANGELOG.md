@@ -11,6 +11,7 @@
 ### Features
 
 - Added umd version of the code to the npm package
+  ([PR #115])(https://github.com/LBHackney-IT/LBH-frontend/pull/115)
 
 ## 3.0.0
 
