@@ -7,6 +7,10 @@
 ### Bugfixes
 
 
+
+## 3.0.1
+- Fix 400 response with importing OpenSans
+
 ## 3.0.0
 
 ### Breaking changes

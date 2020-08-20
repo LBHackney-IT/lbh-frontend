@@ -117,4 +117,4 @@ Open Government 3.0 licence.
 ## Contribution guidelines
 
 If you want to help us build LBH Frontend, view our [contribution
-guidelines](CONTRIBUTING.md).
+guidelines](https://github.com/LBHackney-IT/LBH-frontend/blob/master/docs/contributing/publishing.md).
