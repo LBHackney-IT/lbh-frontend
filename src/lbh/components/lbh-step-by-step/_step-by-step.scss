@@ -1,0 +1,122 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+@import "../../objects/all";
+
+.container {
+  clear: both;
+  overflow: hidden;
+
+  > * {
+    box-sizing: border-box;
+  }
+}
+
+.container .list {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  list-style-type: none;
+
+  & > li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+
+    &:after {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      height: 100%;
+      margin-left: 16px;
+      border: solid 2px lbh-colour("lbh-border");
+    }
+
+    &:last-child:before {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 8px;
+      width: 20px;
+      border-bottom: 3px solid lbh-colour("lbh-border");
+    }
+  }
+}
+
+.show-all {
+  margin: 3px;
+  padding: .5rem 0;
+  float: right;
+  clear: both;
+  border: 0;
+  color: $lbh-link-colour;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  width: 100%;
+  padding-top: 30px;
+  border-top: solid 2px lbh-colour("lbh-border");
+
+  & > button {
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+
+    &:hover {
+      color: lbh-colour("lbh-link-hover");
+    }
+  }
+}
+
+.step {
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  height: 35px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+
+.step-num {
+  width: 35px;
+  border: solid 3px lbh-colour("lbh-border");
+  border-radius: 50%;
+}
+
+.titles {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.63;
+}
+
+.command {
+  display: block;
+  margin-top: 0;
+  padding: 0;
+  color: $lbh-link-colour;
+  font-size: 14px;
+
+  button:hover & {
+    text-decoration: underline;
+  }
+}
+
+.content {
+  display: none;
+}
+
+.content-visible {
+  display: block;
+}

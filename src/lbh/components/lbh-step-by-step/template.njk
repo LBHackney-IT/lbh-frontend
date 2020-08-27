@@ -1,0 +1,18 @@
+<div class="container" data-module="lbh-step-by-step">
+  <ul class="list">
+    {% for item in params.items %}
+      <li data-target="section" class="section section__expanded">
+        <div data-target="header" class="header">
+          <button data-target="button" data-controls="step-{{item.text or loop.index}}" aria-expanded="true" aria-controls="step-{{item.text or loop.index}}">
+            <span class="step {% if not item.text %} step-num {% endif %}">{{item.text or loop.index}}</span>
+            <span class="titles">{{item.title}}</span>
+            <span data-target="show" class="content command" aria-hidden="false">Hide</span>
+          </button>
+        </div>
+        <div data-target="content" id="step-{{item.text or loop.index}}" class="content content-visible">
+          {{item.body|safe}}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

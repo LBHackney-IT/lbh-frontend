@@ -9,6 +9,7 @@ import Details from './components/lbh-details/details'
 import ErrorSummary from './components/lbh-error-summary/error-summary'
 import Map from './components/lbh-contact-block/contact-block'
 import Radios from './components/lbh-radios/radios'
+import StepByStep from './components/lbh-step-by-step/step-by-step'
 import Tabs from './components/lbh-tabs/tabs'
 
 function nodeListForEach (nodes, callback) {
@@ -44,6 +45,11 @@ function initAll (options) {
   if ($backToTop) {
     new BackToTop($backToTop).init()
   }
+
+  var $stepByStep = scope.querySelector('[data-module="lbh-step-by-step"]')
+  if ($stepByStep) {
+    new StepByStep($stepByStep).init()
+  }
 }
 
 export {
@@ -58,5 +64,6 @@ export {
   ErrorSummary,
   Map,
   Radios,
+  StepByStep,
   Tabs
 }
