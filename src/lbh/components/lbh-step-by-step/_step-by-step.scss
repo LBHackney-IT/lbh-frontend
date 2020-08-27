@@ -6,10 +6,6 @@
 .container {
   clear: both;
   overflow: hidden;
-
-  > * {
-    box-sizing: border-box;
-  }
 }
 
 .container .list {
