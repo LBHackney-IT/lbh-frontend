@@ -1,0 +1,40 @@
+params:
+  - name: items
+    type: array
+    required: true
+    description: An array of sections within the step by step.
+    params:
+      - name: title
+        type: string
+        required: true
+        description: Step by Step title.
+        example: This is step by step
+      - name: text
+        type: string
+        required: true
+        description: Text to replace number.
+        example: and
+      - name: body
+        type: html
+        required: true
+        description: step by step content.
+        example: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <a href="#">Nemo enim</a> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+examples:
+  - name: default
+    data:
+      items:
+        - title: Step 1
+          body: <ul class="lbh-list lbh-list--bullet"> <li>Example item 1</li> </ul>
+        - title: Step 2
+          body: <ul class="lbh-list lbh-list--bullet"> <li>Example item 2</li> </ul>
+  - name: with text step
+    data:
+      items:
+        - title: Step 1
+          body: <ul class="lbh-list lbh-list--bullet"> <li>Example item 1</li> </ul>
+        - title: Step 2
+          text: and
+          body: <ul class="lbh-list lbh-list--bullet"> <li>Example item 2</li> </ul>
+        - title: Step 3
+          body: <ul class="lbh-list lbh-list--bullet"> <li>Example item 3</li> </ul>
