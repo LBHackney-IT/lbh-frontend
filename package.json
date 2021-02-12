@@ -7,8 +7,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "preinstall": "node bin/check-node-version.js",
-    "prestart": "node bin/check-node-version.js",
     "start": "gulp dev",
     "heroku": "gulp copy-assets && gulp sassdoc && node app/start.js",
     "pre-release": "node bin/check-node-version.js && ./bin/pre-release.sh",
@@ -20,7 +18,14 @@
     "test:dependencies": "npm ls --depth=0",
     "test:build:package": "jest tasks/gulp/__tests__/after-build-package.test.js",
     "test:build:dist": "jest tasks/gulp/__tests__/after-build-dist.test.js",
-    "backstop": "backstop"
+    "backstop": "backstop",
+    "docusaurus": "docusaurus",
+    "dev": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
   },
   "devDependencies": {
     "acorn": "^6.1.1",
@@ -80,7 +85,13 @@
     "vinyl-named-with-path": "^1.0.0",
     "vinyl-paths": "^2.1.0",
     "webpack-stream": "^5.2.1",
-    "yargs": "^13.2.2"
+    "yargs": "^13.2.2",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@mdx-js/react": "^1.6.21",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "optionalDependencies": {
     "fsevents": "*"
