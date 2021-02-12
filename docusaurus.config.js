@@ -1,7 +1,7 @@
 module.exports = {
   title: "LBH Frontend",
   tagline: "The design system and frontend playbook for Hackney Council",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://design-system.hackney.gov.uk",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -52,15 +52,13 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          // path: "src/lbh",
+          path: "/src/lbh",
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/docs.css"),
         },
       },
     ],
