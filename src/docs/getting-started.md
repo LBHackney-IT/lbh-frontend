@@ -3,7 +3,21 @@ title: Getting started
 slug: /
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+Hackney Frontend contains everything you need to start building user interfaces for Hackney platforms and services.
+
+It's heavily based off [GOV.UK Frontend](https://frontend.design-system.service.gov.uk) and the [GOV.UK Design System](https://design-system.service.gov.uk).
+
+## Quick start
+
+There are three ways to start using Hackney Frontend in your app.
+
+### Install with NPM (recommended)
+
+### Install pre-compiled files
+
+### Use the Hackney prototyping kit
+
+<!-- You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
 ## Markdown Syntax
 
@@ -88,7 +102,7 @@ Reference-style: ![alt text][logo]
 
 Images from any folder can be used by providing path to file. Path should be relative to markdown file.
 
-![img](../../static/img/logo.svg)
+![img](../static/img/logo.svg)
 
 ---
 
@@ -198,4 +212,4 @@ This is a caution
 
 This is a warning
 
-:::
+::: -->

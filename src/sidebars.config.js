@@ -1,9 +1,14 @@
 module.exports = {
   someSidebar: {
-    GetStarted: ["docs/contributing"],
+    "Get started": [
+      "docs/getting-started",
+      "docs/using-it-in-prototypes",
+      "docs/using-it-in-production",
+      "docs/browser-support",
+      "docs/contributing",
+    ],
     Components: [
-      // "contributing",
-      // "src/lbh/components/lbh-accordion/README",
+      "lbh/components/lbh-accordion/README",
       // "lbh/components/lbh-announcement/README",
       // "lbh/components/lbh-back-link/README",
       // "lbh/components/lbh-back-to-top/README",
