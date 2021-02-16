@@ -3,7 +3,7 @@ module.exports = {
   tagline: "The design system and frontend playbook for Hackney Council",
   url: "https://design-system.hackney.gov.uk",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "src/static/img/favicon.svg",
   organizationName: "lbhackney-it", // Usually your GitHub org/user name.
@@ -47,9 +47,8 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          path: "src",
           routeBasePath: "/",
-          sidebarPath: require.resolve("./src/sidebars.config.js"),
+          sidebarPath: require.resolve("./sidebars.config.js"),
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {

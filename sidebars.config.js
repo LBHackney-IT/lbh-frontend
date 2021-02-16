@@ -1,11 +1,11 @@
 module.exports = {
   someSidebar: {
     "Get started": [
-      "docs/getting-started",
-      "docs/using-it-in-prototypes",
-      "docs/using-it-in-production",
-      "docs/browser-support",
-      "docs/contributing",
+      "getting-started",
+      "using-it-in-prototypes",
+      "using-it-in-production",
+      "browser-support",
+      "contributing",
     ],
     Components: [
       "lbh/components/lbh-accordion/README",
