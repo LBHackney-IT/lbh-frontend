@@ -3,9 +3,9 @@ module.exports = {
   tagline: "The design system and frontend playbook for Hackney Council",
   url: "https://design-system.hackney.gov.uk",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.svg",
+  favicon: "src/static/img/favicon.svg",
   organizationName: "lbhackney-it", // Usually your GitHub org/user name.
   projectName: "lbh-frontend", // Usually your repo name.
   themeConfig: {
@@ -13,26 +13,21 @@ module.exports = {
       title: "Frontend",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo-long.svg",
+        src: "src/static/img/logo-long.svg",
       },
       items: [
         {
           to: "/",
           activeBasePath: "docs",
           label: "Get started",
-          position: "left",
         },
         {
-          to: "/",
-          activeBasePath: "docs",
+          to: "/lbh/components/lbh-accordion/README",
           label: "Components",
-          position: "left",
         },
         {
-          to: "/",
-          activeBasePath: "docs",
+          to: "/docs/contributing",
           label: "Contributing",
-          position: "left",
         },
         {
           href: "https://github.com/LBHackney-IT/lbh-frontend",
@@ -52,9 +47,8 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          path: "/src/lbh",
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve("./sidebars.config.js"),
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
