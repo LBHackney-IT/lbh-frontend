@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://design-system.hackney.gov.uk/blog</id>
+    <title>LBH Frontend Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://design-system.hackney.gov.uk/blog"/>
+    <subtitle>LBH Frontend Blog</subtitle>
+    <icon>https://design-system.hackney.gov.uk/src/static/img/favicon.svg</icon>
+</feed>
