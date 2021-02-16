@@ -2,10 +2,12 @@ module.exports = {
   someSidebar: {
     "Get started": [
       "getting-started",
-      "using-it-in-prototypes",
-      "using-it-in-production",
+      "installing-from-npm",
+      "updating-with-npm",
+      "installing-from-dist",
       "browser-support",
-      "contributing",
+      "supporting-ie8",
+      "generating-components",
     ],
     Components: [
       "lbh/components/lbh-accordion/README",

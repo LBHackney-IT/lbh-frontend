@@ -2,10 +2,10 @@ module.exports = {
   title: "LBH Frontend",
   tagline: "The design system and frontend playbook for Hackney Council",
   url: "https://design-system.hackney.gov.uk",
-  baseUrl: "/",
+  baseUrl: "/LBH-frontend/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "src/static/img/favicon.svg",
+  favicon: "img/favicon.svg",
   organizationName: "lbhackney-it", // Usually your GitHub org/user name.
   projectName: "lbh-frontend", // Usually your repo name.
   themeConfig: {
@@ -13,7 +13,7 @@ module.exports = {
       title: "Frontend",
       logo: {
         alt: "My Site Logo",
-        src: "src/static/img/logo-long.svg",
+        src: "img/logo-long.svg",
       },
       items: [
         {
