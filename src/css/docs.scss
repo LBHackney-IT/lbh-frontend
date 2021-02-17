@@ -20,6 +20,21 @@
   --ifm-font-family-base: "Open Sans", sans-serif;
 }
 
+html[data-theme="dark"]{
+  --ifm-color-primary: #a4d65e;
+  --ifm-color-primary-dark: #96d045;
+  --ifm-color-primary-darker: #8fcd39;
+  --ifm-color-primary-darkest: #76ac2c;
+  --ifm-color-primary-light: #b2dc77;
+  --ifm-color-primary-lighter: #b9df83;
+  --ifm-color-primary-lightest: #cee9a8;
+}
+
+html[data-theme="dark"] .navbar__logo {
+  filter: grayscale(1) brightness(20);
+}
+
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -28,11 +43,6 @@
 }
 
 // don't reset styles on our page
-$lbh-skip-reset: false;
+$lbh-safely-embed: true;
 
 @import "../../docs/lbh/all";
-
-// override errant global styles
-* + * {
-  margin-top: 0;
-}

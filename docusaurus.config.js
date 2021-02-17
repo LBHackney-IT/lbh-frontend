@@ -1,5 +1,5 @@
 module.exports = {
-  title: "LBH Frontend",
+  title: "Hackney Design System",
   tagline: "The design system and frontend playbook for Hackney Council",
   url: "https://design-system.hackney.gov.uk",
   baseUrl: "/LBH-frontend/",
@@ -10,25 +10,21 @@ module.exports = {
   projectName: "lbh-frontend", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Frontend",
+      title: "Design System",
       logo: {
         alt: "My Site Logo",
         src: "img/logo-long.svg",
       },
       items: [
-        {
-          to: "/",
-          activeBasePath: "docs",
-          label: "Get started",
-        },
-        {
-          to: "/lbh/components/lbh-accordion/README",
-          label: "Components",
-        },
-        {
-          to: "/docs/contributing",
-          label: "Contributing",
-        },
+        // {
+        //   to: "/",
+        //   activeBasePath: "docs",
+        //   label: "Get started",
+        // },
+        // {
+        //   to: "/docs/contributing",
+        //   label: "Contributing",
+        // },
         {
           href: "https://github.com/LBHackney-IT/lbh-frontend",
           label: "GitHub",

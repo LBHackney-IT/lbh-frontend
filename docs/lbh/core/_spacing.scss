@@ -2,8 +2,11 @@
   margin: 0;
 }
 
-* + * {
-  margin-top: 1.5em;
+
+@if $lbh-safely-embed {} @else {
+  * + * {
+    margin-top: 1.5em;
+  }
 }
 
 @include govuk-media-query($from: tablet) {
