@@ -52,9 +52,10 @@ module.exports = {
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
-          customCss: require.resolve("./src/css/docs.css"),
+          customCss: require.resolve("./src/css/docs.scss"),
         },
       },
     ],
   ],
+  plugins: ["docusaurus-plugin-sass"],
 };

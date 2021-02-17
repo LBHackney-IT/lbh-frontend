@@ -42,5 +42,6 @@ module.exports = {
       // "lbh/components/lbh-textarea/README",
       // "lbh/components/lbh-warning-text/README",
     ],
+    Contributing: ["example-doc"],
   },
 };
