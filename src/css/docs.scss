@@ -27,5 +27,12 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-// $lbh-global-styles: false;
-// @import "../../docs/lbh/all.scss";
+// don't reset styles on our page
+$lbh-skip-reset: false;
+
+@import "../../docs/lbh/all";
+
+// override errant global styles
+* + * {
+  margin-top: 0;
+}
