@@ -10,7 +10,7 @@ module.exports = {
       "generating-components",
     ],
     Components: [
-      "lbh/components/lbh-accordion/README",
+      // "lbh/components/lbh-accordion/README",
       // "lbh/components/lbh-announcement/README",
       // "lbh/components/lbh-back-link/README",
       // "lbh/components/lbh-back-to-top/README",
@@ -27,7 +27,7 @@ module.exports = {
       // "lbh/components/lbh-fieldset/README",
       // "lbh/components/lbh-header/README",
       // "lbh/components/lbh-hint/README",
-      // "lbh/components/lbh-input/README",
+      "lbh/components/lbh-input/README",
       // "lbh/components/lbh-inset-text/README",
       // "lbh/components/lbh-label/README",
       // "lbh/components/lbh-page-announcement/README",

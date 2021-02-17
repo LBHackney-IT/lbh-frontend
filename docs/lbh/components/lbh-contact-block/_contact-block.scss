@@ -9,7 +9,7 @@
     border-top: 4px solid lbh-colour("lbh-a01");
     flex-direction: column;
 
-    @include govuk-media-query ($from: desktop) {
+    @include govuk-media-query($from: desktop) {
       display: block;
       overflow: hidden;
     }
@@ -18,7 +18,7 @@
       @include lbh-rem(margin-top, 18);
       order: 1;
 
-      @include govuk-media-query ($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         @include lbh-rem(margin-top, 36);
         @include lbh-rem(margin-right, 36);
         float: left;
@@ -31,7 +31,7 @@
       order: 3;
       align-items: center;
 
-      @include govuk-media-query ($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         @include lbh-rem(margin, 45, 0);
         float: right;
       }
@@ -71,7 +71,7 @@
     &__details {
       order: 2;
 
-      @include govuk-media-query ($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         box-sizing: border-box;
         width: 33.333%;
         @include lbh-rem(padding-right, 18);
@@ -108,25 +108,25 @@
       transform: translateY(-50%);
     }
 
-    &__block-title--address:before {
-      background: url("../../assets/images/contact/address.svg");
-    }
+    // &__block-title--address:before {
+    //   background: url("../../assets/images/contact/address.svg");
+    // }
 
-    &__block-title--email:before {
-      background: url("../../assets/images/contact/email.svg");
-    }
+    // &__block-title--email:before {
+    //   background: url("../../assets/images/contact/email.svg");
+    // }
 
-    &__block-title--telephone:before {
-      background: url("../../assets/images/contact/telephone.svg");
-    }
+    // &__block-title--telephone:before {
+    //   background: url("../../assets/images/contact/telephone.svg");
+    // }
 
-    &__block-title--notes:before {
-      background: url("../../assets/images/contact/notes.svg");
-    }
+    // &__block-title--notes:before {
+    //   background: url("../../assets/images/contact/notes.svg");
+    // }
 
-    &__block-title--opening-times:before {
-      background: url("../../assets/images/contact/opening-times.svg");
-    }
+    // &__block-title--opening-times:before {
+    //   background: url("../../assets/images/contact/opening-times.svg");
+    // }
 
     &__list {
       margin: 0;
@@ -177,7 +177,7 @@
       height: 400px;
       order: 4;
 
-      @include govuk-media-query ($from: desktop) {
+      @include govuk-media-query($from: desktop) {
         box-sizing: border-box;
         width: 66.666%;
         @include lbh-rem(padding-left, 18);
