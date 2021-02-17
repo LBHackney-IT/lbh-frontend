@@ -1,11 +1,12 @@
 module.exports = {
   title: "Hackney Design System",
-  tagline: "The design system and frontend playbook for Hackney Council",
+  tagline:
+    "The Hackney Design System contains everything you need to start building user interfaces for Hackney platforms and services.",
   url: "https://design-system.hackney.gov.uk",
   baseUrl: "/LBH-frontend/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.svg",
+  favicon: "img/favicon.png",
   organizationName: "lbhackney-it", // Usually your GitHub org/user name.
   projectName: "lbh-frontend", // Usually your repo name.
   themeConfig: {
@@ -16,15 +17,6 @@ module.exports = {
         src: "img/logo-long.svg",
       },
       items: [
-        // {
-        //   to: "/",
-        //   activeBasePath: "docs",
-        //   label: "Get started",
-        // },
-        // {
-        //   to: "/docs/contributing",
-        //   label: "Contributing",
-        // },
         {
           href: "https://github.com/LBHackney-IT/lbh-frontend",
           label: "GitHub",
@@ -48,10 +40,7 @@ module.exports = {
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
-          customCss: [
-            // require.resolve("./docs/lbh/all.scss"),
-            require.resolve("./src/css/docs.scss"),
-          ],
+          customCss: [require.resolve("./src/css/docs.scss")],
         },
       },
     ],

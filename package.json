@@ -7,17 +7,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "heroku": "gulp copy-assets && gulp sassdoc && node app/start.js",
     "pre-release": "node bin/check-node-version.js && ./bin/pre-release.sh",
     "release": "node bin/check-node-version.js && ./bin/release.sh",
     "release-to-branch": "node bin/check-node-version.js && ./bin/release-to-branch.sh",
     "build:package": "node bin/check-node-version.js && gulp build:package --destination 'package' && npm run test:build:package",
     "build:dist": "node bin/check-node-version.js && gulp build:dist --destination 'dist' && npm run test:build:dist",
     "backstop": "backstop",
-    "docusaurus": "docusaurus",
     "dev": "docusaurus start",
     "build:docs": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear"

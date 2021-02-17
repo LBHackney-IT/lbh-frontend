@@ -1,11 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Getting started": [
-      {
-        type: "doc",
-        id: "getting-started",
-      },
-    ],
+    Intoduction: ["introduction/what-is", "introduction/how-it-works"],
     Designing: ["designing/design-kits"],
     Developing: [
       "developing/installing-from-npm",
@@ -60,6 +55,7 @@ module.exports = {
       },
     ],
     Patterns: ["patterns/how-to-ask-for"],
+    Tutorials: ["tutorials/react", "tutorials/nunjucks", "tutorials/prototype"],
     Contributing: ["contributing/how-to-contribute"],
   },
 };
