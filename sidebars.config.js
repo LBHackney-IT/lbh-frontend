@@ -59,7 +59,13 @@ module.exports = {
         items: ["lbh/components/lbh-input/README"],
       },
     ],
-    Patterns: ["patterns/how-to-ask-for"],
+    Patterns: [
+      {
+        type: "category",
+        label: "Help staff to",
+        items: ["lbh/patterns/manage-a-caseload", "lbh/patterns/find-a-client"],
+      },
+    ],
     Tutorials: ["tutorials/react", "tutorials/nunjucks", "tutorials/prototype"],
     Contributing: ["contributing/how-to-contribute"],
   },
