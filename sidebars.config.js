@@ -63,7 +63,7 @@ module.exports = {
       {
         type: "category",
         label: "Help staff to",
-        items: ["lbh/patterns/manage-a-caseload", "lbh/patterns/find-a-client"],
+        items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
       },
     ],
     Tutorials: ["tutorials/react", "tutorials/nunjucks", "tutorials/prototype"],
