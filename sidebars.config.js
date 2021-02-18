@@ -9,6 +9,11 @@ module.exports = {
       "developing/browser-support",
       "developing/supporting-ie8",
       "developing/generating-components",
+      {
+        type: "link",
+        label: "Sass configuration",
+        href: "pathname:///sassdoc/index.html",
+      },
     ],
     Components: [
       {
