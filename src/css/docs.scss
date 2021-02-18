@@ -16,7 +16,6 @@
   --ifm-color-primary-lightest: #008567;
 
   --ifm-code-font-size: 95%;
-
   --ifm-font-family-base: "Open Sans", sans-serif;
 }
 
@@ -30,10 +29,15 @@ html[data-theme="dark"]{
   --ifm-color-primary-lightest: #cee9a8;
 }
 
+// keep logo contrasty in dark mode
 html[data-theme="dark"] .navbar__logo {
   filter: grayscale(1) brightness(20);
 }
 
+// use a hackney theme colour for the footer
+.footer--dark{
+  --ifm-footer-background-color: #0B0C0C;
+}
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);

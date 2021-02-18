@@ -1,6 +1,5 @@
 ---
 title: What is Hackney Design System?
-slug: /
 ---
 
 The Hackney Design System contains everything you need to start building user interfaces for Hackney platforms and services.
