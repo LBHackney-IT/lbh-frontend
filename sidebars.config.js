@@ -62,7 +62,7 @@ module.exports = {
     Patterns: [
       {
         type: "category",
-        label: "Help staff to",
+        label: "Help staff to...",
         items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
       },
     ],
