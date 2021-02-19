@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "version": "0.0.0-development",
   "name": "lbh-frontend-repository",
   "description": "Taken from the GDS UK Frontend and used for the development of Hackney Council Frontend only, see `package/package.json` for the published `package.json`",
   "engines": {
@@ -7,15 +7,16 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:sass": "sass docs/lbh/all.scss dist/lbh-frontend.min.css --load-path=./",
-    "build:js": "parcel build docs/lbh/all.js --out-dir dist --global LBHFrontend",
+    "build:sass": "sass lbh/all.scss dist/lbh-frontend.min.css --load-path=./",
+    "build:js": "parcel build lbh/all.js --out-dir dist --global LBHFrontend",
+    "build:sassdoc": "sassdoc lbh --dest static/sassdoc",
     "build:docs": "docusaurus build",
-    "build:sassdoc": "sassdoc docs/lbh --dest static/sassdoc",
     "dev": "docusaurus start",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:*",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
@@ -27,7 +28,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "sassdoc": "^2.7.0",
-    "standard": "^13.1.0"
+    "standard": "^13.1.0",
+    "semantic-release": "^17.3.9"
   },
   "optionalDependencies": {
     "fsevents": "*"
@@ -62,5 +64,9 @@
     "sass": "^1.32.8",
     "underscore": "^1.9.1"
   },
-  "sasslintConfig": "config/.sass-lint.yml"
+  "sasslintConfig": "config/.sass-lint.yml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
+  }
 }
