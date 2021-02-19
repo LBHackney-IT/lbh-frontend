@@ -7,18 +7,15 @@
   },
   "license": "MIT",
   "scripts": {
-    "pre-release": "node bin/check-node-version.js && ./bin/pre-release.sh",
-    "release": "node bin/check-node-version.js && ./bin/release.sh",
-    "release-to-branch": "node bin/check-node-version.js && ./bin/release-to-branch.sh",
-    "build:package": "node bin/check-node-version.js && gulp build:package --destination 'package' && npm run test:build:package",
-    "build:dist": "node bin/check-node-version.js && gulp build:dist --destination 'dist' && npm run test:build:dist",
-    "backstop": "backstop",
-    "dev": "docusaurus start",
+    "build:sass": "sass docs/lbh/all.scss dist/lbh-frontend.min.css --load-path=./",
+    "build:js": "parcel build docs/lbh/all.js --out-dir dist --global LBHFrontend",
     "build:docs": "docusaurus build",
+    "build:sassdoc": "sassdoc docs/lbh --dest static/sassdoc",
+    "dev": "docusaurus start",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "build:sassdoc": "sassdoc docs/lbh --dest static/sassdoc"
+    "build": "npm-run-all build:*"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
@@ -26,6 +23,7 @@
     "@mdx-js/react": "^1.6.21",
     "docusaurus-image-loader": "^1.0.1",
     "docusaurus-plugin-sass": "^0.1.11",
+    "parcel-bundler": "^1.12.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "sassdoc": "^2.7.0",
@@ -61,6 +59,7 @@
     "govuk-frontend": "^3.5.0",
     "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.0",
+    "sass": "^1.32.8",
     "underscore": "^1.9.1"
   },
   "sasslintConfig": "config/.sass-lint.yml"
