@@ -19,12 +19,26 @@ module.exports = {
       {
         type: "category",
         label: "For residents",
-        items: ["components/input", "components/announcement"],
+        items: [
+          "components/input",
+          "components/announcement",
+          "components/back-link",
+          "components/back-to-top",
+          "components/breadcrumbs",
+          "components/button",
+        ],
       },
       {
         type: "category",
         label: "For staff",
-        items: ["components/input", "components/announcement"],
+        items: [
+          "components/input",
+          "components/announcement",
+          "components/back-link",
+          "components/back-to-top",
+          "components/breadcrumbs",
+          "components/button",
+        ],
       },
     ],
     Patterns: [
