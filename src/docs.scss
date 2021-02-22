@@ -20,7 +20,7 @@
   --ifm-font-family-base: "Open Sans", sans-serif;
 }
 
-html[data-theme="dark"]{
+html[data-theme="dark"] {
   --ifm-color-primary: #a4d65e;
   --ifm-color-primary-dark: #96d045;
   --ifm-color-primary-darker: #8fcd39;
@@ -34,7 +34,6 @@ html[data-theme="dark"] .navbar__logo {
   filter: grayscale(1) brightness(20);
 }
 
-
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -45,4 +44,4 @@ html[data-theme="dark"] .navbar__logo {
 // don't reset styles on our page
 $lbh-safely-embed: true;
 
-@import "../../lbh/all";
+@import "../lbh/all";
