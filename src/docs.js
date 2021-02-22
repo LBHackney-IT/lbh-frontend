@@ -1,3 +1,3 @@
-import { initAll } from "../lbh/all";
-
-initAll();
+if (typeof window !== "undefined") {
+  require("../lbh/all").initAll();
+}
