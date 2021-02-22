@@ -55,7 +55,7 @@ module.exports = {
   ],
   clientModules: [
     require.resolve("./lbh/all.js"),
-    require.resolve("./lbh/all.js"),
+    require.resolve("./lbh/all.scss"),
   ],
   plugins: ["docusaurus-plugin-sass"],
 };
