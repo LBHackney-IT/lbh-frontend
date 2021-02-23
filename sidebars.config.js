@@ -26,6 +26,7 @@ module.exports = {
           "components/back-to-top",
           "components/breadcrumbs",
           "components/button",
+          "components/character-count",
         ],
       },
       {
@@ -38,6 +39,7 @@ module.exports = {
           "components/back-to-top",
           "components/breadcrumbs",
           "components/button",
+          "components/character-count",
         ],
       },
     ],
