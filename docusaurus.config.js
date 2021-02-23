@@ -40,10 +40,11 @@ module.exports = {
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
-          customCss: [require.resolve("./src/css/docs.scss")],
+          customCss: [require.resolve("./src/docs.scss")],
         },
       },
     ],
   ],
+  clientModules: [require.resolve("./src/docs.js")],
   plugins: ["docusaurus-plugin-sass"],
 };
