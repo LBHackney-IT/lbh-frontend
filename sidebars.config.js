@@ -19,12 +19,12 @@ module.exports = {
       {
         type: "category",
         label: "For residents",
-        items: ["components/input", "components/announcement"],
+        items: ["components/input", "components/announcement", "components/warning-text", "components/textarea", "components/tag"],
       },
       {
         type: "category",
         label: "For staff",
-        items: ["components/input", "components/announcement"],
+        items: ["components/input", "components/announcement", "components/warning-text", "components/textarea", "components/tag"],
       },
     ],
     Patterns: [
