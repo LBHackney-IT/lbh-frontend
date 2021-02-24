@@ -45,3 +45,5 @@ html[data-theme="dark"] .navbar__logo {
 $lbh-safely-embed: true;
 
 @import "../lbh/all";
+
+@import "../lbh/components/lbh-accordion/accordion";
