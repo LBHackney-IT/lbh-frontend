@@ -20,6 +20,7 @@ module.exports = {
         type: "category",
         label: "For residents",
         items: [
+          "components/accordion",
           "components/input",
           "components/announcement",
           "components/back-link",
@@ -28,6 +29,7 @@ module.exports = {
           "components/button",
           "components/character-count",
           "components/tag",
+          "components/tabs",
           "components/textarea",
           "components/warning-text",
         ],
@@ -35,18 +37,7 @@ module.exports = {
       {
         type: "category",
         label: "For staff",
-        items: [
-          "components/input",
-          "components/announcement",
-          "components/back-link",
-          "components/back-to-top",
-          "components/breadcrumbs",
-          "components/button",
-          "components/character-count",
-          "components/tag",
-          "components/textarea",
-          "components/warning-text",
-        ],
+        items: ["components/input"],
       },
     ],
     Patterns: [
