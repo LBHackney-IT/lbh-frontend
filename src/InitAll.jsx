@@ -6,7 +6,9 @@ const Wrapper = ({
 }) => {
 
     useEffect(() => {
-        initAll()
+        if (typeof window !== "undefined") {
+            initAll()
+        }
     }, [])
 
     return children
