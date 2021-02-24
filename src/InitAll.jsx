@@ -1,5 +1,4 @@
 import React, { useEffect} from "react"
-import { initAll } from "../lbh/all"
 
 const Wrapper = ({
     children
@@ -7,7 +6,7 @@ const Wrapper = ({
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            initAll()
+            require("../lbh/all").initAll()
         }
     }, [])
 
