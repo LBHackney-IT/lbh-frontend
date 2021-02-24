@@ -27,6 +27,7 @@ module.exports = {
           "components/breadcrumbs",
           "components/button",
           "components/character-count",
+          "components/checkboxes",
         ],
       },
       {
@@ -40,6 +41,7 @@ module.exports = {
           "components/breadcrumbs",
           "components/button",
           "components/character-count",
+          "components/checkboxes",
         ],
       },
     ],
