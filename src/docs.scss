@@ -43,5 +43,6 @@ html[data-theme="dark"] .navbar__logo {
 
 // don't reset styles on our page
 $lbh-safely-embed: true;
+$lbh-asset-path: "~!file-loader!../lbh/assets";
 
 @import "../lbh/all";

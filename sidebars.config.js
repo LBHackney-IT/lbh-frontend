@@ -9,6 +9,7 @@ module.exports = {
       "developing/browser-support",
       "developing/supporting-ie8",
       "developing/generating-components",
+      "developing/react",
       {
         type: "link",
         label: "Sass reference",
@@ -27,6 +28,7 @@ module.exports = {
           "components/back-to-top",
           "components/breadcrumbs",
           "components/button",
+          "components/contacts-block",
           "components/character-count",
           "components/tag",
           "components/tabs",

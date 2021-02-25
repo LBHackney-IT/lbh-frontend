@@ -108,25 +108,25 @@
       transform: translateY(-50%);
     }
 
-    // &__block-title--address:before {
-    //   background: url("../../assets/images/contact/address.svg");
-    // }
+    &__block-title--address:before {
+      background: url("#{$lbh-asset-path}/images/contact/address.svg");
+    }
 
-    // &__block-title--email:before {
-    //   background: url("../../assets/images/contact/email.svg");
-    // }
+    &__block-title--email:before {
+      background: url("#{$lbh-asset-path}/images/contact/email.svg");
+    }
 
-    // &__block-title--telephone:before {
-    //   background: url("../../assets/images/contact/telephone.svg");
-    // }
+    &__block-title--telephone:before {
+      background: url("#{$lbh-asset-path}/images/contact/telephone.svg");
+    }
 
-    // &__block-title--notes:before {
-    //   background: url("../../assets/images/contact/notes.svg");
-    // }
+    &__block-title--notes:before {
+      background: url("#{$lbh-asset-path}/images/contact/notes.svg");
+    }
 
-    // &__block-title--opening-times:before {
-    //   background: url("../../assets/images/contact/opening-times.svg");
-    // }
+    &__block-title--opening-times:before {
+      background: url("#{$lbh-asset-path}/images/contact/opening-times.svg");
+    }
 
     &__list {
       margin: 0;
