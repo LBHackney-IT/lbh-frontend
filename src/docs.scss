@@ -46,3 +46,5 @@ $lbh-safely-embed: true;
 $lbh-asset-path: "~!file-loader!../lbh/assets";
 
 @import "../lbh/all";
+
+@import "../lbh/components/lbh-accordion/accordion";
