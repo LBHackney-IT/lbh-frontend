@@ -335,32 +335,6 @@ Tabs can work well for people who use a service regularly, for example, users of
     }
   ]
 }) }}
-
-```
-
-## Tag with html
-
-<strong class="govuk-tag  lbh-tag">
-  <span>Beta</span>
-</strong>
-
-### HTML
-
-```html
-<strong class="govuk-tag  lbh-tag">
-  <span>Beta</span>
-</strong>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-tag/macro.njk" import lbhTag %}
-
-{{ lbhTag({
-  "html": "<span>Beta</span>"
-}) }}
-
 ```
 
 </InitAll>
