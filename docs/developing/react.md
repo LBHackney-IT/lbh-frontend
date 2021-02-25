@@ -70,3 +70,9 @@ There are plenty of well-maintained, accessible-by-default React libraries to ch
 - [GOV.UK React JSX](https://github.com/surevine/govuk-react-jsx)
 
 This advice might change as the design system grows.
+
+## Why is there no React component library any more?
+
+In the past Hackney has tried to make React ports of this design system, but it's always been more trouble than it's worth to maintain them.
+
+The alternative would be to go all-in on React, but this wouldn't work for the many non-React apps we still need to maintain.
