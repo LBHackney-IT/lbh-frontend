@@ -8,9 +8,7 @@ While the design system doesn't use React components, it _is_ fully compatible w
 
 If you're reading this, you're probably trying to use the design system with [Next.js](https://nextjs.org/) or a similar kind of React app.
 
-The design system can save you a lot of time and effort in making your React components look right.
-
-However, if you need complex pre-made components that have significant built-in client-side functionality, you're better off [going elsewhere](#building-components-with-complex-interactions-and-logic).
+The design system can save you a lot of time and effort in making your React components look right. But, if you need complex pre-made components that have lots of stateful client-side functionality, you're better off [going elsewhere](#building-components-with-complex-interactions-and-logic).
 
 ## Setting it up
 
