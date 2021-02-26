@@ -1,124 +1,134 @@
 /* eslint-env jest */
 
-const util = require('util')
+console.log("fooo");
 
-const configPaths = require('../config/paths.json')
-const PORT = configPaths.ports.test
+const util = require("util");
 
-const sass = require('node-sass')
-const sassRender = util.promisify(sass.render)
+const configPaths = require("../config/paths.json");
+const PORT = configPaths.ports.test;
+
+const sass = require("node-sass");
+const sassRender = util.promisify(sass.render);
 
 const sassConfig = {
-  includePaths: [ configPaths.src ]
-}
+  includePaths: [configPaths.src],
+};
 
-let baseUrl = 'http://localhost:' + PORT
+let baseUrl = "http://localhost:" + PORT;
 
 beforeAll(async (done) => {
   // Capture JavaScript errors.
-  page.on('pageerror', error => {
+  page.on("pageerror", (error) => {
     // If the stack trace includes 'all.js' then we want to fail these tests.
-    if (error.stack.includes('all.js')) {
-      throw error
+    if (error.stack.includes("all.js")) {
+      throw error;
     }
-  })
-  done()
-})
+  });
+  done();
+});
 
-describe('LBH Frontend', () => {
-  describe('javascript', () => {
-    it('can be accessed via `LBHFrontend`', async () => {
-      await page.goto(baseUrl + '/', { waitUntil: 'load' })
+describe("LBH Frontend", () => {
+  describe("javascript", () => {
+    it("can be accessed via `LBHFrontend`", async () => {
+      await page.goto(baseUrl + "/", { waitUntil: "load" });
 
-      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend);
 
-      expect(typeof LBHFrontendGlobal).toBe('object')
-    })
-    it('exports `initAll` function', async () => {
-      await page.goto(baseUrl + '/', { waitUntil: 'load' })
+      expect(typeof LBHFrontendGlobal).toBe("object");
+    });
+    it("exports `initAll` function", async () => {
+      await page.goto(baseUrl + "/", { waitUntil: "load" });
 
-      const typeofInitAll = await page.evaluate(() => typeof window.LBHFrontend.initAll)
+      const typeofInitAll = await page.evaluate(
+        () => typeof window.LBHFrontend.initAll
+      );
 
-      expect(typeofInitAll).toEqual('function')
-    })
-    it('exports Components', async () => {
-      await page.goto(baseUrl + '/', { waitUntil: 'load' })
+      expect(typeofInitAll).toEqual("function");
+    });
+    it("exports Components", async () => {
+      await page.goto(baseUrl + "/", { waitUntil: "load" });
 
-      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend);
 
-      var components = Object.keys(LBHFrontendGlobal).filter(method => method !== 'initAll')
+      var components = Object.keys(LBHFrontendGlobal).filter(
+        (method) => method !== "initAll"
+      );
 
       // Ensure GOV.UK Frontend exports the expected components
       expect(components).toEqual([
-        'Accordion',
-        'Button',
-        'Details',
-        'CharacterCount',
-        'Checkboxes',
-        'ErrorSummary',
-        'Header',
-        'Radios',
-        'Tabs'
-      ])
-    })
-    it('exported Components can be initialised', async () => {
-      await page.goto(baseUrl + '/', { waitUntil: 'load' })
+        "Accordion",
+        "Button",
+        "Details",
+        "CharacterCount",
+        "Checkboxes",
+        "ErrorSummary",
+        "Header",
+        "Radios",
+        "Tabs",
+      ]);
+    });
+    it("exported Components can be initialised", async () => {
+      await page.goto(baseUrl + "/", { waitUntil: "load" });
 
-      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend)
+      const LBHFrontendGlobal = await page.evaluate(() => window.LBHFrontend);
 
-      var components = Object.keys(LBHFrontendGlobal).filter(method => method !== 'initAll')
+      var components = Object.keys(LBHFrontendGlobal).filter(
+        (method) => method !== "initAll"
+      );
 
       // Check that all the components on the GOV.UK Frontend global can be initialised
-      components.forEach(component => {
-        page.evaluate(component => {
-          const Component = window.LBHFrontend[component]
-          const $module = document.documentElement
-          new Component($module).init()
-        }, component)
-      })
-    })
-    it('can be initialised scoped to certain sections of the page', async () => {
-      await page.goto(baseUrl + '/examples/scoped-initialisation', { waitUntil: 'load' })
+      components.forEach((component) => {
+        page.evaluate((component) => {
+          const Component = window.LBHFrontend[component];
+          const $module = document.documentElement;
+          new Component($module).init();
+        }, component);
+      });
+    });
+    it("can be initialised scoped to certain sections of the page", async () => {
+      await page.goto(baseUrl + "/examples/scoped-initialisation", {
+        waitUntil: "load",
+      });
 
       // To test that certain parts of the page are scoped we have two similar components
       // that we can interact with to check if they're interactive.
 
       // Check that the conditional reveal component has a conditional section that would open if enhanced.
-      await page.waitForSelector('#conditional-not-scoped-1', { hidden: true })
+      await page.waitForSelector("#conditional-not-scoped-1", { hidden: true });
 
-      await page.click('[for="not-scoped-1"]')
+      await page.click('[for="not-scoped-1"]');
 
       // Check that when it is clicked that nothing opens, which shows that it has not been enhanced.
-      await page.waitForSelector('#conditional-not-scoped-1', { hidden: true })
+      await page.waitForSelector("#conditional-not-scoped-1", { hidden: true });
 
       // Check the other conditional reveal which has been enhanced based on it's scope.
-      await page.waitForSelector('#conditional-scoped-1', { hidden: true })
+      await page.waitForSelector("#conditional-scoped-1", { hidden: true });
 
-      await page.click('[for="scoped-1"]')
+      await page.click('[for="scoped-1"]');
 
       // Check that it has opened as expected.
-      await page.waitForSelector('#conditional-scoped-1', { hidden: false })
-    })
-  })
-  describe('global styles', () => {
-    it('are disabled by default', async () => {
+      await page.waitForSelector("#conditional-scoped-1", { hidden: false });
+    });
+  });
+  describe("global styles", () => {
+    it("are disabled by default", async () => {
       const sass = `
         @import "all";
-      `
-      const results = await sassRender({ data: sass, ...sassConfig })
-      expect(results.css.toString()).not.toContain(', a {')
-      expect(results.css.toString()).not.toContain(', p {')
-    })
-    it('are enabled if $global-styles variable is set to true', async () => {
+      `;
+      const results = await sassRender({ data: sass, ...sassConfig });
+      expect(results.css.toString()).not.toContain(", a {");
+      expect(results.css.toString()).not.toContain(", p {");
+    });
+    it("are enabled if $global-styles variable is set to true", async () => {
       const sass = `
         $govuk-global-styles: true;
         @import "all";
-      `
-      const results = await sassRender({ data: sass, ...sassConfig })
-      expect(results.css.toString()).toContain(', a {')
-      expect(results.css.toString()).toContain(', p {')
-    })
-  })
+      `;
+      const results = await sassRender({ data: sass, ...sassConfig });
+      expect(results.css.toString()).toContain(", a {");
+      expect(results.css.toString()).toContain(", p {");
+    });
+  });
 
   // Sass functions will be automatically evaluated at compile time and the
   // return value from the function will be used in the compiled CSS.
@@ -150,14 +160,14 @@ describe('LBH Frontend', () => {
   // This test attempts to match anything that looks like a function call within
   // the compiled CSS - if it finds anything, it will result in the test
   // failing.
-  it('does not contain any unexpected govuk- function calls', async () => {
-    const sass = `@import "all"`
+  it("does not contain any unexpected govuk- function calls", async () => {
+    const sass = `@import "all"`;
 
-    const results = await sassRender({ data: sass, ...sassConfig })
-    const css = results.css.toString()
+    const results = await sassRender({ data: sass, ...sassConfig });
+    const css = results.css.toString();
 
-    const functionCalls = css.match(/_?govuk-[\w-]+\(.*?\)/g)
+    const functionCalls = css.match(/_?govuk-[\w-]+\(.*?\)/g);
 
-    expect(functionCalls).toBeNull()
-  })
-})
+    expect(functionCalls).toBeNull();
+  });
+});

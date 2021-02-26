@@ -1,16 +1,16 @@
-import React, { useEffect} from "react"
+import React, { useEffect } from "react";
 
-const Wrapper = ({
-    children
-}) => {
+// Wrap components that need imperative JS in this
+// SEE: https://lbhackney-it.github.io/LBH-frontend/developing/react#client-side-routing
+|
+const Wrapper = ({ children }) => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      require("../lbh/all").initAll();
+    }
+  }, []);
 
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            require("../lbh/all").initAll()
-        }
-    }, [])
+  return children;
+};
 
-    return children
-}
-
-export default Wrapper
+export default Wrapper;

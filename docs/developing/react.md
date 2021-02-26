@@ -44,7 +44,7 @@ if (typeof window !== "undefined") {
 
 All components need to be initialised before their JavaScript features will work. The init function must be called _after_ the HTML has been rendered to the page.
 
-On a server-rendered page this is straightforward, but on a client-rendered React app you have more choices.
+On a server-rendered page this is straightforward, but on a client-rendered React app you must remember to re-initialise the JS whenever you render new components.
 
 One option is to call the component's init function in a [`useEffect`](https://reactjs.org/docs/hooks-effect.html) hook after it renders. For example:
 
@@ -75,4 +75,4 @@ This advice might change as the design system grows.
 
 In the past Hackney has tried to make React ports of this design system, but it's always been more trouble than it's worth to maintain them.
 
-The alternative would be to go all-in on React, but this wouldn't work for the many non-React apps we still need to maintain.
+The alternative would be to go all-in with React, but this wouldn't work for the many non-React apps we still need to maintain.

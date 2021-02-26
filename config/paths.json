@@ -12,7 +12,7 @@
   "package": "package/",
   "public": "public/",
   "sassdoc": "sassdoc/",
-  "src": "src/lbh/",
+  "src": "lbh/",
   "components": "src/lbh/components/",
   "ports": {
     "app": 3000,

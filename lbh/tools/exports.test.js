@@ -1,19 +1,19 @@
 /* eslint-env jest */
 
-const util = require('util')
+const util = require("util");
 
-const configPaths = require('../../config/paths.json')
+const configPaths = require("../../config/paths.json");
 
-const sass = require('node-sass')
-const sassRender = util.promisify(sass.render)
+const sass = require("node-sass");
+const sassRender = util.promisify(sass.render);
 
 const sassConfig = {
-  includePaths: [ configPaths.src ],
-  outputStyle: 'compressed'
-}
+  includePaths: [configPaths.src],
+  outputStyle: "compressed",
+};
 
-describe('@mixin lbh-exports', () => {
-  it('will only output a named section once', async () => {
+describe("@mixin lbh-exports", () => {
+  it("will only output a named section once", async () => {
     const sass = `
       @import "tools/exports";
 
@@ -27,14 +27,14 @@ describe('@mixin lbh-exports', () => {
         .foo {
           color: blue;
         }
-      }`
+      }`;
 
-    const results = await sassRender({ data: sass, ...sassConfig })
+    const results = await sassRender({ data: sass, ...sassConfig });
 
-    expect(results.css.toString().trim()).toEqual('.foo{color:red}')
-  })
+    expect(results.css.toString().trim()).toEqual(".foo{color:red}");
+  });
 
-  it('will export differently named sections', async () => {
+  it("will export differently named sections", async () => {
     const sass = `
       @import "tools/exports";
 
@@ -48,11 +48,12 @@ describe('@mixin lbh-exports', () => {
         .bar {
           color: blue;
         }
-      }`
+      }`;
 
-    const results = await sassRender({ data: sass, ...sassConfig })
+    const results = await sassRender({ data: sass, ...sassConfig });
 
-    expect(results.css.toString().trim())
-      .toEqual('.foo{color:red}.bar{color:blue}')
-  })
-})
+    expect(results.css.toString().trim()).toEqual(
+      ".foo{color:red}.bar{color:blue}"
+    );
+  });
+});
