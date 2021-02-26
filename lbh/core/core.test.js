@@ -1,11 +1,14 @@
-/* eslint-env jest */
+const glob = require("glob");
+const util = require("util");
+const sass = require("node-sass");
 
-const glob = require('glob')
-const { renderSass } = require('../../lib/jest-helpers')
-const configPaths = require('../../config/paths.json')
+const sassRender = util.promisify(sass.render);
 
-const sassFiles = glob.sync(`${configPaths.src}/core/**/*.scss`)
+const sassFiles = glob.sync(`lbh/core/**/*.scss`);
 
-it.each(sassFiles)('%s renders to CSS without errors', (file) => {
-  return renderSass({ file: file })
-})
+it.each(sassFiles)("%s renders to CSS without errors", (file) => {
+  return sassRender({
+    file: file,
+    includePaths: ["lbh/"],
+  });
+});
