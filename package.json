@@ -77,5 +77,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
+  },
+  "jest": {
+    "transform": {
+      "\\.js$": ["babel-jest"]
+    }
   }
 }

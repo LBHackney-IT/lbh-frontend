@@ -2,9 +2,13 @@
 title: Character count
 ---
 
+import InitAll from "../../src/InitAll"
+
 Use the Character count
 
 ## Character count
+
+<InitAll>
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="10">
   <div class="govuk-form-group lbh-form-group">
@@ -543,3 +547,5 @@ NW1 6XE
 }) }}
 
 ```
+
+</InitAll>
