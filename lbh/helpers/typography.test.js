@@ -2,14 +2,14 @@
 
 const util = require("util");
 
-const configPaths = require("../../config/paths.json");
+// const configPaths = require("../../config/paths.json");
 
 const outdent = require("outdent");
 const sass = require("node-sass");
 const sassRender = util.promisify(sass.render);
 
 const sassConfig = {
-  includePaths: [configPaths.src],
+  includePaths: ["lbh/"],
   outputStyle: "nested",
 };
 
