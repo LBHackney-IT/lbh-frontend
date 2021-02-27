@@ -1,0 +1,14 @@
+name: Release to NPM
+
+on:
+  push:
+    branches: [test-release]
+
+steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Semantic Release
+    uses: cycjimmy/semantic-release-action@v2
+    env:
+      GITHUB_TOKEN: ${{ secrets.GH_PAGES_DEPLOY }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
