@@ -1,7 +1,7 @@
 name: Release to NPM
 on:
   push:
-    branches: [test-release]
+    branches: [feature/overhaul-docs]
 jobs:
   publish:
     runs-on: ubuntu-latest
