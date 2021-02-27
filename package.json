@@ -71,6 +71,6 @@
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
   },
   "release": {
-    "branches": ["test-release"]
+    "branches": ["feature/overhaul-docs"]
   }
 }
