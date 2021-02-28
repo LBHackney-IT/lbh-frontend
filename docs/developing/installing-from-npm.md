@@ -33,7 +33,7 @@ It borrows heavily from `govuk-frontend`, which will also be automatically insta
 
 You need to import the LBH Frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override LBH Frontend with your own styles.
 
-[Next.js](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) and [create-react-app](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) support Sass out of the box.
+[Next.js](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) and [Create React App](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) support Sass out of the box.
 
 1. To import all components, add the below to your Sass file:
 
@@ -41,8 +41,7 @@ You need to import the LBH Frontend styles into the main Sass file in your proje
 @import "node_modules/lbh-frontend/lbh/all";
 ```
 
-2. To import an individual component (for example a button), add the below to
-   your Sass file:
+2. To import an individual component (for example a button), add the below to your Sass file:
 
 ```SCSS
 @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
@@ -57,15 +56,11 @@ If importing individual components, you should first import the core and objects
 
 ### Optional: resolve SCSS import paths
 
-To resolve the above `@import` paths in your build (in order to
-avoid prefixing paths with `node_modules`), you should add `node_modules` to
-your [Sass include paths](https://github.com/sass/node-sass#includepaths)
-(in Ruby, they should be added to [assets
-paths](http://guides.rubyonrails.org/asset_pipeline.html#search-paths)).
+To avoid prefixing `@import` paths with `node_modules`), you should add `node_modules` to your [Sass include paths](https://github.com/sass/node-sass#includepaths).
 
-For example, if your project uses Gulp, you would add the Sass include paths to
-your Gulp configuration file (for example `gulpfile.js`) with
-[gulp-sass](https://www.npmjs.com/package/gulp-sass). Below is an example:
+In Rails, they should be added to [assets paths](http://guides.rubyonrails.org/asset_pipeline.html#search-paths)).
+
+For example, if your project uses Gulp, you would add the Sass include paths to your Gulp configuration file (for example `gulpfile.js`) with [gulp-sass](https://www.npmjs.com/package/gulp-sass):
 
 ```JS
 gulp.task('sass', function () {
@@ -78,7 +73,7 @@ gulp.task('sass', function () {
 
 ```
 
-After resolving the import paths you can import LBH Frontend by using:
+After resolving the import paths you can write imports like:
 
 ```SCSS
 @import "lbh-frontend/lbh/components/button/button";
@@ -111,12 +106,8 @@ accessibility of the components.
 
 For example, the JavaScript will:
 
-- allow links styled as buttons to be triggered with the space bar when focused,
-  which matches the behaviour of native buttons and the way the button is
-  described when using assistive technologies.
-- enhance the details component to help users of assistive technologies
-  understand whether it is expanded or collapsed, and to make the component
-  behave correctly for users of Internet Explorer 8.
+- allow links styled as buttons to be triggered with the space bar when focused, which matches the behaviour of native buttons and the way the button is described when using assistive technologies.
+- enhance the details component to help users of assistive technologies understand whether it is expanded or collapsed, and to make the component behave correctly for users of Internet Explorer 8.
 
 You should [include](#option-1-include-javascript) or [import](#option-2-import-javascript) LBH Frontend JavaScript, and then initialise the script in your application to ensure that all users can use it successfully.
 
@@ -129,7 +120,10 @@ Include the `node_modules/lbh-frontend/lbh/all.js` script on your page. You migh
 To initialise all components, use the `initAll` function.
 
 JavaScript in LBH Frontend requires HTML to be parsed first by the browser before it is initialised. Because of this, make sure you include the script before the closing `</body>` tag.
+
 Including the script elsewhere will stop components from functioning or displaying correctly.
+
+We have [instructions](/developing/react#client-side-routing) for making this work in React apps.
 
 ```html
     <script src="path-to-assets/lbh-frontend/lbh/all.js"></script>
@@ -169,7 +163,9 @@ if (radio) {
 }
 ```
 
-Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
+:::note
+The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
+:::
 
 ### Option 2: import JavaScript
 
@@ -218,7 +214,9 @@ if (radio) {
 }
 ```
 
+:::note
 Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
+:::
 
 ### Polyfills
 
