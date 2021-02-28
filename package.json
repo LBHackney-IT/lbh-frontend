@@ -9,7 +9,7 @@
     "build:js": "parcel build lbh/all.js --out-dir dist --global LBHFrontend --out-file lbh-frontend-${npm_package_version}.min.js --no-source-maps",
     "build:sassdoc": "sassdoc lbh --dest static/sassdoc",
     "build:docs": "docusaurus build",
-    "build:assets": "copyfiles lbh/assets/**/**/**/** dist/assets",
+    "build:assets": "copyfiles lbh/assets/**/**/**/* dist/assets -u 2",
     "build": "npm-run-all build:*",
     "clean": "npm-run-all clean:*",
     "clean:docs": "docusaurus clear",
