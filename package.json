@@ -15,7 +15,8 @@
     "clear": "docusaurus clear",
     "build": "npm-run-all build:*",
     "semantic-release": "semantic-release",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
