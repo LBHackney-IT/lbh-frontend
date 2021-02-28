@@ -16,7 +16,7 @@
     "build": "npm-run-all build:*",
     "semantic-release": "semantic-release",
     "test": "jest",
-    "prepare": "npm run build"
+    "prepare": "npm-run-all -s 'rm -r dist' 'npm run build'"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
