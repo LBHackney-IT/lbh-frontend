@@ -1,14 +1,12 @@
 {
-  "version": "0.0.0-development",
   "name": "lbh-frontend-repository",
-  "description": "Taken from the GDS UK Frontend and used for the development of Hackney Council Frontend only, see `package/package.json` for the published `package.json`",
-  "engines": {
-    "node": ">=12.14.0"
-  },
+  "version": "0.0.0-development",
+  "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
   "scripts": {
-    "build:sass": "sass lbh/all.scss dist/lbh-frontend.min.css --load-path=./",
-    "build:js": "parcel build lbh/all.js --out-dir dist --global LBHFrontend",
+    "build:sass": "sass lbh/all.scss dist/lbh-frontend-${npm_package_version}.min.css --load-path=./ --no-source-map",
+    "build:sass-ie8": "sass lbh/all-ie8.scss dist/lbh-frontend-ie8-${npm_package_version}.min.css --load-path=./ --no-source-map",
+    "build:js": "parcel build lbh/all.js --out-dir dist --global LBHFrontend --out-file lbh-frontend-${npm_package_version}.min.js --no-source-maps",
     "build:sassdoc": "sassdoc lbh --dest static/sassdoc",
     "build:docs": "docusaurus build",
     "dev": "docusaurus start",
@@ -23,16 +21,17 @@
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
+    "@semantic-release/git": "^9.0.0",
     "docusaurus-image-loader": "^1.0.1",
     "docusaurus-plugin-sass": "^0.1.11",
     "jest": "^26.6.3",
+    "outdent": "^0.8.0",
     "parcel-bundler": "^1.12.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "sassdoc": "^2.7.0",
     "semantic-release": "^17.3.9",
-    "standard": "^13.1.0",
-    "outdent": "^0.8.0"
+    "standard": "^13.1.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
@@ -71,6 +70,18 @@
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
   },
   "release": {
-    "branches": ["feature/overhaul-docs"]
+    "branches": [
+      "feature/overhaul-docs"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      ["@semantic-release/git", {
+        "assets": ["package.json"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }]
+    ]
   }
 }
