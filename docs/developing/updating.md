@@ -1,5 +1,5 @@
 ---
-title: Updating using NPM
+title: Updating
 ---
 
 You can update with Node.js package manager (npm) if you [originally installed

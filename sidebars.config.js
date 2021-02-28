@@ -4,11 +4,10 @@ module.exports = {
     Designing: ["designing/design-kits"],
     Developing: [
       "developing/installing-from-npm",
-      "developing/updating-with-npm",
+      "developing/updating",
       "developing/installing-from-dist",
       "developing/browser-support",
       "developing/supporting-ie8",
-      "developing/generating-components",
       "developing/react",
       {
         type: "link",
@@ -50,6 +49,6 @@ module.exports = {
       },
     ],
     Tutorials: ["tutorials/react", "tutorials/prototype"],
-    Contributing: ["contributing/how-to-contribute"],
+    Contributing: ["contributing/introduction"],
   },
 };
