@@ -3,7 +3,6 @@
 @import "../helpers/all";
 
 @include lbh-exports("lbh/core/links") {
-
   .lbh-link {
     @include lbh-link;
   }

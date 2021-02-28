@@ -4,19 +4,28 @@
   "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
   "scripts": {
+
     "build:sass": "sass lbh/all.scss dist/lbh-frontend-${npm_package_version}.min.css --load-path=./ --no-source-map",
     "build:sass-ie8": "sass lbh/all-ie8.scss dist/lbh-frontend-ie8-${npm_package_version}.min.css --load-path=./ --no-source-map",
     "build:js": "parcel build lbh/all.js --out-dir dist --global LBHFrontend --out-file lbh-frontend-${npm_package_version}.min.js --no-source-maps",
     "build:sassdoc": "sassdoc lbh --dest static/sassdoc",
     "build:docs": "docusaurus build",
-    "dev": "docusaurus start",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
-    "clear": "docusaurus clear",
     "build": "npm-run-all build:*",
+
+    "clean": "npm-run-all clean:*",
+    "clean:docs": "docusaurus clear",
+    "clean:dist": "rimraf /dist",
+
+    "dev:docs": "docusaurus start",
+    "dev": "npm-run-all dev:*",
+    "start": "npm-run-all dev:*",
+
     "semantic-release": "semantic-release",
+
     "test": "jest",
-    "prepare": "npm-run-all -s 'rm -r dist' 'npm run build'"
+
+    "prepare": "npm-run-all -s clean build"
+
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
@@ -32,7 +41,8 @@
     "react-dom": "^16.8.4",
     "sassdoc": "^2.7.0",
     "semantic-release": "^17.3.9",
-    "standard": "^13.1.0"
+    "standard": "^13.1.0",
+    "rimraf": "^3.0.2"
   },
   "optionalDependencies": {
     "fsevents": "*"
