@@ -17,13 +17,6 @@ To use LBH Frontend with NPM you must:
    you don’t already have one. You can create a default `package.json` file by
    running `npm init` from the root of your application.
 
-3. If you want to use the LBH Frontend Nunjucks macros, install Nunjucks -
-   the minimum version required is 3.0.0.
-
-```
-npm install nunjucks --save
-```
-
 ## Installation
 
 To install, run:
@@ -159,10 +152,10 @@ You can change this by passing the `scope` parameter to the `initAll` function.
 For example, if you have a modal dialog box that opens with new markup you could do the following:
 
 ```js
-var $modal = document.querySelector(".modal");
+var $modal = document.querySelector(".modal")
 window.LBHFrontend.initAll({
   scope: $modal,
-});
+})
 ```
 
 #### Initialise individual included components
@@ -174,10 +167,10 @@ You can use this attribute to initialise the component manually. This may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var Radios = window.LBHFrontend.Radios;
-var $radio = document.querySelector('[data-module="govuk-radios"]');
+var Radios = window.LBHFrontend.Radios
+var $radio = document.querySelector('[data-module="govuk-radios"]')
 if ($radio) {
-  new Radios($radio).init();
+  new Radios($radio).init()
 }
 ```
 
@@ -224,9 +217,9 @@ You can use this attribute to initialise the component manually, this may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var $radio = document.querySelector('[data-module="govuk-radios"]');
+var $radio = document.querySelector('[data-module="govuk-radios"]')
 if ($radio) {
-  new Radios($radio).init();
+  new Radios($radio).init()
 }
 ```
 

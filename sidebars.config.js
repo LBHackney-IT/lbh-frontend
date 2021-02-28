@@ -49,7 +49,7 @@ module.exports = {
         items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
       },
     ],
-    Tutorials: ["tutorials/react", "tutorials/nunjucks", "tutorials/prototype"],
+    Tutorials: ["tutorials/react", "tutorials/prototype"],
     Contributing: ["contributing/how-to-contribute"],
   },
 };
