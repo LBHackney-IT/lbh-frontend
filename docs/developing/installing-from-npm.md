@@ -33,7 +33,7 @@ It borrows heavily from `govuk-frontend`, which will also be automatically insta
 
 You need to import the LBH Frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override LBH Frontend with your own styles.
 
-[Create-react-app](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) supports sass out of the box, and next.js supports it wiht a [small plugin](https://www.npmjs.com/package/@zeit/next-sass).
+[Next.js](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) and [create-react-app](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) support Sass out of the box.
 
 1. To import all components, add the below to your Sass file:
 
@@ -48,16 +48,16 @@ You need to import the LBH Frontend styles into the main Sass file in your proje
 @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
 ```
 
-Please note that if importing individual components, you should first import the core and objects files:
+If importing individual components, you should first import the core and objects files:
 
 ```SCSS
 @import "node_modules/lbh-frontend/lbh/core/all";
 @import "node_modules/lbh-frontend/lbh/objects/all";
 ```
 
-### Optional: Resolving SCSS import paths
+### Optional: resolve SCSS import paths
 
-If you wish to resolve the above `@import` paths in your build (in order to
+To resolve the above `@import` paths in your build (in order to
 avoid prefixing paths with `node_modules`), you should add `node_modules` to
 your [Sass include paths](https://github.com/sass/node-sass#includepaths)
 (in Ruby, they should be added to [assets
@@ -77,10 +77,6 @@ gulp.task('sass', function () {
 });
 
 ```
-
-If you compile Sass to CSS in your project, your build tasks will already
-include something similar to the above task - in that case, you will just need
-to include add `includePaths` to it.
 
 After resolving the import paths you can import LBH Frontend by using:
 
@@ -106,6 +102,8 @@ $lbh-global-styles: true;
 @import "lbh-frontend/lbh/all";
 ```
 
+See the [Sass reference](pathname:///sassdoc/index.html#settings/global-styles-variable-lbh-global-styles) for details.
+
 ## Using JavaScript
 
 Some of the JavaScript included in LBH Frontend improves the usability and
@@ -124,7 +122,7 @@ You should [include](#option-1-include-javascript) or [import](#option-2-import-
 
 Note that LBH Frontend does not initialise any scripts by default; all scripts **must** be initialised in order for them to work.
 
-### Option 1: Include JavaScript
+### Option 1: include JavaScript
 
 Include the `node_modules/lbh-frontend/lbh/all.js` script on your page. You might wish to copy the file into your project or reference it from `node_modules`.
 
@@ -173,7 +171,7 @@ if (radio) {
 
 Please note: the value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
 
-### Option 2: Import JavaScript
+### Option 2: import JavaScript
 
 If you're using a bundler such as [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
 
@@ -226,7 +224,7 @@ Please note: the value of the `data-module` attribute will either be prefixed wi
 
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
 
-The polyfills provided with GOV.UK/LBH Frontend aim to fix usability and accessibility issues. If there is a JavaScript included in the component directory, it is important to import and initialise it in your project to ensure that all users can properly use the component (see [Polyfilling](/docs/contributing/polyfilling.md)).
+The polyfills provided with GOV.UK/LBH Frontend aim to fix usability and accessibility issues. If there is a JavaScript included in the component directory, it is important to import and initialise it in your project to ensure that all users can properly use the component.
 
 ### How LBH Frontend is bundled
 
@@ -238,11 +236,9 @@ See [JavaScript Coding Standards](/docs/contributing/coding-standards/js.md) for
 
 In order to import LBH Frontend images and fonts to your project, you should configure your application to reference or copy the relevant LBH Frontend assets.
 
-Follow either [Recommended solution](#recommended-solution) or [Alternative solution](#alternative-solution).
-
 ### Recommended solution
 
-Make `/node_modules/lbh-frontend/assets` available to your project by routing
+Make `/node_modules/lbh-frontend/lbh/assets` available to your project by routing
 requests for your assets folder there.
 
 For example, if your project uses [express.js](https://expressjs.com/), below is
