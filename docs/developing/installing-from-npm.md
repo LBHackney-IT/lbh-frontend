@@ -22,23 +22,16 @@ To use LBH Frontend with NPM you must:
 To install, run:
 
 ```
-npm install --save lbh-frontend
+npm install lbh-frontend
 ```
 
-Please note you must also have the `govuk-frontend` package installed:
+After installation, the `lbh-frontend` package will appear in your `node_modules` folder.
 
-```
-npm install --save govuk-frontend
-```
-
-After you have installed LBH Frontend the `lbh-frontend` package will
-appear in your `node_modules` folder.
+It depends heavily on `govuk-frontend`, which will also be automatically installed.
 
 ## Importing styles
 
-You need to import the LBH Frontend styles into the main Sass file in your
-project. You should place the below code before your own Sass rules (or Sass
-imports) if you want to override LBH Frontend with your own styles.
+You need to import the LBH Frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override LBH Frontend with your own styles.
 
 1. To import all components, add the below to your Sass file:
 
@@ -93,9 +86,11 @@ After resolving the import paths you can import LBH Frontend by using:
 @import "lbh-frontend/lbh/components/button/button";
 ```
 
-### Global Styles
+### Global styles
 
-LBH Frontend avoids applying styles globally on HTML elements such as `body`; instead, styles are are applied using classes. One exception to this is that we are using the [lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) to ensure sensible spacing across/between components; due to its low specificity it is easy to overwrite for specific selectors if necessary &mdash; you may find you need to do this for a number of selectors.
+LBH Frontend avoids applying styles globally on HTML elements such as `body`; instead, styles are are applied using classes.
+
+One exception to this is that we are using the [lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) to ensure sensible spacing across/between components; due to its low specificity it is easy to overwrite for specific selectors if necessary—you may find you need to do this for a number of selectors.
 
 This to avoid the risk of global styles conflicting with any pre-existing globals or with any app specific CSS.
 
