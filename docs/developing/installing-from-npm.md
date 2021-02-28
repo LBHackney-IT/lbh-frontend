@@ -27,11 +27,13 @@ npm install lbh-frontend
 
 After installation, the `lbh-frontend` package will appear in your `node_modules` folder.
 
-It depends heavily on `govuk-frontend`, which will also be automatically installed.
+It borrows heavily from `govuk-frontend`, which will also be automatically installed.
 
 ## Importing styles
 
 You need to import the LBH Frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override LBH Frontend with your own styles.
+
+[Create-react-app](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) supports sass out of the box, and next.js supports it wiht a [small plugin](https://www.npmjs.com/package/@zeit/next-sass).
 
 1. To import all components, add the below to your Sass file:
 
@@ -147,9 +149,9 @@ You can change this by passing the `scope` parameter to the `initAll` function.
 For example, if you have a modal dialog box that opens with new markup you could do the following:
 
 ```js
-var $modal = document.querySelector(".modal")
+const modal = document.querySelector(".modal")
 window.LBHFrontend.initAll({
-  scope: $modal,
+  scope: modal,
 })
 ```
 
@@ -162,10 +164,10 @@ You can use this attribute to initialise the component manually. This may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var Radios = window.LBHFrontend.Radios
-var $radio = document.querySelector('[data-module="govuk-radios"]')
-if ($radio) {
-  new Radios($radio).init()
+const Radios = window.LBHFrontend.Radios
+const radio = document.querySelector('[data-module="govuk-radios"]')
+if (radio) {
+  new Radios(radio).init()
 }
 ```
 
@@ -212,9 +214,9 @@ You can use this attribute to initialise the component manually, this may be use
 To initialise the first radio component on a page, use:
 
 ```js
-var $radio = document.querySelector('[data-module="govuk-radios"]')
-if ($radio) {
-  new Radios($radio).init()
+var radio = document.querySelector('[data-module="govuk-radios"]')
+if (radio) {
+  new Radios(radio).init()
 }
 ```
 
