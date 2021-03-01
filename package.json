@@ -20,7 +20,7 @@
     "start": "npm-run-all dev:*",
     "semantic-release": "semantic-release",
     "test": "jest",
-    "prepare": "npm-run-all -s clean build"
+    "prepublishOnly": "npm-run-all -s clean build"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
