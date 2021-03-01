@@ -113,7 +113,7 @@ You should [include](#option-1-include-javascript) or [import](#option-2-import-
 
 Note that LBH Frontend does not initialise any scripts by default; all scripts **must** be initialised in order for them to work.
 
-### Option 1: include JavaScript
+### Option 1: include JavaScript with a script tag
 
 Include the `node_modules/lbh-frontend/lbh/all.js` script on your page. You might wish to copy the file into your project or reference it from `node_modules`.
 
@@ -169,7 +169,7 @@ The value of the `data-module` attribute will either be prefixed with `govuk` or
 
 ### Option 2: import JavaScript
 
-If you're using a bundler such as [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
+If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
 
 ```JS
 import { initAll } from 'lbh-frontend'
@@ -177,28 +177,12 @@ import { initAll } from 'lbh-frontend'
 initAll()
 ```
 
-If you're using a bundler such as [Browserify](http://browserify.org/), you may need to use the CommonJS `require`:
-
-```JS
-const LBHFrontend = require('lbh-frontend')
-
-LBHFrontend.initAll()
-```
-
 #### Import individual components
 
-If you're using a bundler such as Webpack, use the `import` syntax to import a component:
+If you're using a modern build tool like Parcel or Webpack, use the `import` syntax to import a component:
 
 ```JS
 import { Radios } from 'lbh-frontend'
-```
-
-If you're using a bundler such as [Browserify](http://browserify.org/), you may need to use the CommonJS `require`:
-
-```JS
-const LBHFrontend = require('lbh-frontend')
-
-const Radios = LBHFrontend.Radios
 ```
 
 LBH Frontend components with JavaScript behaviour have the `data-module` attribute set in their markup.
