@@ -2,26 +2,20 @@
 title: Prototyping
 ---
 
-## Use the Codepen
+## Use our CodePen template
 
-The fastest way to experiment with the Hackney design system is with Codepen.
+The fastest way to experiment with the Hackney design system is with our CodePen template. You can paste code samples straight into the HTML tab, without installing anything.
 
-You can paste code samples straight into the HTML tab, without installing anything.
+You can save your work to your CodePen account and share it with colleagues.
 
-If you want to keep your pen, you can make a free CodePen account.
-
-<p class="codepen" data-height="444" data-theme-id="dark" data-default-tab="html,result" data-user="jhackett1" data-slug-hash="xxRWWKv" style="height: 444px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Experiment with the Hackney design system">
-  <span>See the Pen <a href="https://codepen.io/jhackett1/pen/xxRWWKv">
-  Experiment with the Hackney design system</a> by Jaye Hackett (<a href="https://codepen.io/jhackett1">@jhackett1</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="444" width="100%" scrolling="no" title="Experiment with the Hackney design system" src="https://codepen.io/jhackett1/embed/xxRWWKv?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/jhackett1/pen/xxRWWKv'>Experiment with the Hackney design system</a> by Jaye Hackett
+  (<a href='https://codepen.io/jhackett1'>@jhackett1</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## Use the prototyping kit
 
-Because Codepen doesn't support multiple pages or a file system, there are things you won't be able to do with it.
-
-For anything more complicated, you can use the [simple frontend repo](https://github.com/LBHackney-IT/lbh-simple-frontend).
+CodePen doesn't support multiple pages or assets, so it's only suitable for quick experiments. If you need more, you can use our [prototype kit](https://github.com/LBHackney-IT/lbh-simple-frontend).
 
 ### 1. On CodeSandbox
 

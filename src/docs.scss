@@ -41,10 +41,10 @@ html[data-theme="dark"] .navbar__logo {
   padding: 0 var(--ifm-pre-padding);
 }
 
-.alert--warning{
+.alert--warning {
   --ifm-alert-color: var(--ifm-color-gray-900);
 
-  .admonition-icon svg{
+  .admonition-icon svg {
     fill: var(--ifm-alert-color);
   }
 }
