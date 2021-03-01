@@ -37,19 +37,19 @@ You need to import the LBH Frontend styles into the main Sass file in your proje
 
 1. To import all components, add the below to your Sass file:
 
-```SCSS
+```scss
 @import "node_modules/lbh-frontend/lbh/all";
 ```
 
 2. To import an individual component (for example a button), add the below to your Sass file:
 
-```SCSS
+```scss
 @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
 ```
 
 If importing individual components, you should first import the core and objects files:
 
-```SCSS
+```scss
 @import "node_modules/lbh-frontend/lbh/core/all";
 @import "node_modules/lbh-frontend/lbh/objects/all";
 ```
@@ -62,20 +62,22 @@ In Rails, they should be added to [assets paths](http://guides.rubyonrails.org/a
 
 For example, if your project uses Gulp, you would add the Sass include paths to your Gulp configuration file (for example `gulpfile.js`) with [gulp-sass](https://www.npmjs.com/package/gulp-sass):
 
-```JS
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({
-      includePaths: 'node_modules'
-     }))
-    .pipe(gulp.dest('./css'));
-});
-
+```js
+gulp.task("sass", function () {
+  return gulp
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        includePaths: "node_modules",
+      })
+    )
+    .pipe(gulp.dest("./css"))
+})
 ```
 
 After resolving the import paths you can write imports like:
 
-```SCSS
+```scss
 @import "lbh-frontend/lbh/components/button/button";
 ```
 
@@ -89,7 +91,7 @@ This to avoid the risk of global styles conflicting with any pre-existing global
 
 These [global styles](../../src/lbh/core/_global-styles.scss) (`<h1>` to `<h6>`, `<p>`, `<a>`) are not included by default in LBH Frontend. To include these global styles in your app, you can set `$lbh-global-styles` variable to `true` before importing LBH Frontend styles into your app:
 
-```SCSS
+```scss
 // application.scss
 
 $lbh-global-styles: true;
@@ -109,11 +111,46 @@ For example, the JavaScript will:
 - allow links styled as buttons to be triggered with the space bar when focused, which matches the behaviour of native buttons and the way the button is described when using assistive technologies.
 - enhance the details component to help users of assistive technologies understand whether it is expanded or collapsed, and to make the component behave correctly for users of Internet Explorer 8.
 
-You should [include](#option-1-include-javascript) or [import](#option-2-import-javascript) LBH Frontend JavaScript, and then initialise the script in your application to ensure that all users can use it successfully.
+You should [import](#1-import-javascript) or [include](#2-include-javascript) LBH Frontend JavaScript, and then initialise the script in your application to ensure that all users can use it successfully.
 
 Note that LBH Frontend does not initialise any scripts by default; all scripts **must** be initialised in order for them to work.
 
-### Option 1: include JavaScript with a script tag
+### 1. import JavaScript
+
+If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
+
+```js
+import { initAll } from "lbh-frontend"
+
+initAll()
+```
+
+#### Import individual components
+
+If you're using a modern build tool like Parcel or Webpack, use the `import` syntax to import a component:
+
+```js
+import { Radios } from "lbh-frontend"
+```
+
+LBH Frontend components with JavaScript behaviour have the `data-module` attribute set in their markup.
+
+You can use this attribute to initialise the component manually, this may be useful if you are adding markup to a page after it has loaded.
+
+To initialise the first radio component on a page, use:
+
+```js
+var radio = document.querySelector('[data-module="govuk-radios"]')
+if (radio) {
+  new Radios(radio).init()
+}
+```
+
+:::note
+The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
+:::
+
+### 2. include JavaScript with a script tag
 
 Include the `node_modules/lbh-frontend/lbh/all.js` script on your page. You might wish to copy the file into your project or reference it from `node_modules`.
 
@@ -167,41 +204,6 @@ if (radio) {
 The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
 :::
 
-### Option 2: import JavaScript
-
-If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
-
-```JS
-import { initAll } from 'lbh-frontend'
-
-initAll()
-```
-
-#### Import individual components
-
-If you're using a modern build tool like Parcel or Webpack, use the `import` syntax to import a component:
-
-```JS
-import { Radios } from 'lbh-frontend'
-```
-
-LBH Frontend components with JavaScript behaviour have the `data-module` attribute set in their markup.
-
-You can use this attribute to initialise the component manually, this may be useful if you are adding markup to a page after it has loaded.
-
-To initialise the first radio component on a page, use:
-
-```js
-var radio = document.querySelector('[data-module="govuk-radios"]')
-if (radio) {
-  new Radios(radio).init()
-}
-```
-
-:::note
-The value of the `data-module` attribute will either be prefixed with `govuk` or `lbh` depending on whether or not the component originated in `govuk-frontend` or `lbh-frontend` respectively. The best way to check is to look at the markup of the component and take the value of `data-module` from there.
-:::
-
 ### Polyfills
 
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
@@ -226,8 +228,11 @@ requests for your assets folder there.
 For example, if your project uses [express.js](https://expressjs.com/), below is
 a code sample you could add to your configuration:
 
-```JS
-app.use('/assets', express.static(path.join(__dirname, '/node_modules/lbh-frontend/lbh/assets')))
+```js
+app.use(
+  "/assets",
+  express.static(path.join(__dirname, "/node_modules/lbh-frontend/lbh/assets"))
+)
 ```
 
 ### Alternative solution
@@ -242,16 +247,16 @@ To use different asset paths, also complete the below step(s).
 
 Example 1:
 
-```SCSS
+```scss
 // Include images from /application/assets/images and fonts from /application/assets/fonts
-$govuk-assets-path: '/application/assets';
+$govuk-assets-path: "/application/assets";
 
 @import "lbh-frontend/lbh/all";
 ```
 
 Example 2:
 
-```SCSS
+```scss
 // Include images from /images/govuk-frontend and fonts from /fonts
 $govuk-images-path: "/images/lbh-frontend/";
 $govuk-fonts-path: "/fonts/";
