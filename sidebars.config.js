@@ -4,11 +4,11 @@ module.exports = {
     Designing: ["designing/design-kits"],
     Developing: [
       "developing/installing-from-npm",
-      "developing/updating",
       "developing/installing-from-dist",
+      "developing/updating",
       "developing/browser-support",
-      "developing/supporting-ie8",
       "developing/react",
+      "developing/supporting-ie8",
       {
         type: "link",
         label: "Sass reference",
@@ -48,7 +48,7 @@ module.exports = {
         items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
       },
     ],
-    Tutorials: ["tutorials/react", "tutorials/prototype"],
+    "Starter kits": ["tutorials/prototype", "tutorials/production"],
     Contributing: ["contributing/introduction"],
   },
 };

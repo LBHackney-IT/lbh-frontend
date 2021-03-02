@@ -12,6 +12,40 @@ The design system can save you a lot of time and effort in making your React com
 
 ## Setting it up
 
+### Modify your class names
+
+React doesn't support the `class` attribute, so you'll need to replace all instances with `className` instead.
+
+### Client-side routing
+
+All components need to be initialised before their JavaScript features will work. The init function must be called _after_ the HTML has been rendered to the page.
+
+On a server-rendered page this is straightforward, but on a client-rendered React app you must remember to re-initialise the JS whenever you render new components.
+
+One option is to call the component's init function in a [`useEffect`](https://reactjs.org/docs/hooks-effect.html) hook after it renders. For example:
+
+```jsx
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    require("lbh-frontend").initAll()
+  }
+}, [])
+```
+
+### Server-side rendering
+
+If you're using a SSR framework like Next.js, you might see errors like `document is not defined`.
+
+This is because Next will automatically try to compile the JavaScript to run on the server as well as the client.
+
+You can solve this issue by wrapping your component init calls in an `if` statement that checks the global window variable is set:
+
+```jsx
+if (typeof window !== "undefined") {
+  require("lbh-frontend").initAll()
+}
+```
+
 ### Image assets
 
 Depending on your bundler settings, you might have issues with images not appearing in components like the [contact block](/components/contacts-block).
@@ -25,36 +59,6 @@ $lbh-asset-path: "~!file-loader!../lbh/assets";
 ```
 
 That `~!file-loader!` prefix [forces webpack to interpret SVG files as static images](https://github.com/facebook/docusaurus/issues/3566#issue-718199061) rather than JavaScript modules.
-
-### Server-side rendering
-
-If you're using a SSR framework like Next.js, you might see errors like `document is not defined`.
-
-This is because Next will automatically try to compile the JavaScript to run on the server as well as the client.
-
-You can solve this issue by wrapping your component init calls in an `if` statement that checks the global window variable is set:
-
-```jsx
-if (typeof window !== "undefined") {
-  require("lbh-frontend-react/lbh/all").initAll();
-}
-```
-
-### Client-side routing
-
-All components need to be initialised before their JavaScript features will work. The init function must be called _after_ the HTML has been rendered to the page.
-
-On a server-rendered page this is straightforward, but on a client-rendered React app you must remember to re-initialise the JS whenever you render new components.
-
-One option is to call the component's init function in a [`useEffect`](https://reactjs.org/docs/hooks-effect.html) hook after it renders. For example:
-
-```jsx
-useEffect(() => {
-  if (typeof window !== "undefined") {
-    require("lbh-frontend-react/lbh/all").initAll();
-  }
-}, []);
-```
 
 ## Building components with complex interactions and logic
 

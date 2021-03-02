@@ -133,7 +133,6 @@ title: Contact block
           viewBox="0 0 30 30"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <title>Twitter</title>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -168,7 +167,6 @@ title: Contact block
           viewBox="0 0 30 30"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <title>Facebook</title>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -203,7 +201,6 @@ title: Contact block
           viewBox="0 0 30 30"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <title>Youtube</title>
           <g stroke="none" stroke-width="1" fill-rule="evenodd">
@@ -230,7 +227,6 @@ title: Contact block
           viewBox="0 0 30 30"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <title>Instagram</title>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

@@ -36,7 +36,6 @@ _Scroll below this point to see the preview_
     viewBox="0 0 31 31"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Back to top arrow icon</title>
     <g

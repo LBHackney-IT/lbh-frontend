@@ -1,5 +1,5 @@
 ---
-title: Using it with React
+title: React
 ---
 
 ## Create React App

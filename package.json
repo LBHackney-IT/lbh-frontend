@@ -15,9 +15,7 @@
     "clean:docs": "docusaurus clear",
     "clean:dist": "rimraf dist",
     "clean": "npm-run-all clean:*",
-    "dev:docs": "docusaurus start",
-    "dev": "npm-run-all dev:*",
-    "start": "npm-run-all dev:*",
+    "start": "docusaurus start",
     "semantic-release": "semantic-release",
     "test": "jest",
     "prepublishOnly": "npm-run-all -s clean build"

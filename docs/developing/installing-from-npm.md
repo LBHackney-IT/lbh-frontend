@@ -1,5 +1,5 @@
 ---
-title: Installing with node package manager (NPM)
+title: Installing with npm
 ---
 
 ## Requirements
@@ -115,6 +115,8 @@ You should [import](#1-import-javascript) or [include](#2-include-javascript) LB
 
 Note that LBH Frontend does not initialise any scripts by default; all scripts **must** be initialised in order for them to work.
 
+There are [extra steps](/developing/react) to make the JavaScript work in a React app.
+
 ### 1. import JavaScript
 
 If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the `import` syntax to import all components. To initialise them, use the `initAll` function:
@@ -159,8 +161,6 @@ To initialise all components, use the `initAll` function.
 JavaScript in LBH Frontend requires HTML to be parsed first by the browser before it is initialised. Because of this, make sure you include the script before the closing `</body>` tag.
 
 Including the script elsewhere will stop components from functioning or displaying correctly.
-
-We have [instructions](/developing/react#client-side-routing) for making this work in React apps.
 
 ```html
     <script src="path-to-assets/lbh-frontend/lbh/all.js"></script>
