@@ -30,6 +30,8 @@ module.exports = {
           "components/contacts-block",
           "components/character-count",
           "components/cookie-banner",
+          "components/summary-list",
+          "components/table",
           "components/tag",
           "components/tabs",
           "components/textarea",

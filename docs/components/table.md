@@ -2,6 +2,10 @@
 title: Table
 ---
 
+import InitAll from "../../src/InitAll"
+
+<InitAll>
+
 Use the table component to make information easier to compare and scan for users.
 
 ## Table
@@ -171,3 +175,4 @@ Use the table component to make information easier to compare and scan for users
   </tbody>
 </table>
 ```
+</InitAll>
