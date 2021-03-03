@@ -26,17 +26,6 @@ Use the warning text component when you need to warn users about something impor
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-warning-text/macro.njk" import lbhWarningText %}
-
-{{ lbhWarningText({
-  "text": "You can be fined up to £5,000 if you don’t register.",
-  "iconFallbackText": "Warning"
-}) }}
-```
-
 ## With multiple lines
 
 <div class="govuk-warning-text  lbh-warning-text">
@@ -54,19 +43,13 @@ Use the warning text component when you need to warn users about something impor
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>
-    If you are not covered by this License), You must: (a) comply with the terms stated above for the purpose of this license. It explains, for example, the production of a Source form, including but not limited to, the implied warranties or conditions of this License, without any additional file created by such Respondent to you under Sections 2.1 and 2.2 above. Larger Works. You may choose to distribute such a notice and a brief idea of what it does.
+    If you are not covered by this License), You must: (a) comply with the terms
+    stated above for the purpose of this license. It explains, for example, the
+    production of a Source form, including but not limited to, the implied
+    warranties or conditions of this License, without any additional file
+    created by such Respondent to you under Sections 2.1 and 2.2 above. Larger
+    Works. You may choose to distribute such a notice and a brief idea of what
+    it does.
   </strong>
 </div>
 ```
-
-### Nunjucks
-
-```
-{% from "lbh-warning-text/macro.njk" import lbhWarningText %}
-
-{{ lbhWarningText({
-  "text": "If you are not covered by this License), You must: (a) comply with the terms stated above for the purpose of this license. It explains, for example, the production of a Source form, including but not limited to, the implied warranties or conditions of this License, without any additional file created by such Respondent to you under Sections 2.1 and 2.2 above. Larger Works. You may choose to distribute such a notice and a brief idea of what it does.",
-  "iconFallbackText": "Warning"
-}) }}
-```
-

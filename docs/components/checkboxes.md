@@ -166,38 +166,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "with-id-and-name",
-  "fieldset": {
-    "legend": {
-      "text": "What is your nationality?"
-    }
-  },
-  "hint": {
-    "text": "If you have dual nationality, select all options that are relevant to you."
-  },
-  "items": [
-    {
-      "name": "british",
-      "id": "item_british",
-      "value": "yes",
-      "text": "British"
-    },
-    {
-      "name": "irish",
-      "id": "item_irish",
-      "value": "irish",
-      "text": "Irish"
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes with hints and items
 
 <div class="govuk-form-group lbh-form-group">
@@ -288,41 +256,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "fieldset": {
-    "legend": {
-      "text": "How do you want to sign in?",
-      "isPageHeading": true
-    }
-  },
-  "items": [
-    {
-      "name": "gateway",
-      "id": "government-gateway",
-      "value": "gov-gateway",
-      "text": "Sign in with Government Gateway",
-      "hint": {
-        "text": "You’ll have a user ID if you’ve registered for Self Assessment or filed a tax return online before."
-      }
-    },
-    {
-      "name": "verify",
-      "id": "govuk-verify",
-      "value": "gov-verify",
-      "text": "Sign in with GOV.UK Verify",
-      "hint": {
-        "text": "You’ll have an account if you’ve already proved your identity with either Barclays, CitizenSafe, Digidentity, Experian, Post Office, Royal Mail or SecureIdentity."
-      }
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes with disabled item
 
 <div class="govuk-form-group lbh-form-group">
@@ -392,31 +325,6 @@ Use the Checkboxes for
     </div>
   </div>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "colours",
-  "items": [
-    {
-      "value": "red",
-      "text": "Red"
-    },
-    {
-      "value": "green",
-      "text": "Green"
-    },
-    {
-      "value": "blue",
-      "text": "Blue",
-      "disabled": true
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with legend as a page heading
@@ -507,40 +415,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "waste",
-  "fieldset": {
-    "legend": {
-      "text": "Which types of waste do you transport regularly?",
-      "classes": "govuk-fieldset__legend--l",
-      "isPageHeading": true
-    }
-  },
-  "hint": {
-    "text": "Select all that apply"
-  },
-  "items": [
-    {
-      "value": "animal",
-      "text": "Waste from animal carcasses"
-    },
-    {
-      "value": "mines",
-      "text": "Waste from mines or quarries"
-    },
-    {
-      "value": "farm",
-      "text": "Farm or agricultural waste"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with a medium legend
@@ -636,42 +510,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "waste",
-  "fieldset": {
-    "legend": {
-      "text": "Which types of waste do you transport regularly?",
-      "classes": "govuk-fieldset__legend--m"
-    }
-  },
-  "hint": {
-    "text": "Select all that apply"
-  },
-  "errorMessage": {
-    "text": "Select which types of waste you transport regularly"
-  },
-  "items": [
-    {
-      "value": "animal",
-      "text": "Waste from animal carcasses"
-    },
-    {
-      "value": "mines",
-      "text": "Waste from mines or quarries"
-    },
-    {
-      "value": "farm",
-      "text": "Farm or agricultural waste"
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes without fieldset
 
 <div class="govuk-form-group lbh-form-group">
@@ -742,30 +580,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "colours",
-  "items": [
-    {
-      "value": "red",
-      "text": "Red"
-    },
-    {
-      "value": "green",
-      "text": "Green"
-    },
-    {
-      "value": "blue",
-      "text": "Blue"
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes with single option set 'aria-describedby' on input
 
 <div class="govuk-form-group govuk-form-group--error lbh-form-group">
@@ -806,25 +620,6 @@ Use the Checkboxes for
     </div>
   </div>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "t-and-c",
-  "errorMessage": {
-    "text": "Please accept the terms and conditions"
-  },
-  "items": [
-    {
-      "value": "yes",
-      "text": "I agree to the terms and conditions"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with single option (and hint) set 'aria-describedby' on input
@@ -879,29 +674,6 @@ Use the Checkboxes for
     </div>
   </div>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "t-and-c-with-hint",
-  "errorMessage": {
-    "text": "Please accept the terms and conditions"
-  },
-  "items": [
-    {
-      "value": "yes",
-      "text": "I agree to the terms and conditions",
-      "hint": {
-        "text": "Go on, you know you want to!"
-      }
-    }
-  ]
-}) }}
-
 ```
 
 ## Checkboxes with fieldset and error message
@@ -987,38 +759,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "colours",
-  "errorMessage": {
-    "text": "Please accept the terms and conditions"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "What is your nationality?"
-    }
-  },
-  "items": [
-    {
-      "value": "british",
-      "text": "British"
-    },
-    {
-      "value": "irish",
-      "text": "Irish"
-    },
-    {
-      "value": "other",
-      "text": "Citizen of another country"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with all fieldset attributes
@@ -1116,48 +856,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "example",
-  "name": "example",
-  "fieldset": {
-    "classes": "app-fieldset--custom-modifier",
-    "attributes": {
-      "data-attribute": "value",
-      "data-second-attribute": "second-value"
-    },
-    "legend": {
-      "text": "What is your nationality?"
-    }
-  },
-  "hint": {
-    "text": "If you have dual nationality, select all options that are relevant to you."
-  },
-  "errorMessage": {
-    "text": "Please select an option"
-  },
-  "items": [
-    {
-      "value": "british",
-      "text": "British"
-    },
-    {
-      "value": "irish",
-      "text": "Irish"
-    },
-    {
-      "value": "other",
-      "text": "Citizen of another country"
-    }
-  ]
-}) }}
-
-```
-
 ## Checkboxes with error message
 
 <div class="govuk-form-group govuk-form-group--error lbh-form-group">
@@ -1242,38 +940,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "waste",
-  "errorMessage": {
-    "text": "Please select an option"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "Which types of waste do you transport regularly?"
-    }
-  },
-  "items": [
-    {
-      "value": "animal",
-      "text": "Waste from animal carcasses"
-    },
-    {
-      "value": "mines",
-      "text": "Waste from mines or quarries"
-    },
-    {
-      "value": "farm",
-      "text": "Farm or agricultural waste"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with error message and hints on items
@@ -1392,47 +1058,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "waste",
-  "errorMessage": {
-    "text": "Please select an option"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "Which types of waste do you transport regularly?"
-    }
-  },
-  "items": [
-    {
-      "value": "animal",
-      "text": "Waste from animal carcasses",
-      "hint": {
-        "text": "Nullam id dolor id nibh ultricies vehicula ut id elit."
-      }
-    },
-    {
-      "value": "mines",
-      "text": "Waste from mines or quarries",
-      "hint": {
-        "text": "Nullam id dolor id nibh ultricies vehicula ut id elit."
-      }
-    },
-    {
-      "value": "farm",
-      "text": "Farm or agricultural waste",
-      "hint": {
-        "text": "Nullam id dolor id nibh ultricies vehicula ut id elit."
-      }
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes with very long option text
 
 <div class="govuk-form-group govuk-form-group--error lbh-form-group">
@@ -1538,41 +1163,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "waste",
-  "hint": {
-    "text": "Nullam id dolor id nibh ultricies vehicula ut id elit."
-  },
-  "errorMessage": {
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  "fieldset": {
-    "legend": {
-      "text": "Maecenas faucibus mollis interdum?"
-    }
-  },
-  "items": [
-    {
-      "value": "nullam",
-      "text": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus."
-    },
-    {
-      "value": "aenean",
-      "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum."
-    },
-    {
-      "value": "fusce",
-      "text": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Sed posuere consectetur est at lobortis."
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes with conditional items
@@ -1712,46 +1302,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "with-conditional-items",
-  "idPrefix": "how-contacted",
-  "fieldset": {
-    "legend": {
-      "text": "How do you want to be contacted?"
-    }
-  },
-  "items": [
-    {
-      "value": "email",
-      "text": "Email",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"context-email\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"context-email\" type=\"text\" id=\"context-email\">\n"
-      }
-    },
-    {
-      "value": "phone",
-      "text": "Phone",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-phone\">Phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"contact-phone\" type=\"text\" id=\"contact-phone\">\n"
-      }
-    },
-    {
-      "value": "text",
-      "text": "Text message",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-text-message\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"contact-text-message\" type=\"text\" id=\"contact-text-message\">\n"
-      }
-    }
-  ]
-}) }}
-
 ```
 
 ## Checkboxes with conditional item checked
@@ -1910,50 +1460,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "how-contacted-checked",
-  "idPrefix": "how-contacted-checked",
-  "formGroup": {
-    "classes": "govuk-form-group--error"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "How do you want to be contacted?"
-    }
-  },
-  "items": [
-    {
-      "value": "email",
-      "text": "Email",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"context-email\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"context-email\" type=\"text\" id=\"context-email\">\n"
-      }
-    },
-    {
-      "value": "phone",
-      "text": "Phone",
-      "checked": true,
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-phone\">Phone number</label>\n<span id=\"contact-phone-error\" class=\"govuk-error-message\">Problem with input</span>\n<input class=\"govuk-input govuk-input--error govuk-!-width-one-third\" name=\"contact-phone\" type=\"text\" id=\"contact-phone\" aria-describedby=\"contact-phone-error\">\n"
-      }
-    },
-    {
-      "value": "text",
-      "text": "Text message",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-text-message\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"contact-text-message\" type=\"text\" id=\"contact-text-message\">\n"
-      }
-    }
-  ]
-}) }}
-
 ```
 
 ## Checkboxes with optional form-group classes showing group error
@@ -2116,49 +1622,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "how-contacted-checked",
-  "idPrefix": "how-contacted-checked",
-  "formGroup": {
-    "classes": "govuk-form-group--error"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "How do you want to be contacted?"
-    }
-  },
-  "items": [
-    {
-      "value": "email",
-      "text": "Email",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"context-email\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"context-email\" type=\"text\" id=\"context-email\">\n"
-      }
-    },
-    {
-      "value": "phone",
-      "text": "Phone",
-      "checked": true,
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-phone\">Phone number</label>\n<span id=\"contact-phone-error\" class=\"govuk-error-message\">Problem with input</span>\n<input class=\"govuk-input govuk-input--error govuk-!-width-one-third\" name=\"contact-phone\" type=\"text\" id=\"contact-phone\" aria-describedby=\"contact-phone-error\">\n"
-      }
-    },
-    {
-      "value": "text",
-      "text": "Text message",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"contact-text-message\">Mobile phone number</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"contact-text-message\" type=\"text\" id=\"contact-text-message\">\n"
-      }
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes small
 
 <div class="govuk-form-group lbh-form-group">
@@ -2235,37 +1698,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "nationality",
-  "name": "nationality",
-  "classes": "govuk-checkboxes--small",
-  "fieldset": {
-    "legend": {
-      "text": "Filter by"
-    }
-  },
-  "items": [
-    {
-      "value": "a",
-      "text": "a thing"
-    },
-    {
-      "value": "b",
-      "text": "another thing"
-    },
-    {
-      "value": "c",
-      "text": "this thing"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes small with long text
@@ -2360,38 +1792,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "nationality",
-  "name": "nationality",
-  "classes": "govuk-checkboxes--small",
-  "fieldset": {
-    "legend": {
-      "text": "Filter by"
-    }
-  },
-  "items": [
-    {
-      "value": "nullam",
-      "text": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus."
-    },
-    {
-      "value": "aenean",
-      "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum."
-    },
-    {
-      "value": "fusce",
-      "text": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Sed posuere consectetur est at lobortis."
-    }
-  ]
-}) }}
-
-```
-
 ## Checkboxes small with error
 
 <div class="govuk-form-group govuk-form-group--error lbh-form-group">
@@ -2474,40 +1874,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "nationality",
-  "name": "nationality",
-  "classes": "govuk-checkboxes--small",
-  "errorMessage": {
-    "text": "Select a thing"
-  },
-  "fieldset": {
-    "legend": {
-      "text": "Filter by"
-    }
-  },
-  "items": [
-    {
-      "value": "a",
-      "text": "a thing"
-    },
-    {
-      "value": "b",
-      "text": "another thing"
-    },
-    {
-      "value": "c",
-      "text": "this thing"
-    }
-  ]
-}) }}
 ```
 
 ## Checkboxes small with hint
@@ -2598,40 +1964,6 @@ Use the Checkboxes for
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "nationality",
-  "name": "nationality",
-  "classes": "govuk-checkboxes--small",
-  "fieldset": {
-    "legend": {
-      "text": "Filter by"
-    }
-  },
-  "items": [
-    {
-      "value": "a",
-      "text": "a thing",
-      "hint": {
-        "text": "hint for a thing"
-      }
-    },
-    {
-      "value": "b",
-      "text": "another thing"
-    },
-    {
-      "value": "c",
-      "text": "this thing"
-    }
-  ]
-}) }}
-```
-
 ## Checkboxes small with disabled
 
 <div class="govuk-form-group lbh-form-group">
@@ -2709,39 +2041,6 @@ Use the Checkboxes for
     </div>
   </fieldset>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "idPrefix": "nationality",
-  "name": "nationality",
-  "classes": "govuk-checkboxes--small",
-  "fieldset": {
-    "legend": {
-      "text": "Filter by"
-    }
-  },
-  "items": [
-    {
-      "value": "a",
-      "text": "a thing"
-    },
-    {
-      "value": "b",
-      "text": "another thing"
-    },
-    {
-      "value": "c",
-      "text": "this thing",
-      "disabled": true
-    }
-  ]
-}) }}
-
 ```
 
 ## Checkboxes small with conditional reveal
@@ -2829,34 +2128,3 @@ Use the Checkboxes for
   </fieldset>
 </div>
 ```
-
-### Nunjucks
-
-````
-{% from "lbh-checkboxes/macro.njk" import lbhCheckboxes %}
-
-{{ lbhCheckboxes({
-  "name": "how-contacted",
-  "idPrefix": "how-contacted",
-  "classes": "govuk-checkboxes--small",
-  "fieldset": {
-    "legend": {
-      "text": "How do you want to be contacted?"
-    }
-  },
-  "items": [
-    {
-      "value": "a",
-      "text": "a thing",
-      "conditional": {
-        "html": "<label class=\"lbh-label govuk-label\" for=\"context-email\">Foo</label>\n<input class=\"govuk-input govuk-!-width-one-third\" name=\"context-email\" type=\"text\" id=\"context-email\">\n"
-      }
-    },
-    {
-      "value": "b",
-      "text": "another thing"
-    }
-  ]
-}) }}
-```
-````

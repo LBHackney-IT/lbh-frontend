@@ -32,25 +32,6 @@ title: Breadcrumbs
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-
-{{ lbhBreadcrumbs({
-  "items": [
-    {
-      "text": "Section",
-      "href": "/section"
-    },
-    {
-      "text": "Sub-section",
-      "href": "/section/sub-section"
-    }
-  ]
-}) }}
-```
-
 ## Breadcrumbs with one level
 
 <div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
@@ -71,21 +52,6 @@ title: Breadcrumbs
     </li>
   </ol>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-
-{{ lbhBreadcrumbs({
-  "items": [
-    {
-      "text": "Section",
-      "href": "/section"
-    }
-  ]
-}) }}
 ```
 
 ## Breadcrumbs with multiple levels
@@ -134,33 +100,6 @@ title: Breadcrumbs
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-
-{{ lbhBreadcrumbs({
-  "items": [
-    {
-      "text": "Home",
-      "href": "/"
-    },
-    {
-      "text": "Section",
-      "href": "/section"
-    },
-    {
-      "text": "Sub-section",
-      "href": "/section/sub-section"
-    },
-    {
-      "text": "Sub Sub-section",
-      "href": "/section/sub-section/sub-sub-section"
-    }
-  ]
-}) }}
-```
-
 ## Breadcrumbs without the home section
 
 <div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
@@ -189,25 +128,6 @@ title: Breadcrumbs
     </li>
   </ol>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-
-{{ lbhBreadcrumbs({
-  "items": [
-    {
-      "text": "Service Manual",
-      "href": "/service-manual"
-    },
-    {
-      "text": "Agile Delivery",
-      "href": "/service-manual/agile-delivery"
-    }
-  ]
-}) }}
 ```
 
 ## Breadcrumbs with last breadcrumb as current page
@@ -240,26 +160,4 @@ title: Breadcrumbs
     </li>
   </ol>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-breadcrumbs/macro.njk" import lbhBreadcrumbs %}
-
-{{ lbhBreadcrumbs({
-  "items": [
-    {
-      "text": "Home",
-      "href": "/"
-    },
-    {
-      "text": "Passports, travel and living abroad",
-      "href": "/browse/abroad"
-    },
-    {
-      "text": "Travel abroad"
-    }
-  ]
-}) }}
 ```

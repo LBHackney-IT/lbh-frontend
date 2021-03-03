@@ -67,14 +67,3 @@ _Scroll below this point to see the preview_
   <span class="lbh-back-to-top__text">Back to top</span>
 </a>
 ```
-
-## Nunjucks
-
-````
-{% from "lbh-back-to-top/macro.njk" import lbhBackToTop %}
-
-{{ lbhBackToTop({
-  "topLink": "#main-content"
-}) }}
-``` -->
-````
