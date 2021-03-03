@@ -2,9 +2,9 @@ name: Publish documentation
 
 on:
   pull_request:
-    branches: [feature/main]
+    branches: [main]
   push:
-    branches: [feature/main]
+    branches: [main]
 
 jobs:
   checks:
