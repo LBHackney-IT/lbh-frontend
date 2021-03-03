@@ -1,0 +1,19 @@
+@import "../settings/all";
+@import "../helpers/all";
+
+* {
+  margin: 0;
+}
+
+@if $lbh-safely-embed {
+} @else {
+  * + * {
+    margin-top: 1.5em;
+  }
+}
+
+@include govuk-media-query($from: tablet) {
+  * + [class|="govuk-grid-column"] {
+    margin-top: 0;
+  }
+}

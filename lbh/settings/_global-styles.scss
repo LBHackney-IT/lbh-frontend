@@ -1,0 +1,22 @@
+////
+/// @group settings/global-styles
+////
+
+/// Include 'global' styles
+///
+/// Whether to style headings (`<h1> - <h6`), paragraphs (`<p>`), links (`<a>`)
+/// and html smooth scrolling without explicitly
+/// having to apply the `lbh-heading-h*`, `lbh-body-m` and `lbh-link` classes.
+///
+/// @type Boolean
+/// @access public
+
+$lbh-global-styles: false !default;
+
+/// Skip reset stylesheet and every single global style
+///
+/// Whether to skip the "reset" stylesheet, which turns font, border and padding properties to their default. Might be desirable if embedding on another page.
+///
+/// @type Boolean
+/// @access public
+$lbh-safely-embed: false !default;

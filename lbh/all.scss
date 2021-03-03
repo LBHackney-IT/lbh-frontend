@@ -1,0 +1,22 @@
+// sass-lint:disable no-url-protocols no-url-domains
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+// remove 200 , 500 becomes 600
+
+// sass-lint:enable no-url-protocols no-url-domains
+$govuk-font-family: "Open Sans";
+$govuk-include-default-font-face: false;
+$lbh-font-family: "Open Sans";
+
+@import "settings/all";
+@import "tools/all";
+@import "helpers/all";
+
+@import "core/all";
+@import "objects/all";
+@import "components/all";
+
+@import "utilities/all";
+@import "overrides/all";
+
+$govuk-asset-path: $lbh-asset-path;
