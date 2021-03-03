@@ -16,16 +16,6 @@ title: Button
 </button>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-button/macro.njk" import lbhButton %}
-
-{{ lbhButton({
-  "text": "Save and continue"
-}) }}
-```
-
 ## Button disabled
 
 <button disabled="disabled" aria-disabled="true" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
@@ -43,17 +33,6 @@ title: Button
 >
   Disabled button
 </button>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-button/macro.njk" import lbhButton %}
-
-{{ lbhButton({
-  "text": "Disabled button",
-  "disabled": true
-}) }}
 ```
 
 ## Button link
@@ -76,18 +55,6 @@ title: Button
 </a>
 ```
 
-### Nunjucks
-
-```
-
-{% from "lbh-button/macro.njk" import lbhButton %}
-
-{{ lbhButton({
-  "text": "Link button",
-  "href": "/"
-}) }}
-```
-
 ## Button link disabled
 
 <a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
@@ -100,16 +67,4 @@ title: Button
 <a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-button/macro.njk" import lbhButton %}
-
-{{ lbhButton({
-  "text": "Disabled link button",
-  "href": "/",
-  "disabled": true
-}) }}
 ```

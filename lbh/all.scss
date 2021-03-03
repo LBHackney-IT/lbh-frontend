@@ -7,6 +7,7 @@
 $govuk-font-family: "Open Sans";
 $govuk-include-default-font-face: false;
 $lbh-font-family: "Open Sans";
+
 @import "settings/all";
 @import "tools/all";
 @import "helpers/all";
@@ -17,3 +18,5 @@ $lbh-font-family: "Open Sans";
 
 @import "utilities/all";
 @import "overrides/all";
+
+$govuk-asset-path: $lbh-asset-path;

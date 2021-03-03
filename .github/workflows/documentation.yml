@@ -1,4 +1,4 @@
-name: documentation
+name: Publish documentation
 
 on:
   pull_request:
@@ -60,4 +60,5 @@ jobs:
           else
           npm i
           fi
+          npm run build:sassdoc
           npx docusaurus deploy

@@ -2,9 +2,13 @@
 title: Character count
 ---
 
+import InitAll from "../../src/InitAll"
+
 Use the Character count
 
 ## Character count
+
+<InitAll>
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="10">
   <div class="govuk-form-group lbh-form-group">
@@ -49,22 +53,6 @@ Use the Character count
     You can enter up to 10 characters
   </span>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "name": "more-detail",
-  "id": "more-detail",
-  "maxlength": 10,
-  "label": {
-    "text": "Can you provide more detail?"
-  }
-}) }}
-
 ```
 
 ## Character count with hint
@@ -121,24 +109,6 @@ Use the Character count
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "name": "with-hint",
-  "id": "with-hint",
-  "maxlength": 10,
-  "label": {
-    "text": "Can you provide more detail?"
-  },
-  "hint": {
-    "text": "Don't include personal or financial information, eg your National Insurance number or credit card details."
-  }
-}) }}
-```
-
 ## Character count with default value
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="100">
@@ -192,22 +162,6 @@ NW1 6XE
     You can enter up to 100 characters
   </span>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "with-default-value",
-  "name": "default-value",
-  "maxlength": 100,
-  "label": {
-    "text": "Full address"
-  },
-  "value": "221B Baker Street\nLondon\nNW1 6XE\n"
-}) }}
 ```
 
 ## Character count with default value exceeding limit
@@ -272,25 +226,6 @@ NW1 6XE
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "exceeding-characters",
-  "name": "exceeding",
-  "maxlength": 10,
-  "value": "221B Baker Street\nLondon\nNW1 6XE\n",
-  "label": {
-    "text": "Full address"
-  },
-  "errorMessage": {
-    "text": "Please do not exceed the maximum allowed limit"
-  }
-}) }}
-```
-
 ## Character count with custom rows
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="10">
@@ -336,22 +271,6 @@ NW1 6XE
     You can enter up to 10 characters
   </span>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "custom-rows",
-  "name": "custom",
-  "maxlength": 10,
-  "label": {
-    "text": "Full address"
-  },
-  "rows": 8
-}) }}
 ```
 
 ## Character count with label as page headings
@@ -401,22 +320,6 @@ NW1 6XE
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "textarea-with-page-heading",
-  "name": "address",
-  "maxlength": 10,
-  "label": {
-    "text": "Full address",
-    "isPageHeading": true
-  }
-}) }}
-```
-
 ## Character count with word count
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxwords="10">
@@ -462,21 +365,6 @@ NW1 6XE
     You can enter up to 10 words
   </span>
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "word-count",
-  "name": "word-count",
-  "maxwords": 10,
-  "label": {
-    "text": "Full address"
-  }
-}) }}
 ```
 
 ## Character count with word threshhold
@@ -527,19 +415,4 @@ NW1 6XE
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-character-count/macro.njk" import lbhCharacterCount %}
-
-{{ lbhCharacterCount({
-  "id": "with-threshold",
-  "name": "with-threshold",
-  "maxlength": 10,
-  "threshold": 75,
-  "label": {
-    "text": "Full address"
-  }
-}) }}
-
-```
+</InitAll>

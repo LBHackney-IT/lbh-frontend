@@ -41,7 +41,18 @@ html[data-theme="dark"] .navbar__logo {
   padding: 0 var(--ifm-pre-padding);
 }
 
+.alert--warning {
+  --ifm-alert-color: var(--ifm-color-gray-900);
+
+  .admonition-icon svg {
+    fill: var(--ifm-alert-color);
+  }
+}
+
 // don't reset styles on our page
 $lbh-safely-embed: true;
+$lbh-asset-path: "~!file-loader!../lbh/assets";
 
 @import "../lbh/all";
+
+@import "../lbh/components/lbh-accordion/accordion";

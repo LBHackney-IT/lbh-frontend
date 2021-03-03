@@ -13,14 +13,3 @@ Use the Back link for
 ```html
 <a href="#" class="govuk-back-link  lbh-back-link">Back to home</a>
 ```
-
-### Nunjucks
-
-```
-{% from "lbh-back-link/macro.njk" import lbhBackLink %}
-
-{{ lbhBackLink({
-  "href": "#",
-  "text": "Back to home"
-}) }}
-```

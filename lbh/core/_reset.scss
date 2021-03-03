@@ -1,4 +1,7 @@
-@if $lbh-safely-embed {} @else {
+@import "../settings/all";
+
+@if $lbh-safely-embed {
+} @else {
   html,
   body,
   div,

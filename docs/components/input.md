@@ -34,18 +34,6 @@ Use the text input component when you need to let users enter text that’s no l
 </div>
 ```
 
-### Nunjucks
-
-```
-{% from "lbh-input/macro.njk" import lbhInput %}
-
-{{ lbhInput({
-  "label": { "text": "National Insurance number" },
-  "id": "input-example",
-  "name": "test-name"
-}) }}
-```
-
 ## With hint text
 
 <div class="govuk-form-group lbh-form-group">
@@ -84,23 +72,6 @@ Use the text input component when you need to let users enter text that’s no l
     aria-describedby="input-with-hint-text-hint"
   />
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-input/macro.njk" import lbhInput %}
-
-{{ lbhInput({
-  "label": {
-    "text": "National insurance number"
-  },
-  "hint": {
-    "text": "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
-  },
-  "id": "input-with-hint-text",
-  "name": "test-name-2"
-}) }}
 ```
 
 ## With error message
@@ -147,24 +118,4 @@ Use the text input component when you need to let users enter text that’s no l
     aria-describedby="input-with-error-message-hint input-with-error-message-error"
   />
 </div>
-```
-
-### Nunjucks
-
-```
-{% from "lbh-input/macro.njk" import lbhInput %}
-
-{{ lbhInput({
-  "label": {
-    "text": "National Insurance number"
-  },
-  "hint": {
-    "text": "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
-  },
-  "id": "input-with-error-message",
-  "name": "test-name-3",
-  "errorMessage": {
-    "text": "Error message goes here"
-  }
-}) }}
 ```
