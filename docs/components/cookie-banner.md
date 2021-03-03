@@ -1,8 +1,8 @@
 ---
-title: Cookie Banner
+title: Cookie banner
 ---
 
-## Cookie Banner
+## Cookie banner
 
 <section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
   <div class="lbh-container">
