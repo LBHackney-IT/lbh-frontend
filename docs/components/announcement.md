@@ -2,10 +2,6 @@
 title: Announcement
 ---
 
-Use the Announcement
-
-## Announcement
-
 <section class="lbh-announcement lbh-announcement--site">
   <div class="lbh-container">
     <h3 class="lbh-announcement__title">Site-wide announcement</h3>
