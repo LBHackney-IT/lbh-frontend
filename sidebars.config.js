@@ -29,6 +29,7 @@ module.exports = {
       "components/date-input",
       "components/details",
       "components/error-message",
+      "components/error-summary",
       "components/tag",
       "components/tabs",
       "components/textarea",
