@@ -28,6 +28,7 @@ module.exports = {
       "components/cookie-banner",
       "components/date-input",
       "components/details",
+      "components/error-message",
       "components/tag",
       "components/tabs",
       "components/textarea",
