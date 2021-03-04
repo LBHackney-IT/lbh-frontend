@@ -2,9 +2,6 @@
 title: Text input
 ---
 
-Use the text input component when you need to let users enter text that’s no longer than a single line, such as their name or phone number.
-
-## Input
 
 <div class="govuk-form-group lbh-form-group">
   <label class="govuk-label  lbh-label" for="input-example">

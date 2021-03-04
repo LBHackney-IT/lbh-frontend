@@ -26,6 +26,7 @@ module.exports = {
       "components/contacts-block",
       "components/character-count",
       "components/cookie-banner",
+      "components/date-input",
       "components/tag",
       "components/tabs",
       "components/textarea",
