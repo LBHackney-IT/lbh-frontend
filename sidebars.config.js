@@ -27,6 +27,7 @@ module.exports = {
       "components/character-count",
       "components/cookie-banner",
       "components/date-input",
+      "components/details",
       "components/tag",
       "components/tabs",
       "components/textarea",
