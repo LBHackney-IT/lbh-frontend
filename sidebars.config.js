@@ -30,6 +30,7 @@ module.exports = {
       "components/details",
       "components/error-message",
       "components/error-summary",
+      "components/fieldset",
       "components/tag",
       "components/tabs",
       "components/textarea",
