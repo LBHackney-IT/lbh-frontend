@@ -9,6 +9,9 @@ module.exports = {
       "developing/browser-support",
       "developing/react",
       "developing/supporting-ie8",
+      "developing/page-template",
+      "developing/typography",
+      "developing/colours",
       {
         type: "link",
         label: "Sass reference",
