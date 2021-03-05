@@ -983,7 +983,7 @@ Use the summary list to summarise information, for example, a user’s responses
           No wrapping allowed
         </dt>
         <dd class="govuk-summary-list__value">
-          <p class="govuk-body" style="white-space: nowrap;">michelle.longish.name@example.com</p>
+          <p class="govuk-body" style={{whiteSpace: 'nowrap'}}>michelle.longish.name@example.com</p>
         </dd>
           <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -1317,7 +1317,7 @@ Use the summary list to summarise information, for example, a user’s responses
           No wrapping allowed
         </dt>
         <dd class="govuk-summary-list__value">
-          <p class="govuk-body" style="white-space: nowrap;">michelle.longish.name@example.com</p>
+          <p class="govuk-body" style={{whiteSpace: 'nowrap'}}>michelle.longish.name@example.com</p>
         </dd>
           <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
