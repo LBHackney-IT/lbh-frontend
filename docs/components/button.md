@@ -2,7 +2,7 @@
 title: Button
 ---
 
-## Button
+import InitAll from "../../src/InitAll"
 
 <button class="govuk-button  lbh-button" data-module="govuk-button">
   Save and continue

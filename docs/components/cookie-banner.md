@@ -1,8 +1,8 @@
 ---
-title: Cookie Banner
+title: Cookie banner
 ---
 
-## Cookie Banner
+import InitAll from "../../src/InitAll"
 
 <section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
   <div class="lbh-container">
