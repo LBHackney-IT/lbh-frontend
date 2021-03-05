@@ -2,8 +2,6 @@
 title: Breadcrumbs
 ---
 
-## Breadcrumbs
-
 <div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
