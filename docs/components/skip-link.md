@@ -1,6 +1,7 @@
 ---
-title: Skip Link
+title: Skip link
 ---
+
 import InitAll from "../../src/InitAll"
 
 <InitAll>
@@ -11,7 +12,9 @@ Use the skip link component to help keyboard-only users skip to the main content
 ### HTML
 
 ```html
-<a href="#content" class="govuk-skip-link  lbh-skip-link">Skip to main content</a>
+<a href="#content" class="govuk-skip-link  lbh-skip-link"
+  >Skip to main content</a
+>
 ```
 
 ## Skip link with focus
@@ -21,6 +24,9 @@ Use the skip link component to help keyboard-only users skip to the main content
 ### HTML
 
 ```html
-<a href="#content" class="govuk-skip-link :focus lbh-skip-link">Skip to main content</a>
+<a href="#content" class="govuk-skip-link :focus lbh-skip-link"
+  >Skip to main content</a
+>
 ```
+
 </InitAll>

@@ -1,5 +1,5 @@
 ---
-title: Error Summary
+title: Error summary
 ---
 
 import InitAll from "../../src/InitAll"
