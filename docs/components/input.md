@@ -1,7 +1,6 @@
 ---
-title: Text input
+title: Input
 ---
-
 
 <div class="govuk-form-group lbh-form-group">
   <label class="govuk-label  lbh-label" for="input-example">

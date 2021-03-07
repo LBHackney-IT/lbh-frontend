@@ -20,7 +20,6 @@ module.exports = {
     ],
     Components: [
       "components/accordion",
-      "components/input",
       "components/announcement",
       "components/back-link",
       "components/back-to-top",
@@ -37,6 +36,8 @@ module.exports = {
       "components/file-upload",
       "components/header",
       "components/hint",
+      "components/input",
+      "components/inset-text",
       "components/radios",
       "components/select",
       "components/skip-link",
