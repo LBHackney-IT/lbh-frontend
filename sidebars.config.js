@@ -35,6 +35,7 @@ module.exports = {
       "components/error-summary",
       "components/fieldset",
       "components/file-upload",
+      "components/header",
       "components/radios",
       "components/select",
       "components/skip-link",
