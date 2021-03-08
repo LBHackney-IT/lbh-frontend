@@ -1,0 +1,32 @@
+@import "../../settings/all";
+@import "../../tools/all";
+@import "../../helpers/all";
+@import "../../objects/all";
+
+@include lbh-exports("lbh/component/status-tag"){
+    .lbh-status-tag{
+        padding: 7px;
+        display: inline-block;
+        border-radius: 3px;
+
+        &--green{
+            background-color: lbh-colour("lbh-a01");
+            color: lbh-colour("lbh-text-white");
+        }
+
+        &--yellow{
+           background-color: lbh-colour("lbh-h04");
+           color: lbh-colour("lbh-text"); 
+        }
+
+        &--red{
+            background-color: lbh-colour("lbh-f02");
+            color: lbh-colour("lbh-text-white");
+        }
+
+        &--grey{
+            background-color: lbh-colour("lbh-border");
+            color: lbh-colour("lbh-text");
+        }
+    }
+}

@@ -12,14 +12,25 @@ Status tags can be useful to show the condition of a team's workload at a glance
 
 Use [sentence case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case) for the words inside a status tag.
 
-<span class="lbh-status-label lbh-status-label--green">Approved</span>
-<span class="lbh-status-label lbh-status-label--yellow">In review</span>
-<span class="lbh-status-label lbh-status-label--red">Overdue</span>
-<span class="lbh-status-label lbh-status-label--grey">Archived</span>
+<p>
+    <span class="lbh-status-tag lbh-status-tag--green">Approved</span>
+</p>
+
+<p>
+    <span class="lbh-status-tag lbh-status-tag--yellow">In review</span>
+</p>
+
+<p>
+    <span class="lbh-status-tag lbh-status-tag--red">Overdue</span>
+</p>
+
+<p>
+    <span class="lbh-status-tag lbh-status-tag--grey">Archived</span>
+</p>
 
 ```html
-<span class="lbh-status-label lbh-status-label--green">Approved</span>
-<span class="lbh-status-label lbh-status-label--yellow">In review</span>
-<span class="lbh-status-label lbh-status-label--red">Overdue</span>
-<span class="lbh-status-label lbh-status-label--grey">Archived</span>
+<span class="lbh-status-tag lbh-status-tag--green">Approved</span>
+<span class="lbh-status-tag lbh-status-tag--yellow">In review</span>
+<span class="lbh-status-tag lbh-status-tag--red">Overdue</span>
+<span class="lbh-status-tag lbh-status-tag--grey">Archived</span>
 ```
