@@ -1,9 +1,0 @@
-{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-{% set classes = (params.classes if params.classes else '') + ' lbh-breadcrumbs lbh-container' %}
-
-{{ govukBreadcrumbs({
-  items: params.items,
-  classes: classes,
-  attributes: params.attributes
-})}}

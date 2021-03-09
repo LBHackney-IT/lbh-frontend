@@ -3,7 +3,7 @@ module.exports = {
   tagline:
     "The Hackney Design System contains everything you need to start building user interfaces for Hackney platforms and services.",
   url: "https://design-system.hackney.gov.uk",
-  baseUrl: "/LBH-frontend/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
@@ -40,10 +40,11 @@ module.exports = {
           editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
         },
         theme: {
-          customCss: [require.resolve("./src/css/docs.scss")],
+          customCss: [require.resolve("./src/docs.scss")],
         },
       },
     ],
   ],
+  clientModules: [require.resolve("./src/docs.js")],
   plugins: ["docusaurus-plugin-sass"],
 };

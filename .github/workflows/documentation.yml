@@ -1,10 +1,10 @@
-name: documentation
+name: Publish documentation
 
 on:
   pull_request:
-    branches: [feature/overhaul-docs]
+    branches: [main]
   push:
-    branches: [feature/overhaul-docs]
+    branches: [main]
 
 jobs:
   checks:
@@ -60,4 +60,5 @@ jobs:
           else
           npm i
           fi
+          npm run build:sassdoc
           npx docusaurus deploy

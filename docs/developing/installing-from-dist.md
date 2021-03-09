@@ -2,7 +2,9 @@
 title: Installing from dist
 ---
 
-## Limitations
+:::caution
+You should only use the code from dist if you're adapting a legacy app. If you're starting something new, [use NPM instead](/developing/installing-from-npm).
+:::
 
 When installing from `dist`, you are using compiled and minified versions of the
 stylesheet. This means that you will not be able to:
@@ -12,12 +14,10 @@ stylesheet. This means that you will not be able to:
   spacing mixins.
 - customise the build (for example, overriding colours or enabling global
   styles).
-- use the component Nunjucks templates.
 
-If you require any of this functionality, you should [install LBH Frontend
-using node package manager](installing-with-npm.md) instead.
+If you need any of this functionality, you must [install using node package manager](installing-with-npm.md) instead.
 
-## Steps to install
+## Installation
 
 ### 1. Download resources
 
@@ -56,7 +56,7 @@ Follow the below example to add the CSS and JavaScript files to your HTML templa
     <button class="lbh-button">This is a button component</button>
     <script src="javascript/lbh-frontend-[latest version].min.js"></script>
     <script>
-      window.LBHFrontend.initAll();
+      window.LBHFrontend.initAll()
     </script>
   </body>
 </html>

@@ -1,33 +1,44 @@
 {
-  "private": true,
-  "name": "lbh-frontend-repository",
-  "description": "Taken from the GDS UK Frontend and used for the development of Hackney Council Frontend only, see `package/package.json` for the published `package.json`",
-  "engines": {
-    "node": ">=12.14.0"
-  },
+  "name": "lbh-frontend",
+  "version": "3.1.0",
+  "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
+  "main": "lbh/all.js",
   "scripts": {
-    "pre-release": "node bin/check-node-version.js && ./bin/pre-release.sh",
-    "release": "node bin/check-node-version.js && ./bin/release.sh",
-    "release-to-branch": "node bin/check-node-version.js && ./bin/release-to-branch.sh",
-    "build:package": "node bin/check-node-version.js && gulp build:package --destination 'package' && npm run test:build:package",
-    "build:dist": "node bin/check-node-version.js && gulp build:dist --destination 'dist' && npm run test:build:dist",
-    "backstop": "backstop",
-    "dev": "docusaurus start",
+    "build:sass": "cross-var sass lbh/all.scss dist/lbh-frontend-$npm_package_version.min.css --load-path=./ --no-source-map",
+    "build:sass-ie8": "cross-var sass lbh/all-ie8.scss dist/lbh-frontend-ie8-$npm_package_version.min.css --load-path=./ --no-source-map",
+    "build:js": "cross-var parcel build lbh/all.js --out-dir dist --global LBHFrontend --out-file lbh-frontend-$npm_package_version.min.js --no-source-maps",
+    "build:sassdoc": "sassdoc lbh --dest static/sassdoc",
     "build:docs": "docusaurus build",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "build:assets": "copyfiles lbh/assets/**/**/**/* dist/assets -u 2",
+    "build": "npm-run-all build:*",
+    "clean:docs": "docusaurus clear",
+    "clean:dist": "rimraf dist",
+    "clean": "npm-run-all clean:*",
+    "start": "docusaurus start",
+    "semantic-release": "semantic-release",
+    "test": "jest",
+    "prepublishOnly": "npm-run-all -s clean build"
   },
   "devDependencies": {
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
+    "@semantic-release/git": "^9.0.0",
+    "copyfiles": "^2.4.1",
+    "cross-var": "^1.1.0",
     "docusaurus-image-loader": "^1.0.1",
     "docusaurus-plugin-sass": "^0.1.11",
+    "jest": "^26.6.3",
+    "npm-run-all": "^4.1.5",
+    "outdent": "^0.8.0",
+    "parcel-bundler": "^1.12.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
     "sassdoc": "^2.7.0",
+    "semantic-release": "^17.3.9",
     "standard": "^13.1.0"
   },
   "optionalDependencies": {
@@ -47,8 +58,7 @@
     "globals": [
       "page",
       "browser",
-      "context",
-      "jestPuppeteer"
+      "context"
     ],
     "ignore": [
       "/dist/**/*.js",
@@ -58,8 +68,32 @@
   },
   "dependencies": {
     "govuk-frontend": "^3.5.0",
-    "nunjucks": "^3.2.0",
     "underscore": "^1.9.1"
   },
-  "sasslintConfig": "config/.sass-lint.yml"
+  "sasslintConfig": "config/.sass-lint.yml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
+  },
+  "release": {
+    "branches": [
+      "feature/overhaul-docs"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/**/*.{js,css}",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
 }
