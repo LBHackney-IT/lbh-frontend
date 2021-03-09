@@ -1,6 +1,5 @@
 module.exports = {
   someSidebar: {
-    Intoduction: ["introduction/what-is", "introduction/how-it-works"],
     Designing: ["designing/design-kits"],
     Developing: [
       "developing/installing-from-npm",
@@ -44,14 +43,11 @@ module.exports = {
       "components/textarea",
       "components/warning-text",
     ],
-    Patterns: [
-      {
-        type: "category",
-        label: "Help staff to...",
-        items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
-      },
-    ],
+    Patterns: ["patterns/manage-a-caseload"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
-    Contributing: ["contributing/introduction", "contributing/coding-standards"],
+    Contributing: [
+      "contributing/introduction",
+      "contributing/coding-standards",
+    ],
   },
 };
