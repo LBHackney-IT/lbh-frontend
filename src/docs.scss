@@ -30,9 +30,11 @@ html[data-theme="dark"] {
 }
 
 // keep logos contrasty in dark mode
-html[data-theme="dark"] .navbar__logo,
-html[data-theme="dark"] .hero img {
+html[data-theme="dark"] .navbar__logo{
   filter: grayscale(1) brightness(20);
+}
+html[data-theme="dark"] .hero img {
+  filter: grayscale(1) brightness(0);
 }
 
 // use a hackney theme colour for the footer
