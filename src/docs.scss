@@ -29,8 +29,9 @@ html[data-theme="dark"] {
   --ifm-color-primary-lightest: #cee9a8;
 }
 
-// keep logo contrasty in dark mode
-html[data-theme="dark"] .navbar__logo {
+// keep logos contrasty in dark mode
+html[data-theme="dark"] .navbar__logo,
+html[data-theme="dark"] .hero img {
   filter: grayscale(1) brightness(20);
 }
 
