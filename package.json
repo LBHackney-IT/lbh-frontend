@@ -17,7 +17,7 @@
     "clean": "npm-run-all clean:*",
     "start": "docusaurus start",
     "semantic-release": "semantic-release",
-    "test": "jest",
+    "test": "jest lbh/components/components.test.js",
     "prepublishOnly": "npm-run-all -s clean build"
   },
   "devDependencies": {
@@ -30,6 +30,7 @@
     "docusaurus-image-loader": "^1.0.1",
     "docusaurus-plugin-sass": "^0.1.11",
     "jest": "^26.6.3",
+    "jest-axe": "^4.1.0",
     "npm-run-all": "^4.1.5",
     "outdent": "^0.8.0",
     "parcel-bundler": "^1.12.4",
