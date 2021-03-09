@@ -52,6 +52,6 @@ module.exports = {
       },
     ],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
-    Contributing: ["contributing/introduction"],
+    Contributing: ["contributing/introduction", "contributing/coding-standards"],
   },
 };
