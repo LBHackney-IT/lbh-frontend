@@ -4,7 +4,7 @@
 
 [![Run unit tests](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/tests.yml/badge.svg)](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/tests.yml)
 
-The Hackney Design System contains everything you need to start building a user interface for Hackney platforms and services.
+The Hackney Design System contains everything you need to build user interfaces for Hackney platforms and services.
 
 **[See the full documentation](https://design-system.hackney.gov.uk/)**
 
