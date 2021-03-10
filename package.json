@@ -1,6 +1,6 @@
 {
   "name": "lbh-frontend",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
   "homepage": "https://design-system.hackney.gov.uk",
@@ -73,14 +73,18 @@
   },
   "sasslintConfig": "config/.sass-lint.yml",
   "bugs": {
-    "url" : "https://github.com/LBHackney-IT/LBH-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/LBH-frontend/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
   },
   "keywords": [
-    "govuk", "frontend", "design system", "template", "hackney"
+    "govuk",
+    "frontend",
+    "design system",
+    "template",
+    "hackney"
   ],
   "release": {
     "branches": [
