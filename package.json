@@ -84,7 +84,7 @@
   ],
   "release": {
     "branches": [
-      "feature/overhaul-docs"
+      "main"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
