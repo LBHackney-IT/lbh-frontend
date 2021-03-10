@@ -3,6 +3,7 @@
   "version": "3.1.0",
   "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
+  "homepage": "https://design-system.hackney.gov.uk",
   "main": "lbh/all.js",
   "scripts": {
     "build:sass": "cross-var sass lbh/all.scss dist/lbh-frontend-$npm_package_version.min.css --load-path=./ --no-source-map",
@@ -67,14 +68,20 @@
     ]
   },
   "dependencies": {
-    "govuk-frontend": "^3.5.0",
+    "govuk-frontend": "^3.11.0",
     "underscore": "^1.9.1"
   },
   "sasslintConfig": "config/.sass-lint.yml",
+  "bugs": {
+    "url" : "https://github.com/LBHackney-IT/LBH-frontend/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
   },
+  "keywords": [
+    "govuk", "frontend", "design system", "template", "hackney"
+  ],
   "release": {
     "branches": [
       "feature/overhaul-docs"
