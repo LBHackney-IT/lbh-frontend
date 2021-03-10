@@ -23,9 +23,7 @@ function Home() {
           <div>
             <h3>Made for UX designers</h3>
             <p>
-              Extend or customize your website layout by reusing React.
-              Docusaurus can be extended while reusing the same header and
-              footer.
+              Access the visual design library to quickly pull in components and patterns to use as building blocks in your design.
             </p>
             <Link
               className={clsx("button button--primary", styles.getStarted)}
