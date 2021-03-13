@@ -125,7 +125,7 @@ if (radio) {
 }
 ```
 
-If you're using React, use a [ref](https://reactjs.org/docs/refs-and-the-dom.html) instead.
+If you're using React, use a [ref](https://reactjs.org/docs/hooks-reference.html#useref) instead.
 
 
 ## Importing assets
