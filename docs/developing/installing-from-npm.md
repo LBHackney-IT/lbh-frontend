@@ -40,18 +40,21 @@ To import all components, add:
 
 If you are only using a small number of components, or want to experiment with shrinking your production CSS files, you can import components one-by-one.
 
-For example, importing the [button](https://design-system.hackney.gov.uk/components/button) looks like:
+For example, importing the [button](https://design-system.hackney.gov.uk/components/button) might look like:
 
 ```scss
-@import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
-```
-
-Don't forget to add these imports before your components:
-
-```scss
+@import "node_modules/lbh-frontend/lbh/base";
 @import "node_modules/lbh-frontend/lbh/core/all";
 @import "node_modules/lbh-frontend/lbh/objects/all";
+
+// Import your components here
+@import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
+
+@import "node_modules/lbh-frontend/lbh/utilities/all";
+@import "node_modules/lbh-frontend/lbh/overrides/all";
 ```
+
+You can remove imports you don't need.
 
 ### Resolve import paths (optional)
 
@@ -103,9 +106,9 @@ Our JavaScript includes polyfills that stabilise how components behave with assi
 If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the import syntax to import all components. To initialise them, use the `initAll` function:
 
 ```js
-import { initAll } from "lbh-frontend"
+import { initAll } from "lbh-frontend";
 
-initAll()
+initAll();
 ```
 
 `initAll()` must be called _after_ the HTML has been rendered to the page. If you're using React, there are some [extra things you need to do](https://design-system.hackney.gov.uk/developing/react).
@@ -117,16 +120,15 @@ If you're only using a small number of components, or adding and removing them a
 LBH Frontend components with JavaScript behaviour have a `data-module` attribute set in their markup. You can use this to initialise them manually:
 
 ```js
-import { Radios } from "lbh-frontend"
+import { Radios } from "lbh-frontend";
 
-const radio = document.querySelector('[data-module="govuk-radios"]')
+const radio = document.querySelector('[data-module="govuk-radios"]');
 if (radio) {
-    new Radios(radio).init()
+  new Radios(radio).init();
 }
 ```
 
 If you're using React, use a [ref](https://reactjs.org/docs/hooks-reference.html#useref) instead.
-
 
 ## Importing assets
 
@@ -144,7 +146,7 @@ For example, if your project uses [express.js](https://expressjs.com/), this mig
 app.use(
   "/assets",
   express.static(path.join(__dirname, "/node_modules/lbh-frontend/lbh/assets"))
-)
+);
 ```
 
 ### 2. Copying assets
