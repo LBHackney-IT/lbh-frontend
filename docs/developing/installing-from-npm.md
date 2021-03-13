@@ -26,7 +26,7 @@ When it completes, you should see `lbh-frontend` in your `node_modules` folder.
 
 ## Importing styles
 
-You need to import the design system's styles into your project's main sass file.
+You need to import the design system's styles into your project's main Sass file.
 
 If you need to override the way components look, put these imports _above_ your own code.
 
