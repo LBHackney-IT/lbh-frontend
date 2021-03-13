@@ -98,7 +98,7 @@ For example, the JavaScript will:
 Our JavaScript includes polyfills that stabilise how components behave with assistive technology and older browsers. You should always import and init a component's JavaScript, even if you're not sure what it's doing.
 :::
 
-## Import JavaScript
+### Import JavaScript
 
 If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the import syntax to import all components. To initialise them, use the `initAll` function:
 
