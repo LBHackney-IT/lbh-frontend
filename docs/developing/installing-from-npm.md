@@ -134,7 +134,7 @@ Your app needs to include our images and fonts, either by reference or by copyin
 
 Depending on how your application is built, this may just work without you having to do anything. Check our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) for examples.
 
-### By reference (recommended)
+### 1. By reference (recommended)
 
 Make `/node_modules/lbh-frontend/lbh/assets` available to your project by routing requests for your assets folder there.
 
@@ -147,7 +147,7 @@ app.use(
 )
 ```
 
-### Copying assets
+### 2. Copying assets
 
 Manually copy the entire `/node_modules/lbh-frontend/lbh/assets` folder into a public facing directory in your project.
 
