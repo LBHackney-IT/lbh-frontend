@@ -101,7 +101,7 @@ title: Header
 
 ## Header Fixed
 
-<header class="lbh-header lbh-header--fixed ">
+<header class="lbh-header">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper ">
       <h1 class="lbh-header__title">
