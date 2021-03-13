@@ -100,7 +100,7 @@ Our JavaScript includes polyfills that stabilise how components behave with assi
 
 ## Import JavaScript
 
-If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the import syntax to import all components. To initialise them, use the initAll function:
+If you're using a modern build tool like [Parcel](https://parceljs.org/) or [Webpack](https://webpack.js.org/), use the import syntax to import all components. To initialise them, use the `initAll` function:
 
 ```js
 import { initAll } from "lbh-frontend"
