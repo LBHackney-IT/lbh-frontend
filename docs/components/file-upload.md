@@ -1,5 +1,5 @@
 ---
-title: File Upload
+title: File upload
 ---
 
 <div class="govuk-form-group lbh-form-group">

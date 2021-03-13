@@ -1,5 +1,5 @@
 ---
-title: Date Input
+title: Date input
 ---
 
 <div class="govuk-form-group lbh-form-group">
