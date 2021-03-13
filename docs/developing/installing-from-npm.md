@@ -38,7 +38,7 @@ To import all components, add:
 
 ### Import individual components (optional)
 
-If you are only using a small number of components, or want to experiment with shrinking the size of your production CSS files, you can import components one-by-one.
+If you are only using a small number of components, or want to experiment with shrinking your production CSS files, you can import components one-by-one.
 
 For example, importing the [button](https://design-system.hackney.gov.uk/components/button) looks like:
 
