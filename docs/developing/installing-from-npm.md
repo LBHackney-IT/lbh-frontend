@@ -112,7 +112,7 @@ initAll()
 
 ### Initialise individual components (optional)
 
-If you're only using a small number of components, or adding and removing them on the fly using a framework like React, you may want to initialise them individually.
+If you're only using a small number of components, or adding and removing them after the page has loaded, you may want to initialise them individually.
 
 LBH Frontend components with JavaScript behaviour have a `data-module` attribute set in their markup. You can use this to initialise them manually:
 
