@@ -2,20 +2,15 @@
 title: Installing with npm
 ---
 
-## Requirements
+The recommended way to use the Hackney design system is to install it with npm.
 
-To use LBH Frontend with NPM you must:
+Before you follow these steps, take a look at our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) to see if there's a pre-made example for your framework.
 
-1. Install the long-term support (LTS) version of
-   [Node.js](https://nodejs.org/en/), which includes NPM. The minimum version of
-   Node required is 4.2.0.
+## Prerequisites
 
-   (We recommend using [`nvm`](https://github.com/creationix/nvm) for managing
-   versions of Node.)
+You need Node.js and npm installed.
 
-2. Create a [package.json file](https://docs.npmjs.com/files/package.json) if
-   you don’t already have one. You can create a default `package.json` file by
-   running `npm init` from the root of your application.
+If your project isn't already using npm, you'll need to run `npm init` to generate a `package.json` file.
 
 ## Installation
 
@@ -25,81 +20,68 @@ To install, run:
 npm install lbh-frontend
 ```
 
-After installation, the `lbh-frontend` package will appear in your `node_modules` folder.
+When it completes, you should see `lbh-frontend` in your note modules folder.
 
-It borrows heavily from `govuk-frontend`, which will also be automatically installed.
+`govuk-frontend` will also be automatically installed.
 
 ## Importing styles
 
-You need to import the LBH Frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override LBH Frontend with your own styles.
+You need to import the design system's styles into your project's main sass file.
 
-[Next.js](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) and [Create React App](https://create-react-app.dev/docs/adding-a-sass-stylesheet/) support Sass out of the box.
+If you need to override the way components look, put these imports _above_ your own code.
 
-1. To import all components, add the below to your Sass file:
+To import all components, add:
 
-```scss
+```
 @import "node_modules/lbh-frontend/lbh/all";
 ```
 
-2. To import an individual component (for example a button), add the below to your Sass file:
+### Import individual components (optional)
 
-```scss
+If you are only using a small number of components, or want to experiment with shrinking the size of your production CSS files, you can import components one-by-one.
+
+For example, importing the [button](https://design-system.hackney.gov.uk/components/button) looks like:
+
+```
 @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
 ```
 
-If importing individual components, you should first import the core and objects files:
+Don't forget to add these imports before your components:
 
-```scss
+```
 @import "node_modules/lbh-frontend/lbh/core/all";
 @import "node_modules/lbh-frontend/lbh/objects/all";
 ```
 
-### Optional: resolve SCSS import paths
+### Resolve import paths (optional)
 
-To avoid prefixing `@import` paths with `node_modules`), you should add `node_modules` to your [Sass include paths](https://github.com/sass/node-sass#includepaths).
+If you want to be able to write cleaner imports, you can add `node_modules` to your Sass include paths.
 
-In Rails, they should be added to [assets paths](http://guides.rubyonrails.org/asset_pipeline.html#search-paths)).
+If you're using the Sass CLI, use the `--load-paths` [option](https://sass-lang.com/documentation/cli/dart-sass#load-path).
 
-For example, if your project uses Gulp, you would add the Sass include paths to your Gulp configuration file (for example `gulpfile.js`) with [gulp-sass](https://www.npmjs.com/package/gulp-sass):
+In Rails, you'll need to add node_modules to your [asset paths](https://guides.rubyonrails.org/asset_pipeline.html#search-paths).
 
-```js
-gulp.task("sass", function () {
-  return gulp
-    .src("./sass/**/*.scss")
-    .pipe(
-      sass({
-        includePaths: "node_modules",
-      })
-    )
-    .pipe(gulp.dest("./css"))
-})
+This lets you write imports like:
+
 ```
-
-After resolving the import paths you can write imports like:
-
-```scss
 @import "lbh-frontend/lbh/components/button/button";
 ```
 
 ### Global styles
 
-LBH Frontend avoids applying styles globally on HTML elements such as `body`; instead, styles are are applied using classes.
+By default, the design system avoids applying styles directly to elements like the HTML body, heading and paragraph tags. Instead, you need to apply classes.
 
-One exception to this is that we are using the [lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) to ensure sensible spacing across/between components; due to its low specificity it is easy to overwrite for specific selectors if necessary—you may find you need to do this for a number of selectors.
+This is useful if you want to avoid conflicts with other styles in your app.
 
-This to avoid the risk of global styles conflicting with any pre-existing globals or with any app specific CSS.
+To change this behaviour, set `$lbh-global-styles` to true before you import the design system styles:
 
-These [global styles](../../src/lbh/core/_global-styles.scss) (`<h1>` to `<h6>`, `<p>`, `<a>`) are not included by default in LBH Frontend. To include these global styles in your app, you can set `$lbh-global-styles` variable to `true` before importing LBH Frontend styles into your app:
-
-```scss
-// application.scss
-
+```
 $lbh-global-styles: true;
 
 @import "lbh-frontend/lbh/all";
 ```
 
-See the [Sass reference](pathname:///sassdoc/index.html#settings/global-styles-variable-lbh-global-styles) for details.
+One exception to this rule is the [lobotomised owl selector](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/), which we use to ensure sensible default spacing between components. It's easily overridden if you need.
 
 ## Using JavaScript
 
