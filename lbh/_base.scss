@@ -6,8 +6,9 @@ $lbh-font-family: "Open Sans";
 
 @import "node_modules/govuk-frontend/govuk/base";
 
+@import "settings/all";
+
 $govuk-asset-path: $lbh-asset-path;
 
-@import "settings/all";
 @import "tools/all";
 @import "helpers/all";
