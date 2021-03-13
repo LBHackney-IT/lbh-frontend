@@ -15,7 +15,7 @@ stylesheet. This means that you will not be able to:
 - customise the build (for example, overriding colours or enabling global
   styles).
 
-If you need any of this functionality, you must [install using node package manager](installing-with-npm.md) instead.
+If you need any of this functionality, you must [install using node package manager](https://design-system.hackney.gov.uk/developing/installing-from-npm) instead.
 
 ## Installation
 
