@@ -61,7 +61,7 @@ If you're using the Sass CLI, use the `--load-paths` [option](https://sass-lang.
 
 In Rails, you'll need to add `node_modules` to your [asset paths](https://guides.rubyonrails.org/asset_pipeline.html#search-paths).
 
-Frameworks like Next.js have [their own way of doing this](https://nextjs.org/docs/basic-features/built-in-css-support#customizing-sass-options.
+Frameworks like Next.js have [their own way of doing this](https://nextjs.org/docs/basic-features/built-in-css-support#customizing-sass-options).
 
 This lets you write imports like:
 
