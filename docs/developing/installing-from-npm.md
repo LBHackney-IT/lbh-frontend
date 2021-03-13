@@ -8,7 +8,7 @@ Before you follow these steps, take a look at our [starter kits](https://design-
 
 ## Prerequisites
 
-You need Node.js and npm installed.
+You need [Node.js](https://nodejs.org/en/) and npm installed.
 
 If your project isn't already using npm, you'll need to run `npm init` to generate a `package.json` file.
 
@@ -16,7 +16,7 @@ If your project isn't already using npm, you'll need to run `npm init` to genera
 
 To install, run:
 
-```
+```bash
 npm install lbh-frontend
 ```
 
@@ -32,7 +32,7 @@ If you need to override the way components look, put these imports _above_ your 
 
 To import all components, add:
 
-```
+```scss
 @import "node_modules/lbh-frontend/lbh/all";
 ```
 
@@ -42,13 +42,13 @@ If you are only using a small number of components, or want to experiment with s
 
 For example, importing the [button](https://design-system.hackney.gov.uk/components/button) looks like:
 
-```
+```scss
 @import "node_modules/lbh-frontend/lbh/components/lbh-button/button";
 ```
 
 Don't forget to add these imports before your components:
 
-```
+```scss
 @import "node_modules/lbh-frontend/lbh/core/all";
 @import "node_modules/lbh-frontend/lbh/objects/all";
 ```
@@ -59,11 +59,13 @@ If you want to be able to write cleaner imports, you can add `node_modules` to y
 
 If you're using the Sass CLI, use the `--load-paths` [option](https://sass-lang.com/documentation/cli/dart-sass#load-path).
 
-In Rails, you'll need to add node_modules to your [asset paths](https://guides.rubyonrails.org/asset_pipeline.html#search-paths).
+In Rails, you'll need to add `node_modules` to your [asset paths](https://guides.rubyonrails.org/asset_pipeline.html#search-paths).
+
+Frameworks like Next.js have [their own way of doing this](https://nextjs.org/docs/basic-features/built-in-css-support#customizing-sass-options.
 
 This lets you write imports like:
 
-```
+```scss
 @import "lbh-frontend/lbh/components/button/button";
 ```
 
@@ -75,7 +77,7 @@ This is useful if you want to avoid conflicts with other styles in your app.
 
 To change this behaviour, set `$lbh-global-styles` to true before you import the design system styles:
 
-```
+```scss
 $lbh-global-styles: true;
 
 @import "lbh-frontend/lbh/all";
