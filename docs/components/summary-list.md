@@ -2,10 +2,6 @@
 title: Summary list
 ---
 
-Use the summary list to summarise information, for example, a user’s responses at the end of a form.
-
-## Summary list
-
 <dl class="govuk-summary-list  lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">

@@ -6,10 +6,6 @@ import InitAll from "../../src/InitAll"
 
 <InitAll>
 
-Use the table component to make information easier to compare and scan for users.
-
-## Table
-
 <table class="govuk-table  lbh-table">
   <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
