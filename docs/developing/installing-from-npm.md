@@ -130,15 +130,15 @@ If you're using React, use a [ref](https://reactjs.org/docs/hooks-reference.html
 
 ## Importing assets
 
-In order to import LBH Frontend images and fonts to your project, you should configure your application to reference or copy the relevant LBH Frontend assets.
+Your app needs to include our images and fonts, either by reference or by copying the relevant assets manually.
 
-### Recommended solution
+Depending on how your application is built, this may just work without you having to do anything. Check our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) for examples.
 
-Make `/node_modules/lbh-frontend/lbh/assets` available to your project by routing
-requests for your assets folder there.
+### By reference (recommended)
 
-For example, if your project uses [express.js](https://expressjs.com/), below is
-a code sample you could add to your configuration:
+Make `/node_modules/lbh-frontend/lbh/assets` available to your project by routing requests for your assets folder there.
+
+For example, if your project uses [express.js](https://expressjs.com/), this might look like:
 
 ```js
 app.use(
@@ -147,33 +147,16 @@ app.use(
 )
 ```
 
-### Alternative solution
+### Copying assets
 
-Manually copy the images and fonts from `/node_modules/lbh-frontend/lbh/assets` into a public facing directory in your project. Ideally copying the files to your project should be an automated task or part of your build pipeline to ensure that the LBH Frontend assets stay up-to-date.
+Manually copy the entire `/node_modules/lbh-frontend/lbh/assets` folder into a public facing directory in your project.
 
-The default paths used for assets are `assets/images` and `assets/fonts`. **If your asset folders follow this structure, you will not need to complete the following steps.**
+You should make this part of your automatic build process so it stays up to date.
 
-To use different asset paths, also complete the below step(s).
-
-1. Set `$govuk-assets-path`, `$govuk-images-path` and `$govuk-fonts-path` in your project Sass file to point to the relevant directories in your project (this will override the defaults set in `/node_modules/govuk-frontend/settings/_assets.scss`). Make sure you do this in Sass before importing `lbh-frontend` into your project - see [Importing styles](#importing-styles).
-
-Example 1:
+Then, set `$lbh-assets-path` in your project Sass file to point to the relevant directories in your project:
 
 ```scss
-// Include images from /application/assets/images and fonts from /application/assets/fonts
-$govuk-assets-path: "/application/assets";
+$lbh-assets-path: "/application/assets";
 
 @import "lbh-frontend/lbh/all";
 ```
-
-Example 2:
-
-```scss
-// Include images from /images/govuk-frontend and fonts from /fonts
-$govuk-images-path: "/images/lbh-frontend/";
-$govuk-fonts-path: "/fonts/";
-
-@import "lbh-frontend/lbh/all";
-```
-
-2. Optional: You can also override the helpers used to generate the asset urls, for example if you are using sass-rails' asset-pipeline functionality. You can do this by setting `$govuk-image-url-function` to the name of the function(s) you wish to use. See `src/govuk/settings/_assets.scss` for more information and examples.
