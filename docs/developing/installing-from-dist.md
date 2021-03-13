@@ -3,7 +3,7 @@ title: Installing from dist
 ---
 
 :::caution
-You should only use the code from dist if you're adapting a legacy app. If you're starting something new, [use NPM instead](/developing/installing-from-npm).
+You should only use the code from dist if you're adapting a legacy app. If you're starting something new, [use npm instead](/developing/installing-from-npm).
 :::
 
 When installing from `dist`, you are using compiled and minified versions of the
