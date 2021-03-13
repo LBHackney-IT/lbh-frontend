@@ -136,10 +136,12 @@ Your app needs to include our images and fonts.
 
 If you're running your Sass through a bundler like Parcel or Webpack, you can set it to a location inside `node_modules`, and the assets will be copied over into your production build. One of these values is normally enough:
 
-```
+```scss
 $lbh-asset-path: "~lbh-frontend/lbh/assets";
 $lbh-asset-path: "node_modules/lbh-frontend/lbh/assets";
 ```
+
+Create React App [requires the first syntax](https://create-react-app.dev/docs/adding-a-sass-stylesheet/), but some frameworks will prefer the second.
 
 Check our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) for examples.
 
@@ -164,5 +166,5 @@ Manually copy the entire `/node_modules/lbh-frontend/lbh/assets` folder into a p
 
 You should make this part of your automatic build process so it stays up to date.
 
-Then, set `$lbh-assets-path` in your project Sass file to point to the relevant directories in your project.
+Then, set `$lbh-assets-path` in your project Sass file to point to the right path.
 
