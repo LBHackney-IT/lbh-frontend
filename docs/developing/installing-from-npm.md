@@ -20,7 +20,7 @@ To install, run:
 npm install lbh-frontend
 ```
 
-When it completes, you should see `lbh-frontend` in your note modules folder.
+When it completes, you should see `lbh-frontend` in your `node_modules` folder.
 
 `govuk-frontend` will also be automatically installed.
 
@@ -110,7 +110,7 @@ initAll()
 
 `initAll()` must be called _after_ the HTML has been rendered to the page. If you're using React, there are some [extra things you need to do](https://design-system.hackney.gov.uk/developing/react).
 
-## Initialise individual components (optional)
+### Initialise individual components (optional)
 
 If you're only using a small number of components, or adding and removing them on the fly using a framework like React, you may want to initialise them individually.
 
