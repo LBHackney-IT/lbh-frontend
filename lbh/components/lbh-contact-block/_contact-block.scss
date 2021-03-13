@@ -1,8 +1,3 @@
-@import "../../settings/all";
-@import "../../tools/all";
-@import "../../helpers/all";
-@import "../../objects/all";
-
 @include lbh-exports("lbh/component/contact-block") {
   .lbh-contact {
     display: flex;
