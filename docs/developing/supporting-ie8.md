@@ -99,7 +99,3 @@ Now that you have an IE8 compatible stylesheet you should include it using
   <link rel="stylesheet" href="assets/application-ie8.css" />
 <![endif]-->
 ```
-
-## Writing IE8 specific styles
-
-See [Writing styles that target IE8](../usage/internet-explorer-8.md)
