@@ -46,20 +46,6 @@ if (typeof window !== "undefined") {
 }
 ```
 
-### Image assets
-
-Depending on your bundler settings, you might have issues with images not appearing in components like the [contact block](/components/contacts-block).
-
-Fixing this usually involves making a tweak to the `$lbh-assets-path` sass variable.
-
-For example, this documentation website uses:
-
-```scss
-$lbh-asset-path: "~!file-loader!../lbh/assets";
-```
-
-That `~!file-loader!` prefix [forces webpack to interpret SVG files as static images](https://github.com/facebook/docusaurus/issues/3566#issue-718199061) rather than JavaScript modules.
-
 ## Building components with complex interactions and logic
 
 This design system doesn't include many components that users need to have complex, stateful interactions with (yet).
