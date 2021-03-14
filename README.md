@@ -16,7 +16,7 @@ We have [starter kits](https://github.com/LBHackney-IT/hackney-design-system-exa
 
 ---
 
-### Contributing
+## Contributing
 
 We use a feature-branching strategy. Make your pull requests to the `develop` branch.
 
