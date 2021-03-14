@@ -1,3 +1,10 @@
+## [3.2.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.2.0...v3.2.1) (2021-03-14)
+
+
+### Bug Fixes
+
+* **perf:** improve sass compilation times ([df31953](https://github.com/LBHackney-IT/LBH-frontend/commit/df319539f1e9e1769cb6e2011941350379860f15))
+
 # Changelog
 
 ## Unreleased
