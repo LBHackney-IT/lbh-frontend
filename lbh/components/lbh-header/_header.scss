@@ -1,8 +1,3 @@
-@import "../../settings/all";
-@import "../../tools/all";
-@import "../../helpers/all";
-@import "../../objects/all";
-
 @include lbh-exports("lbh/component/header") {
   .lbh-header {
     position: relative;
@@ -161,7 +156,7 @@
         margin-top: 0;
         @include lbh-rem(padding-top, 8);
         @include lbh-rem(font-size, 19);
-        @include lbh-rem(letter-spacing, -.7);
+        @include lbh-rem(letter-spacing, -0.7);
         @include lbh-rem(line-height, 23);
       }
     }
@@ -182,7 +177,7 @@
       @include govuk-media-query($from: desktop) {
         @include lbh-rem(padding-top, 1);
         @include lbh-rem(font-size, 29);
-        @include lbh-rem(letter-spacing, -.7);
+        @include lbh-rem(letter-spacing, -0.7);
         @include lbh-rem(line-height, 35);
       }
     }

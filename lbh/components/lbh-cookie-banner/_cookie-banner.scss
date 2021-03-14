@@ -1,7 +1,3 @@
-@import "../../settings/all";
-@import "../../tools/all";
-@import "../../helpers/all";
-@import "../../objects/all";
 @import "../lbh-button/button";
 
 @include lbh-exports("lbh/component/cookie-banner") {
@@ -13,7 +9,7 @@
     color: lbh-colour("lbh-white");
     // sass-lint:disable no-duplicate-properties
     background: lbh-colour("lbh-black");
-    background: rgba(lbh-colour("lbh-black"), .9);
+    background: rgba(lbh-colour("lbh-black"), 0.9);
     // sass-lint:enable no-duplicate-properties
     @include lbh-rem(font-size, 16);
     font-weight: $lbh-font-weight-regular;
@@ -47,7 +43,7 @@
           font-weight: $lbh-font-weight-medium;
 
           &:hover {
-            color: rgba(lbh-colour("lbh-white"), .8);
+            color: rgba(lbh-colour("lbh-white"), 0.8);
           }
 
           &:focus {
