@@ -1,14 +1,9 @@
-@import "../../settings/all";
-@import "../../tools/all";
-@import "../../helpers/all";
-@import "../../objects/all";
-
 @include lbh-exports("lbh/component/announcement") {
   .lbh-announcement {
     @include lbh-rem(padding, 36, 0);
     border-top: 1px solid lbh-colour("lbh-a03");
     border-bottom: 1px solid lbh-colour("lbh-a03");
-    background: rgba(lbh-colour("lbh-a04"), .2);
+    background: rgba(lbh-colour("lbh-a04"), 0.2);
 
     .lbh-phase-banner + & {
       margin-top: -1px;
@@ -19,7 +14,7 @@
     }
 
     &--site {
-      background: rgba(lbh-colour("lbh-a04"), .5);
+      background: rgba(lbh-colour("lbh-a04"), 0.5);
     }
 
     &__title {
