@@ -75,8 +75,7 @@ describe("@mixin govuk-typography-common", () => {
     const sass = `
     $govuk-font-family: Helvetica, Arial, sans-serif;
     $govuk-font-family-tabular: monospace;
-    @import "settings/all";
-    @import "helpers/all";
+    @import "base";
 
     :root {
       @include govuk-typography-common;
