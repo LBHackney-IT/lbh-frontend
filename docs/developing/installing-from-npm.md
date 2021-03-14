@@ -132,9 +132,20 @@ If you're using React, use a [ref](https://reactjs.org/docs/hooks-reference.html
 
 ## Importing assets
 
-Your app needs to include our images and fonts, either by reference or by copying the relevant assets manually.
+Your app needs to include our images and fonts.
 
-Depending on how your application is built, this may just work without you having to do anything. Check our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) for examples.
+`$lbh-assets-path` should be set to the publicly accessible path of the assets. By default, it's `/assets`.
+
+If you're running your Sass through a bundler like Parcel or Webpack, you can set it to a location inside `node_modules`, and the assets will be copied over into your production build. One of these values normally works:
+
+```scss
+$lbh-asset-path: "~lbh-frontend/lbh/assets";
+$lbh-asset-path: "node_modules/lbh-frontend/lbh/assets";
+```
+
+Create React App [requires the first syntax](https://create-react-app.dev/docs/adding-a-sass-stylesheet/), but some frameworks will prefer the second. Check our [starter kits](https://design-system.hackney.gov.uk/tutorials/production) for examples.
+
+If you're not using a bundler, you'll need to take extra steps:
 
 ### 1. By reference (recommended)
 
@@ -155,10 +166,5 @@ Manually copy the entire `/node_modules/lbh-frontend/lbh/assets` folder into a p
 
 You should make this part of your automatic build process so it stays up to date.
 
-Then, set `$lbh-assets-path` in your project Sass file to point to the relevant directories in your project:
+Then, set `$lbh-assets-path` in your project Sass file to point to the right path.
 
-```scss
-$lbh-assets-path: "/application/assets";
-
-@import "lbh-frontend/lbh/all";
-```

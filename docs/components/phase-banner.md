@@ -1,5 +1,5 @@
 ---
-title: Phase Banner
+title: Phase banner
 ---
 
 <div class="govuk-phase-banner  lbh-phase-banner lbh-container">

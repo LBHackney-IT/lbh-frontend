@@ -1,5 +1,5 @@
 ---
-title: Page Announcement
+title: Page announcement
 ---
 
 <section class="lbh-page-announcement">

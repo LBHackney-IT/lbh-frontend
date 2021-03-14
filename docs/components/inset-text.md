@@ -1,5 +1,5 @@
 ---
-title: Inset Text
+title: Inset text
 ---
 
 ### HTML
