@@ -43,7 +43,6 @@ module.exports = {
       "components/radios",
       "components/select",
       "components/skip-link",
-      "components/status-tag",
       "components/summary-list",
       "components/table",
       "components/tag",
