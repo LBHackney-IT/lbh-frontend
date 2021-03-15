@@ -5,8 +5,6 @@
 
 @import "node_modules/govuk-frontend/govuk/components/phase-banner/phase-banner";
 
-@import "../lbh-tag/tag";
-
 @include lbh-exports("lbh/component/phase-banner") {
   .lbh-phase-banner {
     @include lbh-rem(padding, 8, 0, 10);
