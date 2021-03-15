@@ -1,8 +1,3 @@
-@import "../../settings/all";
-@import "../../tools/all";
-@import "../../helpers/all";
-@import "../../objects/all";
-
 @import "node_modules/govuk-frontend/govuk/components/button/button";
 
 @include lbh-exports("lbh/component/button") {
@@ -77,7 +72,7 @@
       &.lbh-button--disabled {
         &,
         &:hover {
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }

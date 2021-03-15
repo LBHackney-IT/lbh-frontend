@@ -1,8 +1,9 @@
 {
   "name": "lbh-frontend",
-  "version": "3.1.0",
+  "version": "3.2.1",
   "description": "Everything you need to make digital services for Hackney",
   "license": "MIT",
+  "homepage": "https://design-system.hackney.gov.uk",
   "main": "lbh/all.js",
   "scripts": {
     "build:sass": "cross-var sass lbh/all.scss dist/lbh-frontend-$npm_package_version.min.css --load-path=./ --no-source-map",
@@ -24,6 +25,7 @@
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
+    "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "copyfiles": "^2.4.1",
     "cross-var": "^1.1.0",
@@ -67,17 +69,27 @@
     ]
   },
   "dependencies": {
-    "govuk-frontend": "^3.5.0",
+    "govuk-frontend": "^3.11.0",
     "underscore": "^1.9.1"
   },
   "sasslintConfig": "config/.sass-lint.yml",
+  "bugs": {
+    "url": "https://github.com/LBHackney-IT/LBH-frontend/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LBHackney-IT/LBH-frontend.git"
   },
+  "keywords": [
+    "govuk",
+    "frontend",
+    "design system",
+    "template",
+    "hackney"
+  ],
   "release": {
     "branches": [
-      "feature/overhaul-docs"
+      "main"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -85,11 +97,18 @@
       "@semantic-release/npm",
       "@semantic-release/github",
       [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
         "@semantic-release/git",
         {
           "assets": [
             "dist/**/*.{js,css}",
-            "package.json"
+            "package.json",
+            "CHANGELOG.md"
           ],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }

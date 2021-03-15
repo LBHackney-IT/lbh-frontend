@@ -2,10 +2,6 @@
 title: Warning text
 ---
 
-Use the warning text component when you need to warn users about something important, such as legal consequences of an action, or lack of action, that they might take.
-
-## Warning Text
-
 <div class="govuk-warning-text  lbh-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">

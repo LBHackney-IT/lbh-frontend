@@ -37,7 +37,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.config.js"),
-          editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/master/",
+          editUrl: "https://github.com/LBHackney-IT/lbh-frontend/edit/main/",
         },
         theme: {
           customCss: [require.resolve("./src/docs.scss")],

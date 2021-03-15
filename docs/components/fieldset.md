@@ -8,7 +8,7 @@ title: Fieldset
   </legend>
 </fieldset>
 
-### HTM
+### HTML
 
 ```html
 <fieldset class="govuk-fieldset lbh-fieldset">
@@ -18,7 +18,7 @@ title: Fieldset
 
 ## Fieldset as page heading
 
-### HTM
+### HTML
 
 ```html
 <fieldset class="govuk-fieldset lbh-fieldset">

@@ -6,16 +6,6 @@ import InitAll from "../../src/InitAll"
 
 <InitAll>
 
-Tabs can be a helpful way of letting users quickly switch between related information if:
-
-- your content can be usefully separated into clearly labelled sections
-- the first section is more relevant than the others for most users
-- users will not need to view all the sections at once
-
-Tabs can work well for people who use a service regularly, for example, users of a caseworking system. Their need to perform tasks quickly may be greater than their need for simplicity of first-time use.
-
-## Tabs
-
 <div class="govuk-tabs lbh-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
     Contents

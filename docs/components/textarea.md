@@ -2,10 +2,6 @@
 title: Textarea
 ---
 
-Use the textarea component when you need to let users enter an amount of text that’s longer than a single line.
-
-## Textarea
-
 <div class="govuk-form-group lbh-form-group">
   <label class="govuk-label  lbh-label" for="more-detail">
     Can you provide more detail?

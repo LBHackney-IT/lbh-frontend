@@ -15,8 +15,9 @@
   --ifm-color-primary-lighter: #00755b;
   --ifm-color-primary-lightest: #008567;
 
-  --ifm-code-font-size: 95%;
+  --ifm-z-index-fixed: 5;
 
+  --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Open Sans", sans-serif;
 }
 
@@ -30,8 +31,17 @@ html[data-theme="dark"] {
   --ifm-color-primary-lightest: #cee9a8;
 }
 
-html[data-theme="dark"] .navbar__logo {
+// keep logos contrasty in dark mode
+html[data-theme="dark"] .navbar__logo{
   filter: grayscale(1) brightness(20);
+}
+html[data-theme="dark"] .hero img {
+  filter: grayscale(1) brightness(0);
+}
+
+// use a hackney theme colour for the footer
+.footer--dark {
+  --ifm-footer-background-color: #0b0c0c;
 }
 
 .docusaurus-highlight-code-line {

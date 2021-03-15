@@ -1,6 +1,5 @@
 module.exports = {
   someSidebar: {
-    Intoduction: ["introduction/what-is", "introduction/how-it-works"],
     Designing: ["designing/design-kits"],
     Developing: [
       "developing/installing-from-npm",
@@ -8,7 +7,6 @@ module.exports = {
       "developing/updating",
       "developing/browser-support",
       "developing/react",
-      "developing/supporting-ie8",
       "developing/page-template",
       "developing/typography",
       "developing/colours",
@@ -20,7 +18,6 @@ module.exports = {
     ],
     Components: [
       "components/accordion",
-      "components/input",
       "components/announcement",
       "components/back-link",
       "components/back-to-top",
@@ -34,6 +31,15 @@ module.exports = {
       "components/error-message",
       "components/error-summary",
       "components/fieldset",
+      "components/file-upload",
+      "components/header",
+      "components/hint",
+      "components/input",
+      "components/inset-text",
+      "components/label",
+      "components/page-announcement",
+      "components/panel",
+      "components/phase-banner",
       "components/radios",
       "components/select",
       "components/skip-link",
@@ -45,14 +51,11 @@ module.exports = {
       "components/textarea",
       "components/warning-text",
     ],
-    Patterns: [
-      {
-        type: "category",
-        label: "Help staff to...",
-        items: ["patterns/manage-a-caseload", "patterns/find-a-client"],
-      },
-    ],
+    Patterns: ["patterns/manage-a-caseload"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
-    Contributing: ["contributing/introduction"],
+    Contributing: [
+      "contributing/introduction",
+      "contributing/coding-standards",
+    ],
   },
 };
