@@ -1,13 +1,20 @@
 @import "node_modules/govuk-frontend/govuk/components/phase-banner/phase-banner";
 
-@import "../lbh-tag/tag";
-
 @include lbh-exports("lbh/component/phase-banner") {
   .lbh-phase-banner {
     @include lbh-rem(padding, 8, 0, 10);
     border-bottom: 1px solid lbh-colour("lbh-panel");
 
     .govuk-phase-banner__content__tag {
+
+      @include lbh-body-xs;
+      @include lbh-rem(padding, 2, 12, 0);
+      color: lbh-colour("lbh-white");
+      background: lbh-colour("lbh-a01");
+      box-shadow: lbh-colour("lbh-primary-inner-shadow") 0 2px 0 0;
+      @include lbh-rem(line-height, 15);
+      text-transform: uppercase;
+
       @include lbh-rem(margin-right, 8);
 
       @include govuk-media-query($from: desktop) {
