@@ -98,7 +98,7 @@ For example, the JavaScript will:
 - inform screen readers whether the [details](https://design-system.hackney.gov.uk/components/details) component is expanded or collapsed
 
 :::note
-Our JavaScript includes polyfills that stabilise how components behave with assistive technology and older browsers. You should always import and init a component's JavaScript, even if you're not sure what it's doing.
+Our JavaScript includes polyfills that stabilise how components behave with assistive technology and older browsers. You should always import and init a component's JavaScript, even if you're not sure how it's helping.
 :::
 
 ### Import JavaScript
