@@ -59,6 +59,12 @@ html[data-theme="dark"] .hero img {
   }
 }
 
+.colour-preview{
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+
 // don't reset styles on our page
 $lbh-safely-embed: true;
 $lbh-asset-path: "~!file-loader!../lbh/assets";
