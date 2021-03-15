@@ -34,10 +34,10 @@ title: Typography
 
 ## Links
 
-<p>
+<p class="lbh-body">
     <a href="#" class="lbh-link">lbh-link</a>
 </p>
-<p>
+<p class="lbh-body">
     <a href="#" class="lbh-link lbh-link--muted">lbh-link lbh-link--muted</a>
 </p>
 
