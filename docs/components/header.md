@@ -2,9 +2,9 @@
 title: Header
 ---
 
-### HTML
 
-<header class="lbh-header  ">
+
+<header class="lbh-header">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper ">
       <h1 class="lbh-header__title">
@@ -39,6 +39,8 @@ title: Header
     </div>
   </div>
 </header>
+
+### HTML
 
 ```html
 <header class="lbh-header  ">
@@ -101,7 +103,9 @@ title: Header
 
 ## Header Fixed
 
-<header class="lbh-header">
+<div className="safe-preview">
+
+<header class="lbh-header lbh-header--fixed">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper ">
       <h1 class="lbh-header__title">
@@ -136,6 +140,8 @@ title: Header
     </div>
   </div>
 </header>
+
+</div>
 
 ### HTML
 

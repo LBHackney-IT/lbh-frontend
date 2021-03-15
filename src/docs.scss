@@ -66,3 +66,10 @@ $lbh-asset-path: "~!file-loader!../lbh/assets";
 @import "../lbh/all";
 
 @import "../lbh/components/lbh-accordion/accordion";
+
+
+.safe-preview{
+  transform: translate(0);
+  min-height: 100px;
+  margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+}
