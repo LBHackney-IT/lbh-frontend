@@ -50,9 +50,7 @@ if (typeof window !== "undefined") {
 
 This design system doesn't include many components that users need to have complex, stateful interactions with (yet).
 
-If you need to build something more powerful, you are better off ignoring the JavaScript this library comes with and starting with a React solution first.
-
-You can then customise the look and feel of your components using code samples from this library.
+If you need to build something more powerful, you are better off ignoring the JavaScript this library comes with and using our CSS classes to skin a React component instead.
 
 There are plenty of well-maintained, accessible-by-default React libraries to choose from:
 
