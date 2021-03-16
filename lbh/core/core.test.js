@@ -1,14 +1,17 @@
-const glob = require("glob");
 const util = require("util");
 const sass = require("node-sass");
 
 const sassRender = util.promisify(sass.render);
 
-const sassFiles = glob.sync(`lbh/core/**/*.scss`);
-
-it.each(sassFiles)("%s renders to CSS without errors", (file) => {
-  return sassRender({
-    file: file,
-    includePaths: ["lbh/"],
+describe("The core layer", () => {
+  it("renders to CSS without errors", async () => {
+    return sassRender({
+      data: `
+      @import "base";
+      @import "core/all";
+    `,
+      includePaths: ["lbh/"],
+      outputStyle: "nested",
+    });
   });
 });
