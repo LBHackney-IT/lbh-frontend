@@ -4,7 +4,7 @@ title: Prototyping
 
 ## Use our CodePen template
 
-The fastest way to experiment with the Hackney design system is with our CodePen template. You can paste code samples straight into the HTML tab, without installing anything.
+The fastest way to experiment with the Hackney design system is with **[our CodePen template](https://codepen.io/jhackett1/pen/xxRWWKv)**. You can paste code samples straight into the HTML tab, without installing anything.
 
 You can save your work to your CodePen account and share it with colleagues.
 
@@ -15,14 +15,6 @@ You can save your work to your CodePen account and share it with colleagues.
 
 ## Use the prototyping kit
 
-CodePen doesn't support multiple pages or assets, so it's only suitable for quick experiments. If you need more, you can use our [prototype kit](https://github.com/LBHackney-IT/lbh-simple-frontend).
+CodePen doesn't support multiple pages or assets, so it's only suitable for quick experiments. If you need more, you can use **[our prototype kit](https://github.com/LBHackney-IT/lbh-simple-frontend)**.
 
-### 1. On CodeSandbox
-
-You can use CodeSandbox to build prototypes using the kit without downloading anything to your computer.
-
-### 2. Install it to your computer
-
-## Examples
-
-coming soon
+You can use the prototyping kit right away with CodeSandbox, or you can install it to your computer like you would the GOV.UK prototype kit.
