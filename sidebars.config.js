@@ -25,6 +25,7 @@ module.exports = {
       "components/button",
       "components/contacts-block",
       "components/character-count",
+      "components/checkboxes",
       "components/cookie-banner",
       "components/date-input",
       "components/details",
