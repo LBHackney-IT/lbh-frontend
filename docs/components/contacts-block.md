@@ -2,7 +2,11 @@
 title: Contact block
 ---
 
+import PreviewArea from "../../src/PreviewArea"
+
 ## With a map
+
+<PreviewArea>
 
 <section class="lbh-contact">
 <h2 class="lbh-heading-large-light lbh-contact__title">Service Name Centre</h2>
@@ -109,6 +113,20 @@ title: Contact block
 </div>
 </div>
 </section>
+
+</PreviewArea>
+
+### Include Leaflet Sass and JS
+
+Maps in the contact block require [Leaflet](https://leafletjs.com), which you can install with `npm leaflet` and then add the Sass and JavaScript to your app:
+
+```js
+import L from "leaflet";
+```
+
+```scss
+@import "../node_modules/leaflet/dist/leaflet.css";
+```
 
 ### HTML
 
@@ -368,7 +386,7 @@ title: Contact block
   <div class="lbh-contact__details">
       <div class="lbh-contact__block">
         <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--telephone">Telephone</h4>
-            <a href="tel:" class="lbh-contact__telephone" title="Call us on"></a>
+            <a href="tel:" class="lbh-contact__telephone" title="Call us on "></a>
       </div>
       <div class="lbh-contact__block">
         <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--email">Email</h4>
@@ -396,7 +414,7 @@ title: Contact block
       >
         Telephone
       </h4>
-      <a href="tel:" class="lbh-contact__telephone" title="Call us on"></a>
+      <a href="tel:" class="lbh-contact__telephone" title="Call us on "></a>
     </div>
     <div class="lbh-contact__block">
       <h4
