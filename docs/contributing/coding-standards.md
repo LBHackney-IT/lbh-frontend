@@ -2,6 +2,8 @@
 title: Coding standards
 ---
 
+We use a feature-branching strategy. When making a pull request, make it to the [develop](https://github.com/LBHackney-IT/lbh-frontend/tree/develop) branch.
+
 ## Commit messages
 
 We use [Angular commit message conventions](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format). This lets us automatically release new versions to NPM with accurate [semver](https://semver.org/) version numbers.

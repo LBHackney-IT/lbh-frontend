@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.2.1...v3.3.0) (2021-03-16)
+
+
+### Features
+
+* **tag:** improve tag component ([#144](https://github.com/LBHackney-IT/LBH-frontend/issues/144)) ([2bf47a3](https://github.com/LBHackney-IT/LBH-frontend/commit/2bf47a3dbcba16b53ba26e9ac5ab7b55a2b8fd02)), closes [#143](https://github.com/LBHackney-IT/LBH-frontend/issues/143)
+
 ## [3.2.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.2.0...v3.2.1) (2021-03-14)
 
 
