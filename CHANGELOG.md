@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.0...v3.3.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* **core:** improvements to documentation and button component ([#150](https://github.com/LBHackney-IT/LBH-frontend/issues/150)) ([acf2944](https://github.com/LBHackney-IT/LBH-frontend/commit/acf2944ffd1d4d2d03ee6f9fe065c019fa0c870e)), closes [#143](https://github.com/LBHackney-IT/LBH-frontend/issues/143) [#146](https://github.com/LBHackney-IT/LBH-frontend/issues/146) [#145](https://github.com/LBHackney-IT/LBH-frontend/issues/145) [#149](https://github.com/LBHackney-IT/LBH-frontend/issues/149) [#148](https://github.com/LBHackney-IT/LBH-frontend/issues/148)
+
 # [3.3.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.2.1...v3.3.0) (2021-03-16)
 
 
