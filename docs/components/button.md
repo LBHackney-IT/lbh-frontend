@@ -80,8 +80,14 @@ import InitAll from "../../src/InitAll"
 
 ### HTML
 
-```
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+```html
+<a
+  href="/"
+  role="button"
+  draggable="false"
+  class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled"
+  data-module="govuk-button"
+>
   Disabled link button
 </a>
 ```
