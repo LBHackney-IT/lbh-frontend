@@ -167,4 +167,3 @@ Manually copy the entire `/node_modules/lbh-frontend/lbh/assets` folder into a p
 You should make this part of your automatic build process so it stays up to date.
 
 Then, set `$lbh-assets-path` in your project Sass file to point to the right path.
-
