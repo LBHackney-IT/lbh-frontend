@@ -2,15 +2,11 @@
 title: Back to top
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<InitAll>
+<PreviewArea height="110px">
 
-<div id="main-content"></div>
-
-_Scroll below this point to see the preview_
-
-<a href="#main-content" class="lbh-back-to-top" data-module="lbh-back-to-top">
+<a href="#main-content" class="lbh-back-to-top lbh-back-to-top--visible" >
 <svg class="lbh-back-to-top__icon" width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <title>Back to top arrow icon</title>
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.000000, 1.000000)">
@@ -23,7 +19,7 @@ _Scroll below this point to see the preview_
   <span class="lbh-back-to-top__text">Back to top</span>
 </a>
 
-</InitAll>
+</PreviewArea>
 
 ## HTML
 

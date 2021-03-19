@@ -2,7 +2,7 @@
 title: Button
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
 <button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
@@ -13,6 +13,23 @@ import InitAll from "../../src/InitAll"
 ```html
 <button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
+</button>
+```
+
+## Button secondary
+
+<button class="govuk-button govuk-secondary lbh-button lbh-button--secondary" data-module="govuk-button">
+  Secondary button
+</button>
+
+### HTML
+
+```html
+<button
+  class="govuk-button govuk-secondary lbh-button lbh-button--secondary"
+  data-module="govuk-button"
+>
+  Secondary button
 </button>
 ```
 
@@ -63,7 +80,7 @@ import InitAll from "../../src/InitAll"
 
 ### HTML
 
-```
+```html
 <a href="/" role="button" draggable="false" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>

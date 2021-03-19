@@ -2,13 +2,13 @@
 title: Character count
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
 Use the Character count
 
 ## Character count
 
-<InitAll>
+<PreviewArea>
 
 <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="10">
   <div class="govuk-form-group lbh-form-group">
@@ -413,4 +413,4 @@ NW1 6XE
 </div>
 ```
 
-</InitAll>
+</PreviewArea>

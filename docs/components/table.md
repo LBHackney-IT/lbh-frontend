@@ -2,9 +2,9 @@
 title: Table
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<InitAll>
+<PreviewArea>
 
 <table class="govuk-table lbh-table">
   <tbody class="govuk-table__body">
@@ -181,5 +181,4 @@ import InitAll from "../../src/InitAll"
   </tbody>
 </table>
 ```
-
-</InitAll>
+</PreviewArea>

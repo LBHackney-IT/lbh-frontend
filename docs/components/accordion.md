@@ -2,11 +2,11 @@
 title: Accordion
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 import Tabs from "@theme/Tabs"
 import TabItem from "@theme/TabItem"
 
-<InitAll>
+<PreviewArea>
 
   <div class="govuk-accordion myClass lbh-accordion" data-module="govuk-accordion" id="default-example" data-attribute="value">
       <div class="govuk-accordion__section">
@@ -38,6 +38,8 @@ import TabItem from "@theme/TabItem"
           </div>
       </div>
   </div>
+
+</PreviewArea>
 
 <Tabs
 defaultValue="html"
@@ -245,5 +247,3 @@ export default MyAccordion;
 </TabItem>
 
 </Tabs>
-
-</InitAll>
