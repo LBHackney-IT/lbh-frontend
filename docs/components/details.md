@@ -2,7 +2,7 @@
 title: Details
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
 <details class="govuk-details  lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">

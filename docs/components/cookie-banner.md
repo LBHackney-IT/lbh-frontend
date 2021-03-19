@@ -2,7 +2,7 @@
 title: Cookie banner
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
 <section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
   <div class="lbh-container">

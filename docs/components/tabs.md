@@ -2,9 +2,9 @@
 title: Tabs
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<InitAll>
+<PreviewArea>
 
 <div class="govuk-tabs lbh-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">
@@ -288,4 +288,4 @@ import InitAll from "../../src/InitAll"
 </div>
 ```
 
-</InitAll>
+</PreviewArea>
