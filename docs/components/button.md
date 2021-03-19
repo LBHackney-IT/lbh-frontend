@@ -16,6 +16,23 @@ import PreviewArea from "../../src/PreviewArea"
 </button>
 ```
 
+## Button secondary
+
+<button class="govuk-button govuk-secondary lbh-button lbh-button--secondary" data-module="govuk-button">
+  Secondary button
+</button>
+
+### HTML
+
+```html
+<button
+  class="govuk-button govuk-secondary lbh-button lbh-button--secondary"
+  data-module="govuk-button"
+>
+  Secondary button
+</button>
+```
+
 ## Button disabled
 
 <button disabled="disabled" aria-disabled="true" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
@@ -63,8 +80,14 @@ import PreviewArea from "../../src/PreviewArea"
 
 ### HTML
 
-```
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+```html
+<a
+  href="/"
+  role="button"
+  draggable="false"
+  class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled"
+  data-module="govuk-button"
+>
   Disabled link button
 </a>
 ```
