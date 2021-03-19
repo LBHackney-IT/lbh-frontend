@@ -2,16 +2,14 @@
 title: Label
 ---
 
-<label class="govuk-label  lbh-label">
+<label class="govuk-label lbh-label">
   National Insurance number
 </label>
 
 ### HTML
 
 ```html
-<label class="govuk-label  lbh-label">
-  National Insurance number
-</label>
+<label class="govuk-label lbh-label"> National Insurance number </label>
 ```
 
 ## Label with bold text

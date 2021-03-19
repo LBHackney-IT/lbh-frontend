@@ -16,6 +16,7 @@
   --ifm-color-primary-lightest: #008567;
 
   --ifm-z-index-fixed: 5;
+  --ifm-z-index-overlay: 5;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Open Sans", sans-serif;
@@ -32,7 +33,7 @@ html[data-theme="dark"] {
 }
 
 // keep logos contrasty in dark mode
-html[data-theme="dark"] .navbar__logo{
+html[data-theme="dark"] .navbar__logo {
   filter: grayscale(1) brightness(20);
 }
 html[data-theme="dark"] .hero img {
@@ -68,7 +69,15 @@ html[data-theme="dark"] .hero img {
 // don't reset styles on our page
 $lbh-safely-embed: true;
 $lbh-asset-path: "~!file-loader!../lbh/assets";
+// make components preview nicer in a narrower space
+$govuk-page-width: 750px;
 
 @import "../lbh/all";
 
-@import "../lbh/components/lbh-accordion/accordion";
+.preview-area {
+  transform: translate(0);
+  overflow: hidden;
+  margin-bottom: calc(
+    var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
+  );
+}

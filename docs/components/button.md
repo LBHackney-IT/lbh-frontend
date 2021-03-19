@@ -2,23 +2,40 @@
 title: Button
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<button class="govuk-button  lbh-button" data-module="govuk-button">
+<button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
 </button>
 
 ### HTML
 
 ```html
-<button class="govuk-button  lbh-button" data-module="govuk-button">
+<button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
+</button>
+```
+
+## Button secondary
+
+<button class="govuk-button govuk-secondary lbh-button lbh-button--secondary" data-module="govuk-button">
+  Secondary button
+</button>
+
+### HTML
+
+```html
+<button
+  class="govuk-button govuk-secondary lbh-button lbh-button--secondary"
+  data-module="govuk-button"
+>
+  Secondary button
 </button>
 ```
 
 ## Button disabled
 
-<button disabled="disabled" aria-disabled="true" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+<button disabled="disabled" aria-disabled="true" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled button
 </button>
 
@@ -28,7 +45,7 @@ import InitAll from "../../src/InitAll"
 <button
   disabled="disabled"
   aria-disabled="true"
-  class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled"
+  class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled"
   data-module="govuk-button"
 >
   Disabled button
@@ -37,7 +54,7 @@ import InitAll from "../../src/InitAll"
 
 ## Button link
 
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button" data-module="govuk-button">
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button" data-module="govuk-button">
   Link button
 </a>
 
@@ -48,7 +65,7 @@ import InitAll from "../../src/InitAll"
   href="/"
   role="button"
   draggable="false"
-  class="govuk-button  lbh-button"
+  class="govuk-button lbh-button"
   data-module="govuk-button"
 >
   Link button
@@ -57,14 +74,14 @@ import InitAll from "../../src/InitAll"
 
 ## Button link disabled
 
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>
 
 ### HTML
 
-```
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+```html
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>
 ```

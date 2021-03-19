@@ -2,9 +2,9 @@
 title: Details
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<details class="govuk-details  lbh-details" data-module="govuk-details">
+<details class="govuk-details lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       Help with nationality
@@ -18,7 +18,7 @@ import InitAll from "../../src/InitAll"
 ### HTML
 
 ```html
-<details class="govuk-details  lbh-details" data-module="govuk-details">
+<details class="govuk-details lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text"> Help with nationality </span>
   </summary>
@@ -32,7 +32,7 @@ import InitAll from "../../src/InitAll"
 
 ## Details expanded
 
-<details id="help-with-nationality" class="govuk-details  lbh-details" data-module="govuk-details" open>
+<details id="help-with-nationality" class="govuk-details lbh-details" data-module="govuk-details" open>
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       Help with nationality
@@ -48,7 +48,7 @@ import InitAll from "../../src/InitAll"
 ```html
 <details
   id="help-with-nationality"
-  class="govuk-details  lbh-details"
+  class="govuk-details lbh-details"
   data-module="govuk-details"
   open
 >
@@ -65,7 +65,7 @@ import InitAll from "../../src/InitAll"
 
 ## Details with html
 
-<details class="govuk-details  lbh-details" data-module="govuk-details">
+<details class="govuk-details lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       Where to find your National Insurance Number
@@ -87,7 +87,7 @@ import InitAll from "../../src/InitAll"
 ### HTML
 
 ```html
-<details class="govuk-details  lbh-details" data-module="govuk-details">
+<details class="govuk-details lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       Where to find your National Insurance Number

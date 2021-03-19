@@ -27,9 +27,9 @@ One option is to call the component's init function in a [`useEffect`](https://r
 ```jsx
 useEffect(() => {
   if (typeof window !== "undefined") {
-    require("lbh-frontend").initAll()
+    require("lbh-frontend").initAll();
   }
-}, [])
+}, []);
 ```
 
 ### Server-side rendering
@@ -42,7 +42,7 @@ You can solve this issue by wrapping your component init calls in an `if` statem
 
 ```jsx
 if (typeof window !== "undefined") {
-  require("lbh-frontend").initAll()
+  require("lbh-frontend").initAll();
 }
 ```
 

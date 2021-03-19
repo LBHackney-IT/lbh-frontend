@@ -2,14 +2,14 @@
 title: Accordion
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 import Tabs from "@theme/Tabs"
 import TabItem from "@theme/TabItem"
 
-<InitAll>
+<PreviewArea>
 
   <div class="govuk-accordion myClass lbh-accordion" data-module="govuk-accordion" id="default-example" data-attribute="value">
-      <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section">
           <div class="govuk-accordion__section-header">
               <h5 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="default-example-heading-1">
@@ -23,7 +23,7 @@ import TabItem from "@theme/TabItem"
               </ul>
           </div>
       </div>
-      <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section">
           <div class="govuk-accordion__section-header">
               <h5 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="default-example-heading-2">
@@ -38,6 +38,8 @@ import TabItem from "@theme/TabItem"
           </div>
       </div>
   </div>
+
+</PreviewArea>
 
 <Tabs
 defaultValue="html"
@@ -55,7 +57,7 @@ values={[
   id="default-example"
   data-attribute="value"
 >
-  <div class="govuk-accordion__section ">
+  <div class="govuk-accordion__section">
     <div class="govuk-accordion__section-header">
       <h5 class="govuk-accordion__section-heading">
         <span
@@ -76,7 +78,7 @@ values={[
       </ul>
     </div>
   </div>
-  <div class="govuk-accordion__section ">
+  <div class="govuk-accordion__section">
     <div class="govuk-accordion__section-header">
       <h5 class="govuk-accordion__section-heading">
         <span
@@ -104,15 +106,15 @@ values={[
 <TabItem value="cra">
 
 ```jsx
-import { useEffect, useRef } from "react"
-import { Accordion } from "lbh-frontend"
+import { useEffect, useRef } from "react";
+import { Accordion } from "lbh-frontend";
 
 const MyAccordion = () => {
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   useEffect(() => {
-    new Accordion(ref.current).init()
-  }, [])
+    new Accordion(ref.current).init();
+  }, []);
 
   return (
     <div
@@ -121,7 +123,7 @@ const MyAccordion = () => {
       data-attribute="value"
       ref={ref}
     >
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -142,7 +144,7 @@ const MyAccordion = () => {
           </ul>
         </div>
       </div>
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -164,27 +166,27 @@ const MyAccordion = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MyAccordion
+export default MyAccordion;
 ```
 
 </TabItem>
 <TabItem value="next">
 
 ```jsx
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react";
 
 const MyAccordion = () => {
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   useEffect(() => {
     if (window !== undefined) {
-      const Accordion = require("lbh-frontend").Accordion
-      new Accordion(ref.current).init()
+      const Accordion = require("lbh-frontend").Accordion;
+      new Accordion(ref.current).init();
     }
-  }, [])
+  }, []);
 
   return (
     <div
@@ -193,7 +195,7 @@ const MyAccordion = () => {
       data-attribute="value"
       ref={ref}
     >
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -214,7 +216,7 @@ const MyAccordion = () => {
           </ul>
         </div>
       </div>
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -236,14 +238,12 @@ const MyAccordion = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MyAccordion
+export default MyAccordion;
 ```
 
 </TabItem>
 
 </Tabs>
-
-</InitAll>

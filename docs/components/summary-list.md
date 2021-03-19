@@ -2,7 +2,7 @@
 title: Summary list
 ---
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -74,79 +74,69 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Firstname Lastname
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <ul class="govuk-summary-list__actions-list">
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Edit<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Delete<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-              </ul>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-        email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <ul class="govuk-summary-list__actions-list">
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Edit<span class="govuk-visually-hidden"> contact information</span>
-                  </a>
-                  </li>
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Change<span class="govuk-visually-hidden"> contact information</span>
-                  </a>
-                  </li>
-              </ul>
-          </dd>
-      </div>
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Firstname Lastname</dd>
+    <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Edit<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Delete<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Edit<span class="govuk-visually-hidden"> contact information</span>
+          </a>
+        </li>
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden">
+              contact information</span
+            >
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
 </dl>
 ```
 
 ## Summary list without actions
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -185,46 +175,34 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Firstname Lastname
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-      </div>
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Firstname Lastname</dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+  </div>
 </dl>
 ```
 
 ## Summary list with some actions
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -279,56 +257,44 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Firstname Lastname
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <ul class="govuk-summary-list__actions-list">
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Edit<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Delete<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-              </ul>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-          <span class="govuk-summary-list__actions"></span>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-          <span class="govuk-summary-list__actions"></span>
-      </div>
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Firstname Lastname</dd>
+    <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Edit<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Delete<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+    <span class="govuk-summary-list__actions"></span>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+    <span class="govuk-summary-list__actions"></span>
+  </div>
 </dl>
 ```
 
@@ -374,45 +340,33 @@ title: Summary list
 
 ```html
 <dl class="govuk-summary-list govuk-summary-list--no-border lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Firstname Lastname
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-      </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Firstname Lastname</dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+  </div>
 </dl>
 ```
 
 ## Summary list no-border on last row
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -451,47 +405,34 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Firstname Lastname
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-      </div>
-      <div class="govuk-summary-list__row govuk-summary-list__row--no-border">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-      </div>
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Firstname Lastname</dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+  </div>
+  <div class="govuk-summary-list__row govuk-summary-list__row--no-border">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+  </div>
 </dl>
 ```
 
-
 ## Summary list overridden-widths
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key govuk-!-width-one-half">
           Name
@@ -563,79 +504,71 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key govuk-!-width-one-half">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value govuk-!-width-one-quarter">
-          Firstname Lastname
-        </dd>
-          <dd class="govuk-summary-list__actions govuk-!-width-one-half">
-              <ul class="govuk-summary-list__actions-list">
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Edit<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Delete<span class="govuk-visually-hidden"> name</span>
-                  </a>
-                  </li>
-              </ul>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          13/08/1980
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact information
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          email@email.com
-        </p>
-        <p class="govuk-body">
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
-          Address line 5
-        </p>
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <ul class="govuk-summary-list__actions-list">
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Edit<span class="govuk-visually-hidden"> contact information</span>
-                  </a>
-                  </li>
-                  <li class="govuk-summary-list__actions-list-item">
-                    <a class="govuk-link" href="#">
-                      Change<span class="govuk-visually-hidden"> contact information</span>
-                  </a>
-                  </li>
-              </ul>
-          </dd>
-      </div>
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key govuk-!-width-one-half">Name</dt>
+    <dd class="govuk-summary-list__value govuk-!-width-one-quarter">
+      Firstname Lastname
+    </dd>
+    <dd class="govuk-summary-list__actions govuk-!-width-one-half">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Edit<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Delete<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">13/08/1980</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact information</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">email@email.com</p>
+      <p class="govuk-body">
+        Address line 1<br />
+        Address line 2<br />
+        Address line 3<br />
+        Address line 4<br />
+        Address line 5
+      </p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Edit<span class="govuk-visually-hidden"> contact information</span>
+          </a>
+        </li>
+        <li class="govuk-summary-list__actions-list-item">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden">
+              contact information</span
+            >
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
 </dl>
 ```
 
 ## Summary list check-your-answers
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -753,125 +686,108 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Sarah Philips
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Date of birth
-        </dt>
-        <dd class="govuk-summary-list__value">
-          5 January 1978
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> date of birth</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address
-        </dt>
-        <dd class="govuk-summary-list__value">
-          72 Guild Street<br />
+<dl class="govuk-summary-list lbh-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Name</dt>
+    <dd class="govuk-summary-list__value">Sarah Philips</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Date of birth</dt>
+    <dd class="govuk-summary-list__value">5 January 1978</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Address</dt>
+    <dd class="govuk-summary-list__value">
+      72 Guild Street<br />
+      London<br />
+      SE23 6FH
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> address</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Contact details</dt>
+    <dd class="govuk-summary-list__value">
+      07700 900457<br />
+      sarah.phillips@example.com
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Previous application number</dt>
+    <dd class="govuk-summary-list__value">502135326</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden">
+          previous application number</span
+        >
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Licence type</dt>
+    <dd class="govuk-summary-list__value">For personal use</dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> licence type</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Home address</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">
+        72 Guild Street<br />
         London<br />
         SE23 6FH
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> address</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Contact details
-        </dt>
-        <dd class="govuk-summary-list__value">
-          07700 900457<br />
-        sarah.phillips@example.com
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> contact details</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Previous application number
-        </dt>
-        <dd class="govuk-summary-list__value">
-          502135326
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> previous application number</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Licence type
-        </dt>
-        <dd class="govuk-summary-list__value">
-          For personal use
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> licence type</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Home address
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">
-          72 Guild Street<br />
-          London<br />
-          SE23 6FH
-        </p>
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> home address</span>
-            </a>
-          </dd>
-      </div>
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Licence period
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">This is a longer paragraph of text provided by the user to provide additional information.</p>
-        <p class="govuk-body">This is a second paragraph of text provided by the user.</p>
-        </dd>
-          <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> licence period</span>
-            </a>
-          </dd>
-      </div>
+      </p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> home address</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">Licence period</dt>
+    <dd class="govuk-summary-list__value">
+      <p class="govuk-body">
+        This is a longer paragraph of text provided by the user to provide
+        additional information.
+      </p>
+      <p class="govuk-body">
+        This is a second paragraph of text provided by the user.
+      </p>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> licence period</span>
+      </a>
+    </dd>
+  </div>
 </dl>
 ```
 
 ## Summary list extreme
 
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name
@@ -1205,7 +1121,7 @@ title: Summary list
 ### HTML
 
 ```html
-<dl class="govuk-summary-list  lbh-summary-list">
+<dl class="govuk-summary-list lbh-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name

@@ -43,7 +43,6 @@
       border: 1px solid lbh-colour("lbh-a01");
       color: lbh-colour("lbh-a01");
       background: lbh-colour("lbh-white");
-      box-shadow: inset lbh-colour("lbh-secondary-inner-shadow") 0 -2px 0 0;
 
       &:hover {
         color: lbh-colour("lbh-white");
@@ -57,7 +56,6 @@
         opacity: 1;
         color: lbh-colour("lbh-grey-1");
         background: lbh-colour("lbh-secondary-disabled");
-        box-shadow: inset lbh-colour("lbh-primary-inner-shadow") 0 -2px 0;
       }
     }
 

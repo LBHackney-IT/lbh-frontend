@@ -56,7 +56,7 @@ Follow the below example to add the CSS and JavaScript files to your HTML templa
     <button class="lbh-button">This is a button component</button>
     <script src="javascript/lbh-frontend-[latest version].min.js"></script>
     <script>
-      window.LBHFrontend.initAll()
+      window.LBHFrontend.initAll();
     </script>
   </body>
 </html>
