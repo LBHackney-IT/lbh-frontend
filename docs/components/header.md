@@ -2,7 +2,7 @@
 title: Header
 ---
 
-
+import PreviewArea from "../../src/PreviewArea"
 
 <header class="lbh-header">
   <div class="lbh-header__main">
@@ -103,7 +103,7 @@ title: Header
 
 ## Header Fixed
 
-<div className="safe-preview">
+<PreviewArea height="101px">
 
 <header class="lbh-header lbh-header--fixed">
   <div class="lbh-header__main">
@@ -141,7 +141,7 @@ title: Header
   </div>
 </header>
 
-</div>
+</PreviewArea>
 
 ### HTML
 

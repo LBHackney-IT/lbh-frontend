@@ -2,9 +2,9 @@
 title: Skip link
 ---
 
-import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 
-<InitAll>
+<PreviewArea>
 
 <a href="#content" class="govuk-skip-link  lbh-skip-link">Skip to main content</a>
 
@@ -28,4 +28,4 @@ import InitAll from "../../src/InitAll"
 >
 ```
 
-</InitAll>
+</PreviewArea>
