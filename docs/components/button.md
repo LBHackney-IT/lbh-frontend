@@ -16,6 +16,23 @@ import InitAll from "../../src/InitAll"
 </button>
 ```
 
+## Button secondary
+
+<button class="govuk-button govuk-secondary lbh-button lbh-button--secondary" data-module="govuk-button">
+  Secondary button
+</button>
+
+### HTML
+
+```html
+<button
+  class="govuk-button govuk-secondary lbh-button lbh-button--secondary"
+  data-module="govuk-button"
+>
+  Secondary button
+</button>
+```
+
 ## Button disabled
 
 <button disabled="disabled" aria-disabled="true" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
