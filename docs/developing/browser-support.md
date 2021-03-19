@@ -133,8 +133,6 @@ Now that you have an IE8 compatible stylesheet you should include it using
 <![endif]-->
 ```
 
-
-
 ## Assistive technologies
 
 LBH Frontend will allow you to build services that comply with the [guidance

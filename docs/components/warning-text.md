@@ -2,7 +2,7 @@
 title: Warning text
 ---
 
-<div class="govuk-warning-text  lbh-warning-text">
+<div class="govuk-warning-text lbh-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>
@@ -13,7 +13,7 @@ title: Warning text
 ### HTML
 
 ```html
-<div class="govuk-warning-text  lbh-warning-text">
+<div class="govuk-warning-text lbh-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>
@@ -24,7 +24,7 @@ title: Warning text
 
 ## With multiple lines
 
-<div class="govuk-warning-text  lbh-warning-text">
+<div class="govuk-warning-text lbh-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>
@@ -35,7 +35,7 @@ title: Warning text
 ### HTML
 
 ```html
-<div class="govuk-warning-text  lbh-warning-text">
+<div class="govuk-warning-text lbh-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
   <strong class="govuk-warning-text__text">
     <span class="govuk-warning-text__assistive">Warning</span>

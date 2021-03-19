@@ -21,7 +21,7 @@ title: Blank page template
     <script>
       document.body.className = document.body.className
         ? document.body.className + " js-enabled"
-        : "js-enabled"
+        : "js-enabled";
     </script>
     <!-- Skip link goes here -->
     <!-- Cookie banner goes here -->
@@ -37,7 +37,7 @@ title: Blank page template
     <!-- Put your path to the LBHFrontend JS File in the src attribute here -->
     <script src=""></script>
     <script>
-      window.LBHFrontend.initAll()
+      window.LBHFrontend.initAll();
     </script>
   </body>
 </html>

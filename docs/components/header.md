@@ -6,7 +6,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 <header class="lbh-header">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -43,9 +43,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -107,7 +107,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 <header class="lbh-header lbh-header--fixed">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -146,9 +146,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header lbh-header--fixed ">
+<header class="lbh-header lbh-header--fixed">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -206,9 +206,9 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Header not homepage
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -245,9 +245,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -305,9 +305,9 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Header with service name
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -335,7 +335,7 @@ import PreviewArea from "../../src/PreviewArea"
         <span class="lbh-header__logo-text">
           Hackney
         </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
       </a>
       </div>
     </div>
@@ -345,9 +345,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -396,7 +396,7 @@ import PreviewArea from "../../src/PreviewArea"
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
         </a>
       </div>
     </div>
@@ -406,7 +406,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Header with links
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper lbh-header__wrapper--stacked">
       <div class="lbh-header__title">
@@ -436,7 +436,7 @@ import PreviewArea from "../../src/PreviewArea"
         <span class="lbh-header__logo-text">
           Hackney
         </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
       </a>
       </div>
       <div class="lbh-header__links"><p>Anne James</p>
@@ -449,7 +449,7 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
     <div class="lbh-container lbh-header__wrapper lbh-header__wrapper--stacked">
       <div class="lbh-header__title">
@@ -500,7 +500,7 @@ import PreviewArea from "../../src/PreviewArea"
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
         </a>
       </div>
       <div class="lbh-header__links">
@@ -514,9 +514,9 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Header with short service name
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -581,9 +581,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -648,9 +648,9 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Header with purple colour scheme
 
-<header class="lbh-header  lbh-header--purple">
+<header class="lbh-header lbh-header--purple">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -688,9 +688,9 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<header class="lbh-header  lbh-header--purple">
+<header class="lbh-header lbh-header--purple">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg

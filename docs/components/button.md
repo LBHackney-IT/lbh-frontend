@@ -4,14 +4,14 @@ title: Button
 
 import PreviewArea from "../../src/PreviewArea"
 
-<button class="govuk-button  lbh-button" data-module="govuk-button">
+<button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
 </button>
 
 ### HTML
 
 ```html
-<button class="govuk-button  lbh-button" data-module="govuk-button">
+<button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
 </button>
 ```
@@ -35,7 +35,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Button disabled
 
-<button disabled="disabled" aria-disabled="true" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+<button disabled="disabled" aria-disabled="true" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled button
 </button>
 
@@ -45,7 +45,7 @@ import PreviewArea from "../../src/PreviewArea"
 <button
   disabled="disabled"
   aria-disabled="true"
-  class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled"
+  class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled"
   data-module="govuk-button"
 >
   Disabled button
@@ -54,7 +54,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Button link
 
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button" data-module="govuk-button">
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button" data-module="govuk-button">
   Link button
 </a>
 
@@ -65,7 +65,7 @@ import PreviewArea from "../../src/PreviewArea"
   href="/"
   role="button"
   draggable="false"
-  class="govuk-button  lbh-button"
+  class="govuk-button lbh-button"
   data-module="govuk-button"
 >
   Link button
@@ -74,20 +74,14 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Button link disabled
 
-<a href="/" role="button" draggable="false" class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>
 
 ### HTML
 
 ```html
-<a
-  href="/"
-  role="button"
-  draggable="false"
-  class="govuk-button  lbh-button lbh-button--disabled govuk-button--disabled"
-  data-module="govuk-button"
->
+<a href="/" role="button" draggable="false" class="govuk-button lbh-button lbh-button--disabled govuk-button--disabled" data-module="govuk-button">
   Disabled link button
 </a>
 ```

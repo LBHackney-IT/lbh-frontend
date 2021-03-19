@@ -6,7 +6,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 <PreviewArea>
 
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">January</td>
@@ -29,7 +29,7 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">January</td>
@@ -52,7 +52,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Table with head
 
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header">Month you apply</th>
@@ -82,7 +82,7 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th scope="col" class="govuk-table__header">Month you apply</th>
@@ -116,7 +116,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Table with head and caption
 
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <caption class="govuk-table__caption lbh-heading-h3 lbh-table__caption">Caption 1: Months and rates</caption>
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
@@ -147,7 +147,7 @@ import PreviewArea from "../../src/PreviewArea"
 ### HTML
 
 ```html
-<table class="govuk-table  lbh-table">
+<table class="govuk-table lbh-table">
   <caption class="govuk-table__caption lbh-heading-h3 lbh-table__caption">
     Caption 1: Months and rates
   </caption>
@@ -181,5 +181,4 @@ import PreviewArea from "../../src/PreviewArea"
   </tbody>
 </table>
 ```
-
 </PreviewArea>

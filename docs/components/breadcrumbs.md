@@ -2,7 +2,7 @@
 title: Breadcrumbs
 ---
 
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/section">Section</a>
@@ -16,7 +16,7 @@ title: Breadcrumbs
 ### HTML
 
 ```html
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/section">Section</a>
@@ -32,7 +32,7 @@ title: Breadcrumbs
 
 ## Breadcrumbs with one level
 
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/section">Section</a>
@@ -43,7 +43,7 @@ title: Breadcrumbs
 ### HTML
 
 ```html
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/section">Section</a>
@@ -54,7 +54,7 @@ title: Breadcrumbs
 
 ## Breadcrumbs with multiple levels
 
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Home</a>
@@ -74,7 +74,7 @@ title: Breadcrumbs
 ### HTML
 
 ```html
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Home</a>
@@ -100,7 +100,7 @@ title: Breadcrumbs
 
 ## Breadcrumbs without the home section
 
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/service-manual">Service Manual</a>
@@ -112,7 +112,7 @@ title: Breadcrumbs
 </div>
 
 ```html
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/service-manual"
@@ -130,7 +130,7 @@ title: Breadcrumbs
 
 ## Breadcrumbs with last breadcrumb as current page
 
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Home</a>
@@ -143,7 +143,7 @@ title: Breadcrumbs
 </div>
 
 ```html
-<div class="govuk-breadcrumbs  lbh-breadcrumbs lbh-container">
+<div class="govuk-breadcrumbs lbh-breadcrumbs lbh-container">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Home</a>

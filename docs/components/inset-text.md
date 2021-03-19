@@ -4,12 +4,12 @@ title: Inset text
 
 ### HTML
 
-<div class="govuk-inset-text  lbh-inset-text">
+<div class="govuk-inset-text lbh-inset-text">
   It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
 </div>
 
 ```html
-<div class="govuk-inset-text  lbh-inset-text">
+<div class="govuk-inset-text lbh-inset-text">
   It can take up to 8 weeks to register a lasting power of attorney if there are
   no mistakes in the application.
 </div>
@@ -17,7 +17,7 @@ title: Inset text
 
 ## Inset text with html
 
-<div class="govuk-inset-text  lbh-inset-text">
+<div class="govuk-inset-text lbh-inset-text">
   <p class="lbh-body-m">It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
 <div class="lbh-warning-text govuk-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -33,7 +33,7 @@ title: Inset text
 ### HTML
 
 ```html
-<div class="govuk-inset-text  lbh-inset-text">
+<div class="govuk-inset-text lbh-inset-text">
   <p class="lbh-body-m">
     It can take up to 8 weeks to register a lasting power of attorney if there
     are no mistakes in the application.

@@ -9,7 +9,7 @@ import TabItem from "@theme/TabItem"
 <PreviewArea>
 
   <div class="govuk-accordion myClass lbh-accordion" data-module="govuk-accordion" id="default-example" data-attribute="value">
-      <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section">
           <div class="govuk-accordion__section-header">
               <h5 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="default-example-heading-1">
@@ -23,7 +23,7 @@ import TabItem from "@theme/TabItem"
               </ul>
           </div>
       </div>
-      <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section">
           <div class="govuk-accordion__section-header">
               <h5 class="govuk-accordion__section-heading">
                   <span class="govuk-accordion__section-button" id="default-example-heading-2">
@@ -57,7 +57,7 @@ values={[
   id="default-example"
   data-attribute="value"
 >
-  <div class="govuk-accordion__section ">
+  <div class="govuk-accordion__section">
     <div class="govuk-accordion__section-header">
       <h5 class="govuk-accordion__section-heading">
         <span
@@ -78,7 +78,7 @@ values={[
       </ul>
     </div>
   </div>
-  <div class="govuk-accordion__section ">
+  <div class="govuk-accordion__section">
     <div class="govuk-accordion__section-header">
       <h5 class="govuk-accordion__section-heading">
         <span
@@ -123,7 +123,7 @@ const MyAccordion = () => {
       data-attribute="value"
       ref={ref}
     >
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -144,7 +144,7 @@ const MyAccordion = () => {
           </ul>
         </div>
       </div>
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -195,7 +195,7 @@ const MyAccordion = () => {
       data-attribute="value"
       ref={ref}
     >
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
@@ -216,7 +216,7 @@ const MyAccordion = () => {
           </ul>
         </div>
       </div>
-      <div className="govuk-accordion__section ">
+      <div className="govuk-accordion__section">
         <div className="govuk-accordion__section-header">
           <h5 className="govuk-accordion__section-heading">
             <span
