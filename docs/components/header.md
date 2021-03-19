@@ -4,9 +4,9 @@ title: Header
 
 ### HTML
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -41,9 +41,9 @@ title: Header
 </header>
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -103,7 +103,7 @@ title: Header
 
 <header class="lbh-header">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -140,9 +140,9 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header lbh-header--fixed ">
+<header class="lbh-header lbh-header--fixed">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <h1 class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -200,9 +200,9 @@ title: Header
 
 ## Header not homepage
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -239,9 +239,9 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -299,9 +299,9 @@ title: Header
 
 ## Header with service name
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -329,7 +329,7 @@ title: Header
         <span class="lbh-header__logo-text">
           Hackney
         </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
       </a>
       </div>
     </div>
@@ -339,9 +339,9 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -390,7 +390,7 @@ title: Header
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
         </a>
       </div>
     </div>
@@ -400,7 +400,7 @@ title: Header
 
 ## Header with links
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
    <div class="lbh-container lbh-header__wrapper lbh-header__wrapper--stacked">
       <div class="lbh-header__title">
@@ -430,7 +430,7 @@ title: Header
         <span class="lbh-header__logo-text">
           Hackney
         </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
       </a>
       </div>
       <div class="lbh-header__links"><p>Anne James</p>
@@ -443,7 +443,7 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
     <div class="lbh-container lbh-header__wrapper lbh-header__wrapper--stacked">
       <div class="lbh-header__title">
@@ -494,7 +494,7 @@ title: Header
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name ">Manage a tenancy</span>
+          <span class="lbh-header__service-name">Manage a tenancy</span>
         </a>
       </div>
       <div class="lbh-header__links">
@@ -508,9 +508,9 @@ title: Header
 
 ## Header with short service name
 
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -575,9 +575,9 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header  ">
+<header class="lbh-header ">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg
@@ -642,9 +642,9 @@ title: Header
 
 ## Header with purple colour scheme
 
-<header class="lbh-header  lbh-header--purple">
+<header class="lbh-header lbh-header--purple">
   <div class="lbh-header__main">
-   <div class="lbh-container lbh-header__wrapper ">
+   <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
       <a href="/" class="lbh-header__title-link">
         <svg
@@ -682,9 +682,9 @@ title: Header
 ### HTML
 
 ```html
-<header class="lbh-header  lbh-header--purple">
+<header class="lbh-header lbh-header--purple">
   <div class="lbh-header__main">
-    <div class="lbh-container lbh-header__wrapper ">
+    <div class="lbh-container lbh-header__wrapper">
       <div class="lbh-header__title">
         <a href="/" class="lbh-header__title-link">
           <svg

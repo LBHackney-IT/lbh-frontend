@@ -153,7 +153,7 @@ import InitAll from "../../src/InitAll"
 ### HTML
 
 ```html
-<div class="govuk-tabs  lbh-tabs" data-module="govuk-tabs">
+<div class="govuk-tabs lbh-tabs" data-module="govuk-tabs">
   <h2 class="govuk-tabs__title">Contents</h2>
   <ul class="govuk-tabs__list">
     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">

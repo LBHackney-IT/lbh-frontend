@@ -7,10 +7,10 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob">
+  <div class="govuk-date-input lbh-date-input" id="dob">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -45,10 +45,10 @@ title: Date input
 <div class="govuk-form-group lbh-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob">
+    <div class="govuk-date-input lbh-date-input" id="dob">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -109,7 +109,7 @@ title: Date input
   <span id="dob-errors-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-errors">
+  <div class="govuk-date-input lbh-date-input" id="dob-errors">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-errors-day">
@@ -151,7 +151,7 @@ title: Date input
     <span id="dob-errors-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Error message goes here
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob-errors">
+    <div class="govuk-date-input lbh-date-input" id="dob-errors">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label
@@ -218,13 +218,13 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-errors-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-errors-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
   <span id="dob-errors-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-errors">
+  <div class="govuk-date-input lbh-date-input" id="dob-errors">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-errors-day">
@@ -263,13 +263,13 @@ title: Date input
     aria-describedby="dob-errors-hint dob-errors-error"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-errors-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-errors-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
     <span id="dob-errors-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Error message goes here
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob-errors">
+    <div class="govuk-date-input lbh-date-input" id="dob-errors">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label
@@ -336,13 +336,13 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-day-error-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-day-error-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
   <span id="dob-day-error-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-day-error">
+  <div class="govuk-date-input lbh-date-input" id="dob-day-error">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-day-error-day">
@@ -381,13 +381,13 @@ title: Date input
     aria-describedby="dob-day-error-hint dob-day-error-error"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-day-error-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-day-error-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
     <span id="dob-day-error-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Error message goes here
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob-day-error">
+    <div class="govuk-date-input lbh-date-input" id="dob-day-error">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label
@@ -454,13 +454,13 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-month-error-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-month-error-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
   <span id="dob-month-error-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-month-error">
+  <div class="govuk-date-input lbh-date-input" id="dob-month-error">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-month-error-day">
@@ -499,13 +499,13 @@ title: Date input
     aria-describedby="dob-month-error-hint dob-month-error-error"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-month-error-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-month-error-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
     <span id="dob-month-error-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Error message goes here
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob-month-error">
+    <div class="govuk-date-input lbh-date-input" id="dob-month-error">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label
@@ -572,13 +572,13 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-year-error-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-year-error-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
   <span id="dob-year-error-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-year-error">
+  <div class="govuk-date-input lbh-date-input" id="dob-year-error">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-year-error-day">
@@ -617,13 +617,13 @@ title: Date input
     aria-describedby="dob-year-error-hint dob-year-error-error"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-year-error-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-year-error-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
     <span id="dob-year-error-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Error message goes here
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob-year-error">
+    <div class="govuk-date-input lbh-date-input" id="dob-year-error">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label
@@ -690,10 +690,10 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob">
+  <div class="govuk-date-input lbh-date-input" id="dob">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -728,10 +728,10 @@ title: Date input
 <div class="govuk-form-group lbh-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob">
+    <div class="govuk-date-input lbh-date-input" id="dob">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -789,10 +789,10 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob">
+  <div class="govuk-date-input lbh-date-input" id="dob">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -827,10 +827,10 @@ title: Date input
 <div class="govuk-form-group extra-class lbh-form-group">
   <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
-    <div class="govuk-date-input  lbh-date-input" id="dob">
+    <div class="govuk-date-input lbh-date-input" id="dob">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label class="govuk-label govuk-date-input__label" for="dob-day">
@@ -888,10 +888,10 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-with-autocomplete-attribute-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-with-autocomplete-attribute-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-with-autocomplete-attribute">
+  <div class="govuk-date-input lbh-date-input" id="dob-with-autocomplete-attribute">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-with-autocomplete-attribute-day">
@@ -930,14 +930,11 @@ title: Date input
     aria-describedby="dob-with-autocomplete-attribute-hint"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span
-      id="dob-with-autocomplete-attribute-hint"
-      class="govuk-hint  lbh-hint"
-    >
+    <span id="dob-with-autocomplete-attribute-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
     <div
-      class="govuk-date-input  lbh-date-input"
+      class="govuk-date-input lbh-date-input"
       id="dob-with-autocomplete-attribute"
     >
       <div class="govuk-date-input__item">
@@ -1009,10 +1006,10 @@ title: Date input
   <legend class="govuk-fieldset__legend">
     What is your date of birth?
   </legend>
-  <span id="dob-with-input-attributes-hint" class="govuk-hint  lbh-hint">
+  <span id="dob-with-input-attributes-hint" class="govuk-hint lbh-hint">
     For example, 31 3 1980
   </span>
-  <div class="govuk-date-input  lbh-date-input" id="dob-with-input-attributes">
+  <div class="govuk-date-input lbh-date-input" id="dob-with-input-attributes">
     <div class="govuk-date-input__item">
       <div class="govuk-form-group">
         <label class="govuk-label govuk-date-input__label" for="dob-with-input-attributes-day">
@@ -1051,13 +1048,10 @@ title: Date input
     aria-describedby="dob-with-input-attributes-hint"
   >
     <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
-    <span id="dob-with-input-attributes-hint" class="govuk-hint  lbh-hint">
+    <span id="dob-with-input-attributes-hint" class="govuk-hint lbh-hint">
       For example, 31 3 1980
     </span>
-    <div
-      class="govuk-date-input  lbh-date-input"
-      id="dob-with-input-attributes"
-    >
+    <div class="govuk-date-input lbh-date-input" id="dob-with-input-attributes">
       <div class="govuk-date-input__item">
         <div class="govuk-form-group">
           <label

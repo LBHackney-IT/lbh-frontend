@@ -6,12 +6,12 @@ import InitAll from "../../src/InitAll"
 
 <InitAll>
 
-<a href="#content" class="govuk-skip-link  lbh-skip-link">Skip to main content</a>
+<a href="#content" class="govuk-skip-link lbh-skip-link">Skip to main content</a>
 
 ### HTML
 
 ```html
-<a href="#content" class="govuk-skip-link  lbh-skip-link"
+<a href="#content" class="govuk-skip-link lbh-skip-link"
   >Skip to main content</a
 >
 ```
