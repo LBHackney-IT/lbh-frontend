@@ -386,7 +386,7 @@ import L from "leaflet";
   <div class="lbh-contact__details">
       <div class="lbh-contact__block">
         <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--telephone">Telephone</h4>
-            <a href="tel:" class="lbh-contact__telephone" title="Call us on "></a>
+            <a href="tel:" class="lbh-contact__telephone" title="Call us on"></a>
       </div>
       <div class="lbh-contact__block">
         <h4 class="lbh-heading-h4 lbh-contact__block-title lbh-contact__block-title--email">Email</h4>
@@ -414,7 +414,7 @@ import L from "leaflet";
       >
         Telephone
       </h4>
-      <a href="tel:" class="lbh-contact__telephone" title="Call us on "></a>
+      <a href="tel:" class="lbh-contact__telephone" title="Call us on"></a>
     </div>
     <div class="lbh-contact__block">
       <h4

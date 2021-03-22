@@ -10,7 +10,7 @@ Components are small, reusable pieces of a user interface. In [atomic design](ht
 
 Good components are generic enough that they can be used to meet many different user needs. For example, a well thought out button might be equally at home on a staff case management app as on a contact form.
 
-You can suggest new components by **[opening an issue on Github](github.com/lBHackney-IT/lbh-frontend/issues/new)**.
+You can suggest new components by **[opening an issue on Github](https://github.com/LBHackney-IT/lbh-frontend/issues/new/choose)**.
 
 ## Adding new patterns
 
@@ -20,7 +20,7 @@ Unlike components, they might only be intended to solve one or a small number of
 
 Before you suggest a new pattern, consider whether it can be made using only the components that already exist in the design system. If it can't, you should suggest those components at the same time.
 
-You can suggest new patterns by **[opening an issue on Github](github.com/lBHackney-IT/lbh-frontend/issues/new)**.
+You can suggest new patterns by **[opening an issue on Github](https://github.com/LBHackney-IT/lbh-frontend/issues/new/choose)**.
 
 ## Improving documentation
 
