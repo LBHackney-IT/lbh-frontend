@@ -30,11 +30,6 @@ they do in other modern browsers.
 'Functional' means the components may not look perfect in the given browser, but
 must still be usable without errors and without 'looking broken'.
 
-If you are including LBH Frontend as part of a stylesheet that you are
-generating in your application's build pipeline, you will need to [generate and
-include a separate stylesheet in order to support Internet Explorer
-8](docs/installation/supporting-internet-explorer-8.md).
-
 [service-manual-browsers]: https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in
 
 ### Supporting Internet Explorer 8
