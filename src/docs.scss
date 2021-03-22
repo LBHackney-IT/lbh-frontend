@@ -1,3 +1,5 @@
+@import "../node_modules/leaflet/dist/leaflet.css";
+
 /* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
@@ -60,7 +62,7 @@ html[data-theme="dark"] .hero img {
   }
 }
 
-.colour-preview{
+.colour-preview {
   height: 35px;
   width: 35px;
   border-radius: 100%;

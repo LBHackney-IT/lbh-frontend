@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Problems using the design system's code
 title: ''
 labels: bug
 assignees: ''
