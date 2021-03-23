@@ -2,6 +2,6 @@
 title: Coming soon!
 ---
 
-There's nothing here yet, and that's a problem!
-
-We [need your help](/contributing/introduction) to add patterns here.
+:::note
+This section of the design system needs improvement. You can help by [contributing](/contributing/introduction).
+:::
