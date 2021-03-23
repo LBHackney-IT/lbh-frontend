@@ -53,6 +53,9 @@ module.exports = {
     ],
     Patterns: ["patterns/manage-a-caseload"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
+    "Data visualisation": [
+      "data-visualisation/getting-started"
+    ],
     Contributing: [
       "contributing/introduction",
       "contributing/coding-standards",
