@@ -9,4 +9,25 @@
   .lbh-label {
     @include lbh-label;
   }
+
+  // copied these over from govuk frontend because i couldn't see any other way to win the specificity battle
+  // solves: https://github.com/LBHackney-IT/lbh-frontend/issues/147
+  .govuk-label--xl {
+    @include govuk-font($size: 48, $weight: bold);
+    margin-bottom: govuk-spacing(3);
+  }
+
+  .govuk-label--l {
+    @include govuk-font($size: 36, $weight: bold);
+    margin-bottom: govuk-spacing(3);
+  }
+
+  .govuk-label--m {
+    @include govuk-font($size: 24, $weight: bold);
+    margin-bottom: govuk-spacing(2);
+  }
+
+  .govuk-label--s {
+    @include govuk-font($size: 19, $weight: bold);
+  }
 }
