@@ -83,3 +83,7 @@ $govuk-page-width: 750px;
     var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
   );
 }
+
+* + .preview-area {
+  margin-top: 2rem;
+}

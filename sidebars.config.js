@@ -24,6 +24,7 @@ module.exports = {
       "components/breadcrumbs",
       "components/button",
       "components/contacts-block",
+      "components/collapsible",
       "components/character-count",
       "components/checkboxes",
       "components/cookie-banner",
