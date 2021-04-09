@@ -98,7 +98,6 @@ values={[
     Content here
   </div>
 </section>
->
 ```
 
 </TabItem>
