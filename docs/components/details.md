@@ -2,8 +2,6 @@
 title: Details
 ---
 
-import PreviewArea from "../../src/PreviewArea"
-
 <details class="govuk-details lbh-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">

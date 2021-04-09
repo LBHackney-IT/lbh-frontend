@@ -69,6 +69,8 @@
     ]
   },
   "dependencies": {
+    "@reach/dialog": "^0.15.0",
+    "dialog-polyfill": "^0.5.6",
     "govuk-frontend": "^3.11.0",
     "leaflet": "^1.7.1",
     "underscore": "^1.9.1"

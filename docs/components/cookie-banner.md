@@ -2,8 +2,6 @@
 title: Cookie banner
 ---
 
-import PreviewArea from "../../src/PreviewArea"
-
 <section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
   <div class="lbh-container">
     <div class="govuk-grid-row">

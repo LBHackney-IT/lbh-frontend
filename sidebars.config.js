@@ -30,6 +30,7 @@ module.exports = {
       "components/cookie-banner",
       "components/date-input",
       "components/details",
+      "components/dialog",
       "components/error-message",
       "components/error-summary",
       "components/fieldset",

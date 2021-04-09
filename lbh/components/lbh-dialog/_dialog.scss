@@ -1,0 +1,68 @@
+@import "../../settings/all";
+
+@include lbh-exports("lbh/component/dialog") {
+  .lbh-dialog {
+    position: relative;
+    border: 4px solid lbh-colour("lbh-text");
+    width: 90%;
+    max-width: 500px;
+    margin: 7vh auto;
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__close {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      display: inline-flex;
+
+      svg {
+        margin-top: 0;
+        path {
+          fill: lbh-colour("lbh-text");
+        }
+      }
+
+      &:focus,
+      &:active {
+        outline: 3px solid lbh-colour("lbh-primary-focus");
+        background: lbh-colour("lbh-primary-focus");
+      }
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      * {
+        margin-top: 1rem;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      @include govuk-media-query($from: tablet) {
+        flex-direction: row;
+        align-items: center;
+
+        * {
+          margin-top: 0;
+          margin-left: 1.5rem;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

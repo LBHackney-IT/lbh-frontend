@@ -2,11 +2,11 @@
 title: Contact block
 ---
 
-import PreviewArea from "../../src/PreviewArea"
+import InitAll from "../../src/InitAll"
 
 ## With a map
 
-<PreviewArea>
+<InitAll>
 
 <section class="lbh-contact">
 <h2 class="lbh-heading-large-light lbh-contact__title">Service Name Centre</h2>
@@ -114,14 +114,14 @@ import PreviewArea from "../../src/PreviewArea"
 </div>
 </section>
 
-</PreviewArea>
+</InitAll>
 
 ### Include Leaflet Sass and JS
 
 Maps in the contact block require [Leaflet](https://leafletjs.com), which you can install with `npm leaflet` and then add the Sass and JavaScript to your app:
 
 ```js
-import L from "leaflet";
+import L from "leaflet"
 ```
 
 ```scss

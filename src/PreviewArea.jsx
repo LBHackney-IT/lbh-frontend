@@ -1,20 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react"
 
-// Wrap components that need imperative JS in this
-// SEE: https://lbhackney-it.github.io/LBH-frontend/developing/react#client-side-routing
+const PreviewArea = ({ height, children }) => (
+  <div className="preview-area" style={{ height: height }}>
+    {children}
+  </div>
+)
 
-const PreviewArea = ({ height, children }) => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      require("../lbh/all").initAll();
-    }
-  }, []);
-
-  return (
-    <div className="preview-area" style={{ height: height }}>
-      {children}
-    </div>
-  );
-};
-
-export default PreviewArea;
+export default PreviewArea

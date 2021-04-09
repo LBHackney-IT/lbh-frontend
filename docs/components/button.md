@@ -2,8 +2,6 @@
 title: Button
 ---
 
-import PreviewArea from "../../src/PreviewArea"
-
 <button class="govuk-button lbh-button" data-module="govuk-button">
   Save and continue
 </button>

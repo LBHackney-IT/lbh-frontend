@@ -78,12 +78,15 @@ $govuk-page-width: 750px;
 
 .preview-area {
   transform: translate(0);
-  overflow: hidden;
   margin-bottom: calc(
     var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
   );
 }
 
-* + .preview-area {
+* + .preview-area > *:first-child {
   margin-top: 2rem;
+}
+
+[data-reach-dialog-overlay] {
+  z-index: var(--ifm-z-index-overlay);
 }
