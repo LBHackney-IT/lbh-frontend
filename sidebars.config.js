@@ -45,6 +45,7 @@ module.exports = {
       "components/panel",
       "components/phase-banner",
       "components/radios",
+      "components/search-box",
       "components/select",
       "components/simple-pagination",
       "components/skip-link",

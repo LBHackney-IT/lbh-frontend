@@ -25,20 +25,15 @@ const Dialog = ({
     {children}
     <button onClick={onDismiss} className="lbh-dialog__close">
       <span className="govuk-visually-hidden">Close</span>
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 23 23"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+
+      <svg width="18" height="18" viewBox="0 0 13 13" fill="none">
         <path
-          d="M4.94983 6.36377L6.36404 4.94956L17.6778 16.2633L16.2635 17.6775L4.94983 6.36377Z"
-          fill="#0b0c0c"
+          d="M-0.0501709 1.36379L1.36404 -0.050415L12.6778 11.2633L11.2635 12.6775L-0.0501709 1.36379Z"
+          fill="#0B0C0C"
         />
         <path
-          d="M16.2635 4.94971L17.6778 6.36392L6.36405 17.6776L4.94984 16.2634L16.2635 4.94971Z"
-          fill="#0b0c0c"
+          d="M11.2635 -0.050293L12.6778 1.36392L1.36404 12.6776L-0.0501709 11.2634L11.2635 -0.050293Z"
+          fill="#0B0C0C"
         />
       </svg>
     </button>

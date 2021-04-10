@@ -1,0 +1,42 @@
+@include lbh-exports("lbh/component/search-box") {
+  .lbh-search-box {
+    position: relative;
+    display: inline-flex;
+
+    & + .lbh-table {
+      margin-top: 15px;
+    }
+
+    .lbh-input {
+      padding-right: 40px;
+    }
+
+    &__action {
+      margin-top: 0;
+      position: absolute;
+      border: none;
+      background: none;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      display: inline-flex;
+      padding: 12px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        svg * {
+          fill: lbh-colour("lbh-secondary-text");
+        }
+      }
+      &:focus {
+        background: lbh-colour("lbh-primary-focus");
+        outline: none;
+      }
+    }
+
+    svg {
+      margin-top: 0;
+    }
+  }
+}
