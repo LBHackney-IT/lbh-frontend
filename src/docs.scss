@@ -74,6 +74,23 @@ $lbh-asset-path: "~!file-loader!../lbh/assets";
 // make components preview nicer in a narrower space
 $govuk-page-width: 750px;
 
+// fix table appearence in docs
+table {
+  display: table;
+
+  tr,
+  tr:nth-child(2n) {
+    background-color: transparent;
+    border-top: none;
+  }
+
+  td,
+  th {
+    border: none;
+    color: inherit;
+  }
+}
+
 @import "../lbh/all";
 
 .preview-area {

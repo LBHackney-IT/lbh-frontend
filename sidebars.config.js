@@ -41,6 +41,7 @@ module.exports = {
       "components/inset-text",
       "components/label",
       "components/page-announcement",
+      "components/pagination",
       "components/panel",
       "components/phase-banner",
       "components/radios",
