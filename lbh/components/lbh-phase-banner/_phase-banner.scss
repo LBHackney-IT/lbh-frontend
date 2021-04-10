@@ -1,12 +1,15 @@
 @import "node_modules/govuk-frontend/govuk/components/phase-banner/phase-banner";
 
 @include lbh-exports("lbh/component/phase-banner") {
+  .lbh-header + .lbh-phase-banner {
+    @include lbh-rem(margin-top, 5);
+  }
+
   .lbh-phase-banner {
     @include lbh-rem(padding, 8, 0, 10);
     border-bottom: 1px solid lbh-colour("lbh-panel");
 
     .govuk-phase-banner__content__tag {
-
       @include lbh-body-xs;
       @include lbh-rem(padding, 2, 12, 0);
       color: lbh-colour("lbh-white");
