@@ -1,0 +1,105 @@
+$lbh-timeline-thickness: 3px;
+$lbh-timeline-vertical-gap: 15px;
+
+@include lbh-exports("lbh/component/timeline") {
+  .lbh-timeline {
+    list-style: none;
+    padding-left: 45px;
+
+    &__event {
+      position: relative;
+      padding-bottom: $lbh-timeline-vertical-gap;
+
+      // spine
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 13px;
+        bottom: -20px;
+        left: -35.5px;
+        border-left: $lbh-timeline-thickness solid lbh-colour("lbh-text");
+      }
+
+      // spot
+      &:after {
+        content: "";
+        display: block;
+        height: 16px;
+        width: 16px;
+        top: 3px;
+        left: -45px;
+        position: absolute;
+        border-radius: 100%;
+        background: lbh-colour("lbh-white");
+        border: $lbh-timeline-thickness solid lbh-colour("lbh-text");
+
+        @include govuk-media-query($from: tablet) {
+          top: 5px;
+        }
+      }
+
+      &--major:after {
+        background: lbh-colour("lbh-text");
+      }
+
+      &--minor:after {
+        height: 6px;
+        width: 6px;
+        left: -40px;
+        top: 7px;
+        border-radius: 100%;
+        background: lbh-colour("lbh-text");
+        border: $lbh-timeline-thickness solid lbh-colour("lbh-text");
+
+        @include govuk-media-query($from: tablet) {
+          top: 10px;
+        }
+      }
+
+      &--gap-below:before {
+        border-left: $lbh-timeline-thickness dashed lbh-colour("lbh-text");
+      }
+
+      &--action-needed {
+        display: table;
+        background: lbh-colour("lbh-panel");
+        padding: 15px;
+
+        *:first-child {
+          margin-top: 0;
+        }
+        *:last-child {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          top: 25px;
+          bottom: -35px;
+        }
+
+        &:after {
+          top: 17px;
+        }
+      }
+
+      &--action-needed + li {
+        padding-top: 20px;
+        &:after {
+          top: 23px;
+
+          @include govuk-media-query($from: tablet) {
+            top: 25px;
+          }
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0px;
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+}

@@ -53,6 +53,7 @@ module.exports = {
       "components/tag",
       "components/tabs",
       "components/textarea",
+      "components/timeline",
       "components/warning-text",
     ],
     Patterns: ["patterns/manage-a-caseload"],
