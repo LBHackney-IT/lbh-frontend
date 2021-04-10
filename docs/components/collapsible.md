@@ -3,6 +3,7 @@ title: Collapsible
 ---
 
 import InitAll from "../../src/InitAll"
+import PreviewArea from "../../src/PreviewArea"
 import Tabs from "@theme/Tabs"
 import TabItem from "@theme/TabItem"
 
@@ -21,6 +22,7 @@ Do not use collapsibles for more detailed information that only some users may n
 ## Open by default
 
 <InitAll>
+<PreviewArea>
   <section data-one className="lbh-collapsible" data-module="lbh-collapsible">
       <button 
         aria-expanded="true" data-behavior="lbh-collapsible-toggle" className="lbh-collapsible__button"
@@ -69,6 +71,7 @@ Do not use collapsibles for more detailed information that only some users may n
           </dl>
       </div>
   </section>
+  </PreviewArea>
 </InitAll>
 
 <Tabs
