@@ -29,6 +29,11 @@
     @include lbh-rem(margin-top, 12);
   }
 
+  .lbh-error-message + .lbh-input,
+  .lbh-error-message + .lbh-textarea {
+    @include lbh-rem(margin-top, 6);
+  }
+
   // Needed so that it is hidden when this component is imported individually
   .govuk-visually-hidden {
     @include govuk-visually-hidden;
