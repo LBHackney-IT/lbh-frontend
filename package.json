@@ -22,11 +22,16 @@
     "prepublishOnly": "npm-run-all -s clean build"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@docusaurus/core": "2.0.0-alpha.70",
     "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.6.21",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.22",
     "copyfiles": "^2.4.1",
     "cross-var": "^1.1.0",
     "docusaurus-image-loader": "^1.0.1",
@@ -70,6 +75,7 @@
   },
   "dependencies": {
     "@reach/dialog": "^0.15.0",
+    "@tippyjs/react": "^4.2.5",
     "dialog-polyfill": "^0.5.6",
     "govuk-frontend": "^3.11.0",
     "leaflet": "^1.7.1",

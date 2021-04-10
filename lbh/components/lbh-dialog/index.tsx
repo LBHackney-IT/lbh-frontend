@@ -14,12 +14,14 @@ const Dialog = ({
   onDismiss,
   children,
   title,
+  ...props
 }: Props): React.ReactElement => (
   <ReachDialog
     isOpen={isOpen}
     onDismiss={onDismiss}
     aria-label={title}
     className="lbh-dialog"
+    {...props}
   >
     <h2 className="lbh-heading-h2 lbh-dialog__title">{title}</h2>
     {children}

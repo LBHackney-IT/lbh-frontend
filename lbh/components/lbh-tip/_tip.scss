@@ -1,0 +1,138 @@
+@include lbh-exports("lbh/component/tip") {
+  [data-tippy-root] {
+    max-width: calc(100vw - 10px);
+  }
+
+  .tippy-box {
+    position: relative;
+    background-color: lbh-colour("lbh-white");
+    color: lbh-colour("lbh-text");
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    outline: 0;
+    transition-property: transform, visibility, opacity;
+    border: 1px solid lbh-colour("lbh-border");
+
+    &[data-animation="fade"][data-state="hidden"] {
+      opacity: 0;
+    }
+  }
+
+  .tippy-box[data-placement^="top"] > .tippy-arrow {
+    bottom: -10px;
+    &:before {
+      content: "";
+      display: block;
+      border-style: solid;
+      position: absolute;
+      border-color: lbh-colour("lbh-border") transparent transparent transparent;
+      border-width: 10px 10px 0px 10px;
+      bottom: 0px;
+      left: -8px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-color: lbh-colour("lbh-white") transparent transparent transparent;
+      border-style: solid;
+      border-width: 9px 9px 0px 9px;
+      bottom: 1.5px;
+      position: absolute;
+      left: -7px;
+    }
+  }
+
+  .tippy-box[data-placement^="bottom"] > .tippy-arrow {
+    top: -10px;
+
+    &:before {
+      content: "";
+      display: block;
+      border-style: solid;
+      position: absolute;
+      border-color: transparent transparent lbh-colour("lbh-border") transparent;
+      border-width: 0px 10px 10px 10px;
+      top: 0px;
+      left: -8px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-color: transparent transparent lbh-colour("lbh-white") transparent;
+      border-style: solid;
+      border-width: 0px 9px 9px 9px;
+      top: 1.5px;
+      position: absolute;
+      left: -7px;
+    }
+  }
+
+  .tippy-box[data-placement^="right"] > .tippy-arrow {
+    left: -10px;
+
+    &:before {
+      content: "";
+      display: block;
+      border-style: solid;
+      position: absolute;
+      border-color: transparent lbh-colour("lbh-border") transparent transparent;
+      border-width: 10px 10px 10px 0px;
+      top: -8px;
+      left: 0px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-color: transparent lbh-colour("lbh-white") transparent transparent;
+      border-style: solid;
+      border-width: 9px 9px 9px 0px;
+      top: -7px;
+      position: absolute;
+      left: 1.5px;
+    }
+  }
+
+  .tippy-box[data-placement^="left"] > .tippy-arrow {
+    right: -10px;
+
+    &:before {
+      content: "";
+      display: block;
+      border-style: solid;
+      position: absolute;
+      border-color: transparent transparent transparent lbh-colour("lbh-border");
+      border-width: 10px 0px 10px 9px;
+      top: -8px;
+      right: 0px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      border-color: transparent transparent transparent lbh-colour("lbh-white");
+      border-style: solid;
+      border-width: 9px 0px 9px 9px;
+      top: -7px;
+      position: absolute;
+      right: 1px;
+    }
+  }
+
+  //   content
+  .tippy-content {
+    position: relative;
+    padding: 15px;
+    z-index: 1;
+
+    * {
+      margin-bottom: 7px;
+    }
+
+    *:first-child {
+      margin-top: 0;
+    }
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
