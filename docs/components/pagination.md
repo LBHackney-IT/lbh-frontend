@@ -14,6 +14,8 @@ It works well when paired with a table of data.
 
 This kind of pagination is more complex than most resident-facing services need. If you need to show more results than can comfortably fit on a single page, consider using [simple pagination](/components/simple-pagination) instead.
 
+Users generally find proper pagination easier and more predictable to use than a "load more" pattern.
+
 <PreviewArea>
 <nav className="lbh-pagination">
   <div className="lbh-pagination__summary">Showing 101—150 of 246 results</div>
