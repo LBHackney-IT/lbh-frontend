@@ -12,7 +12,7 @@ Use pagination to help a user move through a set of results that are too long to
 
 It works well when paired with a table of data.
 
-This kind of pagination is more complex than most resident-facing services need. If you need to show more results than can comfortably fit on a single page, consider using a simpler "previous/next page" pattern instead.
+This kind of pagination is more complex than most resident-facing services need. If you need to show more results than can comfortably fit on a single page, consider using [simple pagination](/components/simple-pagination) instead.
 
 <PreviewArea>
 <nav className="lbh-pagination">

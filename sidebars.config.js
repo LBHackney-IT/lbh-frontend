@@ -46,6 +46,7 @@ module.exports = {
       "components/phase-banner",
       "components/radios",
       "components/select",
+      "components/simple-pagination",
       "components/skip-link",
       "components/summary-list",
       "components/table",

@@ -1,65 +1,67 @@
-.lbh-pagination {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0px;
-  @include lbh-body-m;
+@include lbh-exports("lbh/component/pagination") {
+  .lbh-pagination {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    @include lbh-body-m;
 
-  @include govuk-media-query($from: desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    @include govuk-media-query($from: desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  &__list {
-    padding: 0;
-  }
-
-  &__item {
-    padding: 0;
-    display: inline-block;
-    margin-right: 7px;
-
-    &:first-of-type a,
-    &:last-of-type a {
+    &__list {
       padding: 0;
     }
-  }
 
-  &__link {
-    color: lbh-colour("lbh-link");
-    padding: 0px 5px;
-    text-decoration: none;
-    display: inline-block;
+    &__item {
+      padding: 0;
+      display: inline-block;
+      margin-right: 7px;
 
-    &:hover {
-      color: lbh-colour("lbh-link-hover");
-    }
-
-    &:focus {
-      outline: 3px solid lbh-colour("lbh-primary-focus");
-    }
-
-    &:active {
-      color: lbh-colour("lbh-link-active");
-    }
-
-    &--current {
-      color: lbh-colour("lbh-text");
-      font-weight: 700;
-      pointer-events: none;
-      cursor: default;
-
-      &:hover,
-      &:focus {
-        color: lbh-colour("lbh-text");
+      &:first-of-type a,
+      &:last-of-type a {
+        padding: 0;
       }
     }
-  }
 
-  &__summary {
-    margin: 10px 0px;
-    @include govuk-media-query($from: desktop) {
-      order: 2;
-      margin: 0px;
+    &__link {
+      color: lbh-colour("lbh-link");
+      padding: 0px 5px;
+      text-decoration: none;
+      display: inline-block;
+
+      &:hover {
+        color: lbh-colour("lbh-link-hover");
+      }
+
+      &:focus {
+        outline: 3px solid lbh-colour("lbh-primary-focus");
+      }
+
+      &:active {
+        color: lbh-colour("lbh-link-active");
+      }
+
+      &--current {
+        color: lbh-colour("lbh-text");
+        font-weight: 700;
+        pointer-events: none;
+        cursor: default;
+
+        &:hover,
+        &:focus {
+          color: lbh-colour("lbh-text");
+        }
+      }
+    }
+
+    &__summary {
+      margin: 10px 0px;
+      @include govuk-media-query($from: desktop) {
+        order: 2;
+        margin: 0px;
+      }
     }
   }
 }

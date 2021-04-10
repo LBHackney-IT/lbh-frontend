@@ -107,3 +107,7 @@ table {
 [data-reach-dialog-overlay] {
   z-index: var(--ifm-z-index-overlay);
 }
+
+.lbh-simple-pagination a {
+  transition: 0s;
+}
