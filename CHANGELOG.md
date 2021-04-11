@@ -1,3 +1,10 @@
+## [3.5.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.0...v3.5.1) (2021-04-11)
+
+
+### Bug Fixes
+
+* **core:** spacing improvements ([#159](https://github.com/LBHackney-IT/LBH-frontend/issues/159)) ([44c9bca](https://github.com/LBHackney-IT/LBH-frontend/commit/44c9bca1c9d1d69a123f37c9d5cea410e8687c94))
+
 # [3.5.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.4.0...v3.5.0) (2021-04-11)
 
 
