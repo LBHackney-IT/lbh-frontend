@@ -12,7 +12,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /// Font helper
 ///
 /// @param {Number} $size - Size of the font as it would appear on desktop -
@@ -158,4 +157,8 @@
   @include lbh-rem(font-size, 14);
   font-weight: $lbh-font-weight-regular;
   @include lbh-rem(line-height, 24);
+}
+
+@mixin lbh-caption {
+  color: lbh-colour("lbh-secondary-text");
 }

@@ -4,6 +4,7 @@
   .lbh-back-link {
     @include lbh-link-style-default;
     border: 0;
+    margin: 0;
 
     &:hover {
       border-bottom: 1px solid lbh-colour("lbh-link-hover");
