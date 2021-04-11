@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.2...v3.4.0) (2021-04-11)
+
+
+### Features
+
+* **core:** add staff-facing components and fixes ([#158](https://github.com/LBHackney-IT/LBH-frontend/issues/158)) ([10f8fc2](https://github.com/LBHackney-IT/LBH-frontend/commit/10f8fc261bc0fe4b36781676ad028b32f35e4b6d)), closes [#143](https://github.com/LBHackney-IT/LBH-frontend/issues/143) [#146](https://github.com/LBHackney-IT/LBH-frontend/issues/146) [#145](https://github.com/LBHackney-IT/LBH-frontend/issues/145) [#149](https://github.com/LBHackney-IT/LBH-frontend/issues/149) [#148](https://github.com/LBHackney-IT/LBH-frontend/issues/148) [#155](https://github.com/LBHackney-IT/LBH-frontend/issues/155)
+
 ## [3.3.2](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.1...v3.3.2) (2021-04-01)
 
 
