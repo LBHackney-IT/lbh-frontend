@@ -6,7 +6,7 @@ Use a page annoucement to alert a user to important new information. Colour vari
 
 <section className="lbh-page-announcement">
   <h3 className="lbh-page-announcement__title">Payment successful</h3>
-  <div class="lbh-page-announcement__content">
+  <div className="lbh-page-announcement__content">
     More detail about the announcement.
   </div>
 </section>
@@ -46,7 +46,7 @@ Use a page annoucement to alert a user to important new information. Colour vari
 ```html
 <section class="lbh-page-announcement lbh-page-announcement--info">
   <h3 class="lbh-page-announcement__title">I am information</h3>
-  <div className="lbh-page-announcement__content">
+  <div class="lbh-page-announcement__content">
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
