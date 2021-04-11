@@ -1,0 +1,27 @@
+@include lbh-exports("lbh/component/stat") {
+  .lbh-stat {
+    padding: 20px;
+    background: lbh-colour("lbh-panel");
+
+    &__value {
+      @include lbh-heading-h2;
+      font-weight: $lbh-font-weight-regular;
+      @include lbh-rem(margin-bottom, 5);
+    }
+
+    &__caption {
+      @include lbh-body-s;
+    }
+
+    & + .lbh-stat {
+      border-top: 10px solid white;
+    }
+
+    @include govuk-media-query($from: tablet) {
+      & + .lbh-stat {
+        border-top: none;
+        border-left: 10px solid white;
+      }
+    }
+  }
+}

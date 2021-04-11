@@ -1,0 +1,107 @@
+@include lbh-exports("lbh/component/conversation") {
+  .lbh-conversation {
+    background: lbh-colour("lbh-panel");
+    height: 450px;
+    position: relative;
+    padding: 25px;
+    overflow-y: auto;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    list-style: none;
+
+    &__message {
+      padding: 10px;
+      background: lbh-colour("lbh-a01");
+      border-radius: 5px;
+      max-width: 300px;
+      margin-left: 40px;
+      position: relative;
+      align-self: flex-end;
+      margin-top: 20px;
+      position: relative;
+      padding-right: 40px;
+      z-index: 2;
+      margin-bottom: 20px;
+
+      &:first-child {
+        margin-bottom: 0px;
+      }
+
+      .lbh-body,
+      .lbh-body-xs {
+        color: lbh-colour("lbh-text-white");
+        margin: 0;
+      }
+
+      &--inbound {
+        background: lbh-colour("lbh-text-white");
+        align-self: flex-start;
+        margin-left: 0px;
+        margin-right: 40px;
+
+        .lbh-body,
+        .lbh-body-xs {
+          color: lbh-colour("lbh-text");
+        }
+        .lbh-conversation__root {
+          right: inherit;
+          left: 0px;
+        }
+        summary svg path {
+          stroke: lbh-colour("lbh-text");
+        }
+      }
+
+      &:hover summary {
+        opacity: 1;
+      }
+    }
+
+    &__details[open] svg {
+      transform: rotate(180deg);
+    }
+
+    &__summary {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 18px;
+      opacity: 0;
+      display: flex;
+      padding: 3px 1px;
+
+      &:focus {
+        outline: 3px solid lbh-colour("lbh-primary-focus");
+        background: lbh-colour("lbh-primary-focus");
+        opacity: 1;
+
+        svg path {
+          stroke: lbh-colour("lbh-text");
+        }
+      }
+    }
+
+    &__metadata {
+      margin-top: 10px;
+    }
+
+    &__root {
+      position: absolute;
+      bottom: -7px;
+      right: 0px;
+      height: 12px;
+      width: 12px;
+      background-size: cover;
+      display: block;
+      z-index: 1;
+    }
+
+    &__no-older {
+      align-self: center;
+      padding: 20px 0px;
+    }
+  }
+}

@@ -36,6 +36,19 @@
       }
     }
 
+    &--add {
+      svg {
+        margin-right: 10px;
+      }
+      svg path {
+        fill: lbh-colour("lbh-primary-button");
+      }
+      &:hover svg path {
+        fill: lbh-colour("lbh-secondary-button");
+      }
+    }
+
+    &--add,
     &--secondary,
     &--secondary:link,
     &--secondary:visited {

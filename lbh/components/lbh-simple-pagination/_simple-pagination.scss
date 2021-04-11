@@ -1,0 +1,75 @@
+@include lbh-exports("lbh/component/simple-pagination") {
+  .lbh-simple-pagination {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid lbh-colour("lbh-grey-3");
+
+    &__link {
+      text-decoration: none;
+      display: inline-block;
+      flex: 1;
+      padding: 10px 0px 10px 30px;
+      @include lbh-body-m;
+      font-weight: $lbh-font-weight-bold;
+
+      color: lbh-colour("lbh-link");
+
+      &:hover {
+        color: lbh-colour("lbh-link-hover");
+        text-decoration: none;
+
+        .lbh-simple-pagination__title {
+          text-decoration: underline;
+        }
+      }
+
+      &:active {
+        color: lbh-colour("lbh-link-active");
+      }
+
+      &:focus {
+        outline: none;
+        background: lbh-colour("lbh-primary-focus");
+        color: lbh-colour("lbh-text");
+        box-shadow: 0 -2px lbh-colour("lbh-primary-focus"),
+          0 4px lbh-colour("lbh-text");
+
+        svg {
+          stroke: lbh-colour("lbh-text");
+        }
+      }
+
+      svg {
+        position: absolute;
+        left: 5px;
+        top: 17px;
+        stroke: lbh-colour("lbh-grey-3");
+      }
+
+      &--next {
+        padding: 10px 30px 10px 0px;
+        text-align: right;
+
+        svg {
+          position: absolute;
+          left: inherit;
+          right: 5px;
+        }
+      }
+    }
+
+    &__title {
+      display: block;
+
+      @include lbh-font;
+      @include lbh-rem(font-size, 13);
+      font-weight: $lbh-font-weight-regular;
+      @include lbh-rem(line-height, 19);
+
+      @include govuk-media-query($from: tablet) {
+        @include lbh-rem(font-size, 16);
+        @include lbh-rem(line-height, 24);
+      }
+    }
+  }
+}

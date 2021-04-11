@@ -74,12 +74,41 @@ $lbh-asset-path: "~!file-loader!../lbh/assets";
 // make components preview nicer in a narrower space
 $govuk-page-width: 750px;
 
+// fix table appearence in docs
+table {
+  display: table;
+
+  tr,
+  tr:nth-child(2n) {
+    background-color: transparent;
+    border-top: none;
+  }
+
+  td,
+  th {
+    border: none;
+    color: inherit;
+  }
+}
+
 @import "../lbh/all";
 
 .preview-area {
   transform: translate(0);
-  overflow: hidden;
   margin-bottom: calc(
     var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading)
   );
+}
+
+.govuk-grid-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[data-reach-dialog-overlay] {
+  z-index: var(--ifm-z-index-overlay);
+}
+
+.lbh-simple-pagination a {
+  transition: 0s;
 }

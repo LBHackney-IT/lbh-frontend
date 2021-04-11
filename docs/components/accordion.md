@@ -2,11 +2,11 @@
 title: Accordion
 ---
 
-import PreviewArea from "../../src/PreviewArea"
+import InitAll from "../../src/InitAll"
 import Tabs from "@theme/Tabs"
 import TabItem from "@theme/TabItem"
 
-<PreviewArea>
+<InitAll>
 
   <div class="govuk-accordion myClass lbh-accordion" data-module="govuk-accordion" id="default-example" data-attribute="value">
       <div class="govuk-accordion__section">
@@ -39,7 +39,7 @@ import TabItem from "@theme/TabItem"
       </div>
   </div>
 
-</PreviewArea>
+</InitAll>
 
 <Tabs
 defaultValue="html"
@@ -106,15 +106,15 @@ values={[
 <TabItem value="cra">
 
 ```jsx
-import { useEffect, useRef } from "react";
-import { Accordion } from "lbh-frontend";
+import { useEffect, useRef } from "react"
+import { Accordion } from "lbh-frontend"
 
 const MyAccordion = () => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
   useEffect(() => {
-    new Accordion(ref.current).init();
-  }, []);
+    new Accordion(ref.current).init()
+  }, [])
 
   return (
     <div
@@ -166,27 +166,27 @@ const MyAccordion = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MyAccordion;
+export default MyAccordion
 ```
 
 </TabItem>
 <TabItem value="next">
 
 ```jsx
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"
 
 const MyAccordion = () => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
   useEffect(() => {
     if (window !== undefined) {
-      const Accordion = require("lbh-frontend").Accordion;
-      new Accordion(ref.current).init();
+      const Accordion = require("lbh-frontend").Accordion
+      new Accordion(ref.current).init()
     }
-  }, []);
+  }, [])
 
   return (
     <div
@@ -238,10 +238,10 @@ const MyAccordion = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MyAccordion;
+export default MyAccordion
 ```
 
 </TabItem>

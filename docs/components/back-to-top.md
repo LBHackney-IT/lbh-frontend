@@ -2,8 +2,10 @@
 title: Back to top
 ---
 
+import InitAll from "../../src/InitAll"
 import PreviewArea from "../../src/PreviewArea"
 
+<InitAll>
 <PreviewArea height="110px">
 
 <a href="#main-content" class="lbh-back-to-top lbh-back-to-top--visible" >
@@ -20,6 +22,7 @@ import PreviewArea from "../../src/PreviewArea"
 </a>
 
 </PreviewArea>
+</InitAll>
 
 ## HTML
 

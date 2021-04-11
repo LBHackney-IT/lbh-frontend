@@ -80,7 +80,7 @@ title: Input
     It’s on your National Insurance card, benefit letter, payslip or P60. For
     example, ‘QQ 12 34 56 C’.
   </span>
-  <span id="input-with-error-message-error" class="govuk-error-message">
+  <span id="input-with-error-message-error" class="govuk-error-message lbh-error-message">
     <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
   <input
@@ -103,7 +103,10 @@ title: Input
     It’s on your National Insurance card, benefit letter, payslip or P60. For
     example, ‘QQ 12 34 56 C’.
   </span>
-  <span id="input-with-error-message-error" class="govuk-error-message">
+  <span
+    id="input-with-error-message-error"
+    class="govuk-error-message lbh-error-message"
+  >
     <span class="govuk-visually-hidden">Error:</span> Error message goes here
   </span>
   <input

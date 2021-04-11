@@ -17,4 +17,14 @@
   .lbh-link--no-visited-state {
     @include govuk-link-style-no-visited-state;
   }
+
+  button.lbh-link {
+    @include lbh-body-m;
+    color: lbh-colour("lbh-link");
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
 }

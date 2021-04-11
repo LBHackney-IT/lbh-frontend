@@ -2,36 +2,33 @@
 
 @include lbh-exports("lbh/component/tag") {
   .lbh-tag {
-
-    @include lbh-body-xs;
+    @include lbh-body-s;
     background-color: lbh-colour("lbh-link");
     color: lbh-colour("lbh-white");
-    padding: 6px 8px;
+    padding: 4px 6px;
     display: inline-block;
     border-radius: 2px;
     text-transform: none;
     letter-spacing: normal;
 
-    &--green{
-        background-color: lbh-colour("lbh-a01");
-        color: lbh-colour("lbh-text-white");
+    &--green {
+      background-color: lbh-colour("lbh-a01");
+      color: lbh-colour("lbh-text-white");
     }
 
-    &--yellow{
+    &--yellow {
       background-color: lbh-colour("lbh-h04");
-      color: lbh-colour("lbh-text"); 
+      color: lbh-colour("lbh-text");
     }
 
-    &--red{
-        background-color: lbh-colour("lbh-f02");
-        color: lbh-colour("lbh-text-white");
+    &--red {
+      background-color: lbh-colour("lbh-f02");
+      color: lbh-colour("lbh-text-white");
     }
 
-    &--grey{
-        background-color: lbh-colour("lbh-border");
-        color: lbh-colour("lbh-text");
+    &--grey {
+      background-color: lbh-colour("lbh-border");
+      color: lbh-colour("lbh-text");
     }
   }
 }
-
-

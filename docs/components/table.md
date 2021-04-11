@@ -26,6 +26,8 @@ import PreviewArea from "../../src/PreviewArea"
   </tbody>
 </table>
 
+</PreviewArea>
+
 ### HTML
 
 ```html
@@ -52,6 +54,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Table with head
 
+<PreviewArea>
 <table class="govuk-table lbh-table">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
@@ -78,6 +81,7 @@ import PreviewArea from "../../src/PreviewArea"
         </tr>
   </tbody>
 </table>
+</PreviewArea>
 
 ### HTML
 
@@ -116,6 +120,7 @@ import PreviewArea from "../../src/PreviewArea"
 
 ## Table with head and caption
 
+<PreviewArea>
 <table class="govuk-table lbh-table">
   <caption class="govuk-table__caption lbh-heading-h3 lbh-table__caption">Caption 1: Months and rates</caption>
   <thead class="govuk-table__head">
@@ -143,6 +148,7 @@ import PreviewArea from "../../src/PreviewArea"
         </tr>
   </tbody>
 </table>
+</PreviewArea>
 
 ### HTML
 
@@ -181,4 +187,3 @@ import PreviewArea from "../../src/PreviewArea"
   </tbody>
 </table>
 ```
-</PreviewArea>

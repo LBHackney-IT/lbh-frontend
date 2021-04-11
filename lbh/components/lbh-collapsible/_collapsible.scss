@@ -1,0 +1,49 @@
+@import "../../settings/all";
+
+@include lbh-exports("lbh/component/collapsible") {
+  .lbh-collapsible {
+    &__button {
+      border: none;
+      background: none;
+      padding: 0;
+      padding-bottom: 12px;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      border-bottom: 3px solid lbh-colour("lbh-text");
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        top: unset;
+        fill: none;
+        stroke: lbh-colour("lbh-text");
+      }
+
+      &:focus {
+        outline: none;
+        border-color: lbh-colour("lbh-primary-focus");
+
+        svg {
+          stroke: lbh-colour("lbh-primary-focus");
+        }
+      }
+
+      &[aria-expanded="false"] svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__heading {
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+}
