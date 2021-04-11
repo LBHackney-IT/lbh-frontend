@@ -32,35 +32,47 @@ You can use [GOV.UK layout helpers](https://design-system.service.gov.uk/styles/
 
 <PreviewArea>
     <div className="govuk-grid-row">
-        <div className="lbh-stat govuk-grid-column-one-half">
+        <div className="govuk-grid-column-one-half">
+        <div className="lbh-stat">
             <strong className="lbh-stat__value" aria-labelledby="stat-1-caption">12</strong>
             <span className="lbh-stat__caption" id="stat-1-caption">
                 Cases awaiting review
             </span>
         </div>
-        <div className="lbh-stat govuk-grid-column-one-half">
+        </div>
+        <div className="govuk-grid-column-one-half">
+        <div className="lbh-stat">
             <strong className="lbh-stat__value" aria-labelledby="stat-2-caption">48</strong>
             <span className="lbh-stat__caption" id="stat-2-caption">
                 Cases handled this month
             </span>
+        </div>
         </div>
     </div>
 </PreviewArea>
 
 ```html
 <div class="govuk-grid-row">
-  <div class="lbh-stat govuk-grid-column-one-half">
-    <strong class="lbh-stat__value" aria-labelledby="stat-1-caption">12</strong>
-    <span class="lbh-stat__caption" id="stat-1-caption">
-      Cases awaiting review
-    </span>
+  <div class="govuk-grid-column-one-half">
+    <div class="lbh-stat">
+      <strong class="lbh-stat__value" aria-labelledby="stat-1-caption">
+        12
+      </strong>
+      <span class="lbh-stat__caption" id="stat-1-caption">
+        Cases awaiting review
+      </span>
+    </div>
   </div>
 
-  <div class="lbh-stat govuk-grid-column-one-half">
-    <strong class="lbh-stat__value" aria-labelledby="stat-2-caption">48</strong>
-    <span class="lbh-stat__caption" id="stat-2-caption">
-      Cases handled this month
-    </span>
+  <div className="govuk-grid-column-one-half">
+    <div class="lbh-stat">
+      <strong class="lbh-stat__value" aria-labelledby="stat-2-caption">
+        48
+      </strong>
+      <span class="lbh-stat__caption" id="stat-2-caption">
+        Cases handled this month
+      </span>
+    </div>
   </div>
 </div>
 ```
@@ -69,48 +81,60 @@ You can use [GOV.UK layout helpers](https://design-system.service.gov.uk/styles/
 
 <PreviewArea>
     <div className="govuk-grid-row">
-        <div className="lbh-stat govuk-grid-column-one-third">
+        <div className="govuk-grid-column-one-third">
+        <div className="lbh-stat">
             <strong className="lbh-stat__value" aria-labelledby="stat-1-caption">12</strong>
             <span className="lbh-stat__caption" id="stat-1-caption">
                 Cases awaiting review
             </span>
         </div>
-        <div className="lbh-stat govuk-grid-column-one-third">
+        </div>
+        <div className="govuk-grid-column-one-third">
+        <div className="lbh-stat">
             <strong className="lbh-stat__value" aria-labelledby="stat-2-caption">48</strong>
             <span className="lbh-stat__caption" id="stat-2-caption">
                 Cases handled this month
             </span>
         </div>
-        <div className="lbh-stat govuk-grid-column-one-third">
+        </div>
+        <div className="govuk-grid-column-one-third">
+        <div className="lbh-stat">
             <strong className="lbh-stat__value" aria-labelledby="stat-3-caption">275</strong>
             <span className="lbh-stat__caption" id="stat-3-caption">
                 Total cases for <a href="#" className="lbh-link">62 staff</a>
             </span>
+        </div>
         </div>
     </div>
 </PreviewArea>
 
 ```html
 <div class="govuk-grid-row">
-  <div class="lbh-stat govuk-grid-column-one-third">
-    <strong class="lbh-stat__value" aria-labelledby="stat-1-caption">12</strong>
-    <span class="lbh-stat__caption" id="stat-1-caption">
-      Cases awaiting review
-    </span>
+  <div class="govuk-grid-column-one-third">
+    <div class="lbh-stat">
+      <strong class="lbh-stat__value" aria-labelledby="stat-1-caption">12</strong>
+      <span class="lbh-stat__caption" id="stat-1-caption">
+        Cases awaiting review
+      </span>
+    </div>
   </div>
-
-  <div class="lbh-stat govuk-grid-column-one-third">
-    <strong class="lbh-stat__value" aria-labelledby="stat-2-caption">48</strong>
-    <span class="lbh-stat__caption" id="stat-2-caption">
-      Cases handled this month
-    </span>
+  <div class="govuk-grid-column-one-third">
+    <div class="lbh-stat">
+      <strong class="lbh-stat__value" aria-labelledby="stat-2-caption">
+        48
+      </strong>
+      <span class="lbh-stat__caption" id="stat-2-caption">
+        Cases handled this month
+      </span>
+    </div>
   </div>
-
-  <div class="lbh-stat govuk-grid-column-one-third">
-    <strong class="lbh-stat__value" aria-labelledby="stat-3-caption">275<strong>
-    <span class="lbh-stat__caption" id="stat-3-caption">
-      Total cases for <a href="#" class="lbh-link">62 staff</a>
-    </span>
+  <div class="govuk-grid-column-one-third">
+    <div class="lbh-stat">
+      <strong class="lbh-stat__value"  aria-labelledby="stat-3-caption">275<strong>
+      <span class="lbh-stat__caption" id="stat-3-caption">
+        Total cases for <a href="#" class="lbh-link">62 staff</a>
+      </span>
+    </div>
   </div>
 </div>
 ```

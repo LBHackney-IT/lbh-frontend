@@ -89,6 +89,7 @@ Timelines can show events of different importance, as well as gaps in time where
         </li>
         <li className="lbh-timeline__event  lbh-timeline__event--gap-below">
             <h3 className="lbh-heading-h3">Assessment plan completed</h3>
+            <p className="lbh-body">12 September 2019</p>
             <details class="govuk-details lbh-details" data-module="govuk-details">
                 <summary class="lbh-body govuk-details__summary">
                     <span class="govuk-details__summary-text">
@@ -99,7 +100,6 @@ Timelines can show events of different importance, as well as gaps in time where
                     We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
                 </div>
             </details>
-            <p className="lbh-body">12 September 2019</p>
         </li>
         <li className="lbh-timeline__event lbh-timeline__event--minor">
             <h3 className="lbh-heading-h4">Message sent</h3>
@@ -129,6 +129,7 @@ Timelines can show events of different importance, as well as gaps in time where
   </li>
   <li class="lbh-timeline__event  lbh-timeline__event--gap-below">
     <h3 class="lbh-heading-h3">Assessment plan completed</h3>
+    <p class="lbh-body">12 September 2019</p>
     <details class="govuk-details lbh-details" data-module="govuk-details">
       <summary class="lbh-body govuk-details__summary">
         <span class="govuk-details__summary-text"> Assessment overview </span>
@@ -139,7 +140,6 @@ Timelines can show events of different importance, as well as gaps in time where
         you’ll have to send copies of identity documents through the post.
       </div>
     </details>
-    <p class="lbh-body">12 September 2019</p>
   </li>
   <li class="lbh-timeline__event lbh-timeline__event--minor">
     <h3 class="lbh-heading-h4">Message sent</h3>

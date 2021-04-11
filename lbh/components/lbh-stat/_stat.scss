@@ -12,16 +12,5 @@
     &__caption {
       @include lbh-body-s;
     }
-
-    & + .lbh-stat {
-      border-top: 10px solid white;
-    }
-
-    @include govuk-media-query($from: tablet) {
-      & + .lbh-stat {
-        border-top: none;
-        border-left: 10px solid white;
-      }
-    }
   }
 }
