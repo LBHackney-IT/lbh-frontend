@@ -27,9 +27,9 @@ One option is to call the component's init function in a [`useEffect`](https://r
 ```jsx
 useEffect(() => {
   if (typeof window !== "undefined") {
-    require("lbh-frontend").initAll();
+    require("lbh-frontend").initAll()
   }
-}, []);
+}, [])
 ```
 
 ### Server-side rendering
@@ -42,7 +42,7 @@ You can solve this issue by wrapping your component init calls in an `if` statem
 
 ```jsx
 if (typeof window !== "undefined") {
-  require("lbh-frontend").initAll();
+  require("lbh-frontend").initAll()
 }
 ```
 
@@ -64,3 +64,5 @@ This advice might change as the design system grows.
 In the past Hackney has tried to make React ports of this design system, but it's always been more trouble than it's worth to maintain them.
 
 The alternative would be to go all-in with React, but this wouldn't work for the many non-React apps we still need to maintain.
+
+The design system includes two components that only work with React: the [dialog](/components/dialog) and [tip](/components/tip).

@@ -1,7 +1,7 @@
 @include lbh-exports("lbh/component/page-announcement") {
   .lbh-page-announcement {
     @include lbh-rem(margin-bottom, 36);
-    @include lbh-rem(padding, 36, 36, 36, 24);
+    @include lbh-rem(padding, 25, 25, 25, 25);
     border: 1px solid lbh-colour("lbh-a03");
     border-left: 6px solid lbh-colour("lbh-a03");
     background: rgba(lbh-colour("lbh-a04"), 0.3);
@@ -13,6 +13,7 @@
 
     &__content {
       @include lbh-body-m;
+      margin-top: 0;
 
       a {
         @include lbh-link;
@@ -23,6 +24,19 @@
         @include lbh-list--bullet;
         @include lbh-body-m;
       }
+    }
+
+    &--warning {
+      border: 1px solid lbh-colour("lbh-f02");
+      border-left: 6px solid lbh-colour("lbh-f02");
+      background: rgba(lbh-colour("lbh-f03"), 0.2);
+    }
+
+    &--info {
+      border: 1px solid lbh-colour("lbh-link");
+      border-left: 6px solid lbh-colour("lbh-link");
+      background: rgba(lbh-colour("lbh-link-hover"), 0.1);
+      @include lbh-rem(padding, 36, 36, 36, 25);
     }
   }
 }

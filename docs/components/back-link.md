@@ -2,9 +2,11 @@
 title: Back link
 ---
 
-<div className="lbh-container">
-    <a href="#" className="govuk-back-link lbh-back-link">Back to home</a>
-</div>
+import PreviewArea from "../../src/PreviewArea"
+
+<PreviewArea>
+  <a href="#" className="govuk-back-link lbh-back-link">Back to home</a>
+</PreviewArea>
 
 ```html
 <div class="lbh-container">
