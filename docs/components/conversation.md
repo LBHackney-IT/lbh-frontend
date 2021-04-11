@@ -90,7 +90,7 @@ New messages appear at the bottom, so the keyboard tab order of a conversation i
     <details class="lbh-conversation__details">
       <summary class="lbh-conversation__summary">
         <svg width="17" height="11" viewBox="0 0 17 11" fill="none">
-          <path d="M2 2L8.5 8L15 2" stroke="white" strokeWidth="2" />
+          <path d="M2 2L8.5 8L15 2" stroke="white" stroke-width="2" />
         </svg>
         <span class="govuk-visually-hidden">Details</span>
       </summary>
@@ -117,7 +117,7 @@ New messages appear at the bottom, so the keyboard tab order of a conversation i
     <details class="lbh-conversation__details">
       <summary class="lbh-conversation__summary">
         <svg width="17" height="11" viewBox="0 0 17 11" fill="none">
-          <path d="M2 2L8.5 8L15 2" stroke="white" strokeWidth="2" />
+          <path d="M2 2L8.5 8L15 2" stroke="white" stroke-width="2" />
         </svg>
         <span class="govuk-visually-hidden">Details</span>
       </summary>
@@ -145,7 +145,7 @@ New messages appear at the bottom, so the keyboard tab order of a conversation i
     <details class="lbh-conversation__details">
       <summary class="lbh-conversation__summary">
         <svg width="17" height="11" viewBox="0 0 17 11" fill="none">
-          <path d="M2 2L8.5 8L15 2" stroke="white" strokeWidth="2" />
+          <path d="M2 2L8.5 8L15 2" stroke="white" stroke-width="2" />
         </svg>
         <span class="govuk-visually-hidden">Details</span>
       </summary>

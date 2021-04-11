@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: row;
     border-top: 1px solid lbh-colour("lbh-grey-3");
+    position: relative;
+
+    * + * {
+      margin-top: 0;
+    }
 
     &__link {
       text-decoration: none;

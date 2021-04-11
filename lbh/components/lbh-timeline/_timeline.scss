@@ -6,6 +6,10 @@ $lbh-timeline-vertical-gap: 15px;
     list-style: none;
     padding-left: 45px;
 
+    * + * {
+      margin-top: 0.5em;
+    }
+
     &__event {
       position: relative;
       padding-bottom: $lbh-timeline-vertical-gap;

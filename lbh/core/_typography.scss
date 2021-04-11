@@ -1,65 +1,60 @@
 @include lbh-exports("lbh/core/typography") {
-
   // Headings
 
   @if $lbh-safely-embed {
-
-    .lbh-heading-h1{
+    .lbh-heading-h1 {
       @include lbh-heading-h1;
     }
-  
-    .lbh-heading-h2{
+
+    .lbh-heading-h2 {
       @include lbh-heading-h2;
     }
-  
-    .lbh-heading-h3{
+
+    .lbh-heading-h3 {
       @include lbh-heading-h3;
     }
-  
-    .lbh-heading-h4{
+
+    .lbh-heading-h4 {
       @include lbh-heading-h4;
     }
-  
-    .lbh-heading-h5{
+
+    .lbh-heading-h5 {
       @include lbh-heading-h5;
     }
-  
-    .lbh-heading-h6{
+
+    .lbh-heading-h6 {
       @include lbh-heading-h6;
     }
-
   } @else {
-
     .lbh-heading-h1,
     h1 {
       @include lbh-heading-h1;
     }
-  
+
     .lbh-heading-h2,
     h2 {
       @include lbh-heading-h2;
     }
-  
+
     .lbh-heading-h3,
     h3 {
       @include lbh-heading-h3;
     }
-  
+
     .lbh-heading-h4,
     h4 {
       @include lbh-heading-h4;
     }
-  
+
     .lbh-heading-h5,
     h5 {
       @include lbh-heading-h5;
     }
-  
+
     .lbh-heading-h6,
     h6 {
       @include lbh-heading-h6;
     }
-
   }
 
   .lbh-heading-large-light {
@@ -81,6 +76,16 @@
 
   .lbh-body-xs {
     @include lbh-body-xs;
+  }
+
+  // captions
+  .lbh-caption {
+    @include lbh-caption;
+  }
+
+  // properly space captions and headings
+  [class*="govuk-caption"] + [class*="lbh-heading"] {
+    margin-top: 0px;
   }
 
   // Usage aliases

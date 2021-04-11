@@ -2,10 +2,12 @@
 title: Back link
 ---
 
-<a href="#" class="govuk-back-link lbh-back-link">Back to home</a>
-
-### HTML
+<div className="lbh-container">
+    <a href="#" className="govuk-back-link lbh-back-link">Back to home</a>
+</div>
 
 ```html
-<a href="#" class="govuk-back-link lbh-back-link">Back to home</a>
+<div class="lbh-container">
+  <a href="#" class="govuk-back-link lbh-back-link">Back to home</a>
+</div>
 ```

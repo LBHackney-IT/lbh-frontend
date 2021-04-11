@@ -2,12 +2,16 @@
   .lbh-pagination {
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
+    @include lbh-rem(margin-top, 6);
     @include lbh-body-m;
 
     @include govuk-media-query($from: desktop) {
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    * + * {
+      margin-top: 0;
     }
 
     &__list {

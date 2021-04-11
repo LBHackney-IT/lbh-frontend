@@ -83,21 +83,18 @@ values={[
 <TabItem value="html">
 
 ```html
-<section className="lbh-collapsible" data-module="lbh-collapsible">
+<section class="lbh-collapsible" data-module="lbh-collapsible">
   <button
     aria-expanded="true"
     data-behavior="lbh-collapsible-toggle"
-    className="lbh-collapsible__button"
+    class="lbh-collapsible__button"
   >
-    <h2 className="lbh-heading-h2 lbh-collapsible__heading">Contact details</h2>
+    <h2 class="lbh-heading-h2 lbh-collapsible__heading">Contact details</h2>
     <svg width="17" height="10" viewBox="0 0 17 10">
-      <path d="M2 1.5L8.5 7.5L15 1.5" strokeWidth="3" />
+      <path d="M2 1.5L8.5 7.5L15 1.5" stroke-width="3" />
     </svg>
   </button>
-  <div
-    className="lbh-collapsible__content"
-    data-behavior="lbh-collapsible-content"
-  >
+  <div class="lbh-collapsible__content" data-behavior="lbh-collapsible-content">
     Content here
   </div>
 </section>
@@ -148,19 +145,19 @@ export default MyCollapsible;
 ## Closed by default
 
 ```html
-<section className="lbh-collapsible" data-module="lbh-collapsible">
+<section class="lbh-collapsible" data-module="lbh-collapsible">
   <button
     aria-expanded="false"
     data-behavior="lbh-collapsible-toggle"
-    className="lbh-collapsible__button"
+    class="lbh-collapsible__button"
   >
-    <h2 className="lbh-heading-h2 lbh-collapsible__heading">Contact details</h2>
+    <h2 class="lbh-heading-h2 lbh-collapsible__heading">Contact details</h2>
     <svg width="17" height="10" viewBox="0 0 17 10">
-      <path d="M2 1.5L8.5 7.5L15 1.5" strokeWidth="3" />
+      <path d="M2 1.5L8.5 7.5L15 1.5" stroke-width="3" />
     </svg>
   </button>
   <div
-    className="lbh-collapsible__content"
+    class="lbh-collapsible__content"
     data-behavior="lbh-collapsible-content"
     hidden
   >
