@@ -10,5 +10,9 @@ $lbh-font-family: "Open Sans";
 
 $govuk-asset-path: $lbh-asset-path;
 
+$govuk-focus-colour: lbh-colour("lbh-primary-focus");
+$govuk-focus-text-colour: lbh-colour("lbh-text");
+$govuk-link-colour: lbh-colour("lbh-link");
+
 @import "tools/all";
 @import "helpers/all";
