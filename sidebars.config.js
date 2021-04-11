@@ -51,6 +51,7 @@ module.exports = {
       "components/simple-pagination",
       "components/skip-link",
       "components/summary-list",
+      "components/stat",
       "components/table",
       "components/tag",
       "components/tabs",

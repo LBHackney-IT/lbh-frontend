@@ -100,9 +100,10 @@ table {
   );
 }
 
-// * + .preview-area > *:first-child {
-//   margin-top: 2rem;
-// }
+.govuk-grid-row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 [data-reach-dialog-overlay] {
   z-index: var(--ifm-z-index-overlay);
