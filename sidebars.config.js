@@ -62,6 +62,9 @@ module.exports = {
     ],
     Patterns: ["patterns/sign-in", "patterns/navigation"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
+    "Data visualisation": [
+      "data-visualisation/getting-started"
+    ],
     Contributing: [
       "contributing/introduction",
       "contributing/coding-standards",

@@ -4,13 +4,13 @@ title: Colours
 
 import ColourTable from "../../src/ColourTable"
 
-These colours are available to use in your scss, with the function `lbh-colours`.
+These colours are available to use in your scss, with the function `lbh-colour`.
 
-You can use pass the name to lbh-colours like this:
+You can use pass the name to lbh-colour like this:
 
 ```scss
 .my-element {
-  color: lbh-colours("lbh-a01");
+  color: lbh-colour("lbh-a01");
 }
 ```
 

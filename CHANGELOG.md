@@ -1,3 +1,10 @@
+## [3.3.2](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.1...v3.3.2) (2021-04-01)
+
+
+### Bug Fixes
+
+* **label:** govuk modifier classes no longer overridden ([#157](https://github.com/LBHackney-IT/LBH-frontend/issues/157)) ([07a0310](https://github.com/LBHackney-IT/LBH-frontend/commit/07a0310cc4c9362e7fdab70826c00ce83cd4059f)), closes [#143](https://github.com/LBHackney-IT/LBH-frontend/issues/143) [#146](https://github.com/LBHackney-IT/LBH-frontend/issues/146) [#145](https://github.com/LBHackney-IT/LBH-frontend/issues/145) [#149](https://github.com/LBHackney-IT/LBH-frontend/issues/149) [#148](https://github.com/LBHackney-IT/LBH-frontend/issues/148) [#155](https://github.com/LBHackney-IT/LBH-frontend/issues/155)
+
 ## [3.3.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.0...v3.3.1) (2021-03-19)
 
 

@@ -2,7 +2,7 @@
 title: Ways to contribute
 ---
 
-If something is not in the design system, it's a good idea to discuss it in the [#hackit-design-system](https://hackit-lbh.slack.com/archives/CJ6AWTH0A) channel on Slack, and check our [open issues](github.com/lBHackney-IT/lbh-frontend/issues). Others might already be working on it.
+If something is not in the design system, it's a good idea to discuss it in the [#hackit-design-system](https://hackit-lbh.slack.com/archives/CJ6AWTH0A) channel on Slack, and check our [open issues](https://github.com/lBHackney-IT/lbh-frontend/issues). Others might already be working on it.
 
 ## Adding new components
 
