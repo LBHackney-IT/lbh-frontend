@@ -54,10 +54,20 @@ title: Typography
 <p class="lbh-body">
     <a href="#" class="lbh-link lbh-link--muted">lbh-link lbh-link--muted</a>
 </p>
+<p class="lbh-body">
+    <a href="#" class="lbh-link lbh-link--danger">lbh-link lbh-link--danger</a>
+</p>
+<p class="lbh-body">
+<a href="#" class="lbh-link lbh-link--no-visited-state">lbh-link lbh-link--no-visited-state</a>
+</p>
 
 ```html
 <a href="#" class="lbh-link">lbh-link</a>
 <a href="#" class="lbh-link lbh-link--muted">lbh-link lbh-link--muted</a>
+<a href="#" class="lbh-link lbh-link--danger">lbh-link lbh-link--danger</a>
+<a href="#" class="lbh-link lbh-link--no-visited-state">
+  lbh-link lbh-link--no-visited-state
+</a>
 ```
 
 ## Lists

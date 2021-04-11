@@ -10,6 +10,18 @@
     @include govuk-link-style-muted;
   }
 
+  .lbh-link--danger {
+    &:link {
+      color: lbh-colour("lbh-error");
+    }
+    &:visited {
+      color: lbh-colour("lbh-error");
+    }
+    &:focus {
+      color: lbh-colour("lbh-text");
+    }
+  }
+
   .lbh-link--text-colour {
     @include govuk-link-style-text;
   }
