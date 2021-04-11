@@ -18,6 +18,20 @@ title: Typography
 <h5 class="lbh-heading-h5">lbh-heading-h5</h5>
 ```
 
+## Captions
+
+<span class="govuk-caption-m lbh-caption">caption-m</span>
+<span class="govuk-caption-l lbh-caption">caption-l</span>
+<span class="govuk-caption-xl lbh-caption">caption-xl</span>
+
+<h1 class="lbh-heading-h1">lbh-heading-h1</h1>
+
+```html
+<span class="govuk-caption-m lbh-caption">caption-m</span>
+<span class="govuk-caption-l lbh-caption">caption-l</span>
+<span class="govuk-caption-xl lbh-caption">caption-xl</span>
+```
+
 ## Body text
 
 <p class="lbh-body-l">lbh-body-l</p>
