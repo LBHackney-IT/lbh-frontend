@@ -4,6 +4,7 @@
     flex-direction: column;
     @include lbh-rem(margin-top, 6);
     @include lbh-body-m;
+    padding: 10px 0px;
 
     @include govuk-media-query($from: desktop) {
       flex-direction: row;
@@ -61,10 +62,10 @@
     }
 
     &__summary {
-      margin: 10px 0px;
+      margin-bottom: 10px;
       @include govuk-media-query($from: desktop) {
         order: 2;
-        margin: 0px;
+        margin-bottom: 0px;
       }
     }
   }
