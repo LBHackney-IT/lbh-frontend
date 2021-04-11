@@ -59,7 +59,7 @@ module.exports = {
       "components/tip",
       "components/warning-text",
     ],
-    Patterns: ["patterns/manage-a-caseload"],
+    Patterns: ["patterns/sign-in", "patterns/navigation"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
     Contributing: [
       "contributing/introduction",

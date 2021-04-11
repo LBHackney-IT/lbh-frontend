@@ -100,9 +100,9 @@ table {
   );
 }
 
-* + .preview-area > *:first-child {
-  margin-top: 2rem;
-}
+// * + .preview-area > *:first-child {
+//   margin-top: 2rem;
+// }
 
 [data-reach-dialog-overlay] {
   z-index: var(--ifm-z-index-overlay);
