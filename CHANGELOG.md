@@ -1,3 +1,35 @@
+# [3.5.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.4.0...v3.5.0) (2021-04-11)
+
+
+### Bug Fixes
+
+* **button:** "add another" button variation ([43d0e3b](https://github.com/LBHackney-IT/LBH-frontend/commit/43d0e3bed0ca389b2c6639902392ad0db980a106))
+* **button:** fixed size of secondary button ([#149](https://github.com/LBHackney-IT/LBH-frontend/issues/149)) ([ff7b943](https://github.com/LBHackney-IT/LBH-frontend/commit/ff7b943ba51bdcaea80b161041c65add50b65bbe))
+* **chore:** fix semantic release config ([736ac8e](https://github.com/LBHackney-IT/LBH-frontend/commit/736ac8e307fcc890a38defecdaa0891559754292))
+* **collapsible:** typo ([25b55d1](https://github.com/LBHackney-IT/LBH-frontend/commit/25b55d16bef60243f6024f0649ce6ed065939a56))
+* **error-message:** fix error message spacing ([b3ba501](https://github.com/LBHackney-IT/LBH-frontend/commit/b3ba50132aaf7a9189a6073cc16be6062c76ee50))
+* **label:** govuk label overrides work again ([#155](https://github.com/LBHackney-IT/LBH-frontend/issues/155)) ([466a62c](https://github.com/LBHackney-IT/LBH-frontend/commit/466a62c615cdaf23f11304bba979d0a4fed74416))
+* **link:** correctly style buttons as inline links ([0b02e0d](https://github.com/LBHackney-IT/LBH-frontend/commit/0b02e0db72639223455f67b221a4967ee32c46ed))
+* **perf:** clean up sass imports more ([4f6043c](https://github.com/LBHackney-IT/LBH-frontend/commit/4f6043c9ecf3ba7d3511de56e74318c440732434))
+* **phase-banner:** improve spacing between banner and header ([ea97dcb](https://github.com/LBHackney-IT/LBH-frontend/commit/ea97dcbbd1beb9bcd4292fc5b9e1f32f22a884a7))
+* **search-box:** hide default clear icon ([7834aa5](https://github.com/LBHackney-IT/LBH-frontend/commit/7834aa5e31852b357993d857dfab44b3322641ff))
+* **tag:** improve text sizing ([1d3fd93](https://github.com/LBHackney-IT/LBH-frontend/commit/1d3fd93445f38ea228d355837341782833925b0c))
+
+
+### Features
+
+* **conversation:** add conversation component ([6b5f33a](https://github.com/LBHackney-IT/LBH-frontend/commit/6b5f33a2c632a463cc6b06eab33b7862e21cf1e5))
+* **core:** add resident components-only stylesheet ([599381b](https://github.com/LBHackney-IT/LBH-frontend/commit/599381bd3833698d922c2bbec4279706952fe65f))
+* **core:** add timeline component ([89a8f0c](https://github.com/LBHackney-IT/LBH-frontend/commit/89a8f0c685fab42f279977369213a47bbf245c56))
+* **core:** add tip component ([5ca7bf2](https://github.com/LBHackney-IT/LBH-frontend/commit/5ca7bf2c7c2d65db8bcb67b61342c7624a6b1c83))
+* **dialog:** add a modal dialog component ([bbe77d9](https://github.com/LBHackney-IT/LBH-frontend/commit/bbe77d9bc6c22ab635c01f400af753d4395454d4))
+* **pagination:** add pagination component ([9599b9e](https://github.com/LBHackney-IT/LBH-frontend/commit/9599b9edaf58a93dff6e9909c384fe3a39d2a0f4))
+* **search-box:** add search box ([44c1372](https://github.com/LBHackney-IT/LBH-frontend/commit/44c1372c493d001bb6171cd85b0918bf5759edb9))
+* **search-box:** add search box ([5432b03](https://github.com/LBHackney-IT/LBH-frontend/commit/5432b03870a65f55dacde13f4d5d1c3053d07f47))
+* **simple-pagination:** add simple pagination component ([f69f5d1](https://github.com/LBHackney-IT/LBH-frontend/commit/f69f5d14805406205c5c51f38d0e36440fa62fff))
+* **stat:** add stat component ([851d1e7](https://github.com/LBHackney-IT/LBH-frontend/commit/851d1e72443864e48ff89235c549be0650816d7a))
+* **tag:** combine existing tag component with new status tag styles ([#143](https://github.com/LBHackney-IT/LBH-frontend/issues/143)) ([3ea2c2d](https://github.com/LBHackney-IT/LBH-frontend/commit/3ea2c2dbf09e1562bfc5f3b76c8df0b989f23d2b))
+
 # [3.4.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.3.2...v3.4.0) (2021-04-11)
 
 
