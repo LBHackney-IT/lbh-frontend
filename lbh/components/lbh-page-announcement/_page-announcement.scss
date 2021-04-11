@@ -13,6 +13,7 @@
 
     &__content {
       @include lbh-body-m;
+      margin-top: 0;
 
       a {
         @include lbh-link;
