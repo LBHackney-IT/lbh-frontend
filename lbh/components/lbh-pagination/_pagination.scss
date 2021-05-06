@@ -41,7 +41,7 @@
       }
 
       &--current {
-        font-weight: 700;
+        font-weight: $lbh-font-weight-bold;
         pointer-events: none;
         cursor: default;
 
