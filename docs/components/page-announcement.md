@@ -24,6 +24,7 @@ Use a page annoucement to alert a user to important new information. Colour vari
 
 Don't use the warning variant to show errors caused by user input. Instead, use the [error summary](/components/error-summary).
 
+
 <section className="lbh-page-announcement lbh-page-announcement--warning">
   <h3 className="lbh-page-announcement__title">Payment unsuccessful</h3>
   <div className="lbh-page-announcement__content">More detail about the announcement.</div>
