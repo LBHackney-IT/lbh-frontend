@@ -13,7 +13,7 @@ Use a page annoucement to alert a user to important new information. Colour vari
 
 ```html
 <section class="lbh-page-announcement">
-  <h3 class="lbh-page-announcement__title">I am a page announcement</h3>
+  <h3 class="lbh-page-announcement__title">Payment successful</h3>
   <div class="lbh-page-announcement__content">
     More detail about the announcement.
   </div>
@@ -22,6 +22,9 @@ Use a page annoucement to alert a user to important new information. Colour vari
 
 ## Warning
 
+Don't use the warning variant to show errors caused by user input. Instead, use the [error summary](/components/error-summary).
+
+
 <section className="lbh-page-announcement lbh-page-announcement--warning">
   <h3 className="lbh-page-announcement__title">Payment unsuccessful</h3>
   <div className="lbh-page-announcement__content">More detail about the announcement.</div>
@@ -29,7 +32,7 @@ Use a page annoucement to alert a user to important new information. Colour vari
 
 ```html
 <section class="lbh-page-announcement lbh-page-announcement--warning">
-  <h3 class="lbh-page-announcement__title">I am a warning</h3>
+  <h3 class="lbh-page-announcement__title">Payment unsuccessful</h3>
   <div class="lbh-page-announcement__content">
     More detail about the announcement.
   </div>
