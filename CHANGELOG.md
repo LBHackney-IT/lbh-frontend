@@ -1,3 +1,10 @@
+## [3.5.3](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.2...v3.5.3) (2021-05-17)
+
+
+### Bug Fixes
+
+* **all:** improve font weights ([#168](https://github.com/LBHackney-IT/LBH-frontend/issues/168)) ([f72e6d5](https://github.com/LBHackney-IT/LBH-frontend/commit/f72e6d57b01759f634566d3a47c203a74d33ba53)), closes [#161](https://github.com/LBHackney-IT/LBH-frontend/issues/161)
+
 ## [3.5.2](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.1...v3.5.2) (2021-04-11)
 
 
