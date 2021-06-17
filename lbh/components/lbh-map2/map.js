@@ -9,6 +9,7 @@ if (L !== {}) {
   var marker = L.marker;
 }
 
+//TODO Rename component after updating the contact block one
 function Map2($module) {
   this.$module = $module;
   this.moduleId = this.$module.getAttribute("lbh-map2");
@@ -43,6 +44,7 @@ Map2.prototype.initLeaflet = function() {
   if (this.showZoomControl) {
     control.zoom({ position: "topright" }).addTo(this.map);
   }
+  //TODO Add a function. If the UPRN is provided, call the proxy and get the latitude/longitude. 
 };
 
 Map2.prototype.setBounds = function() {
@@ -62,7 +64,7 @@ Map2.prototype.initMapboxTiles = function() {
       attribution:
       'Map data &copy; Crown copyright and database rights 2021 <a href="https://www.ordnancesurvey.co.uk/">Ordnance Survey</a> 100019635.' ,
       maxZoom: this.maxZoom,
-      accessToken: this.accessToken
+      accessToken: this.accessToken //TODO Hide the accessToken using the docusaurus env files
     }
   );
   this.map.addLayer(osOutdoor);
