@@ -127,7 +127,6 @@ import L from "leaflet"
 ```scss
 @import "../node_modules/leaflet/dist/leaflet.css";
 ```
-
 ### HTML
 
 ```html
