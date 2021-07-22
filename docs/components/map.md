@@ -8,13 +8,12 @@ import InitAll from "../../src/InitAll"
 
 <section class="lbh-map2">
 <div class="lbh-map__map-container">
-<div class="lbh-map__map" data-module="lbh-map2" data-access-token="YOURACCESSTOKEN" data-marker-lat="51.545386" data-marker-lng="-0.057069"></div>
+<div class="lbh-map__map" data-module="lbh-map2" data-marker-lat="51.545386" data-marker-lng="-0.057069" uprn="100023014187"></div>
 <div class="lbh-map__directions">
 <a href="https://goo.gl/maps/YHtCx2nqP2o57BZi6" class="lbh-link" rel="external" title="View directions on Google Maps">Get directions</a>
 </div>
 </div>
 </section>
-
 </InitAll>
 
 ### Include Leaflet Sass and JS
@@ -28,7 +27,7 @@ import L from "leaflet"
 ```scss
 @import "../node_modules/leaflet/dist/leaflet.css";
 ```
-Please email us at gis@hackney.gov.uk in order to get the OS basemap token for your project. 
+Please email us at gis@hackney.gov.uk to get the OS basemap token and the addresses proxy url for your project. 
 
 ### HTML
 
@@ -39,9 +38,9 @@ Please email us at gis@hackney.gov.uk in order to get the OS basemap token for y
       class="lbh-map__map"
       id="map2"
       data-module="lbh-map2"
-      data-access-token="YOURACCESSTOKEN"
       data-marker-lat="51.545386"
       data-marker-lng="-0.057069"
+      uprn="100023014187"
     ></div>
     <div class="lbh-map__directions">
       <a
