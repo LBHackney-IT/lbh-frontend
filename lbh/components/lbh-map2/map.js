@@ -13,9 +13,10 @@ if (L !== {}) {
 function Map2($module) {
   this.$module = $module;
   this.moduleId = this.$module.getAttribute("lbh-map2");
-  this.accessToken = this.$module.getAttribute("data-access-token");
+  //this.accessToken = process.env.OS_BASEMAP_TOKEN; //Process env not working yet. Please copy/paste the OS_BASEMAP_TOKEN in the meantime
+  this.accessToken = "ENTER_THE_ADDRESSES_API_PROXY_URL_HERE";
   this.map = null;
-  this.uprn = null;
+  this.uprn = this.$module.getAttribute("uprn") || null;
   this.markerLat = this.$module.getAttribute("data-marker-lat") || null;
   this.markerLng = this.$module.getAttribute("data-marker-lng") || null;
   this.centreLat =
@@ -39,12 +40,12 @@ Map2.prototype.initLeaflet = function() {
     maxZoom: this.maxZoom,
     minZoom: this.minZoom,
     center: [this.centreLat, this.centreLng],
+    uprn: this.uprn,
     zoom: this.initialZoom
   });
   if (this.showZoomControl) {
     control.zoom({ position: "topright" }).addTo(this.map);
   }
-  //TODO Add a function. If the UPRN is provided, call the proxy and get the latitude/longitude. 
 };
 
 Map2.prototype.setBounds = function() {
@@ -64,21 +65,47 @@ Map2.prototype.initMapboxTiles = function() {
       attribution:
       'Map data &copy; Crown copyright and database rights 2021 <a href="https://www.ordnancesurvey.co.uk/">Ordnance Survey</a> 100019635.' ,
       maxZoom: this.maxZoom,
-      accessToken: this.accessToken //TODO Hide the accessToken using the docusaurus env files
+      accessToken: this.accessToken
     }
   );
   this.map.addLayer(osOutdoor);
 };
 
 Map2.prototype.addMarker = function() {
-  if (this.markerLat !== null && this.markerLng !== null) {
-    var mapIcon = icon({
-      iconUrl: "../../../assets/images/contact/map-marker.svg",
+//If there is an uprn, we get the lat/long from the addresses api and plot the marker
+if (this.uprn){
+  console.log(process.env.production.local);
+  //Process env not working yet. Please copy/paste the ADDRESSES_API_PROXY_URL in the meantime
+    //fetch(process.env.ADDRESSES_API_PROXY_URL+"?format=detailed&uprn="+this.uprn, {
+    fetch("ENTER_THE_ADDRESSES_API_PROXY_URL_HERE?format=detailed&uprn="+this.uprn, {
+      method: "get"
+    })
+    .then(response => response.json())
+    .then(data => {
+      this.markerLat = data.data.data.address[0].latitude;
+      this.markerLng = data.data.data.address[0].longitude;
+      var mapIcon = icon({
+      iconUrl: "/lbh/assets/images/contact/map-marker.svg",
       iconSize: [48, 48],
       iconAnchor: [24, 48]
     });
     marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map);
+    this.map.setView([this.markerLat, this.markerLng], 15);
+    });   
+//If not, we use the provided latitude/longitude to plot the marker
+} else {
+  if (this.markerLat && this.markerLng) {
+    var mapIcon = icon({
+      iconUrl: "/lbh/assets/images/contact/map-marker.svg",
+      iconSize: [48, 48],
+      iconAnchor: [24, 48]
+    });
+    marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map);
+    this.map.setView([this.markerLat, this.markerLng], 15);
   }
+
+}
+ 
 };
 
 Map2.prototype.init = function() {
