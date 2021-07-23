@@ -7,11 +7,10 @@ import Checkboxes from "./components/lbh-checkboxes/checkboxes";
 import CookieBanner from "./components/lbh-cookie-banner/cookie-banner";
 import Details from "./components/lbh-details/details";
 import ErrorSummary from "./components/lbh-error-summary/error-summary";
-import Map from "./components/lbh-contact-block/contact-block";
 import Radios from "./components/lbh-radios/radios";
 import Tabs from "./components/lbh-tabs/tabs";
 import Collapsible from "./components/lbh-collapsible/collapsible";
-import Map2 from "./components/lbh-map2/map";
+import Map from "./components/lbh-map/map";
 
 function nodeListForEach(nodes, callback) {
   if (window.NodeList.prototype.forEach) {
@@ -40,11 +39,6 @@ function initAll(options) {
   var $maps = scope.querySelectorAll('[data-module="lbh-map"]');
   nodeListForEach($maps, function ($map) {
     new Map($map).init();
-  });
-
-  var $maps2 = scope.querySelectorAll('[data-module="lbh-map2"]');
-  nodeListForEach($maps2, function ($map2) {
-    new Map2($map2).init();
   });
 
   var $backToTop = scope.querySelector('[data-module="lbh-back-to-top"]');

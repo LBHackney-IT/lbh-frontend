@@ -35,6 +35,18 @@
       }
     }
 
+    &__map-container_full_width {
+      position: relative;
+      z-index: lbh-depth-index("map");
+      width: 100%;
+      height: 400px;
+      order: 4;
+
+      @include govuk-media-query($from: desktop) {
+        box-sizing: border-box;
+      }
+    }
+
     &__map {
       width: 100%;
       height: 100%;
