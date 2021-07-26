@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Designing: ["designing/design-kits"],
+    Designing: ["designing/design-kits", "designing/accessibility"],
     Developing: [
       "developing/installing-from-npm",
       "developing/installing-from-dist",
