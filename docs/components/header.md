@@ -746,5 +746,5 @@ import PreviewArea from "../../src/PreviewArea"
       </div>
     </div>
   </div>
-</header>
+</header> 
 ```
