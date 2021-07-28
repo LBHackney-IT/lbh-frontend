@@ -4,7 +4,7 @@ title: Blank page template
 
 ```html
 <!DOCTYPE html>
-<html lang="en" class="govuk-template lbh-template">
+<html lang="en-gb" class="govuk-template lbh-template">
   <head>
     <meta charset="utf-8" />
     <title><!-- Page title goes here --> | Hackney Council</title>
