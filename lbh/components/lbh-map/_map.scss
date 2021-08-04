@@ -3,39 +3,15 @@
     display: flex;
     border-top: 4px solid lbh-colour("lbh-a01");
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 
     @include govuk-media-query($from: desktop) {
       display: block;
       overflow: hidden;
     }
 
-    &__title {
-      @include lbh-rem(margin-top, 18);
-      order: 1;
-
-      @include govuk-media-query($from: desktop) {
-        @include lbh-rem(margin-top, 36);
-        @include lbh-rem(margin-right, 36);
-        float: left;
-      }
-    }
-
-    // &__map-container-contact-block {
-    //   position: relative;
-    //   z-index: lbh-depth-index("map");
-    //   width: 100%;
-    //   height: 400px;
-    //   order: 4;
-
-    //   @include govuk-media-query($from: desktop) {
-    //     box-sizing: border-box;
-    //     width: 66.666%;
-    //     @include lbh-rem(padding-left, 18);
-    //     float: right;
-    //   }
-    // }
-
-    &__map-container {
+    &__container {
       position: relative;
       z-index: lbh-depth-index("map");
       width: 100%;
@@ -47,10 +23,8 @@
       }
     }
 
-    &__map {
-      width: 100%;
-      height: 100%;
-    }
+      
+    
 
     .leaflet-marker-icon {
       cursor: grab;
