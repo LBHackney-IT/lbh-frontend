@@ -6,6 +6,11 @@ import InitAll from "../../src/InitAll"
 
 <InitAll>
 
+<div>
+  <span id="error_message" class="govuk-error-message  lbh-error-message">
+        <span class="govuk-visually-hidden">Error:</span>
+  </span> 
+</div>
 <section class="lbh-map">
 <div class="lbh-map__container">
 <div class="lbh-map" data-module="lbh-map" data-marker-lat="51.545386" data-marker-lng="-0.057069" uprn="100023014187"></div>
@@ -32,6 +37,11 @@ Please email us at gis@hackney.gov.uk to get the OS basemap token and the addres
 ### HTML
 
 ```html
+<div>
+  <span id="error_message" class="govuk-error-message  lbh-error-message">
+        <span class="govuk-visually-hidden">Error:</span>
+  </span> 
+</div>
 <section class="lbh-map"> 
   <div class="lbh-map__container">
     <div
