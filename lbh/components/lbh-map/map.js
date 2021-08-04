@@ -13,8 +13,9 @@ if (L !== {}) {
 function Map($module) {
   this.$module = $module;
   this.moduleId = this.$module.getAttribute("lbh-map");
-  this.accessToken = "ENTER_THE_OS_BASEMAP_TOKEN_HERE";
+  this.accessToken = "ENTER_YOUR_OS_BASEMAP_TOKEN_HERE";
   this.map = null;
+  this.error = document.getElementById("error_message");
   this.uprn = this.$module.getAttribute("uprn") || null;
   this.markerLat = this.$module.getAttribute("data-marker-lat") || null;
   this.markerLng = this.$module.getAttribute("data-marker-lng") || null;
@@ -78,6 +79,14 @@ if (this.uprn){
     })
     .then(response => response.json())
     .then(data => {
+      //Get API error messages if the UPRN values are not right
+      if (data.data.error) {
+        this.error.innerHTML = data.data.error.validationErrors[0].message;
+      } else {
+        //If the UPRN is not found
+        if (data.data.data.total_count === 0) {
+        this.error.innerHTML = "UPRN not found.";
+        } else {
       this.markerLat = data.data.data.address[0].latitude;
       this.markerLng = data.data.data.address[0].longitude;
       var mapIcon = icon({
@@ -87,7 +96,16 @@ if (this.uprn){
     });
     marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map);
     this.map.setView([this.markerLat, this.markerLng], 15);
-    });   
+    }
+  }
+    }) 
+    .catch(error => {
+      this.error.innerHTML = error;
+    });  
+      
+   
+   
+    
 //If not, we use the provided latitude/longitude to plot the marker
 } else {
   if (this.markerLat && this.markerLng) {
