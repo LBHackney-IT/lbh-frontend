@@ -13,7 +13,6 @@ if (L !== {}) {
 function Map($module) {
   this.$module = $module;
   this.moduleId = this.$module.getAttribute("lbh-map");
-  //this.accessToken = process.env.OS_BASEMAP_TOKEN; //Process env not working yet. Please copy/paste the OS_BASEMAP_TOKEN in the meantime
   this.accessToken = "ENTER_THE_OS_BASEMAP_TOKEN_HERE";
   this.map = null;
   this.uprn = this.$module.getAttribute("uprn") || null;
@@ -74,9 +73,7 @@ Map.prototype.initMapboxTiles = function() {
 Map.prototype.addMarker = function() {
 //If there is an uprn, we get the lat/long from the addresses api and plot the marker
 if (this.uprn){
-  //Process env not working yet. Please copy/paste the ADDRESSES_API_PROXY_URL in the meantime
-    //fetch(process.env.ADDRESSES_API_PROXY_URL+"?format=detailed&uprn="+this.uprn, {
-    fetch("ENTER_THE_ADDRESS_API_PROXY_URL_HERE?format=detailed&uprn="+this.uprn, {
+    fetch("https://n083cn2w7b.execute-api.us-east-1.amazonaws.com/production/address-proxy?format=detailed&uprn="+this.uprn, {
       method: "get"
     })
     .then(response => response.json())
