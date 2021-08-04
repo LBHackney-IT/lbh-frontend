@@ -106,8 +106,8 @@ import InitAll from "../../src/InitAll"
 </ul>
 </div>
 </div>
-<div class="lbh-map__map-container-contact-block">
-<div class="lbh-map__map" data-module="lbh-map" data-marker-lat="51.545386" data-marker-lng="-0.057069" uprn="100023014187"></div>
+<div class="lbh-map__container-contact-block">
+<div class="lbh-map" data-module="lbh-map" data-marker-lat="51.545386" data-marker-lng="-0.057069" uprn="100023014187"></div>
 <div class="lbh-map__directions">
 <a href="https://goo.gl/maps/YHtCx2nqP2o57BZi6" class="lbh-link" rel="external" title="View directions on Google Maps">Get directions</a>
 </div>
@@ -359,9 +359,9 @@ Please email us at gis@hackney.gov.uk to get the OS basemap token and the addres
       </ul>
     </div>
   </div>
-  <div class="lbh-map__map-container-contact-block">
+  <div class="lbh-map__container-contact-block">
     <div
-      class="lbh-map__map"
+      class="lbh-map"
       id="map"
       data-module="lbh-map"
       data-marker-lat="51.545386"
