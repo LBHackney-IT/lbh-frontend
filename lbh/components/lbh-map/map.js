@@ -13,7 +13,7 @@ if (L !== {}) {
 function Map($module) {
   this.$module = $module;
   this.moduleId = this.$module.getAttribute("lbh-map");
-  this.accessToken = "ENTER_YOUR_OS_BASEMAP_TOKEN_HERE";
+  this.accessToken = "ENTER_THE_OS_BASEMAP_TOKEN_HERE";
   this.map = null;
   this.error = document.getElementById("error_message");
   this.uprn = this.$module.getAttribute("uprn") || null;
@@ -74,18 +74,18 @@ Map.prototype.initMapboxTiles = function() {
 Map.prototype.addMarker = function() {
 //If there is an uprn, we get the lat/long from the addresses api and plot the marker
 if (this.uprn){
-    fetch("https://n083cn2w7b.execute-api.us-east-1.amazonaws.com/production/address-proxy?format=detailed&uprn="+this.uprn, {
+    fetch("https://zwb5f0hl7b.execute-api.us-east-1.amazonaws.com/production/address-v2-proxy?format=detailed&uprn="+this.uprn, {
       method: "get"
     })
     .then(response => response.json())
     .then(data => {
       //Get API error messages if the UPRN values are not right
-      if (data.data.error) {
-        this.error.innerHTML = data.data.error.validationErrors[0].message;
+      if (data.data.errors) {
+        this.error.innerHTML = "Error: "+ data.data.errors[0].message;
       } else {
         //If the UPRN is not found
-        if (data.data.data.total_count === 0) {
-        this.error.innerHTML = "UPRN not found.";
+        if (data.data.data.totalCount === 0) {
+        this.error.innerHTML = "Error: UPRN not found.";
         } else {
       this.markerLat = data.data.data.address[0].latitude;
       this.markerLng = data.data.data.address[0].longitude;
@@ -100,7 +100,7 @@ if (this.uprn){
   }
     }) 
     .catch(error => {
-      this.error.innerHTML = error;
+      this.error.innerHTML = "Error: " + error;
     });  
       
    
