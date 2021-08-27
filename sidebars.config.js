@@ -42,6 +42,7 @@ module.exports = {
       "components/input",
       "components/inset-text",
       "components/label",
+      "components/map",
       "components/page-announcement",
       "components/pagination",
       "components/panel",

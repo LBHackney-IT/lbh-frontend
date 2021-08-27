@@ -9,11 +9,14 @@ if (L !== {}) {
   var marker = L.marker;
 }
 
+
 function Map($module) {
   this.$module = $module;
-  this.moduleId = this.$module.getAttribute("id");
-  this.accessToken = this.$module.getAttribute("data-access-token");
+  this.moduleId = this.$module.getAttribute("lbh-map");
+  this.accessToken = "ENTER_THE_OS_BASEMAP_TOKEN_HERE";
   this.map = null;
+  this.error = document.getElementById("error_message");
+  this.uprn = this.$module.getAttribute("uprn") || null;
   this.markerLat = this.$module.getAttribute("data-marker-lat") || null;
   this.markerLng = this.$module.getAttribute("data-marker-lng") || null;
   this.centreLat =
@@ -32,11 +35,12 @@ function Map($module) {
 }
 
 Map.prototype.initLeaflet = function() {
-  this.map = map(this.moduleId, {
+  this.map = map(this.$module, {
     zoomControl: false,
     maxZoom: this.maxZoom,
     minZoom: this.minZoom,
-    center: [this.centreLat, this.centreLng],
+    //center: [this.centreLat, this.centreLng],
+    uprn: this.uprn,
     zoom: this.initialZoom
   });
   if (this.showZoomControl) {
@@ -53,30 +57,69 @@ Map.prototype.setBounds = function() {
 };
 
 Map.prototype.initMapboxTiles = function() {
-  var osmStreet = tileLayer(
-    "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
+  var osOutdoor = tileLayer(
+    `https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={accessToken}`,
     {
       fadeAnimation: false,
       opacity: 1,
       attribution:
-        'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
+      'Map data &copy; Crown copyright and database rights 2021 <a href="https://www.ordnancesurvey.co.uk/">Ordnance Survey</a> 100019635.' ,
       maxZoom: this.maxZoom,
-      id: "mapbox.streets",
       accessToken: this.accessToken
     }
   );
-  this.map.addLayer(osmStreet);
+  this.map.addLayer(osOutdoor);
 };
 
 Map.prototype.addMarker = function() {
-  if (this.markerLat !== null && this.markerLng !== null) {
-    var mapIcon = icon({
-      iconUrl: "../../../assets/images/contact/map-marker.svg",
+//If there is an uprn, we get the lat/long from the addresses api and plot the marker
+if (this.uprn){
+    fetch("https://zwb5f0hl7b.execute-api.us-east-1.amazonaws.com/production/address-v2-proxy?format=detailed&uprn="+this.uprn, {
+      method: "get"
+    })
+    .then(response => response.json())
+    .then(data => {
+      //Get API error messages if the UPRN values are not right
+      if (data.data.errors) {
+        this.error.innerHTML = "Error: "+ data.data.errors[0].message;
+      } else {
+        //If the UPRN is not found
+        if (data.data.data.totalCount === 0) {
+        this.error.innerHTML = "Error: UPRN not found.";
+        } else {
+      this.markerLat = data.data.data.address[0].latitude;
+      this.markerLng = data.data.data.address[0].longitude;
+      var mapIcon = icon({
+      iconUrl: "/lbh/assets/images/contact/map-marker.svg",
       iconSize: [48, 48],
       iconAnchor: [24, 48]
     });
     marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map);
+    this.map.setView([this.markerLat, this.markerLng], 15);
+    }
   }
+    }) 
+    .catch(error => {
+      this.error.innerHTML = "Error: " + error;
+    });  
+      
+   
+   
+    
+//If not, we use the provided latitude/longitude to plot the marker
+} else {
+  if (this.markerLat && this.markerLng) {
+    var mapIcon = icon({
+      iconUrl: "/lbh/assets/images/contact/map-marker.svg",
+      iconSize: [48, 48],
+      iconAnchor: [24, 48]
+    });
+    marker([this.markerLat, this.markerLng], { icon: mapIcon }).addTo(this.map);
+    this.map.setView([this.markerLat, this.markerLng], 15);
+  }
+
+}
+ 
 };
 
 Map.prototype.init = function() {
