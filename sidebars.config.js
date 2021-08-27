@@ -15,6 +15,7 @@ module.exports = {
         label: "Sass reference",
         href: "pathname:///sassdoc/index.html",
       },
+      "developing/typescript",
     ],
     Components: [
       "components/accordion",
@@ -62,9 +63,7 @@ module.exports = {
     ],
     Patterns: ["patterns/sign-in", "patterns/navigation"],
     "Starter kits": ["tutorials/prototype", "tutorials/production"],
-    "Data visualisation": [
-      "data-visualisation/getting-started"
-    ],
+    "Data visualisation": ["data-visualisation/getting-started"],
     Contributing: [
       "contributing/introduction",
       "contributing/coding-standards",

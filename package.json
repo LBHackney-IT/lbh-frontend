@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "https://design-system.hackney.gov.uk",
   "main": "lbh/all.js",
+  "types": "lbh/index.d.ts",
   "scripts": {
     "build:sass": "cross-var sass lbh/all.scss dist/lbh-frontend-$npm_package_version.min.css --load-path=./ --no-source-map",
     "build:sass-ie8": "cross-var sass lbh/all-ie8.scss dist/lbh-frontend-ie8-$npm_package_version.min.css --load-path=./ --no-source-map",
