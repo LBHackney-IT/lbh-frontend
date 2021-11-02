@@ -3,7 +3,7 @@
     position: relative;
     z-index: lbh-depth-index("header");
     margin-top: 0;
-    @include lbh-rem(padding-bottom, 21);
+    @include lbh-rem(padding-bottom, 16);
     border-bottom: 2px solid lbh-colour("lbh-a03");
     background: lbh-colour("lbh-white");
 
@@ -140,6 +140,7 @@
     }
 
     &__logo-text {
+      color: lbh-colour("lbh-white");
       @include govuk-visually-hidden;
     }
 
