@@ -46,7 +46,7 @@ Users generally find proper pagination easier and more predictable to use than a
 
 ```html
 <nav class="lbh-pagination">
-  <div class="lbh-pagination__summary">Showing 101—150 of 246 results</div>
+  <div class="lbh-pagination__summary">Showing 101–150 of 246 results</div>
   <ul class="lbh-pagination">
     <li class="lbh-pagination__item">
       <a class="lbh-pagination__link" href="#" aria-label="Previous page">
