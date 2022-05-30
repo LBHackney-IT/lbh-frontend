@@ -1,3 +1,29 @@
+# [3.6.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.3...v3.6.0) (2021-08-27)
+
+
+### Bug Fixes
+
+* **all:** consolidate font weights ([42d46da](https://github.com/LBHackney-IT/LBH-frontend/commit/42d46da29bed56e357d22f59957593904dfd5192))
+* **core:** spacing tweaks and docs updates ([313deaf](https://github.com/LBHackney-IT/LBH-frontend/commit/313deaf03e242264f1fc7a116be654a0e6ad9e4f))
+* **core:** tweak spacing and margins on several components ([c1e1b08](https://github.com/LBHackney-IT/LBH-frontend/commit/c1e1b081007c0634c05b2fee5971ba20a2e026b8))
+* **core:** use a consistent focus colour on all components ([f629af6](https://github.com/LBHackney-IT/LBH-frontend/commit/f629af6d8e1c0d09272c6170b269274aa49c1b88))
+* **page-announcement:** add variations to page announcement component ([6c4856c](https://github.com/LBHackney-IT/LBH-frontend/commit/6c4856ccd9b9a76a4f1817526b2a5a53d313740c))
+* **page-announcement:** spacing tweaks ([9dd35a0](https://github.com/LBHackney-IT/LBH-frontend/commit/9dd35a0ba1d51194a5741f759b5a71e45d9835c7))
+* **pagination:** improve spacing ([1f0c527](https://github.com/LBHackney-IT/LBH-frontend/commit/1f0c527a7b8935997ea56853af668a151e0ff368))
+* **pagination:** use a more consistent focus style ([3997796](https://github.com/LBHackney-IT/LBH-frontend/commit/399779665065eec8593073a20932e70a0b7cec2b))
+
+
+### Features
+
+* **types:** add typings for exports ([#177](https://github.com/LBHackney-IT/LBH-frontend/issues/177)) ([1c1eca6](https://github.com/LBHackney-IT/LBH-frontend/commit/1c1eca6f8679377fd3d788dac397c5a2c188a387))
+
+## [3.5.3](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.2...v3.5.3) (2021-05-17)
+
+
+### Bug Fixes
+
+* **all:** improve font weights ([#168](https://github.com/LBHackney-IT/LBH-frontend/issues/168)) ([f72e6d5](https://github.com/LBHackney-IT/LBH-frontend/commit/f72e6d57b01759f634566d3a47c203a74d33ba53)), closes [#161](https://github.com/LBHackney-IT/LBH-frontend/issues/161)
+
 ## [3.5.2](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.1...v3.5.2) (2021-04-11)
 
 
