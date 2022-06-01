@@ -1,0 +1,50 @@
+@include lbh-exports("lbh/component/map") {
+  .lbh-map {
+    display: flex;
+    border-top: 4px solid lbh-colour("lbh-a01");
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    @include govuk-media-query($from: desktop) {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__container {
+      position: relative;
+      z-index: lbh-depth-index("map");
+      width: 100%;
+      height: 400px;
+      order: 4;
+
+      @include govuk-media-query($from: desktop) {
+        box-sizing: border-box;
+      }
+    }
+
+    &__lbh-error-message {
+      margin-bottom: 20px;
+      padding: 18px 24px 24px;
+      padding: 1.125rem 1.5rem 1.5rem;
+      border-color: #be3a34;
+  }
+
+      
+    
+
+    .leaflet-marker-icon {
+      cursor: grab;
+    }
+
+    &__directions {
+      display: block;
+      @include lbh-rem(margin-top, 12);
+      text-align: right;
+    }
+
+    .leaflet-control-zoom-out {
+      margin-top: 0;
+    }
+  }
+}

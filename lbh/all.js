@@ -7,10 +7,10 @@ import Checkboxes from "./components/lbh-checkboxes/checkboxes";
 import CookieBanner from "./components/lbh-cookie-banner/cookie-banner";
 import Details from "./components/lbh-details/details";
 import ErrorSummary from "./components/lbh-error-summary/error-summary";
-import Map from "./components/lbh-contact-block/contact-block";
 import Radios from "./components/lbh-radios/radios";
 import Tabs from "./components/lbh-tabs/tabs";
 import Collapsible from "./components/lbh-collapsible/collapsible";
+import Map from "./components/lbh-map/map";
 
 function nodeListForEach(nodes, callback) {
   if (window.NodeList.prototype.forEach) {
