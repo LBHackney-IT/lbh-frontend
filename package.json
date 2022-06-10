@@ -46,7 +46,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.32.8",
     "sassdoc": "^2.7.0",
-    "semantic-release": "^17.3.9",
+    "semantic-release": "^19.0.3",
     "standard": "^13.1.0"
   },
   "optionalDependencies": {
