@@ -17,8 +17,7 @@ esbuild
     format: "iife",
     globalName: "LBHFrontend",
     minify: true,
-    sourcemap: false,
-    // esbuild does not lower `const` for ie11; govuk polyfills cover older APIs in the bundle.
+    sourcemap: false,    
     target: ["es2015"],
     logLevel: "info",
   })
