@@ -1,7 +1,4 @@
-const util = require("util");
-const sass = require("node-sass");
-
-const sassRender = util.promisify(sass.render);
+const sassRender = require("../test/sass-render.cjs");
 
 describe("The objects layer", () => {
   it("renders to CSS without errors", async () => {

@@ -1,10 +1,8 @@
 /* eslint-env jest */
 
 const path = require("path");
-const util = require("util");
 
-const sass = require("node-sass");
-const sassRender = util.promisify(sass.render);
+const sassRender = require("../test/sass-render.cjs");
 
 describe("The settings layer", () => {
   it("should not output any CSS", async () => {
