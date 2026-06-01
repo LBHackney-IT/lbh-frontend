@@ -10,6 +10,8 @@ jobs:
   checks:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --openssl-legacy-provider
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
@@ -24,6 +26,8 @@ jobs:
   gh-release:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --openssl-legacy-provider
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
