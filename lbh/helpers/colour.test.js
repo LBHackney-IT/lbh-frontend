@@ -1,9 +1,6 @@
 /* eslint-env jest */
 
-const util = require("util");
-
-const sass = require("node-sass");
-const sassRender = util.promisify(sass.render);
+const sassRender = require("../test/sass-render.cjs");
 
 const sassConfig = {
   includePaths: ["lbh/"],
@@ -29,19 +26,24 @@ describe("@function lbh-colour", () => {
 
     const results = await sassRender({ data: sass, ...sassConfig });
 
-    expect(results.css.toString().trim()).toBe(".foo { color: #ff0000; }");
+    expect(results.css.toString().trim()).toBe(
+      ".foo {\n  color: #ff0000;\n}"
+    );
   });
 
-  it("works with unquoted strings", async () => {
+  // Dart Sass treats `red` as a colour value, not the string "red" like node-sass.
+  it("works with a string colour name", async () => {
     const sass = `
         ${sassBootstrap}
         .foo {
-          color: lbh-colour(red);
+          color: lbh-colour("red");
         }`;
 
     const results = await sassRender({ data: sass, ...sassConfig });
 
-    expect(results.css.toString().trim()).toBe(".foo { color: #ff0000; }");
+    expect(results.css.toString().trim()).toBe(
+      ".foo {\n  color: #ff0000;\n}"
+    );
   });
 
   it("throws an error if a non-existent colour is requested", async () => {

@@ -1,9 +1,6 @@
 /* eslint-env jest */
 
-const util = require("util");
-
-const sass = require("node-sass");
-const sassRender = util.promisify(sass.render);
+const sassRender = require("../test/sass-render.cjs");
 
 const sassConfig = {
   includePaths: ["lbh/"],
