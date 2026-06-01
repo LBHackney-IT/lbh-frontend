@@ -1,3 +1,10 @@
+## [3.6.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.6.0...v3.6.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* **types:** improve typescript support for dynamic imports ([#179](https://github.com/LBHackney-IT/LBH-frontend/issues/179)) ([#180](https://github.com/LBHackney-IT/LBH-frontend/issues/180)) ([6c53369](https://github.com/LBHackney-IT/LBH-frontend/commit/6c533695c5b7e4351687a2596d6b99116a1702ca))
+
 # [3.6.0](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.3...v3.6.0) (2021-08-27)
 
 
