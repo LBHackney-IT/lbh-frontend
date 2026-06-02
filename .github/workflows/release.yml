@@ -1,3 +1,4 @@
+# Runs semantic-release on push to main (comment to trigger CI).
 name: Release to NPM
 on:
   push:
