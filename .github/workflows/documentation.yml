@@ -24,7 +24,7 @@ jobs:
       - name: Test documentation build
         run: npm run build:docs
   gh-release:
-    if: github.event_name != 'pull_request'
+    # if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     env:
       NODE_OPTIONS: --openssl-legacy-provider
