@@ -23,7 +23,7 @@ jobs:
         with:
           semantic_version: 17.3.9
           extra_plugins: |
-            @semantic-release/git          
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
