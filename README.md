@@ -1,4 +1,4 @@
-# Hackney Design System
+# Hackney Design System.
 
 [![Publish documentation](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/documentation.yml/badge.svg)](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/documentation.yml)
 
