@@ -21,3 +21,13 @@ We have [starter kits](https://github.com/LBHackney-IT/hackney-design-system-exa
 We use a feature-branching strategy. Make your pull requests to the `develop` branch.
 
 **[See the full contributor guidance](https://design-system.hackney.gov.uk/contributing/introduction)**
+
+### npm releases
+
+- Pull requests run a pack smoke test (`npm run verify:pack`) before merge.
+- Release Please PRs publish to the `next` dist-tag for testing: `npm install lbh-frontend@next`.
+- Merging a release publishes to `latest`.
+
+### Sass reference (`static/sassdoc`)
+
+The Sass API docs under `static/sassdoc` are committed to the repo. Regenerate locally only when SCSS changes require it (install `sassdoc` temporarily, run `sassdoc lbh --dest static/sassdoc`, then commit).

@@ -1,4 +1,16 @@
-import { throttle } from 'underscore'
+function throttle (fn, wait) {
+  var timeout
+  return function () {
+    var context = this
+    var args = arguments
+    if (!timeout) {
+      timeout = setTimeout(function () {
+        timeout = null
+        fn.apply(context, args)
+      }, wait)
+    }
+  }
+}
 
 function BackToTop ($module) {
   this.$module = $module
@@ -16,7 +28,6 @@ BackToTop.prototype.checkScrollPosition = function (element) {
 }
 
 BackToTop.prototype.init = function () {
-  // Check for module
   if (!this.$module) {
     return
   }

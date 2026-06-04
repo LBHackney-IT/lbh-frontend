@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 const sassRender = require("../test/sass-render.cjs");
 
 const sassConfig = {

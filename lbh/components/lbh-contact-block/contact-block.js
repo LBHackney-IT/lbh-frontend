@@ -1,7 +1,7 @@
 /* global L */
 window.L = window.L || {};
 
-if (L !== {}) {
+if (typeof L.map === 'function') {
   var map = L.map;
   var control = L.control;
   var tileLayer = L.tileLayer;

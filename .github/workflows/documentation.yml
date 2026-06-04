@@ -1,61 +1,56 @@
-# name: Publish documentation
+name: Publish documentation
 
-# on:
-#   pull_request:
-#     branches: [main]
-#   push:
-#     branches: [main]
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
 
-# jobs:
-#   checks:
-#     if: github.event_name != 'push'
-#     runs-on: ubuntu-latest
-#     env:
-#       NODE_OPTIONS: --openssl-legacy-provider
-#     steps:
-#       - uses: actions/checkout@v4
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version-file: ".nvmrc"
-#           cache: npm
-#       - name: Install modules
-#         run: npm ci
-#       - name: Test documentation build
-#         run: npm run build:docs
-#   gh-release:
-#     if: github.event_name != 'pull_request'
-#     runs-on: ubuntu-latest
-#     env:
-#       NODE_OPTIONS: --openssl-legacy-provider
-#     steps:
-#       - uses: actions/checkout@v4
-#       - name: Setup Node.js
-#         uses: actions/setup-node@v4
-#         with:
-#           node-version-file: ".nvmrc"
-#           cache: npm
-#       - name: Install modules
-#         run: npm ci
-#       - name: Add key to allow access to repository
-#         env:
-#           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-#         run: |
-#           mkdir -p ~/.ssh
-#           ssh-keyscan github.com >> ~/.ssh/known_hosts
-#           echo "${{ secrets.GH_PAGES_DEPLOY }}" > ~/.ssh/id_rsa
-#           chmod 600 ~/.ssh/id_rsa
-#           cat <<EOT >> ~/.ssh/config
-#           Host github.com
-#           HostName github.com
-#           IdentityFile ~/.ssh/id_rsa
-#           EOT
-#       - name: Release to GitHub Pages
-#         env:
-#           USE_SSH: true
-#           GIT_USER: git
-#         run: |
-#           git config --global user.email "actions@github.com"
-#           git config --global user.name "gh-actions"
-#           npm run build:sassdoc
-#           npx docusaurus deploy
+jobs:
+  checks:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - name: Install modules
+        run: npm ci
+      - name: Test documentation build
+        run: npm run build:docs
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - name: Install modules
+        run: npm ci
+      - name: Add key to allow access to repository
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          echo "${{ secrets.GH_PAGES_DEPLOY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          cat <<EOT >> ~/.ssh/config
+          Host github.com
+          HostName github.com
+          IdentityFile ~/.ssh/id_rsa
+          EOT
+      - name: Release to GitHub Pages
+        env:
+          USE_SSH: true
+          GIT_USER: git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions"
+          npx docusaurus deploy
