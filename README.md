@@ -24,9 +24,9 @@ We use a feature-branching strategy. Make your pull requests to the `develop` br
 
 ### npm releases
 
-- Pull requests run a pack smoke test (`npm run verify:pack`) before merge.
-- Release Please PRs publish to the `next` dist-tag for testing: `npm install lbh-frontend@next`.
-- Merging a release publishes to `latest`.
+- Pushes run unit tests and a production dependency audit (see `tests.yml`).
+- Release Please PRs build `dist/`, publish to the `next` dist-tag for testing (`npm install lbh-frontend@next`), and commit `dist/` to the PR (`release-pr-build.yml`).
+- Merging a release publishes to npm `latest` (`release-please.yml`).
 
 ### Sass reference (`static/sassdoc`)
 
