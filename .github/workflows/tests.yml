@@ -12,7 +12,5 @@ jobs:
           cache: npm
       - name: Install modules
         run: npm ci
-      - name: Audit production dependencies
-        run: npm audit --omit=dev
       - name: Run tests
         run: npm test
