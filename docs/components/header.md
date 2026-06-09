@@ -439,9 +439,10 @@ import PreviewArea from "../../src/PreviewArea"
           <span class="lbh-header__service-name">Manage a tenancy</span>
       </a>
       </div>
-      <div class="lbh-header__links"><p>Anne James</p>
-<a href="">Sign out</a>
-</div>
+      <div class="lbh-header__links">
+        <p>Anne James</p>
+        <a href="">Sign out</a>
+      </div>
     </div>
   </div>
 </header>
@@ -565,9 +566,7 @@ import PreviewArea from "../../src/PreviewArea"
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name lbh-header__service-name--short"
-            >Intranet</span
-          >
+          <span class="lbh-header__service-name lbh-header__service-name--short">Intranet</span>
         </a>
       </div>
       <div class="lbh-header__links">
@@ -632,9 +631,7 @@ import PreviewArea from "../../src/PreviewArea"
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name lbh-header__service-name--short"
-            >Intranet</span
-          >
+          <span class="lbh-header__service-name lbh-header__service-name--short">Intranet</span>
         </a>
       </div>
       <div class="lbh-header__links">
@@ -739,9 +736,7 @@ import PreviewArea from "../../src/PreviewArea"
             ></image>
           </svg>
           <span class="lbh-header__logo-text"> Hackney </span>
-          <span class="lbh-header__service-name lbh-header__service-name--short"
-            >Intranet</span
-          >
+          <span class="lbh-header__service-name lbh-header__service-name--short">Intranet</span>
         </a>
       </div>
     </div>

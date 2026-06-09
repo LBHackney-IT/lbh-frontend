@@ -38,18 +38,10 @@ Follow the below example to add the CSS and JavaScript files to your HTML templa
 <html>
   <head>
     <title>Example</title>
-    <!--[if !IE 8]><!-->
     <link
       rel="stylesheet"
       href="stylesheets/lbh-frontend-[latest version].min.css"
     />
-    <!--<![endif]-->
-    <!--[if IE 8]>
-      <link
-        rel="stylesheet"
-        href="stylesheets/lbh-frontend-ie8-[latest-version].min.css"
-      />
-    <![endif]-->
   </head>
   <body>
     <!-- Copy and paste component HTML-->

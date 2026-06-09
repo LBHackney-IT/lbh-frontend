@@ -19,7 +19,7 @@ Dialogs should only allow a user to take a single action. If many actions are po
 
 ## React
 
-Our dialog component is only compatible with React. It's based on the [Reach UI](https://reach.tech/dialog/) dialog.
+Our dialog component is only compatible with React. It uses [Radix UI Dialog](https://www.radix-ui.com/primitives/docs/components/dialog) for accessible modal behaviour.
 
 ```jsx
 import React, { useState } from "react"

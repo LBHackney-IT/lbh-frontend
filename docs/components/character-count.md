@@ -116,10 +116,7 @@ Use the Character count
   <label class="govuk-label lbh-label" for="with-default-value">
     Full address
   </label>
-  <textarea class="govuk-textarea govuk-js-character-count lbh-character-count" id="with-default-value" name="default-value" rows="5" aria-describedby="with-default-value-info">221B Baker Street
-London
-NW1 6XE
-</textarea>
+  <textarea class="govuk-textarea govuk-js-character-count lbh-character-count" id="with-default-value" name="default-value" rows="5" aria-describedby="with-default-value-info">221B Baker Street London NW1 6XE</textarea>
 </div>
 
   <span id="with-default-value-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
@@ -174,10 +171,7 @@ NW1 6XE
   <span id="exceeding-characters-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Please do not exceed the maximum allowed limit
   </span>
-  <textarea class="govuk-textarea govuk-textarea--error govuk-js-character-count govuk-textarea--error lbh-character-count" id="exceeding-characters" name="exceeding" rows="5" aria-describedby="exceeding-characters-info exceeding-characters-error">221B Baker Street
-London
-NW1 6XE
-</textarea>
+  <textarea class="govuk-textarea govuk-textarea--error govuk-js-character-count govuk-textarea--error lbh-character-count" id="exceeding-characters" name="exceeding" rows="5" aria-describedby="exceeding-characters-info exceeding-characters-error">221B Baker Street London NW1 6XE</textarea>
 </div>
 
   <span id="exceeding-characters-info" class="govuk-hint govuk-character-count__message" aria-live="polite">

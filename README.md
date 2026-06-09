@@ -1,4 +1,4 @@
-# Hackney Design System
+# Hackney Design System.
 
 [![Publish documentation](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/documentation.yml/badge.svg)](https://github.com/LBHackney-IT/LBH-frontend/actions/workflows/documentation.yml)
 
@@ -21,3 +21,13 @@ We have [starter kits](https://github.com/LBHackney-IT/hackney-design-system-exa
 We use a feature-branching strategy. Make your pull requests to the `develop` branch.
 
 **[See the full contributor guidance](https://design-system.hackney.gov.uk/contributing/introduction)**
+
+### npm releases
+
+- Pushes run unit tests and a production dependency audit (see `tests.yml`).
+- Release Please PRs build `dist/`, publish to the `next` dist-tag for testing (`npm install lbh-frontend@next`), and commit `dist/` to the PR (`release-pr-build.yml`).
+- Merging a release publishes to npm `latest` (`release-please.yml`).
+
+### Sass reference (`static/sassdoc`)
+
+The Sass API docs under `static/sassdoc` are committed to the repo. Regenerate locally only when SCSS changes require it (install `sassdoc` temporarily, run `sassdoc lbh --dest static/sassdoc`, then commit).

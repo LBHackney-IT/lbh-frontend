@@ -5,10 +5,9 @@ module.exports = {
   url: "https://design-system.hackney.gov.uk",
   baseUrl: "/",
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
-  organizationName: "lbhackney-it", // Usually your GitHub org/user name.
-  projectName: "lbh-frontend", // Usually your repo name.
+  organizationName: "lbhackney-it",
+  projectName: "lbh-frontend",
   themeConfig: {
     navbar: {
       title: "Design System",
@@ -46,5 +45,14 @@ module.exports = {
     ],
   ],
   clientModules: [require.resolve("./src/docs.js")],
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    [
+      "docusaurus-plugin-sass",
+      {
+        sassOptions: {
+          loadPaths: [__dirname],
+        },
+      },
+    ],
+  ],
 };

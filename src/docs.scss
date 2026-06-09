@@ -70,7 +70,7 @@ html[data-theme="dark"] .hero img {
 
 // don't reset styles on our page
 $lbh-safely-embed: true;
-$lbh-asset-path: "~!file-loader!../lbh/assets";
+$lbh-asset-path: "../lbh/assets";
 // make components preview nicer in a narrower space
 $govuk-page-width: 750px;
 
@@ -105,8 +105,12 @@ table {
   margin-right: 0;
 }
 
-[data-reach-dialog-overlay] {
+.lbh-dialog__overlay {
   z-index: var(--ifm-z-index-overlay);
+}
+
+.lbh-dialog.lbh-dialog--radix {
+  z-index: calc(var(--ifm-z-index-overlay) + 1);
 }
 
 .lbh-simple-pagination a {

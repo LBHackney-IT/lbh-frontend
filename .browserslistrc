@@ -1,0 +1,41 @@
+# GOV.UK browser testing recommendations at June 2026
+# https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices
+
+# JavaScript: GOV.UK floor (ES module-capable browsers)
+[javascripts]
+chrome >= 61
+firefox >= 60
+safari >= 11
+ios >= 11
+edge >= 16
+samsung >= 8.2
+opera >= 48
+
+# CSS: UK market
+[stylesheets]
+> 0.1% in GB and not dead
+last 6 Chrome versions
+last 6 Firefox versions
+last 6 Edge versions
+last 2 Samsung versions
+Firefox ESR
+Safari >= 11
+iOS >= 11
+
+[node]
+node 24
+
+# Default for any tools that do not set a browserlist env
+[production]
+chrome >= 61
+firefox >= 60
+safari >= 11
+ios >= 11
+edge >= 16
+samsung >= 8.2
+opera >= 48
+
+[development]
+last 1 chrome version
+last 1 firefox version
+last 1 safari version
