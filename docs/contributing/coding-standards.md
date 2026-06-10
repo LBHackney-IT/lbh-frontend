@@ -2,7 +2,7 @@
 title: Coding standards
 ---
 
-We use a feature-branching strategy. When making a pull request, make it to the [develop](https://github.com/LBHackney-IT/lbh-frontend/tree/develop) branch.
+We use a feature-branching strategy. When making a pull request, make it to the [develop](https://github.com/LBHackney-IT/lbh-frontend/tree/develop) branch. See [Git workflow](git-workflow) for how `develop` and `main` stay in sync at release time.
 
 ## Commit messages
 
@@ -28,7 +28,7 @@ The text inside the brackets indicates the scope of your changes. Normally this 
 
 After the colon, you can write your commit message as normal.
 
-You can read more about this format in the [semantic-release docs](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format).
+You can read more about this format in the [Angular commit message docs](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format). Release Please uses these messages on `main` to determine version bumps.
 
 ## Testing
 

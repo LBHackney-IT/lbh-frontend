@@ -18,7 +18,7 @@ We have [starter kits](https://github.com/LBHackney-IT/hackney-design-system-exa
 
 ## Contributing
 
-We use a feature-branching strategy. Make your pull requests to the `develop` branch.
+We use a feature-branching strategy. Make your pull requests to the `develop` branch. See [docs/contributing/git-workflow.md](docs/contributing/git-workflow.md) for release and branch-sync policy.
 
 **[See the full contributor guidance](https://design-system.hackney.gov.uk/contributing/introduction)**
 

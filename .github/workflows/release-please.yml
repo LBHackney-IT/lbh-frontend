@@ -56,3 +56,70 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  sync-to-develop:
+    needs: [release-please, publish-npm]
+    if: ${{ needs.release-please.outputs.release_created == 'true' && needs.publish-npm.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Generate token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.RELEASE_PLEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_PLEASE_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v6
+        with:
+          ref: develop
+          fetch-depth: 0
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Merge main into sync branch
+        env:
+          TAG: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="sync/main-after-${TAG}"
+          git fetch origin main
+          git merge origin/main --no-ff -m "chore: sync main after release ${TAG}"
+          git checkout -B "${BRANCH}"
+          git push origin "${BRANCH}" --force-with-lease
+
+      - name: Open sync pull request
+        id: sync-pr
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          TAG: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          BRANCH="sync/main-after-${TAG}"
+          TITLE="chore: sync main after release ${TAG}"
+          BODY="Automated sync after Release Please published ${TAG}.
+
+          **Maintainer action required:** approve and merge with **Create a merge commit** (not squash).
+
+          See [git workflow](https://github.com/${{ github.repository }}/blob/develop/docs/contributing/git-workflow.md)."
+
+          PR_NUM=$(gh pr list --base develop --head "${BRANCH}" --state open --json number -q '.[0].number // empty')
+
+          if [ -z "$PR_NUM" ]; then
+            gh pr create --base develop --head "${BRANCH}" --title "${TITLE}" --body "${BODY}"
+            PR_NUM=$(gh pr list --base develop --head "${BRANCH}" --state open --json number -q '.[0].number')
+          fi
+
+          echo "number=${PR_NUM}" >> "$GITHUB_OUTPUT"
+          echo "Opened sync PR #${PR_NUM}"
+
+      - name: Request maintainer review
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUM: ${{ steps.sync-pr.outputs.number }}
+          TAG: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          gh pr comment "${PR_NUM}" --body "**Post-release sync** — a maintainer must approve and merge this PR with **Create a merge commit** so \`develop\` receives the version bump and changelog from ${TAG}."
+          echo "::notice title=Maintainer action required::Approve and merge sync PR #${PR_NUM} into develop with a merge commit."
