@@ -19,6 +19,7 @@
     "build:js": "node scripts/build-js.js",
     "build:docs": "docusaurus build",
     "build:assets": "copyfiles lbh/assets/**/**/**/* dist/assets -u 2",
+    "build:dist": "npm-run-all build:sass build:js build:assets",
     "build": "npm-run-all build:*",
     "clean:docs": "docusaurus clear",
     "clean:dist": "rimraf dist",
