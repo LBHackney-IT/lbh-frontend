@@ -6,6 +6,9 @@ on:
     branches: [main]
     types: [opened, synchronize, reopened]
 
+permissions:
+  contents: read
+
 jobs:
   build-dist:
     if: startsWith(github.head_ref, 'release-please--')
@@ -21,13 +24,13 @@ jobs:
           private-key: ${{ secrets.RELEASE_PLEASE_PRIVATE_KEY }}
           permission-contents: write
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref }}
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version-file: ".nvmrc"
           cache: npm
@@ -37,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Build dist assets
-        run: npm run clean:dist && npm-run-all build:sass build:js build:assets
+        run: npm run clean:dist && npm run build:dist
 
       - name: Publish to npm for testing
         run: npm publish --tag next --access public
