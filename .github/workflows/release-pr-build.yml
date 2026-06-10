@@ -49,7 +49,9 @@ jobs:
 
       - name: Commit dist to release PR
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist
           git diff --staged --quiet && exit 0
           git commit -m "chore: build dist for release [skip ci]"
-          git push
+          git push origin HEAD:${{ github.head_ref }}

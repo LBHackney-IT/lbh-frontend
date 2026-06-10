@@ -66,6 +66,7 @@ module.exports = {
     "Data visualisation": ["data-visualisation/getting-started"],
     Contributing: [
       "contributing/introduction",
+      "contributing/git-workflow",
       "contributing/coding-standards",
     ],
   },
