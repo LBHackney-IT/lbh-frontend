@@ -54,7 +54,7 @@ If you need to build something more powerful, you are better off ignoring the Ja
 
 There are plenty of well-maintained, accessible-by-default React libraries to choose from:
 
-- [Reach UI](https://reach.tech/)
+- [Radix UI](https://www.radix-ui.com/primitives)
 - [GOV.UK React JSX](https://github.com/surevine/govuk-react-jsx)
 
 This advice might change as the design system grows.

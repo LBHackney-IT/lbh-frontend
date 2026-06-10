@@ -1,12 +1,28 @@
 @import "../../settings/all";
 
 @include lbh-exports("lbh/component/dialog") {
-  .lbh-dialog {
-    position: relative;
-    border: 4px solid lbh-colour("lbh-text");
+  .lbh-dialog__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(lbh-colour("lbh-text"), 0.5);
+  }
+
+  .lbh-dialog.lbh-dialog--radix {
+    position: fixed;
+    left: 50%;
+    top: 7vh;
+    z-index: 1001;
     width: 90%;
     max-width: 500px;
-    margin: 7vh auto;
+    margin: 0;
+    transform: translateX(-50%);
+    max-height: calc(100vh - 14vh);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: govuk-spacing(4);
+    background: lbh-colour("lbh-white");
+    border: 4px solid lbh-colour("lbh-text");
 
     &__title {
       margin-top: 0;

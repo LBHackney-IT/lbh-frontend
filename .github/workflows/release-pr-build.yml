@@ -21,22 +21,28 @@ jobs:
           private-key: ${{ secrets.RELEASE_PLEASE_PRIVATE_KEY }}
           permission-contents: write
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: ".nvmrc"
           cache: npm
+          registry-url: https://registry.npmjs.org
 
       - name: Install modules
         run: npm ci
 
       - name: Build dist assets
-        run: npm run clean:dist && npm-run-all build:sass build:sass-ie8 build:js build:assets
+        run: npm run clean:dist && npm-run-all build:sass build:js build:assets
+
+      - name: Publish to npm for testing
+        run: npm publish --tag next --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit dist to release PR
         run: |

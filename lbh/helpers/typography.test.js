@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 // const configPaths = require("../../config/paths.json");
 
 const outdent = require("outdent");

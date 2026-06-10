@@ -378,7 +378,8 @@ title: Radios
         Use GOV.UK Verify
       </label>
         </div>
-        <div class="govuk-radios__divider">or</div>        <div class="govuk-radios__item">
+        <div class="govuk-radios__divider">or</div>
+        <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="example-divider-4" name="example" type="radio" value="create-account" />
           <label class="govuk-label govuk-radios__label" for="example-divider-4">
         Create an account
@@ -2236,7 +2237,8 @@ title: Radios
         Use GOV.UK Verify
       </label>
         </div>
-        <div class="govuk-radios__divider">or</div>        <div class="govuk-radios__item">
+        <div class="govuk-radios__divider">or</div>
+        <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="example-small-divider-4" name="example" type="radio" value="create-account" />
           <label class="govuk-label govuk-radios__label" for="example-small-divider-4">
         Create an account
