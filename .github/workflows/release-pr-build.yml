@@ -34,18 +34,12 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           cache: npm
-          registry-url: https://registry.npmjs.org
 
       - name: Install modules
         run: npm ci
 
       - name: Build dist assets
         run: npm run clean:dist && npm run build:dist
-
-      - name: Publish to npm for testing
-        run: npm publish --tag next --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit dist to release PR
         run: |
