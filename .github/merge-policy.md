@@ -29,13 +29,24 @@ Never squash-merge between `main` and `develop`.
 - Use a conventional title (`feat:`, `fix:`, etc.) — this feeds Release Please
 - **No sync back to `develop` yet** — file content is already on `develop`
 
-### 2. Merge Release Please PR on `main`
+### 2. Test a release candidate on npm (optional)
+
+When the Release Please PR is ready to test:
+
+1. **Actions → Publish npm prerelease → Run workflow**
+2. Set **git_ref** to the Release Please branch name (e.g. `release-please--branches--main--components--lbh-frontend`)
+3. Approve the run when prompted (**`npm-prerelease`** environment — see below)
+4. Install with `npm install lbh-frontend@next` or the exact `X.Y.Z-next.N` version from the workflow summary
+
+Each run publishes a new semver prerelease (`3.7.0-next.1`, `3.7.0-next.2`, …) so npm never rejects duplicate versions.
+
+### 3. Merge Release Please PR on `main`
 
 - PR branch name starts with `release-please--`
 - Merge with **merge commit**
 - [Release please workflow](workflows/release-please.yml) publishes to npm `latest`
 
-### 3. Merge the automated sync PR on `develop`
+### 4. Merge the automated sync PR on `develop`
 
 After a successful release, the workflow opens:
 
@@ -46,7 +57,7 @@ A maintainer must **approve and merge with a merge commit**. Branch protection p
 
 Expected file changes: `package.json`, `CHANGELOG.md`, `.release-please-manifest.json` (and any release-only edits from `main`).
 
-### 4. Hotfixes on `main`
+### 5. Hotfixes on `main`
 
 If something lands on `main` outside the normal flow, open a manual `main` → `develop` sync PR and merge with a **merge commit**.
 
@@ -55,6 +66,15 @@ If something lands on `main` outside the normal flow, open a manual `main` → `
 | Workflow | Trigger | Notes |
 |----------|---------|-------|
 | [release-please.yml](workflows/release-please.yml) | Push to `main` | Release PR, npm publish, opens sync PR |
-| [release-pr-build.yml](workflows/release-pr-build.yml) | Release Please PRs to `main` | Builds `dist/`, publishes `@next`, commits to PR branch |
+| [release-pr-build.yml](workflows/release-pr-build.yml) | Release Please PRs to `main` | Builds `dist/`, commits to PR branch |
+| [publish-prerelease.yml](workflows/publish-prerelease.yml) | Manual (`workflow_dispatch`) | Publishes `X.Y.Z-next.N` to `@next` after environment approval |
 | [tests.yml](workflows/tests.yml) | Push | Unit tests |
 | [documentation.yml](workflows/documentation.yml) | Push / PR | Docs build and deploy |
+
+### `npm-prerelease` environment (one-time setup)
+
+1. **Settings → Environments → New environment** → name: `npm-prerelease`
+2. Enable **Required reviewers** and add maintainers
+3. Optionally restrict deployment branches to `main` and `release-please--*` patterns
+
+Without this environment, the publish workflow cannot run.

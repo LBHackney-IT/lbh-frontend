@@ -39,6 +39,17 @@ You do **not** need to sync `main` back to `develop` at this stage. `develop` al
 3. The same workflow opens a **`main` → `develop`** sync pull request (see below).
 4. A **maintainer approves and merges** that sync PR with a **merge commit**. Branch protection requires this — the automation cannot merge on its own.
 
+### Testing before release (maintainers)
+
+Release Please PRs build `dist/` automatically but do **not** publish to npm. To test a candidate on npm:
+
+1. **Actions → Publish npm prerelease → Run workflow**
+2. Set **git_ref** to the Release Please branch name
+3. Approve the run on the **`npm-prerelease`** environment
+4. Install with `npm install lbh-frontend@next`
+
+Each approved run publishes a unique version such as `3.7.0-next.1`.
+
 The sync step brings `package.json`, `CHANGELOG.md`, and `.release-please-manifest.json` back to `develop` so the branches stay aligned for the next cycle.
 
 ## Syncing main to develop
