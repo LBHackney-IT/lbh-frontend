@@ -70,11 +70,3 @@ If something lands on `main` outside the normal flow, open a manual `main` → `
 | [publish-prerelease.yml](workflows/publish-prerelease.yml) | Manual (`workflow_dispatch`) | Publishes `X.Y.Z-next.N` to `@next` after environment approval |
 | [tests.yml](workflows/tests.yml) | Push | Unit tests |
 | [documentation.yml](workflows/documentation.yml) | Push / PR | Docs build and deploy |
-
-### `npm-prerelease` environment (one-time setup)
-
-1. **Settings → Environments → New environment** → name: `npm-prerelease`
-2. Enable **Required reviewers** and add maintainers
-3. Optionally restrict deployment branches to `main` and `release-please--*` patterns
-
-Without this environment, the publish workflow cannot run.
