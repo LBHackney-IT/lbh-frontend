@@ -12,7 +12,7 @@
     "CHANGELOG.md"
   ],
   "engines": {
-    "node": "24.14"
+    "node": ">=24"
   },
   "scripts": {
     "build:sass": "sass lbh/all.scss dist/lbh-frontend-$npm_package_version.min.css --load-path=./ --no-source-map",
