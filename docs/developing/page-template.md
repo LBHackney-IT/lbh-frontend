@@ -34,7 +34,7 @@ title: Blank page template
         <!-- Main content components go here -->
       </div>
     </main>
-    <!-- Import and bundle JavaScript from lbh-frontend in your build (see installing-from-npm) -->
+    <!-- Import and bundle JavaScript from lbh-frontend in your build (requires a bundler; see installing-from-npm) -->
     <script type="module">
       import { initAll } from "lbh-frontend";
       initAll();
