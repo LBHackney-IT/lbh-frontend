@@ -32,9 +32,6 @@ jobs:
       - name: Install modules
         run: npm ci
 
-      - name: Build dist assets
-        run: npm run clean:dist && npm run build:dist
-
       - name: Resolve unique prerelease version
         id: version
         run: |

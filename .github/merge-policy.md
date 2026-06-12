@@ -66,7 +66,7 @@ If something lands on `main` outside the normal flow, open a manual `main` → `
 | Workflow | Trigger | Notes |
 |----------|---------|-------|
 | [release-please.yml](workflows/release-please.yml) | Push to `main` | Release PR, npm publish, opens sync PR |
-| [release-pr-build.yml](workflows/release-pr-build.yml) | Release Please PRs to `main` | Builds `dist/`, commits to PR branch |
+| [publish-release.yml](workflows/publish-release.yml) | Manual (`workflow_dispatch`) | Publishes `latest` after environment approval |
 | [publish-prerelease.yml](workflows/publish-prerelease.yml) | Manual (`workflow_dispatch`) | Publishes `X.Y.Z-next.N` to `@next` after environment approval |
 | [tests.yml](workflows/tests.yml) | Push | Unit tests |
 | [documentation.yml](workflows/documentation.yml) | Push / PR | Docs build and deploy |
