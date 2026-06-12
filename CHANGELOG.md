@@ -6,6 +6,19 @@ Republish on npm as `latest`. The earlier `3.7.0` tarball was published from the
 
 * fix Release Please tag format (`include-component-in-tag: false`) so future releases use `vX.Y.Z` tags
 
+## [4.0.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v3.7.1...v4.0.0) (2026-06-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* dist/ is no longer shipped on npm or in the repo. Use npm and a build tool instead. See docs/developing/migrating-from-dist.md.
+* dist/ is no longer shipped on npm or in the repo. Use npm and a build tool instead. See docs/developing/migrating-from-dist.md.
+
+### Features
+
+* drop dist from npm package ([#246](https://github.com/LBHackney-IT/lbh-frontend/issues/246)) ([d13a695](https://github.com/LBHackney-IT/lbh-frontend/commit/d13a69580af539c643ed6545e6a1166ce7fac87d))
+* drop dist from npm package ([#246](https://github.com/LBHackney-IT/lbh-frontend/issues/246)) ([#247](https://github.com/LBHackney-IT/lbh-frontend/issues/247)) ([fd24709](https://github.com/LBHackney-IT/lbh-frontend/commit/fd24709ce8952f8c66184342751b2dbc15e39d13))
+
 ## [3.7.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v3.6.1...v3.7.0) (2026-06-12)
 
 Catch-up release from 3.6.1. Includes platform upgrades, release pipeline changes, and design-system work accumulated since 2021. See [3.6.1](#361) and earlier entries for detailed per-version history.
