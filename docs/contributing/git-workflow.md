@@ -26,7 +26,14 @@ When a batch of work on `develop` is ready to be considered for release:
 
 1. Open a pull request: **`develop` → `main`**.
 2. **Merge with a merge commit** (not squash).
-3. Use a conventional commit title that reflects the change (for example `feat: upgrade toolchain for Node 24`).
+3. Use a **`chore:`** merge title that describes the promotion, not the feature again — for example `chore: promote develop to main`.
+
+Release Please reads commit messages on `main`. The squash merge into `develop` already carries `feat:`, `fix:`, or `feat!:` (and any `BREAKING CHANGE` footer). If the promotion merge also uses `feat!:` or repeats the feature title, Release Please counts the same change twice and the release changelog will duplicate entries.
+
+| PR | Put `feat!:` / `BREAKING CHANGE` here? |
+|----|----------------------------------------|
+| Feature branch → `develop` (squash merge) | **Yes** — this is the releasable commit |
+| `develop` → `main` (promotion merge) | **No** — use `chore: promote develop to main` (or similar) |
 
 This push triggers Release Please on `main`. Release Please will open or update a **Release Please pull request** (`release-please--branches/...`). That PR accumulates the version bump and `CHANGELOG.md` update.
 
@@ -90,3 +97,4 @@ Never squash-merge `main` into `develop`. Squash merges between long-lived branc
 - Do not land work on `main` before it exists on `develop`.
 - Do not manually open large “sync” PRs without resolving branch alignment first.
 - Do not use `feat:` on sync PRs — use `chore: sync main after release`.
+- Do not use `feat!:` or repeat a feature title on **`develop` → `main` promotion** merges — use `chore: promote develop to main`. Breaking changes belong on the squash merge into `develop` only.

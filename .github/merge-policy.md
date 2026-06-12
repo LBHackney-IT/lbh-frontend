@@ -26,7 +26,7 @@ Never squash-merge between `main` and `develop`.
 
 - Open PR: `develop` → `main`
 - Merge with **merge commit**
-- Use a conventional title (`feat:`, `fix:`, etc.) — this feeds Release Please
+- Use a **`chore:`** promotion title (for example `chore: promote develop to main`) — **not** `feat!:` or the same title as the feature squash merge on `develop`. Release Please scans both commits and duplicates changelog entries if the breaking change appears twice.
 - **No sync back to `develop` yet** — file content is already on `develop`
 
 ### 2. Test a release candidate on npm (optional)
