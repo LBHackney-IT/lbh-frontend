@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.1">
 <title data-rh="true">Git workflow | Hackney Design System</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://design-system.hackney.gov.uk/contributing/git-workflow"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Git workflow | Hackney Design System"><meta data-rh="true" name="description" content="This repository uses two long-lived branches and Release Please for npm releases."><meta data-rh="true" property="og:description" content="This repository uses two long-lived branches and Release Please for npm releases."><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://design-system.hackney.gov.uk/contributing/git-workflow"><link data-rh="true" rel="alternate" href="https://design-system.hackney.gov.uk/contributing/git-workflow" hreflang="en"><link data-rh="true" rel="alternate" href="https://design-system.hackney.gov.uk/contributing/git-workflow" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Git workflow","item":"https://design-system.hackney.gov.uk/contributing/git-workflow"}]}</script><link rel="stylesheet" href="/assets/css/styles.08b05d89.css">
-<script src="/assets/js/runtime~main.df5f577e.js" defer="defer"></script>
-<script src="/assets/js/main.3cd76004.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.0d2e3ff9.js" defer="defer"></script>
+<script src="/assets/js/main.96003fd3.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -40,14 +40,14 @@
 <li class="">A <strong>maintainer approves and merges</strong> that sync PR with a <strong>merge commit</strong>. Branch protection requires this — the automation cannot merge on its own.</li>
 </ol>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-before-release-maintainers">Testing before release (maintainers)<a href="#testing-before-release-maintainers" class="hash-link" aria-label="Direct link to Testing before release (maintainers)" title="Direct link to Testing before release (maintainers)" translate="no">​</a></h3>
-<p>Release Please PRs build <code>dist/</code> automatically but do <strong>not</strong> publish to npm. To test a candidate on npm:</p>
+<p>When the Release Please PR is ready to test on npm:</p>
 <ol>
 <li class=""><strong>Actions → Publish npm prerelease → Run workflow</strong></li>
 <li class="">Set <strong>git_ref</strong> to the Release Please branch name</li>
 <li class="">Approve the run on the <strong><code>npm-prerelease</code></strong> environment</li>
 <li class="">Install with <code>npm install lbh-frontend@next</code></li>
 </ol>
-<p>Each approved run publishes a unique version such as <code>3.7.0-next.1</code>.</p>
+<p>Each approved run publishes a unique version such as <code>4.0.0-next.1</code>.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publishing-to-npm-latest-maintainers">Publishing to npm <code>latest</code> (maintainers)<a href="#publishing-to-npm-latest-maintainers" class="hash-link" aria-label="Direct link to publishing-to-npm-latest-maintainers" title="Direct link to publishing-to-npm-latest-maintainers" translate="no">​</a></h3>
 <p>Normal releases publish automatically when a Release Please PR merges. If that step fails, or for a <strong>hotfix</strong> that bypasses Release Please (such as a republish), use the pipeline:</p>
 <ol>
@@ -56,7 +56,7 @@
 <li class="">Set <strong>git_ref</strong> to the tag (for example <code>v3.7.1</code>)</li>
 <li class="">Approve the run on the <strong><code>npm-release</code></strong> environment</li>
 </ol>
-<p><code>prepublishOnly</code> builds <code>dist/</code> before publish. Requires the <strong><code>npm-release</code></strong> environment (same <code>NPM_TOKEN</code> as other release workflows, with required reviewers).</p>
+<p><code>prepublishOnly</code> runs <code>verify:pack</code> to check the npm tarball contents (no docs or dist build). Requires the <strong><code>npm-release</code></strong> environment (same <code>NPM_TOKEN</code> as other release workflows, with required reviewers).</p>
 <p>The sync step brings <code>package.json</code>, <code>CHANGELOG.md</code>, and <code>.release-please-manifest.json</code> back to <code>develop</code> so the branches stay aligned for the next cycle.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syncing-main-to-develop">Syncing main to develop<a href="#syncing-main-to-develop" class="hash-link" aria-label="Direct link to Syncing main to develop" title="Direct link to Syncing main to develop" translate="no">​</a></h2>
 <table><thead><tr><th>When</th><th>Action</th></tr></thead><tbody><tr><td>After merging a <strong>Release Please</strong> PR on <code>main</code></td><td>A maintainer approves and merges the automated sync PR (<code>main</code> → <code>develop</code>) with a <strong>merge commit</strong></td></tr><tr><td>After a <strong>direct change to <code>main</code></strong> (hotfix, manual edit)</td><td>Open a manual <code>main</code> → <code>develop</code> PR and merge with a <strong>merge commit</strong></td></tr><tr><td>After promoting <code>develop</code> → <code>main</code> (before release)</td><td>No sync needed</td></tr></tbody></table>
