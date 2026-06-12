@@ -21,6 +21,7 @@ backstop_data/bitmaps_test
 # Generated files
 .docusaurus
 .cache-loader
+/dist
 
 # Misc
 .DS_Store

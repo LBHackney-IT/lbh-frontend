@@ -3,7 +3,7 @@ module.exports = {
     Designing: ["designing/design-kits", "designing/accessibility"],
     Developing: [
       "developing/installing-from-npm",
-      "developing/installing-from-dist",
+      "developing/migrating-from-dist",
       "developing/updating",
       "developing/browser-support",
       "developing/react",
