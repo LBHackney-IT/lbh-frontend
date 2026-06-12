@@ -26,8 +26,7 @@ Currently, LBH Frontend officially supports the following browsers:
 ‘Compliant’ means that the components must look as good and function as well as
 they do in other modern browsers.
 
-Internet Explorer 8–10 are no longer supported. Use the npm package or current
-`dist` builds, which target IE11 and modern browsers only.
+Internet Explorer 8–10 are no longer supported. Use the [npm package](/developing/installing-from-npm) and compile styles in your application build.
 
 [service-manual-browsers]: https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in
 

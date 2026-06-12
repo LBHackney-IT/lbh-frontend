@@ -14,7 +14,7 @@ title: Blank page template
     />
     <meta name="theme-color" content="#0b0c0c" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Put your path to the LBHFrontend CSS File in the href attribute here -->
+    <!-- Import compiled CSS from your build (see installing-from-npm) -->
     <link href="" rel="stylesheet" type="text/css" />
   </head>
   <body class="govuk-template__body">
@@ -34,10 +34,10 @@ title: Blank page template
         <!-- Main content components go here -->
       </div>
     </main>
-    <!-- Put your path to the LBHFrontend JS File in the src attribute here -->
-    <script src=""></script>
-    <script>
-      window.LBHFrontend.initAll();
+    <!-- Import and bundle JavaScript from lbh-frontend in your build (requires a bundler; see installing-from-npm) -->
+    <script type="module">
+      import { initAll } from "lbh-frontend";
+      initAll();
     </script>
   </body>
 </html>
