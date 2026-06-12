@@ -1,3 +1,39 @@
+## [3.7.0](https://github.com/LBHackney-IT/lbh-frontend/compare/lbh-frontend-v3.6.1...lbh-frontend-v3.7.0) (2026-06-11)
+
+Catch-up release from 3.6.1. Includes platform upgrades, release pipeline changes, and design-system work accumulated since 2021. See [3.6.1](#361) and earlier entries for detailed per-version history.
+
+### Features
+
+* upgrade toolchain and dependencies for Node 24 ([#225](https://github.com/LBHackney-IT/lbh-frontend/issues/225))
+* **collapsible:** add collapsible component
+* **conversation:** add conversation component
+* **dialog:** add modal dialog component
+* **pagination:** add pagination component
+* **search-box:** add search box component
+* **simple-pagination:** add simple pagination component
+* **stat:** add stat component
+* **timeline:** add timeline component
+* **tip:** add tip component
+* **core:** add staff-facing components ([#158](https://github.com/LBHackney-IT/lbh-frontend/issues/158))
+* **core:** add resident components-only stylesheet
+* **core:** improve Sass import performance
+* **tag:** improve tag component ([#144](https://github.com/LBHackney-IT/lbh-frontend/issues/144))
+* **types:** add typings for package exports ([#177](https://github.com/LBHackney-IT/lbh-frontend/issues/177))
+
+### Bug Fixes
+
+* adjust published Node `engines` range for consumers ([#240](https://github.com/LBHackney-IT/lbh-frontend/issues/240))
+* **header:** remove enlarged gap for borders ([#184](https://github.com/LBHackney-IT/lbh-frontend/issues/184))
+* **types:** improve TypeScript support for dynamic imports ([#179](https://github.com/LBHackney-IT/lbh-frontend/issues/179))
+* update npm build command in release workflow ([#231](https://github.com/LBHackney-IT/lbh-frontend/issues/231))
+* spacing, focus, and accessibility improvements across components (see 3.4.0–3.6.1)
+
+### Build & release
+
+* migrate from semantic-release to Release Please
+* add maintainer-gated npm prerelease publishing and `main` → `develop` sync after release
+* document git workflow for contributors
+
 ## [3.6.1](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.6.0...v3.6.1) (2021-09-08)
 
 
@@ -11,9 +47,9 @@
 ### Bug Fixes
 
 * **all:** consolidate font weights ([42d46da](https://github.com/LBHackney-IT/LBH-frontend/commit/42d46da29bed56e357d22f59957593904dfd5192))
-* **core:** spacing tweaks and docs updates ([313deaf](https://github.com/LBHackney-IT/LBH-frontend/commit/313deaf03e242264f1fc7a116be654a0e6ad9e4f))
+* **core:** spacing tweaks and docs updates ([313deaf](https://github.com/LBHackney-IT/lbh-frontend/commit/313deaf03e242264f1fc7a116be654a0e6ad9e4f))
 * **core:** tweak spacing and margins on several components ([c1e1b08](https://github.com/LBHackney-IT/LBH-frontend/commit/c1e1b081007c0634c05b2fee5971ba20a2e026b8))
-* **core:** use a consistent focus colour on all components ([f629af6](https://github.com/LBHackney-IT/LBH-frontend/commit/f629af6d8e1c0d09272c6170b269274aa49c1b88))
+* **core:** use a consistent focus colour on all components ([f629af6](https://github.com/LBHackney-IT/lbh-frontend/commit/f629af6d8e1c0d09272c6170b269274aa49c1b88))
 * **page-announcement:** add variations to page announcement component ([6c4856c](https://github.com/LBHackney-IT/LBH-frontend/commit/6c4856ccd9b9a76a4f1817526b2a5a53d313740c))
 * **page-announcement:** spacing tweaks ([9dd35a0](https://github.com/LBHackney-IT/LBH-frontend/commit/9dd35a0ba1d51194a5741f759b5a71e45d9835c7))
 * **pagination:** improve spacing ([1f0c527](https://github.com/LBHackney-IT/LBH-frontend/commit/1f0c527a7b8935997ea56853af668a151e0ff368))
@@ -22,7 +58,7 @@
 
 ### Features
 
-* **types:** add typings for exports ([#177](https://github.com/LBHackney-IT/LBH-frontend/issues/177)) ([1c1eca6](https://github.com/LBHackney-IT/LBH-frontend/commit/1c1eca6f8679377fd3d788dac397c5a2c188a387))
+* **types:** add typings for exports ([#177](https://github.com/LBHackney-IT/LBH-frontend/issues/177)) ([1c1eca6](https://github.com/LBHackney-IT/lbh-frontend/commit/1c1eca6f8679377fd3d788dac397c5a2c188a387))
 
 ## [3.5.3](https://github.com/LBHackney-IT/LBH-frontend/compare/v3.5.2...v3.5.3) (2021-05-17)
 
