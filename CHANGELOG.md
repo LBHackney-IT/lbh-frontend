@@ -1,4 +1,12 @@
-## [3.7.0](https://github.com/LBHackney-IT/lbh-frontend/compare/lbh-frontend-v3.6.1...lbh-frontend-v3.7.0) (2026-06-11)
+## [3.7.1](https://github.com/LBHackney-IT/lbh-frontend/compare/v3.7.0...v3.7.1) (2026-06-12)
+
+Republish on npm as `latest`. The earlier `3.7.0` tarball was published from the wrong git ref during Release Please setup; `3.7.1` matches the [v3.7.0](https://github.com/LBHackney-IT/lbh-frontend/releases/tag/v3.7.0) release on `main`.
+
+### Build & release
+
+* fix Release Please tag format (`include-component-in-tag: false`) so future releases use `vX.Y.Z` tags
+
+## [3.7.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v3.6.1...v3.7.0) (2026-06-12)
 
 Catch-up release from 3.6.1. Includes platform upgrades, release pipeline changes, and design-system work accumulated since 2021. See [3.6.1](#361) and earlier entries for detailed per-version history.
 

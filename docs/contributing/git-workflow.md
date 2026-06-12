@@ -34,6 +34,8 @@ You do **not** need to sync `main` back to `develop` at this stage. `develop` al
 
 ## Releasing to npm
 
+When reviewing a Release Please pull request, **do not replace the entire PR description**. Release Please parses that body to finalize the release. Add maintainer notes *above* the auto-generated changelog, or use Release Please’s [override section](https://github.com/googleapis/release-please#how-do-i-change-the-version-number) if you need to amend release notes.
+
 1. Review and merge the **Release Please pull request** on `main` (merge commit is fine).
 2. The [Release please workflow](https://github.com/LBHackney-IT/lbh-frontend/actions/workflows/release-please.yml) publishes to npm `latest`.
 3. The same workflow opens a **`main` → `develop`** sync pull request (see below).
