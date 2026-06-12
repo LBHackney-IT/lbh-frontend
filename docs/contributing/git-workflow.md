@@ -52,6 +52,17 @@ Release Please PRs build `dist/` automatically but do **not** publish to npm. To
 
 Each approved run publishes a unique version such as `3.7.0-next.1`.
 
+### Publishing to npm `latest` (maintainers)
+
+Normal releases publish automatically when a Release Please PR merges. If that step fails, or for a **hotfix** that bypasses Release Please (such as a republish), use the pipeline:
+
+1. Merge the release commit to **`main`** and tag it (for example **`v3.7.1`**).
+2. **Actions → Publish npm release → Run workflow**
+3. Set **git_ref** to the tag (for example `v3.7.1`)
+4. Approve the run on the **`npm-release`** environment
+
+`prepublishOnly` builds `dist/` before publish. Requires the **`npm-release`** environment (same `NPM_TOKEN` as other release workflows, with required reviewers).
+
 The sync step brings `package.json`, `CHANGELOG.md`, and `.release-please-manifest.json` back to `develop` so the branches stay aligned for the next cycle.
 
 ## Syncing main to develop
