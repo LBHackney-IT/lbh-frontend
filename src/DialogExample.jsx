@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Dialog } from "../lbh/all.js"
+import Dialog from "../lbh/components/lbh-dialog"
 
 const DialogExample = () => {
   const [informationalOpen, setInformationalOpen] = useState(false)
