@@ -6,6 +6,20 @@ Republish on npm as `latest`. The earlier `3.7.0` tarball was published from the
 
 * fix Release Please tag format (`include-component-in-tag: false`) so future releases use `vX.Y.Z` tags
 
+## [4.1.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v4.0.0...v4.1.0) (2026-07-02)
+
+
+### Features
+
+* add lbh-frontend/dialog package subpath export ([#260](https://github.com/LBHackney-IT/lbh-frontend/issues/260)) ([858f93c](https://github.com/LBHackney-IT/lbh-frontend/commit/858f93c9d2a019c8a12d8803c178bf1d1974522f))
+* export Dialog with optional action footer ([#257](https://github.com/LBHackney-IT/lbh-frontend/issues/257)) ([a90ffe3](https://github.com/LBHackney-IT/lbh-frontend/commit/a90ffe37d6b23db551e3514dd16c208f11c17288))
+
+
+### Bug Fixes
+
+* dialog BEM selectors with radix modifier ([#254](https://github.com/LBHackney-IT/lbh-frontend/issues/254)) ([7ef1b81](https://github.com/LBHackney-IT/lbh-frontend/commit/7ef1b81db4a39d02db0c81055e400ceadd1da0e9))
+* import Dialog directly in docs example for SSG ([#259](https://github.com/LBHackney-IT/lbh-frontend/issues/259)) ([49f0b16](https://github.com/LBHackney-IT/lbh-frontend/commit/49f0b16b5d3347202d3f1fa30e7a142d804ab220))
+
 ## [4.0.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v3.7.1...v4.0.0) (2026-06-12)
 
 
