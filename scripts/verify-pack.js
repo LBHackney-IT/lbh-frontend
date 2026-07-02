@@ -4,6 +4,10 @@ const { join } = require("path");
 
 const root = join(__dirname, "..");
 const requiredPrefixes = ["package/lbh/", "package/CHANGELOG.md"];
+const requiredPaths = [
+  "package/lbh/dialog.js",
+  "package/lbh/dialog.d.ts",
+];
 const forbiddenPrefixes = ["package/dist/"];
 
 const existingTarballs = new Set(
@@ -33,6 +37,13 @@ try {
       console.error(
         `verify:pack: missing ${prefix.replace("package/", "")} in pack`
       );
+      process.exit(1);
+    }
+  }
+
+  for (const path of requiredPaths) {
+    if (!listing.includes(path)) {
+      console.error(`verify:pack: missing ${path.replace("package/", "")} in pack`);
       process.exit(1);
     }
   }

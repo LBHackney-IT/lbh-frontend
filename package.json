@@ -6,6 +6,17 @@
   "homepage": "https://design-system.hackney.gov.uk",
   "main": "lbh/all.js",
   "types": "lbh/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lbh/index.d.ts",
+      "default": "./lbh/all.js"
+    },
+    "./dialog": {
+      "types": "./lbh/dialog.d.ts",
+      "default": "./lbh/dialog.js"
+    },
+    "./lbh/*": "./lbh/*"
+  },
   "files": [
     "lbh",
     "CHANGELOG.md"
