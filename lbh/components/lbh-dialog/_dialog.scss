@@ -24,11 +24,13 @@
     background: lbh-colour("lbh-white");
     border: 4px solid lbh-colour("lbh-text");
 
-    &__title {
+    // Use full element class names — &__ would compile to .lbh-dialog--radix__*
+    // when the parent selector includes a BEM modifier on the same element.
+    .lbh-dialog__title {
       margin-top: 0;
     }
 
-    &__close {
+    .lbh-dialog__close {
       position: absolute;
       right: 7px;
       top: 7px;
@@ -52,7 +54,7 @@
       }
     }
 
-    &__actions {
+    .lbh-dialog__actions {
       display: flex;
       flex-direction: column;
       align-items: center;
