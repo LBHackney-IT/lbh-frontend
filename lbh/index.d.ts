@@ -6,6 +6,7 @@ import { default as Checkboxes } from "./components/lbh-checkboxes/checkboxes";
 import { default as Collapsible } from "./components/lbh-collapsible/collapsible";
 import { default as CookieBanner } from "./components/lbh-cookie-banner/cookie-banner";
 import { default as Details } from "./components/lbh-details/details";
+import { default as Dialog } from "./components/lbh-dialog/index";
 import { default as ErrorSummary } from "./components/lbh-error-summary/error-summary";
 import { default as Map } from "./components/lbh-contact-block/contact-block";
 import { default as Radios } from "./components/lbh-radios/radios";
@@ -26,11 +27,14 @@ export {
   Collapsible,
   CookieBanner,
   Details,
+  Dialog,
   ErrorSummary,
   Map,
   Radios,
   Tabs,
 };
+
+export type { DialogProps } from "./components/lbh-dialog/index";
 
 declare global {
   interface Window {
