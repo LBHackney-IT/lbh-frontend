@@ -11,6 +11,7 @@ import Map from "./components/lbh-contact-block/contact-block";
 import Radios from "./components/lbh-radios/radios";
 import Tabs from "./components/lbh-tabs/tabs";
 import Collapsible from "./components/lbh-collapsible/collapsible";
+import Dialog from "./components/lbh-dialog/index";
 
 function nodeListForEach(nodes, callback) {
   if (window.NodeList.prototype.forEach) {
@@ -63,6 +64,7 @@ export {
   Checkboxes,
   CookieBanner,
   Details,
+  Dialog,
   ErrorSummary,
   Map,
   Radios,

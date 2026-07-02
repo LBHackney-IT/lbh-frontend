@@ -1,37 +1,66 @@
 import React, { useState } from "react"
-import Dialog from "../lbh/components/lbh-dialog"
+import { Dialog } from "../lbh/all.js"
 
 const DialogExample = () => {
-  const [open, setOpen] = useState(false)
+  const [informationalOpen, setInformationalOpen] = useState(false)
+  const [confirmOpen, setConfirmOpen] = useState(false)
+  const [cancelOnlyOpen, setCancelOnlyOpen] = useState(false)
 
   return (
     <>
-      <button
-        onClick={() => setOpen(!open)}
-        className="govuk-button lbh-button"
+      <div className="govuk-button-group">
+        <button
+          type="button"
+          onClick={() => setInformationalOpen(true)}
+          className="govuk-button lbh-button"
+        >
+          Informational dialog
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setConfirmOpen(true)}
+          className="govuk-button lbh-button"
+        >
+          Confirm and cancel
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setCancelOnlyOpen(true)}
+          className="govuk-button lbh-button"
+        >
+          Cancel link only
+        </button>
+      </div>
+
+      <Dialog
+        title="More information"
+        isOpen={informationalOpen}
+        onDismiss={() => setInformationalOpen(false)}
       >
-        Preview dialog
-      </button>
+        <p className="lbh-body">Use the close button to dismiss this dialog.</p>
+      </Dialog>
 
       <Dialog
         title="Are you sure?"
-        isOpen={open}
-        onDismiss={() => setOpen(false)}
+        isOpen={confirmOpen}
+        onDismiss={() => setConfirmOpen(false)}
+        onConfirm={() => setConfirmOpen(false)}
+        confirmText="Yes, delete"
+        onCancel={() => setConfirmOpen(false)}
       >
         <p className="lbh-body">The record will be permanently deleted.</p>
+      </Dialog>
 
-        <div className="lbh-dialog__actions">
-          <a href="#" className="govuk-button lbh-button">
-            Yes, delete
-          </a>
-
-          <button
-            onClick={() => setOpen(false)}
-            className="lbh-link lbh-link--no-visited-state"
-          >
-            No, cancel
-          </button>
-        </div>
+      <Dialog
+        title="Contact details"
+        isOpen={cancelOnlyOpen}
+        onDismiss={() => setCancelOnlyOpen(false)}
+        onCancel={() => setCancelOnlyOpen(false)}
+        cancelText="Close"
+      >
+        <p className="lbh-body">123 Example Street, London</p>
       </Dialog>
     </>
   )
