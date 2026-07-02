@@ -21,12 +21,16 @@ Dialogs should only allow a user to take a single action. If many actions are po
 
 Our dialog component is only compatible with React. It uses [Radix UI Dialog](https://www.radix-ui.com/primitives/docs/components/dialog) for accessible modal behaviour.
 
-Import from the main package entry:
+Import from the main package entry or the Dialog subpath:
 
 ```jsx
 import React, { useState } from "react"
 import { Dialog } from "lbh-frontend"
+// or
+import Dialog from "lbh-frontend/dialog"
 ```
+
+Use the subpath when you only need Dialog and want to avoid importing the full package bundle.
 
 ### Informational (dismiss only)
 
