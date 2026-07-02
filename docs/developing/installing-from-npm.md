@@ -128,6 +128,12 @@ import { initAll } from "lbh-frontend"
 initAll()
 ```
 
+React-only components can be imported from package subpaths without pulling in the full bundle. For example:
+
+```js
+import Dialog from "lbh-frontend/dialog"
+```
+
 `initAll()` must be called _after_ the HTML has been rendered to the page. If you're using React, there are some [extra things you need to do](https://design-system.hackney.gov.uk/developing/react).
 
 ### Initialise individual components (optional)
