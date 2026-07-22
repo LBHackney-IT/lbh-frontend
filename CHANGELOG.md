@@ -6,6 +6,15 @@ Republish on npm as `latest`. The earlier `3.7.0` tarball was published from the
 
 * fix Release Please tag format (`include-component-in-tag: false`) so future releases use `vX.Y.Z` tags
 
+## [4.1.1](https://github.com/LBHackney-IT/lbh-frontend/compare/v4.1.0...v4.1.1) (2026-07-22)
+
+
+### Bug Fixes
+
+* **contact-block:** Update to working Mapbox ([#183](https://github.com/LBHackney-IT/lbh-frontend/issues/183)) ([7081816](https://github.com/LBHackney-IT/lbh-frontend/commit/7081816866e5f707a64e53f34609048f1ae139c9))
+* **docs:** Use correct HTML attributes for SVG. ([#186](https://github.com/LBHackney-IT/lbh-frontend/issues/186)) ([10f0ff8](https://github.com/LBHackney-IT/lbh-frontend/commit/10f0ff8962a3c3da153d67c844c1de978a805088))
+* Improve small checkbox/radio display. ([#185](https://github.com/LBHackney-IT/lbh-frontend/issues/185)) ([3deb460](https://github.com/LBHackney-IT/lbh-frontend/commit/3deb4607a797db29352735ef013ca8bb6e3c8068))
+
 ## [4.1.0](https://github.com/LBHackney-IT/lbh-frontend/compare/v4.0.0...v4.1.0) (2026-07-02)
 
 
