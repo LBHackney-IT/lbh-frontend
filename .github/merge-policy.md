@@ -45,7 +45,7 @@ Each run publishes a new semver prerelease (`3.7.0-next.1`, `3.7.0-next.2`, …)
 
 - PR branch name starts with `release-please--`
 - Merge with **merge commit**
-- Release Please creates a GitHub Release; [publish-npm.yml](workflows/publish-npm.yml) publishes to npm `latest` via trusted publisher (OIDC)
+- Release Please creates a GitHub Release; [publish-npm.yml](workflows/publish-npm.yml) publishes to npm `latest` via trusted publisher (OIDC) on the **`npm-release`** environment (approve if required reviewers are configured)
 
 ### 4. Merge the automated sync PR on `develop`
 
@@ -67,8 +67,7 @@ If something lands on `main` outside the normal flow, open a manual `main` → `
 | Workflow | Trigger | Notes |
 |----------|---------|-------|
 | [release-please.yml](workflows/release-please.yml) | Push to `main` | Release PR / GitHub Release, opens sync PR |
-| [publish-npm.yml](workflows/publish-npm.yml) | GitHub Release + manual (`workflow_dispatch`) | Trusted publisher (OIDC). Publishes `latest` or `@next`. Manual runs use `npm-release` / `npm-prerelease` approval |
+| [publish-npm.yml](workflows/publish-npm.yml) | GitHub Release + manual (`workflow_dispatch`) | Trusted publisher (OIDC). `latest` uses `npm-release`; `@next` uses `npm-prerelease` |
 | [tests.yml](workflows/tests.yml) | Push | Unit tests |
 | [documentation.yml](workflows/documentation.yml) | Push / PR | Docs build and deploy |
 
-npm allows only one trusted publisher workflow filename per package — configure `publish-npm.yml` on npmjs.com (see [git workflow](../docs/contributing/git-workflow.md)).
