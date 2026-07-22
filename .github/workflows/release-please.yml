@@ -31,35 +31,12 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-  publish-npm:
-    needs: release-please
-    if: ${{ needs.release-please.outputs.release_created == 'true' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: ${{ needs.release-please.outputs.tag_name }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version-file: ".nvmrc"
-          registry-url: https://registry.npmjs.org
-          cache: npm
-
-      - name: Install modules
-        run: npm ci
-
-      - name: Publish to npm
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
+  # npm publish runs in publish-npm.yml (trusted publisher) when the GitHub
+  # Release is created. Keep sync gated on release creation so develop receives
+  # the version bump even if a maintainer re-runs publish separately.
   sync-to-develop:
-    needs: [release-please, publish-npm]
-    if: ${{ needs.release-please.outputs.release_created == 'true' && needs.publish-npm.result == 'success' }}
+    needs: [release-please]
+    if: ${{ needs.release-please.outputs.release_created == 'true' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -102,6 +79,8 @@ jobs:
           BODY="Automated sync after Release Please published ${TAG}.
 
           **Maintainer action required:** approve and merge with **Create a merge commit** (not squash).
+
+          npm publish runs via [Publish npm package](https://github.com/${{ github.repository }}/actions/workflows/publish-npm.yml) (trusted publisher) on the GitHub Release — confirm that workflow succeeded.
 
           See [git workflow](https://github.com/${{ github.repository }}/blob/develop/docs/contributing/git-workflow.md)."
 

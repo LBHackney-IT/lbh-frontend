@@ -33,10 +33,11 @@ Never squash-merge between `main` and `develop`.
 
 When the Release Please PR is ready to test:
 
-1. **Actions → Publish npm prerelease → Run workflow**
-2. Set **git_ref** to the Release Please branch name (e.g. `release-please--branches--main--components--lbh-frontend`)
-3. Approve the run when prompted (**`npm-prerelease`** environment — see below)
-4. Install with `npm install lbh-frontend@next` or the exact `X.Y.Z-next.N` version from the workflow summary
+1. **Actions → Publish npm package → Run workflow**
+2. Set **channel** to `next`
+3. Set **git_ref** to the Release Please branch name (e.g. `release-please--branches--main--components--lbh-frontend`)
+4. Approve the run when prompted (**`npm-prerelease`** environment — see below)
+5. Install with `npm install lbh-frontend@next` or the exact `X.Y.Z-next.N` version from the workflow summary
 
 Each run publishes a new semver prerelease (`3.7.0-next.1`, `3.7.0-next.2`, …) so npm never rejects duplicate versions.
 
@@ -44,7 +45,7 @@ Each run publishes a new semver prerelease (`3.7.0-next.1`, `3.7.0-next.2`, …)
 
 - PR branch name starts with `release-please--`
 - Merge with **merge commit**
-- [Release please workflow](workflows/release-please.yml) publishes to npm `latest`
+- Release Please creates a GitHub Release; [publish-npm.yml](workflows/publish-npm.yml) publishes to npm `latest` via trusted publisher (OIDC)
 
 ### 4. Merge the automated sync PR on `develop`
 
@@ -65,8 +66,9 @@ If something lands on `main` outside the normal flow, open a manual `main` → `
 
 | Workflow | Trigger | Notes |
 |----------|---------|-------|
-| [release-please.yml](workflows/release-please.yml) | Push to `main` | Release PR, npm publish, opens sync PR |
-| [publish-release.yml](workflows/publish-release.yml) | Manual (`workflow_dispatch`) | Publishes `latest` after environment approval |
-| [publish-prerelease.yml](workflows/publish-prerelease.yml) | Manual (`workflow_dispatch`) | Publishes `X.Y.Z-next.N` to `@next` after environment approval |
+| [release-please.yml](workflows/release-please.yml) | Push to `main` | Release PR / GitHub Release, opens sync PR |
+| [publish-npm.yml](workflows/publish-npm.yml) | GitHub Release + manual (`workflow_dispatch`) | Trusted publisher (OIDC). Publishes `latest` or `@next`. Manual runs use `npm-release` / `npm-prerelease` approval |
 | [tests.yml](workflows/tests.yml) | Push | Unit tests |
 | [documentation.yml](workflows/documentation.yml) | Push / PR | Docs build and deploy |
+
+npm allows only one trusted publisher workflow filename per package — configure `publish-npm.yml` on npmjs.com (see [git workflow](../docs/contributing/git-workflow.md)).

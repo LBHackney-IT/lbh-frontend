@@ -25,9 +25,10 @@ We use a feature-branching strategy. Make your pull requests to the `develop` br
 ### npm releases
 
 - Pushes run unit tests and a production dependency audit (see `tests.yml`).
-- Maintainers can publish a prerelease to npm `@next` when ready (`publish-prerelease.yml` — requires approval on the `npm-prerelease` environment).
-- Merging a Release Please PR publishes to npm `latest` (`release-please.yml`). `prepublishOnly` validates the npm pack contents only (no docs or dist build).
-- Use `publish-release.yml` for manual `latest` publishes when Release Please did not run (requires `npm-release` environment approval).
+- Publishing uses [npm trusted publishers](https://docs.npmjs.com/trusted-publishers) (OIDC) via `publish-npm.yml` — no long-lived `NPM_TOKEN` in the publish workflows.
+- Maintainers can publish a prerelease to npm `@next` when ready (`publish-npm.yml`, channel `next` — requires approval on the `npm-prerelease` environment).
+- Merging a Release Please PR creates a GitHub Release; `publish-npm.yml` then publishes to npm `latest`. `prepublishOnly` validates the npm pack contents only (no docs or dist build).
+- Use `publish-npm.yml` (channel `latest`) for manual `latest` publishes when the automatic path did not run (requires `npm-release` environment approval).
 
 ### Sass reference (`static/sassdoc`)
 

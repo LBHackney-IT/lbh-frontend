@@ -1,0 +1,163 @@
+# Single npm publish workflow for trusted publishing (OIDC).
+# npmjs.com allows only one trusted publisher workflow filename per package,
+# so latest, next, and Release Please publishes all go through this file.
+#
+# Configure on npmjs.com → lbh-frontend → Settings → Trusted Publisher:
+#   Organization: LBHackney-IT
+#   Repository: lbh-frontend
+#   Workflow filename: publish-npm.yml
+#   Environment name: (leave empty — this workflow uses npm-release / npm-prerelease)
+#   Allowed actions: npm publish
+#
+# Requires npm CLI >= 11.5.1 and Node >= 22.14 (see .nvmrc).
+name: Publish npm package
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: Dist-tag to publish
+        required: true
+        type: choice
+        options:
+          - latest
+          - next
+        default: latest
+      git_ref:
+        description: Tag or ref to publish (e.g. v4.1.0, main, or release-please branch)
+        required: true
+        default: main
+        type: string
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  # Automatic path: Release Please creates a GitHub Release → publish latest.
+  # No deployment environment (unchanged from the previous release-please publish job).
+  publish-on-release:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+
+      - name: Ensure npm supports trusted publishing
+        run: npm install -g npm@^11.5.1
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Confirm version
+        id: version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "Publishing lbh-frontend@${VERSION} to latest from ${{ github.event.release.tag_name }}"
+
+      - name: Publish to npm
+        run: npm publish --access public
+
+      - name: Summary
+        run: |
+          {
+            echo "### Package published (trusted publisher / OIDC)"
+            echo ""
+            echo "- **Version:** \`${{ steps.version.outputs.version }}\`"
+            echo "- **Dist-tag:** \`latest\`"
+            echo "- **Ref:** \`${{ github.event.release.tag_name }}\`"
+            echo ""
+            echo "\`npm install lbh-frontend@${{ steps.version.outputs.version }}\`"
+            echo ""
+            echo "Or: \`npm install lbh-frontend@latest\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  # Manual path: maintainer dispatch for latest (hotfix) or next (prerelease).
+  publish-manual:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.channel == 'next' && 'npm-prerelease' || 'npm-release' }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.git_ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+
+      - name: Ensure npm supports trusted publishing
+        run: npm install -g npm@^11.5.1
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Resolve publish version
+        id: version
+        run: |
+          CHANNEL="${{ inputs.channel }}"
+          BASE=$(node -p "require('./package.json').version")
+
+          if [ "$CHANNEL" = "next" ]; then
+            PREFIX="${BASE}-next."
+            MAX_N=0
+
+            if VERSIONS=$(npm view lbh-frontend versions --json 2>/dev/null); then
+              while IFS= read -r v; do
+                if [[ "$v" == "${PREFIX}"* ]]; then
+                  n="${v#${PREFIX}}"
+                  if [[ "$n" =~ ^[0-9]+$ ]] && [ "$n" -gt "$MAX_N" ]; then
+                    MAX_N="$n"
+                  fi
+                fi
+              done < <(echo "$VERSIONS" | jq -r '.[]')
+            fi
+
+            NEXT_N=$((MAX_N + 1))
+            VERSION="${BASE}-next.${NEXT_N}"
+            npm version "${VERSION}" --no-git-tag-version --allow-same-version
+          else
+            VERSION="${BASE}"
+          fi
+
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "channel=${CHANNEL}" >> "$GITHUB_OUTPUT"
+          echo "Publishing lbh-frontend@${VERSION} (dist-tag ${CHANNEL}) from ${{ inputs.git_ref }}"
+
+      - name: Publish to npm
+        run: |
+          if [ "${{ steps.version.outputs.channel }}" = "next" ]; then
+            npm publish --tag next --access public
+          else
+            npm publish --access public
+          fi
+
+      - name: Summary
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          CHANNEL="${{ steps.version.outputs.channel }}"
+          {
+            echo "### Package published (trusted publisher / OIDC)"
+            echo ""
+            echo "- **Version:** \`${VERSION}\`"
+            echo "- **Dist-tag:** \`${CHANNEL}\`"
+            echo "- **Ref:** \`${{ inputs.git_ref }}\`"
+            echo ""
+            echo "\`npm install lbh-frontend@${VERSION}\`"
+            echo ""
+            echo "Or: \`npm install lbh-frontend@${CHANNEL}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
