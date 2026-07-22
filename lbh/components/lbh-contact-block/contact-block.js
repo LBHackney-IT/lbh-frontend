@@ -54,14 +54,16 @@ Map.prototype.setBounds = function() {
 
 Map.prototype.initMapboxTiles = function() {
   var osmStreet = tileLayer(
-    "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
     {
       fadeAnimation: false,
       opacity: 1,
       attribution:
         'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
+      tileSize: 512,
       maxZoom: this.maxZoom,
-      id: "mapbox.streets",
+      zoomOffset: -1,
+      id: 'mapbox/streets-v11',
       accessToken: this.accessToken
     }
   );

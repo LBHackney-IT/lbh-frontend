@@ -41,38 +41,42 @@ You do **not** need to sync `main` back to `develop` at this stage. `develop` al
 
 ## Releasing to npm
 
+Publishing uses [npm trusted publishers](https://docs.npmjs.com/trusted-publishers) (OIDC) via [publish-npm.yml](https://github.com/LBHackney-IT/lbh-frontend/actions/workflows/publish-npm.yml).
+
 When reviewing a Release Please pull request, **do not replace the entire PR description**. Release Please parses that body to finalize the release. Add maintainer notes *above* the auto-generated changelog, or use Release Please’s [override section](https://github.com/googleapis/release-please#how-do-i-change-the-version-number) if you need to amend release notes.
 
 1. Review and merge the **Release Please pull request** on `main` (merge commit is fine).
-2. The [Release please workflow](https://github.com/LBHackney-IT/lbh-frontend/actions/workflows/release-please.yml) publishes to npm `latest`.
-3. The same workflow opens a **`main` → `develop`** sync pull request (see below).
+2. Release Please creates a GitHub Release; [Publish npm package](https://github.com/LBHackney-IT/lbh-frontend/actions/workflows/publish-npm.yml) publishes to npm `latest` using OIDC (via the **`npm-release`** environment — approve if that environment has required reviewers).
+3. The Release Please workflow opens a **`main` → `develop`** sync pull request (see below). Confirm the publish workflow succeeded.
 4. A **maintainer approves and merges** that sync PR with a **merge commit**. Branch protection requires this — the automation cannot merge on its own.
 
 ### Testing before release (maintainers)
 
 When the Release Please PR is ready to test on npm:
 
-1. **Actions → Publish npm prerelease → Run workflow**
-2. Set **git_ref** to the Release Please branch name
-3. Approve the run on the **`npm-prerelease`** environment
-4. Install with `npm install lbh-frontend@next`
+1. **Actions → Publish npm package → Run workflow**
+2. Set **channel** to `next`
+3. Set **git_ref** to the Release Please branch name
+4. Approve the run on the **`npm-prerelease`** environment
+5. Install with `npm install lbh-frontend@next`
 
 Each approved run publishes a unique version such as `4.0.0-next.1`.
 
 ### Publishing to npm `latest` (maintainers)
 
-Normal releases publish automatically when a Release Please PR merges. If that step fails, or for a **hotfix** that bypasses Release Please (such as a republish), use the pipeline:
+Normal releases publish when a Release Please PR merges (GitHub Release → `publish-npm.yml` on the **`npm-release`** environment). If that step fails, or for a **hotfix** that bypasses Release Please (such as a republish), use the pipeline:
 
-1. Merge the release commit to **`main`** and tag it (for example **`v3.7.1`**).
-2. **Actions → Publish npm release → Run workflow**
-3. Set **git_ref** to the tag (for example `v3.7.1`)
+1. Merge the release commit to **`main`** and tag it (for example **`v3.7.1`**), or use an existing tag.
+2. **Actions → Publish npm package → Run workflow**
+3. Set **channel** to `latest` and **git_ref** to the tag (for example `v3.7.1`)
 4. Approve the run on the **`npm-release`** environment
 
-`prepublishOnly` runs `verify:pack` to check the npm tarball contents (no docs or dist build). Requires the **`npm-release`** environment (same `NPM_TOKEN` as other release workflows, with required reviewers).
+`prepublishOnly` runs `verify:pack` to check the npm tarball contents (no docs or dist build).
 
-The sync step brings `package.json`, `CHANGELOG.md`, and `.release-please-manifest.json` back to `develop` so the branches stay aligned for the next cycle.
 
 ## Syncing main to develop
+
+The sync step brings `package.json`, `CHANGELOG.md`, and `.release-please-manifest.json` back to `develop` so the branches stay aligned for the next cycle.
 
 | When | Action |
 |------|--------|
