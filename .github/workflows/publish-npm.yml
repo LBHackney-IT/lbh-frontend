@@ -8,7 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       channel:
-        description: Dist-tag to publish
+        description: >
+          "latest" publishes package.json as-is to the default npm tag
+          (production installs). "next" bumps to a unique prerelease version
+          (e.g. 4.1.0-next.3) and publishes under the next tag for 
+          release-candidate testing.
         required: true
         type: choice
         options:
@@ -28,8 +32,8 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    # next → npm-prerelease; latest (release event or manual) → npm-release.
-    # Required reviewers on npm-release also gate automatic Release Please publishes.
+    # - npm-prerelease: manual @next / RC publishes only
+    # - npm-release: production @latest (Release Please + manual hotfix republish)
     environment: ${{ github.event_name == 'workflow_dispatch' && inputs.channel == 'next' && 'npm-prerelease' || 'npm-release' }}
     steps:
       - name: Resolve publish target
@@ -73,7 +77,7 @@ jobs:
               ')
             fi
             VERSION="${BASE}-next.$((MAX_N + 1))"
-            npm version "${VERSION}" --no-git-tag-version --allow-same-version
+            npm version "${VERSION}" --no-git-tag-version
           else
             VERSION="${BASE}"
           fi
