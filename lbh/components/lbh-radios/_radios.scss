@@ -25,5 +25,13 @@
     .govuk-hint {
       @include lbh-hint;
     }
+
+    &.govuk-radios--small {
+      .govuk-label {
+        margin-top: -2px;
+        margin-bottom: 0;
+        line-height: inherit;
+      }
+    }
   }
 }

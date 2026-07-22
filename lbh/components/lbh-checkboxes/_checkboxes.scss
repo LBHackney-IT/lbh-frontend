@@ -28,5 +28,17 @@
       @include lbh-body-m;
       margin-bottom: 0;
     }
+
+    &.govuk-checkboxes--small {
+      .govuk-checkboxes__item {
+        margin-bottom: 0;
+      }
+
+      .govuk-checkboxes__label {
+        margin-top: -2px;
+        margin-bottom: 0;
+        line-height: inherit;
+      }
+    }
   }
 }

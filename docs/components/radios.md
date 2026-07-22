@@ -1409,7 +1409,7 @@ title: Radios
   <legend class="govuk-fieldset__legend">
     How do you want to be contacted?
   </legend>
-  <div class="govuk-radios lbh-radios">
+  <div class="govuk-radios govuk-radios--small lbh-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="how-contacted-2" name="how-contacted-2" type="radio" value="email" />
           <label class="govuk-label govuk-radios__label" for="how-contacted-2">
@@ -1440,7 +1440,7 @@ title: Radios
     <legend class="govuk-fieldset__legend">
       How do you want to be contacted?
     </legend>
-    <div class="govuk-radios lbh-radios">
+    <div class="govuk-radios govuk-radios--small lbh-radios">
       <div class="govuk-radios__item">
         <input
           class="govuk-radios__input"
@@ -1584,7 +1584,7 @@ title: Radios
   <span id="how-contacted-2-error" class="govuk-error-message">
   <span class="govuk-visually-hidden">Error:</span> Select a thing
   </span>
-  <div class="govuk-radios lbh-radios">
+  <div class="govuk-radios govuk-radios--small lbh-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="how-contacted-2" name="how-contacted-2" type="radio" value="email" />
           <label class="govuk-label govuk-radios__label" for="how-contacted-2">
@@ -1618,7 +1618,7 @@ title: Radios
     <span id="how-contacted-2-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Select a thing
     </span>
-    <div class="govuk-radios lbh-radios">
+    <div class="govuk-radios govuk-radios--small lbh-radios">
       <div class="govuk-radios__item">
         <input
           class="govuk-radios__input"
@@ -1667,7 +1667,7 @@ title: Radios
   <legend class="govuk-fieldset__legend">
     How do you want to be contacted?
   </legend>
-  <div class="govuk-radios lbh-radios">
+  <div class="govuk-radios govuk-radios--small lbh-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="how-contacted-2" name="how-contacted-2" type="radio" value="email" aria-describedby="how-contacted-2-item-hint" />
           <label class="govuk-label govuk-radios__label" for="how-contacted-2">
@@ -1701,7 +1701,7 @@ title: Radios
     <legend class="govuk-fieldset__legend">
       How do you want to be contacted?
     </legend>
-    <div class="govuk-radios lbh-radios">
+    <div class="govuk-radios govuk-radios--small lbh-radios">
       <div class="govuk-radios__item">
         <input
           class="govuk-radios__input"
@@ -1757,7 +1757,7 @@ title: Radios
   <legend class="govuk-fieldset__legend">
     How do you want to be contacted?
   </legend>
-  <div class="govuk-radios lbh-radios">
+  <div class="govuk-radios govuk-radios--small lbh-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="how-contacted-2" name="how-contacted-2" type="radio" value="email" />
           <label class="govuk-label govuk-radios__label" for="how-contacted-2">
@@ -1788,7 +1788,7 @@ title: Radios
     <legend class="govuk-fieldset__legend">
       How do you want to be contacted?
     </legend>
-    <div class="govuk-radios lbh-radios">
+    <div class="govuk-radios govuk-radios--small lbh-radios">
       <div class="govuk-radios__item">
         <input
           class="govuk-radios__input"
@@ -1838,7 +1838,7 @@ title: Radios
   <legend class="govuk-fieldset__legend">
     How do you want to be contacted?
   </legend>
-  <div class="govuk-radios lbh-radios govuk-radios--conditional" data-module="govuk-radios">
+  <div class="govuk-radios govuk-radios--small lbh-radios govuk-radios--conditional" data-module="govuk-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="how-contacted-2" name="how-contacted-2" type="radio" value="email" data-aria-controls="conditional-how-contacted-2" />
           <label class="govuk-label govuk-radios__label" for="how-contacted-2">
@@ -1874,7 +1874,7 @@ title: Radios
       How do you want to be contacted?
     </legend>
     <div
-      class="govuk-radios lbh-radios govuk-radios--conditional"
+      class="govuk-radios govuk-radios--small lbh-radios govuk-radios--conditional"
       data-module="govuk-radios"
     >
       <div class="govuk-radios__item">
