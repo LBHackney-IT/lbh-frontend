@@ -6,6 +6,14 @@ Republish on npm as `latest`. The earlier `3.7.0` tarball was published from the
 
 * fix Release Please tag format (`include-component-in-tag: false`) so future releases use `vX.Y.Z` tags
 
+## [4.1.2](https://github.com/LBHackney-IT/lbh-frontend/compare/v4.1.1...v4.1.2) (2026-11-11)
+
+
+### Bug Fixes
+
+* **deps:** clear critical audit findings in the docs toolchain ([ee2e233](https://github.com/LBHackney-IT/lbh-frontend/commit/ee2e23352aecf6434f8a68ce56e3ab264f43b6b4))
+* **deps:** clear critical audit findings in the docs toolchain ([0bed630](https://github.com/LBHackney-IT/lbh-frontend/commit/0bed630789f54efb2383dcf33ad6fd0485ba2aee))
+
 ## [4.1.1](https://github.com/LBHackney-IT/lbh-frontend/compare/v4.1.0...v4.1.1) (2026-07-22)
 
 
